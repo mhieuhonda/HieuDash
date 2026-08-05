@@ -12,7 +12,7 @@ on:
       tag:
         description: "Tag name (for manual run)"
         required: false
-        default: "v0.4.0"
+        default: "v0.5.0"
 
 concurrency:
   group: build-release-${{ github.ref }}
@@ -26,6 +26,11 @@ env:
   GODOT_VERSION: "4.7"
   GODOT_VERSION_FULL: "4.7-stable"
   PROJECT_NAME: "HieuDash"
+  # Stable release-signing keystore (committed in repo at keystore/hieudash.keystore)
+  # Using a committed keystore ensures APKs are signed consistently across CI builds
+  # and local builds. Without this, every CI run signs with a fresh cert and
+  # Google Play Protect warns "package seems corrupted" on install.
+  HIEUDASH_KEYSTORE_PASS: "hieudash_release_2026"
 
 jobs:
   # ============================================================
@@ -41,11 +46,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Java JDK 17
+      - name: Setup Java JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: "temurin"
-          java-version: "17"
+          java-version: "21"
 
       - name: Setup Android SDK
         run: |
@@ -60,63 +65,14 @@ jobs:
           # Accept licenses truoc.
           yes | "$SDKMGR" --licenses > /dev/null 2>&1 || true
           # Install required packages (semicolons phai duoc quote).
-          "$SDKMGR" "platforms;android-34" "build-tools;34.0.0"
+          "$SDKMGR" "platforms;android-34" "build-tools;34.0.0" "platform-tools"
           # Verify.
           "$SDKMGR" --list_installed | grep -E "platforms|build-tools" || true
-
-      - name: Generate release keystore for APK signing
-        env:
-          HIEUDASH_KEYSTORE_PASS: ${{ secrets.HIEUDASH_KEYSTORE_PASS }}
-        run: |
-          set -e
-          echo "=== Generating keystore for signing APK ==="
-          # Neu co secret HIEUDASH_KEYSTORE_PASS thi dung; nguoc lai dung default.
-          KS_PASS="${HIEUDASH_KEYSTORE_PASS:-hieudash_release_2026}"
-          KS_PATH="$HOME/hieudash.keystore"
-          keytool -genkeypair -v \
-            -keystore "$KS_PATH" \
-            -storepass "$KS_PASS" \
-            -keypass "$KS_PASS" \
-            -alias hieudash \
-            -keyalg RSA -keysize 2048 -validity 10000 \
-            -dname "CN=Hieu Dash, OU=Project, O=mhieuhonda, L=Hanoi, ST=Hanoi, C=VN"
-          echo "Keystore created at: $KS_PATH"
-          ls -la "$KS_PATH"
-          # Luu path va password vao env file cho step sau.
-          echo "HIEUDASH_KEYSTORE_PATH=$KS_PATH" >> $GITHUB_ENV
-          echo "HIEUDASH_KEYSTORE_PASS=$KS_PASS" >> $GITHUB_ENV
-          echo "HIEUDASH_KEYSTORE_ALIAS=hieudash" >> $GITHUB_ENV
-
-      - name: Configure Godot Android signing
-        env:
-          KS_PATH: ${{ env.HIEUDASH_KEYSTORE_PATH }}
-          KS_PASS: ${{ env.HIEUDASH_KEYSTORE_PASS }}
-          KS_ALIAS: ${{ env.HIEUDASH_KEYSTORE_ALIAS }}
-        run: |
-          set -e
-          echo "=== Patching export_presets.cfg with keystore path ==="
-          if grep -q "^keystore/release=" export_presets.cfg; then
-            echo "Da co keystore config -> skip"
-          else
-            echo "Chua co keystore config -> chen vao sau package/signed=true"
-            # Tao file tam chua 3 dong keystore config (KHONG co indentation).
-            {
-              printf 'keystore/release="%s"\n' "$KS_PATH"
-              printf 'keystore/release_user="%s"\n' "$KS_ALIAS"
-              printf 'keystore/release_password="%s"\n' "$KS_PASS"
-            } > /tmp/ks_block.txt
-            # Chen noi dung file tam vao sau dong "package/signed=true".
-            sed -i "/^package\/signed=true/r /tmp/ks_block.txt" export_presets.cfg
-            echo "Patched export_presets.cfg with keystore config"
-          fi
-          echo "=== Verify ==="
-          grep -E "keystore|package/signed" export_presets.cfg || true
 
       - name: Install Godot engine and export templates
         run: |
           set -e
           echo "=== Downloading Godot $GODOT_VERSION_FULL engine + templates via gh CLI ==="
-          # Dung gh CLI de download (co auth, khong bi rate-limit).
           gh release download "$GODOT_VERSION_FULL" \
             --repo godotengine/godot \
             --pattern "Godot_v${GODOT_VERSION_FULL}_linux.x86_64.zip" \
@@ -136,19 +92,42 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Configure Godot editor settings (Android SDK + Java SDK paths)
+        run: |
+          set -e
+          SETTINGS_FILE="$HOME/.config/godot/editor_settings-4.7.tres"
+          mkdir -p "$HOME/.config/godot"
+          # Start Godot once to generate the settings file.
+          ./godot --headless --quit > /dev/null 2>&1 || true
+          if [ ! -f "$SETTINGS_FILE" ]; then
+            echo "ERROR: Godot settings file not generated."
+            exit 1
+          fi
+          # Patch the Android SDK + Java SDK paths.
+          sed -i "s|export/android/java_sdk_path = .*|export/android/java_sdk_path = \"$JAVA_HOME\"|" "$SETTINGS_FILE"
+          sed -i "s|export/android/android_sdk_path = .*|export/android/android_sdk_path = \"$ANDROID_HOME\"|" "$SETTINGS_FILE"
+          echo "=== Updated settings ==="
+          grep -E "export/android/(java|android)_sdk_path" "$SETTINGS_FILE"
+        env:
+          JAVA_HOME: ${{ env.JAVA_HOME }}
+
       - name: Import project resources (headless)
         run: |
           echo "Importing project (this may take a while)..."
-          godot --headless --import --quiet 2>&1 | tail -30 || true
+          ./godot --headless --import --quiet 2>&1 | tail -30
 
-      - name: Export Android APK
+      - name: Export Android APK (with gradle build)
         run: |
           set -e
-          echo "=== Running Godot Android export ==="
-          godot --headless --export-release "Android" --quiet 2>&1 | tee export_android.log || true
+          mkdir -p export/android
+          echo "=== Running Godot Android export (with --install-android-build-template) ==="
+          # --install-android-build-template ensures the gradle template is properly
+          # installed (creates .build_version marker + extracts android_source.zip).
+          # Without this, Godot errors with "Android build template not installed" or
+          # "no version info for it exists".
+          ./godot --headless --install-android-build-template --export-release "Android" 2>&1 | tee export_android.log
           echo "=== Searching for built APK ==="
           find . -name "*.apk" -type f 2>/dev/null | head -10
-          mkdir -p export/android
           found_apk=$(find . -name "*.apk" -type f | head -1)
           if [ -n "$found_apk" ]; then
             cp "$found_apk" export/android/HieuDash.apk
@@ -160,11 +139,31 @@ jobs:
           fi
           ls -la export/android/
 
+      - name: Verify APK is signed (not corrupted)
+        run: |
+          set -e
+          APK="export/android/HieuDash.apk"
+          echo "=== Verifying APK signature ==="
+          # Use apksigner to verify the APK is properly signed.
+          APKSIGNER=$(find $ANDROID_HOME/build-tools -name apksigner | head -1)
+          echo "Using apksigner: $APKSIGNER"
+          "$APKSIGNER" verify --verbose "$APK" || {
+            echo "ERROR: APK signature verification failed!"
+            echo "This means the APK is unsigned or signed with an invalid cert."
+            echo "Google Play Protect will warn 'package seems corrupted'."
+            exit 1
+          }
+          echo "=== APK signature OK ==="
+          echo "=== APK info ==="
+          # Print APK basic info to confirm name and version
+          AAPT2=$(find $ANDROID_HOME/build-tools -name aapt2 | head -1)
+          "$AAPT2" dump badging "$APK" 2>/dev/null | grep -E "package:|application-label:|launchable-activity:" | head -5
+
       - name: Rename APK with version
         run: |
           TAG="${GITHUB_REF##*/}"
           if [[ ! "$TAG" =~ ^v[0-9] ]]; then
-            TAG="${{ github.event.inputs.tag || 'v0.4.0' }}"
+            TAG="${{ github.event.inputs.tag || 'v0.5.0' }}"
           fi
           mkdir -p artifacts
           cp export/android/HieuDash.apk "artifacts/HieuDash-${TAG}-android.apk"
@@ -180,7 +179,7 @@ jobs:
       - name: Upload APK to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.4.0' }}
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.5.0' }}
           files: artifacts/*.apk
           fail_on_unmatched_files: true
         env:
@@ -224,14 +223,14 @@ jobs:
       - name: Import project resources (headless)
         run: |
           echo "Importing project (this may take a while)..."
-          godot --headless --import --quiet 2>&1 | tail -30 || true
+          ./godot --headless --import --quiet 2>&1 | tail -30
 
       - name: Export Linux build
         run: |
           set -e
           mkdir -p export/linux
           echo "=== Running Godot Linux export ==="
-          godot --headless --export-release "Linux" --quiet 2>&1 | tee export_linux.log || true
+          ./godot --headless --export-release "Linux" 2>&1 | tee export_linux.log
           ls -la export/linux/
           if [ ! -f export/linux/HieuDash.x86_64 ]; then
             echo "ERROR: Linux binary not found!"
@@ -244,7 +243,7 @@ jobs:
         run: |
           TAG="${GITHUB_REF##*/}"
           if [[ ! "$TAG" =~ ^v[0-9] ]]; then
-            TAG="${{ github.event.inputs.tag || 'v0.4.0' }}"
+            TAG="${{ github.event.inputs.tag || 'v0.5.0' }}"
           fi
           mkdir -p artifacts
           cd export/linux
@@ -262,7 +261,7 @@ jobs:
       - name: Upload Linux build to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.4.0' }}
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.5.0' }}
           files: artifacts/*.zip
           fail_on_unmatched_files: true
         env:
@@ -306,14 +305,14 @@ jobs:
       - name: Import project resources (headless)
         run: |
           echo "Importing project (this may take a while)..."
-          godot --headless --import --quiet 2>&1 | tail -30 || true
+          ./godot --headless --import --quiet 2>&1 | tail -30
 
       - name: Export Windows build
         run: |
           set -e
           mkdir -p export/windows
           echo "=== Running Godot Windows export ==="
-          godot --headless --export-release "Windows Desktop" --quiet 2>&1 | tee export_windows.log || true
+          ./godot --headless --export-release "Windows Desktop" 2>&1 | tee export_windows.log
           ls -la export/windows/
           if [ ! -f export/windows/HieuDash.exe ]; then
             echo "ERROR: Windows binary not found!"
@@ -325,7 +324,7 @@ jobs:
         run: |
           TAG="${GITHUB_REF##*/}"
           if [[ ! "$TAG" =~ ^v[0-9] ]]; then
-            TAG="${{ github.event.inputs.tag || 'v0.4.0' }}"
+            TAG="${{ github.event.inputs.tag || 'v0.5.0' }}"
           fi
           mkdir -p artifacts
           cd export/windows
@@ -343,7 +342,7 @@ jobs:
       - name: Upload Windows build to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.4.0' }}
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.5.0' }}
           files: artifacts/*.zip
           fail_on_unmatched_files: true
         env:

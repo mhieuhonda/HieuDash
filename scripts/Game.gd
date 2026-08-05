@@ -177,7 +177,7 @@ func _process(_delta: float) -> void:
         if is_paused or is_finished or player.is_dead:
                 return
         # Cap nhat progress
-        var p := clamp(player.global_position.x / level_end_x, 0.0, 1.0) * 100.0
+        var p: float = clamp(player.global_position.x / level_end_x, 0.0, 1.0) * 100.0
         progress_bar.value = p
         # Win fallback: neu vuot qua cuoi level ma chua hit goal.
         if player.global_position.x >= level_end_x and not is_finished:

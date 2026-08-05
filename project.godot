@@ -15,7 +15,7 @@ config/description="A rhythm-based platformer inspired by the cube-jumping genre
 run/main_scene="res://scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://assets/icons/icon.png"
-config/version="0.4.0"
+config/version="0.5.0"
 config/copyright="Copyright (c) 2026 Hieu Dash Project"
 
 [autoload]
@@ -62,7 +62,7 @@ renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 textures/canvas_textures/default_texture_filter=0
 environment/defaults/default_clear_color=Color(0.117, 0.117, 0.18, 1)
-vram_compression/import_etc2_astc=true
+textures/vram_compression/import_etc2_astc=true
 
 [input_devices]
 

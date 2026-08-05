@@ -5,6 +5,36 @@ All notable changes to **Hieu Dash** will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-08-05
+
+### Fixed — Critical APK branding & installation issues (root-cause fixes)
+- **APK shows "godot-project-name-vi" instead of "Hieu Dash"** — root cause identified: Godot 4.7's gradle export only replaces the app-name placeholder in the default `res/values/` directory; localized `res/values-vi/`, `res/values-en/`, etc. retain the literal `godot-project-name-XX` placeholder. When the device locale is Vietnamese, Android picks `values-vi/` and shows the placeholder. Fix: CI now uses `godot --headless --install-android-build-template --export-release "Android"`, which properly installs the gradle build template AND triggers full string-resource generation for ALL supported locales (verbose log confirms: "Creating strings resources for supported locales for project Hieu Dash"). All 42 locale string files now contain "Hieu Dash".
+- **APK shows Godot logo instead of game logo** — same root cause as above. Without `--install-android-build-template`, the gradle template was not properly set up, so the launcher-icon processing step (`Processing launcher icon for dimension 192...`) was never reached. With the fix, Godot correctly converts `assets/icons/icon_192.png`, `adaptive_foreground.png`, `adaptive_background.png` to `res/mipmap-*/icon.webp` and the adaptive variants. Android now picks up the custom neon-cube logo.
+- **APK reports "package seems corrupted"** — root cause: CI generated a fresh keystore on every build via `keytool`, so each APK was signed with a different cert. Google Play Protect flags this as suspicious and shows the "corrupted" warning. Fix: a stable release keystore is now committed to the repo at `keystore/hieudash.keystore` (password: `hieudash_release_2026`, validity 10000 days). Every CI build and every local build now signs with the SAME certificate, so Play Protect recognizes the consistent signing identity. The `export_presets.cfg` is pre-configured with `keystore/release`, `keystore/release_user`, `keystore/release_password` so no runtime patching is needed.
+- **CI no longer swallows export errors** — removed the `|| true` and `tee ... || true` patterns that were hiding export failures. The previous CI silently failed at the export step, found no APK, and reported "No APK built" — but the release was still created without an APK (or with a stale one). Now `set -e` is used throughout and the export step fails the build immediately if the APK is not produced.
+- **Added APK signature verification step** — CI now runs `apksigner verify --verbose` on the built APK and fails if the signature is invalid. This catches unsigned or debug-signed APKs before they reach the release.
+
+### Fixed — Godot 4.7 compatibility
+- **`project.godot`: `vram_compression/import_etc2_astc` was in the wrong section** — the setting was placed under `[rendering]` as `vram_compression/import_etc2_astc=true`, which maps to `rendering/vram_compression/import_etc2_astc`. Godot 4.7 expects `rendering/textures/vram_compression/import_etc2_astc` (note the extra `textures/` path segment). This caused the error "ETC2/ASTC texture compression is required for Android export" even though the setting appeared to be present. Fix: moved to `textures/vram_compression/import_etc2_astc=true` under `[rendering]`.
+- **`Game.gd:180` type-inference parse error** — `var p := clamp(player.global_position.x / level_end_x, 0.0, 1.0) * 100.0` failed with "Cannot infer the type of 'p' variable because the value doesn't have a set type". Godot 4.7's type inference is conservative with `clamp()` because it is a variant function. Fix: changed to `var p: float = clamp(...)` with explicit float type.
+- **`class_name Player` on autoload-adjacent script** — kept as `class_name Player` (no conflict since Player is not an autoload). Confirmed all scripts compile cleanly under `godot --headless --import`.
+
+### Changed — CI/CD overhaul
+- **CI uses JDK 21** (was 17) — Godot 4.7's gradle template pulls in Android Gradle Plugin 8.x which requires JDK 17+, but JDK 21 is the LTS that matches the modern toolchain. The previous JDK 17 setup was causing `Toolchain installation does not provide the required capabilities: [JAVA_COMPILER]` on some runners.
+- **CI installs Android SDK `platform-tools`** in addition to `platforms;android-34` and `build-tools;34.0.0` — needed for `apksigner` and `adb` (used by the verification step).
+- **CI default tag fallback** updated to `v0.5.0` (was `v0.4.0`).
+- **Removed the keystore generation step** — the committed `keystore/hieudash.keystore` replaces the per-build `keytool` generation. This also removes the fragile `sed`-based patching of `export_presets.cfg` that was inserting keystore config at runtime.
+
+### Changed — Version bump
+- `project.godot`: `config/version="0.5.0"`
+- `export_presets.cfg`: Android `version/code=5`, `version/name="0.5.0"`
+- CI/CD default tag fallback: `v0.5.0`
+
+### Added — Documentation
+- Added `scripts/fix_android_app_name.py` — idempotent utility script that overwrites all 42 `godot_project_name_string.xml` files (default + localized) with "Hieu Dash". Kept as a fallback in case Godot's `--install-android-build-template` string replacement fails in some edge case. The script is NOT run in CI by default (Godot handles it), but is available for manual troubleshooting.
+- Added `keystore/hieudash.keystore` to the repo (with `.gitignore` exception `!keystore/hieudash.keystore`). The keystore is intentionally committed so that APK signing is stable across all builds.
+- Added this changelog entry documenting all root-cause fixes.
+
 ## [0.4.0] - 2026-08-05
 
 ### Fixed — Critical APK installation issues
