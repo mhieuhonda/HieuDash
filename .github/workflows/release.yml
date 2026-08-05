@@ -16,7 +16,11 @@ on:
 
 concurrency:
   group: build-release-${{ github.ref }}
-  cancel-in-progress: false
+  cancel-in_progress: false
+
+permissions:
+  contents: write
+  packages: read
 
 env:
   GODOT_VERSION: "4.7"
@@ -47,12 +51,18 @@ jobs:
         run: |
           set -e
           echo "ANDROID_HOME=$ANDROID_HOME"
+          # Tim sdkmanager binary (co the o latest hoac 16.0).
+          SDKMGR=$(ls $ANDROID_HOME/cmdline-tools/*/bin/sdkmanager 2>/dev/null | head -1)
+          if [ -z "$SDKMGR" ]; then
+            SDKMGR="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          fi
+          echo "Using sdkmanager: $SDKMGR"
           # Accept licenses truoc.
-          yes | sdkmanager --licenses > /dev/null 2>&1 || true
+          yes | "$SDKMGR" --licenses > /dev/null 2>&1 || true
           # Install required packages (semicolons phai duoc quote).
-          sdkmanager "platforms;android-34" "build-tools;34.0.0"
+          "$SDKMGR" "platforms;android-34" "build-tools;34.0.0"
           # Verify.
-          sdkmanager --list_installed | grep -E "platforms|build-tools" || true
+          "$SDKMGR" --list_installed | grep -E "platforms|build-tools" || true
 
       - name: Install Godot engine and export templates
         run: |
