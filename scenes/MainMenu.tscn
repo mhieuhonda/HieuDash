@@ -1,0 +1,292 @@
+[gd_scene load_steps=8 format=3 uid="uid://bmainmenu1"]
+
+[ext_resource type="Script" path="res://scripts/MainMenu.gd" id="1_menu"]
+
+[sub_resource type="StyleBoxFlat" id="style_btn_play"]
+bg_color = Color(0.25, 0.85, 1, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.05, 0.07, 0.15, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+content_margin_left = 32.0
+content_margin_top = 16.0
+content_margin_right = 32.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="style_btn_settings"]
+bg_color = Color(0.85, 0.32, 0.95, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.05, 0.07, 0.15, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+content_margin_left = 32.0
+content_margin_top = 16.0
+content_margin_right = 32.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="style_btn_quit"]
+bg_color = Color(1, 0.32, 0.4, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.05, 0.07, 0.15, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+content_margin_left = 32.0
+content_margin_top = 16.0
+content_margin_right = 32.0
+content_margin_bottom = 16.0
+
+[sub_resource type="StyleBoxFlat" id="style_panel"]
+bg_color = Color(0.08, 0.1, 0.18, 0.85)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.25, 0.85, 1, 0.7)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[sub_resource type="StyleBoxFlat" id="style_label_chip"]
+bg_color = Color(0.05, 0.07, 0.15, 0.7)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.25, 0.85, 1, 0.4)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Gradient" id="grad_bg"]
+offsets = PackedFloat32Array(0, 0.6, 1)
+colors = PackedColorArray(0.06, 0.08, 0.16, 1, 0.12, 0.09, 0.22, 1, 0.18, 0.1, 0.28, 1)
+
+[node name="MainMenu" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+script = ExtResource("1_menu")
+
+[node name="Bg" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1, 0.1, 0.16, 1)
+
+[node name="BgGradient" type="Polygon2D" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+polygon = PackedVector2Array(0, 0, 1280, 0, 1280, 720, 0, 720)
+vertex_colors = PackedColorArray(0.06, 0.08, 0.16, 1, 0.06, 0.08, 0.16, 1, 0.18, 0.1, 0.28, 1, 0.18, 0.1, 0.28, 1)
+
+[node name="Stars" type="Node2D" parent="."]
+
+[node name="Star1" type="Polygon2D" parent="Stars"]
+position = Vector2(120, 80)
+polygon = PackedVector2Array(-3, -3, 3, -3, 3, 3, -3, 3)
+color = Color(1, 1, 1, 0.7)
+
+[node name="Star2" type="Polygon2D" parent="Stars"]
+position = Vector2(1100, 140)
+polygon = PackedVector2Array(-2, -2, 2, -2, 2, 2, -2, 2)
+color = Color(1, 0.85, 0.4, 0.6)
+
+[node name="Star3" type="Polygon2D" parent="Stars"]
+position = Vector2(220, 580)
+polygon = PackedVector2Array(-2, -2, 2, -2, 2, 2, -2, 2)
+color = Color(0.7, 1, 1, 0.7)
+
+[node name="Star4" type="Polygon2D" parent="Stars"]
+position = Vector2(980, 580)
+polygon = PackedVector2Array(-3, -3, 3, -3, 3, 3, -3, 3)
+color = Color(1, 1, 1, 0.5)
+
+[node name="Center" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Center"]
+custom_minimum_size = Vector2(560, 580)
+theme_override_styles/panel = SubResource("style_panel")
+
+[node name="TitleLabel" type="Label" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -260.0
+offset_top = 36.0
+offset_right = 260.0
+offset_bottom = 130.0
+grow_horizontal = 2
+text = "HIEU
+DASH"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.25, 0.85, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.05, 0.07, 0.15, 0.9)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 6
+theme_override_font_sizes/font_size = 76
+
+[node name="LevelLabel" type="Label" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -120.0
+offset_top = 138.0
+offset_right = 120.0
+offset_bottom = 168.0
+grow_horizontal = 2
+text = "Level 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(1, 0.85, 0.2, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("style_label_chip")
+
+[node name="BestLabel" type="Label" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.0
+offset_top = 178.0
+offset_right = 180.0
+offset_bottom = 210.0
+grow_horizontal = 2
+text = "Best Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(1, 1, 1, 0.95)
+theme_override_font_sizes/font_size = 20
+
+[node name="CoinsLabel" type="Label" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -180.0
+offset_top = 214.0
+offset_right = 180.0
+offset_bottom = 244.0
+grow_horizontal = 2
+text = "Total Coins: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(1, 0.85, 0.2, 1)
+theme_override_font_sizes/font_size = 20
+
+[node name="PlayButton" type="Button" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 270.0
+offset_right = 160.0
+offset_bottom = 330.0
+grow_horizontal = 2
+text = "PLAY"
+theme_override_colors/font_color = Color(0.05, 0.07, 0.15, 1)
+theme_override_colors/font_hover_color = Color(0.05, 0.07, 0.15, 1)
+theme_override_colors/font_pressed_color = Color(0.05, 0.07, 0.15, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("style_btn_play")
+theme_override_styles/hover = SubResource("style_btn_play")
+theme_override_styles/pressed = SubResource("style_btn_play")
+
+[node name="SettingsButton" type="Button" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 348.0
+offset_right = 160.0
+offset_bottom = 404.0
+grow_horizontal = 2
+text = "Settings"
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("style_btn_settings")
+theme_override_styles/hover = SubResource("style_btn_settings")
+theme_override_styles/pressed = SubResource("style_btn_settings")
+
+[node name="QuitButton" type="Button" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 422.0
+offset_right = 160.0
+offset_bottom = 478.0
+grow_horizontal = 2
+text = "Quit"
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_colors/font_pressed_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("style_btn_quit")
+theme_override_styles/hover = SubResource("style_btn_quit")
+theme_override_styles/pressed = SubResource("style_btn_quit")
+
+[node name="HintLabel" type="Label" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
+offset_top = 510.0
+offset_right = 240.0
+offset_bottom = 548.0
+grow_horizontal = 2
+text = "Tap / Space to jump. Dodge the spikes."
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(1, 1, 1, 0.6)
+theme_override_font_sizes/font_size = 16
+
+[node name="VersionLabel" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "v0.1.0"
+horizontal_alignment = 2
+vertical_alignment = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.45)
+theme_override_font_sizes/font_size = 16
+
+[node name="BgMusic" type="AudioStreamPlayer" parent="."]
+volume_db = -12.0

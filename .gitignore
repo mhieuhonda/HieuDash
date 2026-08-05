@@ -1,0 +1,36 @@
+# Godot 4+ specific ignores
+.godot/
+/android/build/
+/export/
+
+# Mono / C# (if added later)
+.mono/
+data_*/
+mono_crash.*.json
+
+# OS / Editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.iml
+
+# Build artifacts
+*.apk
+*.aab
+*.keystore
+debug.keystore
+*.keystore.p12
+
+# Local config overrides
+export_presets.local.cfg
+project.godot.local
+
+# Backup files
+*.bak
+*~
+
+# Logs
+*.log

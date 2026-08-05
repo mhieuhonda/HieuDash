@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://bblock1q2q3"]
+
+[ext_resource type="Script" path="res://scripts/Block.gd" id="1_block"]
+
+[sub_resource type="RectangleShape2D" id="rect_block"]
+size = Vector2(80, 80)
+
+[sub_resource type="RectangleShape2D" id="rect_side"]
+size = Vector2(78, 78)
+
+[node name="Block" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_block")
+block_color = Color(0.85, 0.32, 0.95, 1)
+top_color = Color(1, 0.65, 0.2, 1)
+
+[node name="Body" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-40, -40, 40, -40, 40, 40, -40, 40)
+color = Color(0.85, 0.32, 0.95, 1)
+
+[node name="Top" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-40, -40, 40, -40, 40, -28, -40, -28)
+color = Color(1, 0.65, 0.2, 1)
+
+[node name="Outline" type="Polygon2D" parent="."]
+z_index = -1
+polygon = PackedVector2Array(-44, -44, 44, -44, 44, 44, -44, 44)
+color = Color(0.06, 0.04, 0.12, 1)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("rect_block")
+
+[node name="SideHazard" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+
+[node name="Shape" type="CollisionShape2D" parent="SideHazard"]
+shape = SubResource("rect_side")

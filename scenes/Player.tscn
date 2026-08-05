@@ -1,0 +1,100 @@
+[gd_scene load_steps=5 format=3 uid="uid://b7p3hkxh2q1"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_player"]
+
+[sub_resource type="RectangleShape2D" id="rect_player"]
+size = Vector2(40, 40)
+
+[sub_resource type="Curve" id="curve_trail"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+bake_resolution = 16
+
+[sub_resource type="Curve" id="curve_land"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+bake_resolution = 16
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 1
+collision_mask = 6
+script = ExtResource("1_player")
+run_speed = 360.0
+jump_velocity = -680.0
+gravity = 1800.0
+max_fall_speed = 1400.0
+rotation_speed_air = 7.5
+cube_color = Color(0.25, 0.85, 1, 1)
+trail_color = Color(0.25, 0.85, 1, 0.6)
+land_color = Color(1, 0.95, 0.5, 1)
+
+[node name="Body" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
+color = Color(0.25, 0.85, 1, 1)
+
+[node name="Outline" type="Polygon2D" parent="Body"]
+z_index = -1
+polygon = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+color = Color(0.05, 0.07, 0.15, 1)
+
+[node name="InnerHighlight" type="Polygon2D" parent="Body"]
+polygon = PackedVector2Array(-14, -14, 14, -14, 14, -4, -14, -4)
+color = Color(1, 1, 1, 0.25)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("rect_player")
+
+[node name="TrailParticles" type="CPUParticles2D" parent="."]
+emitting = true
+amount = 18
+lifetime = 0.35
+local_coords = false
+trail_lifetime = 0.0
+explosiveness = 0.0
+randomness = 0.0
+fixed_fps = 60
+fract_delta = true
+direction = Vector2(-1, 0)
+spread = 25.0
+initial_velocity_min = 60.0
+initial_velocity_max = 120.0
+scale_amount_min = 6.0
+scale_amount_max = 10.0
+scale_curve = SubResource("curve_trail")
+color = Color(0.25, 0.85, 1, 0.6)
+
+[node name="LandParticles" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 10
+lifetime = 0.4
+one_shot = true
+local_coords = false
+direction = Vector2(0, -1)
+spread = 60.0
+initial_velocity_min = 80.0
+initial_velocity_max = 180.0
+gravity = Vector2(0, 600)
+scale_amount_min = 3.0
+scale_amount_max = 5.0
+scale_curve = SubResource("curve_land")
+color = Color(1, 0.95, 0.5, 1)
+
+[node name="DeathParticles" type="CPUParticles2D" parent="."]
+emitting = false
+amount = 32
+lifetime = 0.7
+one_shot = true
+local_coords = false
+direction = Vector2(0, 0)
+spread = 180.0
+initial_velocity_min = 150.0
+initial_velocity_max = 380.0
+gravity = Vector2(0, 800)
+scale_amount_min = 4.0
+scale_amount_max = 8.0
+scale_curve = SubResource("curve_land")
+color = Color(0.25, 0.85, 1, 1)
+
+[node name="JumpSfx" type="AudioStreamPlayer" parent="."]
+volume_db = -6.0
+
+[node name="DeathSfx" type="AudioStreamPlayer" parent="."]
+volume_db = -3.0
