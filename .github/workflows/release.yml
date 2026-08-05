@@ -95,32 +95,19 @@ jobs:
         run: |
           set -e
           echo "=== Patching export_presets.cfg with keystore path ==="
-          # Kiem tra xem export_presets.cfg da co keystore/release chua.
-          # Neu chua, them 3 dong keystore/release, keystore/release_user, keystore/release_password
-          # vao ngay sau dong package/signed=true.
-          if ! grep -q "^keystore/release=" export_presets.cfg; then
-            echo "Chua co keystore config -> chen vao sau package/signed=true"
-            # Dung Python de patch (tranh van de sed escape ky tu dac biet trong path Windows).
-            python3 -c '
-            import os
-            ks_path = os.environ["KS_PATH"]
-            ks_pass = os.environ["KS_PASS"]
-            ks_alias = os.environ["KS_ALIAS"]
-            with open("export_presets.cfg", "r", encoding="utf-8") as f:
-                lines = f.readlines()
-            new_lines = []
-            for line in lines:
-                new_lines.append(line)
-                if line.strip() == "package/signed=true":
-                    new_lines.append("keystore/release=\"{ks_path}\"\n".format(ks_path=ks_path))
-                    new_lines.append("keystore/release_user=\"{ks_alias}\"\n".format(ks_alias=ks_alias))
-                    new_lines.append("keystore/release_password=\"{ks_pass}\"\n".format(ks_pass=ks_pass))
-            with open("export_presets.cfg", "w", encoding="utf-8") as f:
-                f.writelines(new_lines)
-            print("Patched export_presets.cfg with keystore config")
-            '
-          else
+          if grep -q "^keystore/release=" export_presets.cfg; then
             echo "Da co keystore config -> skip"
+          else
+            echo "Chua co keystore config -> chen vao sau package/signed=true"
+            # Tao file tam chua 3 dong keystore config (KHONG co indentation).
+            {
+              printf 'keystore/release="%s"\n' "$KS_PATH"
+              printf 'keystore/release_user="%s"\n' "$KS_ALIAS"
+              printf 'keystore/release_password="%s"\n' "$KS_PASS"
+            } > /tmp/ks_block.txt
+            # Chen noi dung file tam vao sau dong "package/signed=true".
+            sed -i "/^package\/signed=true/r /tmp/ks_block.txt" export_presets.cfg
+            echo "Patched export_presets.cfg with keystore config"
           fi
           echo "=== Verify ==="
           grep -E "keystore|package/signed" export_presets.cfg || true
