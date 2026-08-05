@@ -1,5 +1,7 @@
-extends StaticBody2D
+extends AnimatableBody2D
 ## MovingPlatform - nen di chuyen ngang hoac doc, player dung duoc len.
+## FIX v0.3: Dung AnimatableBodyD thay vi StaticBody2D de player dung
+## len nen di chuyen va di chuyen theo platform (sync to physics).
 ## Khong kill (player co the dung len). Cau hinh qua configure(range, speed, axis).
 class_name MovingPlatform
 

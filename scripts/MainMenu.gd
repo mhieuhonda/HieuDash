@@ -1,6 +1,6 @@
 extends Control
 ## MainMenu - man hinh chinh cua game.
-## Hien logo, best score, coins, play button, settings, quit.
+## Hien logo, best score, coins, play button, settings, garage, credits, quit.
 class_name MainMenu
 
 @onready var best_label: Label = $Center/Panel/BestLabel
@@ -8,6 +8,8 @@ class_name MainMenu
 @onready var level_label: Label = $Center/Panel/LevelLabel
 @onready var play_button: Button = $Center/Panel/PlayButton
 @onready var settings_button: Button = $Center/Panel/SettingsButton
+@onready var garage_button: Button = $Center/Panel/GarageButton
+@onready var credits_button: Button = $Center/Panel/CreditsButton
 @onready var quit_button: Button = $Center/Panel/QuitButton
 @onready var title_label: Label = $Center/Panel/TitleLabel
 @onready var version_label: Label = $VersionLabel
@@ -15,17 +17,21 @@ class_name MainMenu
 
 
 func _ready() -> void:
-        GameManager.load_progress()
+        # GameManager autoload da load save trong _ready() roi.
         _refresh_stats()
         if play_button:
                 play_button.pressed.connect(_on_play)
         if settings_button:
                 settings_button.pressed.connect(_on_settings)
+        if garage_button:
+                garage_button.pressed.connect(_on_garage)
+        if credits_button:
+                credits_button.pressed.connect(_on_credits)
         if quit_button:
                 quit_button.pressed.connect(_on_quit)
-        # An quit button tren mobile
-        if OS.has_feature("mobile") or OS.has_feature("android"):
-                quit_button.visible = false
+                # An quit button tren mobile.
+                if OS.has_feature("mobile") or OS.has_feature("android"):
+                        quit_button.visible = false
         # Music
         _load_bgm()
         if bg_music and GameManager.music_enabled and bg_music.stream:
@@ -50,7 +56,7 @@ func _refresh_stats() -> void:
         if level_label:
                 level_label.text = "Level %d" % GameManager.selected_level
         if version_label:
-                version_label.text = "v%s" % ProjectSettings.get_setting("application/config/version", "0.2.0")
+                version_label.text = "v%s" % ProjectSettings.get_setting("application/config/version", "0.3.0")
 
 
 func _on_play() -> void:
@@ -59,6 +65,14 @@ func _on_play() -> void:
 
 func _on_settings() -> void:
         GameManager.goto("res://scenes/Settings.tscn")
+
+
+func _on_garage() -> void:
+        GameManager.goto("res://scenes/Garage.tscn")
+
+
+func _on_credits() -> void:
+        GameManager.goto("res://scenes/Credits.tscn")
 
 
 func _on_quit() -> void:

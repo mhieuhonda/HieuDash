@@ -39,7 +39,16 @@ func _on_body_entered(body: Node) -> void:
                 _collected = true
                 emit_signal("collected")
                 GameManager.add_coin()
-                if collect_sfx and GameManager.sfx_enabled:
+                if collect_sfx and GameManager.sfx_enabled and collect_sfx.stream:
+                        # FIX v0.3: Reparent sfx len current_scene truoc khi free Coin,
+                        # de sound khong bi cut off khi Coin queue_free.
+                        var tree := get_tree()
+                        if tree and tree.current_scene:
+                                var sfx_global_pos := collect_sfx.global_position
+                                collect_sfx.reparent(tree.current_scene)
+                                collect_sfx.global_position = sfx_global_pos
+                                # Tu dong free sfx sau khi play xong.
+                                collect_sfx.finished.connect(collect_sfx.queue_free)
                         collect_sfx.play()
                 var tw := create_tween()
                 tw.set_parallel(true)

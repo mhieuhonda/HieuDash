@@ -5,6 +5,124 @@ All notable changes to **Hieu Dash** will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-08-05
+
+### Added — Player customization (port from GDPS-Editor-22)
+- **Garage scene** — central hub for player customization with live Player preview
+- **ColoursPalette popup** — 106-color picker with Color 1 / Color 2 / Glow toggle (port from `ColoursPalette.cpp`)
+- **AdvancedIconSelect popup** — 5 icon shapes: Cube, Circle, Triangle, Diamond, Hexagon (port from `AdvancedIconSelect.cpp`)
+- **PlayerProfile autoload** — persistent profile (color_1_id, color_2_id, glow_enabled, icon_type, swing_id, jetpack_id) saved to `user://hieudash_profile.cfg`
+- **ColorPalette static class** — 106-color palette ported from `GameManager_colorForIdx_hook`
+- Player visual: dynamic polygon shape (cube/circle/triangle/diamond/hexagon) + glow effect on outline
+
+### Added — Speedrun Timer (port from GDPS-Editor-22 SpeedrunTimerHook)
+- **SpeedrunTimer** HUD label at top-left showing `MM:SS.mmm`
+- White color = valid run, red color = invalid (practice mode, paused, or died)
+- Toggle visibility and opacity via Settings
+- Auto-stops on death/win
+
+### Added — Practice Mode (port from GDPS-Editor-22 playtest hooks)
+- Toggle with **P key** or Pause overlay page 2
+- Auto-checkpoint every 400px when grounded (max 30 checkpoints)
+- On death in practice → respawn at last checkpoint (no Game Over)
+- Marks speedrun timer as invalid
+- Visual "PRACTICE MODE" label in HUD
+
+### Added — Advanced Settings (port from GDPS-Editor-22 advancedOptionsLayer)
+- **AdvancedSettings scene** with scrollable list of 20+ toggles in 3 sections:
+  - Object Properties: smooth_fix, ignore_damage (debug immortal), draw_trigger_boxes, debug_draw, effect_lines, toggle_editor_grid, toggle_effect_duration, has_color, toggle_editor_bg, hide_grid
+  - Gameplay: playtest_enabled, auto_checkpoint, show_level_info, disable_linked_objects, show_editor_shortcut, high_capacity_mode, layer_locking, record_order
+  - Display: timer_enabled, hide_pause_button, alt_touch_layout, follow_player
+- Opacity sliders: platform_opacity, timer_opacity, speed_multiplier, max_undo
+- Reset to defaults button
+- **SettingsSingleton autoload** — ConfigFile-based persistence (`user://hieudash_settings.cfg`)
+
+### Added — Pause Overlay Page 2 (port from GDPS-Editor-22 PauseLayerExt)
+- **Page navigation** via `<` and `>` arrow buttons
+- Page 2 contents: Timer Opacity slider, Platform Opacity slider, Timer toggle, Practice toggle
+- All changes save instantly to SettingsSingleton
+
+### Added — Credits scene (offline-only adaptation)
+- Credits screen showing project info, gameplay features, asset sources, tooling, acknowledgements
+- Replaces online URL buttons with descriptive text (per user request: no login/online)
+- Accessible from Main Menu
+
+### Added — Audio variations (bientatsu from originals)
+- **jump_alt.wav** — +12% pitch, echo effect (variation of jump.wav)
+- **coin_alt.wav** — +8% pitch, tremolo effect (variation of coin.wav)
+- **death_alt.wav** — -8% pitch, echo effect (variation of death.wav)
+- **land_alt.wav** — +5% pitch, reverb effect (variation of land.wav)
+- **bump_alt.wav** — -10% pitch, vibrato effect (variation of bump.wav)
+- **bgm_alt.wav** — +8% speed, compressor (variation of bgm.wav)
+- Player jump SFX now uses random pitch variation (0.92x or 1.0x) for liveliness
+
+### Added — New icon assets (bientatsu from originals)
+- **icon_cube.png, icon_circle.png, icon_triangle.png, icon_diamond.png, icon_hexagon.png** — 5 player icon variants (256x256 each, with glow)
+- **icon_192.png, icon_144.png, icon_72.png** — regenerated combined icons (5 shapes arranged in cross pattern)
+- **adaptive_foreground.png** — neon cube with glow halo (regenerated)
+- **adaptive_background.png** — neon gradient (regenerated)
+- All icons use deterministic procedural generation (seed=2026)
+
+### Added — Input
+- **practice_toggle** input action (P key) for toggling practice mode during gameplay
+
+### Fixed — Critical bugs (P0)
+- **project.godot**: `PoolStringArray("4.7", "Mobile")` → `PackedStringArray(...)` (Godot 3 → Godot 4 syntax)
+- **Player.gd**: `PhysicsRayQueryParameters2D.create(from, to, mask, self)` 4th param is `Array[RID]`, not Node. Now uses `q.exclude = [get_rid()]`
+- **Game.gd**: HUD/pause overlay now has `process_mode = PROCESS_MODE_ALWAYS` so pause UI works when `get_tree().paused = true`
+- **MovingPlatform.gd + .tscn**: `StaticBody2D` → `AnimatableBody2D` with `sync_to_physics = true` so player rides the platform
+- **Block.gd**: Now actually reads `stack_height` metadata and resizes body/top/outline/collision/side_hazard shapes. Previously h=2 blocks rendered as h=1 with floating collision gap
+
+### Fixed — High-priority bugs (P1)
+- **Coin.gd**: `collect_sfx` is now reparented to current_scene before `queue_free`, preventing audio cut-off
+- **Player.gd**: Rotation now applied only to `visual_root` (Body Polygon2D), not the CharacterBody2D itself. Previously collision shape rotated causing edge-clipping and raycast drift
+- **Laser.gd**: When laser turns ON while player is inside the beam, `_check_overlapping_players()` catches it (body_entered alone misses existing overlaps)
+- **Bouncer.gd**: Bounce only triggers when player lands from above (`player_y < bouncer_top_y`). Previously any contact direction triggered bounce
+
+### Fixed — Medium-priority bugs (P2)
+- **Crusher.gd**: Rest-phase lerp is now delta-corrected (`1.0 - exp(-delta * 12.0)`) instead of framerate-dependent `0.2`
+- **Player.gd**: Snap lerp is now delta-corrected (`1.0 - exp(-delta * 18.0)`)
+- **SpikeStrip.gd**: Collision width now matches visual: `(count-1)*spike_width + spike_width*0.8` (was `count*spike_width` causing 44px over-shoot)
+- **Pit.gd**: Visual fill polygon now spans `y = -60` to `y = 800` (full screen height). Previously was `0` to `400`, leaving bottom of screen unfilled
+- **Pit.gd, Laser.gd, SpikeStrip.gd**: `RectangleShape2D` is now reused via cached `_rect_shape` field instead of being recreated each rebuild (resource leak fix)
+
+### Fixed — Low-priority bugs (P3)
+- **MainMenu.gd**: `quit_button.visible = false` now properly null-checked (was inconsistent with other buttons)
+- **MainMenu.gd**: Removed redundant `GameManager.load_progress()` call (autoload already loads in `_ready()`)
+- **export_presets.cfg**: Android version code bumped to 3, version name to 0.3.0
+
+### Changed
+- Version bumped to **0.3.0**
+- Project autoloads now include `SettingsSingleton` and `PlayerProfile` alongside `GameManager`
+- Main Menu: added **Garage** and **Credits** buttons (panel resized 580→660 height)
+- Settings screen: added **Advanced Settings** button (panel resized 540→620 height)
+- HUD: added **SpeedrunTimer** label (top-left under TopBar) and **PracticeLabel**
+- Player scene: `Body` Polygon2D now has `InnerHighlight` child for new icon shapes
+- Block scene: `Outline` is now directly accessible to script (`$Outline` instead of `$Body/Outline`)
+- Block scene: `SideHazard/Shape` CollisionShape2D now properly referenced for resizing
+- Game pause overlay: now has 2 pages with `<`/`>` navigation buttons
+
+### Removed
+- Removed deprecated `window/stretch/scale=1.0` from project.godot (not used in Godot 4)
+- Removed redundant `camera.position_smoothing_*` setup in Game.gd (already configured in .tscn)
+
+### Port summary (from GDPS-Editor-22)
+The following features from the GDPS-Editor-22 mod (C++/NDK) have been ported to GDScript for Godot 4.7:
+- ✅ ColoursPalette (offline portion) — 106-color picker + glow toggle
+- ✅ AdvancedIconSelect (offline portion) — 5 icon shapes (replaces swing/jetpack memory patches)
+- ✅ ObjectOptionsLayer → AdvancedSettings (10 object property toggles)
+- ✅ advancedOptionsLayer → AdvancedSettings (8 advanced toggles)
+- ✅ SpeedrunTimerHook → SpeedrunTimer (white/red invalid logic)
+- ✅ PauseLayerExt → Pause Overlay Page 2 (sliders + toggles)
+- ✅ GDPSManager settings → SettingsSingleton (ConfigFile-based, offline-only)
+- ✅ GameManager_colorForIdx_hook → ColorPalette static class
+- ✅ CreditsLayer → Credits scene (offline-only, no URL buttons)
+- ✅ onPlaytestExt → Practice Mode with auto-checkpoint
+- ✅ GJGarageLayer hooks → Garage scene (live player preview)
+- ❌ AccountLayerExt, AccountRegisterLayerExt, MultiplayerLayerExt — skipped (online/login)
+- ❌ ToolsLayer (6 URL buttons), CreditsLayer URL buttons — skipped (online)
+- ❌ Memory patches (F15) — N/A in Godot (no artificial limits)
+
 ## [0.2.0] - 2026-08-05
 
 ### Added — New obstacle types (7 new)

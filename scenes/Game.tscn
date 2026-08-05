@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bgame1q2q3"]
+[gd_scene load_steps=12 format=3 uid="uid://bgame1q2q3"]
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_game"]
 [ext_resource type="PackedScene" uid="uid://b7p3hkxh2q1" path="res://scenes/Player.tscn" id="2_player"]
+[ext_resource type="Script" path="res://scripts/SpeedrunTimer.gd" id="3_timer"]
 
 [sub_resource type="RectangleShape2D" id="rect_floor"]
 size = Vector2(200000, 200)
@@ -80,6 +81,34 @@ corner_radius_top_left = 18
 corner_radius_top_right = 18
 corner_radius_bottom_right = 18
 corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="style_panel_pause2"]
+bg_color = Color(0.08, 0.1, 0.18, 0.92)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.85, 0.32, 0.95, 0.7)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="style_btn_pause_nav"]
+bg_color = Color(0.18, 0.22, 0.35, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.05, 0.07, 0.15, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 16.0
+content_margin_top = 8.0
+content_margin_right = 16.0
+content_margin_bottom = 8.0
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_game")
@@ -250,6 +279,32 @@ theme_override_styles/normal = SubResource("style_btn_primary")
 theme_override_styles/hover = SubResource("style_btn_primary")
 theme_override_styles/pressed = SubResource("style_btn_primary")
 
+[node name="SpeedrunTimer" type="Label" parent="HUD"]
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 200.0
+offset_bottom = 96.0
+text = "00:00.000"
+horizontal_alignment = 0
+vertical_alignment = 1
+script = ExtResource("3_timer")
+
+[node name="PracticeLabel" type="Label" parent="HUD"]
+offset_left = 16.0
+offset_top = 96.0
+offset_right = 240.0
+offset_bottom = 124.0
+text = "PRACTICE MODE"
+horizontal_alignment = 0
+vertical_alignment = 1
+visible = false
+theme_override_colors/font_color = Color(1, 0.18, 0.32, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 18
+
 [node name="PauseOverlay" type="Control" parent="HUD"]
 visible = false
 anchors_preset = 15
@@ -258,6 +313,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 0
+process_mode = 1
 
 [node name="Dim" type="ColorRect" parent="HUD/PauseOverlay"]
 anchors_preset = 15
@@ -343,6 +399,154 @@ theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("style_btn_secondary")
 theme_override_styles/hover = SubResource("style_btn_secondary")
 theme_override_styles/pressed = SubResource("style_btn_secondary")
+
+[node name="NextPageButton" type="Button" parent="HUD/PauseOverlay/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 120.0
+offset_top = 304.0
+offset_right = 200.0
+offset_bottom = 348.0
+grow_horizontal = 2
+text = ">"
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("style_btn_pause_nav")
+theme_override_styles/hover = SubResource("style_btn_pause_nav")
+theme_override_styles/pressed = SubResource("style_btn_pause_nav")
+
+[node name="Panel2" type="Panel" parent="HUD/PauseOverlay"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("style_panel_pause2")
+
+[node name="Title2" type="Label" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 24.0
+offset_right = 160.0
+offset_bottom = 60.0
+grow_horizontal = 2
+text = "OTHER SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.85, 0.32, 0.95, 1)
+theme_override_font_sizes/font_size = 28
+
+[node name="TimerLabel" type="Label" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 80.0
+offset_right = 0.0
+offset_bottom = 110.0
+grow_horizontal = 2
+text = "Timer Opacity"
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="TimerOpacitySlider" type="HSlider" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 20.0
+offset_top = 84.0
+offset_right = 170.0
+offset_bottom = 108.0
+grow_horizontal = 2
+min_value = 0.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="PlatformLabel" type="Label" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -160.0
+offset_top = 130.0
+offset_right = 0.0
+offset_bottom = 160.0
+grow_horizontal = 2
+text = "Platform Opacity"
+horizontal_alignment = 2
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 14
+
+[node name="PlatformOpacitySlider" type="HSlider" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 20.0
+offset_top = 134.0
+offset_right = 170.0
+offset_bottom = 158.0
+grow_horizontal = 2
+min_value = 0.0
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="TimerToggle" type="CheckButton" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 180.0
+offset_right = 100.0
+offset_bottom = 220.0
+grow_horizontal = 2
+text = "Timer"
+button_pressed = true
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="PracticeToggle" type="CheckButton" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 224.0
+offset_right = 100.0
+offset_bottom = 264.0
+grow_horizontal = 2
+text = "Practice"
+button_pressed = false
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 16
+
+[node name="PrevPageButton" type="Button" parent="HUD/PauseOverlay/Panel2"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 304.0
+offset_right = -120.0
+offset_bottom = 348.0
+grow_horizontal = 2
+text = "<"
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("style_btn_pause_nav")
+theme_override_styles/hover = SubResource("style_btn_pause_nav")
+theme_override_styles/pressed = SubResource("style_btn_pause_nav")
 
 [node name="GameOverScreen" type="CanvasLayer" parent="."]
 visible = false

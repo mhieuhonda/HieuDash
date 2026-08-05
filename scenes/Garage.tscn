@@ -1,0 +1,159 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgarage1"]
+
+[ext_resource type="Script" path="res://scripts/Garage.gd" id="1_garage"]
+[ext_resource type="PackedScene" uid="uid://b7p3hkxh2q1" path="res://scenes/Player.tscn" id="2_player"]
+
+[sub_resource type="StyleBoxFlat" id="style_panel"]
+bg_color = Color(0.08, 0.1, 0.18, 0.92)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.85, 0.32, 0.95, 0.7)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[sub_resource type="StyleBoxFlat" id="style_btn_primary"]
+bg_color = Color(0.25, 0.85, 1, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.05, 0.07, 0.15, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 24.0
+content_margin_top = 12.0
+content_margin_right = 24.0
+content_margin_bottom = 12.0
+
+[sub_resource type="StyleBoxFlat" id="style_btn_secondary"]
+bg_color = Color(0.85, 0.32, 0.95, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.05, 0.07, 0.15, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+content_margin_left = 24.0
+content_margin_top = 12.0
+content_margin_right = 24.0
+content_margin_bottom = 12.0
+
+[node name="Garage" type="Control"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+script = ExtResource("1_garage")
+
+[node name="Bg" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.1, 0.1, 0.16, 1)
+
+[node name="Center" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Center"]
+custom_minimum_size = Vector2(680, 560)
+theme_override_styles/panel = SubResource("style_panel")
+
+[node name="TitleLabel" type="Label" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 24.0
+offset_right = 200.0
+offset_bottom = 70.0
+grow_horizontal = 2
+text = "GARAGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.85, 0.32, 0.95, 1)
+theme_override_font_sizes/font_size = 36
+
+[node name="PlayerPreview" parent="Center/Panel" instance=ExtResource("2_player")]
+position = Vector2(340, 220)
+run_speed = 0.0
+
+[node name="InfoLabel" type="Label" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 320.0
+offset_right = 200.0
+offset_bottom = 380.0
+grow_horizontal = 2
+text = "Icon: Cube
+Color 1: #0
+Glow: OFF"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(1, 1, 1, 0.85)
+theme_override_font_sizes/font_size = 16
+
+[node name="ColorsButton" type="Button" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
+offset_top = 410.0
+offset_right = -20.0
+offset_bottom = 460.0
+grow_horizontal = 2
+text = "Colors"
+theme_override_colors/font_color = Color(0.05, 0.07, 0.15, 1)
+theme_override_colors/font_hover_color = Color(0.05, 0.07, 0.15, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("style_btn_primary")
+theme_override_styles/hover = SubResource("style_btn_primary")
+theme_override_styles/pressed = SubResource("style_btn_primary")
+
+[node name="IconButton" type="Button" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 20.0
+offset_top = 410.0
+offset_right = 240.0
+offset_bottom = 460.0
+grow_horizontal = 2
+text = "Icon"
+theme_override_colors/font_color = Color(0.05, 0.07, 0.15, 1)
+theme_override_colors/font_hover_color = Color(0.05, 0.07, 0.15, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("style_btn_secondary")
+theme_override_styles/hover = SubResource("style_btn_secondary")
+theme_override_styles/pressed = SubResource("style_btn_secondary")
+
+[node name="BackButton" type="Button" parent="Center/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -100.0
+offset_top = 480.0
+offset_right = 100.0
+offset_bottom = 528.0
+grow_horizontal = 2
+text = "Back"
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 20

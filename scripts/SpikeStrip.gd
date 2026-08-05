@@ -13,55 +13,60 @@ signal hit_player
 @onready var collision: CollisionShape2D = $Collision
 
 var _count: int = 4
+var _rect_shape: RectangleShape2D  # reuse, khong tao moi moi lan rebuild
 
 
 func _ready() -> void:
-	add_to_group("hazard")
-	body_entered.connect(_on_body_entered)
-	_rebuild()
+        add_to_group("hazard")
+        body_entered.connect(_on_body_entered)
+        _rebuild()
 
 
 func set_count(n: int) -> void:
-	_count = clamp(n, 2, 8)
-	_rebuild()
+        _count = clamp(n, 2, 8)
+        _rebuild()
 
 
 func _rebuild() -> void:
-	# Xoa spike con cu (neu co).
-	if container:
-		for c in container.get_children():
-			c.queue_free()
-	# Tao spike con (Polygon2D don gian, khong can collision rieng vi
-	# SpikeStrip dung 1 collision hinh chu nhat dai).
-		for i in _count:
-			var sx := (i - (_count - 1) * 0.5) * spike_width
-			var poly := Polygon2D.new()
-			poly.polygon = PackedVector2Array(
-				sx - spike_width * 0.4, 20,
-				sx + spike_width * 0.4, 20,
-				sx, -22
-			)
-			poly.color = spike_color
-			container.add_child(poly)
-			var outline := Polygon2D.new()
-			outline.polygon = PackedVector2Array(
-				sx - spike_width * 0.45, 22,
-				sx + spike_width * 0.45, 22,
-				sx, -26
-			)
-			outline.color = outline_color
-			outline.z_index = -1
-			container.add_child(outline)
-	# Cap nhat collision chinh.
-	if collision:
-		var rect := RectangleShape2D.new()
-		rect.size = Vector2(_count * spike_width, 40)
-		collision.shape = rect
-		collision.position = Vector2(0, 10)
+        # Xoa spike con cu (neu co).
+        if container:
+                for c in container.get_children():
+                        c.queue_free()
+                # Tao spike con (Polygon2D don gian, khong can collision rieng vi
+                # SpikeStrip dung 1 collision hinh chu nhat dai).
+                for i in _count:
+                        var sx := (i - (_count - 1) * 0.5) * spike_width
+                        var poly := Polygon2D.new()
+                        poly.polygon = PackedVector2Array(
+                                sx - spike_width * 0.4, 20,
+                                sx + spike_width * 0.4, 20,
+                                sx, -22
+                        )
+                        poly.color = spike_color
+                        container.add_child(poly)
+                        var outline := Polygon2D.new()
+                        outline.polygon = PackedVector2Array(
+                                sx - spike_width * 0.45, 22,
+                                sx + spike_width * 0.45, 22,
+                                sx, -26
+                        )
+                        outline.color = outline_color
+                        outline.z_index = -1
+                        container.add_child(outline)
+        # Cap nhat collision chinh.
+        # FIX v0.3: Collision width chinh xac theo visual spikes.
+        # Visual width = (count-1)*spike_width + spike_width*0.8 (moi spike rong 0.8*spike_width)
+        if collision:
+                if _rect_shape == null:
+                        _rect_shape = RectangleShape2D.new()
+                var visual_width := float(_count - 1) * spike_width + spike_width * 0.8
+                _rect_shape.size = Vector2(visual_width, 40)
+                collision.shape = _rect_shape
+                collision.position = Vector2(0, 10)
 
 
 func _on_body_entered(body: Node) -> void:
-	if body.is_in_group("player"):
-		emit_signal("hit_player")
-		if body.has_method("die"):
-			body.die()
+        if body.is_in_group("player"):
+                emit_signal("hit_player")
+                if body.has_method("die"):
+                        body.die()

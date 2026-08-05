@@ -4,6 +4,7 @@ extends Node2D
 ##   - Cap nhat HUD, progress, score
 ##   - Xu ly player death / win
 ##   - Restart level
+##   - Speedrun timer + practice mode (port tu GDPS-Editor-22)
 class_name Game
 
 @export var level_length: float = 8000.0
@@ -23,6 +24,8 @@ class_name Game
 @onready var coins_label: Label = $HUD/TopBar/CoinsLabel
 @onready var score_label: Label = $HUD/TopBar/ScoreLabel
 @onready var pause_button: Button = $HUD/TopBar/PauseButton
+@onready var speedrun_timer: SpeedrunTimer = $HUD/SpeedrunTimer
+@onready var practice_label: Label = $HUD/PracticeLabel
 @onready var bg_layer_far: ParallaxLayer = $ParallaxBG/Far
 @onready var bg_layer_mid: ParallaxLayer = $ParallaxBG/Mid
 @onready var bg_layer_near: ParallaxLayer = $ParallaxBG/Near
@@ -32,6 +35,11 @@ var level_end_x: float = 8000.0
 var is_paused: bool = false
 var is_finished: bool = false
 var level_seed: int = 1337  # duoc tinh tu GameManager.selected_level tai _ready
+
+# Practice mode state
+var practice_mode: bool = false
+var checkpoints: Array[Vector2] = []
+const MAX_CHECKPOINTS := 30
 
 const START_X := 120.0
 const START_Y := 480.0
@@ -72,6 +80,18 @@ func _ready() -> void:
         is_paused = false
         get_tree().paused = false
 
+        # Practice mode init from settings.
+        practice_mode = SettingsSingleton.practice_mode and SettingsSingleton.playtest_enabled
+        checkpoints.clear()
+        _update_practice_label()
+
+        # FIX v0.3: HUD process_mode = ALWAYS de pause UI van hoat dong khi paused.
+        hud.process_mode = Node.PROCESS_MODE_ALWAYS
+        if game_over_screen:
+                game_over_screen.process_mode = Node.PROCESS_MODE_ALWAYS
+        if level_complete_screen:
+                level_complete_screen.process_mode = Node.PROCESS_MODE_ALWAYS
+
         # Sinh level
         level_data = LevelGenerator.generate(level_seed, level_length, difficulty)
         level_end_x = float(level_data.get("length", level_length))
@@ -85,8 +105,6 @@ func _ready() -> void:
                 player.died.connect(_on_player_died)
 
         # Camera follow player
-        camera.position_smoothing_enabled = true
-        camera.position_smoothing_speed = 8.0
         camera.make_current()
 
         # Hook HUD signals
@@ -103,6 +121,18 @@ func _ready() -> void:
         # Pause button
         if pause_button:
                 pause_button.pressed.connect(_toggle_pause)
+                # An pause button neu setting hide_pause_button = true.
+                if SettingsSingleton.hide_pause_button:
+                        pause_button.visible = false
+
+        # Speedrun timer start
+        if speedrun_timer:
+                if SettingsSingleton.timer_enabled:
+                        speedrun_timer.start()
+                        if practice_mode:
+                                speedrun_timer.mark_invalid()
+                else:
+                        speedrun_timer.visible = false
 
         # Music
         _load_bgm()
@@ -152,6 +182,18 @@ func _process(_delta: float) -> void:
         # Win fallback: neu vuot qua cuoi level ma chua hit goal.
         if player.global_position.x >= level_end_x and not is_finished:
                 _on_player_win()
+        # Auto checkpoint trong practice mode.
+        if practice_mode and SettingsSingleton.auto_checkpoint:
+                _maybe_auto_checkpoint()
+
+
+func _maybe_auto_checkpoint() -> void:
+        # Them checkpoint moi 400px (practice mode).
+        var last_x := checkpoints[-1].x if checkpoints.size() > 0 else START_X
+        if player.global_position.x - last_x > 400.0 and player.is_grounded and not player.is_dead:
+                checkpoints.append(player.global_position)
+                if checkpoints.size() > MAX_CHECKPOINTS:
+                        checkpoints.pop_front()
 
 
 func _spawn_entities(data: Dictionary) -> void:
@@ -231,6 +273,14 @@ func _on_player_died() -> void:
         # Hien game over sau delay nho de xem particle
         if is_finished:
                 return
+        # FIX v0.3: Neu ignore_damage = true, ignore death.
+        if SettingsSingleton.ignore_damage:
+                # Respawn player tai checkpoint gan nhat.
+                _respawn_at_checkpoint()
+                return
+        # Stop speedrun timer.
+        if speedrun_timer:
+                speedrun_timer.stop()
         is_finished = true
         if bg_music:
                 bg_music.stop()
@@ -249,10 +299,29 @@ func _on_player_died() -> void:
                 go_coins.text = "Coins: %d" % GameManager.current_coins
 
 
+func _respawn_at_checkpoint() -> void:
+        # Respawn player tai checkpoint gan nhat (practice mode hoac ignore_damage).
+        if checkpoints.size() > 0:
+                player.global_position = checkpoints[-1]
+        else:
+                player.global_position = Vector2(START_X, START_Y)
+        # Reset player state.
+        player.is_dead = false
+        player.velocity = Vector2.ZERO
+        if player.collision:
+                player.collision.set_deferred("disabled", false)
+        if player.sprite:
+                player.sprite.visible = true
+        if player.outline:
+                player.outline.visible = true
+
+
 func _on_player_win() -> void:
         if is_finished:
                 return
         is_finished = true
+        if speedrun_timer:
+                speedrun_timer.stop()
         if bg_music:
                 bg_music.stop()
         # Add completion bonus + register completion
@@ -278,6 +347,9 @@ func _toggle_pause() -> void:
                 pause_overlay.visible = is_paused
         if bg_music:
                 bg_music.stream_paused = is_paused
+        # FIX v0.3: Pause danh dau speedrun timer invalid (lan thu nay khong hop le).
+        if is_paused and speedrun_timer and not is_finished:
+                speedrun_timer.mark_invalid()
         # Hook pause overlay buttons (connect 1 lan duy nhat)
         if is_paused and pause_overlay:
                 var resume_btn := pause_overlay.get_node_or_null("ResumeButton")
@@ -289,6 +361,34 @@ func _toggle_pause() -> void:
                 var quit_btn := pause_overlay.get_node_or_null("MenuButton")
                 if quit_btn and not quit_btn.pressed.is_connected(_on_back_to_menu):
                         quit_btn.pressed.connect(_on_back_to_menu)
+                # Page 2 (extra settings) - port tu GDPS-Editor-22 PauseLayer 2 pages.
+                var next_page_btn := pause_overlay.get_node_or_null("Panel/NextPageButton")
+                if next_page_btn and not next_page_btn.pressed.is_connected(_toggle_pause_page):
+                        next_page_btn.pressed.connect(_toggle_pause_page)
+                var prev_page_btn := pause_overlay.get_node_or_null("Panel2/PrevPageButton")
+                if prev_page_btn and not prev_page_btn.pressed.is_connected(_toggle_pause_page):
+                        prev_page_btn.pressed.connect(_toggle_pause_page)
+
+
+func _toggle_pause_page() -> void:
+        # Switch giua 2 page cua pause overlay.
+        var pause_overlay := hud.get_node_or_null("PauseOverlay")
+        if not pause_overlay:
+                return
+        var page1 := pause_overlay.get_node_or_null("Panel")
+        var page2 := pause_overlay.get_node_or_null("Panel2")
+        if page1 and page2:
+                page1.visible = not page1.visible
+                page2.visible = not page2.visible
+
+
+func _update_practice_label() -> void:
+        if practice_label:
+                if practice_mode:
+                        practice_label.text = "PRACTICE MODE"
+                        practice_label.visible = true
+                else:
+                        practice_label.visible = false
 
 
 func _on_score_changed(score: int) -> void:
@@ -322,3 +422,12 @@ func _on_next_level() -> void:
 func _unhandled_input(event: InputEvent) -> void:
         if event.is_action_pressed("ui_cancel"):
                 _toggle_pause()
+        # Practice mode toggle (P key).
+        if event.is_action_pressed("practice_toggle") and SettingsSingleton.playtest_enabled:
+                practice_mode = not practice_mode
+                SettingsSingleton.practice_mode = practice_mode
+                SettingsSingleton.save_settings()
+                _update_practice_label()
+                if speedrun_timer and practice_mode:
+                        speedrun_timer.mark_invalid()
+                get_viewport().set_input_as_handled()
