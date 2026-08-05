@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelSearchLayer::LevelSearchLayer() {
+LevelSearchLayer::LevelSearchLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -15,28 +15,34 @@ void LevelSearchLayer::checkTime(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSearchLayer::create() {
+LevelSearchLayer* LevelSearchLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelSearchLayer::getDiffKey(int) {
+int LevelSearchLayer::getDiffKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSearchLayer::getLevelLenKey() {
+int LevelSearchLayer::getLevelLenKey() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSearchLayer::getSearchDiffKey() {
+int LevelSearchLayer::getSearchDiffKey() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSearchLayer::getTimeKey(int) {
+int LevelSearchLayer::getTimeKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSearchLayer::init() {
+bool LevelSearchLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelSearchLayer::keyBackClicked() {
@@ -71,8 +77,9 @@ void LevelSearchLayer::onTrending() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSearchLayer::scene() {
+cocos2d::CCScene* LevelSearchLayer::scene() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LevelSearchLayer::textChanged(CCTextInputNode*) {

@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCCircleAlert::CCCircleAlert() {
+CCCircleAlert::CCCircleAlert() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCircleAlert::create(float, float, float) {
+CCCircleAlert* CCCircleAlert::create(float, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void CCCircleAlert::init(float, float, float) {
+bool CCCircleAlert::init(float, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCCircleAlert::~CCCircleAlert() {

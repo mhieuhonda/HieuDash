@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void MyLevelsLayer::MyLevelsLayer() {
+MyLevelsLayer::MyLevelsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MyLevelsLayer::create() {
+MyLevelsLayer* MyLevelsLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void MyLevelsLayer::init() {
+bool MyLevelsLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void MyLevelsLayer::keyBackClicked() {
@@ -27,8 +29,9 @@ void MyLevelsLayer::onNew() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MyLevelsLayer::scene() {
+cocos2d::CCScene* MyLevelsLayer::scene() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void MyLevelsLayer::setupLevelBrowser() {

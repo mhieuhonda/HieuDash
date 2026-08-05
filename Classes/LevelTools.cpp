@@ -11,24 +11,29 @@ void LevelTools::fbURLForArtist(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelTools::getAudioBPM(int) {
+int LevelTools::getAudioBPM(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelTools::getAudioFileName(int) {
+int LevelTools::getAudioFileName(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelTools::getAudioString(int) {
+int LevelTools::getAudioString(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelTools::getAudioTitle(int) {
+int LevelTools::getAudioTitle(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelTools::getLevel(int) {
+GJGameLevel* LevelTools::getLevel(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LevelTools::nameForArtist(int) {

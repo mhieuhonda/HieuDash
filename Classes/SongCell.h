@@ -1,21 +1,22 @@
-#ifndef _SONGCELL_H_
-#define _SONGCELL_H_
+#ifndef HIEUDASH_SONGCELL_H_
+#define HIEUDASH_SONGCELL_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class SongCell {
+class SongCell : public cocos2d::CCNode {
 public:
     SongCell(char const*, float, float);
-    draw();
-    init();
-    loadFromObject(SongObject*);
-    onClick();
-    updateBGColor(int);
+    void draw();
+    bool init();
+    void loadFromObject(SongObject*);
+    void onClick();
+    void updateBGColor(int);
     ~SongCell();
 };
 
-#endif // _SONGCELL_H_
+#endif // HIEUDASH_SONGCELL_H_

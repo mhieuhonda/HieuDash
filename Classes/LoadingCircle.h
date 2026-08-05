@@ -1,31 +1,32 @@
-#ifndef _LOADINGCIRCLE_H_
-#define _LOADINGCIRCLE_H_
+#ifndef HIEUDASH_LOADINGCIRCLE_H_
+#define HIEUDASH_LOADINGCIRCLE_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class LoadingCircle {
+class LoadingCircle : public cocos2d::CCLayer {
 public:
     LoadingCircle();
-    ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    create();
-    draw();
-    fadeAndRemove();
-    getCircle();
-    getDarkOverlay();
-    getTargetScene();
-    init();
-    registerWithTouchDispatcher();
-    setDarkOverlay(bool);
-    setTargetScene(cocos2d::CCNode*);
-    show();
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    LoadingCircle* create();
+    void draw();
+    void fadeAndRemove();
+    int getCircle();
+    int getDarkOverlay();
+    int getTargetScene();
+    bool init();
+    void registerWithTouchDispatcher();
+    void setDarkOverlay(bool);
+    void setTargetScene(cocos2d::CCNode*);
+    void show();
     ~LoadingCircle();
 };
 
-#endif // _LOADINGCIRCLE_H_
+#endif // HIEUDASH_LOADINGCIRCLE_H_

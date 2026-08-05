@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void AchievementNotifier::AchievementNotifier() {
+AchievementNotifier::AchievementNotifier() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,16 +11,18 @@ void AchievementNotifier::achievementDisplayFinished() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementNotifier::init() {
+bool AchievementNotifier::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void AchievementNotifier::notifyAchievement(char const*, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementNotifier::sharedState() {
+AchievementNotifier* AchievementNotifier::sharedState() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void AchievementNotifier::showNextAchievement() {

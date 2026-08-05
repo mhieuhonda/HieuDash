@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void StatsLayer::StatsLayer() {
+StatsLayer::StatsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void StatsLayer::create() {
+StatsLayer* StatsLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void StatsLayer::customSetup() {

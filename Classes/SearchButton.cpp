@@ -3,24 +3,28 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SearchButton::SearchButton() {
+SearchButton::SearchButton() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SearchButton::create(char const*, char const*, float, char const*) {
+SearchButton* SearchButton::create(char const*, char const*, float, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void SearchButton::getLabel() {
+int SearchButton::getLabel() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SearchButton::getSprite() {
+int SearchButton::getSprite() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SearchButton::init(char const*, char const*, float, char const*) {
+bool SearchButton::init(char const*, char const*, float, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void SearchButton::~SearchButton() {

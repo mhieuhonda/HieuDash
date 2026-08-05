@@ -1,22 +1,23 @@
-#ifndef _CCCONTENTMANAGER_H_
-#define _CCCONTENTMANAGER_H_
+#ifndef HIEUDASH_CCCONTENTMANAGER_H_
+#define HIEUDASH_CCCONTENTMANAGER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class CCContentManager {
+class CCContentManager : public cocos2d::CCObject {
 public:
     CCContentManager();
-    addCCDict(char const*);
-    addDict(char const*);
-    addPath(char const*);
-    clearCache();
-    init();
-    sharedManager();
+    void addCCDict(char const*);
+    void addDict(char const*);
+    void addPath(char const*);
+    void clearCache();
+    bool init();
+    CCContentManager* sharedManager();
     ~CCContentManager();
 };
 
-#endif // _CCCONTENTMANAGER_H_
+#endif // HIEUDASH_CCCONTENTMANAGER_H_

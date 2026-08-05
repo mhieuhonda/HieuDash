@@ -1,18 +1,19 @@
-#ifndef _ACHIEVEMENTSLAYER_H_
-#define _ACHIEVEMENTSLAYER_H_
+#ifndef HIEUDASH_ACHIEVEMENTSLAYER_H_
+#define HIEUDASH_ACHIEVEMENTSLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class AchievementsLayer {
+class AchievementsLayer : public cocos2d::CCLayer {
 public:
     AchievementsLayer();
-    create();
-    customSetup();
+    AchievementsLayer* create();
+    void customSetup();
     ~AchievementsLayer();
 };
 
-#endif // _ACHIEVEMENTSLAYER_H_
+#endif // HIEUDASH_ACHIEVEMENTSLAYER_H_

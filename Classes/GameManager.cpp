@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GameManager::GameManager() {
+GameManager::GameManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -15,16 +15,18 @@ void GameManager::applicationWillEnterForeground() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::claimItemsResponse(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameManager::claimItemsResponse(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::colorForIdx(int) {
+cocos2d::_ccColor3B GameManager::colorForIdx(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return cocos2d::ccc3(255, 255, 255);
 }
 
-void GameManager::colorKey(int, bool) {
+cocos2d::_ccColor3B GameManager::colorKey(int, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return cocos2d::ccc3(255, 255, 255);
 }
 
 void GameManager::completedAchievement(char const*) {
@@ -51,152 +53,187 @@ void GameManager::firstLoad() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::getAutoCheckpoints() {
+bool GameManager::getAutoCheckpoints() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getClickedEditor() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getClickedGarage() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getClickedName() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getDidRateGame() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getEditMode() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getFirstSetup() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getFxEnabled() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+bool GameManager::getGameCenterEnabled() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+LastGameScene GameManager::getLastScene() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::getClickedEditor() {
+int GameManager::getLevelKey(int, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getClickedGarage() {
+LevelSelectLayer* GameManager::getLevelSelectLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GameManager::getClickedName() {
+bool GameManager::getMainMenuActive() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getDidRateGame() {
+bool GameManager::getMusicEnabled() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getEditMode() {
+int GameManager::getNextLevel(int, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getFirstSetup() {
+PlayLayer* GameManager::getPlayLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GameManager::getFxEnabled() {
+int GameManager::getPlayerColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getGameCenterEnabled() {
+int GameManager::getPlayerColor2() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getLastScene() {
+int GameManager::getPlayerFrame() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getLevelKey(int, int) {
+std::string GameManager::getPlayerName() {
     // TODO: implement (recovered from binary, body unknown)
+    return "";
 }
 
-void GameManager::getLevelSelectLayer() {
+std::string GameManager::getPlayerUDID() {
     // TODO: implement (recovered from binary, body unknown)
+    return "";
 }
 
-void GameManager::getMainMenuActive() {
+PremiumPopup* GameManager::getPremiumPopup() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GameManager::getMusicEnabled() {
+GameRateDelegate* GameManager::getRateDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GameManager::getNextLevel(int, int) {
+int GameManager::getResultForLevel(int, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getPlayLayer() {
+bool GameManager::getReturnToSearch() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getPlayerColor() {
+bool GameManager::getShowBPMMarkers() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getPlayerColor2() {
+bool GameManager::getShowSongMarkers() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getPlayerFrame() {
+bool GameManager::getShowedEditorGuide() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getPlayerName() {
+bool GameManager::getShowedFirstTutorial() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getPlayerUDID() {
+bool GameManager::getWasHigh() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getPremiumPopup() {
+int GameManager::highestLevelForType(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getRateDelegate() {
+int GameManager::iconKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameManager::getResultForLevel(int, int) {
+bool GameManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getReturnToSearch() {
+bool GameManager::isColorUnlocked(int, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameManager::getShowBPMMarkers() {
+bool GameManager::isIconUnlocked(int) {
     // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::getShowSongMarkers() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::getShowedEditorGuide() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::getShowedFirstTutorial() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::getWasHigh() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::highestLevelForType(int) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::iconKey(int) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::init() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::isColorUnlocked(int, bool) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::isIconUnlocked(int) {
-    // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GameManager::itemPurchased(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::levelIsPremium(int, int) {
+bool GameManager::levelIsPremium(int, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GameManager::openEditorGuide() {
@@ -291,11 +328,11 @@ void GameManager::setPlayerFrame(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::setPlayerName(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameManager::setPlayerName(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::setPlayerUDID(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameManager::setPlayerUDID(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -335,12 +372,14 @@ void GameManager::setup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::sharedState() {
+GameManager* GameManager::sharedState() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GameManager::shouldShowTutorial(int) {
+bool GameManager::shouldShowTutorial(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GameManager::showInterstitial() {

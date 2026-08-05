@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void ObjectManager::ObjectManager() {
+ObjectManager::ObjectManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,16 +11,19 @@ void ObjectManager::animLoaded(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ObjectManager::getDefinition(char const*) {
+int ObjectManager::getDefinition(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void ObjectManager::getGlobalAnimCopy(char const*) {
+int ObjectManager::getGlobalAnimCopy(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void ObjectManager::init() {
+bool ObjectManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void ObjectManager::instance() {

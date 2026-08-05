@@ -1,31 +1,32 @@
-#ifndef _MOREGAMESMANAGER_H_
-#define _MOREGAMESMANAGER_H_
+#ifndef HIEUDASH_MOREGAMESMANAGER_H_
+#define HIEUDASH_MOREGAMESMANAGER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class MoreGamesManager {
+class MoreGamesManager : public cocos2d::CCObject {
 public:
     MoreGamesManager();
-    checkMoreGames();
-    dataLoaded(DS_Dictionary*);
-    encodeDataTo(DS_Dictionary*);
-    firstLoad();
-    getHasNewGames();
-    getMoreGamesList();
-    getMoreGamesString();
-    handleMoreGamesResponse(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    init();
-    onCheckMoreGamesCompleted(cocos2d::CCNode*, void*);
-    promoImageDownloaded(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    setHasNewGames(bool);
-    setMoreGamesString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    sharedState();
-    shouldCheckMoreGames();
+    void checkMoreGames();
+    void dataLoaded(DS_Dictionary*);
+    void encodeDataTo(DS_Dictionary*);
+    void firstLoad();
+    bool getHasNewGames();
+    int getMoreGamesList();
+    int getMoreGamesString();
+    void handleMoreGamesResponse(std::string);
+    bool init();
+    void onCheckMoreGamesCompleted(cocos2d::CCNode*, void*);
+    void promoImageDownloaded(std::string);
+    void setHasNewGames(bool);
+    void setMoreGamesString(std::string);
+    MoreGamesManager* sharedState();
+    bool shouldCheckMoreGames();
     ~MoreGamesManager();
 };
 
-#endif // _MOREGAMESMANAGER_H_
+#endif // HIEUDASH_MOREGAMESMANAGER_H_

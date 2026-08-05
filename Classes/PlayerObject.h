@@ -1,80 +1,81 @@
-#ifndef _PLAYEROBJECT_H_
-#define _PLAYEROBJECT_H_
+#ifndef HIEUDASH_PLAYEROBJECT_H_
+#define HIEUDASH_PLAYEROBJECT_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class PlayerObject {
+class PlayerObject : public cocos2d::CCNode {
 public:
     PlayerObject();
-    activateStreak();
-    checkSnapJumpToObject(GameObject*);
-    collidedWithObject(float, GameObject*);
-    create(int, cocos2d::CCLayer*);
-    deactivateParticle();
-    deactivateStreak();
-    flipGravity(bool);
-    flipMod();
-    getFlyMode();
-    getGameLayer();
-    getGravityFlipped();
-    getHasJumped();
-    getHasRingJumped();
-    getIsDead();
-    getIsLocked();
-    getLastGroundPos();
-    getLastP();
-    getOnGround();
-    getPortalObject();
-    getPortalP();
-    getRealPosition();
-    getTouchedRing();
-    gravityDown();
-    gravityUp();
-    hitGround(bool);
-    init(int, cocos2d::CCLayer*);
-    loadFromCheckpoint(CheckpointObject*);
-    lockPlayer();
-    logValues();
-    playerDestroyed();
-    playerIsFalling();
-    propellPlayer();
-    pushButton(PlayerButton);
-    releaseButton(PlayerButton);
-    removePendingCheckpoint();
-    resetObject();
-    resetStreak();
-    ringJump();
-    runRotateAction();
-    saveToCheckpoint(CheckpointObject*);
-    setColor(cocos2d::_ccColor3B const&);
-    setGameLayer(cocos2d::CCLayer*);
-    setLastP(cocos2d::CCPoint);
-    setOnGround(bool);
-    setOpacity(unsigned char);
-    setPortalObject(GameObject*);
-    setPortalP(cocos2d::CCPoint);
-    setSecondColor(cocos2d::_ccColor3B const&);
-    setTouchedRing(GameObject*);
-    spawnCircle();
-    spawnPortalCircle(cocos2d::_ccColor3B, float);
-    speedDown();
-    speedUp();
-    stopRotation();
-    toggleFlyMode(bool);
-    toggleGhostEffect(GhostType);
-    touchedObject(GameObject*);
-    tryPlaceCheckpoint();
-    update(float);
-    updateJump(float);
-    updatePlayerFrame(int);
-    updateShipRotation();
-    yStartDown();
-    yStartUp();
+    void activateStreak();
+    void checkSnapJumpToObject(GameObject*);
+    void collidedWithObject(float, GameObject*);
+    PlayerObject* create(int, cocos2d::CCLayer*);
+    void deactivateParticle();
+    void deactivateStreak();
+    void flipGravity(bool);
+    void flipMod();
+    int getFlyMode();
+    PlayLayer* getGameLayer();
+    int getGravityFlipped();
+    bool getHasJumped();
+    bool getHasRingJumped();
+    bool getIsDead();
+    bool getIsLocked();
+    int getLastGroundPos();
+    int getLastP();
+    int getOnGround();
+    int getPortalObject();
+    int getPortalP();
+    int getRealPosition();
+    int getTouchedRing();
+    void gravityDown();
+    void gravityUp();
+    void hitGround(bool);
+    bool init(int, cocos2d::CCLayer*);
+    void loadFromCheckpoint(CheckpointObject*);
+    void lockPlayer();
+    void logValues();
+    void playerDestroyed();
+    void playerIsFalling();
+    void propellPlayer();
+    void pushButton(PlayerButton);
+    void releaseButton(PlayerButton);
+    void removePendingCheckpoint();
+    void resetObject();
+    void resetStreak();
+    void ringJump();
+    void runRotateAction();
+    void saveToCheckpoint(CheckpointObject*);
+    void setColor(cocos2d::_ccColor3B const&);
+    void setGameLayer(cocos2d::CCLayer*);
+    void setLastP(cocos2d::CCPoint);
+    void setOnGround(bool);
+    void setOpacity(unsigned char);
+    void setPortalObject(GameObject*);
+    void setPortalP(cocos2d::CCPoint);
+    void setSecondColor(cocos2d::_ccColor3B const&);
+    void setTouchedRing(GameObject*);
+    void spawnCircle();
+    void spawnPortalCircle(cocos2d::_ccColor3B, float);
+    void speedDown();
+    void speedUp();
+    void stopRotation();
+    void toggleFlyMode(bool);
+    void toggleGhostEffect(GhostType);
+    void touchedObject(GameObject*);
+    void tryPlaceCheckpoint();
+    void update(float);
+    void updateJump(float);
+    void updatePlayerFrame(int);
+    void updateShipRotation();
+    void yStartDown();
+    void yStartUp();
     ~PlayerObject();
 };
 
-#endif // _PLAYEROBJECT_H_
+#endif // HIEUDASH_PLAYEROBJECT_H_

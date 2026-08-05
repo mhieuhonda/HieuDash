@@ -3,36 +3,42 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCLightStrip::CCLightStrip() {
+CCLightStrip::CCLightStrip() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCLightStrip::create(float, float, float, float, float) {
+CCLightStrip* CCLightStrip::create(float, float, float, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCLightStrip::draw() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCLightStrip::getColor() {
+int CCLightStrip::getColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCLightStrip::getHeight() {
+int CCLightStrip::getHeight() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCLightStrip::getOpacity() {
+int CCLightStrip::getOpacity() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCLightStrip::getWidth() {
+int CCLightStrip::getWidth() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCLightStrip::init(float, float, float, float, float) {
+bool CCLightStrip::init(float, float, float, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCLightStrip::setColor(cocos2d::_ccColor3B) {

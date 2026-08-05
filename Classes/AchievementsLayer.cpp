@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void AchievementsLayer::AchievementsLayer() {
+AchievementsLayer::AchievementsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementsLayer::create() {
+AchievementsLayer* AchievementsLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void AchievementsLayer::customSetup() {

@@ -3,20 +3,23 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void ExtendedLayer::ExtendedLayer() {
+ExtendedLayer::ExtendedLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ExtendedLayer::create() {
+ExtendedLayer* ExtendedLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ExtendedLayer::getDelegate() {
+int ExtendedLayer::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void ExtendedLayer::init() {
+bool ExtendedLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void ExtendedLayer::setDelegate(BoomScrollLayerDelegate*) {

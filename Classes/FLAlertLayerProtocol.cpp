@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void FLAlertLayerProtocol::FLAlertLayerProtocol() {
+FLAlertLayerProtocol::FLAlertLayerProtocol() {
     // TODO: implement (recovered from binary, body unknown)
 }
 

@@ -1,32 +1,33 @@
-#ifndef _MENULAYER_H_
-#define _MENULAYER_H_
+#ifndef HIEUDASH_MENULAYER_H_
+#define HIEUDASH_MENULAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class MenuLayer {
+class MenuLayer : public cocos2d::CCLayer {
 public:
-    FLAlert_Clicked(FLAlertLayer*, bool);
+    virtual void FLAlert_Clicked(FLAlertLayer*, bool);
     MenuLayer();
-    endGame();
-    init();
-    keyBackClicked();
-    node();
-    onAchievements();
-    onCreator();
-    onGameCenter();
-    onGarage();
-    onMoreGames();
-    onOptions();
-    onPlay();
-    onRobTop();
-    onStats();
-    scene();
-    showGCQuestion();
+    void endGame();
+    bool init();
+    void keyBackClicked();
+    void node();
+    void onAchievements();
+    void onCreator();
+    void onGameCenter();
+    void onGarage();
+    void onMoreGames();
+    void onOptions();
+    void onPlay();
+    void onRobTop();
+    void onStats();
+    cocos2d::CCScene* scene();
+    void showGCQuestion();
     ~MenuLayer();
 };
 
-#endif // _MENULAYER_H_
+#endif // HIEUDASH_MENULAYER_H_

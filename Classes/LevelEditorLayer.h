@@ -1,43 +1,44 @@
-#ifndef _LEVELEDITORLAYER_H_
-#define _LEVELEDITORLAYER_H_
+#ifndef HIEUDASH_LEVELEDITORLAYER_H_
+#define HIEUDASH_LEVELEDITORLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class LevelEditorLayer {
+class LevelEditorLayer : public cocos2d::CCLayer {
 public:
     LevelEditorLayer();
-    addToRedoList(UndoObject*);
-    addToSection(GameObject*);
-    addToUndoList(UndoObject*);
-    create(GJGameLevel*);
-    createObject(char const*, cocos2d::CCPoint);
-    createObjectsFromSetup(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    getGameLayer();
-    getLevel();
-    getLevelDistance();
-    getLevelSettings();
-    getLevelString();
-    getObjectCount();
-    getSectionCount();
-    init(GJGameLevel*);
-    levelSettingsUpdated();
-    objectAtPosition(cocos2d::CCPoint);
-    objectsInRect(cocos2d::CCRect);
-    redoLastAction();
-    removeAllObjects();
-    removeObject(GameObject*);
-    removeObjectFromSection(GameObject*);
-    reorderObjectSection(GameObject*);
-    scene(GJGameLevel*);
-    sectionForPos(cocos2d::CCPoint);
-    setObjectCount(int);
-    typeExistsAtPosition(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, cocos2d::CCPoint, bool, bool, float);
-    undoLastAction();
+    void addToRedoList(UndoObject*);
+    void addToSection(GameObject*);
+    void addToUndoList(UndoObject*);
+    LevelEditorLayer* create(GJGameLevel*);
+    void createObject(char const*, cocos2d::CCPoint);
+    void createObjectsFromSetup(std::string);
+    PlayLayer* getGameLayer();
+    GJGameLevel* getLevel();
+    int getLevelDistance();
+    int getLevelSettings();
+    int getLevelString();
+    int getObjectCount();
+    int getSectionCount();
+    bool init(GJGameLevel*);
+    void levelSettingsUpdated();
+    void objectAtPosition(cocos2d::CCPoint);
+    void objectsInRect(cocos2d::CCRect);
+    void redoLastAction();
+    void removeAllObjects();
+    void removeObject(GameObject*);
+    void removeObjectFromSection(GameObject*);
+    void reorderObjectSection(GameObject*);
+    cocos2d::CCScene* scene(GJGameLevel*);
+    int sectionForPos(cocos2d::CCPoint);
+    void setObjectCount(int);
+    void typeExistsAtPosition(std::string, cocos2d::CCPoint, bool, bool, float);
+    void undoLastAction();
     ~LevelEditorLayer();
 };
 
-#endif // _LEVELEDITORLAYER_H_
+#endif // HIEUDASH_LEVELEDITORLAYER_H_

@@ -1,35 +1,36 @@
-#ifndef _EDITLEVELLAYER_H_
-#define _EDITLEVELLAYER_H_
+#ifndef HIEUDASH_EDITLEVELLAYER_H_
+#define HIEUDASH_EDITLEVELLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class EditLevelLayer {
+class EditLevelLayer : public cocos2d::CCLayer {
 public:
     EditLevelLayer();
-    FLAlert_Clicked(FLAlertLayer*, bool);
-    closeTextInputs();
-    confirmDelete();
-    create(GJGameLevel*);
-    init(GJGameLevel*);
-    keyBackClicked();
-    onBack();
-    onDelete();
-    onEdit();
-    onHelp();
-    onPlay();
-    onShare();
-    onTest();
-    scene(GJGameLevel*);
-    setupLevelInfo();
-    textChanged(CCTextInputNode*);
-    textInputClosed(CCTextInputNode*);
-    textInputOpened(CCTextInputNode*);
-    updateDescText(char const*);
+    virtual void FLAlert_Clicked(FLAlertLayer*, bool);
+    void closeTextInputs();
+    void confirmDelete();
+    EditLevelLayer* create(GJGameLevel*);
+    bool init(GJGameLevel*);
+    void keyBackClicked();
+    void onBack();
+    void onDelete();
+    void onEdit();
+    void onHelp();
+    void onPlay();
+    void onShare();
+    void onTest();
+    cocos2d::CCScene* scene(GJGameLevel*);
+    void setupLevelInfo();
+    void textChanged(CCTextInputNode*);
+    void textInputClosed(CCTextInputNode*);
+    void textInputOpened(CCTextInputNode*);
+    void updateDescText(char const*);
     ~EditLevelLayer();
 };
 
-#endif // _EDITLEVELLAYER_H_
+#endif // HIEUDASH_EDITLEVELLAYER_H_

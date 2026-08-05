@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelEditorLayer::LevelEditorLayer() {
+LevelEditorLayer::LevelEditorLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,48 +19,57 @@ void LevelEditorLayer::addToUndoList(UndoObject*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelEditorLayer::create(GJGameLevel*) {
+LevelEditorLayer* LevelEditorLayer::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LevelEditorLayer::createObject(char const*, cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelEditorLayer::createObjectsFromSetup(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void LevelEditorLayer::createObjectsFromSetup(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelEditorLayer::getGameLayer() {
+PlayLayer* LevelEditorLayer::getGameLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelEditorLayer::getLevel() {
+GJGameLevel* LevelEditorLayer::getLevel() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelEditorLayer::getLevelDistance() {
+int LevelEditorLayer::getLevelDistance() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelEditorLayer::getLevelSettings() {
+int LevelEditorLayer::getLevelSettings() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelEditorLayer::getLevelString() {
+int LevelEditorLayer::getLevelString() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelEditorLayer::getObjectCount() {
+int LevelEditorLayer::getObjectCount() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelEditorLayer::getSectionCount() {
+int LevelEditorLayer::getSectionCount() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelEditorLayer::init(GJGameLevel*) {
+bool LevelEditorLayer::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelEditorLayer::levelSettingsUpdated() {
@@ -95,19 +104,21 @@ void LevelEditorLayer::reorderObjectSection(GameObject*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelEditorLayer::scene(GJGameLevel*) {
+cocos2d::CCScene* LevelEditorLayer::scene(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelEditorLayer::sectionForPos(cocos2d::CCPoint) {
+int LevelEditorLayer::sectionForPos(cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void LevelEditorLayer::setObjectCount(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelEditorLayer::typeExistsAtPosition(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, cocos2d::CCPoint, bool, bool, float) {
+void LevelEditorLayer::typeExistsAtPosition(std::string, cocos2d::CCPoint, bool, bool, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

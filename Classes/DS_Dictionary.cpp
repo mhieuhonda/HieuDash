@@ -3,11 +3,11 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void DS_Dictionary::DS_Dictionary() {
+DS_Dictionary::DS_Dictionary() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::cleanStringWhiteSpace(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) {
+void DS_Dictionary::cleanStringWhiteSpace(std::string const&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -15,83 +15,100 @@ void DS_Dictionary::decodeObjectForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::getAllKeys() {
+int DS_Dictionary::getAllKeys() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getArrayForKey(char const*) {
+int DS_Dictionary::getArrayForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getBoolForKey(char const*) {
+int DS_Dictionary::getBoolForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getDictForKey(char const*) {
+int DS_Dictionary::getDictForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getFloatForKey(char const*) {
+int DS_Dictionary::getFloatForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getIndexOfKey(char const*) {
+int DS_Dictionary::getIndexOfKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getIndexOfKeyWithClosestAlphaNumericalMatch(char const*) {
+int DS_Dictionary::getIndexOfKeyWithClosestAlphaNumericalMatch(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getIntegerForKey(char const*) {
+int DS_Dictionary::getIntegerForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getKey(unsigned int) {
+int DS_Dictionary::getKey(unsigned int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getNumKeys() {
+int DS_Dictionary::getNumKeys() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getObjectForKey(char const*) {
+int DS_Dictionary::getObjectForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getRectArrayForKey(char const*) {
+int DS_Dictionary::getRectArrayForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getRectForKey(char const*) {
+int DS_Dictionary::getRectForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getStringArrayForKey(char const*) {
+int DS_Dictionary::getStringArrayForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getStringForKey(char const*) {
+int DS_Dictionary::getStringForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getVec2ArrayForKey(char const*) {
+int DS_Dictionary::getVec2ArrayForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void DS_Dictionary::getVec2ForKey(char const*) {
+int DS_Dictionary::getVec2ForKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void DS_Dictionary::loadRootSubDictFromFile(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::loadRootSubDictFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void DS_Dictionary::loadRootSubDictFromString(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::rectFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cocos2d::CCRect&) {
+void DS_Dictionary::rectFromString(std::string const&, cocos2d::CCRect&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -167,19 +184,19 @@ void DS_Dictionary::setRectForKey(char const*, cocos2d::CCRect const&, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::setStringArrayForKey(char const*, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&) {
+void DS_Dictionary::setStringArrayForKey(char const*, std::vector<std::string, std::allocator<std::string > > const&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::setStringArrayForKey(char const*, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, bool) {
+void DS_Dictionary::setStringArrayForKey(char const*, std::vector<std::string, std::allocator<std::string > > const&, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::setStringForKey(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) {
+void DS_Dictionary::setStringForKey(char const*, std::string const&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::setStringForKey(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool) {
+void DS_Dictionary::setStringForKey(char const*, std::string const&, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -207,11 +224,11 @@ void DS_Dictionary::setVec2ForKey(char const*, cocos2d::CCPoint const&, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::split(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) {
+void DS_Dictionary::split(std::string const&, char const*, std::vector<std::string, std::allocator<std::string > >&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::splitWithForm(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) {
+void DS_Dictionary::splitWithForm(std::string const&, std::vector<std::string, std::allocator<std::string > >&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -227,7 +244,7 @@ void DS_Dictionary::stepOutOfSubDict() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::vec2FromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cocos2d::CCPoint&) {
+void DS_Dictionary::vec2FromString(std::string const&, cocos2d::CCPoint&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

@@ -1,29 +1,30 @@
-#ifndef _SLIDER_H_
-#define _SLIDER_H_
+#ifndef HIEUDASH_SLIDER_H_
+#define HIEUDASH_SLIDER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class Slider {
+class Slider : public cocos2d::CCNode {
 public:
     Slider();
-    ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
     create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
     create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*);
-    getLiveDragging();
-    getThumb();
-    getValue();
+    int getLiveDragging();
+    int getThumb();
+    int getValue();
     init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*);
-    setBarVisibility(bool);
-    setLiveDragging(bool);
-    setValue(float);
-    updateBar();
+    void setBarVisibility(bool);
+    void setLiveDragging(bool);
+    void setValue(float);
+    void updateBar();
     ~Slider();
 };
 
-#endif // _SLIDER_H_
+#endif // HIEUDASH_SLIDER_H_

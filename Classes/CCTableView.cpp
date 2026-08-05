@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCTableView::CCTableView(cocos2d::CCRect) {
+CCTableView::CCTableView(cocos2d::CCRect) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -59,8 +59,9 @@ void CCTableView::claimTouch(cocos2d::CCTouch*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableView::create(CCTableViewDelegate*, CCTableViewDataSource*, cocos2d::CCRect) {
+CCTableView* CCTableView::create(CCTableViewDelegate*, CCTableViewDataSource*, cocos2d::CCRect) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCTableView::deleteCCTableViewCell(CCTableViewCell*) {
@@ -71,84 +72,103 @@ void CCTableView::dequeueReusableCellWithIdentifier(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableView::getBeginLocation() {
+int CCTableView::getBeginLocation() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getBeginTouch() {
+int CCTableView::getBeginTouch() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getCellRemovedArray() {
+int CCTableView::getCellRemovedArray() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getCellVisibleArray() {
+int CCTableView::getCellVisibleArray() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getCheckLocation() {
+int CCTableView::getCheckLocation() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getClipsToBounds() {
+int CCTableView::getClipsToBounds() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getDataSource() {
+int CCTableView::getDataSource() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getDelegate() {
+int CCTableView::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getEditable() {
+int CCTableView::getEditable() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getIsScheduled() {
+bool CCTableView::getIsScheduled() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CCTableView::getIsTouch() {
+bool CCTableView::getIsTouch() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CCTableView::getLastCellPos() {
+int CCTableView::getLastCellPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getScrollingToIndexPath() {
+int CCTableView::getScrollingToIndexPath() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getStealTouches() {
+int CCTableView::getStealTouches() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getTouchCell() {
+int CCTableView::getTouchCell() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getTouchDispatch() {
+int CCTableView::getTouchDispatch() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableView::getindexPathAddedArray() {
+int CCTableView::getindexPathAddedArray() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void CCTableView::initCCTableViewCells() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableView::isDuplicateInVisibleCellArray(CCIndexPath*) {
+bool CCTableView::isDuplicateInVisibleCellArray(CCIndexPath*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CCTableView::isDuplicateIndexPath(CCIndexPath&) {
+bool CCTableView::isDuplicateIndexPath(CCIndexPath&) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCTableView::onEnter() {

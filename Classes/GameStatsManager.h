@@ -1,27 +1,28 @@
-#ifndef _GAMESTATSMANAGER_H_
-#define _GAMESTATSMANAGER_H_
+#ifndef HIEUDASH_GAMESTATSMANAGER_H_
+#define HIEUDASH_GAMESTATSMANAGER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class GameStatsManager {
+class GameStatsManager : public cocos2d::CCObject {
 public:
     GameStatsManager();
-    checkAchievement(char const*);
-    completedLevel(int, bool);
-    dataLoaded(DS_Dictionary*);
-    encodeDataTo(DS_Dictionary*);
-    firstSetup();
-    getLevelKey(int, bool);
-    getStat(char const*);
-    hasCompletedLevel(int, bool);
-    incrementStat(char const*);
-    init();
-    sharedState();
+    void checkAchievement(char const*);
+    void completedLevel(int, bool);
+    void dataLoaded(DS_Dictionary*);
+    void encodeDataTo(DS_Dictionary*);
+    void firstSetup();
+    int getLevelKey(int, bool);
+    int getStat(char const*);
+    void hasCompletedLevel(int, bool);
+    void incrementStat(char const*);
+    bool init();
+    GameStatsManager* sharedState();
     ~GameStatsManager();
 };
 
-#endif // _GAMESTATSMANAGER_H_
+#endif // HIEUDASH_GAMESTATSMANAGER_H_

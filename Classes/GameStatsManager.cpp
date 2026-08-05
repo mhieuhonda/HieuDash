@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GameStatsManager::GameStatsManager() {
+GameStatsManager::GameStatsManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -27,12 +27,14 @@ void GameStatsManager::firstSetup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameStatsManager::getLevelKey(int, bool) {
+int GameStatsManager::getLevelKey(int, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameStatsManager::getStat(char const*) {
+int GameStatsManager::getStat(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void GameStatsManager::hasCompletedLevel(int, bool) {
@@ -43,12 +45,14 @@ void GameStatsManager::incrementStat(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameStatsManager::init() {
+bool GameStatsManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameStatsManager::sharedState() {
+GameStatsManager* GameStatsManager::sharedState() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GameStatsManager::~GameStatsManager() {

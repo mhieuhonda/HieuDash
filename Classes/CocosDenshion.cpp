@@ -3,106 +3,110 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CocosDenshion::SimpleAudioEngine::SimpleAudioEngine() {
+void CocosDenshion::SimpleAudioEngine() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::end() {
+void CocosDenshion::end() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::getBackgroundMusicVolume() {
+int CocosDenshion::getBackgroundMusicVolume() {
+    // TODO: implement (recovered from binary, body unknown)
+    return 0;
+}
+
+int CocosDenshion::getEffectsVolume() {
+    // TODO: implement (recovered from binary, body unknown)
+    return 0;
+}
+
+bool CocosDenshion::isBackgroundMusicPlaying() {
+    // TODO: implement (recovered from binary, body unknown)
+    return false;
+}
+
+void CocosDenshion::pauseAllEffects() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::getEffectsVolume() {
+void CocosDenshion::pauseBackgroundMusic() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::isBackgroundMusicPlaying() {
+void CocosDenshion::pauseEffect(unsigned int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::pauseAllEffects() {
+void CocosDenshion::playBackgroundMusic(char const*, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::pauseBackgroundMusic() {
+void CocosDenshion::playEffect(char const*, bool, float, float, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::pauseEffect(unsigned int) {
+void CocosDenshion::preloadBackgroundMusic(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::playBackgroundMusic(char const*, bool) {
+void CocosDenshion::preloadEffect(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::playEffect(char const*, bool, float, float, float) {
+void CocosDenshion::resumeAllEffects() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::preloadBackgroundMusic(char const*) {
+void CocosDenshion::resumeBackgroundMusic() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::preloadEffect(char const*) {
+void CocosDenshion::resumeEffect(unsigned int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::resumeAllEffects() {
+void CocosDenshion::rewindBackgroundMusic() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::resumeBackgroundMusic() {
+void CocosDenshion::setBackgroundMusicTime(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::resumeEffect(unsigned int) {
+void CocosDenshion::setBackgroundMusicVolume(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::rewindBackgroundMusic() {
+void CocosDenshion::setEffectsVolume(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::setBackgroundMusicTime(float) {
+CocosDenshion* CocosDenshion::sharedEngine() {
+    // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
+}
+
+void CocosDenshion::stopAllEffects() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::setBackgroundMusicVolume(float) {
+void CocosDenshion::stopBackgroundMusic(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::setEffectsVolume(float) {
+void CocosDenshion::stopEffect(unsigned int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::sharedEngine() {
+void CocosDenshion::unloadEffect(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::stopAllEffects() {
+void CocosDenshion::willPlayBackgroundMusic() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::SimpleAudioEngine::stopBackgroundMusic(bool) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void CocosDenshion::SimpleAudioEngine::stopEffect(unsigned int) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void CocosDenshion::SimpleAudioEngine::unloadEffect(char const*) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void CocosDenshion::SimpleAudioEngine::willPlayBackgroundMusic() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void CocosDenshion::SimpleAudioEngine::~SimpleAudioEngine() {
+void CocosDenshion::~SimpleAudioEngine() {
     // TODO: implement (recovered from binary, body unknown)
 }

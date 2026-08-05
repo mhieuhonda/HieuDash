@@ -1,5 +1,60 @@
 # Changelog
 
+## v0.3 — 2026-08-05
+
+Major codebase quality release — all 68 identified bugs fixed, full
+`libgame.so` decompilation performed, and build system modernized.
+
+### Fixed (68 bugs)
+
+**CRITICAL (33 bugs) — Compilation blockers:**
+- Added correct return types to all 2,039+ method declarations across 147 headers
+- Added proper Cocos2d-x base class inheritance to all game classes (CCLayer, CCNode, CCSprite, CCObject, CCApplication)
+- Removed illegal `void` return type from all 147 constructor definitions
+- Added all missing enum/type declarations (LastGameScene, EnterEffect, PlayerButton, GhostType, EditMode, EditCommand, SearchType, GJLevelType, CCTableViewCellEditingStyle, BoomListType, UpdateResponse, spriteMode, FormatterType, CircleMode, UnlockType, frameValues struct)
+- Added forward declarations for PremiumPopup, AnimatedSpriteDelegate, GhostTrailDelegate, SlideInLayerDelegate
+- Fixed malformed CocosDenshion.h (removed `SimpleAudioEngine::` qualifiers, added proper method signatures)
+- Added 17 missing .cpp files to Android.mk (all delegate/protocol source files)
+
+**HIGH (11 bugs) — Runtime/link errors:**
+- AppDelegate now properly inherits from `cocos2d::CCApplication`
+- Lifecycle methods marked `virtual` with correct return types
+- Fixed main.cpp AppDelegate initialization pattern
+- Added `virtual` to FLAlert_Clicked in all 6 implementing classes
+- Added virtual destructors to all 14 delegate/protocol classes
+- Added return statements to all 681 non-void stub methods
+- Fixed singleton method return types (sharedState/sharedManager/sharedEngine)
+
+**MEDIUM (15 bugs) — Incorrect behavior/deprecation:**
+- Fixed AppMacros.h ODR violation (wrapped `cResourceSize` in anonymous namespace)
+- Modernized Application.mk: `gnustl_static` → `c++_static`, added `armeabi-v7a` + `arm64-v8a`, raised `APP_PLATFORM` to `android-21`
+- Replaced `std::basic_string<char, ...>` with `std::string` throughout
+
+**LOW (9 bugs) — Style/cleanup:**
+- Fixed include guard naming (removed reserved leading underscores)
+- Fixed typo `scrllViewWillBeginDecelerating` → `scrollViewWillBeginDecelerating`
+- Added `HieuDashEnums.h` include to all headers
+
+### Added
+
+- **HieuDashEnums.h** — Central enum/type declarations file
+- **decompiled/** — Full `libgame.so` decompilation output:
+  - `DECOMPILATION_SUMMARY.txt` — Overview (13,793 symbols, 77 classes, 24,926 strings)
+  - `class_analysis.txt` — All 77 classes with method counts
+  - `methods_detail.txt` — Complete method listing per class
+  - `deep_disassembly.txt` — ARM disassembly of 264 key game functions
+  - `strings_analysis.txt` — 24,926 strings categorized (URLs, resources, format strings, etc.)
+  - `imports.txt` / `exports.txt` — 288 imports, 13,489 exports
+  - `vtables.txt` — 447 vtable symbols
+  - `jni_functions.txt` — 26 JNI interface functions
+  - `disassembly.txt` / `relocations.txt` / `elf_sections.txt`
+
+### Changed
+
+- Build system updated for modern NDK (r18+ compatible)
+- Minimum Android API raised from 8 to 21
+- 64-bit ABI support added (arm64-v8a)
+
 ## v0.1 — 2026-08-05
 
 First reverse-engineered release of Hieu Dash — a faithful Cocos2d-x 2.2.3

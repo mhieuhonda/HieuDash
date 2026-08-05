@@ -1,42 +1,43 @@
-#ifndef _CHECKPOINTOBJECT_H_
-#define _CHECKPOINTOBJECT_H_
+#ifndef HIEUDASH_CHECKPOINTOBJECT_H_
+#define HIEUDASH_CHECKPOINTOBJECT_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class CheckpointObject {
+class CheckpointObject : public cocos2d::CCObject {
 public:
     CheckpointObject();
-    create();
-    getActiveEnterEffect();
-    getBGColor();
-    getCameraPos();
-    getCanJump();
-    getFlipGravity();
-    getFlyMode();
-    getGhostType();
-    getGroundColor();
-    getObject();
-    getPlayerPos();
-    getPlayerYVel();
-    getPortalObject();
-    init();
-    setActiveEnterEffect(EnterEffect);
-    setBGColor(cocos2d::_ccColor3B);
-    setCameraPos(cocos2d::CCPoint);
-    setCanJump(bool);
-    setFlipGravity(bool);
-    setFlyMode(bool);
-    setGhostType(int);
-    setGroundColor(cocos2d::_ccColor3B);
-    setObject(GameObject*);
-    setPlayerPos(cocos2d::CCPoint);
-    setPlayerYVel(float);
-    setPortalObject(GameObject*);
+    CheckpointObject* create();
+    EnterEffect getActiveEnterEffect();
+    int getBGColor();
+    cocos2d::CCPoint getCameraPos();
+    bool getCanJump();
+    int getFlipGravity();
+    int getFlyMode();
+    int getGhostType();
+    int getGroundColor();
+    int getObject();
+    int getPlayerPos();
+    int getPlayerYVel();
+    int getPortalObject();
+    bool init();
+    void setActiveEnterEffect(EnterEffect);
+    void setBGColor(cocos2d::_ccColor3B);
+    void setCameraPos(cocos2d::CCPoint);
+    void setCanJump(bool);
+    void setFlipGravity(bool);
+    void setFlyMode(bool);
+    void setGhostType(int);
+    void setGroundColor(cocos2d::_ccColor3B);
+    void setObject(GameObject*);
+    void setPlayerPos(cocos2d::CCPoint);
+    void setPlayerYVel(float);
+    void setPortalObject(GameObject*);
     ~CheckpointObject();
 };
 
-#endif // _CHECKPOINTOBJECT_H_
+#endif // HIEUDASH_CHECKPOINTOBJECT_H_

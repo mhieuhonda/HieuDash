@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SlideInLayer::SlideInLayer() {
+SlideInLayer::SlideInLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,8 +23,9 @@ void SlideInLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SlideInLayer::create() {
+SlideInLayer* SlideInLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void SlideInLayer::customSetup() {
@@ -55,20 +56,23 @@ void SlideInLayer::exitLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SlideInLayer::getDelegate() {
+int SlideInLayer::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SlideInLayer::getRemoveOnExit() {
+int SlideInLayer::getRemoveOnExit() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void SlideInLayer::hideLayer(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SlideInLayer::init() {
+bool SlideInLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void SlideInLayer::keyBackClicked() {

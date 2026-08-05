@@ -3,24 +3,28 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void StatsObject::StatsObject() {
+StatsObject::StatsObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void StatsObject::create(char const*, int) {
+StatsObject* StatsObject::create(char const*, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void StatsObject::getKey() {
+int StatsObject::getKey() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void StatsObject::getValue() {
+int StatsObject::getValue() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void StatsObject::init(char const*, int) {
+bool StatsObject::init(char const*, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void StatsObject::~StatsObject() {

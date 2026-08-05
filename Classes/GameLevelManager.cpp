@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GameLevelManager::GameLevelManager() {
+GameLevelManager::GameLevelManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,7 +11,7 @@ void GameLevelManager::addDLToActive(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::createAndGetLevels(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameLevelManager::createAndGetLevels(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -39,96 +39,119 @@ void GameLevelManager::firstSetup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::getDelegate() {
+int GameLevelManager::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getDiffKey(int) {
+int GameLevelManager::getDiffKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getDiffVal(int) {
+int GameLevelManager::getDiffVal(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getDifficultyStr(bool, bool, bool, bool, bool, bool) {
+int GameLevelManager::getDifficultyStr(bool, bool, bool, bool, bool, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getDlDelegate() {
+int GameLevelManager::getDlDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLastSearchKey() {
+int GameLevelManager::getLastSearchKey() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLenKey(int) {
+int GameLevelManager::getLenKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLenVal(int) {
+int GameLevelManager::getLenVal(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLengthStr(bool, bool, bool, bool) {
+int GameLevelManager::getLengthStr(bool, bool, bool, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLevelKey(int) {
+int GameLevelManager::getLevelKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLikeKey(int) {
+int GameLevelManager::getLikeKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLocalLevel(int) {
+int GameLevelManager::getLocalLevel(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getLocalLevels() {
+int GameLevelManager::getLocalLevels() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getMainLevel(int) {
+int GameLevelManager::getMainLevel(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getOnlineLevels(GJSearchObject*) {
+int GameLevelManager::getOnlineLevels(GJSearchObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getPageInfo(char const*) {
+int GameLevelManager::getPageInfo(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getRateKey(int) {
+int GameLevelManager::getRateKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getSavedLevel(int) {
+int GameLevelManager::getSavedLevel(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getSavedLevels() {
+int GameLevelManager::getSavedLevels() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getSearchScene(char const*) {
+int GameLevelManager::getSearchScene(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getStoredOnlineLevels(char const*) {
+int GameLevelManager::getStoredOnlineLevels(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getUpDelegate() {
+int GameLevelManager::getUpDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameLevelManager::getUpdateDelegate() {
+int GameLevelManager::getUpdateDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void GameLevelManager::gotoLevelPage(GJGameLevel*) {
@@ -147,20 +170,24 @@ void GameLevelManager::hasRatedLevel(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::init() {
+bool GameLevelManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameLevelManager::isDLActive(char const*) {
+bool GameLevelManager::isDLActive(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameLevelManager::isTimeValid(char const*, float) {
+bool GameLevelManager::isTimeValid(char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameLevelManager::isUpdateValid(int) {
+bool GameLevelManager::isUpdateValid(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GameLevelManager::likeLevel(int) {
@@ -219,7 +246,7 @@ void GameLevelManager::removeDLFromActive(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::removeDelimiterChars(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameLevelManager::removeDelimiterChars(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -227,7 +254,7 @@ void GameLevelManager::resetAllTimers() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::responseToDict(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameLevelManager::responseToDict(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -247,7 +274,7 @@ void GameLevelManager::setDlDelegate(LevelDownloadDelegate*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::setLastSearchKey(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameLevelManager::setLastSearchKey(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -263,15 +290,16 @@ void GameLevelManager::setUpdateDelegate(LevelUpdateDelegate*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::sharedState() {
+GameLevelManager* GameLevelManager::sharedState() {
+    // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
+}
+
+void GameLevelManager::storeSearchResult(cocos2d::CCArray*, std::string, char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::storeSearchResult(cocos2d::CCArray*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const*) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameLevelManager::storeUserNames(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameLevelManager::storeUserNames(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

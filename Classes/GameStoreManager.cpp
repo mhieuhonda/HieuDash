@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GameStoreManager::GameStoreManager() {
+GameStoreManager::GameStoreManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -55,32 +55,39 @@ void GameStoreManager::firstLoad() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameStoreManager::getAllItemsForCategory(char const*) {
+int GameStoreManager::getAllItemsForCategory(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameStoreManager::getCategory(char const*) {
+int GameStoreManager::getCategory(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameStoreManager::getShopCategories() {
+int GameStoreManager::getShopCategories() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameStoreManager::getShopItems() {
+int GameStoreManager::getShopItems() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameStoreManager::init() {
+bool GameStoreManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameStoreManager::isBillingSupported() {
+bool GameStoreManager::isBillingSupported() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameStoreManager::isFeatureUnlocked(char const*) {
+bool GameStoreManager::isFeatureUnlocked(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GameStoreManager::itemPurchaseFailed(char const*) {
@@ -127,8 +134,9 @@ void GameStoreManager::setup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameStoreManager::sharedState() {
+GameStoreManager* GameStoreManager::sharedState() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GameStoreManager::sortCategories() {

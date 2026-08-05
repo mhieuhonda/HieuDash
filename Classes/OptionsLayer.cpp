@@ -7,12 +7,13 @@ void OptionsLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void OptionsLayer::OptionsLayer() {
+OptionsLayer::OptionsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void OptionsLayer::create() {
+OptionsLayer* OptionsLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void OptionsLayer::customSetup() {

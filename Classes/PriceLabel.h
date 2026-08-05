@@ -1,21 +1,22 @@
-#ifndef _PRICELABEL_H_
-#define _PRICELABEL_H_
+#ifndef HIEUDASH_PRICELABEL_H_
+#define HIEUDASH_PRICELABEL_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class PriceLabel {
+class PriceLabel : public cocos2d::CCLabelBMFont {
 public:
     PriceLabel();
-    create(int);
-    init(int);
-    setColor(cocos2d::_ccColor3B);
-    setOpacity(float);
-    setPrice(int);
+    PriceLabel* create(int);
+    bool init(int);
+    void setColor(cocos2d::_ccColor3B);
+    void setOpacity(float);
+    void setPrice(int);
     ~PriceLabel();
 };
 
-#endif // _PRICELABEL_H_
+#endif // HIEUDASH_PRICELABEL_H_

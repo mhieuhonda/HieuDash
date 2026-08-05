@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GameSoundManager::GameSoundManager() {
+GameSoundManager::GameSoundManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,20 +19,24 @@ void GameSoundManager::fadeOutMusic(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameSoundManager::getBGVol() {
+int GameSoundManager::getBGVol() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameSoundManager::getState() {
+int GameSoundManager::getState() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameSoundManager::init() {
+bool GameSoundManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameSoundManager::isLoopedSoundPlaying(char const*) {
+bool GameSoundManager::isLoopedSoundPlaying(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GameSoundManager::pauseAllLoopedSounds() {
@@ -95,8 +99,9 @@ void GameSoundManager::setup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameSoundManager::sharedManager() {
+GameSoundManager* GameSoundManager::sharedManager() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GameSoundManager::stopAllLoopedSounds() {

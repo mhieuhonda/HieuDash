@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SavedLevelsLayer::SavedLevelsLayer() {
+SavedLevelsLayer::SavedLevelsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SavedLevelsLayer::create() {
+SavedLevelsLayer* SavedLevelsLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void SavedLevelsLayer::init() {
+bool SavedLevelsLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void SavedLevelsLayer::keyBackClicked() {
@@ -23,8 +25,9 @@ void SavedLevelsLayer::onBack() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SavedLevelsLayer::scene() {
+cocos2d::CCScene* SavedLevelsLayer::scene() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void SavedLevelsLayer::setupLevelBrowser() {

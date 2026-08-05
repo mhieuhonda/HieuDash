@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void BoomListLayer::BoomListLayer() {
+BoomListLayer::BoomListLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BoomListLayer::create(BoomListView*, char const*) {
+BoomListLayer* BoomListLayer::create(BoomListView*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void BoomListLayer::init(BoomListView*, char const*) {
+bool BoomListLayer::init(BoomListView*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void BoomListLayer::~BoomListLayer() {

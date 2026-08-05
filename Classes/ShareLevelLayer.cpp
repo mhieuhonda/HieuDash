@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void ShareLevelLayer::ShareLevelLayer() {
+ShareLevelLayer::ShareLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ShareLevelLayer::create(GJGameLevel*) {
+ShareLevelLayer* ShareLevelLayer::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ShareLevelLayer::init(GJGameLevel*) {
+bool ShareLevelLayer::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void ShareLevelLayer::keyBackClicked() {

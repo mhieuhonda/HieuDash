@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GameObject::GameObject() {
+GameObject::GameObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,8 +19,9 @@ void GameObject::calculateSpawnXPos() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameObject::create(char const*) {
+GameObject* GameObject::create(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GameObject::createAndAddParticle(char const*, int) {
@@ -47,139 +48,171 @@ void GameObject::frameToKey(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameObject::getBallFrame(int) {
+int GameObject::getBallFrame(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getBlendAdditive() {
+int GameObject::getBlendAdditive() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getDontTransform() {
+int GameObject::getDontTransform() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getEnterEffect() {
+int GameObject::getEnterEffect() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getFrame() {
+int GameObject::getFrame() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getHasBeenActivated() {
+bool GameObject::getHasBeenActivated() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameObject::getIsDisabled() {
+bool GameObject::getIsDisabled() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameObject::getIsInvisible() {
+bool GameObject::getIsInvisible() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameObject::getM_ID() {
+int GameObject::getM_ID() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getObjectKey() {
+int GameObject::getObjectKey() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getObjectParent() {
+int GameObject::getObjectParent() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getObjectRect() {
+int GameObject::getObjectRect() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getObjectRect(float, float) {
+int GameObject::getObjectRect(float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getObjectZ() {
+int GameObject::getObjectZ() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getRealPosition() {
+int GameObject::getRealPosition() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getSaveString() {
+int GameObject::getSaveString() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getScaleModX() {
+int GameObject::getScaleModX() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getScaleModY() {
+int GameObject::getScaleModY() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getSectionIdx() {
+int GameObject::getSectionIdx() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getShouldHide() {
+int GameObject::getShouldHide() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getShouldSpawn() {
+int GameObject::getShouldSpawn() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getSpawnXPos() {
+int GameObject::getSpawnXPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getStartPos() {
+cocos2d::CCPoint GameObject::getStartPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return cocos2d::CCPointZero;
 }
 
-void GameObject::getStartRotation() {
+int GameObject::getStartRotation() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getStartScaleX() {
+int GameObject::getStartScaleX() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getStartScaleY() {
+int GameObject::getStartScaleY() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getStateVar() {
+int GameObject::getStateVar() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getTintColor() {
+int GameObject::getTintColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getTintDuration() {
+int GameObject::getTintDuration() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getType() {
+int GameObject::getType() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::getUsePlayerColor() {
+int GameObject::getUsePlayerColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameObject::init(char const*) {
+bool GameObject::init(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GameObject::keyToFrame(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameObject::objectFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameObject::objectFromString(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -311,7 +344,7 @@ void GameObject::setupTypeFromFrame(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameObject::stringSetupToDict(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameObject::stringSetupToDict(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

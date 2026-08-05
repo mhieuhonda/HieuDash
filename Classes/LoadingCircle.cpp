@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LoadingCircle::LoadingCircle() {
+LoadingCircle::LoadingCircle() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,8 +23,9 @@ void LoadingCircle::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LoadingCircle::create() {
+LoadingCircle* LoadingCircle::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LoadingCircle::draw() {
@@ -35,20 +36,24 @@ void LoadingCircle::fadeAndRemove() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LoadingCircle::getCircle() {
+int LoadingCircle::getCircle() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LoadingCircle::getDarkOverlay() {
+int LoadingCircle::getDarkOverlay() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LoadingCircle::getTargetScene() {
+int LoadingCircle::getTargetScene() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LoadingCircle::init() {
+bool LoadingCircle::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LoadingCircle::registerWithTouchDispatcher() {

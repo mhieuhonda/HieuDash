@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void FLAlertLayer::FLAlertLayer() {
+FLAlertLayer::FLAlertLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,32 +23,39 @@ void FLAlertLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void FLAlertLayer::create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*) {
+FLAlertLayer* FLAlertLayer::create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void FLAlertLayer::create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*, float) {
+FLAlertLayer* FLAlertLayer::create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void FLAlertLayer::getInternalLayer() {
+int FLAlertLayer::getInternalLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void FLAlertLayer::getPParent() {
+int FLAlertLayer::getPParent() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void FLAlertLayer::getReverseKeyBack() {
+int FLAlertLayer::getReverseKeyBack() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void FLAlertLayer::getTargetScene() {
+int FLAlertLayer::getTargetScene() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void FLAlertLayer::init(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*, float) {
+bool FLAlertLayer::init(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void FLAlertLayer::keyBackClicked() {

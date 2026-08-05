@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCCounterLabel::CCCounterLabel() {
+CCCounterLabel::CCCounterLabel() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,8 +11,9 @@ void CCCounterLabel::calculateStepSize() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCounterLabel::create(char const*, char const*, int, FormatterType) {
+CCCounterLabel* CCCounterLabel::create(char const*, char const*, int, FormatterType) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCCounterLabel::disableCounter() {
@@ -27,16 +28,19 @@ void CCCounterLabel::fastUpdateCounter() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCounterLabel::getCurrentCount() {
+int CCCounterLabel::getCurrentCount() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCounterLabel::getTargetCount() {
+int CCCounterLabel::getTargetCount() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCounterLabel::init(char const*, char const*, int, FormatterType) {
+bool CCCounterLabel::init(char const*, char const*, int, FormatterType) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCCounterLabel::setTargetCount(int) {

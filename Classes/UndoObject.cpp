@@ -3,24 +3,28 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void UndoObject::UndoObject() {
+UndoObject::UndoObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void UndoObject::create(GameObject*, UndoCommand) {
+UndoObject* UndoObject::create(GameObject*, UndoCommand) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void UndoObject::getCommand() {
+int UndoObject::getCommand() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void UndoObject::getObject() {
+int UndoObject::getObject() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void UndoObject::init(GameObject*, UndoCommand) {
+bool UndoObject::init(GameObject*, UndoCommand) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void UndoObject::~UndoObject() {

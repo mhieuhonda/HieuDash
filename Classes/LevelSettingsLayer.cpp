@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelSettingsLayer::LevelSettingsLayer() {
+LevelSettingsLayer::LevelSettingsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,16 +19,19 @@ void LevelSettingsLayer::colorPickerClosed(ColorPickerPopup*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSettingsLayer::create(LevelSettingsObject*) {
+LevelSettingsLayer* LevelSettingsLayer::create(LevelSettingsObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelSettingsLayer::getDelegate() {
+int LevelSettingsLayer::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSettingsLayer::init(LevelSettingsObject*) {
+bool LevelSettingsLayer::init(LevelSettingsObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelSettingsLayer::keyBackClicked() {

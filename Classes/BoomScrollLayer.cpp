@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void BoomScrollLayer::BoomScrollLayer() {
+BoomScrollLayer::BoomScrollLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -39,96 +39,119 @@ void BoomScrollLayer::claimTouch(cocos2d::CCTouch*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BoomScrollLayer::create(cocos2d::CCArray*, int, bool) {
+BoomScrollLayer* BoomScrollLayer::create(cocos2d::CCArray*, int, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void BoomScrollLayer::getCurrentScreen() {
+int BoomScrollLayer::getCurrentScreen() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getDelegate() {
+int BoomScrollLayer::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getInternalLayer() {
+int BoomScrollLayer::getInternalLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getMarginOffset() {
+int BoomScrollLayer::getMarginOffset() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getMinTouchSpeed() {
+int BoomScrollLayer::getMinTouchSpeed() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getMinimumTouchLengthToChangePage() {
+int BoomScrollLayer::getMinimumTouchLengthToChangePage() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getMinimumTouchLengthToSlide() {
+int BoomScrollLayer::getMinimumTouchLengthToSlide() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getMovingToPage() {
+int BoomScrollLayer::getMovingToPage() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getPage(int) {
+int BoomScrollLayer::getPage(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getPagesIndicatorNormalColor() {
+int BoomScrollLayer::getPagesIndicatorNormalColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getPagesIndicatorSelectedColor() {
+int BoomScrollLayer::getPagesIndicatorSelectedColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getPagesWidthOffset() {
+int BoomScrollLayer::getPagesWidthOffset() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getRelativePageForNum(int) {
+int BoomScrollLayer::getRelativePageForNum(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getRelativePosForPage(int) {
+int BoomScrollLayer::getRelativePosForPage(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getScrollArea() {
+int BoomScrollLayer::getScrollArea() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getShowPagesIndicator() {
+int BoomScrollLayer::getShowPagesIndicator() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getStealTouches() {
+int BoomScrollLayer::getStealTouches() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getTotalPages() {
+int BoomScrollLayer::getTotalPages() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getTouchSpeedFast() {
+int BoomScrollLayer::getTouchSpeedFast() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getTouchSpeedMid() {
+int BoomScrollLayer::getTouchSpeedMid() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::getpages() {
+int BoomScrollLayer::getpages() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void BoomScrollLayer::init(cocos2d::CCArray*, int, bool) {
+bool BoomScrollLayer::init(cocos2d::CCArray*, int, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void BoomScrollLayer::instantMoveToPage(int) {

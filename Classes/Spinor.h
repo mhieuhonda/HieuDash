@@ -1,18 +1,19 @@
-#ifndef _SPINOR_H_
-#define _SPINOR_H_
+#ifndef HIEUDASH_SPINOR_H_
+#define HIEUDASH_SPINOR_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class Spinor {
+class Spinor : public cocos2d::CCNode {
 public:
     Spinor(float);
     Spinor(float, float);
-    angle();
-    slerp(Spinor const&, Spinor const&, float);
+    void angle();
+    void slerp(Spinor const&, Spinor const&, float);
 };
 
-#endif // _SPINOR_H_
+#endif // HIEUDASH_SPINOR_H_

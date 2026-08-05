@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void UploadPopup::UploadPopup() {
+UploadPopup::UploadPopup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void UploadPopup::create(GJGameLevel*) {
+UploadPopup* UploadPopup::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void UploadPopup::init(GJGameLevel*) {
+bool UploadPopup::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void UploadPopup::keyBackClicked() {

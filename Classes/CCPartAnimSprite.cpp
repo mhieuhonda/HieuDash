@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCPartAnimSprite::CCPartAnimSprite() {
+CCPartAnimSprite::CCPartAnimSprite() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -27,20 +27,24 @@ void CCPartAnimSprite::displayFrame() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCPartAnimSprite::getSpriteContainer() {
+int CCPartAnimSprite::getSpriteContainer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCPartAnimSprite::getSpriteForKey(cocos2d::CCString*) {
+int CCPartAnimSprite::getSpriteForKey(cocos2d::CCString*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCPartAnimSprite::initWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*) {
+bool CCPartAnimSprite::initWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CCPartAnimSprite::isFrameDisplayed(cocos2d::CCSpriteFrame*) {
+bool CCPartAnimSprite::isFrameDisplayed(cocos2d::CCSpriteFrame*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCPartAnimSprite::setBlendFunc(cocos2d::_ccBlendFunc) {

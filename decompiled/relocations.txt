@@ -1,0 +1,7 @@
+Total relocations: 34635
+
+Relocation types:
+  TYPE.ARM_RELATIVE: 34325
+  TYPE.ARM_JUMP_SLOT: 278
+  TYPE.ARM_GLOB_DAT: 23
+  TYPE.ARM_ABS32: 9

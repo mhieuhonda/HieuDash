@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SimpleAudioEngineOpenSL::SimpleAudioEngineOpenSL() {
+SimpleAudioEngineOpenSL::SimpleAudioEngineOpenSL() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,8 +11,9 @@ void SimpleAudioEngineOpenSL::end() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SimpleAudioEngineOpenSL::getEffectsVolume() {
+int SimpleAudioEngineOpenSL::getEffectsVolume() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void SimpleAudioEngineOpenSL::initEngine() {
@@ -47,8 +48,9 @@ void SimpleAudioEngineOpenSL::setEffectsVolume(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SimpleAudioEngineOpenSL::sharedEngine() {
+SimpleAudioEngineOpenSL* SimpleAudioEngineOpenSL::sharedEngine() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void SimpleAudioEngineOpenSL::stopAllEffects() {

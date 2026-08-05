@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GhostTrailEffect::GhostTrailEffect() {
+GhostTrailEffect::GhostTrailEffect() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GhostTrailEffect::create() {
+GhostTrailEffect* GhostTrailEffect::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GhostTrailEffect::doBlendAdditive() {
@@ -19,36 +20,44 @@ void GhostTrailEffect::draw() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GhostTrailEffect::getBlendFunc() {
+int GhostTrailEffect::getBlendFunc() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GhostTrailEffect::getDelegate() {
+int GhostTrailEffect::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GhostTrailEffect::getGhostColor() {
+int GhostTrailEffect::getGhostColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GhostTrailEffect::getPTarget() {
+int GhostTrailEffect::getPTarget() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GhostTrailEffect::getPosTarget() {
+int GhostTrailEffect::getPosTarget() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GhostTrailEffect::getStartAlpha() {
+int GhostTrailEffect::getStartAlpha() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GhostTrailEffect::getTarget() {
+int GhostTrailEffect::getTarget() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GhostTrailEffect::init() {
+bool GhostTrailEffect::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GhostTrailEffect::runWithTarget(cocos2d::CCSprite*, float, float, float, float, bool) {

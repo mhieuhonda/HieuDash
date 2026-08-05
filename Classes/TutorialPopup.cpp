@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void TutorialPopup::TutorialPopup() {
+TutorialPopup::TutorialPopup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -15,12 +15,14 @@ void TutorialPopup::closeTutorial() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void TutorialPopup::create(char const*) {
+TutorialPopup* TutorialPopup::create(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void TutorialPopup::init(char const*) {
+bool TutorialPopup::init(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void TutorialPopup::keyBackClicked() {

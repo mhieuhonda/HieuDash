@@ -7,7 +7,7 @@ void LevelInfoLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelInfoLayer::LevelInfoLayer() {
+LevelInfoLayer::LevelInfoLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -15,16 +15,18 @@ void LevelInfoLayer::confirmDelete() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelInfoLayer::create(GJGameLevel*) {
+LevelInfoLayer* LevelInfoLayer::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LevelInfoLayer::incrementLikes() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelInfoLayer::init(GJGameLevel*) {
+bool LevelInfoLayer::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelInfoLayer::keyBackClicked() {
@@ -83,8 +85,9 @@ void LevelInfoLayer::rateLevelClosed() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelInfoLayer::scene(GJGameLevel*) {
+cocos2d::CCScene* LevelInfoLayer::scene(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LevelInfoLayer::setupLevelInfo() {

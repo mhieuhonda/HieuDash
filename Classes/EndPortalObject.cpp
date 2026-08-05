@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void EndPortalObject::EndPortalObject() {
+EndPortalObject::EndPortalObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,12 +11,14 @@ void EndPortalObject::calculateSpawnXPos() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EndPortalObject::create() {
+EndPortalObject* EndPortalObject::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void EndPortalObject::init() {
+bool EndPortalObject::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void EndPortalObject::setPosition(cocos2d::CCPoint const&) {

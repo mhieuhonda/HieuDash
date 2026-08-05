@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GameCell::GameCell(char const*, float, float) {
+GameCell::GameCell(char const*, float, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,11 +11,12 @@ void GameCell::draw() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameCell::init() {
+bool GameCell::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameCell::loadFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameCell::loadFromString(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GJDropDownLayer::GJDropDownLayer() {
+GJDropDownLayer::GJDropDownLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,12 +23,14 @@ void GJDropDownLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJDropDownLayer::create(char const*) {
+GJDropDownLayer* GJDropDownLayer::create(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GJDropDownLayer::create(char const*, float) {
+GJDropDownLayer* GJDropDownLayer::create(char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GJDropDownLayer::customSetup() {
@@ -59,24 +61,28 @@ void GJDropDownLayer::exitLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJDropDownLayer::getInternalLayer() {
+int GJDropDownLayer::getInternalLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJDropDownLayer::getRemoveOnExit() {
+int GJDropDownLayer::getRemoveOnExit() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void GJDropDownLayer::hideLayer(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJDropDownLayer::init(char const*) {
+bool GJDropDownLayer::init(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GJDropDownLayer::init(char const*, float) {
+bool GJDropDownLayer::init(char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GJDropDownLayer::keyBackClicked() {

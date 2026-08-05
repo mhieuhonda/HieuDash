@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void TextArea::TextArea() {
+TextArea::TextArea() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,12 +11,14 @@ void TextArea::colorAllCharactersTo(cocos2d::_ccColor3B) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void TextArea::create(char const*, float, int, cocos2d::CCPoint, char const*) {
+TextArea* TextArea::create(char const*, float, int, cocos2d::CCPoint, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void TextArea::create(char const*, float, int, cocos2d::CCPoint, char const*, float) {
+TextArea* TextArea::create(char const*, float, int, cocos2d::CCPoint, char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void TextArea::draw() {
@@ -39,48 +41,58 @@ void TextArea::finishFade() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void TextArea::getAlign() {
+int TextArea::getAlign() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getFadeInFinished() {
+int TextArea::getFadeInFinished() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getLineSpace() {
+int TextArea::getLineSpace() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getOnTimer() {
+int TextArea::getOnTimer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getOrder() {
+int TextArea::getOrder() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getSizeWidth() {
+int TextArea::getSizeWidth() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getTextHeight() {
+int TextArea::getTextHeight() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getTextPosition() {
+int TextArea::getTextPosition() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void TextArea::getTextWidth() {
+int TextArea::getTextWidth() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void TextArea::hideAll() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void TextArea::init(char const*, float, int, cocos2d::CCPoint, char const*, float) {
+bool TextArea::init(char const*, float, int, cocos2d::CCPoint, char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void TextArea::setAlign(cocos2d::CCPoint) {

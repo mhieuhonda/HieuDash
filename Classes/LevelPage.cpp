@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelPage::LevelPage() {
+LevelPage::LevelPage() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelPage::create(GJGameLevel*) {
+LevelPage* LevelPage::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelPage::init(GJGameLevel*) {
+bool LevelPage::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelPage::onPlay() {

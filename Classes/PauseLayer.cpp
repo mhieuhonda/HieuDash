@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void PauseLayer::PauseLayer() {
+PauseLayer::PauseLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PauseLayer::create() {
+PauseLayer* PauseLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void PauseLayer::customSetup() {

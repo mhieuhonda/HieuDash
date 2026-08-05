@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SongInfoLayer::SongInfoLayer() {
+SongInfoLayer::SongInfoLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SongInfoLayer::create(SongObject*) {
+SongInfoLayer* SongInfoLayer::create(SongObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void SongInfoLayer::init(SongObject*) {
+bool SongInfoLayer::init(SongObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void SongInfoLayer::keyBackClicked() {

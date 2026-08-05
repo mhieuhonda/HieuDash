@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void UILayer::UILayer() {
+UILayer::UILayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,8 +23,9 @@ void UILayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void UILayer::create() {
+UILayer* UILayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void UILayer::disableMenu() {
@@ -39,12 +40,14 @@ void UILayer::enableMenu() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void UILayer::getClkTimer() {
+float UILayer::getClkTimer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void UILayer::init() {
+bool UILayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void UILayer::keyBackClicked() {

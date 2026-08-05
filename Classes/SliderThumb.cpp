@@ -3,20 +3,23 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SliderThumb::SliderThumb() {
+SliderThumb::SliderThumb() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SliderThumb::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
+SliderThumb* SliderThumb::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void SliderThumb::getValue() {
+int SliderThumb::getValue() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SliderThumb::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
+bool SliderThumb::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void SliderThumb::setValue(float) {

@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCCountdown::CCCountdown() {
+CCCountdown::CCCountdown() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCountdown::create() {
+CCCountdown* CCCountdown::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void CCCountdown::init() {
+bool CCCountdown::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCCountdown::lapFinished() {

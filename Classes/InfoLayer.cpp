@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void InfoLayer::InfoLayer() {
+InfoLayer::InfoLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void InfoLayer::create(GJGameLevel*) {
+InfoLayer* InfoLayer::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void InfoLayer::init(GJGameLevel*) {
+bool InfoLayer::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void InfoLayer::keyBackClicked() {

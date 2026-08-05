@@ -7,32 +7,37 @@ void PlatformToolbox::activateGameCenter() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlatformToolbox::doesFileExist(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void PlatformToolbox::doesFileExist(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlatformToolbox::downloadAndSavePromoImage(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void PlatformToolbox::downloadAndSavePromoImage(std::string, std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlatformToolbox::getUniqueUserID() {
+int PlatformToolbox::getUniqueUserID() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlatformToolbox::getUserID() {
+int PlatformToolbox::getUserID() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlatformToolbox::isHD() {
+bool PlatformToolbox::isHD() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlatformToolbox::isLocalPlayerAuthenticated() {
+bool PlatformToolbox::isLocalPlayerAuthenticated() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlatformToolbox::isNetworkAvailable() {
+bool PlatformToolbox::isNetworkAvailable() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void PlatformToolbox::loadAndDecryptFileToString(char const*, char const*) {
@@ -71,7 +76,7 @@ void PlatformToolbox::reportLoadingFinished() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlatformToolbox::saveAndEncryptStringToFile(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const*, char const*) {
+void PlatformToolbox::saveAndEncryptStringToFile(std::string, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -87,15 +92,16 @@ void PlatformToolbox::setKeyboardState(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlatformToolbox::shouldResumeSound() {
+bool PlatformToolbox::shouldResumeSound() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void PlatformToolbox::showAchievements() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlatformToolbox::spriteFromSavedFile(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void PlatformToolbox::spriteFromSavedFile(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -103,6 +109,6 @@ void PlatformToolbox::startFlurry(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlatformToolbox::tryShowRateDialog(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void PlatformToolbox::tryShowRateDialog(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }

@@ -3,35 +3,41 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelSettingsObject::LevelSettingsObject() {
+LevelSettingsObject::LevelSettingsObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSettingsObject::create() {
+LevelSettingsObject* LevelSettingsObject::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelSettingsObject::getAudioTrack() {
+int LevelSettingsObject::getAudioTrack() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSettingsObject::getSaveString() {
+int LevelSettingsObject::getSaveString() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSettingsObject::getStartBGColor() {
+int LevelSettingsObject::getStartBGColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSettingsObject::getStartGColor() {
+int LevelSettingsObject::getStartGColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSettingsObject::init() {
+bool LevelSettingsObject::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void LevelSettingsObject::objectFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void LevelSettingsObject::objectFromString(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

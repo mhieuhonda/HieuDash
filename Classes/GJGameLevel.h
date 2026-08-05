@@ -1,79 +1,80 @@
-#ifndef _GJGAMELEVEL_H_
-#define _GJGAMELEVEL_H_
+#ifndef HIEUDASH_GJGAMELEVEL_H_
+#define HIEUDASH_GJGAMELEVEL_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class GJGameLevel {
+class GJGameLevel : public cocos2d::CCObject {
 public:
     GJGameLevel();
-    canEncode();
-    create();
-    create(cocos2d::CCDictionary*);
-    createWithCoder(DS_Dictionary*);
-    encodeWithCoder(DS_Dictionary*);
-    getAttempts();
-    getAudioTrack();
-    getAverageDifficulty();
-    getCompletes();
-    getDifficulty();
-    getDownloads();
-    getGameVersion();
-    getIsEditable();
-    getIsUploaded();
-    getIsVerified();
-    getLastCameraPos();
-    getLastEditorZoom();
-    getLengthKey(int);
-    getLevelDesc();
-    getLevelID();
-    getLevelLength();
-    getLevelName();
-    getLevelString();
-    getLevelType();
-    getLevelVersion();
-    getLikes();
-    getM_ID();
-    getNormalPercent();
-    getPracticePercent();
-    getRatings();
-    getRatingsSum();
-    getUserID();
-    getUserName();
-    init();
-    lengthKeyToString(int);
-    levelWasAltered();
-    levelWasSubmitted();
-    savePercentage(int, bool);
-    setAttempts(int);
-    setAudioTrack(int);
-    setCompletes(int);
-    setDifficulty(int);
-    setDownloads(int);
-    setGameVersion(int);
-    setIsEditable(bool);
-    setIsUploaded(bool);
-    setIsVerified(bool);
-    setLastCameraPos(cocos2d::CCPoint);
-    setLastEditorZoom(float);
-    setLevelDesc(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    setLevelID(int);
-    setLevelLength(int);
-    setLevelName(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    setLevelString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    setLevelType(GJLevelType);
-    setLevelVersion(int);
-    setLikes(int);
-    setNormalPercent(int);
-    setPracticePercent(int);
-    setRatings(int);
-    setRatingsSum(int);
-    setUserID(int);
-    setUserName(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
+    void canEncode();
+    GJGameLevel* create();
+    GJGameLevel* create(cocos2d::CCDictionary*);
+    void createWithCoder(DS_Dictionary*);
+    void encodeWithCoder(DS_Dictionary*);
+    int getAttempts();
+    int getAudioTrack();
+    int getAverageDifficulty();
+    int getCompletes();
+    int getDifficulty();
+    int getDownloads();
+    int getGameVersion();
+    bool getIsEditable();
+    bool getIsUploaded();
+    bool getIsVerified();
+    int getLastCameraPos();
+    int getLastEditorZoom();
+    int getLengthKey(int);
+    int getLevelDesc();
+    int getLevelID();
+    int getLevelLength();
+    int getLevelName();
+    int getLevelString();
+    int getLevelType();
+    int getLevelVersion();
+    int getLikes();
+    int getM_ID();
+    int getNormalPercent();
+    int getPracticePercent();
+    int getRatings();
+    int getRatingsSum();
+    int getUserID();
+    int getUserName();
+    bool init();
+    void lengthKeyToString(int);
+    void levelWasAltered();
+    void levelWasSubmitted();
+    void savePercentage(int, bool);
+    void setAttempts(int);
+    void setAudioTrack(int);
+    void setCompletes(int);
+    void setDifficulty(int);
+    void setDownloads(int);
+    void setGameVersion(int);
+    void setIsEditable(bool);
+    void setIsUploaded(bool);
+    void setIsVerified(bool);
+    void setLastCameraPos(cocos2d::CCPoint);
+    void setLastEditorZoom(float);
+    void setLevelDesc(std::string);
+    void setLevelID(int);
+    void setLevelLength(int);
+    void setLevelName(std::string);
+    void setLevelString(std::string);
+    void setLevelType(GJLevelType);
+    void setLevelVersion(int);
+    void setLikes(int);
+    void setNormalPercent(int);
+    void setPracticePercent(int);
+    void setRatings(int);
+    void setRatingsSum(int);
+    void setUserID(int);
+    void setUserName(std::string);
     ~GJGameLevel();
 };
 
-#endif // _GJGAMELEVEL_H_
+#endif // HIEUDASH_GJGAMELEVEL_H_

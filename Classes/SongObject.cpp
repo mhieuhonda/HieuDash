@@ -3,20 +3,23 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SongObject::SongObject() {
+SongObject::SongObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SongObject::create(int) {
+SongObject* SongObject::create(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void SongObject::getAudioTrack() {
+int SongObject::getAudioTrack() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SongObject::init(int) {
+bool SongObject::init(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void SongObject::~SongObject() {

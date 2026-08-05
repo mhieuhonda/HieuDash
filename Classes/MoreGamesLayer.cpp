@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void MoreGamesLayer::MoreGamesLayer() {
+MoreGamesLayer::MoreGamesLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MoreGamesLayer::create() {
+MoreGamesLayer* MoreGamesLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void MoreGamesLayer::customSetup() {

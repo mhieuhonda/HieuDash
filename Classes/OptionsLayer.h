@@ -1,28 +1,29 @@
-#ifndef _OPTIONSLAYER_H_
-#define _OPTIONSLAYER_H_
+#ifndef HIEUDASH_OPTIONSLAYER_H_
+#define HIEUDASH_OPTIONSLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class OptionsLayer {
+class OptionsLayer : public cocos2d::CCLayer {
 public:
-    FLAlert_Clicked(FLAlertLayer*, bool);
+    virtual void FLAlert_Clicked(FLAlertLayer*, bool);
     OptionsLayer();
-    create();
-    customSetup();
-    exitLayer();
-    layerHidden();
-    onFX();
-    onGC();
-    onHelp();
-    onMusic();
-    onRate();
-    onSoundtracks();
-    onSupport();
+    OptionsLayer* create();
+    void customSetup();
+    void exitLayer();
+    void layerHidden();
+    void onFX();
+    void onGC();
+    void onHelp();
+    void onMusic();
+    void onRate();
+    void onSoundtracks();
+    void onSupport();
     ~OptionsLayer();
 };
 
-#endif // _OPTIONSLAYER_H_
+#endif // HIEUDASH_OPTIONSLAYER_H_

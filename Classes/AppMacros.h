@@ -1,7 +1,8 @@
-#ifndef _APP_MACROS_H_
-#define _APP_MACROS_H_
+#ifndef HIEUDASH_APP_MACROS_H_
+#define HIEUDASH_APP_MACROS_H_
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
 // Standard cocos2d-x 2.2.3 app macros (from the create_project template).
 
@@ -18,11 +19,13 @@ typedef struct tagResource {
     char directory[32];
 } Resource;
 
-static Resource cResourceSize[] = {
+namespace { Resource cResourceSize[] = {
     { cocos2d::CCSizeMake(480, 320),   "iphone"     },
     { cocos2d::CCSizeMake(1024, 768),  "ipad"       },
     { cocos2d::CCSizeMake(2048, 1536), "ipadhd"     }
 };
+
+} // anonymous namespace
 
 #define cResource       cResourceSize[TARGET_DESIGN_RESOLUTION_SIZE]
 

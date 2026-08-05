@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void EndLevelLayer::EndLevelLayer() {
+EndLevelLayer::EndLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EndLevelLayer::create() {
+EndLevelLayer* EndLevelLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void EndLevelLayer::customSetup() {
@@ -19,8 +20,9 @@ void EndLevelLayer::exitLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EndLevelLayer::getEndText() {
+int EndLevelLayer::getEndText() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void EndLevelLayer::onMenu() {

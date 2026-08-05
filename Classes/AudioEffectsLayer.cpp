@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void AudioEffectsLayer::AudioEffectsLayer() {
+AudioEffectsLayer::AudioEffectsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,32 +11,37 @@ void AudioEffectsLayer::audioStep(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AudioEffectsLayer::create(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+AudioEffectsLayer* AudioEffectsLayer::create(std::string) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void AudioEffectsLayer::draw() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AudioEffectsLayer::getAudioScale() {
+int AudioEffectsLayer::getAudioScale() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void AudioEffectsLayer::getBGSquare() {
+int AudioEffectsLayer::getBGSquare() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void AudioEffectsLayer::getRainActive() {
+int AudioEffectsLayer::getRainActive() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void AudioEffectsLayer::goingDown() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AudioEffectsLayer::init(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+bool AudioEffectsLayer::init(std::string) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void AudioEffectsLayer::resetAudioVars() {

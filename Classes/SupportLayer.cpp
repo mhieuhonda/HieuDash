@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SupportLayer::SupportLayer() {
+SupportLayer::SupportLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SupportLayer::create() {
+SupportLayer* SupportLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void SupportLayer::customSetup() {

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCLightFlash::CCLightFlash() {
+CCLightFlash::CCLightFlash() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,24 +11,28 @@ void CCLightFlash::cleanupFlash() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCLightFlash::create() {
+CCLightFlash* CCLightFlash::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCLightFlash::fadeAndRemove() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCLightFlash::getFlashP() {
+int CCLightFlash::getFlashP() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCLightFlash::getFlashZ() {
+int CCLightFlash::getFlashZ() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCLightFlash::init() {
+bool CCLightFlash::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCLightFlash::playEffect(cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, float, float, float, float, float, float, float, float, float, float, float, float, int, bool, bool, float) {

@@ -7,7 +7,7 @@ void MenuLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MenuLayer::MenuLayer() {
+MenuLayer::MenuLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -15,8 +15,9 @@ void MenuLayer::endGame() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MenuLayer::init() {
+bool MenuLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void MenuLayer::keyBackClicked() {
@@ -63,8 +64,9 @@ void MenuLayer::onStats() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MenuLayer::scene() {
+cocos2d::CCScene* MenuLayer::scene() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void MenuLayer::showGCQuestion() {

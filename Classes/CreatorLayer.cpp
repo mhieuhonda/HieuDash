@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CreatorLayer::CreatorLayer() {
+CreatorLayer::CreatorLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CreatorLayer::create() {
+CreatorLayer* CreatorLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void CreatorLayer::init() {
+bool CreatorLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CreatorLayer::keyBackClicked() {
@@ -39,8 +41,9 @@ void CreatorLayer::onSavedLevels() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CreatorLayer::scene() {
+cocos2d::CCScene* CreatorLayer::scene() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CreatorLayer::~CreatorLayer() {

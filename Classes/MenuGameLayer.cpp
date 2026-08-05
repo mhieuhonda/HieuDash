@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void MenuGameLayer::MenuGameLayer() {
+MenuGameLayer::MenuGameLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MenuGameLayer::create() {
+MenuGameLayer* MenuGameLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void MenuGameLayer::init() {
+bool MenuGameLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void MenuGameLayer::tryJump() {

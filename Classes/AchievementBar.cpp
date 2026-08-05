@@ -3,20 +3,23 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void AchievementBar::AchievementBar() {
+AchievementBar::AchievementBar() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementBar::create(char const*, char const*, char const*) {
+AchievementBar* AchievementBar::create(char const*, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void AchievementBar::getTargetScene() {
+int AchievementBar::getTargetScene() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void AchievementBar::init(char const*, char const*, char const*) {
+bool AchievementBar::init(char const*, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void AchievementBar::setTargetScene(cocos2d::CCNode*) {

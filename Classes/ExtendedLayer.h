@@ -1,21 +1,22 @@
-#ifndef _EXTENDEDLAYER_H_
-#define _EXTENDEDLAYER_H_
+#ifndef HIEUDASH_EXTENDEDLAYER_H_
+#define HIEUDASH_EXTENDEDLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class ExtendedLayer {
+class ExtendedLayer : public cocos2d::CCLayer {
 public:
     ExtendedLayer();
-    create();
-    getDelegate();
-    init();
-    setDelegate(BoomScrollLayerDelegate*);
-    setPosition(cocos2d::CCPoint const&);
+    ExtendedLayer* create();
+    int getDelegate();
+    bool init();
+    void setDelegate(BoomScrollLayerDelegate*);
+    void setPosition(cocos2d::CCPoint const&);
     ~ExtendedLayer();
 };
 
-#endif // _EXTENDEDLAYER_H_
+#endif // HIEUDASH_EXTENDEDLAYER_H_

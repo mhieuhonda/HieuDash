@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GManager::GManager() {
+GManager::GManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,8 +19,9 @@ void GManager::firstLoad() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GManager::init() {
+bool GManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GManager::load() {

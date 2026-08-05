@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void EditButtonBar::EditButtonBar() {
+EditButtonBar::EditButtonBar() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditButtonBar::create(cocos2d::CCArray*, cocos2d::CCPoint) {
+EditButtonBar* EditButtonBar::create(cocos2d::CCArray*, cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void EditButtonBar::init(cocos2d::CCArray*, cocos2d::CCPoint) {
+bool EditButtonBar::init(cocos2d::CCArray*, cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void EditButtonBar::onLeft() {

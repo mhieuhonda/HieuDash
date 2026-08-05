@@ -1,5 +1,6 @@
-#ifndef _CLASSES_H_
-#define _CLASSES_H_
+#include "HieuDashEnums.h"
+#ifndef HIEUDASH_CLASSES_H_
+#define HIEUDASH_CLASSES_H_
 
 // Auto-generated index of all reverse-engineered classes
 // from Geometry Dash 1.0 (com.robtopx.geometryjump).
@@ -152,4 +153,4 @@
 #include "UndoObject.h"
 #include "UploadPopup.h"
 
-#endif // _CLASSES_H_
+#endif // HIEUDASH_CLASSES_H_

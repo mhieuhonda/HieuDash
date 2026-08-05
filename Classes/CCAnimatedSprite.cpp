@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCAnimatedSprite::CCAnimatedSprite() {
+CCAnimatedSprite::CCAnimatedSprite() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,36 +23,44 @@ void CCAnimatedSprite::createWithType(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCAnimatedSprite::getActiveSpriteMode() {
+int CCAnimatedSprite::getActiveSpriteMode() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCAnimatedSprite::getAnimManager() {
+int CCAnimatedSprite::getAnimManager() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCAnimatedSprite::getAnimatedSprite() {
+int CCAnimatedSprite::getAnimatedSprite() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCAnimatedSprite::getDefaultAnimation() {
+int CCAnimatedSprite::getDefaultAnimation() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCAnimatedSprite::getDelegate() {
+int CCAnimatedSprite::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCAnimatedSprite::getNormalSprite() {
+int CCAnimatedSprite::getNormalSprite() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCAnimatedSprite::getSprite() {
+int CCAnimatedSprite::getSprite() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCAnimatedSprite::initWithType(char const*) {
+bool CCAnimatedSprite::initWithType(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCAnimatedSprite::loadType(char const*) {
@@ -63,7 +71,7 @@ void CCAnimatedSprite::setAnimatedSprite(CCPartAnimSprite*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCAnimatedSprite::setDefaultAnimation(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void CCAnimatedSprite::setDefaultAnimation(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void PlayLayer::PlayLayer() {
+PlayLayer::PlayLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -43,15 +43,16 @@ void PlayLayer::checkSpawnObjects() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayLayer::create(GJGameLevel*) {
+PlayLayer* PlayLayer::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void PlayLayer::createCheckpoint() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayLayer::createObjectsFromSetup(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void PlayLayer::createObjectsFromSetup(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -63,80 +64,99 @@ void PlayLayer::fullReset() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayLayer::getActiveBGColor() {
+int PlayLayer::getActiveBGColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayLayer::getAttempts() {
+int PlayLayer::getAttempts() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayLayer::getBatchNode() {
+cocos2d::CCSpriteBatchNode* PlayLayer::getBatchNode() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::getBatchNodeAdd() {
+cocos2d::CCSpriteBatchNode* PlayLayer::getBatchNodeAdd() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::getCameraPos() {
+cocos2d::CCPoint PlayLayer::getCameraPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return cocos2d::CCPointZero;
 }
 
-void PlayLayer::getCleanReset() {
+bool PlayLayer::getCleanReset() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlayLayer::getClkTimer() {
+float PlayLayer::getClkTimer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayLayer::getGEM() {
+float PlayLayer::getGEM() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayLayer::getGameLayer() {
+PlayLayer* PlayLayer::getGameLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::getJumps() {
+int PlayLayer::getJumps() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayLayer::getLastCheckpoint() {
+CheckpointObject* PlayLayer::getLastCheckpoint() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::getLevel() {
+GJGameLevel* PlayLayer::getLevel() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::getPlayer() {
+PlayerObject* PlayLayer::getPlayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::getPracticeMode() {
+bool PlayLayer::getPracticeMode() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlayLayer::getRelativeMod(cocos2d::CCPoint, float, float, float) {
+int PlayLayer::getRelativeMod(cocos2d::CCPoint, float, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayLayer::getStartPos() {
+cocos2d::CCPoint PlayLayer::getStartPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return cocos2d::CCPointZero;
 }
 
-void PlayLayer::getTestMode() {
+bool PlayLayer::getTestMode() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlayLayer::getUILayer() {
+UILayer* PlayLayer::getUILayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::init(GJGameLevel*) {
+bool PlayLayer::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void PlayLayer::levelComplete() {
@@ -203,12 +223,14 @@ void PlayLayer::resume() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayLayer::scene(GJGameLevel*) {
+cocos2d::CCScene* PlayLayer::scene(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayLayer::sectionForPos(cocos2d::CCPoint) {
+int PlayLayer::sectionForPos(cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void PlayLayer::setActiveEnterEffect(EnterEffect) {

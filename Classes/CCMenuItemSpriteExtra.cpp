@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCMenuItemSpriteExtra::CCMenuItemSpriteExtra() {
+CCMenuItemSpriteExtra::CCMenuItemSpriteExtra() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,36 +11,44 @@ void CCMenuItemSpriteExtra::activate() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCMenuItemSpriteExtra::create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
+CCMenuItemSpriteExtra* CCMenuItemSpriteExtra::create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void CCMenuItemSpriteExtra::getClickSound() {
+int CCMenuItemSpriteExtra::getClickSound() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCMenuItemSpriteExtra::getDarkenClick() {
+int CCMenuItemSpriteExtra::getDarkenClick() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCMenuItemSpriteExtra::getOriginalScale() {
+int CCMenuItemSpriteExtra::getOriginalScale() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCMenuItemSpriteExtra::getScaleVar() {
+int CCMenuItemSpriteExtra::getScaleVar() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCMenuItemSpriteExtra::getShouldAnimate() {
+int CCMenuItemSpriteExtra::getShouldAnimate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCMenuItemSpriteExtra::getVolume() {
+int CCMenuItemSpriteExtra::getVolume() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCMenuItemSpriteExtra::init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
+bool CCMenuItemSpriteExtra::init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCMenuItemSpriteExtra::selected() {

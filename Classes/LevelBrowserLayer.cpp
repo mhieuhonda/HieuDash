@@ -3,20 +3,23 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelBrowserLayer::LevelBrowserLayer() {
+LevelBrowserLayer::LevelBrowserLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelBrowserLayer::create(GJSearchObject*) {
+LevelBrowserLayer* LevelBrowserLayer::create(GJSearchObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelBrowserLayer::init(GJSearchObject*) {
+bool LevelBrowserLayer::init(GJSearchObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void LevelBrowserLayer::isCorrect(char const*) {
+bool LevelBrowserLayer::isCorrect(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelBrowserLayer::keyBackClicked() {
@@ -47,8 +50,9 @@ void LevelBrowserLayer::onPrevPage() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelBrowserLayer::scene(GJSearchObject*) {
+cocos2d::CCScene* LevelBrowserLayer::scene(GJSearchObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LevelBrowserLayer::setSearchObject(GJSearchObject*) {
@@ -59,7 +63,7 @@ void LevelBrowserLayer::setupLevelBrowser(cocos2d::CCArray*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelBrowserLayer::setupPageInfo(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, char const*) {
+void LevelBrowserLayer::setupPageInfo(std::string, char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

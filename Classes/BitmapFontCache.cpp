@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void BitmapFontCache::BitmapFontCache() {
+BitmapFontCache::BitmapFontCache() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,8 +11,9 @@ void BitmapFontCache::fontWithConfigFile(char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BitmapFontCache::init() {
+bool BitmapFontCache::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void BitmapFontCache::purgeSharedFontCache() {

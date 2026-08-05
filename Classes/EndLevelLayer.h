@@ -1,23 +1,24 @@
-#ifndef _ENDLEVELLAYER_H_
-#define _ENDLEVELLAYER_H_
+#ifndef HIEUDASH_ENDLEVELLAYER_H_
+#define HIEUDASH_ENDLEVELLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class EndLevelLayer {
+class EndLevelLayer : public cocos2d::CCLayer {
 public:
     EndLevelLayer();
-    create();
-    customSetup();
-    exitLayer();
-    getEndText();
-    onMenu();
-    onReplay();
-    showLayer(bool);
+    EndLevelLayer* create();
+    void customSetup();
+    void exitLayer();
+    int getEndText();
+    void onMenu();
+    void onReplay();
+    void showLayer(bool);
     ~EndLevelLayer();
 };
 
-#endif // _ENDLEVELLAYER_H_
+#endif // HIEUDASH_ENDLEVELLAYER_H_

@@ -3,12 +3,13 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCContentLayer::CCContentLayer() {
+CCContentLayer::CCContentLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCContentLayer::create(cocos2d::_ccColor4B const&, float, float) {
+CCContentLayer* CCContentLayer::create(cocos2d::_ccColor4B const&, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCContentLayer::setPosition(cocos2d::CCPoint const&) {

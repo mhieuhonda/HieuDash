@@ -1,0 +1,188 @@
+
+################################################################################
+# CLASS: PlayLayer
+################################################################################
+
+  --- non-virtual thunk to PlayLayer::~PlayLayer() ---
+  Address: 0x00193900, Size: 20 bytes
+    0x00193900:  ldr      ip, [pc, #8]
+    0x00193904:  add      ip, pc, ip
+    0x00193908:  sub      r0, r0, #0x128
+    0x0019390c:  bx       ip
+    0x00193910:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to PlayLayer::~PlayLayer() ---
+  Address: 0x00193ad0, Size: 20 bytes
+    0x00193ad0:  ldr      ip, [pc, #8]
+    0x00193ad4:  add      ip, pc, ip
+    0x00193ad8:  sub      r0, r0, #0x128
+    0x00193adc:  bx       ip
+    0x00193ae0:  andeq    r0, r0, sb
+
+################################################################################
+# CLASS: PlayerObject
+################################################################################
+
+  --- non-virtual thunk to PlayerObject::setColor(cocos2d::_ccColor3B const&) ---
+  Address: 0x001b6000, Size: 20 bytes
+    0x001b6000:  ldr      ip, [pc, #8]
+    0x001b6004:  add      ip, pc, ip
+    0x001b6008:  sub      r0, r0, #0x12c
+    0x001b600c:  bx       ip
+    0x001b6010:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to PlayerObject::setOpacity(unsigned char) ---
+  Address: 0x001b6238, Size: 20 bytes
+    0x001b6238:  ldr      ip, [pc, #8]
+    0x001b623c:  add      ip, pc, ip
+    0x001b6240:  sub      r0, r0, #0x12c
+    0x001b6244:  bx       ip
+    0x001b6248:  andeq    r0, r0, sb
+
+################################################################################
+# CLASS: GameObject
+################################################################################
+
+  --- non-virtual thunk to GameObject::setOpacity(unsigned char) ---
+  Address: 0x001b959c, Size: 20 bytes
+    0x001b959c:  ldr      ip, [pc, #8]
+    0x001b95a0:  add      ip, pc, ip
+    0x001b95a4:  sub      r0, r0, #0x12c
+    0x001b95a8:  bx       ip
+    0x001b95ac:  andeq    r0, r0, sb
+
+################################################################################
+# CLASS: MenuLayer
+################################################################################
+
+  --- non-virtual thunk to MenuLayer::~MenuLayer() ---
+  Address: 0x0018e97c, Size: 20 bytes
+    0x0018e97c:  ldr      ip, [pc, #8]
+    0x0018e980:  add      ip, pc, ip
+    0x0018e984:  sub      r0, r0, #0x128
+    0x0018e988:  bx       ip
+    0x0018e98c:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to MenuLayer::~MenuLayer() ---
+  Address: 0x0018ea24, Size: 20 bytes
+    0x0018ea24:  ldr      ip, [pc, #8]
+    0x0018ea28:  add      ip, pc, ip
+    0x0018ea2c:  sub      r0, r0, #0x128
+    0x0018ea30:  bx       ip
+    0x0018ea34:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to MenuLayer::keyBackClicked() ---
+  Address: 0x0018f708, Size: 20 bytes
+    0x0018f708:  ldr      ip, [pc, #8]
+    0x0018f70c:  add      ip, pc, ip
+    0x0018f710:  sub      r0, r0, #0x130
+    0x0018f714:  bx       ip
+    0x0018f718:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to MenuLayer::FLAlert_Clicked(FLAlertLayer*, bool) ---
+  Address: 0x0018f788, Size: 20 bytes
+    0x0018f788:  ldr      ip, [pc, #8]
+    0x0018f78c:  add      ip, pc, ip
+    0x0018f790:  sub      r0, r0, #0x13c
+    0x0018f794:  bx       ip
+    0x0018f798:  andeq    r0, r0, sb
+
+################################################################################
+# CLASS: LevelEditorLayer
+################################################################################
+
+  --- non-virtual thunk to LevelEditorLayer::~LevelEditorLayer() ---
+  Address: 0x001bc844, Size: 20 bytes
+    0x001bc844:  ldr      ip, [pc, #8]
+    0x001bc848:  add      ip, pc, ip
+    0x001bc84c:  sub      r0, r0, #0x128
+    0x001bc850:  bx       ip
+    0x001bc854:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to LevelEditorLayer::~LevelEditorLayer() ---
+  Address: 0x001bc97c, Size: 20 bytes
+    0x001bc97c:  ldr      ip, [pc, #8]
+    0x001bc980:  add      ip, pc, ip
+    0x001bc984:  sub      r0, r0, #0x128
+    0x001bc988:  bx       ip
+    0x001bc98c:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to LevelEditorLayer::levelSettingsUpdated() ---
+  Address: 0x001bd008, Size: 20 bytes
+    0x001bd008:  ldr      ip, [pc, #8]
+    0x001bd00c:  add      ip, pc, ip
+    0x001bd010:  sub      r0, r0, #0x13c
+    0x001bd014:  bx       ip
+    0x001bd018:  andeq    r0, r0, sb
+
+################################################################################
+# CLASS: EditorUI
+################################################################################
+
+  --- non-virtual thunk to EditorUI::~EditorUI() ---
+  Address: 0x001c1cf0, Size: 20 bytes
+    0x001c1cf0:  ldr      ip, [pc, #8]
+    0x001c1cf4:  add      ip, pc, ip
+    0x001c1cf8:  sub      r0, r0, #0x128
+    0x001c1cfc:  bx       ip
+    0x001c1d00:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to EditorUI::~EditorUI() ---
+  Address: 0x001c1e24, Size: 20 bytes
+    0x001c1e24:  ldr      ip, [pc, #8]
+    0x001c1e28:  add      ip, pc, ip
+    0x001c1e2c:  sub      r0, r0, #0x128
+    0x001c1e30:  bx       ip
+    0x001c1e34:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to EditorUI::FLAlert_Clicked(FLAlertLayer*, bool) ---
+  Address: 0x001c3990, Size: 20 bytes
+    0x001c3990:  ldr      ip, [pc, #8]
+    0x001c3994:  add      ip, pc, ip
+    0x001c3998:  sub      r0, r0, #0x13c
+    0x001c399c:  bx       ip
+    0x001c39a0:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to EditorUI::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) ---
+  Address: 0x001c649c, Size: 20 bytes
+    0x001c649c:  ldr      ip, [pc, #8]
+    0x001c64a0:  add      ip, pc, ip
+    0x001c64a4:  sub      r0, r0, #0x128
+    0x001c64a8:  bx       ip
+    0x001c64ac:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to EditorUI::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) ---
+  Address: 0x001c652c, Size: 20 bytes
+    0x001c652c:  ldr      ip, [pc, #8]
+    0x001c6530:  add      ip, pc, ip
+    0x001c6534:  sub      r0, r0, #0x128
+    0x001c6538:  bx       ip
+    0x001c653c:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to EditorUI::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) ---
+  Address: 0x001c6740, Size: 20 bytes
+    0x001c6740:  ldr      ip, [pc, #8]
+    0x001c6744:  add      ip, pc, ip
+    0x001c6748:  sub      r0, r0, #0x128
+    0x001c674c:  bx       ip
+    0x001c6750:  andeq    r0, r0, sb
+
+  --- non-virtual thunk to EditorUI::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) ---
+  Address: 0x001c6954, Size: 20 bytes
+    0x001c6954:  ldr      ip, [pc, #8]
+    0x001c6958:  add      ip, pc, ip
+    0x001c695c:  sub      r0, r0, #0x128
+    0x001c6960:  bx       ip
+    0x001c6964:  andeq    r0, r0, sb
+
+################################################################################
+# CLASS: AppDelegate
+################################################################################
+
+  --- non-virtual thunk to AppDelegate::willSwitchToScene(cocos2d::CCScene*) ---
+  Address: 0x00186f28, Size: 20 bytes
+    0x00186f28:  ldr      ip, [pc, #8]
+    0x00186f2c:  add      ip, pc, ip
+    0x00186f30:  sub      r0, r0, #4
+    0x00186f34:  bx       ip
+    0x00186f38:  andeq    r0, r0, sb

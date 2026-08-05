@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCTextInputNode::CCTextInputNode() {
+CCTextInputNode::CCTextInputNode() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,36 +23,44 @@ void CCTextInputNode::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTextInputNode::create(float, float, char const*, char const*, int, char const*) {
+CCTextInputNode* CCTextInputNode::create(float, float, char const*, char const*, int, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void CCTextInputNode::getCharLimit() {
+int CCTextInputNode::getCharLimit() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTextInputNode::getDelegate() {
+int CCTextInputNode::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTextInputNode::getLabel() {
+int CCTextInputNode::getLabel() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTextInputNode::getProfanityFilter() {
+int CCTextInputNode::getProfanityFilter() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTextInputNode::getString() {
+int CCTextInputNode::getString() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTextInputNode::getTextField() {
+int CCTextInputNode::getTextField() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTextInputNode::init(float, float, char const*, char const*, int, char const*) {
+bool CCTextInputNode::init(float, float, char const*, char const*, int, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCTextInputNode::keyboardWillHide(cocos2d::CCIMEKeyboardNotificationInfo&) {
@@ -87,7 +95,7 @@ void CCTextInputNode::registerWithTouchDispatcher() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTextInputNode::setAllowedChars(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void CCTextInputNode::setAllowedChars(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCAnimateFrameCache::CCAnimateFrameCache() {
+CCAnimateFrameCache::CCAnimateFrameCache() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,8 +23,9 @@ void CCAnimateFrameCache::addSpriteFramesWithFile(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCAnimateFrameCache::init() {
+bool CCAnimateFrameCache::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCAnimateFrameCache::purgeSharedSpriteFrameCache() {

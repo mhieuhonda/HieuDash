@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LoadingLayer::LoadingLayer() {
+LoadingLayer::LoadingLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LoadingLayer::getLoadingString() {
+int LoadingLayer::getLoadingString() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LoadingLayer::init() {
+bool LoadingLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LoadingLayer::loadAssets() {
@@ -27,8 +29,9 @@ void LoadingLayer::node() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LoadingLayer::scene() {
+cocos2d::CCScene* LoadingLayer::scene() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LoadingLayer::updateProgress(int) {

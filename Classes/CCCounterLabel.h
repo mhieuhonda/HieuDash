@@ -1,28 +1,29 @@
-#ifndef _CCCOUNTERLABEL_H_
-#define _CCCOUNTERLABEL_H_
+#ifndef HIEUDASH_CCCOUNTERLABEL_H_
+#define HIEUDASH_CCCOUNTERLABEL_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class CCCounterLabel {
+class CCCounterLabel : public cocos2d::CCLabelTTF {
 public:
     CCCounterLabel();
-    calculateStepSize();
-    create(char const*, char const*, int, FormatterType);
-    disableCounter();
-    enableCounter();
-    fastUpdateCounter();
-    getCurrentCount();
-    getTargetCount();
-    init(char const*, char const*, int, FormatterType);
-    setTargetCount(int);
-    setupFormatter(FormatterType);
-    updateCounter(double);
-    updateString();
+    void calculateStepSize();
+    CCCounterLabel* create(char const*, char const*, int, FormatterType);
+    void disableCounter();
+    void enableCounter();
+    void fastUpdateCounter();
+    int getCurrentCount();
+    int getTargetCount();
+    bool init(char const*, char const*, int, FormatterType);
+    void setTargetCount(int);
+    void setupFormatter(FormatterType);
+    void updateCounter(double);
+    void updateString();
     ~CCCounterLabel();
 };
 
-#endif // _CCCOUNTERLABEL_H_
+#endif // HIEUDASH_CCCOUNTERLABEL_H_

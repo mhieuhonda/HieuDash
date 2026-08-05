@@ -1,22 +1,23 @@
-#ifndef _FILESAVEMANAGER_H_
-#define _FILESAVEMANAGER_H_
+#ifndef HIEUDASH_FILESAVEMANAGER_H_
+#define HIEUDASH_FILESAVEMANAGER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class FileSaveManager {
+class FileSaveManager : public cocos2d::CCObject {
 public:
     FileSaveManager();
-    firstLoad();
-    getShopItems();
-    getStoreData();
-    init();
-    loadDataFromFile(char const*);
-    sharedState();
+    void firstLoad();
+    int getShopItems();
+    int getStoreData();
+    bool init();
+    void loadDataFromFile(char const*);
+    FileSaveManager* sharedState();
     ~FileSaveManager();
 };
 
-#endif // _FILESAVEMANAGER_H_
+#endif // HIEUDASH_FILESAVEMANAGER_H_

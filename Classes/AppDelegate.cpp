@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void AppDelegate::AppDelegate() {
+AppDelegate::AppDelegate() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,8 +11,9 @@ void AppDelegate::applicationDidEnterBackground() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AppDelegate::applicationDidFinishLaunching() {
+bool AppDelegate::applicationDidFinishLaunching() {
     // TODO: implement (recovered from binary, body unknown)
+    return true;
 }
 
 void AppDelegate::applicationWillEnterForeground() {
@@ -27,28 +28,34 @@ void AppDelegate::checkSound() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AppDelegate::get() {
+int AppDelegate::get() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void AppDelegate::getIsIOS() {
+bool AppDelegate::getIsIOS() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void AppDelegate::getLoadingFinished() {
+bool AppDelegate::getLoadingFinished() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void AppDelegate::getManagersLoaded() {
+bool AppDelegate::getManagersLoaded() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void AppDelegate::getPaused() {
+bool AppDelegate::getPaused() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void AppDelegate::getScenePointer() {
+cocos2d::CCNode* AppDelegate::getScenePointer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void AppDelegate::hideLoadingCircle() {

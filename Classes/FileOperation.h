@@ -1,17 +1,18 @@
-#ifndef _FILEOPERATION_H_
-#define _FILEOPERATION_H_
+#ifndef HIEUDASH_FILEOPERATION_H_
+#define HIEUDASH_FILEOPERATION_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class FileOperation {
+class FileOperation : public cocos2d::CCObject {
 public:
-    getFilePath();
-    readFile();
-    saveFile();
+    int getFilePath();
+    void readFile();
+    void saveFile();
 };
 
-#endif // _FILEOPERATION_H_
+#endif // HIEUDASH_FILEOPERATION_H_

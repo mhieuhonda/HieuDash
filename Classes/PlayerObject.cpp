@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void PlayerObject::PlayerObject() {
+PlayerObject::PlayerObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,8 +19,9 @@ void PlayerObject::collidedWithObject(float, GameObject*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayerObject::create(int, cocos2d::CCLayer*) {
+PlayerObject* PlayerObject::create(int, cocos2d::CCLayer*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void PlayerObject::deactivateParticle() {
@@ -39,60 +40,74 @@ void PlayerObject::flipMod() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayerObject::getFlyMode() {
+int PlayerObject::getFlyMode() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getGameLayer() {
+PlayLayer* PlayerObject::getGameLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void PlayerObject::getGravityFlipped() {
+int PlayerObject::getGravityFlipped() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getHasJumped() {
+bool PlayerObject::getHasJumped() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlayerObject::getHasRingJumped() {
+bool PlayerObject::getHasRingJumped() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlayerObject::getIsDead() {
+bool PlayerObject::getIsDead() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlayerObject::getIsLocked() {
+bool PlayerObject::getIsLocked() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void PlayerObject::getLastGroundPos() {
+int PlayerObject::getLastGroundPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getLastP() {
+int PlayerObject::getLastP() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getOnGround() {
+int PlayerObject::getOnGround() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getPortalObject() {
+int PlayerObject::getPortalObject() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getPortalP() {
+int PlayerObject::getPortalP() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getRealPosition() {
+int PlayerObject::getRealPosition() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void PlayerObject::getTouchedRing() {
+int PlayerObject::getTouchedRing() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void PlayerObject::gravityDown() {
@@ -107,8 +122,9 @@ void PlayerObject::hitGround(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayerObject::init(int, cocos2d::CCLayer*) {
+bool PlayerObject::init(int, cocos2d::CCLayer*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void PlayerObject::loadFromCheckpoint(CheckpointObject*) {

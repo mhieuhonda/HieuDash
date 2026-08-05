@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void RingObject::RingObject() {
+RingObject::RingObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void RingObject::create(char const*) {
+RingObject* RingObject::create(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void RingObject::init(char const*) {
+bool RingObject::init(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void RingObject::powerOffObject() {

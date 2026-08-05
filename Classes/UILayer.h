@@ -1,33 +1,34 @@
-#ifndef _UILAYER_H_
-#define _UILAYER_H_
+#ifndef HIEUDASH_UILAYER_H_
+#define HIEUDASH_UILAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class UILayer {
+class UILayer : public cocos2d::CCLayer {
 public:
     UILayer();
-    ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    create();
-    disableMenu();
-    draw();
-    enableMenu();
-    getClkTimer();
-    init();
-    keyBackClicked();
-    onCheck();
-    onDeleteCheck();
-    onPause();
-    pCommand(cocos2d::CCNode*);
-    registerWithTouchDispatcher();
-    toggleCheckpointsMenu(bool);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    UILayer* create();
+    void disableMenu();
+    void draw();
+    void enableMenu();
+    float getClkTimer();
+    bool init();
+    void keyBackClicked();
+    void onCheck();
+    void onDeleteCheck();
+    void onPause();
+    void pCommand(cocos2d::CCNode*);
+    void registerWithTouchDispatcher();
+    void toggleCheckpointsMenu(bool);
     ~UILayer();
 };
 
-#endif // _UILAYER_H_
+#endif // HIEUDASH_UILAYER_H_

@@ -1,25 +1,26 @@
-#ifndef _LEVELTOOLS_H_
-#define _LEVELTOOLS_H_
+#ifndef HIEUDASH_LEVELTOOLS_H_
+#define HIEUDASH_LEVELTOOLS_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
 class LevelTools {
 public:
-    artistForAudio(int);
-    fbURLForArtist(int);
-    getAudioBPM(int);
-    getAudioFileName(int);
-    getAudioString(int);
-    getAudioTitle(int);
-    getLevel(int);
-    nameForArtist(int);
-    ngURLForArtist(int);
-    urlForAudio(int);
-    ytURLForArtist(int);
+    void artistForAudio(int);
+    void fbURLForArtist(int);
+    int getAudioBPM(int);
+    int getAudioFileName(int);
+    int getAudioString(int);
+    int getAudioTitle(int);
+    GJGameLevel* getLevel(int);
+    void nameForArtist(int);
+    void ngURLForArtist(int);
+    void urlForAudio(int);
+    void ytURLForArtist(int);
 };
 
-#endif // _LEVELTOOLS_H_
+#endif // HIEUDASH_LEVELTOOLS_H_

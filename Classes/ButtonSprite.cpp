@@ -3,48 +3,58 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void ButtonSprite::ButtonSprite() {
+ButtonSprite::ButtonSprite() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ButtonSprite::create(char const*) {
+ButtonSprite* ButtonSprite::create(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::create(char const*, float) {
+ButtonSprite* ButtonSprite::create(char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::create(char const*, int, int, float, bool) {
+ButtonSprite* ButtonSprite::create(char const*, int, int, float, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::create(char const*, int, int, float, bool, char const*, char const*) {
+ButtonSprite* ButtonSprite::create(char const*, int, int, float, bool, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::create(char const*, int, int, float, bool, char const*, char const*, float) {
+ButtonSprite* ButtonSprite::create(char const*, int, int, float, bool, char const*, char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::create(cocos2d::CCSprite*) {
+ButtonSprite* ButtonSprite::create(cocos2d::CCSprite*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::create(cocos2d::CCSprite*, int, int, float, float, bool) {
+ButtonSprite* ButtonSprite::create(cocos2d::CCSprite*, int, int, float, float, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::create(cocos2d::CCSprite*, int, int, float, float, bool, char const*) {
+ButtonSprite* ButtonSprite::create(cocos2d::CCSprite*, int, int, float, float, bool, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonSprite::init(char const*, int, int, float, bool, char const*, char const*, float) {
+bool ButtonSprite::init(char const*, int, int, float, bool, char const*, char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void ButtonSprite::init(cocos2d::CCSprite*, int, int, float, float, bool, char const*) {
+bool ButtonSprite::init(cocos2d::CCSprite*, int, int, float, float, bool, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void ButtonSprite::setColor(cocos2d::_ccColor3B) {

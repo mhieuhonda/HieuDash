@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void Slider::Slider() {
+Slider::Slider() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,28 +19,34 @@ void Slider::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void Slider::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
+Slider* Slider::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void Slider::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*) {
+Slider* Slider::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void Slider::getLiveDragging() {
+int Slider::getLiveDragging() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void Slider::getThumb() {
+int Slider::getThumb() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void Slider::getValue() {
+int Slider::getValue() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void Slider::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*) {
+bool Slider::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void Slider::setBarVisibility(bool) {

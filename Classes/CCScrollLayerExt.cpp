@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCScrollLayerExt::CCScrollLayerExt(cocos2d::CCRect) {
+CCScrollLayerExt::CCScrollLayerExt(cocos2d::CCRect) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -27,76 +27,94 @@ void CCScrollLayerExt::constraintContent() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCScrollLayerExt::getBottomPadding() {
+int CCScrollLayerExt::getBottomPadding() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getClipsToBounds() {
+int CCScrollLayerExt::getClipsToBounds() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getContentLayer() {
+int CCScrollLayerExt::getContentLayer() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getHorizontalScrollIndicator() {
+int CCScrollLayerExt::getHorizontalScrollIndicator() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getIsScrolling() {
+bool CCScrollLayerExt::getIsScrolling() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CCScrollLayerExt::getIsTouch() {
+bool CCScrollLayerExt::getIsTouch() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CCScrollLayerExt::getLockHorizontal() {
+int CCScrollLayerExt::getLockHorizontal() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getLockVertical() {
+int CCScrollLayerExt::getLockVertical() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getMaxOffsetBottom() {
+int CCScrollLayerExt::getMaxOffsetBottom() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getMaxOffsetTop() {
+int CCScrollLayerExt::getMaxOffsetTop() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getMaxY() {
+int CCScrollLayerExt::getMaxY() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getMinY() {
+int CCScrollLayerExt::getMinY() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getScrollDelegate() {
+int CCScrollLayerExt::getScrollDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getShowsHorizontalScrollIndicator() {
+int CCScrollLayerExt::getShowsHorizontalScrollIndicator() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getShowsVerticalScrollIndicator() {
+int CCScrollLayerExt::getShowsVerticalScrollIndicator() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getTopPadding() {
+int CCScrollLayerExt::getTopPadding() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getTouchDispatch() {
+int CCScrollLayerExt::getTouchDispatch() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCScrollLayerExt::getVerticalScrollIndicator() {
+int CCScrollLayerExt::getVerticalScrollIndicator() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void CCScrollLayerExt::moveToTop() {

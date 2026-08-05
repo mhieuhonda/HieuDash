@@ -1,72 +1,73 @@
-#ifndef _DS_DICTIONARY_H_
-#define _DS_DICTIONARY_H_
+#ifndef HIEUDASH_DS_DICTIONARY_H_
+#define HIEUDASH_DS_DICTIONARY_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class DS_Dictionary {
+class DS_Dictionary : public cocos2d::CCObject {
 public:
     DS_Dictionary();
-    cleanStringWhiteSpace(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&);
-    decodeObjectForKey(char const*);
-    getAllKeys();
-    getArrayForKey(char const*);
-    getBoolForKey(char const*);
-    getDictForKey(char const*);
-    getFloatForKey(char const*);
-    getIndexOfKey(char const*);
-    getIndexOfKeyWithClosestAlphaNumericalMatch(char const*);
-    getIntegerForKey(char const*);
-    getKey(unsigned int);
-    getNumKeys();
-    getObjectForKey(char const*);
-    getRectArrayForKey(char const*);
-    getRectForKey(char const*);
-    getStringArrayForKey(char const*);
-    getStringForKey(char const*);
-    getVec2ArrayForKey(char const*);
-    getVec2ForKey(char const*);
-    loadRootSubDictFromFile(char const*);
-    loadRootSubDictFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >);
-    rectFromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cocos2d::CCRect&);
-    removeAllKeys();
-    removeKey(char const*);
-    removeKey(unsigned int);
-    saveRootSubDictToFile(char const*);
-    saveRootSubDictToString();
-    setArrayForKey(char const*, cocos2d::CCArray*);
-    setBoolForKey(char const*, bool);
-    setBoolForKey(char const*, bool, bool);
-    setDictForKey(char const*, cocos2d::CCDictionary*);
-    setFloatForKey(char const*, float);
-    setFloatForKey(char const*, float, bool);
-    setIntegerForKey(char const*, int);
-    setIntegerForKey(char const*, int, bool);
-    setObjectForKey(char const*, cocos2d::CCObject*);
-    setRectArrayForKey(char const*, std::vector<cocos2d::CCRect, std::allocator<cocos2d::CCRect> > const&);
-    setRectArrayForKey(char const*, std::vector<cocos2d::CCRect, std::allocator<cocos2d::CCRect> > const&, bool);
-    setRectForKey(char const*, cocos2d::CCRect const&);
-    setRectForKey(char const*, cocos2d::CCRect const&, bool);
-    setStringArrayForKey(char const*, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&);
-    setStringArrayForKey(char const*, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > > const&, bool);
-    setStringForKey(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&);
-    setStringForKey(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool);
-    setSubDictForKey(char const*);
-    setSubDictForKey(char const*, bool);
-    setVec2ArrayForKey(char const*, std::vector<cocos2d::CCPoint, std::allocator<cocos2d::CCPoint> > const&);
-    setVec2ArrayForKey(char const*, std::vector<cocos2d::CCPoint, std::allocator<cocos2d::CCPoint> > const&, bool);
-    setVec2ForKey(char const*, cocos2d::CCPoint const&);
-    setVec2ForKey(char const*, cocos2d::CCPoint const&, bool);
-    split(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char const*, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&);
-    splitWithForm(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&);
-    stepBackToRootSubDict();
-    stepIntoSubDictWithKey(char const*);
-    stepOutOfSubDict();
-    vec2FromString(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cocos2d::CCPoint&);
+    void cleanStringWhiteSpace(std::string const&);
+    void decodeObjectForKey(char const*);
+    int getAllKeys();
+    int getArrayForKey(char const*);
+    int getBoolForKey(char const*);
+    int getDictForKey(char const*);
+    int getFloatForKey(char const*);
+    int getIndexOfKey(char const*);
+    int getIndexOfKeyWithClosestAlphaNumericalMatch(char const*);
+    int getIntegerForKey(char const*);
+    int getKey(unsigned int);
+    int getNumKeys();
+    int getObjectForKey(char const*);
+    int getRectArrayForKey(char const*);
+    int getRectForKey(char const*);
+    int getStringArrayForKey(char const*);
+    int getStringForKey(char const*);
+    int getVec2ArrayForKey(char const*);
+    int getVec2ForKey(char const*);
+    void loadRootSubDictFromFile(char const*);
+    void loadRootSubDictFromString(std::string);
+    void rectFromString(std::string const&, cocos2d::CCRect&);
+    void removeAllKeys();
+    void removeKey(char const*);
+    void removeKey(unsigned int);
+    void saveRootSubDictToFile(char const*);
+    void saveRootSubDictToString();
+    void setArrayForKey(char const*, cocos2d::CCArray*);
+    void setBoolForKey(char const*, bool);
+    void setBoolForKey(char const*, bool, bool);
+    void setDictForKey(char const*, cocos2d::CCDictionary*);
+    void setFloatForKey(char const*, float);
+    void setFloatForKey(char const*, float, bool);
+    void setIntegerForKey(char const*, int);
+    void setIntegerForKey(char const*, int, bool);
+    void setObjectForKey(char const*, cocos2d::CCObject*);
+    void setRectArrayForKey(char const*, std::vector<cocos2d::CCRect, std::allocator<cocos2d::CCRect> > const&);
+    void setRectArrayForKey(char const*, std::vector<cocos2d::CCRect, std::allocator<cocos2d::CCRect> > const&, bool);
+    void setRectForKey(char const*, cocos2d::CCRect const&);
+    void setRectForKey(char const*, cocos2d::CCRect const&, bool);
+    void setStringArrayForKey(char const*, std::vector<std::string, std::allocator<std::string > > const&);
+    void setStringArrayForKey(char const*, std::vector<std::string, std::allocator<std::string > > const&, bool);
+    void setStringForKey(char const*, std::string const&);
+    void setStringForKey(char const*, std::string const&, bool);
+    void setSubDictForKey(char const*);
+    void setSubDictForKey(char const*, bool);
+    void setVec2ArrayForKey(char const*, std::vector<cocos2d::CCPoint, std::allocator<cocos2d::CCPoint> > const&);
+    void setVec2ArrayForKey(char const*, std::vector<cocos2d::CCPoint, std::allocator<cocos2d::CCPoint> > const&, bool);
+    void setVec2ForKey(char const*, cocos2d::CCPoint const&);
+    void setVec2ForKey(char const*, cocos2d::CCPoint const&, bool);
+    void split(std::string const&, char const*, std::vector<std::string, std::allocator<std::string > >&);
+    void splitWithForm(std::string const&, std::vector<std::string, std::allocator<std::string > >&);
+    void stepBackToRootSubDict();
+    void stepIntoSubDictWithKey(char const*);
+    void stepOutOfSubDict();
+    void vec2FromString(std::string const&, cocos2d::CCPoint&);
     ~DS_Dictionary();
 };
 
-#endif // _DS_DICTIONARY_H_
+#endif // HIEUDASH_DS_DICTIONARY_H_

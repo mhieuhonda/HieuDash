@@ -7,7 +7,7 @@ void AdToolbox::cacheInterstitial() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AdToolbox::cacheInterstitial(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void AdToolbox::cacheInterstitial(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,7 +23,7 @@ void AdToolbox::hasCachedInterstitial() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AdToolbox::hasCachedInterstitial(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void AdToolbox::hasCachedInterstitial(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -35,6 +35,6 @@ void AdToolbox::showInterstitial() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AdToolbox::showInterstitial(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void AdToolbox::showInterstitial(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }

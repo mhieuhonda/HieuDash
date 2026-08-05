@@ -7,8 +7,9 @@ void StoreToolbox::doICheck() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void StoreToolbox::isBillingSupported() {
+bool StoreToolbox::isBillingSupported() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void StoreToolbox::purchaseItem(char const*) {

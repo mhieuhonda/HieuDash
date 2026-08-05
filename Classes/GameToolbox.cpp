@@ -15,23 +15,27 @@ void GameToolbox::doWeHaveInternet() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameToolbox::getDropActionWDelay(float, float, float, cocos2d::CCNode*, void (cocos2d::CCObject::*)()) {
+int GameToolbox::getDropActionWDelay(float, float, float, cocos2d::CCNode*, void (cocos2d::CCObject::*)()) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameToolbox::getDropActionWEnd(float, float, float, cocos2d::CCAction*, float) {
+int GameToolbox::getDropActionWEnd(float, float, float, cocos2d::CCAction*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameToolbox::getResponse(cocos2d::extension::CCHttpResponse*) {
+int GameToolbox::getResponse(cocos2d::extension::CCHttpResponse*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GameToolbox::isIOS() {
+bool GameToolbox::isIOS() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GameToolbox::openRateURL(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GameToolbox::openRateURL(std::string, std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

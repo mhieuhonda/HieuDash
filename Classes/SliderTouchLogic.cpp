@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void SliderTouchLogic::SliderTouchLogic() {
+SliderTouchLogic::SliderTouchLogic() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,24 +19,29 @@ void SliderTouchLogic::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SliderTouchLogic::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
+SliderTouchLogic* SliderTouchLogic::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void SliderTouchLogic::getLiveDragging() {
+int SliderTouchLogic::getLiveDragging() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SliderTouchLogic::getSliderDelegate() {
+int SliderTouchLogic::getSliderDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SliderTouchLogic::getThumb() {
+int SliderTouchLogic::getThumb() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void SliderTouchLogic::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
+bool SliderTouchLogic::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void SliderTouchLogic::setLiveDragging(bool) {

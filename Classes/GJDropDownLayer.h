@@ -1,40 +1,41 @@
-#ifndef _GJDROPDOWNLAYER_H_
-#define _GJDROPDOWNLAYER_H_
+#ifndef HIEUDASH_GJDROPDOWNLAYER_H_
+#define HIEUDASH_GJDROPDOWNLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class GJDropDownLayer {
+class GJDropDownLayer : public cocos2d::CCLayerColor {
 public:
     GJDropDownLayer();
-    ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    create(char const*);
-    create(char const*, float);
-    customSetup();
-    disableUI();
-    draw();
-    enableUI();
-    enterAnimFinished();
-    enterLayer();
-    exitLayer();
-    getInternalLayer();
-    getRemoveOnExit();
-    hideLayer(bool);
-    init(char const*);
-    init(char const*, float);
-    keyBackClicked();
-    layerHidden();
-    layerVisible();
-    registerWithTouchDispatcher();
-    setRemoveOnExit(bool);
-    showLayer(bool);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    GJDropDownLayer* create(char const*);
+    GJDropDownLayer* create(char const*, float);
+    void customSetup();
+    void disableUI();
+    void draw();
+    void enableUI();
+    void enterAnimFinished();
+    void enterLayer();
+    void exitLayer();
+    int getInternalLayer();
+    int getRemoveOnExit();
+    void hideLayer(bool);
+    bool init(char const*);
+    bool init(char const*, float);
+    void keyBackClicked();
+    void layerHidden();
+    void layerVisible();
+    void registerWithTouchDispatcher();
+    void setRemoveOnExit(bool);
+    void showLayer(bool);
     ~GJDropDownLayer();
 };
 
-#endif // _GJDROPDOWNLAYER_H_
+#endif // HIEUDASH_GJDROPDOWNLAYER_H_

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelCell::LevelCell(char const*, float, float) {
+LevelCell::LevelCell(char const*, float, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,8 +11,9 @@ void LevelCell::draw() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelCell::init() {
+bool LevelCell::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelCell::loadCustomLevelCell() {

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void LevelSelectLayer::LevelSelectLayer() {
+LevelSelectLayer::LevelSelectLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,16 +11,19 @@ void LevelSelectLayer::colorForPage(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSelectLayer::create(int) {
+LevelSelectLayer* LevelSelectLayer::create(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void LevelSelectLayer::getColorValue(int, int, float) {
+int LevelSelectLayer::getColorValue(int, int, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void LevelSelectLayer::init(int) {
+bool LevelSelectLayer::init(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void LevelSelectLayer::keyBackClicked() {
@@ -43,8 +46,9 @@ void LevelSelectLayer::onPrev() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSelectLayer::scene(int) {
+cocos2d::CCScene* LevelSelectLayer::scene(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void LevelSelectLayer::scrollLayerMoved(cocos2d::CCPoint) {

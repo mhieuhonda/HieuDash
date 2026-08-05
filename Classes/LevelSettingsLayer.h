@@ -1,29 +1,30 @@
-#ifndef _LEVELSETTINGSLAYER_H_
-#define _LEVELSETTINGSLAYER_H_
+#ifndef HIEUDASH_LEVELSETTINGSLAYER_H_
+#define HIEUDASH_LEVELSETTINGSLAYER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class LevelSettingsLayer {
+class LevelSettingsLayer : public cocos2d::CCLayer {
 public:
     LevelSettingsLayer();
-    audioNext();
-    audioPrevious();
-    colorPickerClosed(ColorPickerPopup*);
-    create(LevelSettingsObject*);
-    getDelegate();
-    init(LevelSettingsObject*);
-    keyBackClicked();
-    onBG();
-    onClose();
-    onG();
-    selectSong(int);
-    setDelegate(LevelSettingsDelegate*);
-    updateAudioLabel();
+    void audioNext();
+    void audioPrevious();
+    void colorPickerClosed(ColorPickerPopup*);
+    LevelSettingsLayer* create(LevelSettingsObject*);
+    int getDelegate();
+    bool init(LevelSettingsObject*);
+    void keyBackClicked();
+    void onBG();
+    void onClose();
+    void onG();
+    void selectSong(int);
+    void setDelegate(LevelSettingsDelegate*);
+    void updateAudioLabel();
     ~LevelSettingsLayer();
 };
 
-#endif // _LEVELSETTINGSLAYER_H_
+#endif // HIEUDASH_LEVELSETTINGSLAYER_H_

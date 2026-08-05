@@ -1,29 +1,30 @@
-#ifndef _CCMENUITEMTOGGLER_H_
-#define _CCMENUITEMTOGGLER_H_
+#ifndef HIEUDASH_CCMENUITEMTOGGLER_H_
+#define HIEUDASH_CCMENUITEMTOGGLER_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class CCMenuItemToggler {
+class CCMenuItemToggler : public cocos2d::CCMenuItemSprite {
 public:
     CCMenuItemToggler();
-    activate();
-    activeItem();
+    void activate();
+    void activeItem();
     create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
-    getIsActive();
-    getNormalButton();
-    getSelectedButton();
+    bool getIsActive();
+    int getNormalButton();
+    int getSelectedButton();
     init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
-    normalTouch();
-    selected();
-    selectedTouch();
-    setEnabled(bool);
-    toggle(bool);
-    unselected();
+    void normalTouch();
+    void selected();
+    void selectedTouch();
+    void setEnabled(bool);
+    void toggle(bool);
+    void unselected();
     ~CCMenuItemToggler();
 };
 
-#endif // _CCMENUITEMTOGGLER_H_
+#endif // HIEUDASH_CCMENUITEMTOGGLER_H_

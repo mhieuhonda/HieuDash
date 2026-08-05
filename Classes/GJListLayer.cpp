@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GJListLayer::GJListLayer() {
+GJListLayer::GJListLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJListLayer::create(BoomListView*, char const*, cocos2d::_ccColor4B, float, float) {
+GJListLayer* GJListLayer::create(BoomListView*, char const*, cocos2d::_ccColor4B, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GJListLayer::init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float) {
+bool GJListLayer::init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GJListLayer::~GJListLayer() {

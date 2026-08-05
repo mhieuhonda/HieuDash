@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCBlockLayer::CCBlockLayer() {
+CCBlockLayer::CCBlockLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,8 +23,9 @@ void CCBlockLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCBlockLayer::create() {
+CCBlockLayer* CCBlockLayer::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCBlockLayer::customSetup() {
@@ -55,16 +56,18 @@ void CCBlockLayer::exitLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCBlockLayer::getRemoveOnExit() {
+int CCBlockLayer::getRemoveOnExit() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
 void CCBlockLayer::hideLayer(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCBlockLayer::init() {
+bool CCBlockLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCBlockLayer::keyBackClicked() {

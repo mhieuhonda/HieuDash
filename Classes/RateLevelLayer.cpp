@@ -3,20 +3,23 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void RateLevelLayer::RateLevelLayer() {
+RateLevelLayer::RateLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void RateLevelLayer::create(int) {
+RateLevelLayer* RateLevelLayer::create(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void RateLevelLayer::getDelegate() {
+int RateLevelLayer::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void RateLevelLayer::init(int) {
+bool RateLevelLayer::init(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void RateLevelLayer::keyBackClicked() {

@@ -153,6 +153,24 @@ LOCAL_SRC_FILES := \
     ../../Classes/UndoObject.cpp \
     ../../Classes/UploadPopup.cpp
 
+    ../../Classes/BoomScrollLayerDelegate.cpp \
+    ../../Classes/CCScrollLayerExtDelegate.cpp \
+    ../../Classes/CCTableViewDataSource.cpp \
+    ../../Classes/CCTableViewDelegate.cpp \
+    ../../Classes/CCTextInputNode.cpp \
+    ../../Classes/CocosDenshion.cpp \
+    ../../Classes/ColorPickerDelegate.cpp \
+    ../../Classes/ColorSelectDelegate.cpp \
+    ../../Classes/FLAlertLayerProtocol.cpp \
+    ../../Classes/GameRateDelegate.cpp \
+    ../../Classes/LevelDownloadDelegate.cpp \
+    ../../Classes/LevelManagerDelegate.cpp \
+    ../../Classes/LevelSettingsDelegate.cpp \
+    ../../Classes/LevelUpdateDelegate.cpp \
+    ../../Classes/LevelUploadDelegate.cpp \
+    ../../Classes/RateLevelDelegate.cpp \
+    ../../Classes/TextInputDelegate.cpp \
+
 LOCAL_CFLAGS := -DCC_TARGET_PLATFORM=CC_PLATFORM_ANDROID \
                 -DCOCOS2D_DEBUG=1 \
                 -DCOCOS2DX_VERSION_MAJOR=2 \

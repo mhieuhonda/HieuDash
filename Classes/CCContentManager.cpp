@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCContentManager::CCContentManager() {
+CCContentManager::CCContentManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,12 +23,14 @@ void CCContentManager::clearCache() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCContentManager::init() {
+bool CCContentManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CCContentManager::sharedManager() {
+CCContentManager* CCContentManager::sharedManager() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCContentManager::~CCContentManager() {

@@ -3,16 +3,18 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void ButtonPage::ButtonPage() {
+ButtonPage::ButtonPage() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ButtonPage::create(cocos2d::CCArray*, cocos2d::CCPoint) {
+ButtonPage* ButtonPage::create(cocos2d::CCArray*, cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ButtonPage::init(cocos2d::CCArray*, cocos2d::CCPoint) {
+bool ButtonPage::init(cocos2d::CCArray*, cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void ButtonPage::~ButtonPage() {

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void AchievementManager::AchievementManager() {
+AchievementManager::AchievementManager() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -15,24 +15,29 @@ void AchievementManager::checkAchFromUnlock(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementManager::getAchievementsWithID(char const*) {
+int AchievementManager::getAchievementsWithID(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void AchievementManager::getAllAchievements() {
+int AchievementManager::getAllAchievements() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void AchievementManager::getReportedAchievements() {
+int AchievementManager::getReportedAchievements() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void AchievementManager::init() {
+bool AchievementManager::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void AchievementManager::isAchievementEarned(char const*) {
+bool AchievementManager::isAchievementEarned(char const*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void AchievementManager::notifyAchievementWithID(char const*) {
@@ -63,8 +68,9 @@ void AchievementManager::setup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementManager::sharedState() {
+AchievementManager* AchievementManager::sharedState() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void AchievementManager::~AchievementManager() {

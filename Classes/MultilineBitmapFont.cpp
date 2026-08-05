@@ -3,35 +3,40 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void MultilineBitmapFont::MultilineBitmapFont() {
+MultilineBitmapFont::MultilineBitmapFont() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MultilineBitmapFont::createWithFont(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, cocos2d::CCPoint, int) {
+void MultilineBitmapFont::createWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MultilineBitmapFont::getSizeWidth() {
+int MultilineBitmapFont::getSizeWidth() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void MultilineBitmapFont::getTextHeight() {
+int MultilineBitmapFont::getTextHeight() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void MultilineBitmapFont::getTextPos() {
+int MultilineBitmapFont::getTextPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void MultilineBitmapFont::getTextWidth() {
+int MultilineBitmapFont::getTextWidth() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void MultilineBitmapFont::initWithFont(char const*, std::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, cocos2d::CCPoint, int) {
+bool MultilineBitmapFont::initWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void MultilineBitmapFont::readColorInfo(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void MultilineBitmapFont::readColorInfo(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -39,7 +44,7 @@ void MultilineBitmapFont::setOpacity(unsigned char) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MultilineBitmapFont::stringWithMaxWidth(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float) {
+void MultilineBitmapFont::stringWithMaxWidth(std::string, float, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

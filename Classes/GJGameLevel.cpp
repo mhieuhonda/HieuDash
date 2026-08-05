@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void GJGameLevel::GJGameLevel() {
+GJGameLevel::GJGameLevel() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,12 +11,14 @@ void GJGameLevel::canEncode() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGameLevel::create() {
+GJGameLevel* GJGameLevel::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void GJGameLevel::create(cocos2d::CCDictionary*) {
+GJGameLevel* GJGameLevel::create(cocos2d::CCDictionary*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GJGameLevel::createWithCoder(DS_Dictionary*) {
@@ -27,120 +29,149 @@ void GJGameLevel::encodeWithCoder(DS_Dictionary*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGameLevel::getAttempts() {
+int GJGameLevel::getAttempts() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getAudioTrack() {
+int GJGameLevel::getAudioTrack() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getAverageDifficulty() {
+int GJGameLevel::getAverageDifficulty() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getCompletes() {
+int GJGameLevel::getCompletes() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getDifficulty() {
+int GJGameLevel::getDifficulty() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getDownloads() {
+int GJGameLevel::getDownloads() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getGameVersion() {
+int GJGameLevel::getGameVersion() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getIsEditable() {
+bool GJGameLevel::getIsEditable() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GJGameLevel::getIsUploaded() {
+bool GJGameLevel::getIsUploaded() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GJGameLevel::getIsVerified() {
+bool GJGameLevel::getIsVerified() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void GJGameLevel::getLastCameraPos() {
+int GJGameLevel::getLastCameraPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLastEditorZoom() {
+int GJGameLevel::getLastEditorZoom() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLengthKey(int) {
+int GJGameLevel::getLengthKey(int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLevelDesc() {
+int GJGameLevel::getLevelDesc() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLevelID() {
+int GJGameLevel::getLevelID() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLevelLength() {
+int GJGameLevel::getLevelLength() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLevelName() {
+int GJGameLevel::getLevelName() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLevelString() {
+int GJGameLevel::getLevelString() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLevelType() {
+int GJGameLevel::getLevelType() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLevelVersion() {
+int GJGameLevel::getLevelVersion() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getLikes() {
+int GJGameLevel::getLikes() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getM_ID() {
+int GJGameLevel::getM_ID() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getNormalPercent() {
+int GJGameLevel::getNormalPercent() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getPracticePercent() {
+int GJGameLevel::getPracticePercent() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getRatings() {
+int GJGameLevel::getRatings() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getRatingsSum() {
+int GJGameLevel::getRatingsSum() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getUserID() {
+int GJGameLevel::getUserID() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::getUserName() {
+int GJGameLevel::getUserName() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void GJGameLevel::init() {
+bool GJGameLevel::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GJGameLevel::lengthKeyToString(int) {
@@ -203,7 +234,7 @@ void GJGameLevel::setLastEditorZoom(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGameLevel::setLevelDesc(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GJGameLevel::setLevelDesc(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -215,11 +246,11 @@ void GJGameLevel::setLevelLength(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGameLevel::setLevelName(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GJGameLevel::setLevelName(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGameLevel::setLevelString(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GJGameLevel::setLevelString(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -255,7 +286,7 @@ void GJGameLevel::setUserID(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGameLevel::setUserName(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) {
+void GJGameLevel::setUserName(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

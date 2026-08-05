@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void ColorPickerPopup::ColorPickerPopup() {
+ColorPickerPopup::ColorPickerPopup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,20 +11,24 @@ void ColorPickerPopup::closeColorSelect() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ColorPickerPopup::create() {
+ColorPickerPopup* ColorPickerPopup::create() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void ColorPickerPopup::getColorValue() {
+int ColorPickerPopup::getColorValue() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void ColorPickerPopup::getDelegate() {
+int ColorPickerPopup::getDelegate() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void ColorPickerPopup::init() {
+bool ColorPickerPopup::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void ColorPickerPopup::keyBackClicked() {

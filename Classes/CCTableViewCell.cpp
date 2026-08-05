@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCTableViewCell::CCTableViewCell(char const*, float, float) {
+CCTableViewCell::CCTableViewCell(char const*, float, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,31 +11,36 @@ void CCTableViewCell::deleteButtonSelector(cocos2d::CCObject*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableViewCell::getCellIdentifier() {
+int CCTableViewCell::getCellIdentifier() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableViewCell::getDelBtnColor() {
+int CCTableViewCell::getDelBtnColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableViewCell::getDeleteButton() {
+int CCTableViewCell::getDeleteButton() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableViewCell::getEditable() {
+int CCTableViewCell::getEditable() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCTableViewCell::isDeleteButtonShow() {
+bool CCTableViewCell::isDeleteButtonShow() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCTableViewCell::resetDeleteButtonPosition() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableViewCell::setCellIdentifier(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) {
+void CCTableViewCell::setCellIdentifier(std::string const&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

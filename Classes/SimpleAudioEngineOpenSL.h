@@ -1,30 +1,31 @@
-#ifndef _SIMPLEAUDIOENGINEOPENSL_H_
-#define _SIMPLEAUDIOENGINEOPENSL_H_
+#ifndef HIEUDASH_SIMPLEAUDIOENGINEOPENSL_H_
+#define HIEUDASH_SIMPLEAUDIOENGINEOPENSL_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class SimpleAudioEngineOpenSL {
+class SimpleAudioEngineOpenSL : public cocos2d::CCObject {
 public:
     SimpleAudioEngineOpenSL();
-    end();
-    getEffectsVolume();
-    initEngine();
-    pauseAllEffects();
-    pauseEffect(unsigned int);
-    playEffect(char const*, bool);
-    preloadEffect(char const*);
-    resumeAllEffects();
-    resumeEffect(unsigned int);
-    setEffectsVolume(float);
-    sharedEngine();
-    stopAllEffects();
-    stopEffect(unsigned int);
-    unloadEffect(char const*);
+    void end();
+    int getEffectsVolume();
+    void initEngine();
+    void pauseAllEffects();
+    void pauseEffect(unsigned int);
+    void playEffect(char const*, bool);
+    void preloadEffect(char const*);
+    void resumeAllEffects();
+    void resumeEffect(unsigned int);
+    void setEffectsVolume(float);
+    SimpleAudioEngineOpenSL* sharedEngine();
+    void stopAllEffects();
+    void stopEffect(unsigned int);
+    void unloadEffect(char const*);
     ~SimpleAudioEngineOpenSL();
 };
 
-#endif // _SIMPLEAUDIOENGINEOPENSL_H_
+#endif // HIEUDASH_SIMPLEAUDIOENGINEOPENSL_H_

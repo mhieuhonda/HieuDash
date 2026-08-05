@@ -3,64 +3,77 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CheckpointObject::CheckpointObject() {
+CheckpointObject::CheckpointObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CheckpointObject::create() {
+CheckpointObject* CheckpointObject::create() {
+    // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
+}
+
+EnterEffect CheckpointObject::getActiveEnterEffect() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CheckpointObject::getActiveEnterEffect() {
+int CheckpointObject::getBGColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getBGColor() {
+cocos2d::CCPoint CheckpointObject::getCameraPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return cocos2d::CCPointZero;
 }
 
-void CheckpointObject::getCameraPos() {
+bool CheckpointObject::getCanJump() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void CheckpointObject::getCanJump() {
+int CheckpointObject::getFlipGravity() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getFlipGravity() {
+int CheckpointObject::getFlyMode() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getFlyMode() {
+int CheckpointObject::getGhostType() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getGhostType() {
+int CheckpointObject::getGroundColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getGroundColor() {
+int CheckpointObject::getObject() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getObject() {
+int CheckpointObject::getPlayerPos() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getPlayerPos() {
+int CheckpointObject::getPlayerYVel() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getPlayerYVel() {
+int CheckpointObject::getPortalObject() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CheckpointObject::getPortalObject() {
+bool CheckpointObject::init() {
     // TODO: implement (recovered from binary, body unknown)
-}
-
-void CheckpointObject::init() {
-    // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CheckpointObject::setActiveEnterEffect(EnterEffect) {

@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void CCCircleWave::CCCircleWave() {
+CCCircleWave::CCCircleWave() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,8 +11,9 @@ void CCCircleWave::baseSetup(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCircleWave::create(float, float, float, bool) {
+CCCircleWave* CCCircleWave::create(float, float, float, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void CCCircleWave::draw() {
@@ -23,40 +24,49 @@ void CCCircleWave::followObject(cocos2d::CCNode*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCircleWave::getCircleMode() {
+int CCCircleWave::getCircleMode() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::getColor() {
+int CCCircleWave::getColor() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::getLineWidth() {
+int CCCircleWave::getLineWidth() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::getOpacity() {
+int CCCircleWave::getOpacity() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::getOpacityMod() {
+int CCCircleWave::getOpacityMod() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::getPosition() {
+int CCCircleWave::getPosition() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::getRadius() {
+int CCCircleWave::getRadius() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::getWidth() {
+int CCCircleWave::getWidth() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void CCCircleWave::init(float, float, float, bool) {
+bool CCCircleWave::init(float, float, float, bool) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void CCCircleWave::setCircleMode(CircleMode) {

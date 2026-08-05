@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void EditLevelLayer::EditLevelLayer() {
+EditLevelLayer::EditLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -19,12 +19,14 @@ void EditLevelLayer::confirmDelete() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditLevelLayer::create(GJGameLevel*) {
+EditLevelLayer* EditLevelLayer::create(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
-void EditLevelLayer::init(GJGameLevel*) {
+bool EditLevelLayer::init(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void EditLevelLayer::keyBackClicked() {
@@ -59,8 +61,9 @@ void EditLevelLayer::onTest() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditLevelLayer::scene(GJGameLevel*) {
+cocos2d::CCScene* EditLevelLayer::scene(GJGameLevel*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void EditLevelLayer::setupLevelInfo() {

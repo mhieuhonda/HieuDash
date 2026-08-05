@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void EditorUI::EditorUI() {
+EditorUI::EditorUI() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -43,8 +43,9 @@ void EditorUI::constrainGameLayerPosition() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditorUI::create(LevelEditorLayer*) {
+EditorUI* EditorUI::create(LevelEditorLayer*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void EditorUI::createMoveMenu() {
@@ -75,44 +76,54 @@ void EditorUI::enableButton(CCMenuItemSpriteExtra*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditorUI::getButton(char const*, int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*) {
+int EditorUI::getButton(char const*, int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::getCreateBtn(char const*, int) {
+int EditorUI::getCreateBtn(char const*, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::getEditMode() {
+bool EditorUI::getEditMode() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
-void EditorUI::getGridSnappedPos(cocos2d::CCPoint) {
+int EditorUI::getGridSnappedPos(cocos2d::CCPoint) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::getModeBtn(char const*, int) {
+int EditorUI::getModeBtn(char const*, int) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::getRelativeOffset(GameObject*) {
+int EditorUI::getRelativeOffset(GameObject*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::getSpriteButton(char const*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float) {
+int EditorUI::getSpriteButton(char const*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::getTouchPoint(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+int EditorUI::getTouchPoint(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::getXMin() {
+int EditorUI::getXMin() {
     // TODO: implement (recovered from binary, body unknown)
+    return 0;
 }
 
-void EditorUI::init(LevelEditorLayer*) {
+bool EditorUI::init(LevelEditorLayer*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void EditorUI::moveObject(GameObject*, cocos2d::CCPoint) {

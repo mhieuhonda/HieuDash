@@ -3,7 +3,7 @@
 // Stub implementations - signatures recovered from libgame.so dynamic
 // symbol table. Bodies are placeholders and must be re-implemented.
 
-void EditorPauseLayer::EditorPauseLayer() {
+EditorPauseLayer::EditorPauseLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -11,16 +11,18 @@ void EditorPauseLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditorPauseLayer::create(LevelEditorLayer*) {
+EditorPauseLayer* EditorPauseLayer::create(LevelEditorLayer*) {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void EditorPauseLayer::customSetup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditorPauseLayer::init(LevelEditorLayer*) {
+bool EditorPauseLayer::init(LevelEditorLayer*) {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void EditorPauseLayer::keyBackClicked() {

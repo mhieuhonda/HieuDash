@@ -1,34 +1,35 @@
-#ifndef _CCPARTANIMSPRITE_H_
-#define _CCPARTANIMSPRITE_H_
+#ifndef HIEUDASH_CCPARTANIMSPRITE_H_
+#define HIEUDASH_CCPARTANIMSPRITE_H_
 
 // Reverse-engineered from libgame.so (Geometry Dash 1.0, com.robtopx.geometryjump)
 // Method signatures reconstructed from the ELF dynamic symbol table.
 // Method bodies are not recovered - they must be re-implemented.
 
 #include "cocos2d.h"
+#include "HieuDashEnums.h"
 
-class CCPartAnimSprite {
+class CCPartAnimSprite : public cocos2d::CCSprite {
 public:
     CCPartAnimSprite();
-    changeTextureOfID(cocos2d::CCString*, cocos2d::CCString*);
-    countParts();
-    createWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*);
-    dirtify();
-    displayFrame();
-    getSpriteContainer();
-    getSpriteForKey(cocos2d::CCString*);
-    initWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*);
-    isFrameDisplayed(cocos2d::CCSpriteFrame*);
-    setBlendFunc(cocos2d::_ccBlendFunc);
-    setColor(cocos2d::_ccColor3B);
-    setDisplayFrame(cocos2d::CCSpriteFrame*);
-    setFlipX(bool);
-    setFlipY(bool);
-    setScale(float);
-    setScaleX(float);
-    setScaleY(float);
-    transformSprite(frameValues);
+    void changeTextureOfID(cocos2d::CCString*, cocos2d::CCString*);
+    void countParts();
+    void createWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*);
+    void dirtify();
+    void displayFrame();
+    int getSpriteContainer();
+    int getSpriteForKey(cocos2d::CCString*);
+    bool initWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*);
+    bool isFrameDisplayed(cocos2d::CCSpriteFrame*);
+    void setBlendFunc(cocos2d::_ccBlendFunc);
+    void setColor(cocos2d::_ccColor3B);
+    void setDisplayFrame(cocos2d::CCSpriteFrame*);
+    void setFlipX(bool);
+    void setFlipY(bool);
+    void setScale(float);
+    void setScaleX(float);
+    void setScaleY(float);
+    void transformSprite(frameValues);
     ~CCPartAnimSprite();
 };
 
-#endif // _CCPARTANIMSPRITE_H_
+#endif // HIEUDASH_CCPARTANIMSPRITE_H_

@@ -7,7 +7,7 @@ void GJGarageLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGarageLayer::GJGarageLayer() {
+GJGarageLayer::GJGarageLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
@@ -23,8 +23,9 @@ void GJGarageLayer::descriptionForUnlock(int, UnlockType) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGarageLayer::init() {
+bool GJGarageLayer::init() {
     // TODO: implement (recovered from binary, body unknown)
+    return false;
 }
 
 void GJGarageLayer::keyBackClicked() {
@@ -51,8 +52,9 @@ void GJGarageLayer::onPlayerIcon(cocos2d::CCNode*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGarageLayer::scene() {
+cocos2d::CCScene* GJGarageLayer::scene() {
     // TODO: implement (recovered from binary, body unknown)
+    return nullptr;
 }
 
 void GJGarageLayer::setupColorSelect() {
