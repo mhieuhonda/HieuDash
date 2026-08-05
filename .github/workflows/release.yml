@@ -43,19 +43,16 @@ jobs:
           distribution: "temurin"
           java-version: "17"
 
-      - name: Accept Android SDK licenses
-        run: |
-          mkdir -p $HOME/.android
-          touch $HOME/.android/repositories.cfg
-          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null 2>&1 || true
-
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          accept-android-sdk-licenses: true
-          packages: |
-            platforms;android-34
-            build-tools;34.0.0
+        run: |
+          set -e
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          # Accept licenses truoc.
+          yes | sdkmanager --licenses > /dev/null 2>&1 || true
+          # Install required packages (semicolons phai duoc quote).
+          sdkmanager "platforms;android-34" "build-tools;34.0.0"
+          # Verify.
+          sdkmanager --list_installed | grep -E "platforms|build-tools" || true
 
       - name: Install Godot engine and export templates
         run: |
