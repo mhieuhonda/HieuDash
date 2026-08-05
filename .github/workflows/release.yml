@@ -12,7 +12,7 @@ on:
       tag:
         description: "Tag name (for manual run)"
         required: false
-        default: "v0.2.0"
+        default: "v0.4.0"
 
 concurrency:
   group: build-release-${{ github.ref }}
@@ -63,6 +63,66 @@ jobs:
           "$SDKMGR" "platforms;android-34" "build-tools;34.0.0"
           # Verify.
           "$SDKMGR" --list_installed | grep -E "platforms|build-tools" || true
+
+      - name: Generate release keystore for APK signing
+        env:
+          HIEUDASH_KEYSTORE_PASS: ${{ secrets.HIEUDASH_KEYSTORE_PASS }}
+        run: |
+          set -e
+          echo "=== Generating keystore for signing APK ==="
+          # Neu co secret HIEUDASH_KEYSTORE_PASS thi dung; nguoc lai dung default.
+          KS_PASS="${HIEUDASH_KEYSTORE_PASS:-hieudash_release_2026}"
+          KS_PATH="$HOME/hieudash.keystore"
+          keytool -genkeypair -v \
+            -keystore "$KS_PATH" \
+            -storepass "$KS_PASS" \
+            -keypass "$KS_PASS" \
+            -alias hieudash \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -dname "CN=Hieu Dash, OU=Project, O=mhieuhonda, L=Hanoi, ST=Hanoi, C=VN"
+          echo "Keystore created at: $KS_PATH"
+          ls -la "$KS_PATH"
+          # Luu path va password vao env file cho step sau.
+          echo "HIEUDASH_KEYSTORE_PATH=$KS_PATH" >> $GITHUB_ENV
+          echo "HIEUDASH_KEYSTORE_PASS=$KS_PASS" >> $GITHUB_ENV
+          echo "HIEUDASH_KEYSTORE_ALIAS=hieudash" >> $GITHUB_ENV
+
+      - name: Configure Godot Android signing
+        run: |
+          set -e
+          echo "=== Patching export_presets.cfg with keystore path ==="
+          # Them keystore/release_path, user, password vao export_presets.cfg (preset.0 = Android).
+          python3 - <<'PY'
+          import os
+          path = "export_presets.cfg"
+          with open(path, "r", encoding="utf-8") as f:
+              content = f.read()
+          ks_path = os.environ.get("HIEUDASH_KEYSTORE_PATH", "")
+          ks_pass = os.environ.get("HIEUDASH_KEYSTORE_PASS", "")
+          ks_alias = os.environ.get("HIEUDASH_KEYSTORE_ALIAS", "hieudash")
+          additions = f'''
+keystore/release="{ks_path}"
+keystore/release_user="{ks_alias}"
+keystore/release_password="{ks_pass}"
+'''
+          if 'keystore/release' not in content:
+              # Chen sau dong package/signed=true
+              marker = 'package/signed=true'
+              if marker in content:
+                  content = content.replace(marker, marker + additions, 1)
+              else:
+                  # Chen vao cuoi preset.0.options
+                  content = content.replace('graphics/32_bits_display=true',
+                                            'graphics/32_bits_display=true' + additions, 1)
+          with open(path, "w", encoding="utf-8") as f:
+              f.write(content)
+          print("Patched export_presets.cfg with keystore config")
+          # In ra de verify
+          import re
+          for line in content.splitlines():
+              if 'keystore' in line.lower() or 'package/signed' in line:
+                  print("  ", line)
+          PY
 
       - name: Install Godot engine and export templates
         run: |
@@ -116,7 +176,7 @@ jobs:
         run: |
           TAG="${GITHUB_REF##*/}"
           if [[ ! "$TAG" =~ ^v[0-9] ]]; then
-            TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
+            TAG="${{ github.event.inputs.tag || 'v0.4.0' }}"
           fi
           mkdir -p artifacts
           cp export/android/HieuDash.apk "artifacts/HieuDash-${TAG}-android.apk"
@@ -132,7 +192,7 @@ jobs:
       - name: Upload APK to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2.0' }}
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.4.0' }}
           files: artifacts/*.apk
           fail_on_unmatched_files: true
         env:
@@ -196,7 +256,7 @@ jobs:
         run: |
           TAG="${GITHUB_REF##*/}"
           if [[ ! "$TAG" =~ ^v[0-9] ]]; then
-            TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
+            TAG="${{ github.event.inputs.tag || 'v0.4.0' }}"
           fi
           mkdir -p artifacts
           cd export/linux
@@ -214,7 +274,7 @@ jobs:
       - name: Upload Linux build to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2.0' }}
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.4.0' }}
           files: artifacts/*.zip
           fail_on_unmatched_files: true
         env:
@@ -277,7 +337,7 @@ jobs:
         run: |
           TAG="${GITHUB_REF##*/}"
           if [[ ! "$TAG" =~ ^v[0-9] ]]; then
-            TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
+            TAG="${{ github.event.inputs.tag || 'v0.4.0' }}"
           fi
           mkdir -p artifacts
           cd export/windows
@@ -295,7 +355,7 @@ jobs:
       - name: Upload Windows build to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2.0' }}
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.4.0' }}
           files: artifacts/*.zip
           fail_on_unmatched_files: true
         env:

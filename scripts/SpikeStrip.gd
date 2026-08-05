@@ -37,19 +37,19 @@ func _rebuild() -> void:
                 for i in _count:
                         var sx := (i - (_count - 1) * 0.5) * spike_width
                         var poly := Polygon2D.new()
-                        poly.polygon = PackedVector2Array(
-                                sx - spike_width * 0.4, 20,
-                                sx + spike_width * 0.4, 20,
-                                sx, -22
-                        )
+                        poly.polygon = PackedVector2Array([
+                                Vector2(sx - spike_width * 0.4, 20.0),
+                                Vector2(sx + spike_width * 0.4, 20.0),
+                                Vector2(sx, -22.0),
+                        ])
                         poly.color = spike_color
                         container.add_child(poly)
                         var outline := Polygon2D.new()
-                        outline.polygon = PackedVector2Array(
-                                sx - spike_width * 0.45, 22,
-                                sx + spike_width * 0.45, 22,
-                                sx, -26
-                        )
+                        outline.polygon = PackedVector2Array([
+                                Vector2(sx - spike_width * 0.45, 22.0),
+                                Vector2(sx + spike_width * 0.45, 22.0),
+                                Vector2(sx, -26.0),
+                        ])
                         outline.color = outline_color
                         outline.z_index = -1
                         container.add_child(outline)

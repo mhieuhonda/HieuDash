@@ -2,7 +2,7 @@ extends Node
 ## SettingsSingleton (Autoload)
 ## Quan ly settings toan cuc - luu vao user://hieudash_settings.cfg
 ## Port tu GDPS-Editor-22 SettingsSingleton (offline-only, bo login/online).
-class_name SettingsSingleton
+## KHONG dung class_name vi no trung ten voi autoload singleton (Godot 4.7).
 
 signal setting_changed(key: String, value)
 
@@ -49,114 +49,114 @@ const SECTION_ADVANCED := "advanced"
 
 
 func _ready() -> void:
-	load_settings()
+        load_settings()
 
 
 func load_settings() -> void:
-	var cfg := ConfigFile.new()
-	var err := cfg.load(SETTINGS_PATH)
-	if err != OK:
-		# Khong co file -> dung default values.
-		return
-	# Display
-	platform_opacity = float(cfg.get_value(SECTION_DISPLAY, "platform_opacity", platform_opacity))
-	timer_opacity = float(cfg.get_value(SECTION_DISPLAY, "timer_opacity", timer_opacity))
-	timer_enabled = bool(cfg.get_value(SECTION_DISPLAY, "timer_enabled", timer_enabled))
-	hide_pause_button = bool(cfg.get_value(SECTION_DISPLAY, "hide_pause_button", hide_pause_button))
-	alt_touch_layout = bool(cfg.get_value(SECTION_DISPLAY, "alt_touch_layout", alt_touch_layout))
-	# Gameplay
-	playtest_enabled = bool(cfg.get_value(SECTION_GAMEPLAY, "playtest_enabled", playtest_enabled))
-	show_level_info = bool(cfg.get_value(SECTION_GAMEPLAY, "show_level_info", show_level_info))
-	disable_linked_objects = bool(cfg.get_value(SECTION_GAMEPLAY, "disable_linked_objects", disable_linked_objects))
-	show_editor_shortcut = bool(cfg.get_value(SECTION_GAMEPLAY, "show_editor_shortcut", show_editor_shortcut))
-	practice_mode = bool(cfg.get_value(SECTION_GAMEPLAY, "practice_mode", practice_mode))
-	auto_checkpoint = bool(cfg.get_value(SECTION_GAMEPLAY, "auto_checkpoint", auto_checkpoint))
-	speed_multiplier = float(cfg.get_value(SECTION_GAMEPLAY, "speed_multiplier", speed_multiplier))
-	# Advanced
-	smooth_fix = bool(cfg.get_value(SECTION_ADVANCED, "smooth_fix", smooth_fix))
-	ignore_damage = bool(cfg.get_value(SECTION_ADVANCED, "ignore_damage", ignore_damage))
-	follow_player = bool(cfg.get_value(SECTION_ADVANCED, "follow_player", follow_player))
-	draw_trigger_boxes = bool(cfg.get_value(SECTION_ADVANCED, "draw_trigger_boxes", draw_trigger_boxes))
-	debug_draw = bool(cfg.get_value(SECTION_ADVANCED, "debug_draw", debug_draw))
-	effect_lines = bool(cfg.get_value(SECTION_ADVANCED, "effect_lines", effect_lines))
-	toggle_editor_grid = bool(cfg.get_value(SECTION_ADVANCED, "toggle_editor_grid", toggle_editor_grid))
-	toggle_effect_duration = bool(cfg.get_value(SECTION_ADVANCED, "toggle_effect_duration", toggle_effect_duration))
-	max_undo = int(cfg.get_value(SECTION_ADVANCED, "max_undo", max_undo))
-	has_color = bool(cfg.get_value(SECTION_ADVANCED, "has_color", has_color))
-	toggle_editor_bg = bool(cfg.get_value(SECTION_ADVANCED, "toggle_editor_bg", toggle_editor_bg))
-	hide_grid = bool(cfg.get_value(SECTION_ADVANCED, "hide_grid", hide_grid))
-	layer_locking = bool(cfg.get_value(SECTION_ADVANCED, "layer_locking", layer_locking))
-	record_order = bool(cfg.get_value(SECTION_ADVANCED, "record_order", record_order))
-	high_capacity_mode = bool(cfg.get_value(SECTION_ADVANCED, "high_capacity_mode", high_capacity_mode))
+        var cfg := ConfigFile.new()
+        var err := cfg.load(SETTINGS_PATH)
+        if err != OK:
+                # Khong co file -> dung default values.
+                return
+        # Display
+        platform_opacity = float(cfg.get_value(SECTION_DISPLAY, "platform_opacity", platform_opacity))
+        timer_opacity = float(cfg.get_value(SECTION_DISPLAY, "timer_opacity", timer_opacity))
+        timer_enabled = bool(cfg.get_value(SECTION_DISPLAY, "timer_enabled", timer_enabled))
+        hide_pause_button = bool(cfg.get_value(SECTION_DISPLAY, "hide_pause_button", hide_pause_button))
+        alt_touch_layout = bool(cfg.get_value(SECTION_DISPLAY, "alt_touch_layout", alt_touch_layout))
+        # Gameplay
+        playtest_enabled = bool(cfg.get_value(SECTION_GAMEPLAY, "playtest_enabled", playtest_enabled))
+        show_level_info = bool(cfg.get_value(SECTION_GAMEPLAY, "show_level_info", show_level_info))
+        disable_linked_objects = bool(cfg.get_value(SECTION_GAMEPLAY, "disable_linked_objects", disable_linked_objects))
+        show_editor_shortcut = bool(cfg.get_value(SECTION_GAMEPLAY, "show_editor_shortcut", show_editor_shortcut))
+        practice_mode = bool(cfg.get_value(SECTION_GAMEPLAY, "practice_mode", practice_mode))
+        auto_checkpoint = bool(cfg.get_value(SECTION_GAMEPLAY, "auto_checkpoint", auto_checkpoint))
+        speed_multiplier = float(cfg.get_value(SECTION_GAMEPLAY, "speed_multiplier", speed_multiplier))
+        # Advanced
+        smooth_fix = bool(cfg.get_value(SECTION_ADVANCED, "smooth_fix", smooth_fix))
+        ignore_damage = bool(cfg.get_value(SECTION_ADVANCED, "ignore_damage", ignore_damage))
+        follow_player = bool(cfg.get_value(SECTION_ADVANCED, "follow_player", follow_player))
+        draw_trigger_boxes = bool(cfg.get_value(SECTION_ADVANCED, "draw_trigger_boxes", draw_trigger_boxes))
+        debug_draw = bool(cfg.get_value(SECTION_ADVANCED, "debug_draw", debug_draw))
+        effect_lines = bool(cfg.get_value(SECTION_ADVANCED, "effect_lines", effect_lines))
+        toggle_editor_grid = bool(cfg.get_value(SECTION_ADVANCED, "toggle_editor_grid", toggle_editor_grid))
+        toggle_effect_duration = bool(cfg.get_value(SECTION_ADVANCED, "toggle_effect_duration", toggle_effect_duration))
+        max_undo = int(cfg.get_value(SECTION_ADVANCED, "max_undo", max_undo))
+        has_color = bool(cfg.get_value(SECTION_ADVANCED, "has_color", has_color))
+        toggle_editor_bg = bool(cfg.get_value(SECTION_ADVANCED, "toggle_editor_bg", toggle_editor_bg))
+        hide_grid = bool(cfg.get_value(SECTION_ADVANCED, "hide_grid", hide_grid))
+        layer_locking = bool(cfg.get_value(SECTION_ADVANCED, "layer_locking", layer_locking))
+        record_order = bool(cfg.get_value(SECTION_ADVANCED, "record_order", record_order))
+        high_capacity_mode = bool(cfg.get_value(SECTION_ADVANCED, "high_capacity_mode", high_capacity_mode))
 
 
 func save_settings() -> void:
-	var cfg := ConfigFile.new()
-	# Display
-	cfg.set_value(SECTION_DISPLAY, "platform_opacity", platform_opacity)
-	cfg.set_value(SECTION_DISPLAY, "timer_opacity", timer_opacity)
-	cfg.set_value(SECTION_DISPLAY, "timer_enabled", timer_enabled)
-	cfg.set_value(SECTION_DISPLAY, "hide_pause_button", hide_pause_button)
-	cfg.set_value(SECTION_DISPLAY, "alt_touch_layout", alt_touch_layout)
-	# Gameplay
-	cfg.set_value(SECTION_GAMEPLAY, "playtest_enabled", playtest_enabled)
-	cfg.set_value(SECTION_GAMEPLAY, "show_level_info", show_level_info)
-	cfg.set_value(SECTION_GAMEPLAY, "disable_linked_objects", disable_linked_objects)
-	cfg.set_value(SECTION_GAMEPLAY, "show_editor_shortcut", show_editor_shortcut)
-	cfg.set_value(SECTION_GAMEPLAY, "practice_mode", practice_mode)
-	cfg.set_value(SECTION_GAMEPLAY, "auto_checkpoint", auto_checkpoint)
-	cfg.set_value(SECTION_GAMEPLAY, "speed_multiplier", speed_multiplier)
-	# Advanced
-	cfg.set_value(SECTION_ADVANCED, "smooth_fix", smooth_fix)
-	cfg.set_value(SECTION_ADVANCED, "ignore_damage", ignore_damage)
-	cfg.set_value(SECTION_ADVANCED, "follow_player", follow_player)
-	cfg.set_value(SECTION_ADVANCED, "draw_trigger_boxes", draw_trigger_boxes)
-	cfg.set_value(SECTION_ADVANCED, "debug_draw", debug_draw)
-	cfg.set_value(SECTION_ADVANCED, "effect_lines", effect_lines)
-	cfg.set_value(SECTION_ADVANCED, "toggle_editor_grid", toggle_editor_grid)
-	cfg.set_value(SECTION_ADVANCED, "toggle_effect_duration", toggle_effect_duration)
-	cfg.set_value(SECTION_ADVANCED, "max_undo", max_undo)
-	cfg.set_value(SECTION_ADVANCED, "has_color", has_color)
-	cfg.set_value(SECTION_ADVANCED, "toggle_editor_bg", toggle_editor_bg)
-	cfg.set_value(SECTION_ADVANCED, "hide_grid", hide_grid)
-	cfg.set_value(SECTION_ADVANCED, "layer_locking", layer_locking)
-	cfg.set_value(SECTION_ADVANCED, "record_order", record_order)
-	cfg.set_value(SECTION_ADVANCED, "high_capacity_mode", high_capacity_mode)
-	cfg.save(SETTINGS_PATH)
+        var cfg := ConfigFile.new()
+        # Display
+        cfg.set_value(SECTION_DISPLAY, "platform_opacity", platform_opacity)
+        cfg.set_value(SECTION_DISPLAY, "timer_opacity", timer_opacity)
+        cfg.set_value(SECTION_DISPLAY, "timer_enabled", timer_enabled)
+        cfg.set_value(SECTION_DISPLAY, "hide_pause_button", hide_pause_button)
+        cfg.set_value(SECTION_DISPLAY, "alt_touch_layout", alt_touch_layout)
+        # Gameplay
+        cfg.set_value(SECTION_GAMEPLAY, "playtest_enabled", playtest_enabled)
+        cfg.set_value(SECTION_GAMEPLAY, "show_level_info", show_level_info)
+        cfg.set_value(SECTION_GAMEPLAY, "disable_linked_objects", disable_linked_objects)
+        cfg.set_value(SECTION_GAMEPLAY, "show_editor_shortcut", show_editor_shortcut)
+        cfg.set_value(SECTION_GAMEPLAY, "practice_mode", practice_mode)
+        cfg.set_value(SECTION_GAMEPLAY, "auto_checkpoint", auto_checkpoint)
+        cfg.set_value(SECTION_GAMEPLAY, "speed_multiplier", speed_multiplier)
+        # Advanced
+        cfg.set_value(SECTION_ADVANCED, "smooth_fix", smooth_fix)
+        cfg.set_value(SECTION_ADVANCED, "ignore_damage", ignore_damage)
+        cfg.set_value(SECTION_ADVANCED, "follow_player", follow_player)
+        cfg.set_value(SECTION_ADVANCED, "draw_trigger_boxes", draw_trigger_boxes)
+        cfg.set_value(SECTION_ADVANCED, "debug_draw", debug_draw)
+        cfg.set_value(SECTION_ADVANCED, "effect_lines", effect_lines)
+        cfg.set_value(SECTION_ADVANCED, "toggle_editor_grid", toggle_editor_grid)
+        cfg.set_value(SECTION_ADVANCED, "toggle_effect_duration", toggle_effect_duration)
+        cfg.set_value(SECTION_ADVANCED, "max_undo", max_undo)
+        cfg.set_value(SECTION_ADVANCED, "has_color", has_color)
+        cfg.set_value(SECTION_ADVANCED, "toggle_editor_bg", toggle_editor_bg)
+        cfg.set_value(SECTION_ADVANCED, "hide_grid", hide_grid)
+        cfg.set_value(SECTION_ADVANCED, "layer_locking", layer_locking)
+        cfg.set_value(SECTION_ADVANCED, "record_order", record_order)
+        cfg.set_value(SECTION_ADVANCED, "high_capacity_mode", high_capacity_mode)
+        cfg.save(SETTINGS_PATH)
 
 
 func set_setting(key: String, value) -> void:
-	set(key, value)
-	save_settings()
-	emit_signal("setting_changed", key, value)
+        set(key, value)
+        save_settings()
+        emit_signal("setting_changed", key, value)
 
 
 func reset_to_defaults() -> void:
-	platform_opacity = 1.0
-	timer_opacity = 1.0
-	timer_enabled = true
-	hide_pause_button = false
-	alt_touch_layout = false
-	playtest_enabled = true
-	show_level_info = true
-	disable_linked_objects = false
-	show_editor_shortcut = false
-	practice_mode = false
-	auto_checkpoint = true
-	speed_multiplier = 1.0
-	smooth_fix = true
-	ignore_damage = false
-	follow_player = true
-	draw_trigger_boxes = false
-	debug_draw = false
-	effect_lines = true
-	toggle_editor_grid = true
-	toggle_effect_duration = true
-	max_undo = 100
-	has_color = true
-	toggle_editor_bg = true
-	hide_grid = false
-	layer_locking = false
-	record_order = false
-	high_capacity_mode = false
-	save_settings()
+        platform_opacity = 1.0
+        timer_opacity = 1.0
+        timer_enabled = true
+        hide_pause_button = false
+        alt_touch_layout = false
+        playtest_enabled = true
+        show_level_info = true
+        disable_linked_objects = false
+        show_editor_shortcut = false
+        practice_mode = false
+        auto_checkpoint = true
+        speed_multiplier = 1.0
+        smooth_fix = true
+        ignore_damage = false
+        follow_player = true
+        draw_trigger_boxes = false
+        debug_draw = false
+        effect_lines = true
+        toggle_editor_grid = true
+        toggle_effect_duration = true
+        max_undo = 100
+        has_color = true
+        toggle_editor_bg = true
+        hide_grid = false
+        layer_locking = false
+        record_order = false
+        high_capacity_mode = false
+        save_settings()

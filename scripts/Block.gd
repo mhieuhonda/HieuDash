@@ -44,27 +44,27 @@ func _rebuild_for_height() -> void:
         var bottom_y_local := half_h
         # Body (toa do local cua polygon xung quanh tam).
         if body:
-                body.polygon = PackedVector2Array(
-                        -BLOCK_W * 0.5, top_y_local,
-                        BLOCK_W * 0.5, top_y_local,
-                        BLOCK_W * 0.5, bottom_y_local,
-                        -BLOCK_W * 0.5, bottom_y_local
-                )
+                body.polygon = PackedVector2Array([
+                        Vector2(-BLOCK_W * 0.5, top_y_local),
+                        Vector2(BLOCK_W * 0.5, top_y_local),
+                        Vector2(BLOCK_W * 0.5, bottom_y_local),
+                        Vector2(-BLOCK_W * 0.5, bottom_y_local),
+                ])
         if top:
                 # Top strip: 12px dai tu top_y_local xuong.
-                top.polygon = PackedVector2Array(
-                        -BLOCK_W * 0.5, top_y_local,
-                        BLOCK_W * 0.5, top_y_local,
-                        BLOCK_W * 0.5, top_y_local + 12.0,
-                        -BLOCK_W * 0.5, top_y_local + 12.0
-                )
+                top.polygon = PackedVector2Array([
+                        Vector2(-BLOCK_W * 0.5, top_y_local),
+                        Vector2(BLOCK_W * 0.5, top_y_local),
+                        Vector2(BLOCK_W * 0.5, top_y_local + 12.0),
+                        Vector2(-BLOCK_W * 0.5, top_y_local + 12.0),
+                ])
         if outline:
-                outline.polygon = PackedVector2Array(
-                        -BLOCK_W * 0.5 - 4.0, top_y_local - 4.0,
-                        BLOCK_W * 0.5 + 4.0, top_y_local - 4.0,
-                        BLOCK_W * 0.5 + 4.0, bottom_y_local + 4.0,
-                        -BLOCK_W * 0.5 - 4.0, bottom_y_local + 4.0
-                )
+                outline.polygon = PackedVector2Array([
+                        Vector2(-BLOCK_W * 0.5 - 4.0, top_y_local - 4.0),
+                        Vector2(BLOCK_W * 0.5 + 4.0, top_y_local - 4.0),
+                        Vector2(BLOCK_W * 0.5 + 4.0, bottom_y_local + 4.0),
+                        Vector2(-BLOCK_W * 0.5 - 4.0, bottom_y_local + 4.0),
+                ])
         # Collision shape (RectangleShape2D).
         if collision and collision.shape is RectangleShape2D:
                 (collision.shape as RectangleShape2D).size = Vector2(BLOCK_W, total_h)

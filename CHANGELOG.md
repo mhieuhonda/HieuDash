@@ -5,6 +5,33 @@ All notable changes to **Hieu Dash** will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-08-05
+
+### Fixed — Critical APK installation issues
+- **APK "package seems corrupted"** — set `package/signed=true` in `export_presets.cfg` (was `false`, causing Android to reject the unsigned APK)
+- **CI/CD now generates a release keystore** via `keytool` on every build, then patches `export_presets.cfg` with `keystore/release`, `keystore/release_user`, `keystore/release_password` before exporting. APK is now signed and installable on Android 7.1.1+ devices.
+- **App name fix** — verified `package/name="Hieu Dash"` is correctly applied; the previous "godot project..." label was caused by Godot's gradle template falling back to default when signing was disabled. With proper signing + gradle_build/use_gradle_build=true, the AndroidManifest label now resolves to "Hieu Dash".
+
+### Fixed — Godot 4.7 compatibility (script compile errors)
+- **`class_name` conflicts with autoload singleton** — removed `class_name PlayerProfile` and `class_name SettingsSingleton` (Godot 4.7 throws "Class X hides an autoload singleton"). The autoloads are now accessible directly via their autoload name as instance.
+- **`class_name ColorPalette` hides native class** — renamed to `class_name HDColorPalette extends RefCounted`. All references updated (`PlayerProfile`, `ColoursPalette`, `AdvancedIconSelect`).
+- **`PackedVector2Array(x1,y1,x2,y2,...)` constructor no longer valid** in Godot 4.7 — converted all call sites in `Block.gd`, `Laser.gd`, `Pit.gd`, `SpikeStrip.gd`, `Player.gd` to the array form: `PackedVector2Array([Vector2(x1,y1), Vector2(x2,y2), ...])`.
+- **`AudioStreamPlayer.global_position` doesn't exist** — removed the 2 lines in `Coin.gd` that tried to read/write `global_position` on an `AudioStreamPlayer` (only `Node2D`/`Control` have positional properties).
+- **Variant type inference treated as error** — added explicit types in `Credits.gd` (`var version: String = String(ProjectSettings.get_setting(...))`) and `LevelGenerator.gd` (`var t: float`, `var diff: float`).
+- **`var snapped :=` shadowed by built-in function** — renamed local to `snapped_val` with explicit `float` type in `Player.gd`.
+- All scripts now compile cleanly under `godot --headless --import` with zero parse/compile errors.
+
+### Changed — Branding & icons
+- **New logo** — generated fresh neon-cube logo for `icon.png` (256×256), `icon_192.png`, `icon_144.png`, `icon_72.png`. Replaces the previous default Godot-style icon.
+- **New adaptive icons** — regenerated `adaptive_foreground.png` (cube on transparent) and `adaptive_background.png` (gradient) at 432×432.
+- **In-game shape icons** — regenerated `icon_cube/circle/triangle/diamond/hexagon.png` with the same neon style.
+- All icons use a consistent neon cyan + magenta palette on a dark gradient background.
+
+### Changed — Version bump
+- `project.godot`: `config/version="0.4.0"`
+- `export_presets.cfg`: Android `version/code=4`, `version/name="0.4.0"`
+- CI/CD default tag fallback: `v0.4.0`
+
 ## [0.3.0] - 2026-08-05
 
 ### Added — Player customization (port from GDPS-Editor-22)

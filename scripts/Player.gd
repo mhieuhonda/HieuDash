@@ -90,21 +90,21 @@ func _apply_icon_shape() -> void:
                         shape_out = _circle_polygon(24.0, 16)
                         shape_in = _circle_polygon(14.0, 16)
                 2:  # Triangle
-                        shape = PackedVector2Array(0, -22, 20, 18, -20, 18)
-                        shape_out = PackedVector2Array(0, -26, 24, 22, -24, 22)
-                        shape_in = PackedVector2Array(0, -14, 12, 10, -12, 10)
+                        shape = PackedVector2Array([Vector2(0, -22), Vector2(20, 18), Vector2(-20, 18)])
+                        shape_out = PackedVector2Array([Vector2(0, -26), Vector2(24, 22), Vector2(-24, 22)])
+                        shape_in = PackedVector2Array([Vector2(0, -14), Vector2(12, 10), Vector2(-12, 10)])
                 3:  # Diamond
-                        shape = PackedVector2Array(0, -22, 22, 0, 0, 22, -22, 0)
-                        shape_out = PackedVector2Array(0, -26, 26, 0, 0, 26, -26, 0)
-                        shape_in = PackedVector2Array(0, -14, 14, 0, 0, 14, -14, 0)
+                        shape = PackedVector2Array([Vector2(0, -22), Vector2(22, 0), Vector2(0, 22), Vector2(-22, 0)])
+                        shape_out = PackedVector2Array([Vector2(0, -26), Vector2(26, 0), Vector2(0, 26), Vector2(-26, 0)])
+                        shape_in = PackedVector2Array([Vector2(0, -14), Vector2(14, 0), Vector2(0, 14), Vector2(-14, 0)])
                 4:  # Hexagon
                         shape = _hexagon_polygon(22.0)
                         shape_out = _hexagon_polygon(26.0)
                         shape_in = _hexagon_polygon(14.0)
                 _:  # Cube (default)
-                        shape = PackedVector2Array(-20, -20, 20, -20, 20, 20, -20, 20)
-                        shape_out = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
-                        shape_in = PackedVector2Array(-14, -14, 14, -14, 14, -4, -14, -4)
+                        shape = PackedVector2Array([Vector2(-20, -20), Vector2(20, -20), Vector2(20, 20), Vector2(-20, 20)])
+                        shape_out = PackedVector2Array([Vector2(-24, -24), Vector2(24, -24), Vector2(24, 24), Vector2(-24, 24)])
+                        shape_in = PackedVector2Array([Vector2(-14, -14), Vector2(14, -14), Vector2(14, -4), Vector2(-14, -4)])
         if sprite:
                 sprite.polygon = shape
         if outline:
@@ -184,13 +184,13 @@ func _physics_process(delta: float) -> void:
                 visual_root.rotation += rotation_speed_air * delta
         else:
                 # Snap ve 0 deg gan nhat (0, 90, 180, 270) - nhanh hon de trau kinh nghiem.
-                var snapped := round(visual_root.rotation / (PI / 2.0)) * (PI / 2.0)
+                var snapped_val: float = round(visual_root.rotation / (PI / 2.0)) * (PI / 2.0)
                 # Delta-corrected lerp (frame-rate independent).
                 var lerp_weight := 1.0 - exp(-delta * 18.0)
-                visual_root.rotation = lerp(visual_root.rotation, snapped, lerp_weight)
+                visual_root.rotation = lerp(visual_root.rotation, snapped_val, lerp_weight)
                 # Dam bao snap hoan toan khi gan.
-                if abs(visual_root.rotation - snapped) < 0.02:
-                        visual_root.rotation = snapped
+                if abs(visual_root.rotation - snapped_val) < 0.02:
+                        visual_root.rotation = snapped_val
 
         # Landing event
         if is_grounded and not _was_grounded:

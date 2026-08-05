@@ -43,12 +43,27 @@ func _rebuild_shape() -> void:
         var hw := _width * 0.5
         # Visual fill (hinh chu nhat den dai xuong duoi, full screen height).
         if fill:
-                fill.polygon = PackedVector2Array(-hw, -60, hw, -60, hw, PIT_DEPTH, -hw, PIT_DEPTH)
+                fill.polygon = PackedVector2Array([
+                        Vector2(-hw, -60.0),
+                        Vector2(hw, -60.0),
+                        Vector2(hw, PIT_DEPTH),
+                        Vector2(-hw, PIT_DEPTH),
+                ])
         # Edges (2 khoi nho do sang 2 ben).
         if edge_left:
-                edge_left.polygon = PackedVector2Array(-hw - 6, -2, -hw, -2, -hw, 8, -hw - 6, 8)
+                edge_left.polygon = PackedVector2Array([
+                        Vector2(-hw - 6.0, -2.0),
+                        Vector2(-hw, -2.0),
+                        Vector2(-hw, 8.0),
+                        Vector2(-hw - 6.0, 8.0),
+                ])
         if edge_right:
-                edge_right.polygon = PackedVector2Array(hw, -2, hw + 6, -2, hw + 6, 8, hw, 8)
+                edge_right.polygon = PackedVector2Array([
+                        Vector2(hw, -2.0),
+                        Vector2(hw + 6.0, -2.0),
+                        Vector2(hw + 6.0, 8.0),
+                        Vector2(hw, 8.0),
+                ])
         # Collision: phu mat san tai vi tri pit (player di vao = chet).
         if collision:
                 # FIX v0.3: Reuse RectangleShape2D thay vi new() moi lan.

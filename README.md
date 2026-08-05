@@ -7,15 +7,15 @@
 A rhythm-based platformer for Android, inspired by the cube-jumping genre.
 Tap to jump, dodge the spikes, collect coins, reach the goal flag.
 
-> Built with **Godot 4.7** • Targets **Android 7.1.1 (API 24)+, Linux, Windows** • v0.2.0
+> Built with **Godot 4.7** • Targets **Android 7.1.1 (API 24)+, Linux, Windows** • v0.4.0
 
-This is the **v0.2** release. It adds **7 new obstacle types**, a proper
-**scoring system**, **procedural audio assets**, and **CI/CD via GitHub
-Actions** that auto-builds APK / Linux / Windows on every release.
+This is the **v0.4** release. It fixes critical APK installation issues, Godot 4.7
+script compile errors, and ships a fresh new neon-cube logo. For full details see
+[CHANGELOG.md](CHANGELOG.md).
 
 ---
 
-## Features (v0.2)
+## Features (v0.4)
 
 - **Auto-running cube** with gravity + jump (tap / space / click)
 - **Procedural level generation** driven by seed (deterministic, advances per level)
@@ -141,7 +141,7 @@ HieuDash/
 
 ---
 
-## Roadmap (post-v0.2)
+## Roadmap (post-v0.4)
 
 - [ ] Multiple level layouts (level select screen)
 - [ ] Cube color customizer (garage)

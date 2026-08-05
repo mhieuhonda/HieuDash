@@ -8,15 +8,15 @@ class_name Credits
 
 
 func _ready() -> void:
-	if back_button:
-		back_button.pressed.connect(_on_back)
-	if credit_label:
-		credit_label.text = _build_credits_text()
+        if back_button:
+                back_button.pressed.connect(_on_back)
+        if credit_label:
+                credit_label.text = _build_credits_text()
 
 
 func _build_credits_text() -> String:
-	var version := ProjectSettings.get_setting("application/config/version", "0.3.0")
-	return """HIEU DASH v%s
+        var version: String = String(ProjectSettings.get_setting("application/config/version", "0.4.0"))
+        return """HIEU DASH v%s
 
 === PROJECT ===
 Lead Developer: mhieuhonda
@@ -56,9 +56,9 @@ Copyright (c) 2026 Hieu Dash Project
 
 
 func _on_back() -> void:
-	GameManager.goto("res://scenes/MainMenu.tscn")
+        GameManager.goto("res://scenes/MainMenu.tscn")
 
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_cancel"):
-		_on_back()
+        if event.is_action_pressed("ui_cancel"):
+                _on_back()

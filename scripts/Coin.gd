@@ -42,11 +42,11 @@ func _on_body_entered(body: Node) -> void:
                 if collect_sfx and GameManager.sfx_enabled and collect_sfx.stream:
                         # FIX v0.3: Reparent sfx len current_scene truoc khi free Coin,
                         # de sound khong bi cut off khi Coin queue_free.
+                        # FIX v0.4: AudioStreamPlayer khong co global_position (chi Node2D/Control co),
+                        # bo 2 dong gan global_position vi no khong co tac dung.
                         var tree := get_tree()
                         if tree and tree.current_scene:
-                                var sfx_global_pos := collect_sfx.global_position
                                 collect_sfx.reparent(tree.current_scene)
-                                collect_sfx.global_position = sfx_global_pos
                                 # Tu dong free sfx sau khi play xong.
                                 collect_sfx.finished.connect(collect_sfx.queue_free)
                         collect_sfx.play()

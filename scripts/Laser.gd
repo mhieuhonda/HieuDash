@@ -49,9 +49,19 @@ func set_period(p: float) -> void:
 func _rebuild_beam() -> void:
         var hw := 10.0
         if beam:
-                beam.polygon = PackedVector2Array(-hw, 0, hw, 0, hw, beam_length, -hw, beam_length)
+                beam.polygon = PackedVector2Array([
+                        Vector2(-hw, 0.0),
+                        Vector2(hw, 0.0),
+                        Vector2(hw, beam_length),
+                        Vector2(-hw, beam_length),
+                ])
         if glow:
-                glow.polygon = PackedVector2Array(-hw * 2.5, 0, hw * 2.5, 0, hw * 2.5, beam_length, -hw * 2.5, beam_length)
+                glow.polygon = PackedVector2Array([
+                        Vector2(-hw * 2.5, 0.0),
+                        Vector2(hw * 2.5, 0.0),
+                        Vector2(hw * 2.5, beam_length),
+                        Vector2(-hw * 2.5, beam_length),
+                ])
         if collision:
                 # FIX v0.3: Reuse RectangleShape2D thay vi new() moi lan (resource leak).
                 if _rect_shape == null:
