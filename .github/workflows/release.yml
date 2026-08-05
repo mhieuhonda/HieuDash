@@ -137,11 +137,24 @@ jobs:
           # "no version info for it exists".
           ./godot --headless --install-android-build-template --export-release "Android" 2>&1 | tee export_android.log
           echo "=== Searching for built APK ==="
-          find . -name "*.apk" -type f 2>/dev/null | head -10
-          found_apk=$(find . -name "*.apk" -type f | head -1)
+          # Look for our APK specifically (exclude tmp_tpl which contains the export
+          # template APKs, not our built APK).
+          found_apk=""
+          for candidate in export/android/HieuDash.apk android/build/build/outputs/apk/standard/release/android_release.apk; do
+            if [ -f "$candidate" ]; then
+              found_apk="$candidate"
+              break
+            fi
+          done
+          echo "Found APK: ${found_apk:-none}"
           if [ -n "$found_apk" ]; then
-            cp "$found_apk" export/android/HieuDash.apk
-            echo "Copied APK from: $found_apk"
+            # Copy only if source != destination.
+            if [ "$found_apk" != "export/android/HieuDash.apk" ] && [ "$found_apk" != "./export/android/HieuDash.apk" ]; then
+              cp "$found_apk" export/android/HieuDash.apk
+              echo "Copied APK from: $found_apk"
+            else
+              echo "APK already at export/android/HieuDash.apk"
+            fi
           else
             echo "ERROR: No APK built! Check export_android.log above."
             cat export_android.log
