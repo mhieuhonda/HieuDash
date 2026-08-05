@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="HieuDash" default="help">
+
+    <!-- Standard Ant build for a Cocos2d-x 2.2.3 Android project. -->
+    <property file="ant.properties" />
+    <loadproperties srcFile="project.properties" />
+
+    <fail message="sdk.dir is missing. Set it in ant.properties or local.properties."
+          unless="sdk.dir" />
+
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

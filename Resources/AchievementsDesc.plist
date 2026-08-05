@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>geometry.ach.level01a</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Stereo Madness&quot; in Practice mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level01a</string>
+		<key>order</key>
+		<integer>1</integer>
+		<key>title</key>
+		<string>Stereo Bump</string>
+		<key>icon</key>
+		<string>color_05</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Stereo Madness&quot; in Practice mode</string>
+	</dict>
+	<key>geometry.ach.level01b</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Stereo Madness&quot; in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level01b</string>
+		<key>order</key>
+		<integer>2</integer>
+		<key>title</key>
+		<string>Stereo Madness!</string>
+		<key>icon</key>
+		<string>icon_05</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Stereo Madness&quot; in Normal mode</string>
+	</dict>
+	<key>geometry.ach.level02a</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Back On Track&quot; in Practice mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level02a</string>
+		<key>order</key>
+		<integer>3</integer>
+		<key>title</key>
+		<string>On my way</string>
+		<key>icon</key>
+		<string>color_06</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Back On Track&quot; in Practice mode</string>
+	</dict>
+	<key>geometry.ach.level02b</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Back On Track&quot; in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level02b</string>
+		<key>order</key>
+		<integer>4</integer>
+		<key>title</key>
+		<string>Back On Track!</string>
+		<key>icon</key>
+		<string>icon_06</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Back On Track&quot; in Normal mode</string>
+	</dict>
+	<key>geometry.ach.level03a</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Polargeist&quot; in Practice mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level03a</string>
+		<key>order</key>
+		<integer>5</integer>
+		<key>title</key>
+		<string>Polarbear</string>
+		<key>icon</key>
+		<string>color_07</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Polargeist&quot; in Practice mode</string>
+	</dict>
+	<key>geometry.ach.level03b</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Polargeist&quot; in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level03b</string>
+		<key>order</key>
+		<integer>6</integer>
+		<key>title</key>
+		<string>Polargeist!</string>
+		<key>icon</key>
+		<string>icon_07</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Polargeist&quot; in Normal mode</string>
+	</dict>
+	<key>geometry.ach.level04a</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Dry Out&quot; in Practice mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level04a</string>
+		<key>order</key>
+		<integer>7</integer>
+		<key>title</key>
+		<string>Dehydrated</string>
+		<key>icon</key>
+		<string>color_08</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Dry Out&quot; in Practice mode</string>
+	</dict>
+	<key>geometry.ach.level04b</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Dry Out&quot; in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level04b</string>
+		<key>order</key>
+		<integer>8</integer>
+		<key>title</key>
+		<string>Dry Out!</string>
+		<key>icon</key>
+		<string>icon_08</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Dry Out&quot; in Normal mode</string>
+	</dict>
+	<key>geometry.ach.level05a</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Base After Base&quot; in Practice mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level05a</string>
+		<key>order</key>
+		<integer>9</integer>
+		<key>title</key>
+		<string>All your base...</string>
+		<key>icon</key>
+		<string>color_09</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Base After Base&quot; in Practice mode</string>
+	</dict>
+	<key>geometry.ach.level05b</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Base After Base&quot; in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level05b</string>
+		<key>order</key>
+		<integer>10</integer>
+		<key>title</key>
+		<string>Base After Base!</string>
+		<key>icon</key>
+		<string>icon_09</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Base After Base&quot; in Normal mode</string>
+	</dict>
+	<key>geometry.ach.level06a</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Cant Let Go&quot; in Practice mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level06a</string>
+		<key>order</key>
+		<integer>11</integer>
+		<key>title</key>
+		<string>Hold on</string>
+		<key>icon</key>
+		<string>color_10</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Cant Let Go&quot; in Practice mode</string>
+	</dict>
+	<key>geometry.ach.level06b</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Cant Let Go&quot; in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level06b</string>
+		<key>order</key>
+		<integer>12</integer>
+		<key>title</key>
+		<string>Cant Let Go!</string>
+		<key>icon</key>
+		<string>icon_10</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Cant Let Go&quot; in Normal mode</string>
+	</dict>
+	<key>geometry.ach.level07a</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Jumper&quot; in Practice mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level07a</string>
+		<key>order</key>
+		<integer>13</integer>
+		<key>title</key>
+		<string>Hop Hop...</string>
+		<key>icon</key>
+		<string>color_11</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Jumper&quot; in Practice mode</string>
+	</dict>
+	<key>geometry.ach.level07b</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed &quot;Jumper&quot; in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.level07b</string>
+		<key>order</key>
+		<integer>14</integer>
+		<key>title</key>
+		<string>Jumper!</string>
+		<key>icon</key>
+		<string>icon_11</string>
+		<key>unachievedDescription</key>
+		<string>Complete &quot;Jumper&quot; in Normal mode</string>
+	</dict>
+	<key>geometry.ach.custom01</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed a user created level in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.custom01</string>
+		<key>order</key>
+		<integer>15</integer>
+		<key>title</key>
+		<string>Challenger</string>
+		<key>icon</key>
+		<string>color_12</string>
+		<key>unachievedDescription</key>
+		<string>Complete a user created level in Normal mode</string>
+	</dict>
+	<key>geometry.ach.custom02</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Completed 10 user created levels in Normal mode</string>
+		<key>identifier</key>
+		<string>geometry.ach.custom02</string>
+		<key>order</key>
+		<integer>16</integer>
+		<key>title</key>
+		<string>Master</string>
+		<key>icon</key>
+		<string>icon_12</string>
+		<key>unachievedDescription</key>
+		<string>Complete 10 user created levels in Normal mode</string>
+	</dict>
+	<key>geometry.ach.rate</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Rated &quot;Geometry Dash&quot;, thanks!</string>
+		<key>identifier</key>
+		<string>geometry.ach.rate</string>
+		<key>order</key>
+		<integer>17</integer>
+		<key>title</key>
+		<string>Supporter</string>
+		<key>icon</key>
+		<string>icon_13</string>
+		<key>unachievedDescription</key>
+		<string>Rate &quot;Geometry Dash&quot; and let us know what you think</string>
+	</dict>
+	<key>geometry.ach.jump01</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Jumped 1000 times</string>
+		<key>identifier</key>
+		<string>geometry.ach.jump01</string>
+		<key>order</key>
+		<integer>18</integer>
+		<key>title</key>
+		<string>Bounce</string>
+		<key>icon</key>
+		<string>color2_06</string>
+		<key>unachievedDescription</key>
+		<string>Jump 1000 times</string>
+	</dict>
+	<key>geometry.ach.jump02</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Jumped 10000 times</string>
+		<key>identifier</key>
+		<string>geometry.ach.jump02</string>
+		<key>order</key>
+		<integer>19</integer>
+		<key>title</key>
+		<string>I like jumping</string>
+		<key>icon</key>
+		<string>color2_12</string>
+		<key>unachievedDescription</key>
+		<string>Jump 10000 times</string>
+	</dict>
+	<key>geometry.ach.attempt01</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Did 100 attempts</string>
+		<key>identifier</key>
+		<string>geometry.ach.attempt01</string>
+		<key>order</key>
+		<integer>20</integer>
+		<key>title</key>
+		<string>U can do it!</string>
+		<key>icon</key>
+		<string>color2_07</string>
+		<key>unachievedDescription</key>
+		<string>Do 100 attempts</string>
+	</dict>
+	<key>geometry.ach.attempt02</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Did 500 attempts</string>
+		<key>identifier</key>
+		<string>geometry.ach.attempt02</string>
+		<key>order</key>
+		<integer>21</integer>
+		<key>title</key>
+		<string>Trial and error</string>
+		<key>icon</key>
+		<string>color2_08</string>
+		<key>unachievedDescription</key>
+		<string>Do 500 attempts</string>
+	</dict>
+	<key>geometry.ach.like</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Liked an online level</string>
+		<key>identifier</key>
+		<string>geometry.ach.like</string>
+		<key>order</key>
+		<integer>22</integer>
+		<key>title</key>
+		<string>Helper</string>
+		<key>icon</key>
+		<string>color2_09</string>
+		<key>unachievedDescription</key>
+		<string>Like an online level</string>
+	</dict>
+	<key>geometry.ach.rateDiff</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Rated the difficulty of an online level</string>
+		<key>identifier</key>
+		<string>geometry.ach.rateDiff</string>
+		<key>order</key>
+		<integer>23</integer>
+		<key>title</key>
+		<string>Guide</string>
+		<key>icon</key>
+		<string>color2_10</string>
+		<key>unachievedDescription</key>
+		<string>Rate the difficulty of an online level</string>
+	</dict>
+	<key>geometry.ach.submit</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Created and submitted a custom level</string>
+		<key>identifier</key>
+		<string>geometry.ach.submit</string>
+		<key>order</key>
+		<integer>24</integer>
+		<key>title</key>
+		<string>Creator</string>
+		<key>icon</key>
+		<string>color2_11</string>
+		<key>unachievedDescription</key>
+		<string>Create and submit a custom level</string>
+	</dict>
+	<key>geometry.ach.moreGames</key>
+	<dict>
+		<key>achievedDescription</key>
+		<string>Looked at more RobTop Games</string>
+		<key>identifier</key>
+		<string>geometry.ach.moreGames</string>
+		<key>order</key>
+		<integer>25</integer>
+		<key>title</key>
+		<string>RobTop Gamer</string>
+		<key>icon</key>
+		<string>color2_5</string>
+		<key>unachievedDescription</key>
+		<string>Tap the More Games button!</string>
+	</dict>
+</dict>
+</plist>
