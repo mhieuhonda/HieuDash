@@ -83,7 +83,6 @@ corner_radius_bottom_left = 18
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_game")
-level_seed = 1337
 level_length = 8000.0
 difficulty = 1.0
 
@@ -211,6 +210,18 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 theme_override_colors/font_color = Color(1, 0.85, 0.2, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_outline_size = 2
+theme_override_font_sizes/font_size = 24
+
+[node name="ScoreLabel" type="Label" parent="HUD/TopBar"]
+custom_minimum_size = Vector2(160, 40)
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.25, 0.85, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
@@ -388,6 +399,36 @@ vertical_alignment = 1
 theme_override_colors/font_color = Color(1, 0.85, 0.2, 1)
 theme_override_font_sizes/font_size = 26
 
+[node name="ScoreLabel" type="Label" parent="GameOverScreen/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 124.0
+offset_right = 200.0
+offset_bottom = 162.0
+grow_horizontal = 2
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.25, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 22
+
+[node name="CoinsLabel" type="Label" parent="GameOverScreen/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 162.0
+offset_right = 200.0
+offset_bottom = 198.0
+grow_horizontal = 2
+text = "Coins: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(1, 0.85, 0.2, 0.95)
+theme_override_font_sizes/font_size = 20
+
 [node name="RetryButton" type="Button" parent="GameOverScreen/Panel"]
 anchors_preset = 5
 anchor_left = 0.5
@@ -474,6 +515,21 @@ horizontal_alignment = 1
 vertical_alignment = 1
 theme_override_colors/font_color = Color(1, 0.85, 0.2, 1)
 theme_override_font_sizes/font_size = 26
+
+[node name="ScoreLabel" type="Label" parent="LevelCompleteScreen/Panel"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -220.0
+offset_top = 132.0
+offset_right = 220.0
+offset_bottom = 168.0
+grow_horizontal = 2
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_colors/font_color = Color(0.25, 0.85, 1, 1)
+theme_override_font_sizes/font_size = 22
 
 [node name="NextButton" type="Button" parent="LevelCompleteScreen/Panel"]
 anchors_preset = 5

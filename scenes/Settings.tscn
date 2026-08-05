@@ -140,7 +140,7 @@ offset_top = 290.0
 offset_right = 220.0
 offset_bottom = 360.0
 grow_horizontal = 2
-text = "Hieu Dash v0.1.0
+text = "Hieu Dash v0.2.0
 Built with Godot 4.7"
 horizontal_alignment = 1
 vertical_alignment = 1

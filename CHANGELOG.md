@@ -5,6 +5,63 @@ All notable changes to **Hieu Dash** will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-08-05
+
+### Added — New obstacle types (7 new)
+- **Saw** — rotating circular blade, deadly on contact
+- **Pit** — gap in the floor, falling in = death (variable width)
+- **SpikeStrip** — wide row of 3-6 spikes in a single entity (more efficient than spawning N separate spikes)
+- **Bouncer** — jump pad that launches the player higher than a normal jump (boost velocity -1050 px/s)
+- **Crusher** — block that slams down from above on a periodic cycle; deadly only when smashing down
+- **Laser** — horizontal beam that toggles on/off on a cycle; deadly only when on
+- **MovingPlatform** — platform that oscillates horizontally or vertically; player can ride on top
+
+### Added — Scoring system
+- **Distance-based score**: +1 score per 10 px traveled forward
+- **Coin score**: +50 per coin (in addition to coin counter)
+- **Completion bonus**: +1000 on level complete
+- **Score HUD label** added next to coins counter
+- **Score displayed** on Game Over and Level Complete screens
+- `total_completions` tracked in save file
+
+### Added — Audio assets
+- Generated procedural WAV audio for: jump, coin, death, land, bump (bouncer), bgm (looping melody)
+- All `AudioStreamPlayer` nodes now load their streams at runtime via `ResourceLoader.exists()` guard
+- Added `LandSfx` node to Player (plays on landing)
+- Added `BounceSfx` node to Bouncer
+
+### Added — CI/CD (GitHub Actions)
+- `.github/workflows/release.yml` — triggers on release published
+- **3 parallel jobs**: Android APK, Linux (x86_64), Windows (x86_64)
+- Each job downloads Godot 4.7-stable + export templates, imports project, exports, zips, and uploads to the release
+- Artifacts named with tag: `HieuDash-<tag>-android.apk`, `HieuDash-<tag>-linux-x86_64.zip`, `HieuDash-<tag>-windows-x86_64.zip`
+- Uses `softprops/action-gh-release@v2` to attach files to the release
+
+### Added — Export presets
+- Added **Linux** export preset (x86_64)
+- Added **Windows Desktop** export preset (x86_64)
+- Bumped Android version code to 2, version name to 0.2.0
+- Set `package/signed=false` for CI compatibility (debug-signed APK, still installable)
+
+### Fixed — Bug fixes
+- **Block.gd**: SideHazard no longer kills the player when landing on top of the block. Now checks player Y position relative to block top before triggering death. (Previously: blocks were unlandable — instant death on top contact.)
+- **GameManager.gd**: `selected_level` is now saved/loaded with the save file. Previously, level progress was lost on game restart.
+- **GameManager.gd**: `total_completions` now tracked and persisted.
+- **Game.gd**: Level seed is now computed from `GameManager.get_level_seed()` instead of a local export var that got reset on scene reload. "Next Level" now actually advances to a different level.
+- **Game.gd**: `_on_score_changed` now updates the HUD score label (was a no-op `pass`).
+- **Game.gd**: Game Over and Level Complete screens now show score and coins.
+- **export_presets.cfg**: Replaced `PoolStringArray()` with `PackedStringArray()` (Godot 4 syntax; the old Godot 3 syntax caused export failures).
+- **Player.gd**: Added coyote time (100ms grace period after leaving ground) — jump still registers shortly after walking off an edge.
+- **Player.gd**: Rotation snap on landing is now faster (0.55 lerp factor) and fully snaps when within 0.02 rad.
+- **Settings.gd**: Reset Progress now navigates to Main Menu (was reloading Settings, which felt broken). Also resets `total_completions`.
+- **MainMenu.gd**: BGM now actually plays (loads `bgm.wav` stream).
+- **Game.gd**: BGM now actually plays (loads `bgm.wav` stream).
+
+### Changed
+- Version bumped to 0.2.0
+- Save file version field updated to 0.2.0
+- README updated with new features list
+
 ## [0.1.0] - 2026-08-05
 
 ### Added — Core gameplay
@@ -50,7 +107,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Package: `com.hieuhonda.hieudash`
 - App category: Game
 
-### Known limitations
+### Known limitations (v0.1)
 - No audio assets yet (SFX nodes are wired up but have no streams)
 - Single procedural level layout (seed changes per "next level")
 - No cube color customization yet (cyan is hardcoded)

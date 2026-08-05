@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbouncer1ob4"]
+
+[ext_resource type="Script" path="res://scripts/Bouncer.gd" id="1_bn"]
+
+[sub_resource type="CircleShape2D" id="circle_bn"]
+radius = 30.0
+
+[node name="Bouncer" type="Area2D"]
+collision_layer = 2
+collision_mask = 1
+monitoring = true
+monitorable = false
+script = ExtResource("1_bn")
+pad_color = Color(1, 0.55, 0.15, 1)
+glow_color = Color(1, 0.7, 0.2, 0.4)
+boost_force = -1050.0
+
+[node name="Glow" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-40, 0, -30, -20, 30, -20, 40, 0, 30, 12, -30, 12)
+color = Color(1, 0.7, 0.2, 0.4)
+
+[node name="Pad" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-32, 0, -24, -16, 24, -16, 32, 0, 24, 10, -24, 10)
+color = Color(1, 0.55, 0.15, 1)
+
+[node name="Arrow" type="Polygon2D" parent="Pad"]
+polygon = PackedVector2Array(-6, -10, 6, -10, 0, -22)
+color = Color(1, 1, 1, 0.7)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+shape = SubResource("circle_bn")
+
+[node name="BounceSfx" type="AudioStreamPlayer" parent="."]
+volume_db = -6.0

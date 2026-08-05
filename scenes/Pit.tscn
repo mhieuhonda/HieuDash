@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpit1obstacle2"]
+
+[ext_resource type="Script" path="res://scripts/Pit.gd" id="1_pit"]
+
+[sub_resource type="RectangleShape2D" id="rect_pit"]
+size = Vector2(120, 60)
+
+[node name="Pit" type="Area2D"]
+collision_layer = 2
+collision_mask = 1
+monitoring = true
+monitorable = false
+script = ExtResource("1_pit")
+pit_color = Color(0.02, 0.02, 0.05, 1)
+edge_color = Color(1, 0.18, 0.32, 0.8)
+
+[node name="Fill" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-60, 0, 60, 0, 60, 400, -60, 400)
+color = Color(0.02, 0.02, 0.05, 1)
+
+[node name="EdgeLeft" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-66, -2, -60, -2, -60, 8, -66, 8)
+color = Color(1, 0.18, 0.32, 0.8)
+
+[node name="EdgeRight" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(60, -2, 66, -2, 66, 8, 60, 8)
+color = Color(1, 0.18, 0.32, 0.8)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("rect_pit")

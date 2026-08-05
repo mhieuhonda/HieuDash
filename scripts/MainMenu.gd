@@ -15,45 +15,51 @@ class_name MainMenu
 
 
 func _ready() -> void:
-	GameManager.load_progress()
-	_refresh_stats()
-	if play_button:
-		play_button.pressed.connect(_on_play)
-	if settings_button:
-		settings_button.pressed.connect(_on_settings)
-	if quit_button:
-		quit_button.pressed.connect(_on_quit)
-	# An quit button tren mobile
-	if OS.has_feature("mobile") or OS.has_feature("android"):
-		quit_button.visible = false
-	# Music
-	if bg_music and GameManager.music_enabled:
-		bg_music.play()
-	# Animated title
-	var tw := create_tween()
-	tw.set_loops()
-	tw.tween_property(title_label, "modulate:a", 0.85, 0.7).set_trans(Tween.TRANS_SINE)
-	tw.tween_property(title_label, "modulate:a", 1.0, 0.7).set_trans(Tween.TRANS_SINE)
+        GameManager.load_progress()
+        _refresh_stats()
+        if play_button:
+                play_button.pressed.connect(_on_play)
+        if settings_button:
+                settings_button.pressed.connect(_on_settings)
+        if quit_button:
+                quit_button.pressed.connect(_on_quit)
+        # An quit button tren mobile
+        if OS.has_feature("mobile") or OS.has_feature("android"):
+                quit_button.visible = false
+        # Music
+        _load_bgm()
+        if bg_music and GameManager.music_enabled and bg_music.stream:
+                bg_music.play()
+        # Animated title
+        var tw := create_tween()
+        tw.set_loops()
+        tw.tween_property(title_label, "modulate:a", 0.85, 0.7).set_trans(Tween.TRANS_SINE)
+        tw.tween_property(title_label, "modulate:a", 1.0, 0.7).set_trans(Tween.TRANS_SINE)
+
+
+func _load_bgm() -> void:
+        if bg_music and ResourceLoader.exists("res://assets/sfx/bgm.wav"):
+                bg_music.stream = load("res://assets/sfx/bgm.wav")
 
 
 func _refresh_stats() -> void:
-	if best_label:
-		best_label.text = "Best Score: %d" % GameManager.best_score
-	if coins_label:
-		coins_label.text = "Total Coins: %d" % GameManager.total_coins
-	if level_label:
-		level_label.text = "Level %d" % GameManager.selected_level
-	if version_label:
-		version_label.text = "v%s" % ProjectSettings.get_setting("application/config/version", "0.1.0")
+        if best_label:
+                best_label.text = "Best Score: %d" % GameManager.best_score
+        if coins_label:
+                coins_label.text = "Total Coins: %d" % GameManager.total_coins
+        if level_label:
+                level_label.text = "Level %d" % GameManager.selected_level
+        if version_label:
+                version_label.text = "v%s" % ProjectSettings.get_setting("application/config/version", "0.2.0")
 
 
 func _on_play() -> void:
-	GameManager.goto("res://scenes/Game.tscn")
+        GameManager.goto("res://scenes/Game.tscn")
 
 
 func _on_settings() -> void:
-	GameManager.goto("res://scenes/Settings.tscn")
+        GameManager.goto("res://scenes/Settings.tscn")
 
 
 func _on_quit() -> void:
-	GameManager.quit_game()
+        GameManager.quit_game()

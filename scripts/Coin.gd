@@ -15,33 +15,36 @@ var _collected: bool = false
 
 
 func _ready() -> void:
-	add_to_group("coin")
-	body_entered.connect(_on_body_entered)
-	poly.color = coin_color
-	glow.color = coin_color
-	glow.color.a = 0.35
+        add_to_group("coin")
+        body_entered.connect(_on_body_entered)
+        poly.color = coin_color
+        glow.color = coin_color
+        glow.color.a = 0.35
+        # Load audio stream (bao ve neu file khong ton tai).
+        if ResourceLoader.exists("res://assets/sfx/coin.wav"):
+                collect_sfx.stream = load("res://assets/sfx/coin.wav")
 
 
 func _process(delta: float) -> void:
-	if _collected:
-		return
-	poly.rotation += spin_speed * delta
-	glow.scale = Vector2(1.0, 1.0) + Vector2(sin(Time.get_ticks_msec() * 0.006) * 0.1, sin(Time.get_ticks_msec() * 0.006) * 0.1)
+        if _collected:
+                return
+        poly.rotation += spin_speed * delta
+        glow.scale = Vector2(1.0, 1.0) + Vector2(sin(Time.get_ticks_msec() * 0.006) * 0.1, sin(Time.get_ticks_msec() * 0.006) * 0.1)
 
 
 func _on_body_entered(body: Node) -> void:
-	if _collected:
-		return
-	if body.is_in_group("player"):
-		_collected = true
-		emit_signal("collected")
-		GameManager.add_coin()
-		if collect_sfx and GameManager.sfx_enabled:
-			collect_sfx.play()
-		var tw := create_tween()
-		tw.set_parallel(true)
-		tw.tween_property(poly, "scale", Vector2(2.4, 2.4), 0.18).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
-		tw.tween_property(poly, "modulate:a", 0.0, 0.18)
-		tw.tween_property(glow, "scale", Vector2(3.5, 3.5), 0.18)
-		tw.tween_property(glow, "modulate:a", 0.0, 0.18)
-		tw.chain().tween_callback(queue_free)
+        if _collected:
+                return
+        if body.is_in_group("player"):
+                _collected = true
+                emit_signal("collected")
+                GameManager.add_coin()
+                if collect_sfx and GameManager.sfx_enabled:
+                        collect_sfx.play()
+                var tw := create_tween()
+                tw.set_parallel(true)
+                tw.tween_property(poly, "scale", Vector2(2.4, 2.4), 0.18).set_ease(Tween.EASE_OUT).set_trans(Tween.TRANS_BACK)
+                tw.tween_property(poly, "modulate:a", 0.0, 0.18)
+                tw.tween_property(glow, "scale", Vector2(3.5, 3.5), 0.18)
+                tw.tween_property(glow, "modulate:a", 0.0, 0.18)
+                tw.chain().tween_callback(queue_free)

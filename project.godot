@@ -15,7 +15,7 @@ config/description="A rhythm-based platformer inspired by the cube-jumping genre
 run/main_scene="res://scenes/MainMenu.tscn"
 config/features=PoolStringArray("4.7", "Mobile")
 config/icon="res://assets/icons/icon.png"
-config/version="0.1.0"
+config/version="0.2.0"
 config/copyright="Copyright (c) 2026 Hieu Dash Project"
 
 [autoload]

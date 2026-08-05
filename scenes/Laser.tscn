@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://blaser1ob6"]
+
+[ext_resource type="Script" path="res://scripts/Laser.gd" id="1_ls"]
+
+[sub_resource type="RectangleShape2D" id="rect_ls"]
+size = Vector2(20, 220)
+
+[node name="Laser" type="Area2D"]
+collision_layer = 2
+collision_mask = 1
+monitoring = true
+monitorable = false
+script = ExtResource("1_ls")
+beam_color = Color(1, 0.2, 0.4, 0.9)
+glow_color = Color(1, 0.4, 0.6, 0.4)
+emitter_color = Color(0.3, 0.1, 0.15, 1)
+period = 2.0
+on_duration = 1.2
+beam_length = 220.0
+
+[node name="Glow" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-25, 0, 25, 0, 25, 220, -25, 220)
+color = Color(1, 0.4, 0.6, 0.4)
+
+[node name="Beam" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-10, 0, 10, 0, 10, 220, -10, 220)
+color = Color(1, 0.2, 0.4, 0.9)
+
+[node name="EmitterTop" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(-18, -16, 18, -16, 18, 0, -18, 0)
+color = Color(0.3, 0.1, 0.15, 1)
+
+[node name="EmitterBottom" type="Polygon2D" parent="."]
+position = Vector2(0, 220)
+polygon = PackedVector2Array(-18, 0, 18, 0, 18, 16, -18, 16)
+color = Color(0.3, 0.1, 0.15, 1)
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 110)
+shape = SubResource("rect_ls")

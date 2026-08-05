@@ -98,3 +98,6 @@ volume_db = -6.0
 
 [node name="DeathSfx" type="AudioStreamPlayer" parent="."]
 volume_db = -3.0
+
+[node name="LandSfx" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
