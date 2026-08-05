@@ -88,41 +88,42 @@ jobs:
           echo "HIEUDASH_KEYSTORE_ALIAS=hieudash" >> $GITHUB_ENV
 
       - name: Configure Godot Android signing
+        env:
+          KS_PATH: ${{ env.HIEUDASH_KEYSTORE_PATH }}
+          KS_PASS: ${{ env.HIEUDASH_KEYSTORE_PASS }}
+          KS_ALIAS: ${{ env.HIEUDASH_KEYSTORE_ALIAS }}
         run: |
           set -e
           echo "=== Patching export_presets.cfg with keystore path ==="
-          # Them keystore/release_path, user, password vao export_presets.cfg (preset.0 = Android).
-          python3 - <<'PY'
-          import os
-          path = "export_presets.cfg"
-          with open(path, "r", encoding="utf-8") as f:
-              content = f.read()
-          ks_path = os.environ.get("HIEUDASH_KEYSTORE_PATH", "")
-          ks_pass = os.environ.get("HIEUDASH_KEYSTORE_PASS", "")
-          ks_alias = os.environ.get("HIEUDASH_KEYSTORE_ALIAS", "hieudash")
-          additions = f'''
-keystore/release="{ks_path}"
-keystore/release_user="{ks_alias}"
-keystore/release_password="{ks_pass}"
-'''
-          if 'keystore/release' not in content:
-              # Chen sau dong package/signed=true
-              marker = 'package/signed=true'
-              if marker in content:
-                  content = content.replace(marker, marker + additions, 1)
-              else:
-                  # Chen vao cuoi preset.0.options
-                  content = content.replace('graphics/32_bits_display=true',
-                                            'graphics/32_bits_display=true' + additions, 1)
-          with open(path, "w", encoding="utf-8") as f:
-              f.write(content)
-          print("Patched export_presets.cfg with keystore config")
-          # In ra de verify
-          import re
-          for line in content.splitlines():
-              if 'keystore' in line.lower() or 'package/signed' in line:
-                  print("  ", line)
-          PY
+          # Kiem tra xem export_presets.cfg da co keystore/release chua.
+          # Neu chua, them 3 dong keystore/release, keystore/release_user, keystore/release_password
+          # vao ngay sau dong package/signed=true.
+          if ! grep -q "^keystore/release=" export_presets.cfg; then
+            echo "Chua co keystore config -> chen vao sau package/signed=true"
+            # Dung Python de patch (tranh van de sed escape ky tu dac biet trong path Windows).
+            python3 -c '
+            import os
+            ks_path = os.environ["KS_PATH"]
+            ks_pass = os.environ["KS_PASS"]
+            ks_alias = os.environ["KS_ALIAS"]
+            with open("export_presets.cfg", "r", encoding="utf-8") as f:
+                lines = f.readlines()
+            new_lines = []
+            for line in lines:
+                new_lines.append(line)
+                if line.strip() == "package/signed=true":
+                    new_lines.append("keystore/release=\"{ks_path}\"\n".format(ks_path=ks_path))
+                    new_lines.append("keystore/release_user=\"{ks_alias}\"\n".format(ks_alias=ks_alias))
+                    new_lines.append("keystore/release_password=\"{ks_pass}\"\n".format(ks_pass=ks_pass))
+            with open("export_presets.cfg", "w", encoding="utf-8") as f:
+                f.writelines(new_lines)
+            print("Patched export_presets.cfg with keystore config")
+            '
+          else
+            echo "Da co keystore config -> skip"
+          fi
+          echo "=== Verify ==="
+          grep -E "keystore|package/signed" export_presets.cfg || true
 
       - name: Install Godot engine and export templates
         run: |
