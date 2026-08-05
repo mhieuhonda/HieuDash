@@ -45,11 +45,9 @@ jobs:
 
       - name: Accept Android SDK licenses
         run: |
-          set -e
           mkdir -p $HOME/.android
           touch $HOME/.android/repositories.cfg
-          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
-          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --update || true
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null 2>&1 || true
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
@@ -59,28 +57,29 @@ jobs:
             platforms;android-34
             build-tools;34.0.0
 
-      - name: Install Godot engine
+      - name: Install Godot engine and export templates
         run: |
           set -e
-          echo "Downloading Godot $GODOT_VERSION_FULL for Linux..."
-          curl -fSL --retry 3 --retry-delay 5 \
-            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip" \
-            -o godot.zip
-          unzip -q godot.zip
-          chmod +x "Godot_v$GODOT_VERSION_FULL_linux.x86_64"
-          mv "Godot_v$GODOT_VERSION_FULL_linux.x86_64" godot
+          echo "=== Downloading Godot $GODOT_VERSION_FULL engine + templates via gh CLI ==="
+          # Dung gh CLI de download (co auth, khong bi rate-limit).
+          gh release download "$GODOT_VERSION_FULL" \
+            --repo godotengine/godot \
+            --pattern "Godot_v${GODOT_VERSION_FULL}_linux.x86_64.zip" \
+            --pattern "Godot_v${GODOT_VERSION_FULL}_export_templates.tpz" \
+            --dir .
+          echo "=== Extracting engine ==="
+          unzip -q "Godot_v${GODOT_VERSION_FULL}_linux.x86_64.zip"
+          chmod +x "Godot_v${GODOT_VERSION_FULL}_linux.x86_64"
+          mv "Godot_v${GODOT_VERSION_FULL}_linux.x86_64" godot
           echo "$PWD" >> $GITHUB_PATH
-
-      - name: Download Godot export templates
-        run: |
-          set -e
-          echo "Downloading export templates for $GODOT_VERSION_FULL..."
-          curl -fSL --retry 3 --retry-delay 5 \
-            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz" \
-            -o templates.tpz
-          mkdir -p "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable"
-          unzip -q templates.tpz -d tmp_tpl
-          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/"
+          echo "=== Extracting export templates ==="
+          mkdir -p "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          unzip -q "Godot_v${GODOT_VERSION_FULL}_export_templates.tpz" -d tmp_tpl
+          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable/"
+          echo "=== Done ==="
+          ls -la godot
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Import project resources (headless)
         run: |
@@ -109,7 +108,7 @@ jobs:
       - name: Rename APK with version
         run: |
           TAG="${GITHUB_REF##*/}"
-          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ]; then
+          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ] || [ "$TAG" = "refs/heads/main" ]; then
             TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
           fi
           mkdir -p artifacts
@@ -145,28 +144,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Godot engine
+      - name: Install Godot engine and export templates
         run: |
           set -e
-          echo "Downloading Godot $GODOT_VERSION_FULL for Linux..."
-          curl -fSL --retry 3 --retry-delay 5 \
-            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip" \
-            -o godot.zip
-          unzip -q godot.zip
-          chmod +x "Godot_v$GODOT_VERSION_FULL_linux.x86_64"
-          mv "Godot_v$GODOT_VERSION_FULL_linux.x86_64" godot
+          echo "=== Downloading Godot $GODOT_VERSION_FULL engine + templates via gh CLI ==="
+          gh release download "$GODOT_VERSION_FULL" \
+            --repo godotengine/godot \
+            --pattern "Godot_v${GODOT_VERSION_FULL}_linux.x86_64.zip" \
+            --pattern "Godot_v${GODOT_VERSION_FULL}_export_templates.tpz" \
+            --dir .
+          echo "=== Extracting engine ==="
+          unzip -q "Godot_v${GODOT_VERSION_FULL}_linux.x86_64.zip"
+          chmod +x "Godot_v${GODOT_VERSION_FULL}_linux.x86_64"
+          mv "Godot_v${GODOT_VERSION_FULL}_linux.x86_64" godot
           echo "$PWD" >> $GITHUB_PATH
-
-      - name: Download Godot export templates
-        run: |
-          set -e
-          echo "Downloading export templates for $GODOT_VERSION_FULL..."
-          curl -fSL --retry 3 --retry-delay 5 \
-            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz" \
-            -o templates.tpz
-          mkdir -p "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable"
-          unzip -q templates.tpz -d tmp_tpl
-          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/"
+          echo "=== Extracting export templates ==="
+          mkdir -p "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          unzip -q "Godot_v${GODOT_VERSION_FULL}_export_templates.tpz" -d tmp_tpl
+          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable/"
+          echo "=== Done ==="
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Import project resources (headless)
         run: |
@@ -190,7 +188,7 @@ jobs:
       - name: Package Linux build
         run: |
           TAG="${GITHUB_REF##*/}"
-          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ]; then
+          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ] || [ "$TAG" = "refs/heads/main" ]; then
             TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
           fi
           mkdir -p artifacts
@@ -228,28 +226,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Godot engine
+      - name: Install Godot engine and export templates
         run: |
           set -e
-          echo "Downloading Godot $GODOT_VERSION_FULL for Linux..."
-          curl -fSL --retry 3 --retry-delay 5 \
-            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip" \
-            -o godot.zip
-          unzip -q godot.zip
-          chmod +x "Godot_v$GODOT_VERSION_FULL_linux.x86_64"
-          mv "Godot_v$GODOT_VERSION_FULL_linux.x86_64" godot
+          echo "=== Downloading Godot $GODOT_VERSION_FULL engine + templates via gh CLI ==="
+          gh release download "$GODOT_VERSION_FULL" \
+            --repo godotengine/godot \
+            --pattern "Godot_v${GODOT_VERSION_FULL}_linux.x86_64.zip" \
+            --pattern "Godot_v${GODOT_VERSION_FULL}_export_templates.tpz" \
+            --dir .
+          echo "=== Extracting engine ==="
+          unzip -q "Godot_v${GODOT_VERSION_FULL}_linux.x86_64.zip"
+          chmod +x "Godot_v${GODOT_VERSION_FULL}_linux.x86_64"
+          mv "Godot_v${GODOT_VERSION_FULL}_linux.x86_64" godot
           echo "$PWD" >> $GITHUB_PATH
-
-      - name: Download Godot export templates
-        run: |
-          set -e
-          echo "Downloading export templates for $GODOT_VERSION_FULL..."
-          curl -fSL --retry 3 --retry-delay 5 \
-            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz" \
-            -o templates.tpz
-          mkdir -p "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable"
-          unzip -q templates.tpz -d tmp_tpl
-          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/"
+          echo "=== Extracting export templates ==="
+          mkdir -p "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          unzip -q "Godot_v${GODOT_VERSION_FULL}_export_templates.tpz" -d tmp_tpl
+          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable/"
+          echo "=== Done ==="
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Import project resources (headless)
         run: |
@@ -272,7 +269,7 @@ jobs:
       - name: Package Windows build
         run: |
           TAG="${GITHUB_REF##*/}"
-          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ]; then
+          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ] || [ "$TAG" = "refs/heads/main" ]; then
             TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
           fi
           mkdir -p artifacts
