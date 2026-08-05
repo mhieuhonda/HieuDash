@@ -11,10 +11,18 @@
 class UndoObject : public cocos2d::CCObject {
 public:
     UndoObject();
-    UndoObject* create(GameObject*, UndoCommand);
+
+    // --- Undo state ---
+    GameObject* m_pObject;
+    EditCommand m_eUndoCommand;
+    cocos2d::CCArray* m_pUndoArray;
+    bool m_bRedo;
+
+    // --- Methods ---
+    UndoObject* create(GameObject*, EditCommand);
     int getCommand();
     int getObject();
-    bool init(GameObject*, UndoCommand);
+    bool init(GameObject*, EditCommand);
     ~UndoObject();
 };
 

@@ -11,6 +11,20 @@
 class GJDropDownLayer : public cocos2d::CCLayerColor {
 public:
     GJDropDownLayer();
+
+    // --- Animation positions ---
+    cocos2d::CCPoint m_endPosition;
+    cocos2d::CCPoint m_startPosition;
+
+    // --- Sublayers ---
+    cocos2d::CCLayer* m_listLayer;
+    cocos2d::CCLayer* m_mainLayer;
+
+    // --- State ---
+    bool m_hidden;
+    GJDropDownLayerDelegate* m_delegate;
+
+    // --- Methods ---
     void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);

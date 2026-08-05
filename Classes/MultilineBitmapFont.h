@@ -11,6 +11,16 @@
 class MultilineBitmapFont : public cocos2d::CCLabelBMFont {
 public:
     MultilineBitmapFont();
+
+    // --- Font width array ---
+    float m_fFontWidth[256];
+
+    // --- Text arrays ---
+    cocos2d::CCArray* m_pColouredTextArray;
+    cocos2d::CCArray* m_pInstantTextArray;
+    cocos2d::CCArray* m_pDelayedTextArray;
+
+    // --- Methods ---
     void createWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int);
     int getSizeWidth();
     int getTextHeight();

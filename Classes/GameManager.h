@@ -7,10 +7,39 @@
 
 #include "cocos2d.h"
 #include "HieuDashEnums.h"
+#include "GManager.h"
 
-class GameManager : public cocos2d::CCObject {
+class GameManager : public GManager {
 public:
     GameManager();
+
+    // --- Scene pointers ---
+    PlayLayer* m_pPlayLayer;
+    LevelEditorLayer* m_pLevelEditorLayer;
+    MenuLayer* m_pMenuLayer;
+    Scene m_eScene;
+
+    // --- Player icon anti-cheat seeds/rands ---
+    int m_nPlayerFrameSeed;
+    int m_nPlayerFrameRand;
+    int m_nPlayerShipSeed;
+    int m_nPlayerShipRand;
+    int m_nPlayerBallSeed;
+    int m_nPlayerBallRand;
+    int m_nPlayerUfoSeed;
+    int m_nPlayerUfoRand;
+    int m_nPlayerWaveSeed;
+    int m_nPlayerWaveRand;
+    int m_nPlayerRobotSeed;
+    int m_nPlayerRobotRand;
+    int m_nPlayerSpiderSeed;
+    int m_nPlayerSpiderRand;
+
+    // --- Audio ---
+    float m_fBGVolume;
+    float m_fSFXVolume;
+
+    // --- Methods ---
     void applicationDidEnterBackground();
     void applicationWillEnterForeground();
     void claimItemsResponse(std::string);

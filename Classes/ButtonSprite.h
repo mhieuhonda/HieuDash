@@ -11,6 +11,16 @@
 class ButtonSprite : public cocos2d::CCSprite {
 public:
     ButtonSprite();
+
+    // --- Button properties ---
+    ButtonType m_eButtonType;
+    float m_fAbsoluteWidth;
+    cocos2d::CCLabelBMFont* m_pLabel;
+    cocos2d::CCSprite* m_pBackgroundImage;
+    cocos2d::CCPoint m_obSpriteOffset;
+    std::string m_sString;
+
+    // --- Methods ---
     ButtonSprite* create(char const*);
     ButtonSprite* create(char const*, float);
     ButtonSprite* create(char const*, int, int, float, bool);

@@ -11,6 +11,19 @@
 class GameLevelManager : public cocos2d::CCObject {
 public:
     GameLevelManager();
+
+    // --- Level dictionaries ---
+    cocos2d::CCDictionary* m_pSavedLevels;
+    cocos2d::CCDictionary* m_pMainLevels;
+    cocos2d::CCDictionary* m_pOnlineLevelsDict;
+
+    // --- Delegate pointers ---
+    LevelManagerDelegate* m_pDelegate;
+    LevelDownloadDelegate* m_pDlDelegate;
+    LevelUploadDelegate* m_pUpDelegate;
+    LevelUpdateDelegate* m_pUpdateDelegate;
+
+    // --- Methods ---
     void addDLToActive(char const*);
     void createAndGetLevels(std::string);
     void createNewLevel();

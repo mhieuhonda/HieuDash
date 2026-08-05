@@ -7,10 +7,33 @@
 
 #include "cocos2d.h"
 #include "HieuDashEnums.h"
+#include "GJBaseGameLayer.h"
 
-class PlayLayer : public cocos2d::CCLayer {
+class PlayLayer : public GJBaseGameLayer {
 public:
     PlayLayer();
+
+    // --- Level and player ---
+    GJGameLevel* m_pLevel;
+    PlayerObject* m_pPlayer1;
+    PlayerObject* m_pPlayer2;
+
+    // --- Game state ---
+    int m_nAttempts;
+    bool m_bPracticeMode;
+    bool m_bTestMode;
+    bool m_bDead;
+    double m_dTime;
+    int m_nBestPercent;
+
+    // --- Checkpoints ---
+    cocos2d::CCArray* m_pCheckpointArray;
+
+    // --- Visual ---
+    GJGroundLayer* m_pGround;
+    UILayer* m_pUILayer;
+
+    // --- Methods ---
     void addToSection(GameObject*);
     void animateInGround(bool);
     void animateOutGround(bool);

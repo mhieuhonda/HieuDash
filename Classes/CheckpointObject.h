@@ -11,6 +11,17 @@
 class CheckpointObject : public cocos2d::CCObject {
 public:
     CheckpointObject();
+
+    // --- Player checkpoints ---
+    PlayerCheckpoint* m_pPlayer1Checkpoint;
+    PlayerCheckpoint* m_pPlayer2Checkpoint;
+    bool m_bTwoPlayer;
+
+    // --- Camera/state ---
+    cocos2d::CCPoint m_obCameraPos;
+    double m_dTime;
+
+    // --- Legacy properties ---
     CheckpointObject* create();
     EnterEffect getActiveEnterEffect();
     int getBGColor();

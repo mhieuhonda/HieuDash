@@ -7,10 +7,20 @@
 
 #include "cocos2d.h"
 #include "HieuDashEnums.h"
+#include "GJBaseGameLayer.h"
 
-class LevelEditorLayer : public cocos2d::CCLayer {
+class LevelEditorLayer : public GJBaseGameLayer {
 public:
     LevelEditorLayer();
+
+    // --- Editor state ---
+    EditorUI* m_pEditorUI;
+    GJGameLevel* m_pLevel;
+    GJGroundLayer* m_pGround;
+    bool m_bTwoPlayer;
+    float m_fTime;
+
+    // --- Methods ---
     void addToRedoList(UndoObject*);
     void addToSection(GameObject*);
     void addToUndoList(UndoObject*);

@@ -11,6 +11,46 @@
 class GameObject : public cocos2d::CCSprite {
 public:
     GameObject();
+
+    // --- Core properties ---
+    int m_nObjectID;
+    int m_nColourIdx;
+    float m_fScale;
+    cocos2d::CCPoint m_obStartPos;
+    int m_nDefaultZLayer;
+    int m_nZLayer;
+    int m_nZOrder;
+
+    // --- State flags ---
+    bool m_bTrigger;
+    bool m_bActive;
+    bool m_bTouchTriggered;
+    bool m_bSpawnTriggered;
+    bool m_bUniqueActivated;
+    bool m_bActivated;
+    bool m_bInvisible;
+    bool m_bPortal;
+    bool m_bDontFade;
+    bool m_bDontEnter;
+    bool m_bDontTransform;
+    bool m_bGroupDisabled;
+    bool m_bHasParticles;
+    bool m_bIsDecoration;
+    bool m_bObjectSelected;
+
+    // --- Section/group ---
+    int m_nSectionIdx;
+    int m_nGroupCount;
+    int m_nLinkedGroupID;
+
+    // --- Spawn/enter ---
+    float m_fSpawnXPosition;
+    EnterEffect m_eActiveEnterEffect;
+
+    // --- Effect manager ---
+    GJEffectManager* m_pEffectManager;
+
+    // --- Methods ---
     void activateObject();
     void addGlow();
     void calculateSpawnXPos();

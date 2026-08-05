@@ -22,13 +22,18 @@ LOCAL_C_INCLUDES := \
 
 LOCAL_SRC_FILES := \
     main.cpp \
-    ../../Classes/AppDelegate.cpp \
+    ../../Classes/AccountHelpLayer.cpp \
+    ../../Classes/AccountLayer.cpp \
+    ../../Classes/AccountLoginLayer.cpp \
+    ../../Classes/AccountRegisterLayer.cpp \
     ../../Classes/AchievementBar.cpp \
     ../../Classes/AchievementCell.cpp \
     ../../Classes/AchievementManager.cpp \
     ../../Classes/AchievementNotifier.cpp \
     ../../Classes/AchievementsLayer.cpp \
     ../../Classes/AdToolbox.cpp \
+    ../../Classes/AppDelegate.cpp \
+    ../../Classes/ArtistCell.cpp \
     ../../Classes/AudioEffectsLayer.cpp \
     ../../Classes/BitmapFontCache.cpp \
     ../../Classes/BonusDropdown.cpp \
@@ -62,15 +67,23 @@ LOCAL_SRC_FILES := \
     ../../Classes/ColorPickerPopup.cpp \
     ../../Classes/ColorSelectPopup.cpp \
     ../../Classes/ColoredSection.cpp \
+    ../../Classes/CommentCell.cpp \
+    ../../Classes/CommentUploadDelegate.cpp \
     ../../Classes/CreateMenuItem.cpp \
     ../../Classes/CreatorLayer.cpp \
     ../../Classes/CustomListView.cpp \
+    ../../Classes/CustomSongCell.cpp \
     ../../Classes/DS_Dictionary.cpp \
+    ../../Classes/DelaySection.cpp \
+    ../../Classes/DialogDelegate.cpp \
+    ../../Classes/DialogLayer.cpp \
+    ../../Classes/DialogObject.cpp \
     ../../Classes/DrawGridLayer.cpp \
     ../../Classes/EditButtonBar.cpp \
     ../../Classes/EditLevelLayer.cpp \
     ../../Classes/EditorPauseLayer.cpp \
     ../../Classes/EditorUI.cpp \
+    ../../Classes/EffectGameObject.cpp \
     ../../Classes/EndLevelLayer.cpp \
     ../../Classes/EndPortalObject.cpp \
     ../../Classes/ExtendedLayer.cpp \
@@ -78,12 +91,35 @@ LOCAL_SRC_FILES := \
     ../../Classes/FileOperation.cpp \
     ../../Classes/FileSaveManager.cpp \
     ../../Classes/FontObject.cpp \
+    ../../Classes/GJAccountBackupDelegate.cpp \
+    ../../Classes/GJAccountDelegate.cpp \
+    ../../Classes/GJAccountLoginDelegate.cpp \
+    ../../Classes/GJAccountManager.cpp \
+    ../../Classes/GJAccountRegisterDelegate.cpp \
+    ../../Classes/GJAccountSettingsDelegate.cpp \
+    ../../Classes/GJAccountSyncDelegate.cpp \
+    ../../Classes/GJBaseGameLayer.cpp \
+    ../../Classes/GJComment.cpp \
     ../../Classes/GJDropDownLayer.cpp \
+    ../../Classes/GJEffectManager.cpp \
     ../../Classes/GJGameLevel.cpp \
     ../../Classes/GJGarageLayer.cpp \
+    ../../Classes/GJGroundLayer.cpp \
     ../../Classes/GJListLayer.cpp \
+    ../../Classes/GJMapPack.cpp \
     ../../Classes/GJMoreGamesLayer.cpp \
     ../../Classes/GJSearchObject.cpp \
+    ../../Classes/GJChallengeItem.cpp \
+    ../../Classes/GJLevelScoreCell.cpp \
+    ../../Classes/GJMessageCell.cpp \
+    ../../Classes/GJRewardItem.cpp \
+    ../../Classes/GJRewardObject.cpp \
+    ../../Classes/GJScoreCell.cpp \
+    ../../Classes/GJUserCell.cpp \
+    ../../Classes/GJUserMessage.cpp \
+    ../../Classes/GJUserScore.cpp \
+    ../../Classes/GJRequestCell.cpp \
+    ../../Classes/GJStoreItem.cpp \
     ../../Classes/GManager.cpp \
     ../../Classes/GameCell.cpp \
     ../../Classes/GameEffectsManager.cpp \
@@ -96,8 +132,10 @@ LOCAL_SRC_FILES := \
     ../../Classes/GameToolbox.cpp \
     ../../Classes/GhostTrailEffect.cpp \
     ../../Classes/InfoLayer.cpp \
+    ../../Classes/InstantSection.cpp \
     ../../Classes/LevelBrowserLayer.cpp \
     ../../Classes/LevelCell.cpp \
+    ../../Classes/LevelCommentDelegate.cpp \
     ../../Classes/LevelEditorLayer.cpp \
     ../../Classes/LevelInfoLayer.cpp \
     ../../Classes/LevelPage.cpp \
@@ -106,36 +144,48 @@ LOCAL_SRC_FILES := \
     ../../Classes/LevelSettingsLayer.cpp \
     ../../Classes/LevelSettingsObject.cpp \
     ../../Classes/LevelTools.cpp \
+    ../../Classes/LikeItemDelegate.cpp \
     ../../Classes/ListCell.cpp \
     ../../Classes/LoadingCircle.cpp \
     ../../Classes/LoadingLayer.cpp \
+    ../../Classes/MapPackCell.cpp \
     ../../Classes/MenuGameLayer.cpp \
     ../../Classes/MenuLayer.cpp \
     ../../Classes/MoreGamesLayer.cpp \
     ../../Classes/MoreGamesManager.cpp \
     ../../Classes/MultilineBitmapFont.cpp \
     ../../Classes/MyLevelsLayer.cpp \
+    ../../Classes/NumberInputLayer.cpp \
+    ../../Classes/OBB2D.cpp \
     ../../Classes/ObjectDecoder.cpp \
     ../../Classes/ObjectManager.cpp \
+    ../../Classes/ObjectToolbox.cpp \
     ../../Classes/OpenSLEngine.cpp \
     ../../Classes/OptionsLayer.cpp \
     ../../Classes/PauseLayer.cpp \
     ../../Classes/PlatformToolbox.cpp \
     ../../Classes/PlayLayer.cpp \
+    ../../Classes/PlayerCheckpoint.cpp \
     ../../Classes/PlayerObject.cpp \
     ../../Classes/PriceLabel.cpp \
     ../../Classes/RateLevelLayer.cpp \
     ../../Classes/RingObject.cpp \
+    ../../Classes/RobTop.cpp \
     ../../Classes/SavedLevelsLayer.cpp \
     ../../Classes/SearchButton.cpp \
+    ../../Classes/SecretLayer.cpp \
+    ../../Classes/SetGroupIDLayer.cpp \
+    ../../Classes/SetIDLayer.cpp \
     ../../Classes/ShareLevelLayer.cpp \
     ../../Classes/SimpleAudioEngineOpenSL.cpp \
+    ../../Classes/SimplePlayer.cpp \
     ../../Classes/SlideInLayer.cpp \
     ../../Classes/Slider.cpp \
     ../../Classes/SliderThumb.cpp \
     ../../Classes/SliderTouchLogic.cpp \
     ../../Classes/SongCell.cpp \
     ../../Classes/SongInfoLayer.cpp \
+    ../../Classes/SongInfoObject.cpp \
     ../../Classes/SongObject.cpp \
     ../../Classes/SongsLayer.cpp \
     ../../Classes/Spinor.cpp \
@@ -146,13 +196,13 @@ LOCAL_SRC_FILES := \
     ../../Classes/StatsObject.cpp \
     ../../Classes/StoreToolbox.cpp \
     ../../Classes/SupportLayer.cpp \
+    ../../Classes/TableViewCell.cpp \
     ../../Classes/TextArea.cpp \
     ../../Classes/TutorialLayer.cpp \
     ../../Classes/TutorialPopup.cpp \
     ../../Classes/UILayer.cpp \
     ../../Classes/UndoObject.cpp \
-    ../../Classes/UploadPopup.cpp
-
+    ../../Classes/UploadPopup.cpp \
     ../../Classes/BoomScrollLayerDelegate.cpp \
     ../../Classes/CCScrollLayerExtDelegate.cpp \
     ../../Classes/CCTableViewDataSource.cpp \
@@ -170,6 +220,7 @@ LOCAL_SRC_FILES := \
     ../../Classes/LevelUploadDelegate.cpp \
     ../../Classes/RateLevelDelegate.cpp \
     ../../Classes/TextInputDelegate.cpp \
+    ../../Classes/TriggerEffectDelegate.cpp
 
 LOCAL_CFLAGS := -DCC_TARGET_PLATFORM=CC_PLATFORM_ANDROID \
                 -DCOCOS2D_DEBUG=1 \

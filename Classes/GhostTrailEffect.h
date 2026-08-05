@@ -11,6 +11,15 @@
 class GhostTrailEffect : public cocos2d::CCNode {
 public:
     GhostTrailEffect();
+
+    // --- Trail properties ---
+    float m_fInterval;
+    float m_fDuration;
+    cocos2d::CCSprite* m_pIcon;
+    cocos2d::_ccBlendFunc m_eBlendFunc;
+    cocos2d::CCSpriteBatchNode* m_pBatchNode;
+
+    // --- Methods ---
     GhostTrailEffect* create();
     void doBlendAdditive();
     void draw();

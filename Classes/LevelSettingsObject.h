@@ -11,6 +11,30 @@
 class LevelSettingsObject : public cocos2d::CCObject {
 public:
     LevelSettingsObject();
+
+    // --- Effect manager ---
+    GJEffectManager* m_pEffectManager;
+
+    // --- Game mode and speed ---
+    GameMode m_eGameMode;
+    Speed m_eSpeed;
+    bool m_bMini;
+    bool m_bDual;
+
+    // --- Visual IDs ---
+    int m_nBackgroundID;
+    int m_nGroundID;
+    int m_nFontID;
+
+    // --- Start colors ---
+    cocos2d::_ccColor3B m_obStartBGColor;
+    cocos2d::_ccColor3B m_obStartGColor;
+
+    // --- Audio ---
+    int m_nAudioTrack;
+    int m_nSongID;
+
+    // --- Legacy methods ---
     LevelSettingsObject* create();
     int getAudioTrack();
     int getSaveString();
