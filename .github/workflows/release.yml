@@ -97,19 +97,27 @@ jobs:
           set -e
           SETTINGS_FILE="$HOME/.config/godot/editor_settings-4.7.tres"
           mkdir -p "$HOME/.config/godot"
-          # Start Godot once to generate the settings file.
-          ./godot --headless --quit > /dev/null 2>&1 || true
-          if [ ! -f "$SETTINGS_FILE" ]; then
-            echo "ERROR: Godot settings file not generated."
-            exit 1
-          fi
-          # Print current env for debugging.
           echo "JAVA_HOME=$JAVA_HOME"
           echo "ANDROID_HOME=$ANDROID_HOME"
-          # Patch the Android SDK + Java SDK paths.
-          # $JAVA_HOME is set by actions/setup-java; $ANDROID_HOME is set by the runner.
-          sed -i "s|export/android/java_sdk_path = .*|export/android/java_sdk_path = \"$JAVA_HOME\"|" "$SETTINGS_FILE"
-          sed -i "s|export/android/android_sdk_path = .*|export/android/android_sdk_path = \"$ANDROID_HOME\"|" "$SETTINGS_FILE"
+          # Try to generate the settings file by running Godot once (with longer
+          # timeout and visible output for debugging). Godot --quit is fast but
+          # sometimes doesn't write the settings file on CI runners.
+          timeout 30 ./godot --headless --quit 2>&1 | tail -5 || true
+          # If the settings file wasn't generated, create a minimal one manually.
+          # The .tres format is INI-like; Godot reads it on next launch.
+          if [ ! -f "$SETTINGS_FILE" ]; then
+            echo "Godot did not generate settings file; creating minimal one."
+            printf '%s\n' '[gd_resource type="EditorSettings" format=3]' '' '[resource]' > "$SETTINGS_FILE"
+            printf 'export/android/java_sdk_path = "%s"\n' "$JAVA_HOME" >> "$SETTINGS_FILE"
+            printf 'export/android/android_sdk_path = "%s"\n' "$ANDROID_HOME" >> "$SETTINGS_FILE"
+            printf '%s\n' 'export/android/debug_keystore = ""' >> "$SETTINGS_FILE"
+            printf '%s\n' 'export/android/debug_keystore_user = "androiddebugkey"' >> "$SETTINGS_FILE"
+            printf '%s\n' 'export/android/debug_keystore_pass = "android"' >> "$SETTINGS_FILE"
+          else
+            # Settings file exists; patch the SDK paths.
+            sed -i "s|export/android/java_sdk_path = .*|export/android/java_sdk_path = \"$JAVA_HOME\"|" "$SETTINGS_FILE"
+            sed -i "s|export/android/android_sdk_path = .*|export/android/android_sdk_path = \"$ANDROID_HOME\"|" "$SETTINGS_FILE"
+          fi
           echo "=== Updated settings ==="
           grep -E "export/android/(java|android)_sdk_path" "$SETTINGS_FILE"
 
