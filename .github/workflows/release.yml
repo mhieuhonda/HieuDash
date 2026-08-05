@@ -115,7 +115,7 @@ jobs:
       - name: Rename APK with version
         run: |
           TAG="${GITHUB_REF##*/}"
-          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ] || [ "$TAG" = "refs/heads/main" ]; then
+          if [[ ! "$TAG" =~ ^v[0-9] ]]; then
             TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
           fi
           mkdir -p artifacts
@@ -195,7 +195,7 @@ jobs:
       - name: Package Linux build
         run: |
           TAG="${GITHUB_REF##*/}"
-          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ] || [ "$TAG" = "refs/heads/main" ]; then
+          if [[ ! "$TAG" =~ ^v[0-9] ]]; then
             TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
           fi
           mkdir -p artifacts
@@ -276,7 +276,7 @@ jobs:
       - name: Package Windows build
         run: |
           TAG="${GITHUB_REF##*/}"
-          if [ -z "$TAG" ] || [ "$TAG" = "refs/tags" ] || [ "$TAG" = "refs/heads/main" ]; then
+          if [[ ! "$TAG" =~ ^v[0-9] ]]; then
             TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
           fi
           mkdir -p artifacts
