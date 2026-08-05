@@ -14,7 +14,6 @@ on:
         required: false
         default: "v0.2.0"
 
-# Huy build cu neu push moi (tranh lang phi).
 concurrency:
   group: build-release-${{ github.ref }}
   cancel-in-progress: false
@@ -22,7 +21,6 @@ concurrency:
 env:
   GODOT_VERSION: "4.7"
   GODOT_VERSION_FULL: "4.7-stable"
-  # Ten goi ngan cho artifact names.
   PROJECT_NAME: "HieuDash"
 
 jobs:
@@ -32,7 +30,7 @@ jobs:
   build-android:
     name: Build Android APK
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -45,37 +43,49 @@ jobs:
           distribution: "temurin"
           java-version: "17"
 
+      - name: Accept Android SDK licenses
+        run: |
+          set -e
+          mkdir -p $HOME/.android
+          touch $HOME/.android/repositories.cfg
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --update || true
+
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
         with:
+          accept-android-sdk-licenses: true
           packages: |
             platforms;android-34
             build-tools;34.0.0
-            cmdline-tools;latest
 
       - name: Install Godot engine
         run: |
           set -e
           echo "Downloading Godot $GODOT_VERSION_FULL for Linux..."
-          wget -q https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip -O godot.zip
+          curl -fSL --retry 3 --retry-delay 5 \
+            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip" \
+            -o godot.zip
           unzip -q godot.zip
-          chmod +x Godot_v*$GODOT_VERSION_FULL_linux.x86_64
-          mv Godot_v*$GODOT_VERSION_FULL_linux.x86_64 godot
+          chmod +x "Godot_v$GODOT_VERSION_FULL_linux.x86_64"
+          mv "Godot_v$GODOT_VERSION_FULL_linux.x86_64" godot
           echo "$PWD" >> $GITHUB_PATH
 
       - name: Download Godot export templates
         run: |
           set -e
           echo "Downloading export templates for $GODOT_VERSION_FULL..."
-          wget -q https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz -O templates.tpz
-          mkdir -p $HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable
+          curl -fSL --retry 3 --retry-delay 5 \
+            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz" \
+            -o templates.tpz
+          mkdir -p "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable"
           unzip -q templates.tpz -d tmp_tpl
-          cp tmp_tpl/templates/* $HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/
+          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/"
 
       - name: Import project resources (headless)
         run: |
           echo "Importing project (this may take a while)..."
-          godot --headless --import --quiet 2>&1 | tail -20 || true
+          godot --headless --import --quiet 2>&1 | tail -30 || true
 
       - name: Export Android APK
         run: |
@@ -84,7 +94,6 @@ jobs:
           godot --headless --export-release "Android" --quiet 2>&1 | tee export_android.log || true
           echo "=== Searching for built APK ==="
           find . -name "*.apk" -type f 2>/dev/null | head -10
-          # With gradle build, APK is typically at android/build/build/outputs/apk/debug/
           mkdir -p export/android
           found_apk=$(find . -name "*.apk" -type f | head -1)
           if [ -n "$found_apk" ]; then
@@ -104,18 +113,7 @@ jobs:
             TAG="${{ github.event.inputs.tag || 'v0.2.0' }}"
           fi
           mkdir -p artifacts
-          if [ -f export/android/HieuDash.apk ]; then
-            cp export/android/HieuDash.apk "artifacts/HieuDash-${TAG}-android.apk"
-          else
-            echo "WARNING: APK not found at expected path, searching..."
-            found=$(find . -name "*.apk" -type f | head -1)
-            if [ -n "$found" ]; then
-              cp "$found" "artifacts/HieuDash-${TAG}-android.apk"
-            else
-              echo "ERROR: No APK built!"
-              exit 1
-            fi
-          fi
+          cp export/android/HieuDash.apk "artifacts/HieuDash-${TAG}-android.apk"
           ls -la artifacts/
 
       - name: Upload build artifact
@@ -128,6 +126,7 @@ jobs:
       - name: Upload APK to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2.0' }}
           files: artifacts/*.apk
           fail_on_unmatched_files: true
         env:
@@ -139,7 +138,7 @@ jobs:
   build-linux:
     name: Build Linux (x86_64)
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -150,32 +149,43 @@ jobs:
         run: |
           set -e
           echo "Downloading Godot $GODOT_VERSION_FULL for Linux..."
-          wget -q https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip -O godot.zip
+          curl -fSL --retry 3 --retry-delay 5 \
+            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip" \
+            -o godot.zip
           unzip -q godot.zip
-          chmod +x Godot_v*$GODOT_VERSION_FULL_linux.x86_64
-          mv Godot_v*$GODOT_VERSION_FULL_linux.x86_64 godot
+          chmod +x "Godot_v$GODOT_VERSION_FULL_linux.x86_64"
+          mv "Godot_v$GODOT_VERSION_FULL_linux.x86_64" godot
           echo "$PWD" >> $GITHUB_PATH
 
       - name: Download Godot export templates
         run: |
           set -e
           echo "Downloading export templates for $GODOT_VERSION_FULL..."
-          wget -q https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz -O templates.tpz
-          mkdir -p $HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable
+          curl -fSL --retry 3 --retry-delay 5 \
+            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz" \
+            -o templates.tpz
+          mkdir -p "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable"
           unzip -q templates.tpz -d tmp_tpl
-          cp tmp_tpl/templates/* $HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/
+          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/"
 
       - name: Import project resources (headless)
         run: |
           echo "Importing project (this may take a while)..."
-          godot --headless --import --quiet 2>&1 | tail -20 || true
+          godot --headless --import --quiet 2>&1 | tail -30 || true
 
       - name: Export Linux build
         run: |
           set -e
           mkdir -p export/linux
+          echo "=== Running Godot Linux export ==="
           godot --headless --export-release "Linux" --quiet 2>&1 | tee export_linux.log || true
           ls -la export/linux/
+          if [ ! -f export/linux/HieuDash.x86_64 ]; then
+            echo "ERROR: Linux binary not found!"
+            cat export_linux.log
+            exit 1
+          fi
+          chmod +x export/linux/HieuDash.x86_64
 
       - name: Package Linux build
         run: |
@@ -185,7 +195,6 @@ jobs:
           fi
           mkdir -p artifacts
           cd export/linux
-          # Tao zip chua binary + .pck (neu co) + dependencies
           zip -r "../../artifacts/HieuDash-${TAG}-linux-x86_64.zip" . -x "*.import"
           cd ../..
           ls -la artifacts/
@@ -200,6 +209,7 @@ jobs:
       - name: Upload Linux build to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2.0' }}
           files: artifacts/*.zip
           fail_on_unmatched_files: true
         env:
@@ -211,7 +221,7 @@ jobs:
   build-windows:
     name: Build Windows (x86_64)
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -222,32 +232,42 @@ jobs:
         run: |
           set -e
           echo "Downloading Godot $GODOT_VERSION_FULL for Linux..."
-          wget -q https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip -O godot.zip
+          curl -fSL --retry 3 --retry-delay 5 \
+            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_linux.x86_64.zip" \
+            -o godot.zip
           unzip -q godot.zip
-          chmod +x Godot_v*$GODOT_VERSION_FULL_linux.x86_64
-          mv Godot_v*$GODOT_VERSION_FULL_linux.x86_64 godot
+          chmod +x "Godot_v$GODOT_VERSION_FULL_linux.x86_64"
+          mv "Godot_v$GODOT_VERSION_FULL_linux.x86_64" godot
           echo "$PWD" >> $GITHUB_PATH
 
       - name: Download Godot export templates
         run: |
           set -e
           echo "Downloading export templates for $GODOT_VERSION_FULL..."
-          wget -q https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz -O templates.tpz
-          mkdir -p $HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable
+          curl -fSL --retry 3 --retry-delay 5 \
+            "https://github.com/godotengine/godot/releases/download/$GODOT_VERSION_FULL/Godot_v$GODOT_VERSION_FULL_export_templates.tpz" \
+            -o templates.tpz
+          mkdir -p "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable"
           unzip -q templates.tpz -d tmp_tpl
-          cp tmp_tpl/templates/* $HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/
+          cp tmp_tpl/templates/* "$HOME/.local/share/godot/export_templates/$GODOT_VERSION.stable/"
 
       - name: Import project resources (headless)
         run: |
           echo "Importing project (this may take a while)..."
-          godot --headless --import --quiet 2>&1 | tail -20 || true
+          godot --headless --import --quiet 2>&1 | tail -30 || true
 
       - name: Export Windows build
         run: |
           set -e
           mkdir -p export/windows
+          echo "=== Running Godot Windows export ==="
           godot --headless --export-release "Windows Desktop" --quiet 2>&1 | tee export_windows.log || true
           ls -la export/windows/
+          if [ ! -f export/windows/HieuDash.exe ]; then
+            echo "ERROR: Windows binary not found!"
+            cat export_windows.log
+            exit 1
+          fi
 
       - name: Package Windows build
         run: |
@@ -271,6 +291,7 @@ jobs:
       - name: Upload Windows build to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2.0' }}
           files: artifacts/*.zip
           fail_on_unmatched_files: true
         env:
