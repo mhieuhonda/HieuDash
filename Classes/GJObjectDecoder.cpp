@@ -19,8 +19,9 @@ GJObjectDecoder::~GJObjectDecoder() {
 }
 
 bool GJObjectDecoder::init() {
-    // TODO: implement (recovered from binary, body unknown)
-    return cocos2d::CCObject::init();
+    // CCObject in cocos2d-x 2.2.3 has no init() method - it's a pure
+    // base class. Just return true.
+    return true;
 }
 
 cocos2d::CCObject* GJObjectDecoder::decodeObjectForKey(CoderKey key,
