@@ -249,7 +249,7 @@ jobs:
           New-Item -ItemType Directory -Force -Path $dst | Out-Null
           Copy-Item -Path "$src/*" -Destination $dst -Recurse -Force
 
-      - name: Build via cocos2d-x 2.2.3 build-win32.ps1 (fallback: msbuild)
+      - name: Build via cocos2d-x 2.2.3 build-win32.ps1 (fallback msbuild)
         shell: pwsh
         run: |
           cd proj.win32
