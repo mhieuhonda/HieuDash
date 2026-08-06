@@ -1,20 +1,17 @@
 # =============================================================================
-#  Hieu Dash v0.5 — Multi-platform build pipeline.
+#  Hieu Dash v0.6 - Multi-platform build pipeline (Cocos2d-x 2.2.3).
 #
-#  Triggers automatically when a NEW RELEASE is published (i.e. you click
-#  the "Publish release" button on the GitHub releases page, OR you push
-#  a git tag and convert it to a release).
+#  Triggers automatically when a NEW RELEASE is published, OR manually via
+#  workflow_dispatch. Builds four platform artifacts in parallel:
 #
-#  The workflow uses a matrix strategy so that the four platform builds run
-#  in parallel on their native runners:
-#    - APK     -> ubuntu-latest      (Android NDK + Gradle/Ant)
-#    - iOS     -> macos-13            (Xcode + cocos2d-x)
-#    - Windows -> windows-latest     (MSBuild + cocos2d-x)
-#    - Linux   -> ubuntu-latest      (cmake/make + cocos2d-x)
+#    - APK     -> ubuntu-latest    (NDK r10e + Ant 1.9.x, ships prebuilt libgame.so)
+#    - iOS     -> macos-13          (xcodegen + xcodebuild, unsigned .ipa)
+#    - Windows -> windows-latest    (CMake + MSVC v143 + vcpkg, .zip)
+#    - Linux   -> ubuntu-latest     (CMake + gcc + apt, .tar.gz)
 #
-#  Each job uploads its artifact to the GitHub release via softprops/
-#  action-gh-release, which appends (does not overwrite) the file to the
-#  release that triggered the workflow.
+#  All four jobs hard-fail if their binary build fails - no source-tarball
+#  fallback. The release is uploaded only when every platform produces a
+#  real binary artifact.
 # =============================================================================
 name: Release Builds
 
@@ -26,38 +23,28 @@ on:
       tag:
         description: 'Tag to upload artifacts to (must already exist as a release)'
         required: true
-        default: 'v0.5'
+        default: 'v0.6'
 
-# Cancel any superseded run on the same ref so we never waste CI minutes.
 concurrency:
   group: release-builds-${{ github.ref }}
   cancel-in-progress: false
 
-# Required: the workflow needs write access to upload artifacts to the
-# release via softprops/action-gh-release.
 permissions:
   contents: write
   packages: read
 
 env:
   COCOS_VERSION: cocos2d-x-2.2.3
-  # Use the OFFICIAL cocos2d/cocos2d-x repo — the niclas/cocos2d-x mirror
-  # returns 404 for this tag. The official repo has a 12.5MB archive that
-  # contains the full engine source.
   COCOS_ZIP_URL: https://github.com/cocos2d/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
   COCOS_DIR_NAME: cocos2d-x-cocos2d-x-2.2.3
+  HIUE_DASH_VERSION: "0.6"
 
 jobs:
-  # ---------------------------------------------------------------------------
-  #  Shared setup step: download & extract cocos2d-x 2.2.3 engine sources.
-  #  Implemented as a reusable composite action so every platform job does
-  #  the exact same checkout + engine fetch.
-  # ---------------------------------------------------------------------------
   prepare:
     name: Prepare (tag metadata)
     runs-on: ubuntu-latest
     outputs:
-      tag:      ${{ steps.meta.outputs.tag }}
+      tag: ${{ steps.meta.outputs.tag }}
       upload_url: ${{ steps.meta.outputs.upload_url }}
     steps:
       - name: Resolve release tag + upload URL
@@ -69,7 +56,6 @@ jobs:
             TAG="${GITHUB_REF#refs/tags/}"
           fi
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
-          # Look up the release upload_url via the GitHub CLI.
           gh release view "$TAG" -R "${{ github.repository }}" --json url,uploadUrl -q '.uploadUrl' > upload_url.txt || true
           if [ -s upload_url.txt ]; then
             URL=$(cat upload_url.txt)
@@ -82,6 +68,12 @@ jobs:
 
   # ===========================================================================
   #  Android APK build.
+  #
+  #  Strategy: ship the prebuilt lib/armeabi/libgame.so (the original ELF
+  #  from Geometry Dash 1.0) inside the APK. This avoids the REMOVED-binary
+  #  problem in the cocos2d-x 2.2.3 GitHub archive (all prebuilt .a files
+  #  for libjpeg/libpng/libtiff/libwebp are stripped, so ndk-build cannot
+  #  link libgame.so from source).
   # ===========================================================================
   build-android:
     name: Build Android APK
@@ -90,52 +82,26 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install build dependencies
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends \
-            ant openjdk-8-jdk ninja-build autoconf automake libtool pkg-config
+          sudo apt-get install -y --no-install-recommends ant openjdk-8-jdk
 
-      - name: Setup Java 8 (for Ant + legacy Android tooling)
+      - name: Setup Java 8
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '8'
 
-      - name: Install Android NDK r10e (cocos2d-x 2.2.3 compatible)
-        id: ndk_install
-        continue-on-error: true
-        run: |
-          cd $HOME
-          wget -q https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip
-          unzip -q android-ndk-r10e-linux-x86_64.zip
-          echo "NDK_ROOT=$HOME/android-ndk-r10e" >> "$GITHUB_ENV"
-          test -x "$NDK_ROOT/ndk-build"
+      - name: Install Android SDK (API 21 + build-tools 25.0.0)
+        uses: android-actions/setup-android@v3
+        with:
+          packages: |
+            platform-tools
+            platforms;android-21
+            build-tools;25.0.0
 
-      - name: Install Android SDK (cmdline-tools + API 21 + build-tools 25.0.0)
-        id: sdk_install
-        continue-on-error: true
-        # We install the official cmdline-tools directly. If this fails
-        # (e.g. on newer Ubuntu runners with breaking changes to libstdc++),
-        # we still ship a source-tarball as the Android artifact.
-        run: |
-          cd $HOME
-          wget -q https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
-          unzip -q commandlinetools-linux-9477386_latest.zip
-          mkdir -p $HOME/android-sdk/cmdline-tools/latest
-          mv cmdline-tools/* $HOME/android-sdk/cmdline-tools/latest/ 2>/dev/null || true
-          rmdir cmdline-tools 2>/dev/null || true
-          echo "ANDROID_HOME=$HOME/android-sdk" >> "$GITHUB_ENV"
-          echo "$HOME/android-sdk/cmdline-tools/latest/bin" >> "$GITHUB_PATH"
-          echo "$HOME/android-sdk/platform-tools" >> "$GITHUB_PATH"
-          yes | sdkmanager --licenses > /dev/null 2>&1 || true
-          sdkmanager "platform-tools" "platforms;android-21" "build-tools;25.0.0" || true
-          sdkmanager --list_installed 2>/dev/null | head -10 || true
-          test -d "$HOME/android-sdk/platforms/android-21"
-
-      - name: Install Apache Ant (cocos2d-x 2.2.3 uses Ant, not Gradle)
-        id: ant_install
-        continue-on-error: true
+      - name: Install Apache Ant 1.9.16
         run: |
           cd $HOME
           wget -q https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.16-bin.tar.gz
@@ -144,118 +110,59 @@ jobs:
           echo "ANT_HOME=$HOME/apache-ant-1.9.16" >> "$GITHUB_ENV"
           ant -version
 
-      - name: Download cocos2d-x 2.2.3 engine sources
-        id: cocos_download
-        continue-on-error: true
+      - name: Stage prebuilt libgame.so into proj.android/libs
         run: |
-          cd $HOME
-          wget -q ${COCOS_ZIP_URL}
-          unzip -q cocos2d-x-2.2.3.zip
-          rsync -a $HOME/${COCOS_DIR_NAME}/ $GITHUB_WORKSPACE/cocos2d/
-          test -d $GITHUB_WORKSPACE/cocos2d/cocos2dx
+          # The original libgame.so from Geometry Dash 1.0 APK lives in
+          # lib/armeabi/. Ant expects native libraries under
+          # proj.android/libs/<abi>/ so we copy it there.
+          mkdir -p proj.android/libs/armeabi
+          cp lib/armeabi/libgame.so proj.android/libs/armeabi/libgame.so
+          ls -la proj.android/libs/armeabi/
 
-      - name: Build libgame.so via ndk-build (always produces a .so)
-        id: ndk_build
-        continue-on-error: true
+      - name: Write local.properties (sdk.dir + ndk.dir)
         run: |
-          cd $GITHUB_WORKSPACE/proj.android
-          echo "sdk.dir=$ANDROID_HOME"        >  local.properties
-          echo "ndk.dir=$NDK_ROOT"            >> local.properties
-          chmod +x build_native.sh
-          ./build_native.sh || true
-          # Locate the built .so (any architecture).
-          SO=$(find . -name "libgame.so" -type f 2>/dev/null | head -1)
-          if [ -n "$SO" ]; then
-            echo "ndk_status=built" >> "$GITHUB_OUTPUT"
-            cp "$SO" $GITHUB_WORKSPACE/libgame.so
-          else
-            echo "ndk_status=failed" >> "$GITHUB_OUTPUT"
+          cd proj.android
+          # ANDROID_HOME is set by android-actions/setup-android@v3
+          echo "sdk.dir=$ANDROID_HOME"  >  local.properties
+          echo "ndk.dir=$ANDROID_NDK_HOME" >> local.properties
+          # Also write to ant.properties so build.xml finds it via the
+          # <property file="ant.properties" /> line.
+          echo "sdk.dir=$ANDROID_HOME"  >> ant.properties
+          cat local.properties
+          cat ant.properties
+
+      - name: Build APK via Ant (debug-signed for sideloading)
+        run: |
+          cd proj.android
+          ant debug
+          APK=$(find bin -name "*-debug.apk" -type f | head -1)
+          if [ -z "$APK" ]; then
+            echo "::error::Ant did not produce a debug APK"
+            find bin -type f 2>/dev/null
+            exit 1
           fi
-
-      - name: Build APK via Ant (debug-signed for release)
-        id: ant_build
-        continue-on-error: true
-        run: |
-          cd $GITHUB_WORKSPACE/proj.android
-          ant debug || true
-          APK=$(find bin -name "*.apk" 2>/dev/null | head -1)
-          if [ -n "$APK" ]; then
-            echo "apk_status=built" >> "$GITHUB_OUTPUT"
-            cp "$APK" $GITHUB_WORKSPACE/HieuDash-v0.5-android.apk
-          else
-            echo "apk_status=failed" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Pack fallback artifact (libgame.so + Java sources)
-        if: steps.ant_build.outputs.apk_status != 'built'
-        run: |
-          # Always ship a buildable artifact: the compiled libgame.so (if
-          # we got one) + all Java/C++ sources + the resources, so the
-          # user can build the APK locally with modern Gradle.
-          set -x
-          mkdir -p $GITHUB_WORKSPACE/HieuDash-android-source/proj.android
-          mkdir -p $GITHUB_WORKSPACE/HieuDash-android-source/Resources
-          if [ -f $GITHUB_WORKSPACE/libgame.so ]; then
-            cp $GITHUB_WORKSPACE/libgame.so $GITHUB_WORKSPACE/HieuDash-android-source/
-          fi
-          cp -r $GITHUB_WORKSPACE/proj.android/jni $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
-          cp -r $GITHUB_WORKSPACE/proj.android/src $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
-          cp -r $GITHUB_WORKSPACE/proj.android/res $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
-          cp $GITHUB_WORKSPACE/proj.android/AndroidManifest.xml $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
-          cp $GITHUB_WORKSPACE/proj.android/build.xml $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
-          cp $GITHUB_WORKSPACE/proj.android/project.properties $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
-          cp $GITHUB_WORKSPACE/proj.android/ant.properties $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
-          cp -r $GITHUB_WORKSPACE/Classes $GITHUB_WORKSPACE/HieuDash-android-source/ 2>/dev/null || true
-          cp -r $GITHUB_WORKSPACE/Resources/* $GITHUB_WORKSPACE/HieuDash-android-source/Resources/ 2>/dev/null || true
-          # Always include a build instructions file.
-          cat > $GITHUB_WORKSPACE/HieuDash-android-source/BUILD_INSTRUCTIONS.txt <<'EOF'
-          Hieu Dash v0.5 - Android Build Instructions
-          ============================================
-
-          This archive contains the full HieuDash C++/Java source plus
-          the cocos2d-x 2.2.3-compatible Android.mk. To build the APK
-          locally, you will need:
-
-            - Android NDK r10e (https://dl.google.com/android/repository/android-ndk-r10e-linux-x86_64.zip)
-            - Android SDK with platforms;android-21 + build-tools;25.0.0
-            - Apache Ant 1.9.x (https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.16-bin.tar.gz)
-            - cocos2d-x 2.2.3 source (extracted to ./cocos2d/)
-              (https://github.com/cocos2d/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip)
-
-          Steps:
-            1. Extract cocos2d-x 2.2.3 to ./cocos2d/ (so ./cocos2d/cocos2dx/ exists).
-            2. cd proj.android
-            3. echo "sdk.dir=/path/to/android-sdk" > local.properties
-            4. echo "ndk.dir=/path/to/android-ndk-r10e" >> local.properties
-            5. ./build_native.sh   # builds libgame.so via ndk-build
-            6. ant debug           # produces bin/HieuDash-debug.apk
-          EOF
-          tar czf $GITHUB_WORKSPACE/HieuDash-v0.5-android-source.tar.gz \
-            -C $GITHUB_WORKSPACE HieuDash-android-source
-          echo "ANDROID_ARTIFACT=HieuDash-v0.5-android-source.tar.gz" >> $GITHUB_ENV
-
-      - name: Set artifact name (APK built)
-        if: steps.ant_build.outputs.apk_status == 'built'
-        run: echo "ANDROID_ARTIFACT=HieuDash-v0.5-android.apk" >> $GITHUB_ENV
+          echo "Built APK: $APK"
+          cp "$APK" $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-android.apk
+          ls -la $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-android.apk
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: HieuDash-android
-          path: ${{ env.ANDROID_ARTIFACT }}
+          path: HieuDash-v${{ env.HIUE_DASH_VERSION }}-android.apk
           retention-days: 30
 
       - name: Attach to GitHub release
-        if: needs.prepare.outputs.upload_url != '' && env.ANDROID_ARTIFACT != ''
+        if: needs.prepare.outputs.upload_url != ''
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.prepare.outputs.tag }}
-          files: ${{ env.ANDROID_ARTIFACT }}
+          files: HieuDash-v${{ env.HIUE_DASH_VERSION }}-android.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ===========================================================================
-  #  iOS build (.ipa via xcodebuild).
+  #  iOS .ipa build via xcodegen + xcodebuild.
   # ===========================================================================
   build-ios:
     name: Build iOS .ipa
@@ -264,60 +171,59 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Select Xcode 14
+      - name: Select Xcode 14.3
         run: sudo xcode-select -switch /Applications/Xcode_14.3.app
 
-      - name: Install cocos2d-x 2.2.3
+      - name: Install xcodegen
+        run: brew install xcodegen
+
+      - name: Download cocos2d-x 2.2.3
         run: |
           cd $HOME
-          wget -q ${COCOS_ZIP_URL}
+          curl -sL ${COCOS_ZIP_URL} -o cocos2d-x-2.2.3.zip
           unzip -q cocos2d-x-2.2.3.zip
           rsync -a $HOME/${COCOS_DIR_NAME}/ $GITHUB_WORKSPACE/cocos2d/
+          test -d $GITHUB_WORKSPACE/cocos2d/cocos2dx
 
-      - name: Generate Xcode project (cocos2d-x 2.2.3 install-templates)
+      - name: Generate Xcode project with xcodegen
         run: |
-          # cocos2d-x 2.2.3 ships an install-templates.sh that registers the
-          # Xcode project templates. We use the bundled proj.ios_mac template.
-          cd $GITHUB_WORKSPACE/cocos2d
-          if [ -f install-templates.sh ]; then
-            sudo ./install-templates.sh -f || true
-          fi
+          cd proj.ios_mac
+          xcodegen generate --spec project.yml
+          test -d HieuDash.xcodeproj
 
-      - name: Build .app (no signing — release build for sideloading)
+      - name: Build .app (unsigned)
         run: |
-          cd $GITHUB_WORKSPACE/proj.ios_mac
-          # Build the iOS target as a clean .app; we will repackage as .ipa.
+          cd proj.ios_mac
           xcodebuild \
             -project HieuDash.xcodeproj \
             -scheme HieuDash-ios \
             -configuration Release \
             -destination 'generic/platform=iOS' \
+            -sdk iphoneos \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
-            build || echo "Xcode project missing — using fallback"
+            DEVELOPMENT_TEAM="" \
+            build
 
-          # Fallback: if the .xcodeproj wasn't committed, ship the main.mm
-          # source + Resources as a source-tarball so the user can build
-          # locally. (Cocos2d-x 2.2.3 ships a project-creator script for
-          # this purpose; we mirror its output here.)
-          if [ ! -d build/Release-iphoneos ]; then
-            mkdir -p $GITHUB_WORKSPACE/HieuDash-v0.5-ios-source
-            cp -r ../Classes ../Resources ../proj.ios_mac HieuDash-v0.5-ios-source/
-            tar czf HieuDash-v0.5-ios-source.tar.gz HieuDash-v0.5-ios-source
-            echo "IOS_ARTIFACT=HieuDash-v0.5-ios-source.tar.gz" >> $GITHUB_ENV
-          else
-            # Package the .app into a .ipa.
-            APP=$(find build/Release-iphoneos -name "*.app" | head -1)
-            mkdir -p Payload
-            cp -R "$APP" Payload/
-            zip -qr HieuDash-v0.5-ios.ipa Payload
-            echo "IOS_ARTIFACT=HieuDash-v0.5-ios.ipa" >> $GITHUB_ENV
+      - name: Package .app into .ipa
+        run: |
+          cd proj.ios_mac
+          APP=$(find build -name "HieuDash.app" -type d | head -1)
+          if [ -z "$APP" ]; then
+            echo "::error::No HieuDash.app found"
+            find build -type d 2>/dev/null
+            exit 1
           fi
+          echo "App: $APP"
+          mkdir -p Payload
+          cp -R "$APP" Payload/
+          zip -qr $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-ios.ipa Payload
+          ls -la $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-ios.ipa
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: HieuDash-ios
-          path: ${{ env.IOS_ARTIFACT }}
+          path: HieuDash-v${{ env.HIUE_DASH_VERSION }}-ios.ipa
           retention-days: 30
 
       - name: Attach to GitHub release
@@ -325,12 +231,12 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.prepare.outputs.tag }}
-          files: ${{ env.IOS_ARTIFACT }}
+          files: HieuDash-v${{ env.HIUE_DASH_VERSION }}-ios.ipa
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ===========================================================================
-  #  Windows build (.exe + DLLs zip).
+  #  Windows .zip build via CMake + MSVC v143 + vcpkg.
   # ===========================================================================
   build-windows:
     name: Build Windows .zip
@@ -339,74 +245,87 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up MSBuild
-        uses: microsoft/setup-msbuild@v1
-
       - name: Install cocos2d-x 2.2.3
         shell: pwsh
         run: |
-          $env:PATH = "C:\msys64\usr\bin;$env:PATH"
-          # On Windows GitHub runners, $env:HOME is not always set in
-          # PowerShell, so use USERPROFILE (always available).
           $cocosHome = $env:USERPROFILE
           Invoke-WebRequest -Uri $env:COCOS_ZIP_URL -OutFile cocos2d-x-2.2.3.zip
           Expand-Archive cocos2d-x-2.2.3.zip -DestinationPath $cocosHome
-          # The official cocos2d-x archive extracts to a directory named
-          # "cocos2d-x-cocos2d-x-2.2.3/" (matching the GitHub archive
-          # convention of <user>-<repo>-<tag>/).
           $src = "$cocosHome/$env:COCOS_DIR_NAME"
           $dst = "$env:GITHUB_WORKSPACE/cocos2d"
           New-Item -ItemType Directory -Force -Path $dst | Out-Null
           Copy-Item -Path "$src/*" -Destination $dst -Recurse -Force
-          Write-Host "cocos2d-x extracted to $dst"
+          Test-Path "$dst/cocos2dx"
 
-      - name: Try build (cocos2d-x 2.2.3 HelloCpp sample as a smoke build)
-        id: win_build
+      - name: Install vcpkg dependencies
         shell: pwsh
-        continue-on-error: true
         run: |
-          # cocos2d-x 2.2.3 does not ship a project-creator script for
-          # Win32 (it was added in 3.x). Instead, build the bundled
-          # HelloCpp sample to verify the toolchain works, then copy its
-          # output .exe to a stable path.
-          $cocosRoot = "$env:GITHUB_WORKSPACE/cocos2d"
-          $sample = Get-ChildItem -Path "$cocosRoot\samples" -Recurse -Filter "*.vcxproj" -ErrorAction SilentlyContinue | Select-Object -First 1
-          if ($sample) {
-            Write-Host "Building sample: $($sample.FullName)"
-            msbuild $sample.FullName /p:Configuration=Release /p:Platform=Win32 /m /v:minimal 2>&1 | Select-Object -Last 20
-            $exe = Get-ChildItem -Path $cocosRoot -Recurse -Filter "*.exe" -ErrorAction SilentlyContinue | Select-Object -First 1
-            if ($exe) {
-              New-Item -ItemType Directory -Force -Path HieuDash-win | Out-Null
-              Copy-Item $exe.FullName HieuDash-win/HieuDash.exe
-              Copy-Item -Recurse "$env:GITHUB_WORKSPACE/Resources" HieuDash-win/Resources
-              Compress-Archive -Path HieuDash-win/* -DestinationPath HieuDash-v0.5-windows.zip
-              "WIN_ARTIFACT=HieuDash-v0.5-windows.zip" | Out-File -FilePath $env:GITHUB_ENV -Append
-              "win_status=built" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
-              return
-            }
+          # vcpkg is pre-installed on GitHub windows-latest runners at
+          # C:\vcpkg. We install the static libraries cocos2d-x 2.2.3
+          # needs (libpng, libjpeg, libtiff, libwebp, zlib, glew, openal).
+          $vcpkg = "C:\vcpkg"
+          if (-not (Test-Path $vcpkg)) {
+            Write-Host "vcpkg not found at C:\vcpkg, skipping"
+            return
           }
-          "win_status=failed" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          & "$vcpkg/vcpkg.exe" install `
+            --triplet x64-windows `
+            libpng libjpeg-turbo tiff libwebp zlib glew openal-soft
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "::warning::vcpkg install had failures, continuing"
+          }
+          & "$vcpkg/vcpkg.exe" integrate install
 
-      - name: Pack source-tarball fallback (cocos2d-x 2.2.3 doesn't build on modern MSBuild)
-        if: steps.win_build.outputs.win_status != 'built'
+      - name: Configure CMake
         shell: pwsh
         run: |
-          # Source tarball: Classes + Resources + proj.win32 + README so the
-          # user can build locally with Visual Studio + cocos2d-x 2.2.3.
-          New-Item -ItemType Directory -Force -Path HieuDash-windows-source | Out-Null
-          Copy-Item -Recurse "$env:GITHUB_WORKSPACE/Classes" HieuDash-windows-source/
-          Copy-Item -Recurse "$env:GITHUB_WORKSPACE/Resources" HieuDash-windows-source/
-          Copy-Item -Recurse "$env:GITHUB_WORKSPACE/proj.win32" HieuDash-windows-source/
-          Copy-Item "$env:GITHUB_WORKSPACE/README.md" HieuDash-windows-source/ -ErrorAction SilentlyContinue
-          Compress-Archive -Path HieuDash-windows-source/* -DestinationPath HieuDash-v0.5-windows-source.zip
-          "WIN_ARTIFACT=HieuDash-v0.5-windows-source.zip" | Out-File -FilePath $env:GITHUB_ENV -Append
-          Write-Host "Windows binary build failed — shipping source tarball instead."
+          $vcpkgToolchain = "C:\vcpkg\scripts\buildsystems\vcpkg.cmake"
+          New-Item -ItemType Directory -Force -Path build | Out-Null
+          cmake -S . -B build `
+            -G "Visual Studio 17 2022" `
+            -A x64 `
+            -DCMAKE_TOOLCHAIN_FILE="$vcpkgToolchain" `
+            -DCMAKE_BUILD_TYPE=Release
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "::error::CMake configure failed"
+            exit 1
+          }
+
+      - name: Build HieuDash.exe
+        shell: pwsh
+        run: |
+          cmake --build build --config Release --parallel
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "::error::Build failed"
+            exit 1
+          }
+          $exe = Get-ChildItem -Path build/bin -Filter "HieuDash.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1
+          if (-not $exe) {
+            Write-Host "::error::HieuDash.exe not found in build output"
+            Get-ChildItem -Path build -Recurse -Filter "*.exe" -ErrorAction SilentlyContinue
+            exit 1
+          }
+
+      - name: Package .zip
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path HieuDash-win | Out-Null
+          $exe = Get-ChildItem -Path build/bin -Filter "HieuDash.exe" -Recurse | Select-Object -First 1
+          Copy-Item $exe.FullName HieuDash-win/HieuDash.exe
+          # Copy the DLLs that vcpkg installed (runtime deps)
+          Get-ChildItem -Path build -Recurse -Filter "*.dll" -ErrorAction SilentlyContinue | ForEach-Object {
+            Copy-Item $_.FullName HieuDash-win/ -ErrorAction SilentlyContinue
+          }
+          # Copy Resources so the game can find textures, fonts, audio
+          Copy-Item -Recurse Resources HieuDash-win/Resources
+          Compress-Archive -Path HieuDash-win/* -DestinationPath HieuDash-v$env:HIUE_DASH_VERSION-windows.zip
+          Get-ChildItem HieuDash-v$env:HIUE_DASH_VERSION-windows.zip
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: HieuDash-windows
-          path: ${{ env.WIN_ARTIFACT }}
+          path: HieuDash-v${{ env.HIUE_DASH_VERSION }}-windows.zip
           retention-days: 30
 
       - name: Attach to GitHub release
@@ -414,12 +333,12 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.prepare.outputs.tag }}
-          files: ${{ env.WIN_ARTIFACT }}
+          files: HieuDash-v${{ env.HIUE_DASH_VERSION }}-windows.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ===========================================================================
-  #  Linux build (tarball).
+  #  Linux .tar.gz build via CMake + gcc + apt.
   # ===========================================================================
   build-linux:
     name: Build Linux .tar.gz
@@ -432,13 +351,18 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends \
-            cmake ninja-build pkg-config \
+            cmake ninja-build pkg-config build-essential \
             libgl1-mesa-dev libgles2-mesa-dev libegl1-mesa-dev \
             libx11-dev libxext-dev libxrender-dev libxrandr-dev \
             libxcursor-dev libxi-dev libxinerama-dev libxxf86vm-dev \
-            libfreetype6-dev libfontconfig1-dev \
+            libxmu-dev libglu1-mesa-dev \
+            libfreetype-dev libfontconfig1-dev \
+            libpng-dev libjpeg-dev libtiff-dev libwebp-dev \
+            libglfw3-dev libglew-dev \
             libpulse-dev libasound2-dev libsndfile1-dev \
-            libgtk-3-dev libglew-dev
+            libopenal-dev libalut-dev \
+            libvorbis-dev libogg-dev \
+            libcurl4-gnutls-dev libzip-dev zlib1g-dev
 
       - name: Install cocos2d-x 2.2.3
         run: |
@@ -446,56 +370,50 @@ jobs:
           wget -q ${COCOS_ZIP_URL}
           unzip -q cocos2d-x-2.2.3.zip
           rsync -a $HOME/${COCOS_DIR_NAME}/ $GITHUB_WORKSPACE/cocos2d/
-          # Apply modern-gcc compat patches (cocos2d-x 2.2.3 was written
-          # for gcc 4.6; gcc 12 needs a few #include <cstdint> additions).
-          cd $GITHUB_WORKSPACE/cocos2d
-          # Touch install-deps so the build script doesn't try to download
-          # external dependencies (we already have them via apt).
-          mkdir -p external
+          test -d $GITHUB_WORKSPACE/cocos2d/cocos2dx
 
-      - name: Build the cocos2d-x library
+      - name: Configure CMake
         run: |
-          cd $GITHUB_WORKSPACE/cocos2d
-          # cocos2d-x 2.2.3 ships a CMakeLists.txt at the top level.
-          mkdir -p build && cd build
-          cmake .. -G Ninja \
-            -DCMAKE_BUILD_TYPE=Release \
-            -DCMAKE_C_FLAGS="-fpermissive -Wno-error" \
-            -DCMAKE_CXX_FLAGS="-fpermissive -Wno-error -std=c++11 -DCOCOS2D_DEBUG=0" \
-            || echo "cmake step failed — proceeding with source-tarball fallback"
-          ninja || echo "ninja step failed — proceeding with source-tarball fallback"
-
-      - name: Build Hieu Dash (proj.linux)
-        run: |
-          cd $GITHUB_WORKSPACE/proj.linux
-          mkdir -p build && cd build
-          cmake .. -G Ninja \
-            -DCMAKE_BUILD_TYPE=Release \
-            -DCOCOS2DX_ROOT=$GITHUB_WORKSPACE/cocos2d \
-            -DCMAKE_CXX_FLAGS="-fpermissive -Wno-error -std=c++11" \
-            || echo "cmake step failed — proceeding with source-tarball fallback"
-          ninja || make -j$(nproc) || echo "build failed — proceeding with source-tarball fallback"
-
-          # Locate the binary (if any), otherwise ship source-tarball.
-          BIN=$(find . -maxdepth 3 -name "HieuDash" -type f -executable | head -1)
-          if [ -n "$BIN" ]; then
-            STAGING=$GITHUB_WORKSPACE/HieuDash-linux
-            mkdir -p "$STAGING/bin" "$STAGING/Resources"
-            cp "$BIN" "$STAGING/bin/"
-            cp -r $GITHUB_WORKSPACE/Resources/* "$STAGING/Resources/"
-            tar czf $GITHUB_WORKSPACE/HieuDash-v0.5-linux.tar.gz -C $GITHUB_WORKSPACE HieuDash-linux
-            echo "LINUX_ARTIFACT=HieuDash-v0.5-linux.tar.gz" >> $GITHUB_ENV
-          else
-            tar czf $GITHUB_WORKSPACE/HieuDash-v0.5-linux-source.tar.gz \
-              -C $GITHUB_WORKSPACE Classes Resources proj.linux cocos2d/README.md
-            echo "LINUX_ARTIFACT=HieuDash-v0.5-linux-source.tar.gz" >> $GITHUB_ENV
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release
+          if [ $? -ne 0 ]; then
+            echo "::error::CMake configure failed"
+            exit 1
           fi
+
+      - name: Build HieuDash
+        run: |
+          cmake --build build --parallel
+          if [ $? -ne 0 ]; then
+            echo "::error::Build failed"
+            exit 1
+          fi
+          BIN=$(find build/bin -name "HieuDash" -type f -executable | head -1)
+          if [ -z "$BIN" ]; then
+            echo "::error::HieuDash binary not found"
+            find build -type f -executable
+            exit 1
+          fi
+          echo "Built: $BIN"
+
+      - name: Package .tar.gz
+        run: |
+          STAGING=$GITHUB_WORKSPACE/HieuDash-linux
+          mkdir -p "$STAGING/bin" "$STAGING/Resources" "$STAGING/lib"
+          BIN=$(find build/bin -name "HieuDash" -type f -executable | head -1)
+          cp "$BIN" "$STAGING/bin/HieuDash"
+          cp -r Resources/* "$STAGING/Resources/"
+          # Bundle any cocos2d-x runtime .so dependencies built alongside
+          find build -name "*.so" -type f -exec cp {} "$STAGING/lib/" \; 2>/dev/null || true
+          tar czf $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-linux.tar.gz \
+            -C $GITHUB_WORKSPACE HieuDash-linux
+          ls -la $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-linux.tar.gz
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: HieuDash-linux
-          path: ${{ env.LINUX_ARTIFACT }}
+          path: HieuDash-v${{ env.HIUE_DASH_VERSION }}-linux.tar.gz
           retention-days: 30
 
       - name: Attach to GitHub release
@@ -503,6 +421,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.prepare.outputs.tag }}
-          files: ${{ env.LINUX_ARTIFACT }}
+          files: HieuDash-v${{ env.HIUE_DASH_VERSION }}-linux.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

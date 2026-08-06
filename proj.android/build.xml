@@ -2,6 +2,8 @@
 <project name="HieuDash" default="help">
 
     <!-- Standard Ant build for a Cocos2d-x 2.2.3 Android project. -->
+    <!-- Load local.properties (sdk.dir / ndk.dir) written by the CI workflow. -->
+    <property file="local.properties" />
     <property file="ant.properties" />
     <loadproperties srcFile="project.properties" />
 

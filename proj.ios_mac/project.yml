@@ -1,0 +1,142 @@
+# =============================================================================
+#  Hieu Dash v0.6 - iOS / macOS project spec for xcodegen.
+#
+#  Run `xcodegen generate` in this directory to produce HieuDash.xcodeproj.
+#  The generated project is unsigned (CODE_SIGNING_ALLOWED=NO) so it can be
+#  built on the GitHub Actions macOS runner without a paid Apple Developer
+#  account. The resulting .app is packaged as an .ipa for sideloading.
+# =============================================================================
+name: HieuDash
+options:
+  bundleIdPrefix: com.hieuhonda
+  deploymentTarget:
+    iOS: "11.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    GCC_C_LANGUAGE_STANDARD: gnu11
+    CLANG_CXX_LANGUAGE_STANDARD: "c++14"
+    GCC_WARN_ABOUT_DEPRECATED_DECLARATIONS: NO
+    CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS: NO
+    GCC_TREAT_WARNINGS_AS_ERRORS: NO
+    CODE_SIGN_IDENTITY: ""
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGNING_ALLOWED: NO
+    DEVELOPMENT_TEAM: ""
+    COCOS2DX_VERSION_MAJOR: 2
+    COCOS2DX_VERSION_MINOR: 2
+    COCOS2DX_VERSION_PATCH: 3
+    OTHER_CFLAGS: "-fpermissive -Wno-deprecated-declarations -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-format -Wno-multichar -Wno-delete-incomplete -Wno-narrowing"
+    OTHER_CPLUSPLUSFLAGS: "-fpermissive -Wno-deprecated-declarations -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-format -Wno-multichar -Wno-delete-incomplete -Wno-narrowing -std=c++14 -stdlib=libc++"
+
+targets:
+  HieuDash-ios:
+    type: application
+    platform: iOS
+    deploymentTarget: "11.0"
+    sources:
+      - path: ../Classes
+      - path: ios
+      - path: ../cocos2d/cocos2dx
+        excludes:
+          - "platform/android/**"
+          - "platform/win32/**"
+          - "platform/linux/**"
+          - "platform/blackberry/**"
+          - "platform/emscripten/**"
+          - "platform/marmalade/**"
+          - "platform/nacl/**"
+          - "platform/tizen/**"
+          - "platform/mac/**"
+          - "proj.*/**"
+      - path: ../cocos2d/CocosDenshion
+        excludes:
+          - "android/**"
+          - "win32/**"
+          - "linux/**"
+          - "blackberry/**"
+          - "emscripten/**"
+          - "marmalade/**"
+          - "nacl/**"
+          - "tizen/**"
+          - "mac/**"
+          - "proj.*/**"
+      - path: ../cocos2d/extensions
+        excludes:
+          - "proj.*/**"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hieuhonda.HieuDash
+        PRODUCT_NAME: HieuDash
+        INFOPLIST_FILE: ios/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1,2"
+        IPHONEOS_DEPLOYMENT_TARGET: "11.0"
+        ENABLE_BITCODE: NO
+        GCC_PREPROCESSOR_DEFINITIONS:
+          - "$(inherited)"
+          - "COCOS2DX_VERSION_MAJOR=2"
+          - "COCOS2DX_VERSION_MINOR=2"
+          - "COCOS2DX_VERSION_PATCH=3"
+          - "CC_TARGET_PLATFORM=CC_PLATFORM_IOS"
+        HEADER_SEARCH_PATHS:
+          - "$(inherited)"
+          - "$(SRCROOT)/../cocos2d"
+          - "$(SRCROOT)/../cocos2d/cocos2dx"
+          - "$(SRCROOT)/../cocos2d/cocos2dx/include"
+          - "$(SRCROOT)/../cocos2d/cocos2dx/kazmath/include"
+          - "$(SRCROOT)/../cocos2d/cocos2dx/platform"
+          - "$(SRCROOT)/../cocos2d/cocos2dx/platform/ios"
+          - "$(SRCROOT)/../cocos2d/CocosDenshion/include"
+          - "$(SRCROOT)/../cocos2d/extensions"
+          - "$(SRCROOT)/../cocos2d/extensions/CCBReader"
+          - "$(SRCROOT)/../cocos2d/extensions/GUI/CCControlExtension"
+          - "$(SRCROOT)/../cocos2d/extensions/GUI/CCScrollView"
+          - "$(SRCROOT)/../cocos2d/extensions/GUI/CCEditBox"
+          - "$(SRCROOT)/../cocos2d/extensions/network"
+          - "$(SRCROOT)/../cocos2d/extensions/physics_nodes"
+          - "$(SRCROOT)/../cocos2d/extensions/spine"
+          - "$(SRCROOT)/../Classes"
+        OTHER_LDFLAGS:
+          - "$(inherited)"
+          - "-framework"
+          - "OpenGLES"
+          - "-framework"
+          - "QuartzCore"
+          - "-framework"
+          - "UIKit"
+          - "-framework"
+          - "Foundation"
+          - "-framework"
+          - "CoreGraphics"
+          - "-framework"
+          - "AVFoundation"
+          - "-framework"
+          - "AudioToolbox"
+          - "-framework"
+          - "OpenAL"
+          - "-lz"
+    info:
+      path: ios/Info.plist
+      properties:
+        CFBundleName: HieuDash
+        CFBundleDisplayName: Hieu Dash
+        CFBundleIdentifier: com.hieuhonda.HieuDash
+        CFBundleVersion: "1"
+        CFBundleShortVersionString: "0.6"
+        CFBundlePackageType: APPL
+        CFBundleExecutable: HieuDash
+        CFBundleInfoDictionaryVersion: "6.0"
+        LSRequiresIPhoneOS: true
+        UILaunchStoryboardName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UIViewControllerBasedStatusBarAppearance: false
