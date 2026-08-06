@@ -148,13 +148,11 @@ file(GLOB COCOS2DX_CORE_SOURCES
     "${COCOS2DX_ROOT}/cocos2dx/platform/CCEGLViewProtocol.cpp"
     "${COCOS2DX_ROOT}/cocos2dx/platform/CCThread.cpp"
     "${COCOS2DX_ROOT}/cocos2dx/platform/platform.cpp"
-    # NOTE: CCImageCommonWebp.cpp is intentionally NOT included. It does
-    # `#include "decode.h"` (no prefix) which only resolves if
-    # `/usr/include/webp` is in the include path. Ubuntu's libwebp-dev
-    # only exposes `Cflags: -I/usr/include` via pkg-config, so the build
-    # would fail with "decode.h: No such file or directory". Hieu Dash
-    # ships no .webp assets (all textures are .png), so WebP support is
-    # not needed.
+    # CCImageCommonWebp.cpp is needed because CCImage.cpp (platform/linux)
+    # references CCImage::_initWithWebpData() which is defined here. We
+    # add /usr/include/webp to the include path (below) so its
+    # `#include "decode.h"` resolves.
+    "${COCOS2DX_ROOT}/cocos2dx/platform/CCImageCommonWebp.cpp"
 )
 # kazmath (math library)
 file(GLOB KAZMATH_SOURCES
@@ -208,13 +206,16 @@ endif()
 #     of which pull in their own physics libraries. Hieu Dash does not use
 #     physics simulation.
 #   * extensions/AssetsManager pulls in libcurl with a specific old API.
+#   * extensions/LocalStorage/LocalStorage.cpp unconditionally calls
+#     sqlite3_* APIs. Pulling in libsqlite3-dev just for an unused extension
+#     is wasteful; Hieu Dash persists save data through DS_Dictionary
+#     (Classes/DS_Dictionary.cpp) instead. Drop the entire module.
 file(GLOB_RECURSE EXTENSIONS_SOURCES
     "${COCOS2DX_ROOT}/extensions/CCBReader/*.cpp"
     "${COCOS2DX_ROOT}/extensions/CocoStudio/*.cpp"
     "${COCOS2DX_ROOT}/extensions/GUI/CCControlExtension/*.cpp"
     "${COCOS2DX_ROOT}/extensions/GUI/CCEditBox/*.cpp"
     "${COCOS2DX_ROOT}/extensions/GUI/CCScrollView/*.cpp"
-    "${COCOS2DX_ROOT}/extensions/LocalStorage/*.cpp"
     "${COCOS2DX_ROOT}/extensions/spine/*.cpp"
 )
 # Filter out platform-specific CCEditBox implementations that don't
@@ -357,6 +358,11 @@ if(LINUX)
         ${COCOS_DEPS_INCLUDE_DIRS}
         ${ALUT_INCLUDE_DIRS}
         /usr/local/include
+        # CCImageCommonWebp.cpp does `#include "decode.h"` (no webp/
+        # prefix). Ubuntu's libwebp-dev installs the header to
+        # /usr/include/webp/decode.h but its pkg-config Cflags is only
+        # `-I/usr/include` (no /webp suffix), so we add the suffix here.
+        /usr/include/webp
     )
     target_link_libraries(HieuDash PRIVATE
         ${COCOS_DEPS_LIBRARIES}
@@ -367,6 +373,14 @@ if(LINUX)
         rt
         z
         curl
+        # GLFW 2.7.9's x11_window.c uses XRandR functions
+        # (XRRQueryExtension, XRRGetScreenInfo, XRRConfigCurrentRate,
+        # XRRSetScreenConfigAndRate, XRRUpdateConfiguration, etc.) for
+        # fullscreen-mode refresh-rate selection. Without -lXrandr the
+        # link fails with 'undefined reference to XRR*'.
+        Xrandr
+        Xxf86vm
+        Xkbfile
     )
     target_link_directories(HieuDash PRIVATE
         ${COCOS_DEPS_LIBRARY_DIRS}
