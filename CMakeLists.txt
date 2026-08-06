@@ -176,6 +176,27 @@ file(GLOB_RECURSE EXTENSIONS_SOURCES
     "${COCOS2DX_ROOT}/extensions/physics_nodes/*.cpp"
     "${COCOS2DX_ROOT}/extensions/spine/*.cpp"
 )
+# Filter out platform-specific CCEditBox implementations that don't
+# belong on the current platform. They use platform-only APIs (Windows::Platform::String
+# for WP8, Objective-C for iOS, Java JNI for Android) and would fail to compile.
+set(_EXT_EXCLUDE_PATTERNS "")
+if(LINUX)
+    list(APPEND _EXT_EXCLUDE_PATTERNS
+        "CCEditBoxImplWp8.cpp"      "CCEditBoxImplWin.cpp"
+        "CCEditBoxImplAndroid.cpp"  "CCEditBoxImplTizen.cpp"
+        "CCEditBoxImplIOS.mm"
+    )
+elseif(WIN32)
+    list(APPEND _EXT_EXCLUDE_PATTERNS
+        "CCEditBoxImplWp8.cpp"      "CCEditBoxImplAndroid.cpp"
+        "CCEditBoxImplTizen.cpp"    "CCEditBoxImplIOS.mm"
+    )
+endif()
+if(_EXT_EXCLUDE_PATTERNS)
+    foreach(pattern ${_EXT_EXCLUDE_PATTERNS})
+        list(FILTER EXTENSIONS_SOURCES EXCLUDE REGEX "${pattern}")
+    endforeach()
+endif()
 if(WIN32)
     file(GLOB EXTENSIONS_WIN32_SOURCES
         "${COCOS2DX_ROOT}/extensions/proj.win32/*.cpp"

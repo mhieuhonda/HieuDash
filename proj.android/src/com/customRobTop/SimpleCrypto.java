@@ -18,7 +18,7 @@ public class SimpleCrypto {
         stringBuffer.append(HEX.charAt((b >> 4) & 15)).append(HEX.charAt(b & 15));
     }
 
-    public static String decrypt(String str, byte[] bArr) {
+    public static String decrypt(String str, byte[] bArr) throws Exception {
         byte[] decrypt = decrypt(getRawKey(str.getBytes()), bArr);
         return decrypt != null ? new String(decrypt) : "";
     }
