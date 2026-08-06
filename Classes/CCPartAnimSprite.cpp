@@ -23,10 +23,6 @@ void CCPartAnimSprite::dirtify() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCPartAnimSprite::displayFrame() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
 int CCPartAnimSprite::getSpriteContainer() {
     // TODO: implement (recovered from binary, body unknown)
     return 0;

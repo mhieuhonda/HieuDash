@@ -15,7 +15,6 @@ public:
     void countParts();
     void createWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*);
     void dirtify();
-    void displayFrame();
     int getSpriteContainer();
     int getSpriteForKey(cocos2d::CCString*);
     bool initWithAnimDesc(cocos2d::CCString*, cocos2d::CCTexture2D*);

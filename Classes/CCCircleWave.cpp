@@ -49,11 +49,6 @@ int CCCircleWave::getOpacityMod() {
     return 0;
 }
 
-int CCCircleWave::getPosition() {
-    // TODO: implement (recovered from binary, body unknown)
-    return 0;
-}
-
 int CCCircleWave::getRadius() {
     // TODO: implement (recovered from binary, body unknown)
     return 0;

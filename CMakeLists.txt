@@ -66,12 +66,9 @@ if(MSVC)
         CC_TARGET_PLATFORM=CC_PLATFORM_WIN32
         CC_DLL
     )
-    # Force-include Classes.h: many reverse-engineered headers reference
-    # types from other headers (FLAlertLayerProtocol, CCTextInputNode,
-    # GJAccountLoginDelegate, etc.) without including them. Including
-    # Classes.h gives every translation unit visibility into the full set
-    # of class declarations.
-    add_compile_options(/FI"Classes.h")
+    # NOTE: forward declarations for all Hieu Dash classes are injected
+    # into HieuDashEnums.h (which is included by every header) by
+    # scripts/gen_forward_decls.py. No force-include needed.
 else()
     add_compile_options(
         -fpermissive
@@ -90,11 +87,6 @@ else()
         -fexceptions
         -frtti
         -fPIC
-        # Force-include Classes.h: many reverse-engineered headers reference
-        # types from other headers without including them. Including Classes.h
-        # gives every translation unit visibility into the full set of class
-        # declarations.
-        -include Classes.h
     )
     add_compile_definitions(
         COCOS2DX_VERSION_MAJOR=2

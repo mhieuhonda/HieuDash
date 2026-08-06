@@ -20,7 +20,6 @@ public:
     int getLineWidth();
     int getOpacity();
     int getOpacityMod();
-    int getPosition();
     int getRadius();
     int getWidth();
     bool init(float, float, float, bool);
