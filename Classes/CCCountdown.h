@@ -15,7 +15,7 @@ public:
     bool init();
     void lapFinished();
     void setOpacity(unsigned char);
-    startTimerWithSeconds(float, void (cocos2d::CCObject::*)(), cocos2d::CCNode*);
+    void startTimerWithSeconds(float, void (cocos2d::CCObject::*)(), cocos2d::CCNode*);
     ~CCCountdown();
 };
 
