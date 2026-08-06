@@ -488,6 +488,13 @@ if(WIN32 AND NOT MINGW)
     # WIN32_EXECUTABLE switches to /SUBSYSTEM:WINDOWS which expects
     # wWinMain, matching our entry point.
     set_target_properties(HieuDash PROPERTIES WIN32_EXECUTABLE TRUE)
+    # v0.7 round 7: /SUBSYSTEM:WINDOWS defaults to the ANSI entry
+    # point WinMainCRTStartup which calls WinMain. Our main.cpp uses
+    # _tWinMain (expands to wWinMain under UNICODE), so we must
+    # explicitly tell the linker to use wWinMainCRTStartup as the
+    # entry point - otherwise we get LNK2019 "unresolved external
+    # symbol WinMain referenced in __scrt_common_main_seh".
+    target_link_options(HieuDash PRIVATE /ENTRY:wWinMainCRTStartup)
 endif()
 
 # Copy Resources next to the executable so the game can find them at runtime.
