@@ -227,11 +227,15 @@ target_include_directories(HieuDash PRIVATE
 if(LINUX)
     target_include_directories(HieuDash PRIVATE
         "${COCOS2DX_ROOT}/cocos2dx/platform/linux"
+        # NOTE: do NOT add cocos2dx/platform/third_party/linux/libfreetype2
+        # here. That bundled freetype header set uses the deprecated
+        # FT_STATIC_BYTE_CAST macro which the modern system freetype2
+        # (libfreetype-dev) does not define -> compile error. Use only
+        # the system freetype2 headers via pkg-config (added below).
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/libpng"
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/libjpeg"
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/libtiff/include"
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/libwebp"
-        "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/libfreetype2"
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/include64"
     )
 elseif(WIN32)

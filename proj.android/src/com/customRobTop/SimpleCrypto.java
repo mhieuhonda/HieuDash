@@ -38,11 +38,11 @@ public class SimpleCrypto {
         return "y27vyZlpIJk2C8wd";
     }
 
-    public static byte[] encrypt(String str, String str2) {
+    public static byte[] encrypt(String str, String str2) throws Exception {
         return encrypt(getRawKey(str.getBytes()), str2.getBytes());
     }
 
-    private static byte[] encrypt(byte[] bArr, byte[] bArr2) {
+    private static byte[] encrypt(byte[] bArr, byte[] bArr2) throws Exception {
         SecretKeySpec secretKeySpec = new SecretKeySpec(bArr, "AES/ECB/PKCS5Padding");
         Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
         cipher.init(1, secretKeySpec);
@@ -53,7 +53,7 @@ public class SimpleCrypto {
         return new String(toByte(str));
     }
 
-    private static byte[] getRawKey(byte[] bArr) {
+    private static byte[] getRawKey(byte[] bArr) throws Exception {
         KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
         SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
         secureRandom.setSeed(bArr);
@@ -61,7 +61,7 @@ public class SimpleCrypto {
         return keyGenerator.generateKey().getEncoded();
     }
 
-    public static String loadAndDecryptFileToString(String str) {
+    public static String loadAndDecryptFileToString(String str) throws Exception {
         File file = new File(str);
         if (!file.exists()) {
             return "";
@@ -80,7 +80,7 @@ public class SimpleCrypto {
         }
     }
 
-    public static void saveAndEncryptStringToFile(String str, String str2) {
+    public static void saveAndEncryptStringToFile(String str, String str2) throws Exception {
         byte[] encrypt = encrypt(eK(), str);
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(str2));
         bufferedOutputStream.write(encrypt);
