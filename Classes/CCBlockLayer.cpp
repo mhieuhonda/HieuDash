@@ -7,8 +7,10 @@ CCBlockLayer::CCBlockLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCBlockLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool CCBlockLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void CCBlockLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

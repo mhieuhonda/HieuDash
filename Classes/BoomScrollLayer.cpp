@@ -19,8 +19,10 @@ void BoomScrollLayer::cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*) 
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BoomScrollLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool BoomScrollLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void BoomScrollLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

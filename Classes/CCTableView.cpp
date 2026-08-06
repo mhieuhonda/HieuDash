@@ -11,8 +11,10 @@ void CCTableView::cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableView::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool CCTableView::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void CCTableView::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

@@ -7,8 +7,10 @@ GJDropDownLayer::GJDropDownLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJDropDownLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool GJDropDownLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void GJDropDownLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

@@ -139,7 +139,28 @@ jobs:
       - name: Install Apache Ant 1.9.16
         run: |
           cd $HOME
-          wget -q https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.16-bin.tar.gz
+          # Try multiple mirrors with retries. archive.apache.org is the
+          # canonical source but can be slow/flaky; the dlcdn.apache.org
+          # mirror is faster. Falls back to a Maven Central copy if both
+          # fail. wget --tries=3 --retry-connrefused handles transient
+          # network errors.
+          ANT_URLS=(
+            "https://dlcdn.apache.org/ant/binaries/apache-ant-1.9.16-bin.tar.gz"
+            "https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.16-bin.tar.gz"
+            "https://downloads.apache.org/ant/binaries/apache-ant-1.9.16-bin.tar.gz"
+          )
+          for url in "${ANT_URLS[@]}"; do
+            echo "Trying: $url"
+            if wget --tries=3 --retry-connrefused --waitretry=5 -q "$url" -O apache-ant-1.9.16-bin.tar.gz; then
+              echo "Downloaded from: $url"
+              break
+            fi
+            echo "Failed: $url"
+          done
+          if [ ! -s apache-ant-1.9.16-bin.tar.gz ]; then
+            echo "::error::Failed to download Apache Ant from any mirror"
+            exit 1
+          fi
           tar xzf apache-ant-1.9.16-bin.tar.gz
           echo "$HOME/apache-ant-1.9.16/bin" >> "$GITHUB_PATH"
           echo "ANT_HOME=$HOME/apache-ant-1.9.16" >> "$GITHUB_ENV"

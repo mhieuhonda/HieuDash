@@ -13,7 +13,7 @@ public:
     EditorUI();
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void applyOffset(GameObject*);
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    bool ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);

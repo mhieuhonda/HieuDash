@@ -7,8 +7,10 @@ Slider::Slider() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void Slider::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool Slider::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void Slider::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {

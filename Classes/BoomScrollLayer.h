@@ -14,7 +14,7 @@ public:
     void addPage(cocos2d::CCLayer*);
     void addPage(cocos2d::CCLayer*, int);
     void cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    bool ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);

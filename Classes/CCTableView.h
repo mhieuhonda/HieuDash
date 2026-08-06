@@ -12,7 +12,7 @@ class CCTableView : public cocos2d::CCLayer {
 public:
     CCTableView(cocos2d::CCRect);
     void cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    bool ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);

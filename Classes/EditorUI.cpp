@@ -15,8 +15,10 @@ void EditorUI::applyOffset(GameObject*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditorUI::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool EditorUI::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void EditorUI::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

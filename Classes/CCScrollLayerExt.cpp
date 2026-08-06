@@ -7,8 +7,10 @@ CCScrollLayerExt::CCScrollLayerExt(cocos2d::CCRect) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCScrollLayerExt::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool CCScrollLayerExt::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void CCScrollLayerExt::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

@@ -7,8 +7,10 @@ LoadingCircle::LoadingCircle() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LoadingCircle::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool LoadingCircle::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void LoadingCircle::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

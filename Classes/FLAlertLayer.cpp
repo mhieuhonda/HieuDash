@@ -7,8 +7,10 @@ FLAlertLayer::FLAlertLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void FLAlertLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool FLAlertLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void FLAlertLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

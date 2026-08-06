@@ -7,8 +7,10 @@ CCTextInputNode::CCTextInputNode() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTextInputNode::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool CCTextInputNode::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void CCTextInputNode::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {

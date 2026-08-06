@@ -7,8 +7,10 @@ SlideInLayer::SlideInLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SlideInLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+bool SlideInLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
     // TODO: implement (recovered from binary, body unknown)
+
+    return false;
 }
 
 void SlideInLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
