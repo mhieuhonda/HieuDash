@@ -20,6 +20,6 @@ void MoreGamesLayer::updateListBGColor(cocos2d::_ccColor3B) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MoreGamesLayer::~MoreGamesLayer() {
+MoreGamesLayer::~MoreGamesLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

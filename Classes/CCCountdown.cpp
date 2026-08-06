@@ -29,6 +29,6 @@ void CCCountdown::startTimerWithSeconds(float, void (cocos2d::CCObject::*)(), co
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCountdown::~CCCountdown() {
+CCCountdown::~CCCountdown() {
     // TODO: implement (recovered from binary, body unknown)
 }

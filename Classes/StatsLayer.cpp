@@ -16,6 +16,6 @@ void StatsLayer::customSetup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void StatsLayer::~StatsLayer() {
+StatsLayer::~StatsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

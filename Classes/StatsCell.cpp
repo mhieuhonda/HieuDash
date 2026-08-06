@@ -29,6 +29,6 @@ void StatsCell::updateBGColor(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void StatsCell::~StatsCell() {
+StatsCell::~StatsCell() {
     // TODO: implement (recovered from binary, body unknown)
 }

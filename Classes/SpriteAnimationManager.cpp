@@ -104,6 +104,6 @@ void SpriteAnimationManager::storeSoundForAnimation(cocos2d::CCString*, std::str
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SpriteAnimationManager::~SpriteAnimationManager() {
+SpriteAnimationManager::~SpriteAnimationManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

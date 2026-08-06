@@ -44,6 +44,6 @@ void ColoredSection::setStartPos(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ColoredSection::~ColoredSection() {
+ColoredSection::~ColoredSection() {
     // TODO: implement (recovered from binary, body unknown)
 }

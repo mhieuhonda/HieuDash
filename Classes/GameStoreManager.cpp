@@ -147,6 +147,6 @@ void GameStoreManager::unlockFeature(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameStoreManager::~GameStoreManager() {
+GameStoreManager::~GameStoreManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

@@ -35,6 +35,6 @@ FileSaveManager* FileSaveManager::sharedState() {
     return nullptr;
 }
 
-void FileSaveManager::~FileSaveManager() {
+FileSaveManager::~FileSaveManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

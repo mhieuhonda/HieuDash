@@ -364,6 +364,6 @@ void GameObject::updateState() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameObject::~GameObject() {
+GameObject::~GameObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

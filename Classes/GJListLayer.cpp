@@ -17,6 +17,6 @@ bool GJListLayer::init(BoomListView*, char const*, cocos2d::_ccColor4B, float, f
     return false;
 }
 
-void GJListLayer::~GJListLayer() {
+GJListLayer::~GJListLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

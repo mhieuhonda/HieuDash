@@ -27,6 +27,6 @@ bool SearchButton::init(char const*, char const*, float, char const*) {
     return false;
 }
 
-void SearchButton::~SearchButton() {
+SearchButton::~SearchButton() {
     // TODO: implement (recovered from binary, body unknown)
 }

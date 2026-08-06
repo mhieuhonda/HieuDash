@@ -93,6 +93,6 @@ void GJGarageLayer::updateRate() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJGarageLayer::~GJGarageLayer() {
+GJGarageLayer::~GJGarageLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

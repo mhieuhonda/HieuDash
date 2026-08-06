@@ -28,6 +28,6 @@ void SongCell::updateBGColor(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SongCell::~SongCell() {
+SongCell::~SongCell() {
     // TODO: implement (recovered from binary, body unknown)
 }

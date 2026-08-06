@@ -100,6 +100,6 @@ void GhostTrailEffect::trailSnapshot() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GhostTrailEffect::~GhostTrailEffect() {
+GhostTrailEffect::~GhostTrailEffect() {
     // TODO: implement (recovered from binary, body unknown)
 }

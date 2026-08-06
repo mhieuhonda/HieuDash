@@ -279,6 +279,6 @@ void PlayerObject::yStartUp() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayerObject::~PlayerObject() {
+PlayerObject::~PlayerObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

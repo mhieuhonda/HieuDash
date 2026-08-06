@@ -131,6 +131,6 @@ void TextArea::stopAllCharacterActions() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void TextArea::~TextArea() {
+TextArea::~TextArea() {
     // TODO: implement (recovered from binary, body unknown)
 }

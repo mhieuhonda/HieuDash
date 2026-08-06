@@ -41,6 +41,6 @@ void SongInfoLayer::onYT() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SongInfoLayer::~SongInfoLayer() {
+SongInfoLayer::~SongInfoLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

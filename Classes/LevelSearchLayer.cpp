@@ -114,6 +114,6 @@ void LevelSearchLayer::updateSearchLabel(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSearchLayer::~LevelSearchLayer() {
+LevelSearchLayer::~LevelSearchLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

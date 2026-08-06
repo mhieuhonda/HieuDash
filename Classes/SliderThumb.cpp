@@ -26,6 +26,6 @@ void SliderThumb::setValue(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SliderThumb::~SliderThumb() {
+SliderThumb::~SliderThumb() {
     // TODO: implement (recovered from binary, body unknown)
 }

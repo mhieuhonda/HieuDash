@@ -61,6 +61,6 @@ void OpenSLEngine::unloadEffect(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void OpenSLEngine::~OpenSLEngine() {
+OpenSLEngine::~OpenSLEngine() {
     // TODO: implement (recovered from binary, body unknown)
 }

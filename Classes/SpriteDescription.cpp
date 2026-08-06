@@ -28,6 +28,6 @@ void SpriteDescription::initDescription(cocos2d::CCDictionary*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SpriteDescription::~SpriteDescription() {
+SpriteDescription::~SpriteDescription() {
     // TODO: implement (recovered from binary, body unknown)
 }

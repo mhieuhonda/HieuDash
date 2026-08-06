@@ -91,6 +91,6 @@ void GJSearchObject::setType(SearchType) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJSearchObject::~GJSearchObject() {
+GJSearchObject::~GJSearchObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

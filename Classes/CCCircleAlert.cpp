@@ -17,6 +17,6 @@ bool CCCircleAlert::init(float, float, float) {
     return false;
 }
 
-void CCCircleAlert::~CCCircleAlert() {
+CCCircleAlert::~CCCircleAlert() {
     // TODO: implement (recovered from binary, body unknown)
 }

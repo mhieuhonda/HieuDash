@@ -36,6 +36,6 @@ void LevelCell::updateBGColor(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelCell::~LevelCell() {
+LevelCell::~LevelCell() {
     // TODO: implement (recovered from binary, body unknown)
 }

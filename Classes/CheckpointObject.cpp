@@ -124,6 +124,6 @@ void CheckpointObject::setPortalObject(GameObject*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CheckpointObject::~CheckpointObject() {
+CheckpointObject::~CheckpointObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

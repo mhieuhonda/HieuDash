@@ -25,6 +25,6 @@ void MenuGameLayer::update(float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MenuGameLayer::~MenuGameLayer() {
+MenuGameLayer::~MenuGameLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

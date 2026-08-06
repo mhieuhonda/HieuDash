@@ -53,6 +53,6 @@ void RingObject::updateColors(cocos2d::_ccColor3B) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void RingObject::~RingObject() {
+RingObject::~RingObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

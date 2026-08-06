@@ -95,6 +95,6 @@ void CCAnimatedSprite::switchToMode(spriteMode) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCAnimatedSprite::~CCAnimatedSprite() {
+CCAnimatedSprite::~CCAnimatedSprite() {
     // TODO: implement (recovered from binary, body unknown)
 }

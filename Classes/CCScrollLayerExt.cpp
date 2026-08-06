@@ -223,6 +223,6 @@ void CCScrollLayerExt::visit() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCScrollLayerExt::~CCScrollLayerExt() {
+CCScrollLayerExt::~CCScrollLayerExt() {
     // TODO: implement (recovered from binary, body unknown)
 }

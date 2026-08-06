@@ -73,6 +73,6 @@ bool MoreGamesManager::shouldCheckMoreGames() {
     return false;
 }
 
-void MoreGamesManager::~MoreGamesManager() {
+MoreGamesManager::~MoreGamesManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

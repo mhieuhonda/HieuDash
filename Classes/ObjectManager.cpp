@@ -50,6 +50,6 @@ void ObjectManager::setup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ObjectManager::~ObjectManager() {
+ObjectManager::~ObjectManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

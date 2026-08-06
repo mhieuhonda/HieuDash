@@ -17,6 +17,6 @@ bool BoomListLayer::init(BoomListView*, char const*) {
     return false;
 }
 
-void BoomListLayer::~BoomListLayer() {
+BoomListLayer::~BoomListLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

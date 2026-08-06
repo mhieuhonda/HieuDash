@@ -60,6 +60,6 @@ void ColorSelectPopup::updateDurLabel() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ColorSelectPopup::~ColorSelectPopup() {
+ColorSelectPopup::~ColorSelectPopup() {
     // TODO: implement (recovered from binary, body unknown)
 }

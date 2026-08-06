@@ -16,6 +16,6 @@ void GJMoreGamesLayer::customSetup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJMoreGamesLayer::~GJMoreGamesLayer() {
+GJMoreGamesLayer::~GJMoreGamesLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

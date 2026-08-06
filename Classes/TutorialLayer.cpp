@@ -33,6 +33,6 @@ void TutorialLayer::onNext() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void TutorialLayer::~TutorialLayer() {
+TutorialLayer::~TutorialLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

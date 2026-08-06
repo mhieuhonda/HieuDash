@@ -26,6 +26,6 @@ void CreateMenuItem::setObjectFrame(std::string) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CreateMenuItem::~CreateMenuItem() {
+CreateMenuItem::~CreateMenuItem() {
     // TODO: implement (recovered from binary, body unknown)
 }

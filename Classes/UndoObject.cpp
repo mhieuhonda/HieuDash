@@ -27,6 +27,6 @@ bool UndoObject::init(GameObject*, UndoCommand) {
     return false;
 }
 
-void UndoObject::~UndoObject() {
+UndoObject::~UndoObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

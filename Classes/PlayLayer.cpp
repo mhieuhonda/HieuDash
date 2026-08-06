@@ -341,6 +341,6 @@ void PlayLayer::updateVisibility() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PlayLayer::~PlayLayer() {
+PlayLayer::~PlayLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

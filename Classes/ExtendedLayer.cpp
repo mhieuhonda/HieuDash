@@ -30,6 +30,6 @@ void ExtendedLayer::setPosition(cocos2d::CCPoint const&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ExtendedLayer::~ExtendedLayer() {
+ExtendedLayer::~ExtendedLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

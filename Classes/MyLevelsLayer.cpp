@@ -38,6 +38,6 @@ void MyLevelsLayer::setupLevelBrowser() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MyLevelsLayer::~MyLevelsLayer() {
+MyLevelsLayer::~MyLevelsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

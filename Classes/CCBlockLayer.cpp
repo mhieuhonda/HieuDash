@@ -96,6 +96,6 @@ void CCBlockLayer::showLayer(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCBlockLayer::~CCBlockLayer() {
+CCBlockLayer::~CCBlockLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

@@ -107,6 +107,6 @@ void CocosDenshion::willPlayBackgroundMusic() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CocosDenshion::~SimpleAudioEngine() {
+CocosDenshion::~SimpleAudioEngine() {
     // TODO: implement (recovered from binary, body unknown)
 }

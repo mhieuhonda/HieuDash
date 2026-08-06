@@ -30,6 +30,6 @@ void AchievementBar::show() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementBar::~AchievementBar() {
+AchievementBar::~AchievementBar() {
     // TODO: implement (recovered from binary, body unknown)
 }

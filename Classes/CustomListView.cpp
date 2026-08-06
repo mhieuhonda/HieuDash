@@ -25,6 +25,6 @@ void CustomListView::setupList() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CustomListView::~CustomListView() {
+CustomListView::~CustomListView() {
     // TODO: implement (recovered from binary, body unknown)
 }

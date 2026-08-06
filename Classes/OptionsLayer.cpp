@@ -56,6 +56,6 @@ void OptionsLayer::onSupport() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void OptionsLayer::~OptionsLayer() {
+OptionsLayer::~OptionsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

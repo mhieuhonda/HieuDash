@@ -74,6 +74,6 @@ void LoadingCircle::show() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LoadingCircle::~LoadingCircle() {
+LoadingCircle::~LoadingCircle() {
     // TODO: implement (recovered from binary, body unknown)
 }

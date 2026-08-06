@@ -27,6 +27,6 @@ bool StatsObject::init(char const*, int) {
     return false;
 }
 
-void StatsObject::~StatsObject() {
+StatsObject::~StatsObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

@@ -379,6 +379,6 @@ void GameLevelManager::userNameForID(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameLevelManager::~GameLevelManager() {
+GameLevelManager::~GameLevelManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

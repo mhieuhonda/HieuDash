@@ -33,6 +33,6 @@ void InfoLayer::setupLevelInfo() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void InfoLayer::~InfoLayer() {
+InfoLayer::~InfoLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

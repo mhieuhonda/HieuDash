@@ -60,6 +60,6 @@ void AudioEffectsLayer::updateTweenAction(float, char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AudioEffectsLayer::~AudioEffectsLayer() {
+AudioEffectsLayer::~AudioEffectsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

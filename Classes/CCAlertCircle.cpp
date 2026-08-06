@@ -26,6 +26,6 @@ bool CCAlertCircle::init() {
     return false;
 }
 
-void CCAlertCircle::~CCAlertCircle() {
+CCAlertCircle::~CCAlertCircle() {
     // TODO: implement (recovered from binary, body unknown)
 }

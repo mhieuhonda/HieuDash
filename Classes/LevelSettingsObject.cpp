@@ -53,6 +53,6 @@ void LevelSettingsObject::setStartGColor(cocos2d::_ccColor3B) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSettingsObject::~LevelSettingsObject() {
+LevelSettingsObject::~LevelSettingsObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

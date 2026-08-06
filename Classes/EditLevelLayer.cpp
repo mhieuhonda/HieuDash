@@ -86,6 +86,6 @@ void EditLevelLayer::updateDescText(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditLevelLayer::~EditLevelLayer() {
+EditLevelLayer::~EditLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

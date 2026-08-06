@@ -87,6 +87,6 @@ void CCMenuItemSpriteExtra::unselected() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCMenuItemSpriteExtra::~CCMenuItemSpriteExtra() {
+CCMenuItemSpriteExtra::~CCMenuItemSpriteExtra() {
     // TODO: implement (recovered from binary, body unknown)
 }

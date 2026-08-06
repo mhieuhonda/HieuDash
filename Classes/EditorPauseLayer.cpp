@@ -77,6 +77,6 @@ void EditorPauseLayer::updateSongButton() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditorPauseLayer::~EditorPauseLayer() {
+EditorPauseLayer::~EditorPauseLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

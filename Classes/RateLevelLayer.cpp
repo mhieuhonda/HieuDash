@@ -42,6 +42,6 @@ void RateLevelLayer::setDelegate(RateLevelDelegate*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void RateLevelLayer::~RateLevelLayer() {
+RateLevelLayer::~RateLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

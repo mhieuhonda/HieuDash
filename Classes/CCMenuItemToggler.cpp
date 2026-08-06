@@ -64,6 +64,6 @@ void CCMenuItemToggler::unselected() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCMenuItemToggler::~CCMenuItemToggler() {
+CCMenuItemToggler::~CCMenuItemToggler() {
     // TODO: implement (recovered from binary, body unknown)
 }

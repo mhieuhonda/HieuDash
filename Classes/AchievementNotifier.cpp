@@ -33,6 +33,6 @@ void AchievementNotifier::willSwitchToScene(cocos2d::CCScene*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementNotifier::~AchievementNotifier() {
+AchievementNotifier::~AchievementNotifier() {
     // TODO: implement (recovered from binary, body unknown)
 }

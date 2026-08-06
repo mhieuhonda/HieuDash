@@ -25,6 +25,6 @@ void EditButtonBar::onRight() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditButtonBar::~EditButtonBar() {
+EditButtonBar::~EditButtonBar() {
     // TODO: implement (recovered from binary, body unknown)
 }

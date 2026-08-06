@@ -32,6 +32,6 @@ void SupportLayer::onRobTop() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SupportLayer::~SupportLayer() {
+SupportLayer::~SupportLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

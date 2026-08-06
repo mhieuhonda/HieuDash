@@ -45,6 +45,6 @@ void UploadPopup::show() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void UploadPopup::~UploadPopup() {
+UploadPopup::~UploadPopup() {
     // TODO: implement (recovered from binary, body unknown)
 }

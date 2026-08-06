@@ -92,6 +92,6 @@ void FLAlertLayer::show() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void FLAlertLayer::~FLAlertLayer() {
+FLAlertLayer::~FLAlertLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

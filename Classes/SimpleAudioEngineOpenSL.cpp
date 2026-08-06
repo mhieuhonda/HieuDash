@@ -65,6 +65,6 @@ void SimpleAudioEngineOpenSL::unloadEffect(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SimpleAudioEngineOpenSL::~SimpleAudioEngineOpenSL() {
+SimpleAudioEngineOpenSL::~SimpleAudioEngineOpenSL() {
     // TODO: implement (recovered from binary, body unknown)
 }

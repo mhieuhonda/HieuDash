@@ -25,6 +25,6 @@ void GameEffectsManager::scaleParticle(cocos2d::CCParticleSystemQuad*, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameEffectsManager::~GameEffectsManager() {
+GameEffectsManager::~GameEffectsManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

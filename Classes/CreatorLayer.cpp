@@ -46,6 +46,6 @@ cocos2d::CCScene* CreatorLayer::scene() {
     return nullptr;
 }
 
-void CreatorLayer::~CreatorLayer() {
+CreatorLayer::~CreatorLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

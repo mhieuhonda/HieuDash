@@ -272,6 +272,6 @@ void BoomScrollLayer::visit() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BoomScrollLayer::~BoomScrollLayer() {
+BoomScrollLayer::~BoomScrollLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

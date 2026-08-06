@@ -149,6 +149,6 @@ void CCTextInputNode::visit() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTextInputNode::~CCTextInputNode() {
+CCTextInputNode::~CCTextInputNode() {
     // TODO: implement (recovered from binary, body unknown)
 }

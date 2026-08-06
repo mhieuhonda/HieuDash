@@ -64,6 +64,6 @@ void CCTableViewCell::updateVisibility() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableViewCell::~CCTableViewCell() {
+CCTableViewCell::~CCTableViewCell() {
     // TODO: implement (recovered from binary, body unknown)
 }

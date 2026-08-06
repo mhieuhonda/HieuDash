@@ -276,6 +276,6 @@ void EditorUI::zoomOut() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EditorUI::~EditorUI() {
+EditorUI::~EditorUI() {
     // TODO: implement (recovered from binary, body unknown)
 }

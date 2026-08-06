@@ -22,6 +22,6 @@ bool SongObject::init(int) {
     return false;
 }
 
-void SongObject::~SongObject() {
+SongObject::~SongObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

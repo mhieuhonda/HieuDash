@@ -55,6 +55,6 @@ void CCLightFlash::showFlash() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCLightFlash::~CCLightFlash() {
+CCLightFlash::~CCLightFlash() {
     // TODO: implement (recovered from binary, body unknown)
 }

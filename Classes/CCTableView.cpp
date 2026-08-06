@@ -285,6 +285,6 @@ void CCTableView::touchFinish(cocos2d::CCTouch*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCTableView::~CCTableView() {
+CCTableView::~CCTableView() {
     // TODO: implement (recovered from binary, body unknown)
 }

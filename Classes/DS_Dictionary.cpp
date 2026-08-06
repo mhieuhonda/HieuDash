@@ -248,6 +248,6 @@ void DS_Dictionary::vec2FromString(std::string const&, cocos2d::CCPoint&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DS_Dictionary::~DS_Dictionary() {
+DS_Dictionary::~DS_Dictionary() {
     // TODO: implement (recovered from binary, body unknown)
 }

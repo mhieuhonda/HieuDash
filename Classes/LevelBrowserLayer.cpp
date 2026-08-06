@@ -71,6 +71,6 @@ void LevelBrowserLayer::updateLevelsLabel() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelBrowserLayer::~LevelBrowserLayer() {
+LevelBrowserLayer::~LevelBrowserLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

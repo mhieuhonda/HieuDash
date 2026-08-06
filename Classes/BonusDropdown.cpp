@@ -30,6 +30,6 @@ void BonusDropdown::show() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BonusDropdown::~BonusDropdown() {
+BonusDropdown::~BonusDropdown() {
     // TODO: implement (recovered from binary, body unknown)
 }

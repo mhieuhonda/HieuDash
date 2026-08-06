@@ -54,6 +54,6 @@ void SliderTouchLogic::setSliderDelegate(Slider*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SliderTouchLogic::~SliderTouchLogic() {
+SliderTouchLogic::~SliderTouchLogic() {
     // TODO: implement (recovered from binary, body unknown)
 }

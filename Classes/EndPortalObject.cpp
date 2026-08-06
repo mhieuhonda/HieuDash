@@ -37,6 +37,6 @@ void EndPortalObject::updateColors(cocos2d::_ccColor3B) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EndPortalObject::~EndPortalObject() {
+EndPortalObject::~EndPortalObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

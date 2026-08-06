@@ -17,6 +17,6 @@ bool ButtonPage::init(cocos2d::CCArray*, cocos2d::CCPoint) {
     return false;
 }
 
-void ButtonPage::~ButtonPage() {
+ButtonPage::~ButtonPage() {
     // TODO: implement (recovered from binary, body unknown)
 }

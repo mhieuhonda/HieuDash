@@ -29,6 +29,6 @@ void ShareLevelLayer::onShare() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ShareLevelLayer::~ShareLevelLayer() {
+ShareLevelLayer::~ShareLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

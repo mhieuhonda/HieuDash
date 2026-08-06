@@ -19,6 +19,6 @@ void CCIndexPath::CCIndexPathWithSectionRow(int, int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCIndexPath::~CCIndexPath() {
+CCIndexPath::~CCIndexPath() {
     // TODO: implement (recovered from binary, body unknown)
 }

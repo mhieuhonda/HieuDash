@@ -16,6 +16,6 @@ void SongsLayer::customSetup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SongsLayer::~SongsLayer() {
+SongsLayer::~SongsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

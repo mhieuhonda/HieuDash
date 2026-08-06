@@ -104,6 +104,6 @@ void CCCircleWave::updateTweenAction(float, char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCircleWave::~CCCircleWave() {
+CCCircleWave::~CCCircleWave() {
     // TODO: implement (recovered from binary, body unknown)
 }

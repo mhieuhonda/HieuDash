@@ -37,6 +37,6 @@ void TutorialPopup::show() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void TutorialPopup::~TutorialPopup() {
+TutorialPopup::~TutorialPopup() {
     // TODO: implement (recovered from binary, body unknown)
 }

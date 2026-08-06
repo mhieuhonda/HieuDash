@@ -16,6 +16,6 @@ void AchievementsLayer::customSetup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementsLayer::~AchievementsLayer() {
+AchievementsLayer::~AchievementsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

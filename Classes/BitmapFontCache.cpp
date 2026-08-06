@@ -24,6 +24,6 @@ void BitmapFontCache::sharedFontCache() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BitmapFontCache::~BitmapFontCache() {
+BitmapFontCache::~BitmapFontCache() {
     // TODO: implement (recovered from binary, body unknown)
 }

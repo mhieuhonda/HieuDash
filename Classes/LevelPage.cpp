@@ -21,6 +21,6 @@ void LevelPage::onPlay() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelPage::~LevelPage() {
+LevelPage::~LevelPage() {
     // TODO: implement (recovered from binary, body unknown)
 }

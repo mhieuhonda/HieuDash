@@ -111,6 +111,6 @@ void GJDropDownLayer::showLayer(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GJDropDownLayer::~GJDropDownLayer() {
+GJDropDownLayer::~GJDropDownLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

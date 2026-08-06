@@ -126,6 +126,6 @@ void LevelEditorLayer::undoLastAction() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelEditorLayer::~LevelEditorLayer() {
+LevelEditorLayer::~LevelEditorLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

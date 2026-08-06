@@ -24,6 +24,6 @@ void ListCell::updateBGColor(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ListCell::~ListCell() {
+ListCell::~ListCell() {
     // TODO: implement (recovered from binary, body unknown)
 }

@@ -29,6 +29,6 @@ void PriceLabel::setPrice(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PriceLabel::~PriceLabel() {
+PriceLabel::~PriceLabel() {
     // TODO: implement (recovered from binary, body unknown)
 }

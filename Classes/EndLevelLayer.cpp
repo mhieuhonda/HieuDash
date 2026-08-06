@@ -37,6 +37,6 @@ void EndLevelLayer::showLayer(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void EndLevelLayer::~EndLevelLayer() {
+EndLevelLayer::~EndLevelLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

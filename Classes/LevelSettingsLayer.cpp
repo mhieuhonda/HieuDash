@@ -62,6 +62,6 @@ void LevelSettingsLayer::updateAudioLabel() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelSettingsLayer::~LevelSettingsLayer() {
+LevelSettingsLayer::~LevelSettingsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

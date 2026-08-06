@@ -61,6 +61,6 @@ void CCLightStrip::updateTweenAction(float, char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCLightStrip::~CCLightStrip() {
+CCLightStrip::~CCLightStrip() {
     // TODO: implement (recovered from binary, body unknown)
 }

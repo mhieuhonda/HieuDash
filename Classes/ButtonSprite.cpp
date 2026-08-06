@@ -73,6 +73,6 @@ void ButtonSprite::updateSpriteBGSize() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ButtonSprite::~ButtonSprite() {
+ButtonSprite::~ButtonSprite() {
     // TODO: implement (recovered from binary, body unknown)
 }

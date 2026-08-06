@@ -73,6 +73,6 @@ AchievementManager* AchievementManager::sharedState() {
     return nullptr;
 }
 
-void AchievementManager::~AchievementManager() {
+AchievementManager::~AchievementManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

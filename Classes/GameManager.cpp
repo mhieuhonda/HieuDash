@@ -454,6 +454,6 @@ void GameManager::updateMusicVolume() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::~GameManager() {
+GameManager::~GameManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

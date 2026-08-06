@@ -25,6 +25,6 @@ void FontObject::parseConfigFile(char const*, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void FontObject::~FontObject() {
+FontObject::~FontObject() {
     // TODO: implement (recovered from binary, body unknown)
 }

@@ -48,6 +48,6 @@ void GManager::setup() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GManager::~GManager() {
+GManager::~GManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

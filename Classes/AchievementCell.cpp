@@ -24,6 +24,6 @@ void AchievementCell::updateBGColor(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void AchievementCell::~AchievementCell() {
+AchievementCell::~AchievementCell() {
     // TODO: implement (recovered from binary, body unknown)
 }

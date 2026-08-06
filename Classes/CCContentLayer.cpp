@@ -16,6 +16,6 @@ void CCContentLayer::setPosition(cocos2d::CCPoint const&) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCContentLayer::~CCContentLayer() {
+CCContentLayer::~CCContentLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

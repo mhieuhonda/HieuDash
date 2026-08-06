@@ -33,6 +33,6 @@ CCContentManager* CCContentManager::sharedManager() {
     return nullptr;
 }
 
-void CCContentManager::~CCContentManager() {
+CCContentManager::~CCContentManager() {
     // TODO: implement (recovered from binary, body unknown)
 }

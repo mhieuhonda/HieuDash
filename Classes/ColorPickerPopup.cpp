@@ -47,6 +47,6 @@ void ColorPickerPopup::show() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void ColorPickerPopup::~ColorPickerPopup() {
+ColorPickerPopup::~ColorPickerPopup() {
     // TODO: implement (recovered from binary, body unknown)
 }

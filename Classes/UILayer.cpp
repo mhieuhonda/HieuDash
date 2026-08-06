@@ -80,6 +80,6 @@ void UILayer::toggleCheckpointsMenu(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void UILayer::~UILayer() {
+UILayer::~UILayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

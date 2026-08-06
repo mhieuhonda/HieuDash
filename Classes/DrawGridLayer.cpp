@@ -41,6 +41,6 @@ void DrawGridLayer::removeFromEffects(GameObject*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void DrawGridLayer::~DrawGridLayer() {
+DrawGridLayer::~DrawGridLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

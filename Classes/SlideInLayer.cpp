@@ -105,6 +105,6 @@ void SlideInLayer::showLayer(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SlideInLayer::~SlideInLayer() {
+SlideInLayer::~SlideInLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

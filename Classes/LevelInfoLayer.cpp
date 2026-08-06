@@ -110,6 +110,6 @@ void LevelInfoLayer::updateSideButtons() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void LevelInfoLayer::~LevelInfoLayer() {
+LevelInfoLayer::~LevelInfoLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

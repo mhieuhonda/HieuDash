@@ -67,6 +67,6 @@ void Slider::updateBar() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void Slider::~Slider() {
+Slider::~Slider() {
     // TODO: implement (recovered from binary, body unknown)
 }

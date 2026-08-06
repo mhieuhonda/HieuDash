@@ -48,6 +48,6 @@ void MultilineBitmapFont::stringWithMaxWidth(std::string, float, float) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void MultilineBitmapFont::~MultilineBitmapFont() {
+MultilineBitmapFont::~MultilineBitmapFont() {
     // TODO: implement (recovered from binary, body unknown)
 }

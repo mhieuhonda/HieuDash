@@ -66,6 +66,6 @@ void BoomListView::setupList() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void BoomListView::~BoomListView() {
+BoomListView::~BoomListView() {
     // TODO: implement (recovered from binary, body unknown)
 }

@@ -34,6 +34,6 @@ void SavedLevelsLayer::setupLevelBrowser() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void SavedLevelsLayer::~SavedLevelsLayer() {
+SavedLevelsLayer::~SavedLevelsLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

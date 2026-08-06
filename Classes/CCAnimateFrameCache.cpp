@@ -44,6 +44,6 @@ void CCAnimateFrameCache::spriteFrameByName(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCAnimateFrameCache::~CCAnimateFrameCache() {
+CCAnimateFrameCache::~CCAnimateFrameCache() {
     // TODO: implement (recovered from binary, body unknown)
 }

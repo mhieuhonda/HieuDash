@@ -28,6 +28,6 @@ void GameCell::updateBGColor(int) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameCell::~GameCell() {
+GameCell::~GameCell() {
     // TODO: implement (recovered from binary, body unknown)
 }

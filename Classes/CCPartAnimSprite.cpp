@@ -79,6 +79,6 @@ void CCPartAnimSprite::transformSprite(frameValues) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCPartAnimSprite::~CCPartAnimSprite() {
+CCPartAnimSprite::~CCPartAnimSprite() {
     // TODO: implement (recovered from binary, body unknown)
 }

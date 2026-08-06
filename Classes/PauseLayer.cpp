@@ -64,6 +64,6 @@ void PauseLayer::setupProgressBars() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void PauseLayer::~PauseLayer() {
+PauseLayer::~PauseLayer() {
     // TODO: implement (recovered from binary, body unknown)
 }

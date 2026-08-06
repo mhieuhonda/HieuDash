@@ -59,6 +59,6 @@ void CCCounterLabel::updateString() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCCounterLabel::~CCCounterLabel() {
+CCCounterLabel::~CCCounterLabel() {
     // TODO: implement (recovered from binary, body unknown)
 }
