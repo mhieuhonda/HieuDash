@@ -79,6 +79,16 @@ if(MSVC)
         # cocos2d-x sources directly into HieuDash.exe.
         CC_STATIC
         CC_DLL
+        # v0.7 round 6: CocosDenshion uses its own EXPORT_DLL macro (in
+        # CocosDenshion/include/Export.h) instead of CC_DLL. Without
+        # IGNORE_EXPORT, EXPORT_DLL resolves to __declspec(dllimport),
+        # which makes the linker look for the SimpleAudioEngine vtable
+        # in a non-existent DLL -> LNK2019 unresolved external on
+        # "const CocosDenshion::SimpleAudioEngine::`vftable'".
+        IGNORE_EXPORT
+        # _EXPORT_DLL_ would also work but makes EXPORT_DLL *export*
+        # instead of empty, which is wrong for an .exe (you can't
+        # export from an .exe that doesn't itself define dllexport).
     )
     # NOTE: forward declarations for all Hieu Dash classes are injected
     # into HieuDashEnums.h (which is included by every header) by
@@ -470,6 +480,15 @@ endif()
 set_target_properties(HieuDash PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
 )
+if(WIN32 AND NOT MINGW)
+    # v0.7 round 6: proj.win32/main.cpp defines _tWinMain (which expands
+    # to wWinMain under UNICODE). Without WIN32_EXECUTABLE=TRUE the
+    # linker defaults to /SUBSYSTEM:CONSOLE and looks for `main`,
+    # producing LNK2019 "unresolved external symbol main".
+    # WIN32_EXECUTABLE switches to /SUBSYSTEM:WINDOWS which expects
+    # wWinMain, matching our entry point.
+    set_target_properties(HieuDash PROPERTIES WIN32_EXECUTABLE TRUE)
+endif()
 
 # Copy Resources next to the executable so the game can find them at runtime.
 add_custom_command(TARGET HieuDash POST_BUILD
