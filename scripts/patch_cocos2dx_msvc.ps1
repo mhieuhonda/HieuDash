@@ -166,36 +166,86 @@ if (Test-Path $f) {
     # Only widen if not already widened.
     if ($c -match '#define\s+WIN_CLASS_NAME\s+"[^"]+"' -and $c -notmatch '#define\s+WIN_CLASS_NAME\s+L"') {
         $c = $c -replace '#define\s+WIN_CLASS_NAME\s+("[^"]+")', '#define WIN_CLASS_NAME L$1'
+    }
+    # v0.7 round 5 fix: MciPlayer::Open(const char* pFileName, ...) passes
+    # pFileName directly to MCI_OPEN_PARMSW.lpstrElementName which is
+    # LPCWSTR. Insert a MultiByteToWideChar conversion before the
+    # mciSendCommand call so we hand MCI a proper wide string.
+    #
+    # The original code had this conversion commented out (!) - we
+    # uncomment and fix it.
+    if ($c -match 'mciOpen\.lpstrElementName\s*=\s*pFileName;') {
+        $c = $c -replace 'mciOpen\.lpstrElementName\s*=\s*pFileName;', "// v0.7: convert UTF-8 -> UTF-16 for MCI_OPEN_PARMSW (UNICODE build)`r`n        wchar_t wBuf[MAX_PATH] = {0};`r`n        MultiByteToWideChar(CP_UTF8, 0, pFileName, -1, wBuf, MAX_PATH);`r`n        mciOpen.lpstrElementName = wBuf;"
+    }
+    if ($c -ne $orig) {
         Set-Content $f -Value $c -NoNewline -Encoding UTF8
-        Write-Host "  PATCHED (WIN_CLASS_NAME -> wchar_t): $f"
+        Write-Host "  PATCHED (WIN_CLASS_NAME + wide pFileName): $f"
     } else {
-        Write-Host "  no WIN_CLASS_NAME narrow literal in: $f"
+        Write-Host "  no WIN_CLASS_NAME/pFileName to patch: $f"
     }
 }
 
 # -----------------------------------------------------------------------------
 # 7. CCDataReaderHelper.cpp (extensions/CocoStudio/Armature/utils):
-#    includes <pthread.h> unconditionally. Guard it the same way as
-#    CCTextureCache.cpp.
+#    includes <pthread.h> unconditionally AND declares static
+#    pthread_mutex_t / pthread_cond_t members. The CCTextureCache.cpp shim
+#    (section 3) is file-local, so this file needs its own shim block.
 #
-#    v0.7 round 4 fix: previous version used single-quoted replacement
-#    with literal backtick-r-backtick-n which never expanded to actual
-#    CRLF (single-quoted PowerShell strings do not process backtick
-#    escapes). The follow-up `-replace '\\r\\n', "`r`n"` then failed
-#    to match because the inserted text was backticks, not backslashes.
-#    Rewrote to use a double-quoted replacement string with proper
-#    backtick escapes and a literal `$1 backreference.
+#    v0.7 round 5 fix: previous round-4 attempt only guarded the #include
+#    without providing the typedefs/stubs, so all the static member
+#    declarations (s_asyncStructQueueMutex, s_SleepMutex, s_ReadFileMutex,
+#    etc.) failed with C4430/C2146/C2086. Now we emit the same shim block
+#    as CCTextureCache.cpp so the file is self-contained.
 # -----------------------------------------------------------------------------
 $f = "$CocosRoot/extensions/CocoStudio/Armature/utils/CCDataReaderHelper.cpp"
 if (Test-Path $f) {
     $c = Get-Content $f -Raw -Encoding UTF8
-    # Find the bare `#include <pthread.h>` line and wrap it with a platform guard.
-    # Use a single-quoted regex pattern, then a double-quoted replacement so
-    # backtick escapes (`r`n) and the literal $1 backreference work.
     if ($c -match '(?ms)^\s*#include\s*<pthread\.h>\s*$' -and $c -notmatch 'CC_PLATFORM_WIN32.*pthread') {
-        $c = $c -replace '(?m)^(\s*#include\s*<pthread\.h>\s*)$', "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`r`n`$1`r`n#else`r`n// v0.7: pthread shim for Win32 - CCDataReaderHelper uses pthread_mutex,`r`n// which we typedef to void* and provide as no-op stubs in CCTextureCache.cpp`r`n// (included transitively). The unused include is dropped here.`r`n#endif"
+        # Replace the bare `#include <pthread.h>` line with a 3-way branch
+        # that emits a full shim block on Win32 (same as CCTextureCache.cpp).
+        $shim = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8) && (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`r`n" +
+                "#include <pthread.h>`r`n" +
+                "#elif (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)`r`n" +
+                '#include "CCPThreadWinRT.h"' + "`r`n" +
+                "#else`r`n" +
+                "// v0.7: pthread shim for Win32 - CCDataReaderHelper uses`r`n" +
+                "// pthread_mutex_t / pthread_cond_t / pthread_mutex_lock etc.`r`n" +
+                "// We typedef them to void*/int and provide no-op stubs.`r`n" +
+                "typedef void* pthread_t;`r`n" +
+                "typedef void* pthread_mutex_t;`r`n" +
+                "typedef int  pthread_cond_t;`r`n" +
+                "typedef int  pthread_attr_t;`r`n" +
+                "#ifndef pthread_mutex_init`r`n" +
+                "static inline int pthread_mutex_init(pthread_mutex_t*, const void*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_mutex_destroy`r`n" +
+                "static inline int pthread_mutex_destroy(pthread_mutex_t*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_mutex_lock`r`n" +
+                "static inline int pthread_mutex_lock(pthread_mutex_t*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_mutex_unlock`r`n" +
+                "static inline int pthread_mutex_unlock(pthread_mutex_t*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_cond_init`r`n" +
+                "static inline int pthread_cond_init(pthread_cond_t*, const void*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_cond_destroy`r`n" +
+                "static inline int pthread_cond_destroy(pthread_cond_t*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_cond_wait`r`n" +
+                "static inline int pthread_cond_wait(pthread_cond_t*, pthread_mutex_t*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_cond_signal`r`n" +
+                "static inline int pthread_cond_signal(pthread_cond_t*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#ifndef pthread_create`r`n" +
+                "static inline int pthread_create(pthread_t*, const void*, void*(*)(void*), void*) { return 0; }`r`n" +
+                "#endif`r`n" +
+                "#endif"
+        $c = $c -replace '(?m)^(\s*#include\s*<pthread\.h>\s*)$', $shim
         Set-Content $f -Value $c -NoNewline -Encoding UTF8
-        Write-Host "  PATCHED (pthread guard): $f"
+        Write-Host "  PATCHED (pthread shim): $f"
     } else {
         Write-Host "  no bare pthread.h include in: $f"
     }
