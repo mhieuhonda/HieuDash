@@ -405,6 +405,29 @@ jobs:
           Copy-Item -Path "$src/*" -Destination $dst -Recurse -Force
           Test-Path "$dst/cocos2dx"
 
+      - name: Patch cocos2d-x 2.2.3 for modern MSVC
+        shell: pwsh
+        run: |
+          # v0.7: cocos2d-x 2.2.3 was written for VS2010 and has 4
+          # incompatibilities with modern MSVC v143 / UCRT:
+          #   1. CC_DLL is __declspec(dllimport) for .exe builds -> C2491
+          #      ("definition of dllimport static data member not allowed")
+          #      on every static member definition.
+          #   2. CCStdC.h `#define snprintf _snprintf` -> C1189 (modern
+          #      UCRT already declares snprintf as a real function).
+          #   3. CCStdC.h `#define MAX max` / `#define MIN min` rely on
+          #      the windows.h min/max macros, which NOMINMAX suppresses
+          #      -> C3861 ('max' not found) or C2672 (std::max overload
+          #      mismatch because int 0 != float).
+          #   4. CCTextureCache.cpp includes <pthread.h> which doesn't
+          #      exist on Windows -> C1083.
+          #   5. CCImage.cpp passes wchar_t* to RemoveFontResource() which
+          #      expands to the ANSI variant -> C2664.
+          # The patch script is idempotent and only touches Windows-only
+          # platform headers / source files; Linux/iOS/Android builds
+          # use different platform files and are not affected.
+          & "$env:GITHUB_WORKSPACE/scripts/patch_cocos2dx_msvc.ps1" -CocosRoot "$env:GITHUB_WORKSPACE/cocos2d"
+
       - name: Install vcpkg dependencies
         shell: pwsh
         run: |

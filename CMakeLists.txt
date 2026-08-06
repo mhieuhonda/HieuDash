@@ -64,6 +64,10 @@ if(MSVC)
         COCOS2DX_VERSION_MINOR=2
         COCOS2DX_VERSION_PATCH=3
         CC_TARGET_PLATFORM=CC_PLATFORM_WIN32
+        # v0.7: CC_STATIC tells the patched CCPlatformDefine.h to make
+        # CC_DLL empty (no dllimport/dllexport) since we statically link
+        # cocos2d-x sources directly into HieuDash.exe.
+        CC_STATIC
         CC_DLL
     )
     # NOTE: forward declarations for all Hieu Dash classes are injected
