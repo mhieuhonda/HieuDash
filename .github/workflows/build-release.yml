@@ -85,13 +85,13 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends ant openjdk-8-jdk
+          sudo apt-get install -y --no-install-recommends ant openjdk-8-jdk openjdk-17-jdk
 
-      - name: Setup Java 8
+      - name: Setup Java 17 (for sdkmanager)
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '8'
+          java-version: '17'
 
       - name: Install Android SDK (API 21 + build-tools 25.0.0)
         uses: android-actions/setup-android@v3
@@ -100,6 +100,12 @@ jobs:
             platform-tools
             platforms;android-21
             build-tools;25.0.0
+
+      - name: Setup Java 8 (for Ant 1.9.x)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '8'
 
       - name: Install Apache Ant 1.9.16
         run: |
@@ -360,7 +366,7 @@ jobs:
             libpng-dev libjpeg-dev libtiff-dev libwebp-dev \
             libglfw3-dev libglew-dev \
             libpulse-dev libasound2-dev libsndfile1-dev \
-            libopenal-dev libalut-dev \
+            libopenal-dev libalut-dev freealut-dev \
             libvorbis-dev libogg-dev \
             libcurl4-gnutls-dev libzip-dev zlib1g-dev
 

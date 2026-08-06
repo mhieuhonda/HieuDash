@@ -251,6 +251,8 @@ endif()
 # ---- Link libraries ---------------------------------------------------------
 if(LINUX)
     find_package(PkgConfig REQUIRED)
+    # alut may not ship a .pc file on all distros; we look it up via
+    # find_library as a fallback.
     pkg_check_modules(COCOS_DEPS REQUIRED
         freetype2
         libpng
@@ -261,23 +263,43 @@ if(LINUX)
         glew
         fontconfig
         openal
-        alut
         vorbis
         vorbisfile
         ogg
         x11
         gl
     )
+    # Optional ALut (FreeALUT) - pkg-config first, then find_library.
+    pkg_check_modules(ALUT QUIET alut)
+    if(NOT ALUT_FOUND)
+        find_path(ALUT_INCLUDE_DIR AL/alut.h)
+        find_library(ALUT_LIBRARY NAMES alut freealut)
+        if(ALUT_INCLUDE_DIR AND ALUT_LIBRARY)
+            set(ALUT_INCLUDE_DIRS ${ALUT_INCLUDE_DIR})
+            set(ALUT_LIBRARIES ${ALUT_LIBRARY})
+        else()
+            message(WARNING
+              "ALut not found - audio playback on Linux will be limited. "
+              "Install libalut-dev (Debian/Ubuntu) or freealut-dev.")
+        endif()
+    endif()
 
     target_link_libraries(HieuDash PRIVATE
         ${COCOS_DEPS_LIBRARIES}
+        ${ALUT_LIBRARIES}
         pthread
         dl
         rt
         z
         curl
     )
-    target_link_directories(HieuDash PRIVATE ${COCOS_DEPS_LIBRARY_DIRS})
+    target_link_directories(HieuDash PRIVATE
+        ${COCOS_DEPS_LIBRARY_DIRS}
+        ${ALUT_LIBRARY_DIRS}
+    )
+    target_include_directories(HieuDash PRIVATE
+        ${ALUT_INCLUDE_DIRS}
+    )
 elseif(WIN32)
     # On Windows we expect vcpkg to provide these. The CI workflow sets
     # CMAKE_TOOLCHAIN_FILE to the vcpkg.cmake so find_package() works.
