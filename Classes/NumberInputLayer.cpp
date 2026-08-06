@@ -20,8 +20,8 @@ bool NumberInputLayer::init(float val, float minV, float maxV, float step, std::
     return true;
 }
 
-void NumberInputLayer::onPlus(cocos2d::CCObject* sender) { m_fValue = cocos2d::CCClampf(m_fValue + m_fStep, m_fMinValue, m_fMaxValue); updateLabel(); }
-void NumberInputLayer::onMinus(cocos2d::CCObject* sender) { m_fValue = cocos2d::CCClampf(m_fValue - m_fStep, m_fMinValue, m_fMaxValue); updateLabel(); }
+void NumberInputLayer::onPlus(cocos2d::CCObject* sender) { m_fValue = cocos2d::clampf(m_fValue + m_fStep, m_fMinValue, m_fMaxValue); updateLabel(); }
+void NumberInputLayer::onMinus(cocos2d::CCObject* sender) { m_fValue = cocos2d::clampf(m_fValue - m_fStep, m_fMinValue, m_fMaxValue); updateLabel(); }
 void NumberInputLayer::onOK(cocos2d::CCObject* sender) {}
 void NumberInputLayer::updateLabel() {}
 float NumberInputLayer::getValue() { return m_fValue; }
