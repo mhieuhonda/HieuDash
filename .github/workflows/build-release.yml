@@ -98,6 +98,23 @@ jobs:
         with:
           packages: 'platform-tools platforms;android-21 build-tools;25.0.0'
 
+      - name: Install legacy Android SDK tools (for Ant build template)
+        run: |
+          # Modern Android SDK (cmdline-tools) no longer ships the
+          # tools/ant/build.xml template that the cocos2d-x 2.2.3 build.xml
+          # imports. We download the legacy standalone tools package
+          # (tools_r25.2.3) and overlay it onto the SDK directory so the
+          # Ant build can find tools/ant/build.xml + aapt + dx + apkbuilder.
+          cd $HOME
+          wget -q https://dl.google.com/android/repository/tools_r25.2.3-linux.zip
+          unzip -q -o tools_r25.2.3-linux.zip -d $ANDROID_HOME/
+          # Verify the ant build template now exists.
+          test -f $ANDROID_HOME/tools/ant/build.xml
+          ls $ANDROID_HOME/tools/ant/build.xml
+          # Also verify aapt and dx are present.
+          ls $ANDROID_HOME/build-tools/25.0.0/aapt
+          ls $ANDROID_HOME/build-tools/25.0.0/dx
+
       - name: Setup Java 8 (for Ant 1.9.x)
         uses: actions/setup-java@v4
         with:
@@ -361,11 +378,32 @@ jobs:
             libxmu-dev libglu1-mesa-dev \
             libfreetype-dev libfontconfig1-dev \
             libpng-dev libjpeg-dev libtiff-dev libwebp-dev \
-            libglfw3-dev libglew-dev \
+            libglew-dev \
             libpulse-dev libasound2-dev libsndfile1-dev \
             libopenal-dev libalut-dev \
             libvorbis-dev libogg-dev \
             libcurl4-gnutls-dev libzip-dev zlib1g-dev
+
+      - name: Build GLFW 2.7.9 from source (cocos2d-x 2.2.3 uses GLFW 2.x API)
+        run: |
+          # cocos2d-x 2.2.3's Linux platform code (CCEGLView.cpp) uses the
+          # GLFW 2.x API (glfwOpenWindow, glfwGetMousePos, etc.) which was
+          # removed in GLFW 3.x. Ubuntu 24.04 only ships GLFW 3.x, so we
+          # build GLFW 2.7.9 from source and install it to /usr/local.
+          cd /tmp
+          wget -q https://github.com/glfw/glfw/archive/refs/tags/2.7.9.tar.gz
+          tar xzf 2.7.9.tar.gz
+          cd glfw-2.7.9
+          # GLFW 2.7.9 Makefile needs these vars for an X11 build.
+          make x11 \
+            CFLAGS='-fPIC -O2 -D_GNU_SOURCE' \
+            LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+          sudo make x11-install PREFIX=/usr/local
+          # Verify the install.
+          test -f /usr/local/include/GL/glfw.h
+          test -f /usr/local/lib/libglfw.a || test -f /usr/local/lib64/libglfw.a
+          ls /usr/local/include/GL/glfw.h
+          ls /usr/local/lib/libglfw.a 2>/dev/null || ls /usr/local/lib64/libglfw.a
 
       - name: Install cocos2d-x 2.2.3
         run: |

@@ -253,13 +253,16 @@ if(LINUX)
     find_package(PkgConfig REQUIRED)
     # alut may not ship a .pc file on all distros; we look it up via
     # find_library as a fallback.
+    # NOTE: glfw3 is NOT in this list because cocos2d-x 2.2.3 uses the
+    # GLFW 2.x API (glfwOpenWindow, etc.). We build GLFW 2.7.9 from
+    # source and install to /usr/local, so we just need /usr/local/include
+    # and /usr/local/lib in the search path (CMake finds them by default).
     pkg_check_modules(COCOS_DEPS REQUIRED
         freetype2
         libpng
         libjpeg
         libtiff-4
         libwebp
-        glfw3
         glew
         fontconfig
         openal
@@ -284,9 +287,15 @@ if(LINUX)
         endif()
     endif()
 
+    target_include_directories(HieuDash PRIVATE
+        ${COCOS_DEPS_INCLUDE_DIRS}
+        ${ALUT_INCLUDE_DIRS}
+        /usr/local/include
+    )
     target_link_libraries(HieuDash PRIVATE
         ${COCOS_DEPS_LIBRARIES}
         ${ALUT_LIBRARIES}
+        glfw
         pthread
         dl
         rt
@@ -296,9 +305,7 @@ if(LINUX)
     target_link_directories(HieuDash PRIVATE
         ${COCOS_DEPS_LIBRARY_DIRS}
         ${ALUT_LIBRARY_DIRS}
-    )
-    target_include_directories(HieuDash PRIVATE
-        ${ALUT_INCLUDE_DIRS}
+        /usr/local/lib
     )
 elseif(WIN32)
     # On Windows we expect vcpkg to provide these. The CI workflow sets
