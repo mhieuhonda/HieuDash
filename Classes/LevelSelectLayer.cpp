@@ -139,24 +139,24 @@ bool LevelSelectLayer::init(int page) {
     return true;
 }
 
-void LevelSelectLayer::onPrev() {
+void LevelSelectLayer::onPrev(cocos2d::CCObject* /*sender*/) {
     int prev = (m_nLevel > 0) ? m_nLevel - 1 : 22;     // wrap back to last
     CCScene* pScene = LevelSelectLayer::scene(prev);
     if (pScene) CCDirector::sharedDirector()->replaceScene(pScene);
 }
 
-void LevelSelectLayer::onNext() {
+void LevelSelectLayer::onNext(cocos2d::CCObject* /*sender*/) {
     int next = (m_nLevel + 1) % 23;                    // 22 = Hieu Louis
     CCScene* pScene = LevelSelectLayer::scene(next);
     if (pScene) CCDirector::sharedDirector()->replaceScene(pScene);
 }
 
-void LevelSelectLayer::onBack() {
+void LevelSelectLayer::onBack(cocos2d::CCObject* /*sender*/) {
     // Pop back to the menu.
     CCDirector::sharedDirector()->popScene();
 }
 
-void LevelSelectLayer::onDownload() {
+void LevelSelectLayer::onDownload(cocos2d::CCObject* /*sender*/) {
     // Soundtrack download prompt — disabled (no network in v0.5).
 }
 

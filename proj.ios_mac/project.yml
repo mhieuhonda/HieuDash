@@ -44,6 +44,18 @@ targets:
     sources:
       - path: ../Classes
       - path: ios
+      # v0.7 CRITICAL FIX: bundle the entire Resources/ tree (sprite sheets,
+      # .fnt fonts, .mp3 music, .plist animations) into the .app's main
+      # bundle. Without this the iOS .ipa ships only executable code and
+      # crashes on launch when AppDelegate tries to load GJ_GameSheet.plist.
+      # We add Resources as a folder reference (type: folder -> the blue
+      # folder in Xcode) so xcodegen creates a single "Copy Bundle
+      # Resources" entry that copies every file recursively while
+      # preserving the on-disk directory structure (so CCFileUtils iOS
+      # finds "GJ_GameSheet.plist" at the bundle root, just like the
+      # Android assets/ folder and the Linux/Windows Resources/ folder).
+      - path: ../Resources
+        type: folder
       - path: ../cocos2d/cocos2dx
         excludes:
           - "platform/android/**"

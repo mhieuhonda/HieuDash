@@ -175,6 +175,31 @@ jobs:
           cp lib/armeabi/libgame.so proj.android/libs/armeabi/libgame.so
           ls -la proj.android/libs/armeabi/
 
+      - name: Stage Resources into proj.android/assets
+        run: |
+          # v0.7 CRITICAL FIX: Ant packages every file under
+          # proj.android/assets/ into the final APK's assets/ folder,
+          # which is where cocos2d-x 2.2.3 CCFileUtilsAndroid looks
+          # for files at runtime (it calls AAssetManager_open on
+          # "GJ_GameSheet.plist", "bigFont.fnt", "HieuLouis.mp3", etc.).
+          #
+          # Without this step the APK ships only ~2 MB of code + libgame.so
+          # and ZERO game assets -> the game crashes immediately on launch
+          # when AppDelegate::applicationDidFinishLaunching() tries to
+          # CCSpriteFrameCache::addSpriteFramesWithFile("GJ_GameSheet.plist").
+          #
+          # We copy the entire Resources/ tree (sprite sheets, .fnt fonts,
+          # .mp3 music, .plist animations) verbatim. We also re-run the
+          # copy with --update to skip already-up-to-date files on retries.
+          mkdir -p proj.android/assets
+          cp -r Resources/. proj.android/assets/
+          echo "=== proj.android/assets size ==="
+          du -sh proj.android/assets
+          echo "=== file count ==="
+          find proj.android/assets -type f | wc -l
+          echo "=== first 20 files ==="
+          find proj.android/assets -type f | head -20
+
       - name: Write local.properties (sdk.dir + ndk.dir)
         run: |
           cd proj.android
@@ -200,6 +225,35 @@ jobs:
           echo "Built APK: $APK"
           cp "$APK" $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-android.apk
           ls -la $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-android.apk
+
+      - name: Verify APK contents (libgame.so + assets bundle)
+        run: |
+          # v0.7 SAFETY CHECK: the previous "successful" build shipped a
+          # 2 MB APK that crashed on launch because it had ZERO game assets
+          # (only libgame.so + classes.dex). Verify the APK actually
+          # contains the critical resource files before we upload it.
+          APK=$GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-android.apk
+          APK_SIZE=$(stat -c%s "$APK")
+          echo "APK size: $APK_SIZE bytes ($((APK_SIZE / 1024 / 1024)) MB)"
+          if [ "$APK_SIZE" -lt 10000000 ]; then
+            echo "::error::APK is only $((APK_SIZE / 1024 / 1024)) MB - too small. Resources are missing."
+            exit 1
+          fi
+          echo "=== APK top-level contents ==="
+          unzip -l "$APK" | head -30
+          echo "=== Verifying critical assets exist inside the APK ==="
+          for f in assets/GJ_GameSheet.plist assets/GJ_GameSheet.png \
+                   assets/bigFont.fnt assets/bigFont.png \
+                   assets/GJ_gradientBG.png assets/HieuLouis.mp3 \
+                   lib/armeabi/libgame.so; do
+            if unzip -l "$APK" "$f" 2>/dev/null | grep -q "$f"; then
+              echo "  OK   $f"
+            else
+              echo "::error::MISSING from APK: $f"
+              exit 1
+            fi
+          done
+          echo "=== APK contents look correct ==="
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -284,6 +338,24 @@ jobs:
             exit 1
           fi
           echo "App: $APP"
+          # v0.7 SAFETY CHECK: verify the .app bundle actually contains
+          # the Resources tree (xcodegen `type: folder` should have
+          # produced a "Copy Bundle Resources" phase that copies every
+          # file from Resources/ into the .app). Without these the game
+          # would crash on launch exactly like the Android 2MB-APK bug.
+          echo "=== .app contents (top 30) ==="
+          ls "$APP" | head -30
+          for f in GJ_GameSheet.plist GJ_GameSheet.png \
+                   bigFont.fnt bigFont.png \
+                   GJ_gradientBG.png HieuLouis.mp3; do
+            if [ -e "$APP/$f" ]; then
+              echo "  OK   $f"
+            else
+              echo "::error::MISSING from .app bundle: $f"
+              echo "Hint: xcodegen 'sources: - path: ../Resources  type: folder' did not copy the file."
+              exit 1
+            fi
+          done
           mkdir -p Payload
           cp -R "$APP" Payload/
           zip -qr $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-ios.ipa Payload
@@ -394,8 +466,27 @@ jobs:
           }
           # Copy Resources so the game can find textures, fonts, audio
           Copy-Item -Recurse Resources HieuDash-win/Resources
+          # v0.7 SAFETY CHECK: verify the Resources copy actually happened
+          # (CMakeLists.txt also does this via add_custom_command POST_BUILD,
+          # but we double-check here so a broken .zip is never uploaded).
+          foreach ($f in @("GJ_GameSheet.plist","GJ_GameSheet.png",
+                            "bigFont.fnt","bigFont.png",
+                            "GJ_gradientBG.png","HieuLouis.mp3")) {
+            if (-not (Test-Path "HieuDash-win/Resources/$f")) {
+              Write-Host "::error::MISSING from HieuDash-win/Resources: $f"
+              exit 1
+            }
+            Write-Host "  OK   Resources/$f"
+          }
           Compress-Archive -Path HieuDash-win/* -DestinationPath HieuDash-v$env:HIUE_DASH_VERSION-windows.zip
           Get-ChildItem HieuDash-v$env:HIUE_DASH_VERSION-windows.zip
+          # Sanity check: the zip must be > 5 MB (Resources alone are ~19 MB).
+          $zipSize = (Get-Item HieuDash-v$env:HIUE_DASH_VERSION-windows.zip).Length
+          Write-Host "Zip size: $zipSize bytes ($([math]::Floor($zipSize / 1MB)) MB)"
+          if ($zipSize -lt 5MB) {
+            Write-Host "::error::Windows .zip is only $([math]::Floor($zipSize / 1MB)) MB - Resources missing"
+            exit 1
+          }
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -504,6 +595,17 @@ jobs:
           cp -r Resources/* "$STAGING/Resources/"
           # Bundle any cocos2d-x runtime .so dependencies built alongside
           find build -name "*.so" -type f -exec cp {} "$STAGING/lib/" \; 2>/dev/null || true
+          # v0.7 SAFETY CHECK: verify Resources are actually present.
+          for f in GJ_GameSheet.plist GJ_GameSheet.png \
+                   bigFont.fnt bigFont.png \
+                   GJ_gradientBG.png HieuLouis.mp3; do
+            if [ -e "$STAGING/Resources/$f" ]; then
+              echo "  OK   Resources/$f"
+            else
+              echo "::error::MISSING from HieuDash-linux/Resources: $f"
+              exit 1
+            fi
+          done
           tar czf $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-linux.tar.gz \
             -C $GITHUB_WORKSPACE HieuDash-linux
           ls -la $GITHUB_WORKSPACE/HieuDash-v${HIUE_DASH_VERSION}-linux.tar.gz

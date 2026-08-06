@@ -3,7 +3,12 @@
 
 #include "AppDelegate.h"
 #include "cocos2d.h"
-#include "platform/win32/CCEGLView_win32.h"
+// v0.7 fix: in cocos2d-x 2.2.3 the Windows EGL view header lives at
+// cocos2dx/platform/win32/CCEGLView.h (NOT CCEGLView_win32.h - that
+// name was a guess that does not exist in the 2.2.3 source tree).
+// ${COCOS2DX_ROOT} is on the include path, so "platform/win32/CCEGLView.h"
+// resolves correctly to cocos2d/cocos2dx/platform/win32/CCEGLView.h.
+#include "platform/win32/CCEGLView.h"
 
 USING_NS_CC;
 

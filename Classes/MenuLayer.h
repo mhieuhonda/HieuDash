@@ -16,15 +16,19 @@ public:
     bool init();
     void keyBackClicked();
     void node();
-    void onAchievements();
-    void onCreator();
-    void onGameCenter();
-    void onGarage();
-    void onMoreGames();
-    void onOptions();
-    void onPlay();
-    void onRobTop();
-    void onStats();
+    // v0.7 fix: menu_selector callbacks MUST take CCObject* (SEL_MenuHandler
+    // signature) - MSVC with /permissive- rejects the cast from
+    // void(T::*)() to void(T::*)(CCObject*) even though GCC -fpermissive
+    // silently accepts it. Adding the parameter fixes Windows builds.
+    void onAchievements(cocos2d::CCObject* sender = nullptr);
+    void onCreator(cocos2d::CCObject* sender = nullptr);
+    void onGameCenter(cocos2d::CCObject* sender = nullptr);
+    void onGarage(cocos2d::CCObject* sender = nullptr);
+    void onMoreGames(cocos2d::CCObject* sender = nullptr);
+    void onOptions(cocos2d::CCObject* sender = nullptr);
+    void onPlay(cocos2d::CCObject* sender = nullptr);
+    void onRobTop(cocos2d::CCObject* sender = nullptr);
+    void onStats(cocos2d::CCObject* sender = nullptr);
     static cocos2d::CCScene* scene();
     void showGCQuestion();
     ~MenuLayer();

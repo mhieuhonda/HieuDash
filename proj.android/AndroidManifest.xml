@@ -3,6 +3,15 @@
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
 
     <!--
+      v0.7 fix: explicit <uses-sdk> so the Ant build stops emitting
+      "WARNING: No minSdkVersion value set". minSdkVersion 16 (Android
+      4.1 Jelly Bean) matches what libgame.so (built against NDK r8e/API
+      14) actually supports at runtime; targetSdkVersion 21 matches the
+      build-tools 25.0.0 API level we compile the .dex against.
+    -->
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="21"/>
+
+    <!--
       v0.5 — Stripped all dangerous permissions. Only INTERNET and
       ACCESS_NETWORK_STATE remain (both are "normal" protection-level and
       do not require user consent on Android 6.0+).

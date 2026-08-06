@@ -96,7 +96,7 @@ bool MenuLayer::init() {
 void MenuLayer::keyBackClicked() { endGame(); }
 void MenuLayer::node() {}
 
-void MenuLayer::onAchievements() {
+void MenuLayer::onAchievements(cocos2d::CCObject* /*sender*/) {
     // Achievements scene — would push AchievementsLayer::scene() if it were
     // implemented. The AchievementsLayer class in Hieu Dash v0.6 only has a
     // create() factory (no scene() static), so this is a defensive no-op
@@ -106,27 +106,27 @@ void MenuLayer::onAchievements() {
     // function pointers without an explicit &address-of operator).
 }
 
-void MenuLayer::onCreator() {
+void MenuLayer::onCreator(cocos2d::CCObject* /*sender*/) {
     // Editor button — would push the creator scene in the full game.
 }
 
-void MenuLayer::onGameCenter() {
+void MenuLayer::onGameCenter(cocos2d::CCObject* /*sender*/) {
     // Game Center / Google Play Games — disabled in v0.5 (no network calls).
 }
 
-void MenuLayer::onGarage() {
+void MenuLayer::onGarage(cocos2d::CCObject* /*sender*/) {
     // Garage scene — player icon customisation.
 }
 
-void MenuLayer::onMoreGames() {
+void MenuLayer::onMoreGames(cocos2d::CCObject* /*sender*/) {
     // More games — disabled (no network).
 }
 
-void MenuLayer::onOptions() {
+void MenuLayer::onOptions(cocos2d::CCObject* /*sender*/) {
     // Options scene — would push OptionsLayer::scene() if it were implemented.
 }
 
-void MenuLayer::onPlay() {
+void MenuLayer::onPlay(cocos2d::CCObject* /*sender*/) {
     // The critical path: jump into the level select, where the Hieu Louis
     // level sits at index 22 (the last page).
     CCScene* pScene = LevelSelectLayer::scene(0);
@@ -139,11 +139,11 @@ void MenuLayer::onPlay() {
     }
 }
 
-void MenuLayer::onRobTop() {
+void MenuLayer::onRobTop(cocos2d::CCObject* /*sender*/) {
     // RobTop credits — disabled.
 }
 
-void MenuLayer::onStats() {
+void MenuLayer::onStats(cocos2d::CCObject* /*sender*/) {
     // Stats scene — would push StatsLayer::scene() if it were implemented.
 }
 

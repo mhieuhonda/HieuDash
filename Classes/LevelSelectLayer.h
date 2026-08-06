@@ -18,10 +18,12 @@ public:
     int getColorValue(int, int, float);
     bool init(int);
     void keyBackClicked();
-    void onBack();
-    void onDownload();
-    void onNext();
-    void onPrev();
+    // v0.7 fix: menu_selector callbacks must use SEL_MenuHandler signature
+    // (void (T::*)(CCObject*)) for MSVC /permissive- compatibility.
+    void onBack(cocos2d::CCObject* sender = nullptr);
+    void onDownload(cocos2d::CCObject* sender = nullptr);
+    void onNext(cocos2d::CCObject* sender = nullptr);
+    void onPrev(cocos2d::CCObject* sender = nullptr);
     static cocos2d::CCScene* scene(int);
     void scrollLayerMoved(cocos2d::CCPoint);
     ~LevelSelectLayer();
