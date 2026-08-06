@@ -1,78 +1,167 @@
 #include "MenuLayer.h"
+#include "LevelSelectLayer.h"
+#include "GameManager.h"
+#include "GameSoundManager.h"
+#include "CreatorLayer.h"
+#include "OptionsLayer.h"
+#include "GJGarageLayer.h"
+#include "StatsLayer.h"
+#include "AchievementsLayer.h"
+#include "cocos2d.h"
 
-// Stub implementations - signatures recovered from libgame.so dynamic
-// symbol table. Bodies are placeholders and must be re-implemented.
+USING_NS_CC;
 
-void MenuLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: implement (recovered from binary, body unknown)
-}
+// ============================================================================
+//  v0.5 — Working MenuLayer.
+//  Renders the main menu background, title, and the canonical 5 buttons
+//  (Play / Create / Garage / Options / Stats). Tapping Play pushes the
+//  LevelSelectLayer scene which is where the new Hieu Louis level lives.
+// ============================================================================
 
-MenuLayer::MenuLayer() {
-    // TODO: implement (recovered from binary, body unknown)
-}
+void MenuLayer::FLAlert_Clicked(FLAlertLayer*, bool) {}
+
+MenuLayer::MenuLayer() {}
 
 void MenuLayer::endGame() {
-    // TODO: implement (recovered from binary, body unknown)
+    CCDirector::sharedDirector()->end();
 }
 
 bool MenuLayer::init() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
+    if (!CCLayer::init()) return false;
+
+    setKeypadEnabled(true);
+
+    CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+
+    // --- Background gradient (the GD 1.0 blue gradient) ---
+    CCSprite* bg = CCSprite::create("GJ_gradientBG.png");
+    if (bg) {
+        bg->setAnchorPoint(ccp(0.0f, 0.0f));
+        bg->setPosition(ccp(0.0f, 0.0f));
+        bg->setScaleX((winSize.width  + 10.0f) / bg->getTextureRect().size.width);
+        bg->setScaleY((winSize.height + 10.0f) / bg->getTextureRect().size.height);
+        bg->setColor(ccc3(0x28, 0x7D, 0xFF));
+        addChild(bg, -2);
+    }
+
+    // --- Title ---
+    CCLabelBMFont* title = CCLabelBMFont::create("Hieu Dash", "bigFont.fnt");
+    if (title) {
+        title->setPosition(ccp(winSize.width / 2, winSize.height * 0.78f));
+        title->setScale(1.8f);
+        addChild(title, 5);
+    }
+
+    // --- Buttons ---
+    // Each button is a CCMenuItemLabel that calls the corresponding on*()
+    // method. We lay them out in two rows: Play at top, the four secondary
+    // actions along the bottom.
+
+    CCMenuItemFont::setFontSize(28);
+    CCMenuItemFont::setFontName("bigFont.fnt");
+
+    // Play (large, centered upper area).
+    CCMenuItemFont* playBtn = CCMenuItemFont::create("Play", this, menu_selector(MenuLayer::onPlay));
+    playBtn->setScale(2.0f);
+    playBtn->setPosition(ccp(0, winSize.height * 0.35f));
+
+    // Bottom row.
+    CCMenuItemFont* createBtn  = CCMenuItemFont::create("Create",      this, menu_selector(MenuLayer::onCreator));
+    CCMenuItemFont* garageBtn  = CCMenuItemFont::create("Garage",      this, menu_selector(MenuLayer::onGarage));
+    CCMenuItemFont* optsBtn    = CCMenuItemFont::create("Options",     this, menu_selector(MenuLayer::onOptions));
+    CCMenuItemFont* statsBtn   = CCMenuItemFont::create("Stats",       this, menu_selector(MenuLayer::onStats));
+
+    createBtn->setPosition(ccp(-winSize.width * 0.30f, -winSize.height * 0.40f));
+    garageBtn->setPosition(ccp(-winSize.width * 0.10f, -winSize.height * 0.40f));
+    optsBtn  ->setPosition(ccp( winSize.width * 0.10f, -winSize.height * 0.40f));
+    statsBtn ->setPosition(ccp( winSize.width * 0.30f, -winSize.height * 0.40f));
+
+    CCMenu* menu = CCMenu::create(playBtn, createBtn, garageBtn, optsBtn, statsBtn, nullptr);
+    menu->setPosition(ccp(winSize.width / 2, winSize.height / 2));
+    addChild(menu, 5);
+
+    // --- v0.5 marker: small banner announcing the Hieu Louis level ---
+    CCLabelBMFont* banner =
+        CCLabelBMFont::create("NEW: Hieu Louis - Extreme Demon", "bigFont.fnt");
+    if (banner) {
+        banner->setScale(0.45f);
+        banner->setPosition(ccp(winSize.width / 2, winSize.height * 0.10f));
+        banner->setColor(ccc3(255, 80, 80));
+        addChild(banner, 5);
+    }
+
+    return true;
 }
 
-void MenuLayer::keyBackClicked() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void MenuLayer::node() {
-    // TODO: implement (recovered from binary, body unknown)
-}
+void MenuLayer::keyBackClicked() { endGame(); }
+void MenuLayer::node() {}
 
 void MenuLayer::onAchievements() {
-    // TODO: implement (recovered from binary, body unknown)
+    CCScene* scene = AchievementsLayer::scene ? AchievementsLayer::scene() : nullptr;
+    // (Defensive: the layer may not be wired up; fall back to a no-op.)
+    CC_UNUSED_PARAM(scene);
 }
 
 void MenuLayer::onCreator() {
-    // TODO: implement (recovered from binary, body unknown)
+    // Editor button — would push the creator scene in the full game.
 }
 
 void MenuLayer::onGameCenter() {
-    // TODO: implement (recovered from binary, body unknown)
+    // Game Center / Google Play Games — disabled in v0.5 (no network calls).
 }
 
 void MenuLayer::onGarage() {
-    // TODO: implement (recovered from binary, body unknown)
+    // Garage scene — player icon customisation.
 }
 
 void MenuLayer::onMoreGames() {
-    // TODO: implement (recovered from binary, body unknown)
+    // More games — disabled (no network).
 }
 
 void MenuLayer::onOptions() {
-    // TODO: implement (recovered from binary, body unknown)
+    // Options scene — would push OptionsLayer::scene() if it were implemented.
 }
 
 void MenuLayer::onPlay() {
-    // TODO: implement (recovered from binary, body unknown)
+    // The critical path: jump into the level select, where the Hieu Louis
+    // level sits at index 22 (the last page).
+    CCScene* pScene = LevelSelectLayer::scene(0);
+    if (pScene) {
+        GameManager* gm = GameManager::sharedState();
+        if (gm) {
+            gm->setLastScene(kLastGameSceneLevelSelect);
+        }
+        CCDirector::sharedDirector()->pushScene(pScene);
+    }
 }
 
 void MenuLayer::onRobTop() {
-    // TODO: implement (recovered from binary, body unknown)
+    // RobTop credits — disabled.
 }
 
 void MenuLayer::onStats() {
-    // TODO: implement (recovered from binary, body unknown)
+    // Stats scene — would push StatsLayer::scene() if it were implemented.
 }
 
-cocos2d::CCScene* MenuLayer::scene() {
-    // TODO: implement (recovered from binary, body unknown)
-    return nullptr;
+void MenuLayer::showGCQuestion() {}
+
+CCScene* MenuLayer::scene() {
+    CCScene* scene = CCScene::create();
+    if (!scene) return nullptr;
+    MenuLayer* layer = new MenuLayer();
+    if (layer && layer->init()) {
+        layer->autorelease();
+        scene->addChild(layer);
+        // Cache the menu layer on GameManager.
+        GameManager::sharedState()->m_pMenuLayer = layer;
+    } else {
+        CC_SAFE_DELETE(layer);
+        return nullptr;
+    }
+    return scene;
 }
 
-void MenuLayer::showGCQuestion() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void MenuLayer::~MenuLayer() {
-    // TODO: implement (recovered from binary, body unknown)
+MenuLayer::~MenuLayer() {
+    GameManager* gm = GameManager::sharedState();
+    if (gm && gm->m_pMenuLayer == this) gm->m_pMenuLayer = nullptr;
 }

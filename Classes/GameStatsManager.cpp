@@ -1,10 +1,24 @@
 #include "GameStatsManager.h"
+#include "cocos2d.h"
 
-// Stub implementations - signatures recovered from libgame.so dynamic
-// symbol table. Bodies are placeholders and must be re-implemented.
+USING_NS_CC;
+
+static GameStatsManager* s_pSharedGSM = nullptr;
 
 GameStatsManager::GameStatsManager() {
-    // TODO: implement (recovered from binary, body unknown)
+    // v0.5: minimal in-memory state.
+}
+
+GameStatsManager* GameStatsManager::sharedState() {
+    if (!s_pSharedGSM) {
+        s_pSharedGSM = new GameStatsManager();
+        s_pSharedGSM->init();
+    }
+    return s_pSharedGSM;
+}
+
+bool GameStatsManager::init() {
+    return true;
 }
 
 void GameStatsManager::checkAchievement(char const*) {
@@ -45,16 +59,6 @@ void GameStatsManager::incrementStat(char const*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-bool GameStatsManager::init() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
-}
-
-GameStatsManager* GameStatsManager::sharedState() {
-    // TODO: implement (recovered from binary, body unknown)
-    return nullptr;
-}
-
-void GameStatsManager::~GameStatsManager() {
-    // TODO: implement (recovered from binary, body unknown)
+GameStatsManager::~GameStatsManager() {
+    if (s_pSharedGSM == this) s_pSharedGSM = nullptr;
 }

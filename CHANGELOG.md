@@ -1,5 +1,111 @@
 # Changelog
 
+## v0.5 — 2026-08-06 (Hieu Louis release)
+
+The "Hieu Louis" boss-level release. Adds a brand-new hardest main level,
+ships a full CI pipeline that builds APK / iOS / Windows / Linux in
+parallel on every release, removes every dangerous Android permission,
+and provides working implementations of the critical runtime path so the
+game actually launches (instead of booting into a black screen of stubs).
+
+### Added
+
+- **`Classes/HieuLouisLevel.{h,cpp}`** — New file. Procedurally generates
+  the level string for the new "Hieu Louis" boss level (the hardest
+  level in the game, demon-extreme difficulty). Built entirely from
+  existing repo assets: triple-spike walls, mini/normal size portals,
+  speed-3/4 transitions, gravity-flip corridors, sawblade tunnels, a
+  dual-orb staircase finale, and a "1-tile gap" boss corridor that
+  requires frame-perfect inputs.
+- **`Resources/HieuLouis.mp3`** — The official soundtrack for the Hieu
+  Louis level: "ĐỚN ĐAU VÔ CÙNG" by DATKAA x PROD. QT BEATZ. Wired in
+  as the level's background music via `kGJSongHieuLouis` (song ID 17).
+- **`Classes/HieuDashEnums.h`** — Added `kGJSongHieuLouis = 17` to the
+  `GJSong` enum so the new track is reachable from the song-id table.
+- **`.github/workflows/release.yml`** — New CI pipeline that triggers
+  automatically when a release is published. Uses a 4-way matrix:
+  - **Android APK** on `ubuntu-latest` with NDK r10e + Ant.
+  - **iOS .ipa** on `macos-13` with Xcode 14.
+  - **Windows .zip** on `windows-latest` with MSBuild.
+  - **Linux .tar.gz** on `ubuntu-latest` with cmake + ninja.
+  Each job uploads its artifact to the release via
+  `softprops/action-gh-release` (appends, never overwrites).
+
+### Changed
+
+- **`Classes/AppDelegate.cpp`** — Rewrote `applicationDidFinishLaunching()`
+  to actually boot the game: sets the 480×320 design resolution, loads
+  GJ_GameSheet + GJ_LaunchSheet sprite frames, preloads every mp3 / ogg
+  in `Resources/`, boots the four core singletons, and runs the
+  `LoadingLayer` scene. Previously it was a stub that returned `true`
+  without doing anything.
+- **`Classes/GameManager.{h,cpp}`** — Added the missing runtime-state
+  fields (`m_bMusicEnabled`, `m_bFxEnabled`, `m_bFirstSetup`,
+  `m_sPlayerName`, `m_nPlayerFrame`, `m_nGroundID`, `m_pLevelSelectLayer`,
+  etc.) and implemented the `sharedState()` singleton, `init()`,
+  `setup()`, `toggleMusic()`, `toggleFX()`, and all the simple
+  getters/setters that were previously returning 0 / false / nullptr.
+- **`Classes/GameLevelManager.{h,cpp}`** — Implemented
+  `sharedState()` singleton and added a new 2-arg overload
+  `getMainLevel(int idx, bool)` that returns a `GJGameLevel*`. Index 22
+  is the Hieu Louis boss level (difficulty=6 demon, stars=10, audio
+  track=kGJSongHieuLouis).
+- **`Classes/GJGameLevel.cpp`** — Rewrote `create()` factory (proper
+  autorelease + zero-init of every member) and implemented every
+  getter/setter so callers never read garbage.
+- **`Classes/LevelTools.cpp`** — Added static lookup tables for the 18
+  song IDs (filenames, titles, artists, BPMs) including HieuLouis.mp3
+  at index 17. Implemented `getLevel(int)` returning the 22 original
+  main levels + Hieu Louis at index 22.
+- **`Classes/GameSoundManager.{h,cpp}`** — Added `playBackgroundMusic()`
+  public method and implemented `sharedManager()` singleton + preload.
+- **`Classes/GameStatsManager.cpp`** — Implemented `sharedState()`
+  singleton.
+- **`Classes/LoadingLayer.cpp`** — Implemented `scene()` + `init()`
+  with a splash gradient + "Hieu Dash" title + 1-second transition
+  into the menu.
+- **`Classes/MenuLayer.cpp`** — Implemented `scene()` + `init()`
+  with the title, 5 menu buttons, and a red banner announcing the
+  Hieu Louis level. `onPlay()` pushes `LevelSelectLayer::scene(0)`.
+- **`Classes/LevelSelectLayer.cpp`** — Implemented `create(int)` /
+  `init(int)` / `scene(int)` with a 23-page carousel (22 original
+  levels + Hieu Louis at page 22), Prev / Next / Back nav arrows,
+  per-page color cycling, "FINAL BOSS" banner on page 22, and a music
+  credit label.
+- **`proj.android/jni/Android.mk`** — Added `HieuLouisLevel.cpp` to
+  `LOCAL_SRC_FILES`.
+
+### Removed (dangerous permissions)
+
+- **`proj.android/AndroidManifest.xml`** — Removed:
+  - `android.permission.READ_PHONE_STATE` (dangerous — gave apps access
+    to IMEI, device serial, phone numbers).
+  - `android.permission.WRITE_EXTERNAL_STORAGE` (dangerous — full
+    access to the user's shared storage; v0.5 uses app-private storage).
+  - `android.permission.ACCESS_WIFI_STATE` (no longer needed).
+  - Set `android:debuggable="false"` (was `true`).
+- **`proj.android/src/com/customRobTop/BaseRobTopActivity.java`** —
+  Rewrote `getUserID()` to derive a stable per-install UUID from
+  `Settings.Secure.ANDROID_ID` alone (no permissions needed) instead of
+  calling `TelephonyManager.getDeviceId()` and `getSimSerialNumber()`
+  (which required READ_PHONE_STATE).
+- **`proj.android/project.properties`** — Bumped `target` from
+  `android-8` (Android 2.2, deprecated since 2017 and riddled with
+  security holes) to `android-21` (Android 5.0 Lollipop, the minimum
+  that supports arm64-v8a + runtime permissions).
+
+### Migration notes
+
+The v0.5 release is the first version that actually boots to a
+playable state — every prior version (v0.1 through v0.4) shipped only
+stub method bodies (`// TODO: implement`) and would black-screen on
+launch. This release closes that gap by implementing the full
+`AppDelegate → LoadingLayer → MenuLayer → LevelSelectLayer` runtime
+path, while keeping every other class signature intact for future
+implementation work.
+
+---
+
 ## v0.4 — 2026-08-06
 
 Resource & reference-completeness release. Brings in the entire

@@ -109,6 +109,7 @@ LOCAL_SRC_FILES := \
     ../../Classes/GJMapPack.cpp \
     ../../Classes/GJMoreGamesLayer.cpp \
     ../../Classes/GJObjectDecoder.cpp \
+    ../../Classes/HieuLouisLevel.cpp \
     ../../Classes/GJSearchObject.cpp \
     ../../Classes/GJChallengeItem.cpp \
     ../../Classes/GJLevelScoreCell.cpp \

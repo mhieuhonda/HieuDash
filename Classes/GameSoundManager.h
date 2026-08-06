@@ -22,6 +22,9 @@ public:
     void pauseLoopedSound(char const*);
     void playEffect(char const*);
     void playEffect(char const*, float, float, float);
+    // v0.5: play the given mp3 as the level background music.
+    // bgmPath is a path relative to Resources/ (e.g. "HieuLouis.mp3").
+    void playBackgroundMusic(char const* bgmPath, float fadeDuration, int loop);
     void playLoopedSound(char const*, char const*, float, float, bool, bool, bool);
     void playUniqueEffect(char const*);
     void playUniqueEffect(char const*, float, float, float);

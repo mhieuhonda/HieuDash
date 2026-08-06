@@ -11,7 +11,7 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.telephony.TelephonyManager;
+// v0.5: removed import android.telephony.TelephonyManager; (no longer used).
 import android.util.Log;
 import android.widget.Toast;
 import com.flurry.android.FlurryAgent;
@@ -144,8 +144,15 @@ public class BaseRobTopActivity extends DefaultRobTopActivity {
     }
 
     public static String getUserID() {
-        TelephonyManager telephonyManager = (TelephonyManager) me.getBaseContext().getSystemService("phone");
-        return new UUID((Settings.Secure.getString(me.getContentResolver(), "android_id")).hashCode(), ((telephonyManager.getDeviceId()).hashCode() << 32) | (telephonyManager.getSimSerialNumber()).hashCode()).toString();
+        // v0.5: removed dangerous TelephonyManager.getDeviceId() and
+        // getSimSerialNumber() calls (they required READ_PHONE_STATE, which
+        // is a dangerous permission and was removed in v0.5). Now we derive
+        // a stable per-install UUID from Settings.Secure.ANDROID_ID alone,
+        // which requires no permissions and is the recommended way to
+        // identify an install per the Android developer docs.
+        String androidId = Settings.Secure.getString(me.getContentResolver(), "android_id");
+        if (androidId == null) androidId = "unknown";
+        return new UUID(androidId.hashCode(), ((long) androidId.hashCode() << 32)).toString();
     }
 
     public static boolean hasCachedInterstitial() {

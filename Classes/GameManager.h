@@ -18,6 +18,7 @@ public:
     LevelEditorLayer* m_pLevelEditorLayer;
     MenuLayer* m_pMenuLayer;
     Scene m_eScene;
+    LevelSelectLayer* m_pLevelSelectLayer;
 
     // --- Player icon anti-cheat seeds/rands ---
     int m_nPlayerFrameSeed;
@@ -38,6 +39,31 @@ public:
     // --- Audio ---
     float m_fBGVolume;
     float m_fSFXVolume;
+
+    // --- v0.5 runtime state (previously missing) ---
+    bool m_bMusicEnabled;
+    bool m_bFxEnabled;
+    bool m_bFirstSetup;
+    bool m_bMainMenuActive;
+    bool m_bShowBPMMarkers;
+    bool m_bShowSongMarkers;
+    bool m_bShowedEditorGuide;
+    bool m_bShowedFirstTutorial;
+    bool m_bWasHigh;
+    bool m_bDidRateGame;
+    bool m_bClickedEditor;
+    bool m_bClickedGarage;
+    bool m_bClickedName;
+    bool m_bEditMode;
+    bool m_bAutoCheckpoints;
+    bool m_bReturnToSearch;
+    bool m_bGameCenterEnabled;
+    int  m_nPlayerFrame;
+    int  m_nPlayerColor;
+    int  m_nPlayerColor2;
+    int  m_nGroundID;
+    std::string m_sPlayerName;
+    std::string m_sPlayerUDID;
 
     // --- Methods ---
     void applicationDidEnterBackground();

@@ -412,6 +412,9 @@ enum GJSong {
     kGJSongGeometricalDominator,
     kGJSongDeadlocked,
     kGJSongFingerdash,
+    // --- v0.5: Hieu Louis level — custom soundtrack "ĐỚN ĐAU VÔ CÙNG" ---
+    // Song ID 17 is reserved for the Hieu Louis boss level.
+    kGJSongHieuLouis = 17,
     kGJSongCustom
 };
 

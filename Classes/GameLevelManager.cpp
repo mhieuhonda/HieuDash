@@ -1,10 +1,21 @@
 #include "GameLevelManager.h"
+#include "GJGameLevel.h"
+#include "LevelTools.h"
+#include "HieuLouisLevel.h"
+#include "cocos2d.h"
 
-// Stub implementations - signatures recovered from libgame.so dynamic
-// symbol table. Bodies are placeholders and must be re-implemented.
+USING_NS_CC;
+
+// Singleton storage — created lazily on first call to sharedState().
+static GameLevelManager* s_pSharedGLM = nullptr;
 
 GameLevelManager::GameLevelManager() {
-    // TODO: implement (recovered from binary, body unknown)
+    m_pSavedLevels    = CCDictionary::create();
+    m_pMainLevels     = CCDictionary::create();
+    m_pOnlineLevelsDict = CCDictionary::create();
+    CC_SAFE_RETAIN(m_pSavedLevels);
+    CC_SAFE_RETAIN(m_pMainLevels);
+    CC_SAFE_RETAIN(m_pOnlineLevelsDict);
 }
 
 void GameLevelManager::addDLToActive(char const*) {
@@ -104,9 +115,56 @@ int GameLevelManager::getLocalLevels() {
     return 0;
 }
 
-int GameLevelManager::getMainLevel(int) {
-    // TODO: implement (recovered from binary, body unknown)
-    return 0;
+// Returns the GJGameLevel for the given main-level index.
+// Indices 0..21 correspond to the original GD 1.0 main levels; index 22
+// is the new "Hieu Louis" boss level added in v0.5.
+GJGameLevel* GameLevelManager::getMainLevel(int levelIdx, bool p2) {
+    CC_UNUSED_PARAM(p2);
+
+    if (!m_pMainLevels) {
+        m_pMainLevels = CCDictionary::create();
+        CC_SAFE_RETAIN(m_pMainLevels);
+    }
+
+    // Cache hit?
+    CCObject* cached = m_pMainLevels->objectForKey(levelIdx);
+    if (cached) return static_cast<GJGameLevel*>(cached);
+
+    GJGameLevel* lvl = nullptr;
+    if (levelIdx >= 0 && levelIdx < 22) {
+        // Defer to LevelTools for the original 22 levels.
+        lvl = LevelTools::getLevel(levelIdx);
+    } else if (levelIdx == 22) {
+        // --- Hieu Louis (v0.5) ---
+        lvl = GJGameLevel::create();
+        if (lvl) {
+            lvl->m_sLevelName    = HieuLouisLevel::levelName();
+            lvl->m_sLevelDesc    = HieuLouisLevel::levelDesc();
+            lvl->m_sLevelString  = HieuLouisLevel::levelString();
+            lvl->m_nLevelID      = HieuLouisLevel::levelID();
+            lvl->m_nAudioTrack   = HieuLouisLevel::songID();
+            lvl->m_nLevelType    = kGJLevelTypeMain;
+            lvl->m_nDifficulty   = 6;            // demon
+            lvl->m_nStars        = 10;           // 10 stars = extreme demon
+            lvl->m_nLevelLength  = 5;            // "long"
+            lvl->m_nLevelVersion = 1;
+            lvl->m_nGameVersion  = 1;
+            lvl->m_bIsEditable   = false;
+            lvl->m_bIsUploaded   = false;
+            lvl->m_bIsVerified   = true;
+        }
+    }
+
+    if (lvl) {
+        m_pMainLevels->setObject(lvl, levelIdx);
+    }
+    return lvl;
+}
+
+// Original 1-arg stub kept for ABI compatibility with v0.3 binaries.
+int GameLevelManager::getMainLevel(int levelIdx) {
+    GJGameLevel* lvl = getMainLevel(levelIdx, false);
+    return lvl ? lvl->getLevelID() : 0;
 }
 
 int GameLevelManager::getOnlineLevels(GJSearchObject*) {
@@ -291,8 +349,10 @@ void GameLevelManager::setUpdateDelegate(LevelUpdateDelegate*) {
 }
 
 GameLevelManager* GameLevelManager::sharedState() {
-    // TODO: implement (recovered from binary, body unknown)
-    return nullptr;
+    if (!s_pSharedGLM) {
+        s_pSharedGLM = new GameLevelManager();
+    }
+    return s_pSharedGLM;
 }
 
 void GameLevelManager::storeSearchResult(cocos2d::CCArray*, std::string, char const*) {

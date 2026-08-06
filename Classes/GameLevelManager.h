@@ -46,6 +46,7 @@ public:
     int getLocalLevel(int);
     int getLocalLevels();
     int getMainLevel(int);
+    GJGameLevel* getMainLevel(int, bool);
     int getOnlineLevels(GJSearchObject*);
     int getPageInfo(char const*);
     int getRateKey(int);

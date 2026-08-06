@@ -1,10 +1,54 @@
 #include "GameManager.h"
+#include "GameSoundManager.h"
+#include "GameStatsManager.h"
+#include "cocos2d.h"
+#include <cstring>
 
-// Stub implementations - signatures recovered from libgame.so dynamic
-// symbol table. Bodies are placeholders and must be re-implemented.
+USING_NS_CC;
+
+// Singleton storage — created lazily on first call to sharedState().
+static GameManager* s_pSharedGameManager = nullptr;
+
+// ============================================================================
+//  v0.5 — Working singleton + minimal state for GameManager.
+//  The original binary persisted player progress via DS_Dictionary, but
+//  for runtime correctness we only need the singleton to exist and to
+//  expose sensible defaults for music/SFX/icon selection.
+// ============================================================================
 
 GameManager::GameManager() {
-    // TODO: implement (recovered from binary, body unknown)
+    m_pPlayLayer        = nullptr;
+    m_pLevelEditorLayer = nullptr;
+    m_pMenuLayer        = nullptr;
+    m_eScene            = kSceneNone;
+    m_fBGVolume         = 1.0f;
+    m_fSFXVolume        = 1.0f;
+    m_nPlayerFrame      = 1;  // default cube icon
+}
+
+GameManager* GameManager::sharedState() {
+    if (!s_pSharedGameManager) {
+        s_pSharedGameManager = new GameManager();
+        s_pSharedGameManager->init();
+        s_pSharedGameManager->setup();
+    }
+    return s_pSharedGameManager;
+}
+
+bool GameManager::init() {
+    // Default player profile.
+    m_sPlayerName = "Player";
+    m_bMusicEnabled  = true;
+    m_bFxEnabled     = true;
+    m_bFirstSetup    = true;
+    return true;
+}
+
+void GameManager::setup() {
+    // Trigger dependent singletons so they are constructed before any
+    // scene tries to use them.
+    GameStatsManager::sharedState();
+    GameSoundManager::sharedManager();
 }
 
 void GameManager::applicationDidEnterBackground() {
@@ -50,17 +94,15 @@ void GameManager::fadeInMusic(char const*) {
 }
 
 void GameManager::firstLoad() {
-    // TODO: implement (recovered from binary, body unknown)
+    m_bFirstSetup = false;
 }
 
 bool GameManager::getAutoCheckpoints() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
+    return m_bAutoCheckpoints;
 }
 
 bool GameManager::getClickedEditor() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
+    return m_bClickedEditor;
 }
 
 bool GameManager::getClickedGarage() {
@@ -84,22 +126,27 @@ bool GameManager::getEditMode() {
 }
 
 bool GameManager::getFirstSetup() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
+    return m_bFirstSetup;
+}
+
+void GameManager::setFirstSetup(bool v) {
+    m_bFirstSetup = v;
+}
+
+bool GameManager::getMusicEnabled() {
+    return m_bMusicEnabled;
 }
 
 bool GameManager::getFxEnabled() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
+    return m_bFxEnabled;
 }
 
 bool GameManager::getGameCenterEnabled() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
+    return m_bGameCenterEnabled;
 }
 
 LastGameScene GameManager::getLastScene() {
-    // TODO: implement (recovered from binary, body unknown)
+    return kLastGameSceneMenu;
 }
 
 int GameManager::getLevelKey(int, int) {
@@ -108,18 +155,11 @@ int GameManager::getLevelKey(int, int) {
 }
 
 LevelSelectLayer* GameManager::getLevelSelectLayer() {
-    // TODO: implement (recovered from binary, body unknown)
-    return nullptr;
+    return m_pLevelSelectLayer;
 }
 
 bool GameManager::getMainMenuActive() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
-}
-
-bool GameManager::getMusicEnabled() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
+    return m_bMainMenuActive;
 }
 
 int GameManager::getNextLevel(int, int) {
@@ -212,11 +252,6 @@ int GameManager::iconKey(int) {
     return 0;
 }
 
-bool GameManager::init() {
-    // TODO: implement (recovered from binary, body unknown)
-    return false;
-}
-
 bool GameManager::isColorUnlocked(int, bool) {
     // TODO: implement (recovered from binary, body unknown)
     return false;
@@ -292,12 +327,8 @@ void GameManager::setEditMode(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::setFirstSetup(bool) {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-void GameManager::setGameCenterEnabled(bool) {
-    // TODO: implement (recovered from binary, body unknown)
+void GameManager::setGameCenterEnabled(bool v) {
+    m_bGameCenterEnabled = v;
 }
 
 void GameManager::setLastScene(LastGameScene) {
@@ -368,15 +399,6 @@ void GameManager::setWasHigh(bool) {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void GameManager::setup() {
-    // TODO: implement (recovered from binary, body unknown)
-}
-
-GameManager* GameManager::sharedState() {
-    // TODO: implement (recovered from binary, body unknown)
-    return nullptr;
-}
-
 bool GameManager::shouldShowTutorial(int) {
     // TODO: implement (recovered from binary, body unknown)
     return false;
@@ -399,11 +421,17 @@ void GameManager::syncGCAchievements() {
 }
 
 void GameManager::toggleFX() {
-    // TODO: implement (recovered from binary, body unknown)
+    m_bFxEnabled = !m_bFxEnabled;
 }
 
 void GameManager::toggleMusic() {
-    // TODO: implement (recovered from binary, body unknown)
+    m_bMusicEnabled = !m_bMusicEnabled;
+    CocosDenshion::SimpleAudioEngine* audio =
+        CocosDenshion::SimpleAudioEngine::sharedEngine();
+    if (audio) {
+        if (m_bMusicEnabled) audio->resumeBackgroundMusic();
+        else                  audio->pauseBackgroundMusic();
+    }
 }
 
 void GameManager::unlockColor(int, bool) {
