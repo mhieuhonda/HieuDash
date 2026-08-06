@@ -15,9 +15,9 @@ void GameToolbox::doWeHaveInternet() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-int GameToolbox::getDropActionWDelay(float, float, float, cocos2d::CCNode*, void (cocos2d::CCObject::*)()) {
+cocos2d::CCAction* GameToolbox::getDropActionWDelay(float, float, float, cocos2d::CCNode*, void (cocos2d::CCObject::*)()) {
     // TODO: implement (recovered from binary, body unknown)
-    return 0;
+    return nullptr;
 }
 
 int GameToolbox::getDropActionWEnd(float, float, float, cocos2d::CCAction*, float) {
