@@ -11,7 +11,7 @@
 class ColoredSection : public cocos2d::CCLayerColor {
 public:
     ColoredSection();
-    ColoredSection* create(cocos2d::_ccColor3B, int, int);
+    static ColoredSection* create(cocos2d::_ccColor3B, int, int);
     int getCol();
     int getEndPos();
     cocos2d::CCPoint getStartPos();

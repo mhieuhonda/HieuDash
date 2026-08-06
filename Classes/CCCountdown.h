@@ -11,7 +11,7 @@
 class CCCountdown : public cocos2d::CCNode {
 public:
     CCCountdown();
-    CCCountdown* create();
+    static CCCountdown* create();
     bool init();
     void lapFinished();
     void setOpacity(unsigned char);

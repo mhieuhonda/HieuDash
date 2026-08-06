@@ -11,7 +11,7 @@
 class CustomListView : public cocos2d::CCLayer {
 public:
     CustomListView();
-    CustomListView* create(cocos2d::CCArray*, float, float, int, BoomListType);
+    static CustomListView* create(cocos2d::CCArray*, float, float, int, BoomListType);
     int getListCell(char const*);
     void loadCell(CCTableViewCell*, int);
     void setupList();

@@ -12,7 +12,7 @@ class CCLightFlash : public cocos2d::CCNode {
 public:
     CCLightFlash();
     void cleanupFlash();
-    CCLightFlash* create();
+    static CCLightFlash* create();
     void fadeAndRemove();
     int getFlashP();
     int getFlashZ();

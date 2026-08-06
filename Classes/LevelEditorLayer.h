@@ -24,11 +24,11 @@ public:
     void addToRedoList(UndoObject*);
     void addToSection(GameObject*);
     void addToUndoList(UndoObject*);
-    LevelEditorLayer* create(GJGameLevel*);
+    static LevelEditorLayer* create(GJGameLevel*);
     void createObject(char const*, cocos2d::CCPoint);
     void createObjectsFromSetup(std::string);
     PlayLayer* getGameLayer();
-    GJGameLevel* getLevel();
+    static GJGameLevel* getLevel();
     int getLevelDistance();
     int getLevelSettings();
     int getLevelString();
@@ -43,7 +43,7 @@ public:
     void removeObject(GameObject*);
     void removeObjectFromSection(GameObject*);
     void reorderObjectSection(GameObject*);
-    cocos2d::CCScene* scene(GJGameLevel*);
+    static cocos2d::CCScene* scene(GJGameLevel*);
     int sectionForPos(cocos2d::CCPoint);
     void setObjectCount(int);
     void typeExistsAtPosition(std::string, cocos2d::CCPoint, bool, bool, float);

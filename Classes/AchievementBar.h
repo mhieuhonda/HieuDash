@@ -11,7 +11,7 @@
 class AchievementBar : public cocos2d::CCNode {
 public:
     AchievementBar();
-    AchievementBar* create(char const*, char const*, char const*);
+    static AchievementBar* create(char const*, char const*, char const*);
     int getTargetScene();
     bool init(char const*, char const*, char const*);
     void setTargetScene(cocos2d::CCNode*);

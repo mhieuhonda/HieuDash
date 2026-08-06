@@ -11,7 +11,7 @@
 class InfoLayer : public cocos2d::CCLayer {
 public:
     InfoLayer();
-    InfoLayer* create(GJGameLevel*);
+    static InfoLayer* create(GJGameLevel*);
     bool init(GJGameLevel*);
     void keyBackClicked();
     void onClose();

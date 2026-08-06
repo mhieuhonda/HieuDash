@@ -11,7 +11,7 @@
 class CCAlertCircle : public cocos2d::CCNode {
 public:
     CCAlertCircle();
-    CCAlertCircle* create();
+    static CCAlertCircle* create();
     void draw();
     int getCircle();
     bool init();

@@ -11,7 +11,7 @@
 class RingObject : public cocos2d::CCSprite {
 public:
     RingObject();
-    RingObject* create(char const*);
+    static RingObject* create(char const*);
     bool init(char const*);
     void powerOffObject();
     void powerOnObject();

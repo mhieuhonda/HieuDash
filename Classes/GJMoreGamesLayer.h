@@ -11,7 +11,7 @@
 class GJMoreGamesLayer : public cocos2d::CCLayer {
 public:
     GJMoreGamesLayer();
-    GJMoreGamesLayer* create();
+    static GJMoreGamesLayer* create();
     void customSetup();
     ~GJMoreGamesLayer();
 };

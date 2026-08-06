@@ -14,7 +14,7 @@ public:
     void audioNext();
     void audioPrevious();
     void colorPickerClosed(ColorPickerPopup*);
-    LevelSettingsLayer* create(LevelSettingsObject*);
+    static LevelSettingsLayer* create(LevelSettingsObject*);
     int getDelegate();
     bool init(LevelSettingsObject*);
     void keyBackClicked();

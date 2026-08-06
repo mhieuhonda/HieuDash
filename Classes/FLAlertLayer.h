@@ -15,8 +15,8 @@ public:
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    FLAlertLayer* create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*);
-    FLAlertLayer* create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*, float);
+    static FLAlertLayer* create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*);
+    static FLAlertLayer* create(FLAlertLayerProtocol*, char const*, char const*, char const*, char const*, float);
     int getInternalLayer();
     int getPParent();
     int getReverseKeyBack();

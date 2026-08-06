@@ -16,7 +16,7 @@ public:
     void ccTableViewWillReloadCellForRowAtIndexPath(CCIndexPath&, CCTableViewCell*, CCTableView*);
     void cellForRowAtIndexPath(CCIndexPath&, CCTableView*);
     void cellHeightForRowAtIndexPath(CCIndexPath&, CCTableView*);
-    BoomListView* create(cocos2d::CCArray*, float, float, int, BoomListType);
+    static BoomListView* create(cocos2d::CCArray*, float, float, int, BoomListType);
     void didSelectRowAtIndexPath(CCIndexPath&, CCTableView*);
     void draw();
     int getListCell(char const*);

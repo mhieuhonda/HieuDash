@@ -11,7 +11,7 @@
 class CreatorLayer : public cocos2d::CCLayer {
 public:
     CreatorLayer();
-    CreatorLayer* create();
+    static CreatorLayer* create();
     bool init();
     void keyBackClicked();
     void onBack();

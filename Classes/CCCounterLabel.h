@@ -12,7 +12,7 @@ class CCCounterLabel : public cocos2d::CCLabelTTF {
 public:
     CCCounterLabel();
     void calculateStepSize();
-    CCCounterLabel* create(char const*, char const*, int, FormatterType);
+    static CCCounterLabel* create(char const*, char const*, int, FormatterType);
     void disableCounter();
     void enableCounter();
     void fastUpdateCounter();

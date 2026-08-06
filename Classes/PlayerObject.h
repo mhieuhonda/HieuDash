@@ -14,7 +14,7 @@ public:
     void activateStreak();
     void checkSnapJumpToObject(GameObject*);
     void collidedWithObject(float, GameObject*);
-    PlayerObject* create(int, cocos2d::CCLayer*);
+    static PlayerObject* create(int, cocos2d::CCLayer*);
     void deactivateParticle();
     void deactivateStreak();
     void flipGravity(bool);

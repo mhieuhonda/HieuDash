@@ -11,7 +11,7 @@
 class BonusDropdown : public cocos2d::CCLayer {
 public:
     BonusDropdown();
-    BonusDropdown* create(std::string, int);
+    static BonusDropdown* create(std::string, int);
     int getTargetScene();
     bool init(std::string, int);
     void setTargetScene(cocos2d::CCNode*);

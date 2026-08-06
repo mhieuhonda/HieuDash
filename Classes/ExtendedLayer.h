@@ -11,7 +11,7 @@
 class ExtendedLayer : public cocos2d::CCLayer {
 public:
     ExtendedLayer();
-    ExtendedLayer* create();
+    static ExtendedLayer* create();
     int getDelegate();
     bool init();
     void setDelegate(BoomScrollLayerDelegate*);

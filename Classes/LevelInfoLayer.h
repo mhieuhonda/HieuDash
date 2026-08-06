@@ -13,7 +13,7 @@ public:
     virtual void FLAlert_Clicked(FLAlertLayer*, bool);
     LevelInfoLayer();
     void confirmDelete();
-    LevelInfoLayer* create(GJGameLevel*);
+    static LevelInfoLayer* create(GJGameLevel*);
     void incrementLikes();
     bool init(GJGameLevel*);
     void keyBackClicked();
@@ -30,7 +30,7 @@ public:
     void onRate();
     void onUpdate();
     void rateLevelClosed();
-    cocos2d::CCScene* scene(GJGameLevel*);
+    static cocos2d::CCScene* scene(GJGameLevel*);
     void setupLevelInfo();
     void setupProgressBars();
     void showUpdateAlert(UpdateResponse);

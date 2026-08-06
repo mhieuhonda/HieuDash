@@ -16,7 +16,7 @@ public:
     void addPath(char const*);
     void clearCache();
     bool init();
-    CCContentManager* sharedManager();
+    static CCContentManager* sharedManager();
     ~CCContentManager();
 };
 

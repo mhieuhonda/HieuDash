@@ -43,7 +43,7 @@ public:
     void cameraMoveY(float, float, float);
     void checkCollisions(float);
     void checkSpawnObjects();
-    PlayLayer* create(GJGameLevel*);
+    static PlayLayer* create(GJGameLevel*);
     void createCheckpoint();
     void createObjectsFromSetup(std::string);
     void destroyPlayer();
@@ -59,7 +59,7 @@ public:
     PlayLayer* getGameLayer();
     int getJumps();
     CheckpointObject* getLastCheckpoint();
-    GJGameLevel* getLevel();
+    static GJGameLevel* getLevel();
     PlayerObject* getPlayer();
     bool getPracticeMode();
     int getRelativeMod(cocos2d::CCPoint, float, float, float);
@@ -83,7 +83,7 @@ public:
     void reorderObjectSection(GameObject*);
     void resetLevel();
     void resume();
-    cocos2d::CCScene* scene(GJGameLevel*);
+    static cocos2d::CCScene* scene(GJGameLevel*);
     int sectionForPos(cocos2d::CCPoint);
     void setActiveEnterEffect(EnterEffect);
     void setCleanReset(bool);

@@ -12,7 +12,7 @@ class OptionsLayer : public cocos2d::CCLayer {
 public:
     virtual void FLAlert_Clicked(FLAlertLayer*, bool);
     OptionsLayer();
-    OptionsLayer* create();
+    static OptionsLayer* create();
     void customSetup();
     void exitLayer();
     void layerHidden();

@@ -11,7 +11,7 @@
 class EndLevelLayer : public cocos2d::CCLayer {
 public:
     EndLevelLayer();
-    EndLevelLayer* create();
+    static EndLevelLayer* create();
     void customSetup();
     void exitLayer();
     int getEndText();

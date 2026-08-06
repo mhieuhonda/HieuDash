@@ -11,7 +11,7 @@
 class PauseLayer : public cocos2d::CCLayer {
 public:
     PauseLayer();
-    PauseLayer* create();
+    static PauseLayer* create();
     void customSetup();
     void keyBackClicked();
     void onAutoCheck();

@@ -12,7 +12,7 @@ class EditorPauseLayer : public cocos2d::CCLayer {
 public:
     EditorPauseLayer();
     virtual void FLAlert_Clicked(FLAlertLayer*, bool);
-    EditorPauseLayer* create(LevelEditorLayer*);
+    static EditorPauseLayer* create(LevelEditorLayer*);
     void customSetup();
     bool init(LevelEditorLayer*);
     void keyBackClicked();

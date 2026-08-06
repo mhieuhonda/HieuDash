@@ -11,7 +11,7 @@
 class UploadPopup : public cocos2d::CCLayer {
 public:
     UploadPopup();
-    UploadPopup* create(GJGameLevel*);
+    static UploadPopup* create(GJGameLevel*);
     bool init(GJGameLevel*);
     void keyBackClicked();
     void levelUploadFailed(GJGameLevel*);

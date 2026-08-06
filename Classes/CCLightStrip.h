@@ -11,7 +11,7 @@
 class CCLightStrip : public cocos2d::CCNode {
 public:
     CCLightStrip();
-    CCLightStrip* create(float, float, float, float, float);
+    static CCLightStrip* create(float, float, float, float, float);
     void draw();
     int getColor();
     int getHeight();

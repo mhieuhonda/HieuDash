@@ -14,7 +14,7 @@ public:
     virtual void FLAlert_Clicked(FLAlertLayer*, bool);
     void closeTextInputs();
     void confirmDelete();
-    EditLevelLayer* create(GJGameLevel*);
+    static EditLevelLayer* create(GJGameLevel*);
     bool init(GJGameLevel*);
     void keyBackClicked();
     void onBack();
@@ -24,7 +24,7 @@ public:
     void onPlay();
     void onShare();
     void onTest();
-    cocos2d::CCScene* scene(GJGameLevel*);
+    static cocos2d::CCScene* scene(GJGameLevel*);
     void setupLevelInfo();
     void textChanged(CCTextInputNode*);
     void textInputClosed(CCTextInputNode*);

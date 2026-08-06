@@ -12,7 +12,7 @@ class ColorPickerPopup : public cocos2d::CCLayer {
 public:
     ColorPickerPopup();
     void closeColorSelect();
-    ColorPickerPopup* create();
+    static ColorPickerPopup* create();
     int getColorValue();
     int getDelegate();
     bool init();

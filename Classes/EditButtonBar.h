@@ -11,7 +11,7 @@
 class EditButtonBar : public cocos2d::CCNode {
 public:
     EditButtonBar();
-    EditButtonBar* create(cocos2d::CCArray*, cocos2d::CCPoint);
+    static EditButtonBar* create(cocos2d::CCArray*, cocos2d::CCPoint);
     bool init(cocos2d::CCArray*, cocos2d::CCPoint);
     void onLeft();
     void onRight();

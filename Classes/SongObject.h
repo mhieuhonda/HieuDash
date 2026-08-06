@@ -11,7 +11,7 @@
 class SongObject : public cocos2d::CCObject {
 public:
     SongObject();
-    SongObject* create(int);
+    static SongObject* create(int);
     int getAudioTrack();
     bool init(int);
     ~SongObject();

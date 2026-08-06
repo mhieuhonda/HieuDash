@@ -15,7 +15,7 @@ public:
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    CCTextInputNode* create(float, float, char const*, char const*, int, char const*);
+    static CCTextInputNode* create(float, float, char const*, char const*, int, char const*);
     int getCharLimit();
     int getDelegate();
     int getLabel();

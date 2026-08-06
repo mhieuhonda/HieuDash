@@ -11,7 +11,7 @@
 class CCContentLayer : public cocos2d::CCLayer {
 public:
     CCContentLayer();
-    CCContentLayer* create(cocos2d::_ccColor4B const&, float, float);
+    static CCContentLayer* create(cocos2d::_ccColor4B const&, float, float);
     void setPosition(cocos2d::CCPoint const&);
     ~CCContentLayer();
 };

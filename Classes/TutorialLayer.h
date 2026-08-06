@@ -11,7 +11,7 @@
 class TutorialLayer : public cocos2d::CCLayer {
 public:
     TutorialLayer();
-    TutorialLayer* create();
+    static TutorialLayer* create();
     bool init();
     void keyBackClicked();
     void loadPage(int);

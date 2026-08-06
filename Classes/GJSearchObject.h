@@ -11,7 +11,7 @@
 class GJSearchObject : public cocos2d::CCObject {
 public:
     GJSearchObject();
-    GJSearchObject* create(SearchType, std::string, std::string, std::string, int);
+    static GJSearchObject* create(SearchType, std::string, std::string, std::string, int);
     void createFromKey(char const*);
     int getDifficultyStr();
     int getKey();

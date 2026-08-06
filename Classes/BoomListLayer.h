@@ -11,7 +11,7 @@
 class BoomListLayer : public cocos2d::CCLayer {
 public:
     BoomListLayer();
-    BoomListLayer* create(BoomListView*, char const*);
+    static BoomListLayer* create(BoomListView*, char const*);
     bool init(BoomListView*, char const*);
     ~BoomListLayer();
 };

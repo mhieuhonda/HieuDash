@@ -24,7 +24,7 @@ public:
     void checkFirstCell(CCTableViewCell*);
     void checkLastCell(CCTableViewCell*);
     void claimTouch(cocos2d::CCTouch*);
-    CCTableView* create(CCTableViewDelegate*, CCTableViewDataSource*, cocos2d::CCRect);
+    static CCTableView* create(CCTableViewDelegate*, CCTableViewDataSource*, cocos2d::CCRect);
     void deleteCCTableViewCell(CCTableViewCell*);
     void dequeueReusableCellWithIdentifier(char const*);
     int getBeginLocation();

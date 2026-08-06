@@ -19,7 +19,7 @@ public:
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void claimTouch(cocos2d::CCTouch*);
-    BoomScrollLayer* create(cocos2d::CCArray*, int, bool);
+    static BoomScrollLayer* create(cocos2d::CCArray*, int, bool);
     int getCurrentScreen();
     int getDelegate();
     int getInternalLayer();

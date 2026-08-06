@@ -16,7 +16,7 @@ public:
     int getAudioFileName(int);
     int getAudioString(int);
     int getAudioTitle(int);
-    GJGameLevel* getLevel(int);
+    static GJGameLevel* getLevel(int);
     void nameForArtist(int);
     void ngURLForArtist(int);
     void urlForAudio(int);

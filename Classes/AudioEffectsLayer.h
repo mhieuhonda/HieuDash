@@ -12,7 +12,7 @@ class AudioEffectsLayer : public cocos2d::CCLayer {
 public:
     AudioEffectsLayer();
     void audioStep(float);
-    AudioEffectsLayer* create(std::string);
+    static AudioEffectsLayer* create(std::string);
     void draw();
     int getAudioScale();
     int getBGSquare();

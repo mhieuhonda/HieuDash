@@ -11,7 +11,7 @@
 class RateLevelLayer : public cocos2d::CCLayer {
 public:
     RateLevelLayer();
-    RateLevelLayer* create(int);
+    static RateLevelLayer* create(int);
     int getDelegate();
     bool init(int);
     void keyBackClicked();

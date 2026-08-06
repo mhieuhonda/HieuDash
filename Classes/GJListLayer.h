@@ -11,7 +11,7 @@
 class GJListLayer : public cocos2d::CCLayer {
 public:
     GJListLayer();
-    GJListLayer* create(BoomListView*, char const*, cocos2d::_ccColor4B, float, float);
+    static GJListLayer* create(BoomListView*, char const*, cocos2d::_ccColor4B, float, float);
     bool init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float);
     ~GJListLayer();
 };

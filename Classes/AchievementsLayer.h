@@ -11,7 +11,7 @@
 class AchievementsLayer : public cocos2d::CCLayer {
 public:
     AchievementsLayer();
-    AchievementsLayer* create();
+    static AchievementsLayer* create();
     void customSetup();
     ~AchievementsLayer();
 };

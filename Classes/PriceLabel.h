@@ -11,7 +11,7 @@
 class PriceLabel : public cocos2d::CCLabelBMFont {
 public:
     PriceLabel();
-    PriceLabel* create(int);
+    static PriceLabel* create(int);
     bool init(int);
     void setColor(cocos2d::_ccColor3B);
     void setOpacity(float);

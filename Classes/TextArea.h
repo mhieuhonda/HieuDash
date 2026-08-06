@@ -12,8 +12,8 @@ class TextArea : public cocos2d::CCNode {
 public:
     TextArea();
     void colorAllCharactersTo(cocos2d::_ccColor3B);
-    TextArea* create(char const*, float, int, cocos2d::CCPoint, char const*);
-    TextArea* create(char const*, float, int, cocos2d::CCPoint, char const*, float);
+    static TextArea* create(char const*, float, int, cocos2d::CCPoint, char const*);
+    static TextArea* create(char const*, float, int, cocos2d::CCPoint, char const*, float);
     void draw();
     void fadeIn(float, bool);
     void fadeOut(float);

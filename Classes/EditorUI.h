@@ -20,7 +20,7 @@ public:
     void clickOnPosition(cocos2d::CCPoint);
     void colorSelectClosed(cocos2d::_ccColor3B);
     void constrainGameLayerPosition();
-    EditorUI* create(LevelEditorLayer*);
+    static EditorUI* create(LevelEditorLayer*);
     void createMoveMenu();
     void deselectAll();
     void deselectObject();

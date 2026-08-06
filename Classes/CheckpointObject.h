@@ -22,7 +22,7 @@ public:
     double m_dTime;
 
     // --- Legacy properties ---
-    CheckpointObject* create();
+    static CheckpointObject* create();
     EnterEffect getActiveEnterEffect();
     int getBGColor();
     cocos2d::CCPoint getCameraPos();

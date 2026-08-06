@@ -15,7 +15,7 @@ public:
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    CCBlockLayer* create();
+    static CCBlockLayer* create();
     void customSetup();
     void disableUI();
     void draw();

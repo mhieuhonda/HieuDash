@@ -11,7 +11,7 @@
 class StatsObject : public cocos2d::CCObject {
 public:
     StatsObject();
-    StatsObject* create(char const*, int);
+    static StatsObject* create(char const*, int);
     int getKey();
     int getValue();
     bool init(char const*, int);

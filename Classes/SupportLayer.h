@@ -11,7 +11,7 @@
 class SupportLayer : public cocos2d::CCLayer {
 public:
     SupportLayer();
-    SupportLayer* create();
+    static SupportLayer* create();
     void customSetup();
     void exitLayer();
     void onCocos2d();

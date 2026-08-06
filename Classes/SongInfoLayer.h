@@ -11,7 +11,7 @@
 class SongInfoLayer : public cocos2d::CCLayer {
 public:
     SongInfoLayer();
-    SongInfoLayer* create(SongObject*);
+    static SongInfoLayer* create(SongObject*);
     bool init(SongObject*);
     void keyBackClicked();
     void onClose();

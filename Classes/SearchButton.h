@@ -11,7 +11,7 @@
 class SearchButton : public cocos2d::CCMenuItemSprite {
 public:
     SearchButton();
-    SearchButton* create(char const*, char const*, float, char const*);
+    static SearchButton* create(char const*, char const*, float, char const*);
     int getLabel();
     int getSprite();
     bool init(char const*, char const*, float, char const*);

@@ -12,7 +12,7 @@ class DrawGridLayer : public cocos2d::CCLayer {
 public:
     DrawGridLayer();
     void addToEffects(GameObject*);
-    DrawGridLayer* create(cocos2d::CCNode*);
+    static DrawGridLayer* create(cocos2d::CCNode*);
     void draw();
     bool init(cocos2d::CCNode*);
     void loadBPM(float);

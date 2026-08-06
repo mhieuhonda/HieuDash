@@ -13,7 +13,7 @@ public:
     LevelSearchLayer();
     void checkDiff(int);
     void checkTime(int);
-    LevelSearchLayer* create();
+    static LevelSearchLayer* create();
     int getDiffKey(int);
     int getLevelLenKey();
     int getSearchDiffKey();

@@ -29,8 +29,8 @@ public:
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    GJDropDownLayer* create(char const*);
-    GJDropDownLayer* create(char const*, float);
+    static GJDropDownLayer* create(char const*);
+    static GJDropDownLayer* create(char const*, float);
     void customSetup();
     void disableUI();
     void draw();

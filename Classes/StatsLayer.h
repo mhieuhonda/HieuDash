@@ -11,7 +11,7 @@
 class StatsLayer : public cocos2d::CCLayer {
 public:
     StatsLayer();
-    StatsLayer* create();
+    static StatsLayer* create();
     void customSetup();
     ~StatsLayer();
 };

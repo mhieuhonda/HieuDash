@@ -11,7 +11,7 @@
 class ShareLevelLayer : public cocos2d::CCLayer {
 public:
     ShareLevelLayer();
-    ShareLevelLayer* create(GJGameLevel*);
+    static ShareLevelLayer* create(GJGameLevel*);
     bool init(GJGameLevel*);
     void keyBackClicked();
     void onClose();

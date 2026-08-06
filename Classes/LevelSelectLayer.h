@@ -12,7 +12,7 @@ class LevelSelectLayer : public cocos2d::CCLayer {
 public:
     LevelSelectLayer();
     void colorForPage(int);
-    LevelSelectLayer* create(int);
+    static LevelSelectLayer* create(int);
     int getColorValue(int, int, float);
     bool init(int);
     void keyBackClicked();
@@ -20,7 +20,7 @@ public:
     void onDownload();
     void onNext();
     void onPrev();
-    cocos2d::CCScene* scene(int);
+    static cocos2d::CCScene* scene(int);
     void scrollLayerMoved(cocos2d::CCPoint);
     ~LevelSelectLayer();
 };

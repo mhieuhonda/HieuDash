@@ -12,7 +12,7 @@ class CCCircleWave : public cocos2d::CCNode {
 public:
     CCCircleWave();
     void baseSetup(float);
-    CCCircleWave* create(float, float, float, bool);
+    static CCCircleWave* create(float, float, float, bool);
     void draw();
     void followObject(cocos2d::CCNode*);
     int getCircleMode();

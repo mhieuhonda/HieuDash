@@ -11,7 +11,7 @@
 class LevelPage : public cocos2d::CCNode {
 public:
     LevelPage();
-    LevelPage* create(GJGameLevel*);
+    static LevelPage* create(GJGameLevel*);
     bool init(GJGameLevel*);
     void onPlay();
     ~LevelPage();

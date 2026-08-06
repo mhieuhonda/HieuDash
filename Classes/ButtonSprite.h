@@ -21,14 +21,14 @@ public:
     std::string m_sString;
 
     // --- Methods ---
-    ButtonSprite* create(char const*);
-    ButtonSprite* create(char const*, float);
-    ButtonSprite* create(char const*, int, int, float, bool);
-    ButtonSprite* create(char const*, int, int, float, bool, char const*, char const*);
-    ButtonSprite* create(char const*, int, int, float, bool, char const*, char const*, float);
-    ButtonSprite* create(cocos2d::CCSprite*);
-    ButtonSprite* create(cocos2d::CCSprite*, int, int, float, float, bool);
-    ButtonSprite* create(cocos2d::CCSprite*, int, int, float, float, bool, char const*);
+    static ButtonSprite* create(char const*);
+    static ButtonSprite* create(char const*, float);
+    static ButtonSprite* create(char const*, int, int, float, bool);
+    static ButtonSprite* create(char const*, int, int, float, bool, char const*, char const*);
+    static ButtonSprite* create(char const*, int, int, float, bool, char const*, char const*, float);
+    static ButtonSprite* create(cocos2d::CCSprite*);
+    static ButtonSprite* create(cocos2d::CCSprite*, int, int, float, float, bool);
+    static ButtonSprite* create(cocos2d::CCSprite*, int, int, float, float, bool, char const*);
     bool init(char const*, int, int, float, bool, char const*, char const*, float);
     bool init(cocos2d::CCSprite*, int, int, float, float, bool, char const*);
     void setColor(cocos2d::_ccColor3B);

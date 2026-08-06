@@ -36,7 +36,7 @@ public:
     void setBGMusicVolume(float);
     void setBGVol(float);
     void setup();
-    GameSoundManager* sharedManager();
+    static GameSoundManager* sharedManager();
     void stopAllLoopedSounds();
     void stopLoopedSound(char const*, bool);
     void updateLoopedVolume(char const*, float);

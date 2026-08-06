@@ -11,7 +11,7 @@
 class SongsLayer : public cocos2d::CCLayer {
 public:
     SongsLayer();
-    SongsLayer* create();
+    static SongsLayer* create();
     void customSetup();
     ~SongsLayer();
 };

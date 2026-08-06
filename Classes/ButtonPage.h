@@ -11,7 +11,7 @@
 class ButtonPage : public cocos2d::CCNode {
 public:
     ButtonPage();
-    ButtonPage* create(cocos2d::CCArray*, cocos2d::CCPoint);
+    static ButtonPage* create(cocos2d::CCArray*, cocos2d::CCPoint);
     bool init(cocos2d::CCArray*, cocos2d::CCPoint);
     ~ButtonPage();
 };

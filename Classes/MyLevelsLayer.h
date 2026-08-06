@@ -11,7 +11,7 @@
 class MyLevelsLayer : public cocos2d::CCLayer {
 public:
     MyLevelsLayer();
-    MyLevelsLayer* create();
+    static MyLevelsLayer* create();
     bool init();
     void keyBackClicked();
     void onBack();

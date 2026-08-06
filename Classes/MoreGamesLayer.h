@@ -11,7 +11,7 @@
 class MoreGamesLayer : public cocos2d::CCLayer {
 public:
     MoreGamesLayer();
-    MoreGamesLayer* create();
+    static MoreGamesLayer* create();
     void customSetup();
     void updateListBGColor(cocos2d::_ccColor3B);
     ~MoreGamesLayer();

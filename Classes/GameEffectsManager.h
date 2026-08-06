@@ -12,7 +12,7 @@ class GameEffectsManager : public cocos2d::CCObject {
 public:
     GameEffectsManager();
     void addParticleEffect(cocos2d::CCParticleSystemQuad*, int);
-    GameEffectsManager* create(PlayLayer*);
+    static GameEffectsManager* create(PlayLayer*);
     bool init(PlayLayer*);
     void scaleParticle(cocos2d::CCParticleSystemQuad*, float);
     ~GameEffectsManager();

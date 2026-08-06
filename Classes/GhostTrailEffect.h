@@ -20,7 +20,7 @@ public:
     cocos2d::CCSpriteBatchNode* m_pBatchNode;
 
     // --- Methods ---
-    GhostTrailEffect* create();
+    static GhostTrailEffect* create();
     void doBlendAdditive();
     void draw();
     int getBlendFunc();

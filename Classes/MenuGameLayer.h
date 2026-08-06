@@ -11,7 +11,7 @@
 class MenuGameLayer : public cocos2d::CCLayer {
 public:
     MenuGameLayer();
-    MenuGameLayer* create();
+    static MenuGameLayer* create();
     bool init();
     void tryJump();
     void update(float);

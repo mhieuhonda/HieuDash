@@ -62,8 +62,8 @@ public:
 
     // --- Methods ---
     void canEncode();
-    GJGameLevel* create();
-    GJGameLevel* create(cocos2d::CCDictionary*);
+    static GJGameLevel* create();
+    static GJGameLevel* create(cocos2d::CCDictionary*);
     void createWithCoder(DS_Dictionary*);
     void encodeWithCoder(DS_Dictionary*);
     int getAttempts();

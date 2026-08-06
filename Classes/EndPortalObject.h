@@ -12,7 +12,7 @@ class EndPortalObject : public cocos2d::CCSprite {
 public:
     EndPortalObject();
     void calculateSpawnXPos();
-    EndPortalObject* create();
+    static EndPortalObject* create();
     bool init();
     void setPosition(cocos2d::CCPoint const&);
     void setVisible(bool);

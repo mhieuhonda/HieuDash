@@ -35,7 +35,7 @@ public:
     int m_nSongID;
 
     // --- Legacy methods ---
-    LevelSettingsObject* create();
+    static LevelSettingsObject* create();
     int getAudioTrack();
     int getSaveString();
     int getStartBGColor();

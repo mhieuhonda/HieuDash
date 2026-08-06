@@ -19,7 +19,7 @@ public:
     bool m_bRedo;
 
     // --- Methods ---
-    UndoObject* create(GameObject*, EditCommand);
+    static UndoObject* create(GameObject*, EditCommand);
     int getCommand();
     int getObject();
     bool init(GameObject*, EditCommand);

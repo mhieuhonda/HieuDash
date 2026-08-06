@@ -54,7 +54,7 @@ public:
     void activateObject();
     void addGlow();
     void calculateSpawnXPos();
-    GameObject* create(char const*);
+    static GameObject* create(char const*);
     void createAndAddParticle(char const*, int);
     void createObject(char const*);
     void customScaleMod(char const*);

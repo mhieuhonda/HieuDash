@@ -21,7 +21,7 @@ public:
     void resumeAllEffects();
     void resumeEffect(unsigned int);
     void setEffectsVolume(float);
-    SimpleAudioEngineOpenSL* sharedEngine();
+    static SimpleAudioEngineOpenSL* sharedEngine();
     void stopAllEffects();
     void stopEffect(unsigned int);
     void unloadEffect(char const*);

@@ -11,7 +11,7 @@
 class LevelBrowserLayer : public cocos2d::CCLayer {
 public:
     LevelBrowserLayer();
-    LevelBrowserLayer* create(GJSearchObject*);
+    static LevelBrowserLayer* create(GJSearchObject*);
     bool init(GJSearchObject*);
     bool isCorrect(char const*);
     void keyBackClicked();
@@ -21,7 +21,7 @@ public:
     void onBack();
     void onNextPage();
     void onPrevPage();
-    cocos2d::CCScene* scene(GJSearchObject*);
+    static cocos2d::CCScene* scene(GJSearchObject*);
     void setSearchObject(GJSearchObject*);
     void setupLevelBrowser(cocos2d::CCArray*);
     void setupPageInfo(std::string, char const*);
