@@ -9,6 +9,11 @@
 // ${COCOS2DX_ROOT} is on the include path, so "platform/win32/CCEGLView.h"
 // resolves correctly to cocos2d/cocos2dx/platform/win32/CCEGLView.h.
 #include "platform/win32/CCEGLView.h"
+// v0.7 round 8 fix: <tchar.h> defines the _tWinMain macro that expands
+// to wWinMain under UNICODE. Without this include the macro is undefined
+// and the linker sees an empty symbol table -> LNK2019 unresolved
+// external symbol wWinMain.
+#include <tchar.h>
 
 USING_NS_CC;
 
