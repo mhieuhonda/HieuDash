@@ -584,7 +584,6 @@ class CCTableViewDataSource;
 class CCTableViewDelegate;
 class CCTextInputNode;
 class CheckpointObject;
-class CocosDenshion;
 class ColorPickerDelegate;
 class ColorPickerPopup;
 class ColorSelectDelegate;
