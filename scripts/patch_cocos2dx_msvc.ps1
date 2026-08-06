@@ -65,7 +65,7 @@ Patch-File -File $f `
 $f = "$CocosRoot/cocos2dx/textures/CCTextureCache.cpp"
 $oldIncludeCRLF = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8)`r`n#include <pthread.h>`r`n#else`r`n#include `"CCPThreadWinRT.h`"`r`n#include <ppl.h>`r`n#include <ppltasks.h>`r`nusing namespace concurrency;`r`n#endif"
 $oldIncludeLF   = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8)`n#include <pthread.h>`n#else`n#include `"CCPThreadWinRT.h`"`n#include <ppl.h>`n#include <ppltasks.h>`nusing namespace concurrency;`n#endif"
-$newInclude = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8) && (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`r`n#include <pthread.h>`r`n#elif (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)`r`n#include `"CCPThreadWinRT.h`"`r`n#include <ppl.h>`r`n#include <ppltasks.h>`r`nusing namespace concurrency;`r`n#else`r`n// v0.7: pthread shim for Win32 - we never call pthread_ functions on`r`n// Windows (CCThread-win32.cpp wraps Windows threads instead), but the`r`n// type names are used in struct field declarations.`r`ntypedef void* pthread_t;`r`ntypedef void* pthread_mutex_t;`r`ntypedef int pthread_cond_t;`r`ntypedef int pthread_attr_t;`r`n#endif"
+$newInclude = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8) && (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`r`n#include <pthread.h>`r`n#elif (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)`r`n#include `"CCPThreadWinRT.h`"`r`n#include <ppl.h>`r`n#include <ppltasks.h>`r`nusing namespace concurrency;`r`n#else`r`n// v0.7: pthread shim for Win32 - we never call pthread_ functions on`r`n// Windows (CCThread-win32.cpp wraps Windows threads instead), but the`r`n// type names AND function calls appear in the async-texture-load path.`r`n// Provide no-op stubs so the file compiles AND links.`r`ntypedef void* pthread_t;`r`ntypedef void* pthread_mutex_t;`r`ntypedef int  pthread_cond_t;`r`ntypedef int  pthread_attr_t;`r`n#ifndef pthread_mutex_init`r`nstatic inline int pthread_mutex_init(pthread_mutex_t*, const void*) { return 0; }`r`n#endif`r`n#ifndef pthread_mutex_destroy`r`nstatic inline int pthread_mutex_destroy(pthread_mutex_t*) { return 0; }`r`n#endif`r`n#ifndef pthread_mutex_lock`r`nstatic inline int pthread_mutex_lock(pthread_mutex_t*) { return 0; }`r`n#endif`r`n#ifndef pthread_mutex_unlock`r`nstatic inline int pthread_mutex_unlock(pthread_mutex_t*) { return 0; }`r`n#endif`r`n#ifndef pthread_cond_init`r`nstatic inline int pthread_cond_init(pthread_cond_t*, const void*) { return 0; }`r`n#endif`r`n#ifndef pthread_cond_destroy`r`nstatic inline int pthread_cond_destroy(pthread_cond_t*) { return 0; }`r`n#endif`r`n#ifndef pthread_cond_wait`r`nstatic inline int pthread_cond_wait(pthread_cond_t*, pthread_mutex_t*) { return 0; }`r`n#endif`r`n#ifndef pthread_cond_signal`r`nstatic inline int pthread_cond_signal(pthread_cond_t*) { return 0; }`r`n#endif`r`n#ifndef pthread_create`r`nstatic inline int pthread_create(pthread_t*, const void*, void*(*)(void*), void*) { return 0; }`r`n#endif`r`n#endif"
 Patch-File -File $f -Find $oldIncludeCRLF -Replace $newInclude
 Patch-File -File $f -Find $oldIncludeLF   -Replace $newInclude
 
@@ -81,19 +81,24 @@ Patch-File -File $f -Find "AddFontResource(pwszBuffer);"    -Replace "AddFontRes
 # -----------------------------------------------------------------------------
 # 5. CCEGLView.cpp (win32): APPBARDATA / SHAppBarMessage / ABM_GETTASKBARPOS
 #    are declared in <shellapi.h>. WIN32_LEAN_AND_MEAN excludes it from
-#    <windows.h>, so include it explicitly.
+#    <windows.h>, so include both explicitly at the top of the file
+#    (windows.h MUST come before shellapi.h because shellapi.h depends
+#    on macros like EXTERN_C, DECLSPEC_IMPORT, HDROP that windef.h
+#    defines).
 # -----------------------------------------------------------------------------
 $f = "$CocosRoot/cocos2dx/platform/win32/CCEGLView.cpp"
 if (Test-Path $f) {
     $content = Get-Content $f -Raw -Encoding UTF8
     if ($content -notmatch "#include <shellapi.h>") {
-        # Insert after the first #include <windows.h> (or after WIN32_LEAN_AND_MEAN define)
-        $new = $content -replace '(#include\s*<windows\.h>)', "`$1`r`n// v0.7: APPBARDATA / SHAppBarMessage / ABM_GETTASKBARPOS live here`r`n#include <shellapi.h>"
-        if ($new -eq $content) {
-            # No <windows.h> include found - try inserting at the top after the copyright block
-            $new = $content -replace '(^//.*\r?\n)*', "`$0`r`n#include <shellapi.h>`r`n"
+        # Find the first #include line and insert windows.h + shellapi.h before it.
+        # If windows.h is already included somewhere, just add shellapi.h after it.
+        if ($content -match "(?ms)^(#include\s*<windows\.h>\s*\r?\n)") {
+            $content = $content -replace "(?m)^(#include\s*<windows\.h>\s*\r?\n)", "`$1// v0.7: APPBARDATA / SHAppBarMessage / ABM_GETTASKBARPOS live here`r`n#include <shellapi.h>`r`n"
+        } else {
+            # No direct <windows.h> include - insert both at the first #include line
+            $content = $content -replace "(?m)^(#include\s*\"[^\"]+\"\s*\r?\n)", "// v0.7: shellapi.h needs windows.h preamble first`r`n#include <windows.h>`r`n#include <shellapi.h>`r`n`$1"
         }
-        Set-Content $f -Value $new -NoNewline -Encoding UTF8
+        Set-Content $f -Value $content -NoNewline -Encoding UTF8
         Write-Host "  PATCHED (shellapi.h): $f"
     } else {
         Write-Host "  already has shellapi.h: $f"

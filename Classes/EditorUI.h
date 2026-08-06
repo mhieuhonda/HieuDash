@@ -28,15 +28,16 @@ public:
     void draw();
     void editObject();
     void enableButton(CCMenuItemSpriteExtra*);
-    // v0.7 fix: MSVC C4430 - missing return type. Pattern matches
-    // disableButton/enableButton which take CCMenuItemSpriteExtra*.
-    CCMenuItemSpriteExtra* getButton(char const*, int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*);
+    // v0.7 fix: MSVC C4430 - missing return type. The .cpp stub returns
+    // int (placeholder); keep the header consistent so the signatures
+    // match on all compilers.
+    int getButton(char const*, int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*);
     int getCreateBtn(char const*, int);
     bool getEditMode();
     int getGridSnappedPos(cocos2d::CCPoint);
     int getModeBtn(char const*, int);
     int getRelativeOffset(GameObject*);
-    CCMenuItemSpriteExtra* getSpriteButton(char const*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float);
+    int getSpriteButton(char const*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float);
     int getTouchPoint(cocos2d::CCTouch*, cocos2d::CCEvent*);
     int getXMin();
     bool init(LevelEditorLayer*);
