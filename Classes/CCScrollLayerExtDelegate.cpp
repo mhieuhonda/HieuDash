@@ -7,7 +7,7 @@ CCScrollLayerExtDelegate::CCScrollLayerExtDelegate() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-void CCScrollLayerExtDelegate::scrllViewWillBeginDecelerating(CCScrollLayerExt*) {
+void CCScrollLayerExtDelegate::scrollViewWillBeginDecelerating(CCScrollLayerExt*) {
     // TODO: implement (recovered from binary, body unknown)
 }
 

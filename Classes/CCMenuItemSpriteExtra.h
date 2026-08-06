@@ -12,14 +12,14 @@ class CCMenuItemSpriteExtra : public cocos2d::CCMenuItemSprite {
 public:
     CCMenuItemSpriteExtra();
     void activate();
-    create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
+    static CCMenuItemSpriteExtra* create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
     int getClickSound();
     int getDarkenClick();
     int getOriginalScale();
     int getScaleVar();
     int getShouldAnimate();
     int getVolume();
-    init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
+    bool init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
     void selected();
     void setClickSound(char const*);
     void setDarkenClick(bool);
