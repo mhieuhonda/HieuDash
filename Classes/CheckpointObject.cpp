@@ -14,6 +14,8 @@ CheckpointObject* CheckpointObject::create() {
 
 EnterEffect CheckpointObject::getActiveEnterEffect() {
     // TODO: implement (recovered from binary, body unknown)
+    // v0.7 fix: MSVC C4716 - non-void function must return a value.
+    return static_cast<EnterEffect>(0);
 }
 
 int CheckpointObject::getBGColor() {

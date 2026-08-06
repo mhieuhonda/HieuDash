@@ -28,13 +28,15 @@ public:
     void draw();
     void editObject();
     void enableButton(CCMenuItemSpriteExtra*);
-    getButton(char const*, int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*);
+    // v0.7 fix: MSVC C4430 - missing return type. Pattern matches
+    // disableButton/enableButton which take CCMenuItemSpriteExtra*.
+    CCMenuItemSpriteExtra* getButton(char const*, int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*);
     int getCreateBtn(char const*, int);
     bool getEditMode();
     int getGridSnappedPos(cocos2d::CCPoint);
     int getModeBtn(char const*, int);
     int getRelativeOffset(GameObject*);
-    getSpriteButton(char const*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float);
+    CCMenuItemSpriteExtra* getSpriteButton(char const*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float);
     int getTouchPoint(cocos2d::CCTouch*, cocos2d::CCEvent*);
     int getXMin();
     bool init(LevelEditorLayer*);

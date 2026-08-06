@@ -3,20 +3,6 @@
 #
 #  Applies source-tree patches to cocos2d-x 2.2.3 so it compiles cleanly
 #  with modern MSVC v143 (Visual Studio 2022) on Windows.
-#
-#  Why this is needed:
-#    * cocos2d-x 2.2.3 was written for VS2010 (MSVC 16.0). Modern MSVC
-#      enforces stricter rules and the Universal CRT (UCRT) provides
-#      functions that 2.2.3 still redefines as macros, causing conflicts.
-#    * We compile cocos2d-x sources directly into HieuDash.exe (static
-#      link, no DLL), but 2.2.3's CCPlatformDefine.h unconditionally
-#      marks every CC_DLL symbol as __declspec(dllimport) when _USRDLL
-#      is undefined, which MSVC rejects with C2491 ("definition of
-#      dllimport static data member not allowed").
-#
-#  All patches are idempotent (running twice is a no-op) and target only
-#  the Windows build path; the Linux / iOS / Android builds are unaffected
-#  because they use different platform headers.
 # =============================================================================
 [CmdletBinding()]
 param(
@@ -26,11 +12,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 function Patch-File {
-    param(
-        [string]$File,
-        [string]$Find,
-        [string]$Replace
-    )
+    param([string]$File, [string]$Find, [string]$Replace)
     if (-not (Test-Path $File)) {
         Write-Host "  SKIP (file not found): $File"
         return
@@ -41,113 +23,125 @@ function Patch-File {
         Set-Content $File -Value $new -NoNewline -Encoding UTF8
         Write-Host "  PATCHED: $File"
     } else {
-        Write-Host "  already patched (or pattern not found): $File"
+        Write-Host "  already patched / pattern not found: $File"
     }
 }
 
 Write-Host "=== patch_cocos2dx_msvc.ps1: patching $CocosRoot ==="
 
 # -----------------------------------------------------------------------------
-# 1. CCPlatformDefine.h (win32)
-#    Replace the _USRDLL-based CC_DLL definition with an empty definition
-#    so static linking into HieuDash.exe works (no dllimport/dllexport).
+# 1. CCPlatformDefine.h (win32): make CC_DLL empty for static builds.
 # -----------------------------------------------------------------------------
 $f = "$CocosRoot/cocos2dx/platform/win32/CCPlatformDefine.h"
 Patch-File -File $f `
     -Find "#if defined(_USRDLL)`r`n    #define CC_DLL     __declspec(dllexport)`r`n#else         /* use a DLL library */`r`n    #define CC_DLL     __declspec(dllimport)`r`n#endif" `
     -Replace "#if defined(CC_STATIC)`r`n    #define CC_DLL`r`n#elif defined(_USRDLL)`r`n    #define CC_DLL     __declspec(dllexport)`r`n#else         /* use a DLL library */`r`n    #define CC_DLL     __declspec(dllimport)`r`n#endif"
-# Also handle LF line endings (in case git auto-converts)
 Patch-File -File $f `
     -Find "#if defined(_USRDLL)`n    #define CC_DLL     __declspec(dllexport)`n#else         /* use a DLL library */`n    #define CC_DLL     __declspec(dllimport)`n#endif" `
     -Replace "#if defined(CC_STATIC)`n    #define CC_DLL`n#elif defined(_USRDLL)`n    #define CC_DLL     __declspec(dllexport)`n#else         /* use a DLL library */`n    #define CC_DLL     __declspec(dllimport)`n#endif"
 
 # -----------------------------------------------------------------------------
-# 2. CCStdC.h (win32)
-#    a) Remove `#define snprintf _snprintf` - modern UCRT already provides
-#       snprintf as a real function; the macro triggers C1189.
-#    b) Replace `#define MIN min` / `#define MAX max` with proper macro
-#       definitions that don't rely on the windows.h min/max macros
-#       (which are suppressed by NOMINMAX). Without this, MAX(0, float)
-#       expands to `max(0, float)` which is undefined -> C3861, or with
-#       `using namespace std;` becomes `std::max(0, float)` -> C2672
-#       (no matching overload because int != float).
+# 2. CCStdC.h (win32): drop snprintf macro, redefine MAX/MIN as proper macros.
 # -----------------------------------------------------------------------------
 $f = "$CocosRoot/cocos2dx/platform/win32/CCStdC.h"
-# 2a. Remove snprintf macro (CRLF + LF variants)
 Patch-File -File $f `
     -Find "#ifndef snprintf`r`n#define snprintf _snprintf`r`n#endif" `
     -Replace "// v0.7: snprintf macro removed - modern UCRT provides it`r`n// #ifndef snprintf`r`n// #define snprintf _snprintf`r`n// #endif"
 Patch-File -File $f `
     -Find "#ifndef snprintf`n#define snprintf _snprintf`n#endif" `
-    -Replace "// v0.7: snprintf macro removed - modern UCRT provides it`n// #ifndef snprintf`n// #define snprintf _snprintf`n// #endif"
-
-# 2b. Replace MIN min / MAX max with proper macros
+    -Replace "// v0.7: snprintf macro removed - modern UCRT provides it`n// #ifndef snprintf`r`n// #define snprintf _snprintf`r`n// #endif"
 Patch-File -File $f `
     -Find "#define MIN     min`r`n#define MAX     max" `
     -Replace "#ifndef MIN`r`n#define MIN(x,y) (((x) > (y)) ? (y) : (x))`r`n#endif`r`n#ifndef MAX`r`n#define MAX(x,y) (((x) < (y)) ? (y) : (x))`r`n#endif"
 Patch-File -File $f `
     -Find "#define MIN     min`n#define MAX     max" `
-    -Replace "#ifndef MIN`n#define MIN(x,y) (((x) > (y)) ? (y) : (x))`n#endif`n#ifndef MAX`n#define MAX(x,y) (((x) < (y)) ? (y) : (x))`n#endif"
+    -Replace "#ifndef MIN`n#define MIN(x,y) (((x) > (y)) ? (y) : (x))`r`n#endif`n#ifndef MAX`n#define MAX(x,y) (((x) < (y)) ? (y) : (x))`r`n#endif"
 
 # -----------------------------------------------------------------------------
-# 3. CCTextureCache.cpp
-#    The pthread.h include is unconditional on non-WinRT/WP8 builds, but
-#    Windows doesn't ship pthread.h. Change the guard to also exclude
-#    CC_PLATFORM_WIN32 (we use CCThread-win32.cpp instead, which wraps
-#    Windows threads, not pthreads).
+# 3. CCTextureCache.cpp: pthread.h include - use 3-way branch so Win32
+#    gets a typedef shim instead of including the missing CCPThreadWinRT.h.
+#    WinRT/WP8 still get their original include.
 # -----------------------------------------------------------------------------
 $f = "$CocosRoot/cocos2dx/textures/CCTextureCache.cpp"
-Patch-File -File $f `
-    -Find "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8)`r`n#include <pthread.h>" `
-    -Replace "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8) && (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`r`n#include <pthread.h>"
-Patch-File -File $f `
-    -Find "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8)`n#include <pthread.h>" `
-    -Replace "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8) && (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`n#include <pthread.h>"
+$oldIncludeCRLF = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8)`r`n#include <pthread.h>`r`n#else`r`n#include `"CCPThreadWinRT.h`"`r`n#include <ppl.h>`r`n#include <ppltasks.h>`r`nusing namespace concurrency;`r`n#endif"
+$oldIncludeLF   = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8)`n#include <pthread.h>`n#else`n#include `"CCPThreadWinRT.h`"`n#include <ppl.h>`n#include <ppltasks.h>`nusing namespace concurrency;`n#endif"
+$newInclude = "#if (CC_TARGET_PLATFORM != CC_PLATFORM_WINRT) && (CC_TARGET_PLATFORM != CC_PLATFORM_WP8) && (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`r`n#include <pthread.h>`r`n#elif (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)`r`n#include `"CCPThreadWinRT.h`"`r`n#include <ppl.h>`r`n#include <ppltasks.h>`r`nusing namespace concurrency;`r`n#else`r`n// v0.7: pthread shim for Win32 - we never call pthread_ functions on`r`n// Windows (CCThread-win32.cpp wraps Windows threads instead), but the`r`n// type names are used in struct field declarations.`r`ntypedef void* pthread_t;`r`ntypedef void* pthread_mutex_t;`r`ntypedef int pthread_cond_t;`r`ntypedef int pthread_attr_t;`r`n#endif"
+Patch-File -File $f -Find $oldIncludeCRLF -Replace $newInclude
+Patch-File -File $f -Find $oldIncludeLF   -Replace $newInclude
 
-# Also need to handle the body of CCTextureCache that uses pthread types.
-# When CC_PLATFORM_WIN32 is excluded from the pthread.h include, the
-# pthread_t / pthread_mutex_t etc. types become undefined. We add a
-# tiny shim that maps them to void* / CRITICAL_SECTION so the file
-# still compiles. (Functions that actually use pthread_create etc.
-# are wrapped in #if branches that we will neutralize below.)
-$shim = @'
-// v0.7: pthread shim for Win32 - we never call pthread_ functions on
-// Windows (CCThread-win32.cpp wraps Windows threads instead), but the
-// type names are used in struct field declarations. Map them to
-// minimal stand-ins so the file compiles.
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-typedef void* pthread_t;
-typedef void* pthread_mutex_t;
-typedef int pthread_cond_t;
-typedef int pthread_attr_t;
-#endif
-'@
+# -----------------------------------------------------------------------------
+# 4. CCImage.cpp (win32): use the W variants explicitly (with UNICODE
+#    now defined, the macros also resolve to W, but be explicit so the
+#    code is correct even if UNICODE is later removed).
+# -----------------------------------------------------------------------------
+$f = "$CocosRoot/cocos2dx/platform/win32/CCImage.cpp"
+Patch-File -File $f -Find "RemoveFontResource(pwszBuffer);" -Replace "RemoveFontResourceW(pwszBuffer);"
+Patch-File -File $f -Find "AddFontResource(pwszBuffer);"    -Replace "AddFontResourceW(pwszBuffer);"
+
+# -----------------------------------------------------------------------------
+# 5. CCEGLView.cpp (win32): APPBARDATA / SHAppBarMessage / ABM_GETTASKBARPOS
+#    are declared in <shellapi.h>. WIN32_LEAN_AND_MEAN excludes it from
+#    <windows.h>, so include it explicitly.
+# -----------------------------------------------------------------------------
+$f = "$CocosRoot/cocos2dx/platform/win32/CCEGLView.cpp"
 if (Test-Path $f) {
     $content = Get-Content $f -Raw -Encoding UTF8
-    if ($content -notmatch "v0.7: pthread shim for Win32") {
-        # Insert shim right after the pthread.h include block
-        $pattern = '(#include <pthread\.h>\s*\r?\n#else\s*\r?\n#include "CCPThreadWinRT\.h")'
-        $new = [regex]::Replace($content, $pattern, "`$1`r`n$shim`r`n")
-        if ($new -ne $content) {
-            Set-Content $f -Value $new -NoNewline -Encoding UTF8
-            Write-Host "  PATCHED (pthread shim): $f"
-        } else {
-            Write-Host "  WARN: could not insert pthread shim in $f"
+    if ($content -notmatch "#include <shellapi.h>") {
+        # Insert after the first #include <windows.h> (or after WIN32_LEAN_AND_MEAN define)
+        $new = $content -replace '(#include\s*<windows\.h>)', "`$1`r`n// v0.7: APPBARDATA / SHAppBarMessage / ABM_GETTASKBARPOS live here`r`n#include <shellapi.h>"
+        if ($new -eq $content) {
+            # No <windows.h> include found - try inserting at the top after the copyright block
+            $new = $content -replace '(^//.*\r?\n)*', "`$0`r`n#include <shellapi.h>`r`n"
         }
+        Set-Content $f -Value $new -NoNewline -Encoding UTF8
+        Write-Host "  PATCHED (shellapi.h): $f"
     } else {
-        Write-Host "  already has pthread shim: $f"
+        Write-Host "  already has shellapi.h: $f"
     }
 }
 
 # -----------------------------------------------------------------------------
-# 4. CCImage.cpp (win32)
-#    RemoveFontResource() resolves to RemoveFontResourceA (ANSI) unless
-#    UNICODE is defined. The argument is wchar_t*, so we need the W
-#    variant explicitly.
+# 6. MciPlayer.cpp (CocosDenshion/win32) and Win32InputBox.cpp (extensions):
+#    GWL_USERDATA was removed in 64-bit Windows SDKs (replaced by GWLP_USERDATA).
+#    Replace the constant AND switch to the *Ptr function variants which are
+#    correct on both 32-bit and 64-bit Windows.
 # -----------------------------------------------------------------------------
-$f = "$CocosRoot/cocos2dx/platform/win32/CCImage.cpp"
-Patch-File -File $f `
-    -Find "RemoveFontResource(pwszBuffer);" `
-    -Replace "RemoveFontResourceW(pwszBuffer);"
+foreach ($f in @(
+    "$CocosRoot/CocosDenshion/win32/MciPlayer.cpp",
+    "$CocosRoot/extensions/proj.win32/Win32InputBox.cpp"
+)) {
+    if (-not (Test-Path $f)) { continue }
+    $c = Get-Content $f -Raw -Encoding UTF8
+    $orig = $c
+    $c = $c -replace 'GWL_USERDATA', 'GWLP_USERDATA'
+    $c = $c -replace 'GetWindowLong\(', 'GetWindowLongPtr('
+    $c = $c -replace 'SetWindowLong\(', 'SetWindowLongPtr('
+    if ($c -ne $orig) {
+        Set-Content $f -Value $c -NoNewline -Encoding UTF8
+        Write-Host "  PATCHED (GWLP_USERDATA): $f"
+    } else {
+        Write-Host "  no GWL_USERDATA to patch: $f"
+    }
+}
+
+# -----------------------------------------------------------------------------
+# 7. CCDataReaderHelper.cpp (extensions/CocoStudio/Armature/utils):
+#    includes <pthread.h> unconditionally. Guard it the same way as
+#    CCTextureCache.cpp.
+# -----------------------------------------------------------------------------
+$f = "$CocosRoot/extensions/CocoStudio/Armature/utils/CCDataReaderHelper.cpp"
+if (Test-Path $f) {
+    $c = Get-Content $f -Raw -Encoding UTF8
+    # Find the bare `#include <pthread.h>` line and wrap it with a platform guard
+    if ($c -match '(?ms)^(\s*#include\s*<pthread\.h>\s*)$' -and $c -notmatch 'CC_PLATFORM_WIN32.*pthread') {
+        $c = $c -replace '(?m)^(\s*#include\s*<pthread\.h>\s*)$', '#if (CC_TARGET_PLATFORM != CC_PLATFORM_WIN32)`r`n$1`r`n#else`r`n// v0.7: pthread shim for Win32`r`ntypedef void* pthread_t;`r`ntypedef void* pthread_mutex_t;`r`ntypedef int pthread_cond_t;`r`ntypedef int pthread_attr_t;`r`n#endif'
+        # Actually that produced literal `\r\n` - re-read with proper newlines
+        $c = $c -replace '\\r\\n', "`r`n"
+        Set-Content $f -Value $c -NoNewline -Encoding UTF8
+        Write-Host "  PATCHED (pthread guard): $f"
+    } else {
+        Write-Host "  no bare pthread.h include in: $f"
+    }
+}
 
 Write-Host "=== patch_cocos2dx_msvc.ps1: done ==="

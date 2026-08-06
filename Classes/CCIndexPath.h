@@ -14,8 +14,10 @@ public:
     CCIndexPath(CCIndexPath const&);
     CCIndexPath(int, int);
     void CCIndexPathWithSectionRow(int, int);
-    operator=(CCIndexPath const&);
-    operator==(CCIndexPath&);
+    // v0.7 fix: MSVC C4430 - operators MUST have explicit return types
+    // (GCC -fpermissive silently infers int, which is forbidden in C++.)
+    CCIndexPath& operator=(CCIndexPath const&);
+    bool operator==(CCIndexPath&);
     ~CCIndexPath();
 };
 

@@ -58,6 +58,16 @@ if(MSVC)
         _CRT_SECURE_NO_WARNINGS
         _CRT_NONSTDC_NO_WARNINGS
         _WINSOCK_DEPRECATED_NO_WARNINGS
+        # v0.7 fix: cocos2d-x 2.2.3 Win32 platform code calls
+        # CreateWindowEx, RegSetValueEx, LoadMenu, UnregisterClass,
+        # SetWindowText, RemoveFontResource, AddFontResource etc.
+        # with wchar_t* arguments. Without UNICODE these macros
+        # resolve to the ANSI *A variants which expect LPCSTR, causing
+        # C2664 'cannot convert from wchar_t* to LPCSTR'. Defining
+        # UNICODE makes the macros resolve to the *W variants which
+        # take LPCWSTR, matching the code's actual argument types.
+        UNICODE
+        _UNICODE
         NOMINMAX
         WIN32_LEAN_AND_MEAN
         COCOS2DX_VERSION_MAJOR=2
