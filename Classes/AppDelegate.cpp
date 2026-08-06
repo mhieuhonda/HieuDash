@@ -5,6 +5,7 @@
 #include "GameStatsManager.h"
 #include "MenuLayer.h"
 #include "LoadingLayer.h"
+#include "CocosDenshion.h"
 #include "cocos2d.h"
 
 USING_NS_CC;

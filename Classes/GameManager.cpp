@@ -1,6 +1,7 @@
 #include "GameManager.h"
 #include "GameSoundManager.h"
 #include "GameStatsManager.h"
+#include "CocosDenshion.h"
 #include "cocos2d.h"
 #include <cstring>
 
