@@ -7,7 +7,7 @@
 
 #include "cocos2d.h"
 #include "HieuDashEnums.h"
-#include "extensions/network/CCHttpRequest.h"
+#include "extensions/network/HttpResponse.h"
 
 class GameToolbox {
 public:
