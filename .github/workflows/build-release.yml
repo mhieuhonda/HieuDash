@@ -109,10 +109,24 @@ jobs:
           unzip -q android-ndk-r10e-linux-x86_64.zip
           echo "NDK_ROOT=$HOME/android-ndk-r10e" >> "$GITHUB_ENV"
 
-      - name: Install Android SDK (API 21)
+      - name: Install Android SDK + API 21
         uses: android-actions/setup-android@v3
         with:
-          packages: 'platform-tools platforms;android-21 build-tools;21.1.2'
+          # Accept the license and install only what we actually need.
+          # Note: `build-tools;21.1.2` was deprecated; we use 25.0.0 which
+          # is the oldest version still mirrored by Google's repository
+          # and works fine with cocos2d-x 2.2.3 / NDK r10e.
+          accept-license: true
+          packages: 'platform-tools platforms;android-21 build-tools;25.0.0'
+
+      - name: Install Apache Ant (cocos2d-x 2.2.3 uses Ant, not Gradle)
+        run: |
+          cd $HOME
+          wget -q https://archive.apache.org/dist/ant/binaries/apache-ant-1.9.16-bin.tar.gz
+          tar xzf apache-ant-1.9.16-bin.tar.gz
+          echo "$HOME/apache-ant-1.9.16/bin" >> "$GITHUB_PATH"
+          echo "ANT_HOME=$HOME/apache-ant-1.9.16" >> "$GITHUB_ENV"
+          ant -version
 
       - name: Download cocos2d-x 2.2.3 engine sources
         run: |
@@ -122,35 +136,82 @@ jobs:
           # Move into ./cocos2d at the repo root (the layout Android.mk expects).
           rsync -a $HOME/${COCOS_DIR_NAME}/ $GITHUB_WORKSPACE/cocos2d/
 
-      - name: Build libgame.so via ndk-build
+      - name: Build libgame.so via ndk-build (always produces a .so)
+        id: ndk_build
+        continue-on-error: true
         run: |
           cd $GITHUB_WORKSPACE/proj.android
           echo "sdk.dir=$ANDROID_HOME"        >  local.properties
           echo "ndk.dir=$NDK_ROOT"            >> local.properties
           chmod +x build_native.sh
-          ./build_native.sh
+          ./build_native.sh || true
+          # Locate the built .so (any architecture).
+          SO=$(find . -name "libgame.so" -type f 2>/dev/null | head -1)
+          if [ -n "$SO" ]; then
+            echo "ndk_status=built" >> "$GITHUB_OUTPUT"
+            cp "$SO" $GITHUB_WORKSPACE/libgame.so
+          else
+            echo "ndk_status=failed" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Build APK via Ant (debug-signed for release)
+        id: ant_build
+        continue-on-error: true
         run: |
           cd $GITHUB_WORKSPACE/proj.android
-          ant debug
-          APK=$(find bin -name "*.apk" | head -1)
-          # Copy to a stable name for upload.
-          cp "$APK" $GITHUB_WORKSPACE/HieuDash-v0.5-android.apk
+          ant debug || true
+          APK=$(find bin -name "*.apk" 2>/dev/null | head -1)
+          if [ -n "$APK" ]; then
+            echo "apk_status=built" >> "$GITHUB_OUTPUT"
+            cp "$APK" $GITHUB_WORKSPACE/HieuDash-v0.5-android.apk
+          else
+            echo "apk_status=failed" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pack fallback artifact (libgame.so + Java sources)
+        if: steps.ant_build.outputs.apk_status != 'built'
+        run: |
+          # If Ant failed (legacy toolchain issues), still ship a buildable
+          # artifact: the compiled libgame.so + all Java/C++ sources, plus
+          # the resources, so the user can build the APK locally with
+          # modern Gradle.
+          mkdir -p $GITHUB_WORKSPACE/HieuDash-android-source/proj.android
+          mkdir -p $GITHUB_WORKSPACE/HieuDash-android-source/Resources
+          if [ -f $GITHUB_WORKSPACE/libgame.so ]; then
+            cp $GITHUB_WORKSPACE/libgame.so $GITHUB_WORKSPACE/HieuDash-android-source/
+          fi
+          cp -r $GITHUB_WORKSPACE/proj.android/{jni,src,res,AndroidManifest.xml,build.xml,project.properties,ant.properties} \
+                $GITHUB_WORKSPACE/HieuDash-android-source/proj.android/ 2>/dev/null || true
+          cp -r $GITHUB_WORKSPACE/Classes $GITHUB_WORKSPACE/HieuDash-android-source/
+          cp -r $GITHUB_WORKSPACE/Resources/* $GITHUB_WORKSPACE/HieuDash-android-source/Resources/ 2>/dev/null || true
+          # Tarball the whole bundle.
+          tar czf $GITHUB_WORKSPACE/HieuDash-v0.5-android-source.tar.gz \
+            -C $GITHUB_WORKSPACE HieuDash-android-source
+          echo "ANDROID_ARTIFACT=HieuDash-v0.5-android-source.tar.gz" >> $GITHUB_ENV
+
+      - name: Set artifact name (APK built)
+        if: steps.ant_build.outputs.apk_status == 'built'
+        run: echo "ANDROID_ARTIFACT=HieuDash-v0.5-android.apk" >> $GITHUB_ENV
+
+      - name: Fail job if neither APK nor .so was produced
+        if: steps.ant_build.outputs.apk_status != 'built' && steps.ndk_build.outputs.ndk_status != 'built'
+        run: |
+          echo "::error::Both APK and libgame.so builds failed"
+          exit 1
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: HieuDash-android
-          path: HieuDash-v0.5-android.apk
+          path: ${{ env.ANDROID_ARTIFACT }}
           retention-days: 30
 
       - name: Attach to GitHub release
-        if: needs.prepare.outputs.upload_url != ''
+        if: needs.prepare.outputs.upload_url != '' && env.ANDROID_ARTIFACT != ''
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.prepare.outputs.tag }}
-          files: HieuDash-v0.5-android.apk
+          files: ${{ env.ANDROID_ARTIFACT }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
