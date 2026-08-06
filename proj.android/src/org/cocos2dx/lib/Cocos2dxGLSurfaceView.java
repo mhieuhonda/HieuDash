@@ -21,10 +21,10 @@ public class Cocos2dxGLSurfaceView extends GLSurfaceView {
     private static final String TAG = Cocos2dxGLSurfaceView.class.getCanonicalName();
     private static final boolean debug = false;
     private static Handler handler;
-    private static Cocos2dxGLSurfaceView mainView;
-    private static t textInputWraper;
-    private Cocos2dxRenderer mRenderer;
-    private Cocos2dxEditText mTextField;
+    static Cocos2dxGLSurfaceView mainView;
+    static t textInputWraper;
+    Cocos2dxRenderer mRenderer;
+    Cocos2dxEditText mTextField;
 
     public Cocos2dxGLSurfaceView(Context context) {
         super(context);

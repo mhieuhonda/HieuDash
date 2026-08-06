@@ -390,14 +390,14 @@ jobs:
           # GLFW 2.x API (glfwOpenWindow, glfwGetMousePos, etc.) which was
           # removed in GLFW 3.x. Ubuntu 24.04 only ships GLFW 3.x, so we
           # build GLFW 2.7.9 from source and install it to /usr/local.
+          # NOTE: the modern github.com/glfw/glfw repo deleted the 2.x tags,
+          # so we use the SourceForge archive which still hosts 2.7.9.
           cd /tmp
-          wget -q https://github.com/glfw/glfw/archive/refs/tags/2.7.9.tar.gz
-          tar xzf 2.7.9.tar.gz
+          curl -sL -o glfw-2.7.9.tar.gz \
+            "https://sourceforge.net/projects/glfw/files/glfw/2.7.9/glfw-2.7.9.tar.gz/download"
+          tar xzf glfw-2.7.9.tar.gz
           cd glfw-2.7.9
-          # GLFW 2.7.9 Makefile needs these vars for an X11 build.
-          make x11 \
-            CFLAGS='-fPIC -O2 -D_GNU_SOURCE' \
-            LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+          make x11
           sudo make x11-install PREFIX=/usr/local
           # Verify the install.
           test -f /usr/local/include/GL/glfw.h

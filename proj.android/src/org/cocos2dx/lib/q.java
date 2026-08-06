@@ -143,7 +143,7 @@ public class q {
 
     public void stopEffect(int i) {
         this.mSoundPool.stop(i);
-        for (String str : this.mPathStreamIDsMap.keySet()) {
+        for (Object strObj : this.mPathStreamIDsMap.keySet()) { String str = (String) strObj;
             if (((ArrayList) this.mPathStreamIDsMap.get(str)).contains(Integer.valueOf(i))) {
                 ((ArrayList) this.mPathStreamIDsMap.get(str)).remove(((ArrayList) this.mPathStreamIDsMap.get(str)).indexOf(Integer.valueOf(i)));
                 return;
