@@ -134,6 +134,27 @@ file(GLOB COCOS2DX_CORE_SOURCES
     "${COCOS2DX_ROOT}/cocos2dx/touch_dispatcher/*.cpp"
     "${COCOS2DX_ROOT}/cocos2dx/script_support/*.cpp"
     "${COCOS2DX_ROOT}/cocos2dx/ccFPSImages.c"
+    # The platform/ subdirectory's TOP-LEVEL .cpp files are
+    # platform-independent (CCFileUtils.cpp, CCSAXParser.cpp,
+    # CCEGLViewProtocol.cpp, CCThread.cpp, platform.cpp). They must be
+    # compiled on every platform; without them the link fails with
+    # "undefined reference to CCSAXParser::init, CCEGLViewProtocol::ctor,
+    # CCThread::dtor, CCFileUtils::purgeFileUtils, CCTime::gettimeofdayCocos2d"
+    # etc. (these symbols are referenced by CCDirector, CCTextureCache,
+    # CCTMXXMLParser, CCEGLView). Platform-specific subdirectories
+    # (linux/, win32/, ios/, mac/) are added separately below.
+    "${COCOS2DX_ROOT}/cocos2dx/platform/CCFileUtils.cpp"
+    "${COCOS2DX_ROOT}/cocos2dx/platform/CCSAXParser.cpp"
+    "${COCOS2DX_ROOT}/cocos2dx/platform/CCEGLViewProtocol.cpp"
+    "${COCOS2DX_ROOT}/cocos2dx/platform/CCThread.cpp"
+    "${COCOS2DX_ROOT}/cocos2dx/platform/platform.cpp"
+    # NOTE: CCImageCommonWebp.cpp is intentionally NOT included. It does
+    # `#include "decode.h"` (no prefix) which only resolves if
+    # `/usr/include/webp` is in the include path. Ubuntu's libwebp-dev
+    # only exposes `Cflags: -I/usr/include` via pkg-config, so the build
+    # would fail with "decode.h: No such file or directory". Hieu Dash
+    # ships no .webp assets (all textures are .png), so WebP support is
+    # not needed.
 )
 # kazmath (math library)
 file(GLOB KAZMATH_SOURCES
