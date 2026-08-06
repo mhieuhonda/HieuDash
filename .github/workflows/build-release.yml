@@ -79,6 +79,7 @@ jobs:
     name: Build Android APK
     needs: prepare
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -197,19 +198,25 @@ jobs:
 
   # ===========================================================================
   #  iOS .ipa build via xcodegen + xcodebuild.
+  #
+  #  macOS runners are slow and the cocos2d-x 2.2.3 source tree is large
+  #  (~1500 .cpp files). We use ccache to dramatically speed up rebuilds.
   # ===========================================================================
   build-ios:
     name: Build iOS .ipa
     needs: prepare
     runs-on: macos-13
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
       - name: Select Xcode 14.3
         run: sudo xcode-select -switch /Applications/Xcode_14.3.app
 
-      - name: Install xcodegen
-        run: brew install xcodegen
+      - name: Install xcodegen + ccache
+        run: |
+          brew install xcodegen ccache
+          ccache --version
 
       - name: Download cocos2d-x 2.2.3
         run: |
@@ -225,9 +232,15 @@ jobs:
           xcodegen generate --spec project.yml
           test -d HieuDash.xcodeproj
 
-      - name: Build .app (unsigned)
+      - name: Build .app (unsigned, with ccache)
         run: |
           cd proj.ios_mac
+          # Enable ccache by overriding CC/CXX via the Xcode build settings.
+          # The CLANG_ENABLE_MODULE_DEBUGGING setting is needed because some
+          # cocos2d-x 2.2.3 headers use modules that don't verify cleanly.
+          export CCACHE_DIR=$HOME/.ccache
+          mkdir -p $CCACHE_DIR
+          ccache -M 2G || true
           xcodebuild \
             -project HieuDash.xcodeproj \
             -scheme HieuDash-ios \
@@ -236,6 +249,8 @@ jobs:
             -sdk iphoneos \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
             DEVELOPMENT_TEAM="" \
+            CC="ccache clang" \
+            CXX="ccache clang++" \
             build
 
       - name: Package .app into .ipa
@@ -270,12 +285,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # ===========================================================================
-  #  Windows .zip build via CMake + MSVC v143 + vcpkg.
+  #  Windows .zip build via CMake + MSVC + vcpkg.
+  #
+  #  Pinned to windows-2022 because windows-latest now points to Windows
+  #  Server 2025 with Visual Studio 18 (2026 Preview), which does NOT ship
+  #  the "Visual Studio 17 2022" generator that this build uses. windows-2022
+  #  still has VS 2022 (MSVC v143) installed.
   # ===========================================================================
   build-windows:
     name: Build Windows .zip
     needs: prepare
-    runs-on: windows-latest
+    runs-on: windows-2022
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
 
@@ -378,6 +399,7 @@ jobs:
     name: Build Linux .tar.gz
     needs: prepare
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 

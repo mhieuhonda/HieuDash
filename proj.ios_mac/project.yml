@@ -66,6 +66,19 @@ targets:
       - path: ../cocos2d/extensions
         excludes:
           - "proj.*/**"
+          - "network/WebSocket.cpp"
+          - "network/WebSocket.h"
+          - "physics_nodes/CCPhysicsSprite.cpp"
+          - "physics_nodes/CCPhysicsSprite.h"
+          - "AssetsManager/**"
+          - "GUI/CCEditBox/CCEditBoxImplWp8.cpp"
+          - "GUI/CCEditBox/CCEditBoxImplWp8.h"
+          - "GUI/CCEditBox/CCEditBoxImplWin.cpp"
+          - "GUI/CCEditBox/CCEditBoxImplWin.h"
+          - "GUI/CCEditBox/CCEditBoxImplAndroid.cpp"
+          - "GUI/CCEditBox/CCEditBoxImplAndroid.h"
+          - "GUI/CCEditBox/CCEditBoxImplTizen.cpp"
+          - "GUI/CCEditBox/CCEditBoxImplTizen.h"
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.hieuhonda.HieuDash

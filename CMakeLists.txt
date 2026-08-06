@@ -16,6 +16,13 @@ cmake_minimum_required(VERSION 3.16)
 
 project(HieuDash CXX C)
 
+# Portable platform detection. CMake's `LINUX` variable was only added in
+# CMake 3.25, but our minimum is 3.16. Use CMAKE_SYSTEM_NAME so the build
+# works on every supported CMake version.
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    set(LINUX TRUE)
+endif()
+
 set(COCOS2DX_ROOT "${CMAKE_SOURCE_DIR}/cocos2d" CACHE PATH "cocos2d-x 2.2.3 root")
 
 if(NOT EXISTS "${COCOS2DX_ROOT}/cocos2dx")
@@ -139,7 +146,7 @@ if(LINUX)
     file(GLOB COCOS2DX_PLATFORM_C_SOURCES
         "${COCOS2DX_ROOT}/cocos2dx/platform/linux/*.c"
     )
-elseif(WIN32)
+elseif(WIN32 OR MINGW)
     file(GLOB COCOS2DX_PLATFORM_SOURCES
         "${COCOS2DX_ROOT}/cocos2dx/platform/win32/*.cpp"
     )
@@ -164,16 +171,26 @@ elseif(WIN32)
 endif()
 
 # ---- Extensions -------------------------------------------------------------
+# NOTE: We intentionally EXCLUDE several extension modules that cocos2d-x
+# 2.2.3 ships but Hieu Dash does not use, because they fail to compile
+# against modern system libraries:
+#   * extensions/network/WebSocket.cpp uses the libwebsockets 1.x C API
+#     (libwebsocket_callback_reasons, libwebsocket_protocols, etc.). Ubuntu
+#     24.04 ships libwebsockets 4.x which renamed all of these symbols
+#     (lws_callback_reasons, lws_protocols, etc.). Building a vendored 1.x
+#     copy would be a large undertaking; the game has no online features.
+#   * extensions/physics_nodes/CCPhysicsSprite.cpp requires
+#     CC_ENABLE_CHIPMUNK_INTEGRATION or CC_ENABLE_BOX2D_INTEGRATION, both
+#     of which pull in their own physics libraries. Hieu Dash does not use
+#     physics simulation.
+#   * extensions/AssetsManager pulls in libcurl with a specific old API.
 file(GLOB_RECURSE EXTENSIONS_SOURCES
-    "${COCOS2DX_ROOT}/extensions/AssetsManager/*.cpp"
     "${COCOS2DX_ROOT}/extensions/CCBReader/*.cpp"
     "${COCOS2DX_ROOT}/extensions/CocoStudio/*.cpp"
     "${COCOS2DX_ROOT}/extensions/GUI/CCControlExtension/*.cpp"
     "${COCOS2DX_ROOT}/extensions/GUI/CCEditBox/*.cpp"
     "${COCOS2DX_ROOT}/extensions/GUI/CCScrollView/*.cpp"
     "${COCOS2DX_ROOT}/extensions/LocalStorage/*.cpp"
-    "${COCOS2DX_ROOT}/extensions/network/*.cpp"
-    "${COCOS2DX_ROOT}/extensions/physics_nodes/*.cpp"
     "${COCOS2DX_ROOT}/extensions/spine/*.cpp"
 )
 # Filter out platform-specific CCEditBox implementations that don't
@@ -186,7 +203,7 @@ if(LINUX)
         "CCEditBoxImplAndroid.cpp"  "CCEditBoxImplTizen.cpp"
         "CCEditBoxImplIOS.mm"
     )
-elseif(WIN32)
+elseif(WIN32 OR MINGW)
     list(APPEND _EXT_EXCLUDE_PATTERNS
         "CCEditBoxImplWp8.cpp"      "CCEditBoxImplAndroid.cpp"
         "CCEditBoxImplTizen.cpp"    "CCEditBoxImplIOS.mm"
@@ -197,7 +214,7 @@ if(_EXT_EXCLUDE_PATTERNS)
         list(FILTER EXTENSIONS_SOURCES EXCLUDE REGEX "${pattern}")
     endforeach()
 endif()
-if(WIN32)
+if(WIN32 OR MINGW)
     file(GLOB EXTENSIONS_WIN32_SOURCES
         "${COCOS2DX_ROOT}/extensions/proj.win32/*.cpp"
     )
@@ -259,7 +276,7 @@ if(LINUX)
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/libwebp"
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/linux/include64"
     )
-elseif(WIN32)
+elseif(WIN32 OR MINGW)
     target_include_directories(HieuDash PRIVATE
         "${COCOS2DX_ROOT}/cocos2dx/platform/win32"
         "${COCOS2DX_ROOT}/cocos2dx/platform/third_party/win32/OGLES"
@@ -332,7 +349,7 @@ if(LINUX)
         ${ALUT_LIBRARY_DIRS}
         /usr/local/lib
     )
-elseif(WIN32)
+elseif(WIN32 OR MINGW)
     # On Windows we expect vcpkg to provide these. The CI workflow sets
     # CMAKE_TOOLCHAIN_FILE to the vcpkg.cmake so find_package() works.
     # CocosDenshion on Win32 uses MCI (winmm), NOT OpenAL, so we don't
