@@ -33,6 +33,16 @@ concurrency:
   group: release-builds-${{ github.ref }}
   cancel-in-progress: false
 
+# Required: the workflow needs write access to upload artifacts to the
+# release via softprops/action-gh-release.
+permissions:
+  contents: write
+  packages: read
+
+env:
+  COCOS_VERSION: cocos2d-x-2.2.3
+  COCOS_ZIP_URL: https://github.com/niclas/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
+
 jobs:
   # ---------------------------------------------------------------------------
   #  Shared setup step: download & extract cocos2d-x 2.2.3 engine sources.
