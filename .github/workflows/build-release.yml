@@ -114,6 +114,20 @@ jobs:
           # Also verify aapt and dx are present.
           ls $ANDROID_HOME/build-tools/25.0.0/aapt
           ls $ANDROID_HOME/build-tools/25.0.0/dx
+          # The runner's preinstalled SDK ships newer build-tools (37.0.0
+          # etc.) which replaced the legacy 'dx' tool with 'd8'. The Ant
+          # template from tools_r25.2.3 always picks the latest build-tools
+          # and calls 'dx' -> 'Cannot run program .../build-tools/37.0.0/dx'.
+          # Remove every build-tools version except 25.0.0 so Ant is forced
+          # to use the legacy one that still ships dx.
+          for d in $ANDROID_HOME/build-tools/*/; do
+            ver=$(basename "$d")
+            if [ "$ver" != "25.0.0" ]; then
+              echo "Removing build-tools/$ver (keep only 25.0.0 for dx)"
+              rm -rf "$d"
+            fi
+          done
+          ls $ANDROID_HOME/build-tools/
 
       - name: Setup Java 8 (for Ant 1.9.x)
         uses: actions/setup-java@v4
@@ -382,7 +396,8 @@ jobs:
             libpulse-dev libasound2-dev libsndfile1-dev \
             libopenal-dev libalut-dev \
             libvorbis-dev libogg-dev \
-            libcurl4-gnutls-dev libzip-dev zlib1g-dev
+            libcurl4-gnutls-dev libzip-dev zlib1g-dev \
+            libwebsockets-dev
 
       - name: Build GLFW 2.7.9 from source (cocos2d-x 2.2.3 uses GLFW 2.x API)
         run: |
