@@ -16,7 +16,7 @@ public:
     static TutorialPopup* create(char const*);
     bool init(char const*);
     void keyBackClicked();
-    registerForCallback(void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCNode*);
+    void registerForCallback(void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCNode*);
     void show();
     ~TutorialPopup();
 };

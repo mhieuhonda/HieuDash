@@ -3,7 +3,10 @@
 
 #include "AppDelegate.h"
 #include "cocos2d.h"
-#include "platform/linux/CCEGLView_linux.h"
+// cocos2d-x 2.2.3 ships the Linux EGL view header at
+// cocos2dx/platform/linux/CCEGLView.h (NOT CCEGLView_linux.h - that name
+// was a guess that does not exist in the 2.2.3 source tree).
+#include "platform/linux/CCEGLView.h"
 
 USING_NS_CC;
 

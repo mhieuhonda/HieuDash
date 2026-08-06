@@ -7,7 +7,7 @@ UndoObject::UndoObject() {
     // TODO: implement (recovered from binary, body unknown)
 }
 
-UndoObject* UndoObject::create(GameObject*, UndoCommand) {
+UndoObject* UndoObject::create(GameObject*, EditCommand) {
     // TODO: implement (recovered from binary, body unknown)
     return nullptr;
 }
@@ -22,7 +22,7 @@ int UndoObject::getObject() {
     return 0;
 }
 
-bool UndoObject::init(GameObject*, UndoCommand) {
+bool UndoObject::init(GameObject*, EditCommand) {
     // TODO: implement (recovered from binary, body unknown)
     return false;
 }
