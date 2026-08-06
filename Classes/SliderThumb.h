@@ -11,9 +11,9 @@
 class SliderThumb : public cocos2d::CCNode {
 public:
     SliderThumb();
-    create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*);
+    static SliderThumb* create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*);
     int getValue();
-    init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*);
+    bool init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*);
     void setValue(float);
     ~SliderThumb();
 };
