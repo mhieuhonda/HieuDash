@@ -7,15 +7,16 @@
 
 #include "cocos2d.h"
 #include "HieuDashEnums.h"
+#include "extensions/network/CCHttpRequest.h"
 
 class GameToolbox {
 public:
     void alignItemsHorisontally(cocos2d::CCArray*, float, cocos2d::CCPoint);
     void alignItemsVertically(cocos2d::CCArray*, float, cocos2d::CCPoint);
     void doWeHaveInternet();
-    getDropActionWDelay(float, float, float, cocos2d::CCNode*, void (cocos2d::CCObject::*)());
+    static cocos2d::CCAction* getDropActionWDelay(float, float, float, cocos2d::CCNode*, void (cocos2d::CCObject::*)());
     int getDropActionWEnd(float, float, float, cocos2d::CCAction*, float);
-    int getResponse(cocos2d::extension::CCHttpResponse*);
+    static int getResponse(cocos2d::extension::CCHttpResponse*);
     bool isIOS();
     void openRateURL(std::string, std::string);
     void postClipVisit();
