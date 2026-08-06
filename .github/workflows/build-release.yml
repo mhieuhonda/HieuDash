@@ -1,12 +1,12 @@
 # =============================================================================
-#  Hieu Dash v0.6 - Multi-platform build pipeline (Cocos2d-x 2.2.3).
+#  Hieu Dash v0.7 - Multi-platform build pipeline (Cocos2d-x 2.2.3).
 #
 #  Triggers automatically when a NEW RELEASE is published, OR manually via
 #  workflow_dispatch. Builds four platform artifacts in parallel:
 #
 #    - APK     -> ubuntu-latest    (NDK r10e + Ant 1.9.x, ships prebuilt libgame.so)
 #    - iOS     -> macos-13          (xcodegen + xcodebuild, unsigned .ipa)
-#    - Windows -> windows-latest    (CMake + MSVC v143 + vcpkg, .zip)
+#    - Windows -> windows-2022    (CMake + MSVC v143 + vcpkg, .zip)
 #    - Linux   -> ubuntu-latest     (CMake + gcc + apt, .tar.gz)
 #
 #  All four jobs hard-fail if their binary build fails - no source-tarball
@@ -23,7 +23,7 @@ on:
       tag:
         description: 'Tag to upload artifacts to (must already exist as a release)'
         required: true
-        default: 'v0.6'
+        default: 'v0.7'
 
 concurrency:
   group: release-builds-${{ github.ref }}
@@ -37,7 +37,7 @@ env:
   COCOS_VERSION: cocos2d-x-2.2.3
   COCOS_ZIP_URL: https://github.com/cocos2d/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
   COCOS_DIR_NAME: cocos2d-x-cocos2d-x-2.2.3
-  HIUE_DASH_VERSION: "0.6"
+  HIUE_DASH_VERSION: "0.7"
 
 jobs:
   prepare:

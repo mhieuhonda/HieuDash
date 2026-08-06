@@ -8,6 +8,9 @@
 #include "CocosDenshion.h"
 #include "cocos2d.h"
 
+#include <cstdint>
+#include <cstddef>
+
 USING_NS_CC;
 
 // ============================================================================
@@ -142,7 +145,10 @@ void AppDelegate::checkSound() {
 
 int AppDelegate::get() {
     // Returns the singleton's opaque handle (used by some JNI helpers).
-    return reinterpret_cast<int>(s_pAppDelegate);
+    // Cast through intptr_t first to avoid "cast from pointer to smaller
+    // type loses precision" errors on 64-bit platforms (iOS arm64,
+    // Linux x86_64, Windows x64) where sizeof(int) < sizeof(pointer).
+    return static_cast<int>(reinterpret_cast<intptr_t>(s_pAppDelegate));
 }
 
 bool AppDelegate::getIsIOS() {

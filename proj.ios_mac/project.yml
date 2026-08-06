@@ -25,10 +25,15 @@ settings:
     CODE_SIGNING_REQUIRED: NO
     CODE_SIGNING_ALLOWED: NO
     DEVELOPMENT_TEAM: ""
+    # cocos2d-x 2.2.3 was written before ARC; its .mm files use manual
+    # retain/release. Force ARC off or every [obj release] / [super dealloc]
+    # line fails to compile under modern Xcode (which defaults to ARC=YES).
+    CLANG_ENABLE_OBJC_ARC: NO
+    CLANG_ENABLE_MODULES: YES
     COCOS2DX_VERSION_MAJOR: 2
     COCOS2DX_VERSION_MINOR: 2
     COCOS2DX_VERSION_PATCH: 3
-    OTHER_CFLAGS: "-fpermissive -Wno-deprecated-declarations -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-format -Wno-multichar -Wno-delete-incomplete -Wno-narrowing"
+    OTHER_CFLAGS: "-fpermissive -Wno-deprecated-declarations -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-format -Wno-multichar -Wno-delete-incomplete -Wno-narrowing -Wno-error=objc-method-signatures -Wno-error=objc-protocol-property-synthesis"
     OTHER_CPLUSPLUSFLAGS: "-fpermissive -Wno-deprecated-declarations -Wno-unused-variable -Wno-unused-function -Wno-unused-parameter -Wno-sign-compare -Wno-switch -Wno-format -Wno-multichar -Wno-delete-incomplete -Wno-narrowing -std=c++14 -stdlib=libc++"
 
 targets:
@@ -51,6 +56,14 @@ targets:
           - "platform/tizen/**"
           - "platform/mac/**"
           - "proj.*/**"
+          # CCImageCommonWebp.cpp pulls in <webp/decode.h> and links against
+          # the libwebp prebuilt .a in cocos2dx/platform/third_party/ios/.
+          # That .a was stripped from the GitHub source archive of cocos2d-x
+          # 2.2.3 (only a `*.REMOVED.git-id` placeholder remains), so the
+          # iOS link would fail with "no such file: libwebp.a". iOS uses
+          # UIImage/CGImage for texture loading instead (see
+          # cocos2dx/platform/ios/CCImage.mm), so WebP support is not needed.
+          - "platform/CCImageCommonWebp.cpp"
       - path: ../cocos2d/CocosDenshion
         excludes:
           - "android/**"
@@ -68,6 +81,14 @@ targets:
           - "proj.*/**"
           - "network/WebSocket.cpp"
           - "network/WebSocket.h"
+          # HttpClient.cpp includes <curl/curl.h> and links against the
+          # libcurl prebuilt .a in cocos2dx/platform/third_party/ios/.
+          # That .a was stripped from the GitHub source archive of cocos2d-x
+          # 2.2.3, so the iOS link would fail. Hieu Dash does not call
+          # CCHttpClient directly (only CCHttpResponse is used as a type
+          # for an unused parameter in GameToolbox::getResponse), so it is
+          # safe to drop the implementation entirely.
+          - "network/HttpClient.cpp"
           - "physics_nodes/CCPhysicsSprite.cpp"
           - "physics_nodes/CCPhysicsSprite.h"
           - "AssetsManager/**"
@@ -84,10 +105,17 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.hieuhonda.HieuDash
         PRODUCT_NAME: HieuDash
         INFOPLIST_FILE: ios/Info.plist
-        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        # The repo does not ship an Asset Catalog, so we MUST NOT set
+        # ASSETCATALOG_COMPILER_APPICON_NAME to AppIcon - Xcode 14+ treats
+        # the missing catalog as a build error otherwise.
         TARGETED_DEVICE_FAMILY: "1,2"
         IPHONEOS_DEPLOYMENT_TARGET: "11.0"
         ENABLE_BITCODE: NO
+        # Disable code signing on the build-bot. The CI runner has no
+        # Apple Developer cert; we ship an unsigned .ipa for sideloading.
+        CODE_SIGNING_ALLOWED: NO
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGN_IDENTITY: ""
         GCC_PREPROCESSOR_DEFINITIONS:
           - "$(inherited)"
           - "COCOS2DX_VERSION_MAJOR=2"
@@ -138,7 +166,7 @@ targets:
         CFBundleDisplayName: Hieu Dash
         CFBundleIdentifier: com.hieuhonda.HieuDash
         CFBundleVersion: "1"
-        CFBundleShortVersionString: "0.6"
+        CFBundleShortVersionString: "0.7"
         CFBundlePackageType: APPL
         CFBundleExecutable: HieuDash
         CFBundleInfoDictionaryVersion: "6.0"

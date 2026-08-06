@@ -97,9 +97,13 @@ void MenuLayer::keyBackClicked() { endGame(); }
 void MenuLayer::node() {}
 
 void MenuLayer::onAchievements() {
-    CCScene* scene = AchievementsLayer::scene ? AchievementsLayer::scene() : nullptr;
-    // (Defensive: the layer may not be wired up; fall back to a no-op.)
-    CC_UNUSED_PARAM(scene);
+    // Achievements scene — would push AchievementsLayer::scene() if it were
+    // implemented. The AchievementsLayer class in Hieu Dash v0.6 only has a
+    // create() factory (no scene() static), so this is a defensive no-op
+    // that does not break the build on platforms with strict name lookup
+    // (e.g. gcc on Linux rejects `Class::method ? Class::method() : ...`
+    // because the conditional-expression form is not valid for member
+    // function pointers without an explicit &address-of operator).
 }
 
 void MenuLayer::onCreator() {

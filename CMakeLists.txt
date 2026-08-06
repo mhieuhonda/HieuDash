@@ -1,5 +1,5 @@
 # =============================================================================
-#  Hieu Dash v0.6 - Top-level CMake build for Linux and Windows.
+#  Hieu Dash v0.7 - Top-level CMake build for Linux and Windows.
 #
 #  Compiles the cocos2d-x 2.2.3 engine sources directly into the HieuDash
 #  executable along with the project's own Classes/*.cpp. This avoids the
@@ -362,8 +362,28 @@ elseif(WIN32 OR MINGW)
     find_package(JPEG REQUIRED)
     find_package(TIFF REQUIRED)
     find_package(GLEW REQUIRED)
-    # WebP's vcpkg config name varies; fall back to plain -lwebp if missing.
+    # WebP: vcpkg's libwebp port does NOT consistently export a
+    # `WebP::WebP` (uppercase) imported target across versions - older
+    # ports only define `WebP::webp` (lowercase) or no target at all,
+    # which causes CMake configure to fail with "Target 'HieuDash' links
+    # to: WebP::WebP but the target was not found." Be defensive: try
+    # find_package(WebP), then probe for any of the known target names,
+    # and finally fall back to a plain -lwebp lookup via find_library.
     find_package(WebP QUIET)
+    set(_WEBP_TARGET "")
+    if(TARGET WebP::WebP)
+        set(_WEBP_TARGET WebP::WebP)
+    elseif(TARGET WebP::webp)
+        set(_WEBP_TARGET WebP::webp)
+    elseif(TARGET webp)
+        set(_WEBP_TARGET webp)
+    else()
+        find_library(WEBP_LIBRARY NAMES webp libwebp)
+        find_path(WEBP_INCLUDE_DIR NAMES webp/decode.h)
+        if(WEBP_INCLUDE_DIR)
+            target_include_directories(HieuDash PRIVATE ${WEBP_INCLUDE_DIR})
+        endif()
+    endif()
 
     target_link_libraries(HieuDash PRIVATE
         ZLIB::ZLIB
@@ -384,8 +404,10 @@ elseif(WIN32 OR MINGW)
         shell32
         shlwapi
     )
-    if(WebP_FOUND)
-        target_link_libraries(HieuDash PRIVATE WebP::WebP)
+    if(_WEBP_TARGET)
+        target_link_libraries(HieuDash PRIVATE ${_WEBP_TARGET})
+    elseif(WEBP_LIBRARY)
+        target_link_libraries(HieuDash PRIVATE ${WEBP_LIBRARY})
     else()
         target_link_libraries(HieuDash PRIVATE webp)
     endif()
