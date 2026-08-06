@@ -41,7 +41,11 @@ permissions:
 
 env:
   COCOS_VERSION: cocos2d-x-2.2.3
-  COCOS_ZIP_URL: https://github.com/niclas/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
+  # Use the OFFICIAL cocos2d/cocos2d-x repo — the niclas/cocos2d-x mirror
+  # returns 404 for this tag. The official repo has a 12.5MB archive that
+  # contains the full engine source.
+  COCOS_ZIP_URL: https://github.com/cocos2d/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
+  COCOS_DIR_NAME: cocos2d-x-cocos2d-x-2.2.3
 
 jobs:
   # ---------------------------------------------------------------------------
@@ -113,10 +117,10 @@ jobs:
       - name: Download cocos2d-x 2.2.3 engine sources
         run: |
           cd $HOME
-          wget -q https://github.com/niclas/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
+          wget -q ${COCOS_ZIP_URL}
           unzip -q cocos2d-x-2.2.3.zip
           # Move into ./cocos2d at the repo root (the layout Android.mk expects).
-          rsync -a $HOME/cocos2d-x-2.2.3/ $GITHUB_WORKSPACE/cocos2d/
+          rsync -a $HOME/${COCOS_DIR_NAME}/ $GITHUB_WORKSPACE/cocos2d/
 
       - name: Build libgame.so via ndk-build
         run: |
@@ -166,9 +170,9 @@ jobs:
       - name: Install cocos2d-x 2.2.3
         run: |
           cd $HOME
-          wget -q https://github.com/niclas/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
+          wget -q ${COCOS_ZIP_URL}
           unzip -q cocos2d-x-2.2.3.zip
-          rsync -a $HOME/cocos2d-x-2.2.3/ $GITHUB_WORKSPACE/cocos2d/
+          rsync -a $HOME/${COCOS_DIR_NAME}/ $GITHUB_WORKSPACE/cocos2d/
 
       - name: Generate Xcode project (cocos2d-x 2.2.3 install-templates)
         run: |
@@ -242,9 +246,12 @@ jobs:
         shell: pwsh
         run: |
           $env:PATH = "C:\msys64\usr\bin;$env:PATH"
-          Invoke-WebRequest -Uri https://github.com/niclas/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip -OutFile cocos2d-x-2.2.3.zip
+          Invoke-WebRequest -Uri $env:COCOS_ZIP_URL -OutFile cocos2d-x-2.2.3.zip
           Expand-Archive cocos2d-x-2.2.3.zip -DestinationPath $env:HOME
-          $src = "$env:HOME/cocos2d-x-2.2.3"
+          # The official cocos2d-x archive extracts to a directory named
+          # "cocos2d-x-cocos2d-x-2.2.3/" (matching the GitHub archive
+          # convention of <user>-<repo>-<tag>/).
+          $src = "$env:HOME/$env:COCOS_DIR_NAME"
           $dst = "$env:GITHUB_WORKSPACE/cocos2d"
           New-Item -ItemType Directory -Force -Path $dst | Out-Null
           Copy-Item -Path "$src/*" -Destination $dst -Recurse -Force
@@ -318,9 +325,9 @@ jobs:
       - name: Install cocos2d-x 2.2.3
         run: |
           cd $HOME
-          wget -q https://github.com/niclas/cocos2d-x/archive/refs/tags/cocos2d-x-2.2.3.zip
+          wget -q ${COCOS_ZIP_URL}
           unzip -q cocos2d-x-2.2.3.zip
-          rsync -a $HOME/cocos2d-x-2.2.3/ $GITHUB_WORKSPACE/cocos2d/
+          rsync -a $HOME/${COCOS_DIR_NAME}/ $GITHUB_WORKSPACE/cocos2d/
           # Apply modern-gcc compat patches (cocos2d-x 2.2.3 was written
           # for gcc 4.6; gcc 12 needs a few #include <cstdint> additions).
           cd $GITHUB_WORKSPACE/cocos2d
