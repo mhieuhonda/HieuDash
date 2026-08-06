@@ -378,9 +378,13 @@ if(LINUX)
         # XRRSetScreenConfigAndRate, XRRUpdateConfiguration, etc.) for
         # fullscreen-mode refresh-rate selection. Without -lXrandr the
         # link fails with 'undefined reference to XRR*'.
+        # NOTE: library names are case-sensitive on Linux. The actual
+        # library file names are libXrandr.so, libXxf86vm.so,
+        # libxkbfile.so - so we pass 'Xrandr', 'Xxf86vm', 'xkbfile'
+        # (note lowercase 'xkbfile') to -l.
         Xrandr
         Xxf86vm
-        Xkbfile
+        xkbfile
     )
     target_link_directories(HieuDash PRIVATE
         ${COCOS_DEPS_LIBRARY_DIRS}
