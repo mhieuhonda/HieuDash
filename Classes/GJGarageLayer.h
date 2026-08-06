@@ -22,7 +22,7 @@ public:
     void onPlayerColor1(cocos2d::CCNode*);
     void onPlayerColor2(cocos2d::CCNode*);
     void onPlayerIcon(cocos2d::CCNode*);
-    cocos2d::CCScene* scene();
+    static cocos2d::CCScene* scene();
     void setupColorSelect();
     void setupPlayerSelect();
     void showUnlockPopup(int, UnlockType);

@@ -16,7 +16,7 @@ public:
     void loadAssets();
     void loadingFinished();
     void node();
-    cocos2d::CCScene* scene();
+    static cocos2d::CCScene* scene();
     void updateProgress(int);
     ~LoadingLayer();
 };

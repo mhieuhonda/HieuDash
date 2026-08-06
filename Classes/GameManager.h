@@ -148,7 +148,7 @@ public:
     void setShowedFirstTutorial(bool);
     void setWasHigh(bool);
     void setup();
-    GameManager* sharedState();
+    static GameManager* sharedState();
     bool shouldShowTutorial(int);
     void showInterstitial();
     void showMainMenuAd();

@@ -14,7 +14,7 @@ public:
     void achievementDisplayFinished();
     bool init();
     void notifyAchievement(char const*, char const*, char const*);
-    AchievementNotifier* sharedState();
+    static AchievementNotifier* sharedState();
     void showNextAchievement();
     void willSwitchToScene(cocos2d::CCScene*);
     ~AchievementNotifier();

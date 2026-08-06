@@ -19,7 +19,7 @@ public:
     void onMyLevels();
     void onOnlineLevels();
     void onSavedLevels();
-    cocos2d::CCScene* scene();
+    static cocos2d::CCScene* scene();
     ~CreatorLayer();
 };
 

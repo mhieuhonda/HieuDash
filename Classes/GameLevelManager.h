@@ -89,7 +89,7 @@ public:
     void setLenVal(int, bool);
     void setUpDelegate(LevelUploadDelegate*);
     void setUpdateDelegate(LevelUpdateDelegate*);
-    GameLevelManager* sharedState();
+    static GameLevelManager* sharedState();
     void storeSearchResult(cocos2d::CCArray*, std::string, char const*);
     void storeUserNames(std::string);
     void updateLevel(GJGameLevel*);

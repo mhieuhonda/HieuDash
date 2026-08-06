@@ -41,7 +41,7 @@ public:
     void restorePurchases();
     void setCount(int, char const*);
     void setup();
-    GameStoreManager* sharedState();
+    static GameStoreManager* sharedState();
     void sortCategories();
     void unlockFeature(char const*);
     ~GameStoreManager();

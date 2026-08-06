@@ -16,7 +16,7 @@ public:
     int getStoreData();
     bool init();
     void loadDataFromFile(char const*);
-    FileSaveManager* sharedState();
+    static FileSaveManager* sharedState();
     ~FileSaveManager();
 };
 

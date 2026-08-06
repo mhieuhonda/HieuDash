@@ -24,7 +24,7 @@ public:
     void promoImageDownloaded(std::string);
     void setHasNewGames(bool);
     void setMoreGamesString(std::string);
-    MoreGamesManager* sharedState();
+    static MoreGamesManager* sharedState();
     bool shouldCheckMoreGames();
     ~MoreGamesManager();
 };

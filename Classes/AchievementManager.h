@@ -25,7 +25,7 @@ public:
     void resetAchievements();
     void setReportedAchievements(cocos2d::CCDictionary*);
     void setup();
-    AchievementManager* sharedState();
+    static AchievementManager* sharedState();
     ~AchievementManager();
 };
 

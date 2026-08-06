@@ -25,7 +25,7 @@ public:
     void onPlay();
     void onRobTop();
     void onStats();
-    cocos2d::CCScene* scene();
+    static cocos2d::CCScene* scene();
     void showGCQuestion();
     ~MenuLayer();
 };

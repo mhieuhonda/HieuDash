@@ -15,7 +15,7 @@ public:
     bool init();
     void keyBackClicked();
     void onBack();
-    cocos2d::CCScene* scene();
+    static cocos2d::CCScene* scene();
     void setupLevelBrowser();
     ~SavedLevelsLayer();
 };

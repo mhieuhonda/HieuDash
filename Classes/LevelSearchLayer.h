@@ -27,7 +27,7 @@ public:
     void onMostRecent();
     void onSearch();
     void onTrending();
-    cocos2d::CCScene* scene();
+    static cocos2d::CCScene* scene();
     void textChanged(CCTextInputNode*);
     void textInputClosed(CCTextInputNode*);
     void textInputOpened(CCTextInputNode*);

@@ -21,7 +21,7 @@ public:
     void hasCompletedLevel(int, bool);
     void incrementStat(char const*);
     bool init();
-    GameStatsManager* sharedState();
+    static GameStatsManager* sharedState();
     ~GameStatsManager();
 };
 
