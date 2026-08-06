@@ -96,10 +96,7 @@ jobs:
       - name: Install Android SDK (API 21 + build-tools 25.0.0)
         uses: android-actions/setup-android@v3
         with:
-          packages: |
-            platform-tools
-            platforms;android-21
-            build-tools;25.0.0
+          packages: 'platform-tools platforms;android-21 build-tools;25.0.0'
 
       - name: Setup Java 8 (for Ant 1.9.x)
         uses: actions/setup-java@v4
@@ -366,7 +363,7 @@ jobs:
             libpng-dev libjpeg-dev libtiff-dev libwebp-dev \
             libglfw3-dev libglew-dev \
             libpulse-dev libasound2-dev libsndfile1-dev \
-            libopenal-dev libalut-dev freealut-dev \
+            libopenal-dev libalut-dev \
             libvorbis-dev libogg-dev \
             libcurl4-gnutls-dev libzip-dev zlib1g-dev
 
