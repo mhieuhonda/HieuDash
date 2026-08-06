@@ -37,7 +37,7 @@ bool LevelSelectLayer::init(int page) {
 
     m_nLevel = page;
     setKeypadEnabled(true);
-    setKeyboardEnabled(true);
+    setKeypadEnabled(true);
 
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
 

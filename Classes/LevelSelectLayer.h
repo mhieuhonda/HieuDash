@@ -10,8 +10,10 @@
 
 class LevelSelectLayer : public cocos2d::CCLayer {
 public:
+    int m_nLevel;
+
     LevelSelectLayer();
-    void colorForPage(int);
+    cocos2d::ccColor3B colorForPage(int);
     static LevelSelectLayer* create(int);
     int getColorValue(int, int, float);
     bool init(int);
