@@ -30,12 +30,13 @@ runtime emulation.
 
 ```
 HieuDash/
-├── Classes/                # C++ game code (147 reverse-engineered classes)
+├── Classes/                # C++ game code (148 reverse-engineered classes)
 │   ├── AppDelegate.{h,cpp}
 │   ├── GameObject.{h,cpp}
 │   ├── PlayLayer.{h,cpp}
 │   ├── PlayerObject.{h,cpp}
 │   ├── GJGameLevel.{h,cpp}
+│   ├── GJObjectDecoder.{h,cpp}   # NEW in v0.4 — save-file factory
 │   ├── GameManager.{h,cpp}
 │   ├── EditorUI.{h,cpp}
 │   ├── LevelEditorLayer.{h,cpp}
@@ -49,12 +50,25 @@ HieuDash/
 │   ├── *.png               # sprite sheets (GJ_GameSheet, GJ_LaunchSheet, …)
 │   ├── *.fnt               # bitmap fonts (bigFont, chatFont, goldFont)
 │   ├── *.mp3               # music tracks (StereoMadness, BackOnTrack, …)
-│   └── *.ogg               # SFX (explode_11, playSound_01, …)
+│   ├── *.ogg               # SFX (explode_11, playSound_01, …)
+│   ├── RESOURCE_MANIFEST.md   # NEW in v0.4 — asset audit (what's missing)
+│   └── SPRITE_FRAMES.md       # NEW in v0.4 — full sprite-frame name list
+│
+├── gd_reference/           # NEW in v0.4 — vendor snapshot of
+│   │                       # Wyliemaster/GD-Decompiled (reference only)
+│   ├── headers/            # 41 .h files (Layers/, Managers/, cells/)
+│   ├── src/                # 21 .cpp files with reconstructed bodies
+│   ├── README-GD-Decompiled.md
+│   ├── LICENSE-GD-Decompiled
+│   └── README.md           # how to port implementations into Classes/
+│
+├── scripts/                # NEW in v0.4 — build/audit scripts
+│   └── gen_resource_manifest.py
 │
 ├── proj.android/           # Android project (the only platform the APK shipped on)
 │   ├── AndroidManifest.xml # original manifest, decoded by apktool
 │   ├── jni/
-│   │   ├── Android.mk      # NDK build script — lists all 147 C++ sources
+│   │   ├── Android.mk      # NDK build script — lists all 148 C++ sources
 │   │   ├── Application.mk  # APP_STL=gnustl_static, APP_ABI=armeabi
 │   │   └── main.cpp        # JNI entry point (nativeInit → cocos_main)
 │   ├── src/
@@ -235,6 +249,14 @@ mangled names in the ELF dynamic symbol table.
 
 ## Release
 
-The first release of this reconstruction is published as
-**[`Hieu Dash v0.1`](https://github.com/mhieuhonda/HieuDash/releases/tag/v0.1)**
-on the GitHub Releases page.
+The current release is
+**[`Hieu Dash v0.4`](https://github.com/mhieuhonda/HieuDash/releases/tag/v0.4)**
+— resource & reference-completeness release. Brings in the entire
+GD-Decompiled (Wyliemaster) reference snapshot as in-tree reference
+material, adds the missing `GJObjectDecoder` class, and ships a full
+resource manifest (`Resources/RESOURCE_MANIFEST.md`) auditing every
+asset the GD 1.0 code references.
+
+Previous releases:
+- [v0.3](https://github.com/mhieuhonda/HieuDash/releases/tag/v0.3) — 68-bug-fix + full `libgame.so` decompilation
+- [v0.1](https://github.com/mhieuhonda/HieuDash/releases/tag/v0.1) — initial reverse-engineered release

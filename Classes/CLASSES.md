@@ -74,6 +74,7 @@ Reverse-engineered from `libgame.so` (Geometry Dash 1.0).
 | `GJGarageLayer` | 23 |
 | `GJListLayer` | 4 |
 | `GJMoreGamesLayer` | 4 |
+| `GJObjectDecoder` | 6 |
 | `GJSearchObject` | 20 |
 | `GManager` | 12 |
 | `GameCell` | 7 |

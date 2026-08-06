@@ -100,6 +100,7 @@
 #include "GJListLayer.h"
 #include "GJMapPack.h"
 #include "GJMoreGamesLayer.h"
+#include "GJObjectDecoder.h"
 #include "GJSearchObject.h"
 #include "GJChallengeItem.h"
 #include "GJLevelScoreCell.h"

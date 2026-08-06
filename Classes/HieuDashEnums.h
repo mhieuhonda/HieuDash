@@ -251,6 +251,8 @@ enum ItemType {
     kItemTypeColor2
 };
 
+// CoderKey — values recovered from libgame.so and cross-referenced
+// with the GD-Decompiled GJObjectDecoder header (v0.4 port).
 enum CoderKey {
     kCoderKeyLevelIDSeed = 0,
     kCoderKeyLevelIDRand,
@@ -259,7 +261,14 @@ enum CoderKey {
     kCoderKeyAccountIDSeed,
     kCoderKeyAccountIDRand,
     kCoderKeyIconSeed,
-    kCoderKeyIconRand
+    kCoderKeyIconRand,
+    // GD-Decompiled canonical keys (gd_reference/headers/GJObjectDecoder.h)
+    kCoderKeyGameLevel       = 0x4,
+    kCoderKeyUnused          = 0x5,
+    kCoderKeySongInfo        = 0x6,
+    kCoderKeyChallengeItem   = 0x7,
+    kCoderKeyRewardItem      = 0x8,
+    kCoderKeyRewardObject    = 0x9
 };
 
 enum GJLength {
