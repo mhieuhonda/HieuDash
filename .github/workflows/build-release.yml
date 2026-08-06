@@ -246,15 +246,19 @@ jobs:
         shell: pwsh
         run: |
           $env:PATH = "C:\msys64\usr\bin;$env:PATH"
+          # On Windows GitHub runners, $env:HOME is not always set in
+          # PowerShell, so use USERPROFILE (always available).
+          $cocosHome = $env:USERPROFILE
           Invoke-WebRequest -Uri $env:COCOS_ZIP_URL -OutFile cocos2d-x-2.2.3.zip
-          Expand-Archive cocos2d-x-2.2.3.zip -DestinationPath $env:HOME
+          Expand-Archive cocos2d-x-2.2.3.zip -DestinationPath $cocosHome
           # The official cocos2d-x archive extracts to a directory named
           # "cocos2d-x-cocos2d-x-2.2.3/" (matching the GitHub archive
           # convention of <user>-<repo>-<tag>/).
-          $src = "$env:HOME/$env:COCOS_DIR_NAME"
+          $src = "$cocosHome/$env:COCOS_DIR_NAME"
           $dst = "$env:GITHUB_WORKSPACE/cocos2d"
           New-Item -ItemType Directory -Force -Path $dst | Out-Null
           Copy-Item -Path "$src/*" -Destination $dst -Recurse -Force
+          Write-Host "cocos2d-x extracted to $dst"
 
       - name: Build via cocos2d-x 2.2.3 build-win32.ps1 (fallback msbuild)
         shell: pwsh
