@@ -280,13 +280,25 @@ jobs:
   build-ios:
     name: Build iOS .ipa
     needs: prepare
-    runs-on: macos-13
+    # v0.7: macos-13 (Intel) runners have chronic queue issues on free tier
+    # (60+ min waits). macos-latest (macos-14, Apple Silicon) has much better
+    # availability. The cocos2d-x 2.2.3 ObjC/C++ code compiles fine on Apple
+    # Silicon with Xcode 15+.
+    runs-on: macos-latest
     timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
-      - name: Select Xcode 14.3
-        run: sudo xcode-select -switch /Applications/Xcode_14.3.app
+      - name: Select Xcode (latest available)
+        run: |
+          # List available Xcode versions and select the newest one.
+          # macos-latest ships Xcode 15.x or 16.x; macos-13 ships 14.x.
+          # We don't pin a specific version so the build works on any runner.
+          ls -d /Applications/Xcode*.app 2>/dev/null | sort -V
+          LATEST_XCODE=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          echo "Selecting: $LATEST_XCODE"
+          sudo xcode-select -switch "$LATEST_XCODE"
+          xcodebuild -version
 
       - name: Install xcodegen + ccache
         run: |
