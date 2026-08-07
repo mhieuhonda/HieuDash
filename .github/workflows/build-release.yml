@@ -322,11 +322,25 @@ jobs:
       - name: Build .app (unsigned, with ccache)
         run: |
           cd proj.ios_mac
-          # Enable ccache by overriding CC/CXX via the Xcode build settings.
-          # The CLANG_ENABLE_MODULE_DEBUGGING setting is needed because some
-          # cocos2d-x 2.2.3 headers use modules that don't verify cleanly.
+          # v0.7 fix: use C_COMPILER_LAUNCHER (Xcode-native ccache integration)
+          # instead of the older "CC=ccache clang" trick. Xcode 16+ spawns the
+          # compiler via posix_spawn() directly (no /bin/sh -c), so a value
+          # like "ccache clang" is treated as a literal executable path with a
+          # space in it, producing "error: unable to spawn process 'ccache
+          # clang' (No such file or directory)". C_COMPILER_LAUNCHER is the
+          # build setting that Xcode officially supports for ccache; combined
+          # with CLANG_ENABLE_EXPLICIT_MODULES_WITH_COMPILER_LAUNCHER=YES it
+          # also disables the "compiler was not recognized" warning that
+          # Xcode's new explicit-modules verifier emits for launcher-prefixed
+          # compiler invocations.
           export CCACHE_DIR=$HOME/.ccache
           mkdir -p $CCACHE_DIR
+          # Make absolutely sure ccache is on PATH for xcodebuild's spawned
+          # compiler driver. brew installs ccache to /opt/homebrew/bin (which
+          # is on PATH for interactive shells but not always for the
+          # xcodebuild-spawned clang).
+          echo "ccache location: $(command -v ccache || echo NOT_FOUND)"
+          export PATH="/opt/homebrew/bin:/opt/homebrew/opt/ccache/libexec:$PATH"
           ccache -M 2G || true
           xcodebuild \
             -project HieuDash.xcodeproj \
@@ -336,8 +350,11 @@ jobs:
             -sdk iphoneos \
             CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
             DEVELOPMENT_TEAM="" \
-            CC="ccache clang" \
-            CXX="ccache clang++" \
+            CC=clang \
+            CXX=clang++ \
+            C_COMPILER_LAUNCHER=ccache \
+            CXX_COMPILER_LAUNCHER=ccache \
+            CLANG_ENABLE_EXPLICIT_MODULES_WITH_COMPILER_LAUNCHER=YES \
             build
 
       - name: Package .app into .ipa
