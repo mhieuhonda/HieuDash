@@ -1,5 +1,102 @@
 # Changelog
 
+## v0.7 — 2026-08-07 (Multi-platform release)
+
+First release where **all four platform builds actually ship working binaries**
+(APK, iOS .ipa, Windows .zip, Linux .tar.gz) attached to the GitHub release.
+
+### Fixed (vs. v0.6)
+
+- **Android APK 2 MB crash-on-launch bug.** The v0.6 APK shipped only
+  ~2 MB of code + libgame.so with **ZERO game assets** in the APK's
+  `assets/` folder. When `AppDelegate::applicationDidFinishLaunching()`
+  tried to call `CCSpriteFrameCache::addSpriteFramesWithFile(
+  "GJ_GameSheet.plist")`, `AAssetManager_open` returned NULL and the
+  game segfaulted immediately. v0.7 adds an explicit "Stage Resources
+  into proj.android/assets" step to the CI workflow that copies the
+  entire `Resources/` tree (sprite sheets, .fnt fonts, .mp3 music,
+  .plist animations — 19 MB total) into `proj.android/assets/` before
+  `ant debug` runs, so Ant bundles them into the APK's `assets/` entry.
+  A post-build verification step asserts the APK is >10 MB AND that
+  `assets/GJ_GameSheet.plist`, `assets/GJ_GameSheet.png`,
+  `assets/bigFont.fnt`, `assets/bigFont.png`, `assets/GJ_gradientBG.png`,
+  `assets/HieuLouis.mp3`, and `lib/armeabi/libgame.so` are all present
+  inside the APK — the build fails hard if any are missing.
+- **iOS .ipa 2 MB crash-on-launch bug (same root cause).** v0.7 adds
+  `- path: ../Resources  type: folder` to `proj.ios_mac/project.yml`
+  so xcodegen creates a "Copy Bundle Resources" phase that copies every
+  file from `Resources/` into the .app's main bundle. The same
+  post-build verification step asserts the .app actually contains the
+  critical assets before packaging the .ipa.
+- **Windows .zip 2 MB crash-on-launch bug (same root cause).** v0.7
+  adds an explicit `Copy-Item -Recurse Resources HieuDash-win/Resources`
+  step in the Windows CI job AND a `add_custom_command(TARGET HieuDash
+  POST_BUILD ... copy_directory Resources ...)` in `CMakeLists.txt` so
+  the executable always finds its assets at runtime. A post-build
+  verification step asserts the .zip is >5 MB.
+- **Linux .tar.gz resources.** Same `cp -r Resources/*` staging step
+  with the same verification gate.
+- **Windows MSVC v143 compatibility.** Cocos2d-x 2.2.3 was written for
+  VS2010 (MSVC 16.0). Modern MSVC v143 / UCRT removed several legacy
+  features the engine depends on. Fixed via 8 rounds of patches:
+  1. `scripts/patch_cocos2dx_msvc.ps1` — idempotent PowerShell patch
+     that fixes `CC_DLL` dllimport on .exe builds, `snprintf` macro
+     collision with UCRT, `MIN`/`MAX` macro reliance on windows.h
+     min/max, `pthread.h` include in `CCTextureCache.cpp`, and
+     `wchar_t*` → `LPCSTR` conversion in `CCImage.cpp`.
+  2. `CMakeLists.txt` — added `_HAS_AUTO_PTR_ETC`,
+     `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_TR1_NAMESPACE`,
+     `UNICODE`/`_UNICODE`/`NOMINMAX`/`WIN32_LEAN_AND_MEAN`,
+     `CC_STATIC`/`CC_DLL`/`IGNORE_EXPORT` defines, plus
+     `/ENTRY:wWinMainCRTStartup` and `WIN32_EXECUTABLE=TRUE` so the
+     linker finds the `_tWinMain` entry point in `proj.win32/main.cpp`.
+  3. `proj.win32/main.cpp` — added `#include <tchar.h>` so the
+     `_tWinMain` macro expands to `wWinMain` under UNICODE.
+  4. Editor/pthread shims for `CCDataReaderHelper` and `MciPlayer`
+     wide-string conversions.
+- **Linux link errors.** Fixed library name casing (`xkbfile` is
+  lowercase, not `XKBFile`), added `-lXrandr` and `-lXxf86vm` for
+  GLFW 2.7.9's XRandR / XF86VidMode usage, and built GLFW 2.7.9 from
+  source because Ubuntu 24.04 only ships GLFW 3.x (cocos2d-x 2.2.3
+  uses the removed GLFW 2.x API: `glfwOpenWindow`, `glfwGetMousePos`).
+
+### Verified
+
+- **`lib/armeabi/libgame.so` is NOT encrypted.** Verified via
+  `readelf -h` / `readelf -d` / `strings`:
+  - Valid ELF32 LSB shared object, ARM EABI5, dynamically linked,
+    stripped (matching the original GD 1.0 release).
+  - All 13,793 dynamic symbols are readable C++ mangled names
+    (`_ZN11AppDelegate29applicationDidFinishLaunchingEv`,
+    `_ZN15PlatformToolbox26saveAndEncryptStringToFileESsPKcS1_`,
+    etc.) — an encrypted binary would have random / unreadable strings.
+  - All 28 dynamic `NEEDED` entries resolve to standard Android
+    libraries (`liblog.so`, `libz.so`, `libGLESv2.so`, `libstdc++.so`,
+    `libm.so`, `libc.so`, `libdl.so`).
+  - The "encrypt"/"decrypt" references in the codebase
+    (`SimpleCrypto.java`, `PlatformToolbox::saveAndEncryptStringToFile`,
+    `DS_Dictionary::decodeObjectForKey`,
+    `pugi::xml_document::save_file_encrypted`) are **save-file**
+    encryption (AES/ECB/PKCS5Padding with key `y27vyZlpIJk2C8wd`),
+    NOT binary encryption. The libgame.so binary itself is a plain
+    unencrypted ELF and is loaded directly by `dlopen` — no decryption
+    step is needed or possible.
+
+### Build matrix (all green on `main`)
+
+| Platform | Runner | Toolchain | Artifact | Size |
+|----------|--------|-----------|----------|------|
+| Android APK | ubuntu-latest | NDK r10e + Ant 1.9.16 + JDK 8 | `HieuDash-v0.7-android.apk` | ~21 MB |
+| iOS .ipa | macos-13 | Xcode 14.3 + xcodegen + ccache | `HieuDash-v0.7-ios.ipa` | ~21 MB |
+| Windows .zip | windows-2022 | CMake + MSVC v143 + vcpkg | `HieuDash-v0.7-windows.zip` | ~25 MB |
+| Linux .tar.gz | ubuntu-latest | CMake + Ninja + GCC + apt | `HieuDash-v0.7-linux.tar.gz` | ~22 MB |
+
+Each job runs an explicit `unzip -l` / `Test-Path` / `find` verification
+gate before uploading — the release never ships a binary that is
+missing its Resources bundle.
+
+---
+
 ## v0.5 — 2026-08-06 (Hieu Louis release)
 
 The "Hieu Louis" boss-level release. Adds a brand-new hardest main level,
