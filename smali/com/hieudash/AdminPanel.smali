@@ -132,7 +132,7 @@
 
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 20
+    .locals 14
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -143,7 +143,7 @@
 
     new-instance v1, Landroid/graphics/drawable/ColorDrawable;
 
-    const/high16 v2, -0x80000000
+    const v2, 0x80000000
 
     invoke-direct {v1, v2}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
@@ -154,9 +154,9 @@
 
     invoke-virtual {p0}, Lcom/hieudash/AdminPanel;->getContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-direct {v0, v1}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;)V
 
     # Create main LinearLayout (vertical)
     new-instance v1, Landroid/widget/LinearLayout;
@@ -239,8 +239,6 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/EditText;->setInputType(I)V
 
-    iget-object v4, p0, Lcom/hieudash/AdminPanel;->mUserIdInput:Landroid/widget/EditText;
-
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     # === LEVEL ID INPUT ===
@@ -279,8 +277,6 @@
     const/4 v5, 0x2
 
     invoke-virtual {v4, v5}, Landroid/widget/EditText;->setInputType(I)V
-
-    iget-object v4, p0, Lcom/hieudash/AdminPanel;->mLevelIdInput:Landroid/widget/EditText;
 
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -321,11 +317,9 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/EditText;->setInputType(I)V
 
-    iget-object v4, p0, Lcom/hieudash/AdminPanel;->mStarsInput:Landroid/widget/EditText;
-
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    # === SECTION: Ban / Unban User ===
+    # === SECTION: User Management ===
     new-instance v4, Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/hieudash/AdminPanel;->getContext()Landroid/content/Context;
@@ -386,7 +380,7 @@
 
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    # Block User Button (reuse $6 for user info, add separate block/unblock)
+    # View User Info Button
     new-instance v4, Landroid/widget/Button;
 
     invoke-virtual {p0}, Lcom/hieudash/AdminPanel;->getContext()Landroid/content/Context;
@@ -596,19 +590,13 @@
 
     const/high16 v5, 0x41400000    # 12.0f
 
-    iget-object v4, p0, Lcom/hieudash/AdminPanel;->mResultText:Landroid/widget/TextView;
-
     const/4 v6, 0x2
 
     invoke-virtual {v4, v6, v5}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    iget-object v4, p0, Lcom/hieudash/AdminPanel;->mResultText:Landroid/widget/TextView;
-
     const/high16 v5, -0x1000000
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextColor(I)V
-
-    iget-object v4, p0, Lcom/hieudash/AdminPanel;->mResultText:Landroid/widget/TextView;
 
     invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -647,7 +635,7 @@
 
     invoke-virtual {p0, v0, v4}, Lcom/hieudash/AdminPanel;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    # Set dialog to be cancelable and set title
+    # Set dialog to be cancelable
     const/4 v4, 0x1
 
     invoke-virtual {p0, v4}, Lcom/hieudash/AdminPanel;->setCancelable(Z)V
