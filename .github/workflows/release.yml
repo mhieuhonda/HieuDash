@@ -46,12 +46,19 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          packages: |
-            build-tools;34.0.0
-            platforms;android-34
+      - name: Set up Android SDK (manual)
+        run: |
+          set -euo pipefail
+          # Pre-installed Android SDK on ubuntu-22.04 runners lives here:
+          export ANDROID_SDK_ROOT="/usr/local/lib/android/sdk"
+          export ANDROID_HOME="${ANDROID_SDK_ROOT}"
+          echo "ANDROID_SDK_ROOT=${ANDROID_SDK_ROOT}" >> $GITHUB_ENV
+          echo "ANDROID_HOME=${ANDROID_HOME}"         >> $GITHUB_ENV
+          # Accept licenses non-interactively
+          yes | "${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null 2>&1 || true
+          "${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager" \
+            "build-tools;34.0.0" "platforms;android-34"
+          ls "${ANDROID_SDK_ROOT}/build-tools/"
 
       - name: Install apktool
         run: |
@@ -215,8 +222,21 @@ jobs:
     runs-on: windows-2022
     continue-on-error: true
     steps:
-      - name: Checkout
+      - name: Configure git for Windows-incompatible paths
+        run: |
+          git config --global core.protectNTFS false
+          git config --global core.longpaths true
+
+      - name: Checkout (sparse — excludes Classes/ which contains '*'/space/'<>' chars)
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            CMakeLists.txt
+            Resources
+            scripts
+            thirdparty
+          sparse-checkout-cone-mode: false
 
       - name: Set up MSVC dev cmd
         uses: ilammy/msvc-dev-cmd@v1
