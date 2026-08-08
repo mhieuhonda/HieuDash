@@ -1,7 +1,3 @@
-// ============================================================
-// TextArea.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TEXTAREA_H_
 #define TEXTAREA_H_
@@ -11,8 +7,6 @@
 
 class TextArea : public cocos2d::CCNode {
 public:
-    virtual ~TextArea();
-    virtual ~TextArea();
     virtual ~TextArea();
 
     void finishFade();

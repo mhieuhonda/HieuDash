@@ -1,7 +1,3 @@
-// ============================================================
-// PlayLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef PLAYLAYER_H_
 #define PLAYLAYER_H_
@@ -21,8 +17,6 @@ class PlayerObject;
 
 class PlayLayer : public GJBaseGameLayer {
 public:
-    virtual ~PlayLayer();
-    virtual ~PlayLayer();
     virtual ~PlayLayer();
 
     void playReplay(std::string);

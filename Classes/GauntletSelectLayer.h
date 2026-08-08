@@ -1,7 +1,3 @@
-// ============================================================
-// GauntletSelectLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAUNTLETSELECTLAYER_H_
 #define GAUNTLETSELECTLAYER_H_
@@ -10,8 +6,6 @@
 
 class GauntletSelectLayer {
 public:
-    virtual ~GauntletSelectLayer();
-    virtual ~GauntletSelectLayer();
     virtual ~GauntletSelectLayer();
 
     void unblockPlay();

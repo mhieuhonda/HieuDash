@@ -1,7 +1,3 @@
-// ============================================================
-// SetupPulsePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPPULSEPOPUP_H_
 #define SETUPPULSEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupPulsePopup {
 public:
-    virtual ~SetupPulsePopup();
-    virtual ~SetupPulsePopup();
     virtual ~SetupPulsePopup();
 
     void onExclusive(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupMGTrigger.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPMGTRIGGER_H_
 #define SETUPMGTRIGGER_H_
@@ -10,8 +6,6 @@
 
 class SetupMGTrigger {
 public:
-    virtual ~SetupMGTrigger();
-    virtual ~SetupMGTrigger();
     virtual ~SetupMGTrigger();
 
     void textChanged(CCTextInputNode*);

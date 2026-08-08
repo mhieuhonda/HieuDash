@@ -1,7 +1,3 @@
-// ============================================================
-// EffectGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EFFECTGAMEOBJECT_H_
 #define EFFECTGAMEOBJECT_H_
@@ -16,8 +12,6 @@ public:
     EffectGameObject();
     EffectGameObject();
 
-    virtual ~EffectGameObject();
-    virtual ~EffectGameObject();
     virtual ~EffectGameObject();
 
     void canReverse();

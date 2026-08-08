@@ -1,7 +1,3 @@
-// ============================================================
-// HSVWidgetPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef HSVWIDGETPOPUP_H_
 #define HSVWIDGETPOPUP_H_
@@ -11,8 +7,6 @@
 
 class HSVWidgetPopup {
 public:
-    virtual ~HSVWidgetPopup();
-    virtual ~HSVWidgetPopup();
     virtual ~HSVWidgetPopup();
 
     void keyBackClicked();

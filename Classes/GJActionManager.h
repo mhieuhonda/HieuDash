@@ -1,7 +1,3 @@
-// ============================================================
-// GJActionManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJACTIONMANAGER_H_
 #define GJACTIONMANAGER_H_
@@ -10,8 +6,6 @@
 
 class GJActionManager {
 public:
-    virtual ~GJActionManager();
-    virtual ~GJActionManager();
     virtual ~GJActionManager();
 
     void getInternalAction(int);

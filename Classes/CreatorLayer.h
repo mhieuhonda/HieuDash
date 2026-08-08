@@ -1,7 +1,3 @@
-// ============================================================
-// CreatorLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CREATORLAYER_H_
 #define CREATORLAYER_H_
@@ -10,8 +6,6 @@
 
 class CreatorLayer : public cocos2d::CCLayer {
 public:
-    virtual ~CreatorLayer();
-    virtual ~CreatorLayer();
     virtual ~CreatorLayer();
 
     void onMapPacks(cocos2d::CCObject*);

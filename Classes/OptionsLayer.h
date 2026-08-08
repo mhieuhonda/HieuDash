@@ -1,7 +1,3 @@
-// ============================================================
-// OptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef OPTIONSLAYER_H_
 #define OPTIONSLAYER_H_
@@ -11,8 +7,6 @@
 
 class OptionsLayer : public cocos2d::CCLayer {
 public:
-    virtual ~OptionsLayer();
-    virtual ~OptionsLayer();
     virtual ~OptionsLayer();
 
     void customSetup();

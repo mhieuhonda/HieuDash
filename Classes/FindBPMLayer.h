@@ -1,7 +1,3 @@
-// ============================================================
-// FindBPMLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef FINDBPMLAYER_H_
 #define FINDBPMLAYER_H_
@@ -10,8 +6,6 @@
 
 class FindBPMLayer {
 public:
-    virtual ~FindBPMLayer();
-    virtual ~FindBPMLayer();
     virtual ~FindBPMLayer();
 
     void calculateBPM();

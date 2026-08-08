@@ -1,7 +1,3 @@
-// ============================================================
-// AudioLineGuideGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef AUDIOLINEGUIDEGAMEOBJECT_H_
 #define AUDIOLINEGUIDEGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class AudioLineGuideGameObject {
 public:
-    virtual ~AudioLineGuideGameObject();
-    virtual ~AudioLineGuideGameObject();
     virtual ~AudioLineGuideGameObject();
 
     void getSaveString(GJBaseGameLayer*);

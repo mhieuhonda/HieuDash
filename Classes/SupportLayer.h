@@ -1,7 +1,3 @@
-// ============================================================
-// SupportLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SUPPORTLAYER_H_
 #define SUPPORTLAYER_H_
@@ -11,8 +7,6 @@
 
 class SupportLayer {
 public:
-    virtual ~SupportLayer();
-    virtual ~SupportLayer();
     virtual ~SupportLayer();
 
     void customSetup();

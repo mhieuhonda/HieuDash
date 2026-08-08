@@ -1,5 +1,5 @@
 # =============================================================================
-# GeometryDash (HieuDash) — Release Pipeline
+# GeometryDash (GeometryDash) — Release Pipeline
 # Triggers automatically when a new release is published.
 # Builds APK, Linux, Windows, iOS artifacts and attaches them to the release.
 # =============================================================================

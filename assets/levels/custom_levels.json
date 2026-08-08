@@ -1,0 +1,29 @@
+{
+  "version": "0.3",
+  "custom_levels": [
+    {
+      "id": 6001,
+      "name": "Crimson Abyss",
+      "difficulty": "Extreme Demon",
+      "description": "Top-1 Extreme Demon. 4 minutes. 13 gamemode sections. Crimson palette with ember accents."
+    },
+    {
+      "id": 6002,
+      "name": "Neon Phantom",
+      "difficulty": "Insane Demon",
+      "description": "Cyberpunk neon. Ship/UFO/Wave gauntlets. Fast and flashy."
+    },
+    {
+      "id": 6003,
+      "name": "Void Tempest",
+      "difficulty": "Hard Demon",
+      "description": "Dark void. Ball/Robot sections. Gravity flips."
+    },
+    {
+      "id": 6004,
+      "name": "Astral Eclipse",
+      "difficulty": "Insane",
+      "description": "Cosmic space. Dual sections. Swing copter. Beautiful starfield."
+    }
+  ]
+}

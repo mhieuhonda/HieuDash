@@ -1,7 +1,3 @@
-// ============================================================
-// SetupForceBlockPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPFORCEBLOCKPOPUP_H_
 #define SETUPFORCEBLOCKPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupForceBlockPopup {
 public:
-    virtual ~SetupForceBlockPopup();
-    virtual ~SetupForceBlockPopup();
     virtual ~SetupForceBlockPopup();
 
     void valueDidChange(int, float);

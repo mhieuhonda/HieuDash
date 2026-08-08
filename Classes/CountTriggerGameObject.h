@@ -1,7 +1,3 @@
-// ============================================================
-// CountTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COUNTTRIGGERGAMEOBJECT_H_
 #define COUNTTRIGGERGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class CountTriggerGameObject : public EffectGameObject {
 public:
-    virtual ~CountTriggerGameObject();
-    virtual ~CountTriggerGameObject();
     virtual ~CountTriggerGameObject();
 
     void getSaveString(GJBaseGameLayer*);

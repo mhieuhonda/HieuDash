@@ -1,7 +1,3 @@
-// ============================================================
-// ConfigureHSVWidget.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CONFIGUREHSVWIDGET_H_
 #define CONFIGUREHSVWIDGET_H_
@@ -10,8 +6,6 @@
 
 class ConfigureHSVWidget {
 public:
-    virtual ~ConfigureHSVWidget();
-    virtual ~ConfigureHSVWidget();
     virtual ~ConfigureHSVWidget();
 
     void onResetHSV(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// CCScrollLayerExt.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCSCROLLLAYEREXT_H_
 #define CCSCROLLLAYEREXT_H_
@@ -13,8 +9,6 @@ public:
     CCScrollLayerExt(cocos2d::CCRect);
     CCScrollLayerExt(cocos2d::CCRect);
 
-    virtual ~CCScrollLayerExt();
-    virtual ~CCScrollLayerExt();
     virtual ~CCScrollLayerExt();
 
     void scrollLayer(float);

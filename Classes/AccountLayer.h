@@ -1,7 +1,3 @@
-// ============================================================
-// AccountLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ACCOUNTLAYER_H_
 #define ACCOUNTLAYER_H_
@@ -11,8 +7,6 @@
 
 class AccountLayer : public cocos2d::CCLayer {
 public:
-    virtual ~AccountLayer();
-    virtual ~AccountLayer();
     virtual ~AccountLayer();
 
     void onRegister(cocos2d::CCObject*);

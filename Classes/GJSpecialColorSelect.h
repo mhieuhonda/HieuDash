@@ -1,7 +1,3 @@
-// ============================================================
-// GJSpecialColorSelect.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJSPECIALCOLORSELECT_H_
 #define GJSPECIALCOLORSELECT_H_
@@ -10,8 +6,6 @@
 
 class GJSpecialColorSelect {
 public:
-    virtual ~GJSpecialColorSelect();
-    virtual ~GJSpecialColorSelect();
     virtual ~GJSpecialColorSelect();
 
     void onSelectColor(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAreaAnimTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPAREAANIMTRIGGERPOPUP_H_
 #define SETUPAREAANIMTRIGGERPOPUP_H_
@@ -11,8 +7,6 @@
 
 class SetupAreaAnimTriggerPopup {
 public:
-    virtual ~SetupAreaAnimTriggerPopup();
-    virtual ~SetupAreaAnimTriggerPopup();
     virtual ~SetupAreaAnimTriggerPopup();
 
     void valueDidChange(int, float);

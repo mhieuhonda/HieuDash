@@ -1,7 +1,3 @@
-// ============================================================
-// ColorSelectLiveOverlay.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COLORSELECTLIVEOVERLAY_H_
 #define COLORSELECTLIVEOVERLAY_H_
@@ -11,8 +7,6 @@
 
 class ColorSelectLiveOverlay {
 public:
-    virtual ~ColorSelectLiveOverlay();
-    virtual ~ColorSelectLiveOverlay();
     virtual ~ColorSelectLiveOverlay();
 
     void onSelectTab(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SongInfoObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SONGINFOOBJECT_H_
 #define SONGINFOOBJECT_H_
@@ -11,8 +7,6 @@
 
 class SongInfoObject {
 public:
-    virtual ~SongInfoObject();
-    virtual ~SongInfoObject();
     virtual ~SongInfoObject();
 
     void copyValues(SongInfoObject*);

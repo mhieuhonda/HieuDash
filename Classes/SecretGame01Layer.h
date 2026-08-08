@@ -1,7 +1,3 @@
-// ============================================================
-// SecretGame01Layer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SECRETGAME01LAYER_H_
 #define SECRETGAME01LAYER_H_
@@ -10,8 +6,6 @@
 
 class SecretGame01Layer {
 public:
-    virtual ~SecretGame01Layer();
-    virtual ~SecretGame01Layer();
     virtual ~SecretGame01Layer();
 
     void gameStep01();

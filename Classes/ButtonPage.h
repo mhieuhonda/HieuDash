@@ -1,7 +1,3 @@
-// ============================================================
-// ButtonPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef BUTTONPAGE_H_
 #define BUTTONPAGE_H_
@@ -10,8 +6,6 @@
 
 class ButtonPage {
 public:
-    virtual ~ButtonPage();
-    virtual ~ButtonPage();
     virtual ~ButtonPage();
 
     void init(cocos2d::CCArray*, cocos2d::CCPoint, int, float);

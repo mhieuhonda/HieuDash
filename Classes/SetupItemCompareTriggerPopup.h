@@ -1,7 +1,3 @@
-// ============================================================
-// SetupItemCompareTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPITEMCOMPARETRIGGERPOPUP_H_
 #define SETUPITEMCOMPARETRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupItemCompareTriggerPopup {
 public:
-    virtual ~SetupItemCompareTriggerPopup();
-    virtual ~SetupItemCompareTriggerPopup();
     virtual ~SetupItemCompareTriggerPopup();
 
     void onOpButton(cocos2d::CCObject*);

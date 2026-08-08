@@ -1,7 +1,3 @@
-// ============================================================
-// SetupTimerControlTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPTIMERCONTROLTRIGGERPOPUP_H_
 #define SETUPTIMERCONTROLTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupTimerControlTriggerPopup {
 public:
-    virtual ~SetupTimerControlTriggerPopup();
-    virtual ~SetupTimerControlTriggerPopup();
     virtual ~SetupTimerControlTriggerPopup();
 
     void onCustomToggleTriggerValue(cocos2d::CCObject*);

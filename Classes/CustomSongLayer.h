@@ -1,7 +1,3 @@
-// ============================================================
-// CustomSongLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CUSTOMSONGLAYER_H_
 #define CUSTOMSONGLAYER_H_
@@ -10,8 +6,6 @@
 
 class CustomSongLayer {
 public:
-    virtual ~CustomSongLayer();
-    virtual ~CustomSongLayer();
     virtual ~CustomSongLayer();
 
     void textChanged(CCTextInputNode*);

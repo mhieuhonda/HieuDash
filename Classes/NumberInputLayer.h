@@ -1,7 +1,3 @@
-// ============================================================
-// NumberInputLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef NUMBERINPUTLAYER_H_
 #define NUMBERINPUTLAYER_H_
@@ -10,8 +6,6 @@
 
 class NumberInputLayer : public cocos2d::CCLayer {
 public:
-    virtual ~NumberInputLayer();
-    virtual ~NumberInputLayer();
     virtual ~NumberInputLayer();
 
     void deleteLast();

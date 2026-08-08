@@ -1,7 +1,3 @@
-// ============================================================
-// CustomSFXCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CUSTOMSFXCELL_H_
 #define CUSTOMSFXCELL_H_
@@ -11,8 +7,6 @@ public:
     CustomSFXCell(char const*, float, float);
     CustomSFXCell(char const*, float, float);
 
-    virtual ~CustomSFXCell();
-    virtual ~CustomSFXCell();
     virtual ~CustomSFXCell();
 
     void shouldReload();

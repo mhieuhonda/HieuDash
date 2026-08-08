@@ -1,7 +1,3 @@
-// ============================================================
-// DailyLevelPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef DAILYLEVELPAGE_H_
 #define DAILYLEVELPAGE_H_
@@ -12,8 +8,6 @@
 
 class DailyLevelPage : public LevelPage {
 public:
-    virtual ~DailyLevelPage();
-    virtual ~DailyLevelPage();
     virtual ~DailyLevelPage();
 
     void getDailyTime();

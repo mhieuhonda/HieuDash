@@ -1,7 +1,3 @@
-// ============================================================
-// MessagesProfilePage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MESSAGESPROFILEPAGE_H_
 #define MESSAGESPROFILEPAGE_H_
@@ -11,8 +7,6 @@
 
 class MessagesProfilePage {
 public:
-    virtual ~MessagesProfilePage();
-    virtual ~MessagesProfilePage();
     virtual ~MessagesProfilePage();
 
     void onNextPage(cocos2d::CCObject*);

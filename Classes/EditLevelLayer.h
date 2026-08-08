@@ -1,7 +1,3 @@
-// ============================================================
-// EditLevelLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EDITLEVELLAYER_H_
 #define EDITLEVELLAYER_H_
@@ -10,8 +6,6 @@
 
 class EditLevelLayer {
 public:
-    virtual ~EditLevelLayer();
-    virtual ~EditLevelLayer();
     virtual ~EditLevelLayer();
 
     void onLevelInfo(cocos2d::CCObject*);

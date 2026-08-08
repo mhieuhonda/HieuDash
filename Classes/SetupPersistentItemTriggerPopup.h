@@ -1,7 +1,3 @@
-// ============================================================
-// SetupPersistentItemTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPPERSISTENTITEMTRIGGERPOPUP_H_
 #define SETUPPERSISTENTITEMTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupPersistentItemTriggerPopup {
 public:
-    virtual ~SetupPersistentItemTriggerPopup();
-    virtual ~SetupPersistentItemTriggerPopup();
     virtual ~SetupPersistentItemTriggerPopup();
 
     void init(ItemTriggerGameObject*, cocos2d::CCArray*);

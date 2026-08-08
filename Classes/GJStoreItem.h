@@ -1,7 +1,3 @@
-// ============================================================
-// GJStoreItem.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJSTOREITEM_H_
 #define GJSTOREITEM_H_
@@ -10,8 +6,6 @@
 
 class GJStoreItem {
 public:
-    virtual ~GJStoreItem();
-    virtual ~GJStoreItem();
     virtual ~GJStoreItem();
 
     void getCurrencyKey();

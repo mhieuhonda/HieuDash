@@ -1,7 +1,3 @@
-// ============================================================
-// NewgroundsInfoLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef NEWGROUNDSINFOLAYER_H_
 #define NEWGROUNDSINFOLAYER_H_
@@ -10,8 +6,6 @@
 
 class NewgroundsInfoLayer {
 public:
-    virtual ~NewgroundsInfoLayer();
-    virtual ~NewgroundsInfoLayer();
     virtual ~NewgroundsInfoLayer();
 
     void onSupporter(cocos2d::CCObject*);

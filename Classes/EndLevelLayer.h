@@ -1,7 +1,3 @@
-// ============================================================
-// EndLevelLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ENDLEVELLAYER_H_
 #define ENDLEVELLAYER_H_
@@ -11,8 +7,6 @@
 
 class EndLevelLayer : public cocos2d::CCLayer {
 public:
-    virtual ~EndLevelLayer();
-    virtual ~EndLevelLayer();
     virtual ~EndLevelLayer();
 
     void getEndText();

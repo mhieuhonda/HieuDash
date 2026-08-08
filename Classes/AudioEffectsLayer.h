@@ -1,7 +1,3 @@
-// ============================================================
-// AudioEffectsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef AUDIOEFFECTSLAYER_H_
 #define AUDIOEFFECTSLAYER_H_
@@ -10,8 +6,6 @@
 
 class AudioEffectsLayer {
 public:
-    virtual ~AudioEffectsLayer();
-    virtual ~AudioEffectsLayer();
     virtual ~AudioEffectsLayer();
 
     void getBGSquare();

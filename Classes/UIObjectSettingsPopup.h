@@ -1,7 +1,3 @@
-// ============================================================
-// UIObjectSettingsPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef UIOBJECTSETTINGSPOPUP_H_
 #define UIOBJECTSETTINGSPOPUP_H_
@@ -10,8 +6,6 @@
 
 class UIObjectSettingsPopup {
 public:
-    virtual ~UIObjectSettingsPopup();
-    virtual ~UIObjectSettingsPopup();
     virtual ~UIObjectSettingsPopup();
 
     void onCustomToggleTriggerValue(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetGroupIDLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETGROUPIDLAYER_H_
 #define SETGROUPIDLAYER_H_
@@ -11,8 +7,6 @@
 
 class SetGroupIDLayer {
 public:
-    virtual ~SetGroupIDLayer();
-    virtual ~SetGroupIDLayer();
     virtual ~SetGroupIDLayer();
 
     void addGroupID(int);

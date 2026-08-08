@@ -1,7 +1,3 @@
-// ============================================================
-// LevelFeatureLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELFEATURELAYER_H_
 #define LEVELFEATURELAYER_H_
@@ -10,8 +6,6 @@
 
 class LevelFeatureLayer {
 public:
-    virtual ~LevelFeatureLayer();
-    virtual ~LevelFeatureLayer();
     virtual ~LevelFeatureLayer();
 
     void updateStars();

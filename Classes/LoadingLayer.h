@@ -1,7 +1,3 @@
-// ============================================================
-// LoadingLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LOADINGLAYER_H_
 #define LOADINGLAYER_H_
@@ -10,8 +6,6 @@
 
 class LoadingLayer {
 public:
-    virtual ~LoadingLayer();
-    virtual ~LoadingLayer();
     virtual ~LoadingLayer();
 
     void loadAssets();

@@ -1,7 +1,3 @@
-// ============================================================
-// GJUserScore.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJUSERSCORE_H_
 #define GJUSERSCORE_H_
@@ -10,8 +6,6 @@
 
 class GJUserScore : public cocos2d::CCObject {
 public:
-    virtual ~GJUserScore();
-    virtual ~GJUserScore();
     virtual ~GJUserScore();
 
     void isCurrentUser();

@@ -1,7 +1,3 @@
-// ============================================================
-// StartPosObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef STARTPOSOBJECT_H_
 #define STARTPOSOBJECT_H_
@@ -11,8 +7,6 @@
 
 class StartPosObject {
 public:
-    virtual ~StartPosObject();
-    virtual ~StartPosObject();
     virtual ~StartPosObject();
 
     void setSettings(LevelSettingsObject*);

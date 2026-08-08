@@ -1,7 +1,3 @@
-// ============================================================
-// GJComment.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJCOMMENT_H_
 #define GJCOMMENT_H_
@@ -10,8 +6,6 @@
 
 class GJComment {
 public:
-    virtual ~GJComment();
-    virtual ~GJComment();
     virtual ~GJComment();
 
     void init();

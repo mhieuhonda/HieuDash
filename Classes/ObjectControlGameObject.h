@@ -1,7 +1,3 @@
-// ============================================================
-// ObjectControlGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef OBJECTCONTROLGAMEOBJECT_H_
 #define OBJECTCONTROLGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class ObjectControlGameObject {
 public:
-    virtual ~ObjectControlGameObject();
-    virtual ~ObjectControlGameObject();
     virtual ~ObjectControlGameObject();
 
     void getSaveString(GJBaseGameLayer*);

@@ -1,7 +1,3 @@
-// ============================================================
-// FollowRewardPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef FOLLOWREWARDPAGE_H_
 #define FOLLOWREWARDPAGE_H_
@@ -10,8 +6,6 @@
 
 class FollowRewardPage {
 public:
-    virtual ~FollowRewardPage();
-    virtual ~FollowRewardPage();
     virtual ~FollowRewardPage();
 
     void updateRate();

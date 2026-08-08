@@ -1,7 +1,3 @@
-// ============================================================
-// SetupOptionsTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPOPTIONSTRIGGERPOPUP_H_
 #define SETUPOPTIONSTRIGGERPOPUP_H_
@@ -11,8 +7,6 @@
 
 class SetupOptionsTriggerPopup {
 public:
-    virtual ~SetupOptionsTriggerPopup();
-    virtual ~SetupOptionsTriggerPopup();
     virtual ~SetupOptionsTriggerPopup();
 
     void onCustomToggleTriggerValue(cocos2d::CCObject*);

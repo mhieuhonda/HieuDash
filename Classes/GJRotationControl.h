@@ -1,7 +1,3 @@
-// ============================================================
-// GJRotationControl.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJROTATIONCONTROL_H_
 #define GJROTATIONCONTROL_H_
@@ -10,8 +6,6 @@
 
 class GJRotationControl {
 public:
-    virtual ~GJRotationControl();
-    virtual ~GJRotationControl();
     virtual ~GJRotationControl();
 
     void finishTouch();

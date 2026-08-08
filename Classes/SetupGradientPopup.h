@@ -1,7 +1,3 @@
-// ============================================================
-// SetupGradientPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPGRADIENTPOPUP_H_
 #define SETUPGRADIENTPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupGradientPopup {
 public:
-    virtual ~SetupGradientPopup();
-    virtual ~SetupGradientPopup();
     virtual ~SetupGradientPopup();
 
     void onBlending(cocos2d::CCObject*);

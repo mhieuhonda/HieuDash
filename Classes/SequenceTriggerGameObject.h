@@ -1,7 +1,3 @@
-// ============================================================
-// SequenceTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SEQUENCETRIGGERGAMEOBJECT_H_
 #define SEQUENCETRIGGERGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class SequenceTriggerGameObject {
 public:
-    virtual ~SequenceTriggerGameObject();
-    virtual ~SequenceTriggerGameObject();
     virtual ~SequenceTriggerGameObject();
 
     void resetObject();

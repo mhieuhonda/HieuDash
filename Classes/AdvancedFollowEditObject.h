@@ -1,7 +1,3 @@
-// ============================================================
-// AdvancedFollowEditObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ADVANCEDFOLLOWEDITOBJECT_H_
 #define ADVANCEDFOLLOWEDITOBJECT_H_
@@ -11,8 +7,6 @@
 
 class AdvancedFollowEditObject {
 public:
-    virtual ~AdvancedFollowEditObject();
-    virtual ~AdvancedFollowEditObject();
     virtual ~AdvancedFollowEditObject();
 
     void getSaveString(GJBaseGameLayer*);

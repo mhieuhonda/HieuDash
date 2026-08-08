@@ -1,7 +1,3 @@
-// ============================================================
-// SetupSpawnParticlePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSPAWNPARTICLEPOPUP_H_
 #define SETUPSPAWNPARTICLEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupSpawnParticlePopup {
 public:
-    virtual ~SetupSpawnParticlePopup();
-    virtual ~SetupSpawnParticlePopup();
     virtual ~SetupSpawnParticlePopup();
 
     void init(EffectGameObject*, cocos2d::CCArray*);

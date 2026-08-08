@@ -1,7 +1,3 @@
-// ============================================================
-// SelectListIconLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SELECTLISTICONLAYER_H_
 #define SELECTLISTICONLAYER_H_
@@ -10,8 +6,6 @@
 
 class SelectListIconLayer {
 public:
-    virtual ~SelectListIconLayer();
-    virtual ~SelectListIconLayer();
     virtual ~SelectListIconLayer();
 
     void keyBackClicked();

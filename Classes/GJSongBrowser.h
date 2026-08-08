@@ -1,7 +1,3 @@
-// ============================================================
-// GJSongBrowser.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJSONGBROWSER_H_
 #define GJSONGBROWSER_H_
@@ -10,8 +6,6 @@
 
 class GJSongBrowser {
 public:
-    virtual ~GJSongBrowser();
-    virtual ~GJSongBrowser();
     virtual ~GJSongBrowser();
 
     void onNextPage(cocos2d::CCObject*);

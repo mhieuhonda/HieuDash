@@ -1,7 +1,3 @@
-// ============================================================
-// RandTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef RANDTRIGGERGAMEOBJECT_H_
 #define RANDTRIGGERGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class RandTriggerGameObject {
 public:
-    virtual ~RandTriggerGameObject();
-    virtual ~RandTriggerGameObject();
     virtual ~RandTriggerGameObject();
 
     void getSaveString(GJBaseGameLayer*);

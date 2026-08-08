@@ -1,7 +1,3 @@
-// ============================================================
-// GameCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAMECELL_H_
 #define GAMECELL_H_
@@ -14,8 +10,6 @@ public:
     GameCell(char const*, float, float);
     GameCell(char const*, float, float);
 
-    virtual ~GameCell();
-    virtual ~GameCell();
     virtual ~GameCell();
 
     void updateBGColor(int);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAdvFollowRetargetPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPADVFOLLOWRETARGETPOPUP_H_
 #define SETUPADVFOLLOWRETARGETPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAdvFollowRetargetPopup {
 public:
-    virtual ~SetupAdvFollowRetargetPopup();
-    virtual ~SetupAdvFollowRetargetPopup();
     virtual ~SetupAdvFollowRetargetPopup();
 
     void valueDidChange(int, float);

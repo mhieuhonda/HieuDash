@@ -1,7 +1,3 @@
-// ============================================================
-// SetupMoveCommandPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPMOVECOMMANDPOPUP_H_
 #define SETUPMOVECOMMANDPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupMoveCommandPopup {
 public:
-    virtual ~SetupMoveCommandPopup();
-    virtual ~SetupMoveCommandPopup();
     virtual ~SetupMoveCommandPopup();
 
     void valueDidChange(int, float);

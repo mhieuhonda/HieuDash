@@ -1,7 +1,3 @@
-// ============================================================
-// StarInfoPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef STARINFOPOPUP_H_
 #define STARINFOPOPUP_H_
@@ -11,8 +7,6 @@
 
 class StarInfoPopup {
 public:
-    virtual ~StarInfoPopup();
-    virtual ~StarInfoPopup();
     virtual ~StarInfoPopup();
 
     void keyBackClicked();

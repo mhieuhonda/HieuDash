@@ -1,7 +1,3 @@
-// ============================================================
-// ExplodeItemNode.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EXPLODEITEMNODE_H_
 #define EXPLODEITEMNODE_H_
@@ -10,8 +6,6 @@
 
 class ExplodeItemNode {
 public:
-    virtual ~ExplodeItemNode();
-    virtual ~ExplodeItemNode();
     virtual ~ExplodeItemNode();
 
     void createSprites(int, int, float, float, float, float, float, float, cocos2d::_ccColor4F, cocos2d::_ccColor4F, bool);

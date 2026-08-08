@@ -1,7 +1,3 @@
-// ============================================================
-// WorldSelectLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef WORLDSELECTLAYER_H_
 #define WORLDSELECTLAYER_H_
@@ -10,8 +6,6 @@
 
 class WorldSelectLayer {
 public:
-    virtual ~WorldSelectLayer();
-    virtual ~WorldSelectLayer();
     virtual ~WorldSelectLayer();
 
     void setupWorlds();

@@ -1,7 +1,3 @@
-// ============================================================
-// __cxxabiv1.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef __CXXABIV1_H_
 #define __CXXABIV1_H_

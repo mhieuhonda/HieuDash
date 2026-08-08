@@ -1,7 +1,3 @@
-// ============================================================
-// SetupPlayerControlPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPPLAYERCONTROLPOPUP_H_
 #define SETUPPLAYERCONTROLPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupPlayerControlPopup {
 public:
-    virtual ~SetupPlayerControlPopup();
-    virtual ~SetupPlayerControlPopup();
     virtual ~SetupPlayerControlPopup();
 
     void init(PlayerControlGameObject*, cocos2d::CCArray*);

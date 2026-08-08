@@ -1,7 +1,3 @@
-// ============================================================
-// CCSpriteGrayscale.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCSPRITEGRAYSCALE_H_
 #define CCSPRITEGRAYSCALE_H_
@@ -11,8 +7,6 @@
 
 class CCSpriteGrayscale {
 public:
-    virtual ~CCSpriteGrayscale();
-    virtual ~CCSpriteGrayscale();
     virtual ~CCSpriteGrayscale();
 
     void shaderBody();

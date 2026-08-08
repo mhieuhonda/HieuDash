@@ -1,7 +1,3 @@
-// ============================================================
-// SetupCameraRotatePopup2.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPCAMERAROTATEPOPUP2_H_
 #define SETUPCAMERAROTATEPOPUP2_H_
@@ -10,8 +6,6 @@
 
 class SetupCameraRotatePopup2 {
 public:
-    virtual ~SetupCameraRotatePopup2();
-    virtual ~SetupCameraRotatePopup2();
     virtual ~SetupCameraRotatePopup2();
 
     void init(EffectGameObject*, cocos2d::CCArray*);

@@ -1,7 +1,3 @@
-// ============================================================
-// EditorPauseLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EDITORPAUSELAYER_H_
 #define EDITORPAUSELAYER_H_
@@ -10,8 +6,6 @@
 
 class EditorPauseLayer : public cocos2d::CCLayer {
 public:
-    virtual ~EditorPauseLayer();
-    virtual ~EditorPauseLayer();
     virtual ~EditorPauseLayer();
 
     void customSetup();

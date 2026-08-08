@@ -1,7 +1,3 @@
-// ============================================================
-// GJTransformControl.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJTRANSFORMCONTROL_H_
 #define GJTRANSFORMCONTROL_H_
@@ -11,8 +7,6 @@
 
 class GJTransformControl {
 public:
-    virtual ~GJTransformControl();
-    virtual ~GJTransformControl();
     virtual ~GJTransformControl();
 
     void loadValues(GameObject*, cocos2d::CCArray*, std::unordered_map<int, GameObjectEditorState>, std::equal_to<int>, std::allocator<std::pair<const int, GameObjectEditorState> > >&);

@@ -1,7 +1,3 @@
-// ============================================================
-// GJGarageLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJGARAGELAYER_H_
 #define GJGARAGELAYER_H_
@@ -10,8 +6,6 @@
 
 class GJGarageLayer {
 public:
-    virtual ~GJGarageLayer();
-    virtual ~GJGarageLayer();
     virtual ~GJGarageLayer();
 
     void onNavigate(cocos2d::CCObject*);

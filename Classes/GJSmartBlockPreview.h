@@ -1,7 +1,3 @@
-// ============================================================
-// GJSmartBlockPreview.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJSMARTBLOCKPREVIEW_H_
 #define GJSMARTBLOCKPREVIEW_H_
@@ -10,8 +6,6 @@
 
 class GJSmartBlockPreview {
 public:
-    virtual ~GJSmartBlockPreview();
-    virtual ~GJSmartBlockPreview();
     virtual ~GJSmartBlockPreview();
 
     void addPreview(std::string, std::string, LevelEditorLayer*);

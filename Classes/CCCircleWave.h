@@ -1,7 +1,3 @@
-// ============================================================
-// CCCircleWave.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCCIRCLEWAVE_H_
 #define CCCIRCLEWAVE_H_
@@ -10,8 +6,6 @@
 
 class CCCircleWave {
 public:
-    virtual ~CCCircleWave();
-    virtual ~CCCircleWave();
     virtual ~CCCircleWave();
 
     void setPosition(cocos2d::CCPoint const&);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupCollisionStateTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPCOLLISIONSTATETRIGGERPOPUP_H_
 #define SETUPCOLLISIONSTATETRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupCollisionStateTriggerPopup {
 public:
-    virtual ~SetupCollisionStateTriggerPopup();
-    virtual ~SetupCollisionStateTriggerPopup();
     virtual ~SetupCollisionStateTriggerPopup();
 
     void init(EffectGameObject*, cocos2d::CCArray*);

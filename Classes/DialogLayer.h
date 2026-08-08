@@ -1,7 +1,3 @@
-// ============================================================
-// DialogLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef DIALOGLAYER_H_
 #define DIALOGLAYER_H_
@@ -10,8 +6,6 @@
 
 class DialogLayer : public cocos2d::CCLayer {
 public:
-    virtual ~DialogLayer();
-    virtual ~DialogLayer();
     virtual ~DialogLayer();
 
     void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) override;

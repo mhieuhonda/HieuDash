@@ -1,7 +1,3 @@
-// ============================================================
-// GJScoreCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJSCORECELL_H_
 #define GJSCORECELL_H_
@@ -13,8 +9,6 @@ public:
     GJScoreCell(char const*, float, float);
     GJScoreCell(char const*, float, float);
 
-    virtual ~GJScoreCell();
-    virtual ~GJScoreCell();
     virtual ~GJScoreCell();
 
     void onMoreLevels(cocos2d::CCObject*);

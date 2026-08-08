@@ -1,7 +1,3 @@
-// ============================================================
-// UISaveLoadLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef UISAVELOADLAYER_H_
 #define UISAVELOADLAYER_H_
@@ -10,8 +6,6 @@
 
 class UISaveLoadLayer {
 public:
-    virtual ~UISaveLoadLayer();
-    virtual ~UISaveLoadLayer();
     virtual ~UISaveLoadLayer();
 
     void init(UIOptionsLayer*);

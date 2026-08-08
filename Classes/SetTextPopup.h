@@ -1,7 +1,3 @@
-// ============================================================
-// SetTextPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETTEXTPOPUP_H_
 #define SETTEXTPOPUP_H_
@@ -11,8 +7,6 @@
 
 class SetTextPopup {
 public:
-    virtual ~SetTextPopup();
-    virtual ~SetTextPopup();
     virtual ~SetTextPopup();
 
     void textChanged(CCTextInputNode*);

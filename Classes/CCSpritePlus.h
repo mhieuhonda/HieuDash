@@ -1,7 +1,3 @@
-// ============================================================
-// CCSpritePlus.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCSPRITEPLUS_H_
 #define CCSPRITEPLUS_H_
@@ -10,8 +6,6 @@
 
 class CCSpritePlus {
 public:
-    virtual ~CCSpritePlus();
-    virtual ~CCSpritePlus();
     virtual ~CCSpritePlus();
 
     void stopFollow();

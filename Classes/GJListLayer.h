@@ -1,7 +1,3 @@
-// ============================================================
-// GJListLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJLISTLAYER_H_
 #define GJLISTLAYER_H_
@@ -11,8 +7,6 @@
 
 class GJListLayer : public ListLayer {
 public:
-    virtual ~GJListLayer();
-    virtual ~GJListLayer();
     virtual ~GJListLayer();
 
     void init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, int) override;

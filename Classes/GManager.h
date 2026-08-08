@@ -1,7 +1,3 @@
-// ============================================================
-// GManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GMANAGER_H_
 #define GMANAGER_H_
@@ -10,8 +6,6 @@
 
 class GManager {
 public:
-    virtual ~GManager();
-    virtual ~GManager();
     virtual ~GManager();
 
     void dataLoaded(DS_Dictionary*);

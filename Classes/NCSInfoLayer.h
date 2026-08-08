@@ -1,7 +1,3 @@
-// ============================================================
-// NCSInfoLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef NCSINFOLAYER_H_
 #define NCSINFOLAYER_H_
@@ -10,8 +6,6 @@
 
 class NCSInfoLayer {
 public:
-    virtual ~NCSInfoLayer();
-    virtual ~NCSInfoLayer();
     virtual ~NCSInfoLayer();
 
     void onNCSUsage(cocos2d::CCObject*);

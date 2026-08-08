@@ -1,7 +1,3 @@
-// ============================================================
-// SetupBGSpeedTrigger.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPBGSPEEDTRIGGER_H_
 #define SETUPBGSPEEDTRIGGER_H_
@@ -10,8 +6,6 @@
 
 class SetupBGSpeedTrigger {
 public:
-    virtual ~SetupBGSpeedTrigger();
-    virtual ~SetupBGSpeedTrigger();
     virtual ~SetupBGSpeedTrigger();
 
     void init(EffectGameObject*, cocos2d::CCArray*, int);

@@ -1,7 +1,3 @@
-// ============================================================
-// AccountRegisterLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ACCOUNTREGISTERLAYER_H_
 #define ACCOUNTREGISTERLAYER_H_
@@ -11,8 +7,6 @@
 
 class AccountRegisterLayer {
 public:
-    virtual ~AccountRegisterLayer();
-    virtual ~AccountRegisterLayer();
     virtual ~AccountRegisterLayer();
 
     void resetLabel(int);

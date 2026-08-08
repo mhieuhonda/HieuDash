@@ -1,7 +1,3 @@
-// ============================================================
-// GJColorSetupLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJCOLORSETUPLAYER_H_
 #define GJCOLORSETUPLAYER_H_
@@ -10,8 +6,6 @@
 
 class GJColorSetupLayer {
 public:
-    virtual ~GJColorSetupLayer();
-    virtual ~GJColorSetupLayer();
     virtual ~GJColorSetupLayer();
 
     void keyBackClicked();

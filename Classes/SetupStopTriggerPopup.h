@@ -1,7 +1,3 @@
-// ============================================================
-// SetupStopTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSTOPTRIGGERPOPUP_H_
 #define SETUPSTOPTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupStopTriggerPopup {
 public:
-    virtual ~SetupStopTriggerPopup();
-    virtual ~SetupStopTriggerPopup();
     virtual ~SetupStopTriggerPopup();
 
     void onCustomToggleTriggerValue(cocos2d::CCObject*);

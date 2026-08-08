@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ===================================================================
      GeometryDash — Android Ant build script
-     (Cocos2d-x 2.2.3 decompilation project)
+     (Cocos2d-x 2.2.3 )
      =================================================================== -->
 <project name="GeometryDash" default="help">
 

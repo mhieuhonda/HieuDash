@@ -1,7 +1,3 @@
-// ============================================================
-// PromoInterstitial.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef PROMOINTERSTITIAL_H_
 #define PROMOINTERSTITIAL_H_
@@ -10,8 +6,6 @@
 
 class PromoInterstitial {
 public:
-    virtual ~PromoInterstitial();
-    virtual ~PromoInterstitial();
     virtual ~PromoInterstitial();
 
     void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);

@@ -1,7 +1,3 @@
-// ============================================================
-// CustomizeObjectLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CUSTOMIZEOBJECTLAYER_H_
 #define CUSTOMIZEOBJECTLAYER_H_
@@ -11,8 +7,6 @@
 
 class CustomizeObjectLayer {
 public:
-    virtual ~CustomizeObjectLayer();
-    virtual ~CustomizeObjectLayer();
     virtual ~CustomizeObjectLayer();
 
     void onLiveEdit(cocos2d::CCObject*);

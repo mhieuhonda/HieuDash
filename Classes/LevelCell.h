@@ -1,7 +1,3 @@
-// ============================================================
-// LevelCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELCELL_H_
 #define LEVELCELL_H_
@@ -13,8 +9,6 @@ public:
     LevelCell(char const*, float, float);
     LevelCell(char const*, float, float);
 
-    virtual ~LevelCell();
-    virtual ~LevelCell();
     virtual ~LevelCell();
 
     void updateToggle();

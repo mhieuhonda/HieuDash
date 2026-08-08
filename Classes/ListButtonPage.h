@@ -1,7 +1,3 @@
-// ============================================================
-// ListButtonPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LISTBUTTONPAGE_H_
 #define LISTBUTTONPAGE_H_
@@ -10,8 +6,6 @@
 
 class ListButtonPage {
 public:
-    virtual ~ListButtonPage();
-    virtual ~ListButtonPage();
     virtual ~ListButtonPage();
 
     void init(cocos2d::CCArray*, cocos2d::CCPoint, int, int, float, float, float);

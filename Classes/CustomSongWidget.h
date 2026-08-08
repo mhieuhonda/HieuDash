@@ -1,7 +1,3 @@
-// ============================================================
-// CustomSongWidget.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CUSTOMSONGWIDGET_H_
 #define CUSTOMSONGWIDGET_H_
@@ -11,8 +7,6 @@
 
 class CustomSongWidget : public cocos2d::CCNode {
 public:
-    virtual ~CustomSongWidget();
-    virtual ~CustomSongWidget();
     virtual ~CustomSongWidget();
 
     void deleteSong();

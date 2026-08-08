@@ -1,7 +1,3 @@
-// ============================================================
-// FriendRequestPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef FRIENDREQUESTPOPUP_H_
 #define FRIENDREQUESTPOPUP_H_
@@ -10,8 +6,6 @@
 
 class FriendRequestPopup {
 public:
-    virtual ~FriendRequestPopup();
-    virtual ~FriendRequestPopup();
     virtual ~FriendRequestPopup();
 
     void onClosePopup(UploadActionPopup*);

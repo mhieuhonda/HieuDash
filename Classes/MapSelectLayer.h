@@ -1,7 +1,3 @@
-// ============================================================
-// MapSelectLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MAPSELECTLAYER_H_
 #define MAPSELECTLAYER_H_
@@ -10,8 +6,6 @@
 
 class MapSelectLayer {
 public:
-    virtual ~MapSelectLayer();
-    virtual ~MapSelectLayer();
     virtual ~MapSelectLayer();
 
     void scrollWheel(float, float);

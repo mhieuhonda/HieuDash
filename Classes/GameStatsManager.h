@@ -1,7 +1,3 @@
-// ============================================================
-// GameStatsManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAMESTATSMANAGER_H_
 #define GAMESTATSMANAGER_H_
@@ -12,8 +8,6 @@
 class GameStatsManager : public cocos2d::CCNode {
 public:
     static GameStatsManager* create();
-    virtual ~GameStatsManager();
-    virtual ~GameStatsManager();
     virtual ~GameStatsManager();
 
     void dataLoaded(DS_Dictionary*);

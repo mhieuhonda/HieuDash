@@ -1,7 +1,3 @@
-// ============================================================
-// EnterEffectObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ENTEREFFECTOBJECT_H_
 #define ENTEREFFECTOBJECT_H_
@@ -11,8 +7,6 @@
 
 class EnterEffectObject {
 public:
-    virtual ~EnterEffectObject();
-    virtual ~EnterEffectObject();
     virtual ~EnterEffectObject();
 
     void customSetup();

@@ -1,7 +1,3 @@
-// ============================================================
-// MusicDownloadManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MUSICDOWNLOADMANAGER_H_
 #define MUSICDOWNLOADMANAGER_H_
@@ -12,8 +8,6 @@
 class MusicDownloadManager : public cocos2d::CCNode {
 public:
     static MusicDownloadManager* create();
-    virtual ~MusicDownloadManager();
-    virtual ~MusicDownloadManager();
     virtual ~MusicDownloadManager();
 
     void dataLoaded(DS_Dictionary*);

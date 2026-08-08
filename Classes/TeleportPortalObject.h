@@ -1,7 +1,3 @@
-// ============================================================
-// TeleportPortalObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TELEPORTPORTALOBJECT_H_
 #define TELEPORTPORTALOBJECT_H_
@@ -12,8 +8,6 @@
 
 class TeleportPortalObject {
 public:
-    virtual ~TeleportPortalObject();
-    virtual ~TeleportPortalObject();
     virtual ~TeleportPortalObject();
 
     void addToGroup(int);

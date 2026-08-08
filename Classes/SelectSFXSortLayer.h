@@ -1,7 +1,3 @@
-// ============================================================
-// SelectSFXSortLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SELECTSFXSORTLAYER_H_
 #define SELECTSFXSORTLAYER_H_
@@ -10,8 +6,6 @@
 
 class SelectSFXSortLayer {
 public:
-    virtual ~SelectSFXSortLayer();
-    virtual ~SelectSFXSortLayer();
     virtual ~SelectSFXSortLayer();
 
     void keyBackClicked();

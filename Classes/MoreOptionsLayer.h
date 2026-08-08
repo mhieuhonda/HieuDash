@@ -1,7 +1,3 @@
-// ============================================================
-// MoreOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MOREOPTIONSLAYER_H_
 #define MOREOPTIONSLAYER_H_
@@ -10,8 +6,6 @@
 
 class MoreOptionsLayer : public cocos2d::CCLayer {
 public:
-    virtual ~MoreOptionsLayer();
-    virtual ~MoreOptionsLayer();
     virtual ~MoreOptionsLayer();
 
     void onGPSignIn(cocos2d::CCObject*);

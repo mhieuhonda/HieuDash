@@ -1,7 +1,3 @@
-// ============================================================
-// CCSpritePart.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCSPRITEPART_H_
 #define CCSPRITEPART_H_
@@ -11,8 +7,6 @@
 
 class CCSpritePart {
 public:
-    virtual ~CCSpritePart();
-    virtual ~CCSpritePart();
     virtual ~CCSpritePart();
 
     void setVisible(bool);

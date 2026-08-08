@@ -1,7 +1,3 @@
-// ============================================================
-// GJHttpResult.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJHTTPRESULT_H_
 #define GJHTTPRESULT_H_
@@ -10,8 +6,6 @@
 
 class GJHttpResult {
 public:
-    virtual ~GJHttpResult();
-    virtual ~GJHttpResult();
     virtual ~GJHttpResult();
 
     void init(bool, std::string, std::string, GJHttpType);

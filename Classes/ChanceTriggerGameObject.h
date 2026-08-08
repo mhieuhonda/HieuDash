@@ -1,7 +1,3 @@
-// ============================================================
-// ChanceTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CHANCETRIGGERGAMEOBJECT_H_
 #define CHANCETRIGGERGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class ChanceTriggerGameObject : public EffectGameObject {
 public:
-    virtual ~ChanceTriggerGameObject();
-    virtual ~ChanceTriggerGameObject();
     virtual ~ChanceTriggerGameObject();
 
     void getTargetIDs(std::vector<int>&);

@@ -1,7 +1,3 @@
-// ============================================================
-// LevelEditorLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELEDITORLAYER_H_
 #define LEVELEDITORLAYER_H_
@@ -21,8 +17,6 @@ class GJGameLevel;
 
 class LevelEditorLayer : public GJBaseGameLayer {
 public:
-    virtual ~LevelEditorLayer();
-    virtual ~LevelEditorLayer();
     virtual ~LevelEditorLayer();
 
     void addSpecial(GameObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// ShareListLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SHARELISTLAYER_H_
 #define SHARELISTLAYER_H_
@@ -10,8 +6,6 @@
 
 class ShareListLayer {
 public:
-    virtual ~ShareListLayer();
-    virtual ~ShareListLayer();
     virtual ~ShareListLayer();
 
     void onUnlisted(cocos2d::CCObject*);

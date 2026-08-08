@@ -1,7 +1,3 @@
-// ============================================================
-// SetupSmartTemplateLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSMARTTEMPLATELAYER_H_
 #define SETUPSMARTTEMPLATELAYER_H_
@@ -10,8 +6,6 @@
 
 class SetupSmartTemplateLayer {
 public:
-    virtual ~SetupSmartTemplateLayer();
-    virtual ~SetupSmartTemplateLayer();
     virtual ~SetupSmartTemplateLayer();
 
     void textChanged(CCTextInputNode*);

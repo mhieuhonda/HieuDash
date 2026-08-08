@@ -1,7 +1,3 @@
-// ============================================================
-// KeybindingsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef KEYBINDINGSLAYER_H_
 #define KEYBINDINGSLAYER_H_
@@ -10,8 +6,6 @@
 
 class KeybindingsLayer {
 public:
-    virtual ~KeybindingsLayer();
-    virtual ~KeybindingsLayer();
     virtual ~KeybindingsLayer();
 
     void addKeyPair(char const*, char const*);

@@ -1,7 +1,3 @@
-// ============================================================
-// AdvancedFollowTriggerObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ADVANCEDFOLLOWTRIGGEROBJECT_H_
 #define ADVANCEDFOLLOWTRIGGEROBJECT_H_
@@ -11,8 +7,6 @@
 
 class AdvancedFollowTriggerObject {
 public:
-    virtual ~AdvancedFollowTriggerObject();
-    virtual ~AdvancedFollowTriggerObject();
     virtual ~AdvancedFollowTriggerObject();
 
     void getSaveString(GJBaseGameLayer*);

@@ -1,7 +1,3 @@
-// ============================================================
-// GJEffectManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJEFFECTMANAGER_H_
 #define GJEFFECTMANAGER_H_
@@ -13,8 +9,6 @@
 
 class GJEffectManager : public cocos2d::CCNode {
 public:
-    virtual ~GJEffectManager();
-    virtual ~GJEffectManager();
     virtual ~GJEffectManager();
 
     void pauseTimer(int);

@@ -1,7 +1,3 @@
-// ============================================================
-// AccountLoginLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ACCOUNTLOGINLAYER_H_
 #define ACCOUNTLOGINLAYER_H_
@@ -11,8 +7,6 @@
 
 class AccountLoginLayer {
 public:
-    virtual ~AccountLoginLayer();
-    virtual ~AccountLoginLayer();
     virtual ~AccountLoginLayer();
 
     void resetLabel(int);

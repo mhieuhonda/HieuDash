@@ -1,7 +1,3 @@
-// ============================================================
-// KeyframeGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef KEYFRAMEGAMEOBJECT_H_
 #define KEYFRAMEGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class KeyframeGameObject {
 public:
-    virtual ~KeyframeGameObject();
-    virtual ~KeyframeGameObject();
     virtual ~KeyframeGameObject();
 
     void setOpacity(unsigned char);

@@ -1,7 +1,3 @@
-// ============================================================
-// CCCountdown.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCCOUNTDOWN_H_
 #define CCCOUNTDOWN_H_
@@ -10,8 +6,6 @@
 
 class CCCountdown : public cocos2d::CCLabelTTF {
 public:
-    virtual ~CCCountdown();
-    virtual ~CCCountdown();
     virtual ~CCCountdown();
 
     void setOpacity(unsigned char);

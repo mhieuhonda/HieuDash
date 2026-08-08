@@ -1,7 +1,3 @@
-// ============================================================
-// ConfigureValuePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CONFIGUREVALUEPOPUP_H_
 #define CONFIGUREVALUEPOPUP_H_
@@ -11,8 +7,6 @@
 
 class ConfigureValuePopup {
 public:
-    virtual ~ConfigureValuePopup();
-    virtual ~ConfigureValuePopup();
     virtual ~ConfigureValuePopup();
 
     void textChanged(CCTextInputNode*);

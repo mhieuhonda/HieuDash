@@ -1,7 +1,3 @@
-// ============================================================
-// BoomScrollLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef BOOMSCROLLLAYER_H_
 #define BOOMSCROLLLAYER_H_
@@ -10,8 +6,6 @@
 
 class BoomScrollLayer {
 public:
-    virtual ~BoomScrollLayer();
-    virtual ~BoomScrollLayer();
     virtual ~BoomScrollLayer();
 
     void claimTouch(cocos2d::CCTouch*);

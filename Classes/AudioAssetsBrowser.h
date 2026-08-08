@@ -1,7 +1,3 @@
-// ============================================================
-// AudioAssetsBrowser.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef AUDIOASSETSBROWSER_H_
 #define AUDIOASSETSBROWSER_H_
@@ -11,8 +7,6 @@
 
 class AudioAssetsBrowser {
 public:
-    virtual ~AudioAssetsBrowser();
-    virtual ~AudioAssetsBrowser();
     virtual ~AudioAssetsBrowser();
 
     void keyBackClicked();

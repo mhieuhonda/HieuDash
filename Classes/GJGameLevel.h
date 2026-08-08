@@ -1,7 +1,3 @@
-// ============================================================
-// GJGameLevel.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJGAMELEVEL_H_
 #define GJGAMELEVEL_H_
@@ -12,8 +8,6 @@
 
 class GJGameLevel {
 public:
-    virtual ~GJGameLevel();
-    virtual ~GJGameLevel();
     virtual ~GJGameLevel();
 
     void dataLoaded(DS_Dictionary*);

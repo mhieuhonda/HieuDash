@@ -1,7 +1,3 @@
-// ============================================================
-// BrowseSmartKeyLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef BROWSESMARTKEYLAYER_H_
 #define BROWSESMARTKEYLAYER_H_
@@ -11,8 +7,6 @@
 
 class BrowseSmartKeyLayer {
 public:
-    virtual ~BrowseSmartKeyLayer();
-    virtual ~BrowseSmartKeyLayer();
     virtual ~BrowseSmartKeyLayer();
 
     void onPrefabObject(cocos2d::CCObject*);

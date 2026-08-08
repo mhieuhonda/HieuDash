@@ -1,7 +1,3 @@
-// ============================================================
-// CameraTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CAMERATRIGGERGAMEOBJECT_H_
 #define CAMERATRIGGERGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class CameraTriggerGameObject : public EffectGameObject {
 public:
-    virtual ~CameraTriggerGameObject();
-    virtual ~CameraTriggerGameObject();
     virtual ~CameraTriggerGameObject();
 
     void getSaveString(GJBaseGameLayer*);

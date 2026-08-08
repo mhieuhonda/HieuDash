@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAudioTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPAUDIOTRIGGERPOPUP_H_
 #define SETUPAUDIOTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAudioTriggerPopup {
 public:
-    virtual ~SetupAudioTriggerPopup();
-    virtual ~SetupAudioTriggerPopup();
     virtual ~SetupAudioTriggerPopup();
 
     void onProxMode(cocos2d::CCObject*);

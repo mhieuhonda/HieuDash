@@ -1,7 +1,3 @@
-// ============================================================
-// CommentCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COMMENTCELL_H_
 #define COMMENTCELL_H_
@@ -14,8 +10,6 @@ public:
     CommentCell(char const*, float, float);
     CommentCell(char const*, float, float);
 
-    virtual ~CommentCell();
-    virtual ~CommentCell();
     virtual ~CommentCell();
 
     void onUndelete();

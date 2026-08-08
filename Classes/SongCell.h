@@ -1,7 +1,3 @@
-// ============================================================
-// SongCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SONGCELL_H_
 #define SONGCELL_H_
@@ -14,8 +10,6 @@ public:
     SongCell(char const*, float, float);
     SongCell(char const*, float, float);
 
-    virtual ~SongCell();
-    virtual ~SongCell();
     virtual ~SongCell();
 
     void updateBGColor(int);

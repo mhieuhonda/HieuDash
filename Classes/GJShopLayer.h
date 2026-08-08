@@ -1,7 +1,3 @@
-// ============================================================
-// GJShopLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJSHOPLAYER_H_
 #define GJSHOPLAYER_H_
@@ -10,8 +6,6 @@
 
 class GJShopLayer {
 public:
-    virtual ~GJShopLayer();
-    virtual ~GJShopLayer();
     virtual ~GJShopLayer();
 
     void onPlushies(cocos2d::CCObject*);

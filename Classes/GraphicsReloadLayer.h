@@ -1,7 +1,3 @@
-// ============================================================
-// GraphicsReloadLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GRAPHICSRELOADLAYER_H_
 #define GRAPHICSRELOADLAYER_H_
@@ -10,8 +6,6 @@
 
 class GraphicsReloadLayer {
 public:
-    virtual ~GraphicsReloadLayer();
-    virtual ~GraphicsReloadLayer();
     virtual ~GraphicsReloadLayer();
 
     void performReload();

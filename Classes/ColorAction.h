@@ -1,7 +1,3 @@
-// ============================================================
-// ColorAction.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COLORACTION_H_
 #define COLORACTION_H_
@@ -11,8 +7,6 @@
 
 class ColorAction : public cocos2d::CCObject {
 public:
-    virtual ~ColorAction();
-    virtual ~ColorAction();
     virtual ~ColorAction();
 
     void resetAction();

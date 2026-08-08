@@ -1,7 +1,3 @@
-// ============================================================
-// ChallengeNode.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CHALLENGENODE_H_
 #define CHALLENGENODE_H_
@@ -11,8 +7,6 @@
 
 class ChallengeNode {
 public:
-    virtual ~ChallengeNode();
-    virtual ~ChallengeNode();
     virtual ~ChallengeNode();
 
     void onClaimReward(cocos2d::CCObject*);

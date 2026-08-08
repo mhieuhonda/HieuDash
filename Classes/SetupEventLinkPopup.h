@@ -1,7 +1,3 @@
-// ============================================================
-// SetupEventLinkPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPEVENTLINKPOPUP_H_
 #define SETUPEVENTLINKPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupEventLinkPopup {
 public:
-    virtual ~SetupEventLinkPopup();
-    virtual ~SetupEventLinkPopup();
     virtual ~SetupEventLinkPopup();
 
     void onSelectEvent(cocos2d::CCObject*);

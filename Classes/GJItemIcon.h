@@ -1,7 +1,3 @@
-// ============================================================
-// GJItemIcon.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJITEMICON_H_
 #define GJITEMICON_H_
@@ -10,8 +6,6 @@
 
 class GJItemIcon {
 public:
-    virtual ~GJItemIcon();
-    virtual ~GJItemIcon();
     virtual ~GJItemIcon();
 
     void setOpacity(unsigned char);

@@ -1,7 +1,3 @@
-// ============================================================
-// BrowseSmartTemplateLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef BROWSESMARTTEMPLATELAYER_H_
 #define BROWSESMARTTEMPLATELAYER_H_
@@ -11,8 +7,6 @@
 
 class BrowseSmartTemplateLayer {
 public:
-    virtual ~BrowseSmartTemplateLayer();
-    virtual ~BrowseSmartTemplateLayer();
     virtual ~BrowseSmartTemplateLayer();
 
     void createDots();

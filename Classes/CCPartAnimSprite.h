@@ -1,7 +1,3 @@
-// ============================================================
-// CCPartAnimSprite.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCPARTANIMSPRITE_H_
 #define CCPARTANIMSPRITE_H_
@@ -11,8 +7,6 @@
 
 class CCPartAnimSprite {
 public:
-    virtual ~CCPartAnimSprite();
-    virtual ~CCPartAnimSprite();
     virtual ~CCPartAnimSprite();
 
     void countParts();

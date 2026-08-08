@@ -1,7 +1,3 @@
-// ============================================================
-// SpecialAnimGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SPECIALANIMGAMEOBJECT_H_
 #define SPECIALANIMGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class SpecialAnimGameObject {
 public:
-    virtual ~SpecialAnimGameObject();
-    virtual ~SpecialAnimGameObject();
     virtual ~SpecialAnimGameObject();
 
     void resetObject();

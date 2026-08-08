@@ -1,7 +1,3 @@
-// ============================================================
-// EnhancedGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ENHANCEDGAMEOBJECT_H_
 #define ENHANCEDGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class EnhancedGameObject {
 public:
-    virtual ~EnhancedGameObject();
-    virtual ~EnhancedGameObject();
     virtual ~EnhancedGameObject();
 
     void customSetup();

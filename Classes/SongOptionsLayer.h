@@ -1,7 +1,3 @@
-// ============================================================
-// SongOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SONGOPTIONSLAYER_H_
 #define SONGOPTIONSLAYER_H_
@@ -10,8 +6,6 @@
 
 class SongOptionsLayer {
 public:
-    virtual ~SongOptionsLayer();
-    virtual ~SongOptionsLayer();
     virtual ~SongOptionsLayer();
 
     void onPlayback(cocos2d::CCObject*);

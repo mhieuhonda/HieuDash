@@ -1,7 +1,3 @@
-// ============================================================
-// SetupSpawnPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSPAWNPOPUP_H_
 #define SETUPSPAWNPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupSpawnPopup {
 public:
-    virtual ~SetupSpawnPopup();
-    virtual ~SetupSpawnPopup();
     virtual ~SetupSpawnPopup();
 
     void onAddRemap(cocos2d::CCObject*);

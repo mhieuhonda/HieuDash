@@ -1,7 +1,3 @@
-// ============================================================
-// EndTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ENDTRIGGERGAMEOBJECT_H_
 #define ENDTRIGGERGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class EndTriggerGameObject : public EffectGameObject {
 public:
-    virtual ~EndTriggerGameObject();
-    virtual ~EndTriggerGameObject();
     virtual ~EndTriggerGameObject();
 
     void getSaveString(GJBaseGameLayer*);

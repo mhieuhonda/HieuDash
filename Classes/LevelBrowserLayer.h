@@ -1,7 +1,3 @@
-// ============================================================
-// LevelBrowserLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELBROWSERLAYER_H_
 #define LEVELBROWSERLAYER_H_
@@ -11,8 +7,6 @@
 
 class LevelBrowserLayer : public cocos2d::CCLayer {
 public:
-    virtual ~LevelBrowserLayer();
-    virtual ~LevelBrowserLayer();
     virtual ~LevelBrowserLayer();
 
     void onGoToPage(cocos2d::CCObject*);

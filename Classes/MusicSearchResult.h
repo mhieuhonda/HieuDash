@@ -1,7 +1,3 @@
-// ============================================================
-// MusicSearchResult.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MUSICSEARCHRESULT_H_
 #define MUSICSEARCHRESULT_H_
@@ -11,8 +7,6 @@
 
 class MusicSearchResult {
 public:
-    virtual ~MusicSearchResult();
-    virtual ~MusicSearchResult();
     virtual ~MusicSearchResult();
 
     void stateChanged(OptionsObject*);

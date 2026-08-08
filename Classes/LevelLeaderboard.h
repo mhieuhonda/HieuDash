@@ -1,7 +1,3 @@
-// ============================================================
-// LevelLeaderboard.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELLEADERBOARD_H_
 #define LEVELLEADERBOARD_H_
@@ -11,8 +7,6 @@
 
 class LevelLeaderboard {
 public:
-    virtual ~LevelLeaderboard();
-    virtual ~LevelLeaderboard();
     virtual ~LevelLeaderboard();
 
     void loadScores();

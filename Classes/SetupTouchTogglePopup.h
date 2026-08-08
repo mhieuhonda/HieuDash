@@ -1,7 +1,3 @@
-// ============================================================
-// SetupTouchTogglePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPTOUCHTOGGLEPOPUP_H_
 #define SETUPTOUCHTOGGLEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupTouchTogglePopup {
 public:
-    virtual ~SetupTouchTogglePopup();
-    virtual ~SetupTouchTogglePopup();
     virtual ~SetupTouchTogglePopup();
 
     void onHoldMode(cocos2d::CCObject*);

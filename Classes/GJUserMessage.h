@@ -1,7 +1,3 @@
-// ============================================================
-// GJUserMessage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJUSERMESSAGE_H_
 #define GJUSERMESSAGE_H_
@@ -10,8 +6,6 @@
 
 class GJUserMessage {
 public:
-    virtual ~GJUserMessage();
-    virtual ~GJUserMessage();
     virtual ~GJUserMessage();
 
     void init();

@@ -1,7 +1,3 @@
-// ============================================================
-// ProfilePage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef PROFILEPAGE_H_
 #define PROFILEPAGE_H_
@@ -11,8 +7,6 @@
 
 class ProfilePage : public cocos2d::CCLayer {
 public:
-    virtual ~ProfilePage();
-    virtual ~ProfilePage();
     virtual ~ProfilePage();
 
     void onCopyName(cocos2d::CCObject*);

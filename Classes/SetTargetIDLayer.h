@@ -1,7 +1,3 @@
-// ============================================================
-// SetTargetIDLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETTARGETIDLAYER_H_
 #define SETTARGETIDLAYER_H_
@@ -11,8 +7,6 @@
 
 class SetTargetIDLayer {
 public:
-    virtual ~SetTargetIDLayer();
-    virtual ~SetTargetIDLayer();
     virtual ~SetTargetIDLayer();
 
     void valueDidChange(int, float);

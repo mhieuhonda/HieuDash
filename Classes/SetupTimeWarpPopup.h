@@ -1,7 +1,3 @@
-// ============================================================
-// SetupTimeWarpPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPTIMEWARPPOPUP_H_
 #define SETUPTIMEWARPPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupTimeWarpPopup {
 public:
-    virtual ~SetupTimeWarpPopup();
-    virtual ~SetupTimeWarpPopup();
     virtual ~SetupTimeWarpPopup();
 
     void sliderChanged(cocos2d::CCObject*);

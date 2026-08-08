@@ -1,7 +1,3 @@
-// ============================================================
-// CCAnimateFrameCache.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCANIMATEFRAMECACHE_H_
 #define CCANIMATEFRAMECACHE_H_
@@ -10,8 +6,6 @@
 
 class CCAnimateFrameCache {
 public:
-    virtual ~CCAnimateFrameCache();
-    virtual ~CCAnimateFrameCache();
     virtual ~CCAnimateFrameCache();
 
     void spriteFrameByName(char const*);

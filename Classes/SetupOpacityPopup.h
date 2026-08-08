@@ -1,7 +1,3 @@
-// ============================================================
-// SetupOpacityPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPOPACITYPOPUP_H_
 #define SETUPOPACITYPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupOpacityPopup {
 public:
-    virtual ~SetupOpacityPopup();
-    virtual ~SetupOpacityPopup();
     virtual ~SetupOpacityPopup();
 
     void textChanged(CCTextInputNode*);

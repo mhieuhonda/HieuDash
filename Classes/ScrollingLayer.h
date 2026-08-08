@@ -1,7 +1,3 @@
-// ============================================================
-// ScrollingLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SCROLLINGLAYER_H_
 #define SCROLLINGLAYER_H_
@@ -10,8 +6,6 @@
 
 class ScrollingLayer {
 public:
-    virtual ~ScrollingLayer();
-    virtual ~ScrollingLayer();
     virtual ~ScrollingLayer();
 
     void getViewRect();

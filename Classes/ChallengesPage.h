@@ -1,7 +1,3 @@
-// ============================================================
-// ChallengesPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CHALLENGESPAGE_H_
 #define CHALLENGESPAGE_H_
@@ -10,8 +6,6 @@
 
 class ChallengesPage {
 public:
-    virtual ~ChallengesPage();
-    virtual ~ChallengesPage();
     virtual ~ChallengesPage();
 
     void updateDots();

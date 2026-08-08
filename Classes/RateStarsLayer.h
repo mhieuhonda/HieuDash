@@ -1,7 +1,3 @@
-// ============================================================
-// RateStarsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef RATESTARSLAYER_H_
 #define RATESTARSLAYER_H_
@@ -10,8 +6,6 @@
 
 class RateStarsLayer {
 public:
-    virtual ~RateStarsLayer();
-    virtual ~RateStarsLayer();
     virtual ~RateStarsLayer();
 
     void onClosePopup(UploadActionPopup*);

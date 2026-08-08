@@ -1,7 +1,3 @@
-// ============================================================
-// EndPortalObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ENDPORTALOBJECT_H_
 #define ENDPORTALOBJECT_H_
@@ -10,8 +6,6 @@
 
 class EndPortalObject {
 public:
-    virtual ~EndPortalObject();
-    virtual ~EndPortalObject();
     virtual ~EndPortalObject();
 
     void setVisible(bool);

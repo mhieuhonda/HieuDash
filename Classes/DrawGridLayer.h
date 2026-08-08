@@ -1,7 +1,3 @@
-// ============================================================
-// DrawGridLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef DRAWGRIDLAYER_H_
 #define DRAWGRIDLAYER_H_
@@ -11,8 +7,6 @@
 
 class DrawGridLayer {
 public:
-    virtual ~DrawGridLayer();
-    virtual ~DrawGridLayer();
     virtual ~DrawGridLayer();
 
     void posForTime(float);

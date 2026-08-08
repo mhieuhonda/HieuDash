@@ -1,7 +1,3 @@
-// ============================================================
-// SFXTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SFXTRIGGERGAMEOBJECT_H_
 #define SFXTRIGGERGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class SFXTriggerGameObject : public EffectGameObject {
 public:
-    virtual ~SFXTriggerGameObject();
-    virtual ~SFXTriggerGameObject();
     virtual ~SFXTriggerGameObject();
 
     void getSFXRefID();

@@ -1,7 +1,3 @@
-// ============================================================
-// GJRobotSprite.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJROBOTSPRITE_H_
 #define GJROBOTSPRITE_H_
@@ -11,8 +7,6 @@
 
 class GJRobotSprite {
 public:
-    virtual ~GJRobotSprite();
-    virtual ~GJRobotSprite();
     virtual ~GJRobotSprite();
 
     void setOpacity(unsigned char);

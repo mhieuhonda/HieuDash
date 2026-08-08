@@ -1,7 +1,3 @@
-// ============================================================
-// LabelGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LABELGAMEOBJECT_H_
 #define LABELGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class LabelGameObject {
 public:
-    virtual ~LabelGameObject();
-    virtual ~LabelGameObject();
     virtual ~LabelGameObject();
 
     void setOpacity(unsigned char);

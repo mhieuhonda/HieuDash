@@ -1,7 +1,3 @@
-// ============================================================
-// SetupGameplayOffsetPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPGAMEPLAYOFFSETPOPUP_H_
 #define SETUPGAMEPLAYOFFSETPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupGameplayOffsetPopup {
 public:
-    virtual ~SetupGameplayOffsetPopup();
-    virtual ~SetupGameplayOffsetPopup();
     virtual ~SetupGameplayOffsetPopup();
 
     void onDefaultValues(cocos2d::CCObject*);

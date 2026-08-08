@@ -1,7 +1,3 @@
-// ============================================================
-// MPLobbyLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MPLOBBYLAYER_H_
 #define MPLOBBYLAYER_H_
@@ -10,8 +6,6 @@
 
 class MPLobbyLayer {
 public:
-    virtual ~MPLobbyLayer();
-    virtual ~MPLobbyLayer();
     virtual ~MPLobbyLayer();
 
     void postComment();

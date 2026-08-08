@@ -1,7 +1,3 @@
-// ============================================================
-// CCAnimatedSprite.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCANIMATEDSPRITE_H_
 #define CCANIMATEDSPRITE_H_
@@ -11,8 +7,6 @@
 
 class CCAnimatedSprite {
 public:
-    virtual ~CCAnimatedSprite();
-    virtual ~CCAnimatedSprite();
     virtual ~CCAnimatedSprite();
 
     void setOpacity(unsigned char);

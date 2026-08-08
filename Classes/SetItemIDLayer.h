@@ -1,7 +1,3 @@
-// ============================================================
-// SetItemIDLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETITEMIDLAYER_H_
 #define SETITEMIDLAYER_H_
@@ -10,8 +6,6 @@
 
 class SetItemIDLayer {
 public:
-    virtual ~SetItemIDLayer();
-    virtual ~SetItemIDLayer();
     virtual ~SetItemIDLayer();
 
     void valueDidChange(int, float);

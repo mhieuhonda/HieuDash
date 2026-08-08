@@ -1,15 +1,9 @@
-// ============================================================
-// CCCounterLabel.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCCOUNTERLABEL_H_
 #define CCCOUNTERLABEL_H_
 
 class CCCounterLabel {
 public:
-    virtual ~CCCounterLabel();
-    virtual ~CCCounterLabel();
     virtual ~CCCounterLabel();
 
     void updateString();

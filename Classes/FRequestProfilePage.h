@@ -1,7 +1,3 @@
-// ============================================================
-// FRequestProfilePage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef FREQUESTPROFILEPAGE_H_
 #define FREQUESTPROFILEPAGE_H_
@@ -11,8 +7,6 @@
 
 class FRequestProfilePage {
 public:
-    virtual ~FRequestProfilePage();
-    virtual ~FRequestProfilePage();
     virtual ~FRequestProfilePage();
 
     void onNextPage(cocos2d::CCObject*);

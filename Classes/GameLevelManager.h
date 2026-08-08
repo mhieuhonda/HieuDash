@@ -1,7 +1,3 @@
-// ============================================================
-// GameLevelManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAMELEVELMANAGER_H_
 #define GAMELEVELMANAGER_H_
@@ -12,8 +8,6 @@
 class GameLevelManager : public cocos2d::CCNode {
 public:
     static GameLevelManager* create();
-    virtual ~GameLevelManager();
-    virtual ~GameLevelManager();
     virtual ~GameLevelManager();
 
     void dataLoaded(DS_Dictionary*);

@@ -1,7 +1,3 @@
-// ============================================================
-// ObjectManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef OBJECTMANAGER_H_
 #define OBJECTMANAGER_H_
@@ -10,8 +6,6 @@
 
 class ObjectManager {
 public:
-    virtual ~ObjectManager();
-    virtual ~ObjectManager();
     virtual ~ObjectManager();
 
     void animLoaded(char const*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAudioLineGuidePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPAUDIOLINEGUIDEPOPUP_H_
 #define SETUPAUDIOLINEGUIDEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAudioLineGuidePopup {
 public:
-    virtual ~SetupAudioLineGuidePopup();
-    virtual ~SetupAudioLineGuidePopup();
     virtual ~SetupAudioLineGuidePopup();
 
     void selectSettingClosed(SelectSettingLayer*);

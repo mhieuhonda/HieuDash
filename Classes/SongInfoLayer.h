@@ -1,7 +1,3 @@
-// ============================================================
-// SongInfoLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SONGINFOLAYER_H_
 #define SONGINFOLAYER_H_
@@ -11,8 +7,6 @@
 
 class SongInfoLayer {
 public:
-    virtual ~SongInfoLayer();
-    virtual ~SongInfoLayer();
     virtual ~SongInfoLayer();
 
     void onDownload(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// GameEffectsManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAMEEFFECTSMANAGER_H_
 #define GAMEEFFECTSMANAGER_H_
@@ -10,8 +6,6 @@
 
 class GameEffectsManager {
 public:
-    virtual ~GameEffectsManager();
-    virtual ~GameEffectsManager();
     virtual ~GameEffectsManager();
 
     void scaleParticle(cocos2d::CCParticleSystemQuad*, float);

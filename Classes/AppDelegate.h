@@ -4,7 +4,7 @@
 #include "cocos2d.h"
 
 /**
- * @brief The main application delegate for GeometryDash (HieuDash decompilation).
+ * @brief The main application delegate for GeometryDash.
  *
  * Sets up the Cocos2d-x director, design resolution, and loads the
  * initial MenuLayer scene on launch.  Mirrors the original APK's

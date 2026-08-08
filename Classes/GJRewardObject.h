@@ -1,15 +1,9 @@
-// ============================================================
-// GJRewardObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJREWARDOBJECT_H_
 #define GJREWARDOBJECT_H_
 
 class GJRewardObject {
 public:
-    virtual ~GJRewardObject();
-    virtual ~GJRewardObject();
     virtual ~GJRewardObject();
 
     void dataLoaded(DS_Dictionary*);

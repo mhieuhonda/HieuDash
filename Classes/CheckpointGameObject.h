@@ -1,7 +1,3 @@
-// ============================================================
-// CheckpointGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CHECKPOINTGAMEOBJECT_H_
 #define CHECKPOINTGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class CheckpointGameObject : public GameObject {
 public:
-    virtual ~CheckpointGameObject();
-    virtual ~CheckpointGameObject();
     virtual ~CheckpointGameObject();
 
     void resetObject();

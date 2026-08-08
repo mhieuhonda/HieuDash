@@ -1,7 +1,3 @@
-// ============================================================
-// SimplePlayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SIMPLEPLAYER_H_
 #define SIMPLEPLAYER_H_
@@ -10,8 +6,6 @@
 
 class SimplePlayer {
 public:
-    virtual ~SimplePlayer();
-    virtual ~SimplePlayer();
     virtual ~SimplePlayer();
 
     void setOpacity(unsigned char);

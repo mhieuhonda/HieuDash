@@ -1,7 +1,3 @@
-// ============================================================
-// ButtonSprite.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef BUTTONSPRITE_H_
 #define BUTTONSPRITE_H_
@@ -11,8 +7,6 @@
 
 class ButtonSprite {
 public:
-    virtual ~ButtonSprite();
-    virtual ~ButtonSprite();
     virtual ~ButtonSprite();
 
     void updateBGImage(char const*);

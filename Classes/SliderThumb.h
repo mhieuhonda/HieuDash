@@ -1,7 +1,3 @@
-// ============================================================
-// SliderThumb.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SLIDERTHUMB_H_
 #define SLIDERTHUMB_H_
@@ -10,8 +6,6 @@
 
 class SliderThumb {
 public:
-    virtual ~SliderThumb();
-    virtual ~SliderThumb();
     virtual ~SliderThumb();
 
     void setRotated(bool);

@@ -1,7 +1,3 @@
-// ============================================================
-// GJUserCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJUSERCELL_H_
 #define GJUSERCELL_H_
@@ -13,8 +9,6 @@ public:
     GJUserCell(char const*, float, float);
     GJUserCell(char const*, float, float);
 
-    virtual ~GJUserCell();
-    virtual ~GJUserCell();
     virtual ~GJUserCell();
 
     void onClosePopup(UploadActionPopup*);

@@ -1,7 +1,3 @@
-// ============================================================
-// FMODAudioEngine.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef FMODAUDIOENGINE_H_
 #define FMODAUDIOENGINE_H_
@@ -14,8 +10,6 @@
 class FMODAudioEngine : public cocos2d::CCNode {
 public:
     static FMODAudioEngine* create();
-    virtual ~FMODAudioEngine();
-    virtual ~FMODAudioEngine();
     virtual ~FMODAudioEngine();
 
     void pauseMusic(int);

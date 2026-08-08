@@ -1,7 +1,3 @@
-// ============================================================
-// FLAlertLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef FLALERTLAYER_H_
 #define FLALERTLAYER_H_
@@ -11,8 +7,6 @@
 
 class FLAlertLayer {
 public:
-    virtual ~FLAlertLayer();
-    virtual ~FLAlertLayer();
     virtual ~FLAlertLayer();
 
     void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);

@@ -1,7 +1,3 @@
-// ============================================================
-// OBB2D.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef OBB2D_H_
 #define OBB2D_H_
@@ -10,8 +6,6 @@
 
 class OBB2D {
 public:
-    virtual ~OBB2D();
-    virtual ~OBB2D();
     virtual ~OBB2D();
 
     void computeAxes();

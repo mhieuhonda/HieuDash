@@ -1,7 +1,3 @@
-// ============================================================
-// LoadingCircle.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LOADINGCIRCLE_H_
 #define LOADINGCIRCLE_H_
@@ -10,8 +6,6 @@
 
 class LoadingCircle {
 public:
-    virtual ~LoadingCircle();
-    virtual ~LoadingCircle();
     virtual ~LoadingCircle();
 
     void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);

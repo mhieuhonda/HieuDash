@@ -1,7 +1,3 @@
-// ============================================================
-// GJWorldNode.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJWORLDNODE_H_
 #define GJWORLDNODE_H_
@@ -10,8 +6,6 @@
 
 class GJWorldNode {
 public:
-    virtual ~GJWorldNode();
-    virtual ~GJWorldNode();
     virtual ~GJWorldNode();
 
     void addDotsToLevel(int, bool);

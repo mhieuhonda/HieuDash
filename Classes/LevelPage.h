@@ -1,7 +1,3 @@
-// ============================================================
-// LevelPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELPAGE_H_
 #define LEVELPAGE_H_
@@ -10,8 +6,6 @@
 
 class LevelPage : public cocos2d::CCLayer {
 public:
-    virtual ~LevelPage();
-    virtual ~LevelPage();
     virtual ~LevelPage();
 
     void onTheTower(cocos2d::CCObject*);

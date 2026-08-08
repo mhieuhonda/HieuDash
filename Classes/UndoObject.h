@@ -1,7 +1,3 @@
-// ============================================================
-// UndoObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef UNDOOBJECT_H_
 #define UNDOOBJECT_H_
@@ -10,8 +6,6 @@
 
 class UndoObject : public cocos2d::CCObject {
 public:
-    virtual ~UndoObject();
-    virtual ~UndoObject();
     virtual ~UndoObject();
 
     void setObjects(cocos2d::CCArray*);

@@ -1,7 +1,3 @@
-// ============================================================
-// UILayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef UILAYER_H_
 #define UILAYER_H_
@@ -10,8 +6,6 @@
 
 class UILayer {
 public:
-    virtual ~UILayer();
-    virtual ~UILayer();
     virtual ~UILayer();
 
     void enableMenu();

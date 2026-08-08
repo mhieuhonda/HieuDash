@@ -1,7 +1,3 @@
-// ============================================================
-// _JNIEnv.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef _JNIENV_H_
 #define _JNIENV_H_

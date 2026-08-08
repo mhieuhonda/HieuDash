@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAdvFollowPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPADVFOLLOWPOPUP_H_
 #define SETUPADVFOLLOWPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAdvFollowPopup {
 public:
-    virtual ~SetupAdvFollowPopup();
-    virtual ~SetupAdvFollowPopup();
     virtual ~SetupAdvFollowPopup();
 
     void updateMode(int);

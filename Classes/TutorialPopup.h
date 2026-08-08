@@ -1,7 +1,3 @@
-// ============================================================
-// TutorialPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TUTORIALPOPUP_H_
 #define TUTORIALPOPUP_H_
@@ -11,8 +7,6 @@
 
 class TutorialPopup {
 public:
-    virtual ~TutorialPopup();
-    virtual ~TutorialPopup();
     virtual ~TutorialPopup();
 
     void animateMenu();

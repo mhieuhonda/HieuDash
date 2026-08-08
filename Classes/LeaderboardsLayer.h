@@ -1,7 +1,3 @@
-// ============================================================
-// LeaderboardsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEADERBOARDSLAYER_H_
 #define LEADERBOARDSLAYER_H_
@@ -11,8 +7,6 @@
 
 class LeaderboardsLayer {
 public:
-    virtual ~LeaderboardsLayer();
-    virtual ~LeaderboardsLayer();
     virtual ~LeaderboardsLayer();
 
     void onCreators(cocos2d::CCObject*);

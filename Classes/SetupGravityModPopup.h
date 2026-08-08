@@ -1,7 +1,3 @@
-// ============================================================
-// SetupGravityModPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPGRAVITYMODPOPUP_H_
 #define SETUPGRAVITYMODPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupGravityModPopup {
 public:
-    virtual ~SetupGravityModPopup();
-    virtual ~SetupGravityModPopup();
     virtual ~SetupGravityModPopup();
 
     void textChanged(CCTextInputNode*);

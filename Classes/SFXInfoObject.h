@@ -1,7 +1,3 @@
-// ============================================================
-// SFXInfoObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SFXINFOOBJECT_H_
 #define SFXINFOOBJECT_H_
@@ -10,8 +6,6 @@
 
 class SFXInfoObject {
 public:
-    virtual ~SFXInfoObject();
-    virtual ~SFXInfoObject();
     virtual ~SFXInfoObject();
 
     void getLowerCaseName();

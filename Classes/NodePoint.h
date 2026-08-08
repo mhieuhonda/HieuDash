@@ -1,7 +1,3 @@
-// ============================================================
-// NodePoint.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef NODEPOINT_H_
 #define NODEPOINT_H_
@@ -10,8 +6,6 @@
 
 class NodePoint {
 public:
-    virtual ~NodePoint();
-    virtual ~NodePoint();
     virtual ~NodePoint();
 
     void init(cocos2d::CCPoint);

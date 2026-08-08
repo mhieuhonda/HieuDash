@@ -1,7 +1,3 @@
-// ============================================================
-// MoreVideoOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MOREVIDEOOPTIONSLAYER_H_
 #define MOREVIDEOOPTIONSLAYER_H_
@@ -10,8 +6,6 @@
 
 class MoreVideoOptionsLayer {
 public:
-    virtual ~MoreVideoOptionsLayer();
-    virtual ~MoreVideoOptionsLayer();
     virtual ~MoreVideoOptionsLayer();
 
     void onApplyFPS(cocos2d::CCObject*);

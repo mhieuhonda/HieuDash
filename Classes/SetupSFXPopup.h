@@ -1,7 +1,3 @@
-// ============================================================
-// SetupSFXPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSFXPOPUP_H_
 #define SETUPSFXPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupSFXPopup {
 public:
-    virtual ~SetupSFXPopup();
-    virtual ~SetupSFXPopup();
     virtual ~SetupSFXPopup();
 
     void onBrowseSFX(cocos2d::CCObject*);

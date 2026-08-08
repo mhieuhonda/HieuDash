@@ -1,7 +1,3 @@
-// ============================================================
-// SetupTeleportPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPTELEPORTPOPUP_H_
 #define SETUPTELEPORTPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupTeleportPopup {
 public:
-    virtual ~SetupTeleportPopup();
-    virtual ~SetupTeleportPopup();
     virtual ~SetupTeleportPopup();
 
     void valueDidChange(int, float);

@@ -1,7 +1,3 @@
-// ============================================================
-// GJDropDownLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJDROPDOWNLAYER_H_
 #define GJDROPDOWNLAYER_H_
@@ -10,8 +6,6 @@
 
 class GJDropDownLayer {
 public:
-    virtual ~GJDropDownLayer();
-    virtual ~GJDropDownLayer();
     virtual ~GJDropDownLayer();
 
     void enterLayer();

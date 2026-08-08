@@ -1,5 +1,5 @@
 # =============================================================================
-# GeometryDash (HieuDash) — CI on push / pull request
+# GeometryDash (GeometryDash) — CI on push / pull request
 # Verifies that the APK can be rebuilt and that the desktop CMake configuration
 # at least configures successfully.
 # =============================================================================

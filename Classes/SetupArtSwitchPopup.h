@@ -1,7 +1,3 @@
-// ============================================================
-// SetupArtSwitchPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPARTSWITCHPOPUP_H_
 #define SETUPARTSWITCHPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupArtSwitchPopup {
 public:
-    virtual ~SetupArtSwitchPopup();
-    virtual ~SetupArtSwitchPopup();
     virtual ~SetupArtSwitchPopup();
 
     void selectArtClosed(SelectArtLayer*);

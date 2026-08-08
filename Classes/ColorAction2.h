@@ -1,7 +1,3 @@
-// ============================================================
-// ColorAction2.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COLORACTION2_H_
 #define COLORACTION2_H_

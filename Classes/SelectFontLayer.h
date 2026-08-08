@@ -1,7 +1,3 @@
-// ============================================================
-// SelectFontLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SELECTFONTLAYER_H_
 #define SELECTFONTLAYER_H_
@@ -10,8 +6,6 @@
 
 class SelectFontLayer {
 public:
-    virtual ~SelectFontLayer();
-    virtual ~SelectFontLayer();
     virtual ~SelectFontLayer();
 
     void onChangeFont(cocos2d::CCObject*);

@@ -1,15 +1,9 @@
-// ============================================================
-// GJGameLoadingLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJGAMELOADINGLAYER_H_
 #define GJGAMELOADINGLAYER_H_
 
 class GJGameLoadingLayer {
 public:
-    virtual ~GJGameLoadingLayer();
-    virtual ~GJGameLoadingLayer();
     virtual ~GJGameLoadingLayer();
 
     void gameLayerDidUnload();

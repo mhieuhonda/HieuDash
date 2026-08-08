@@ -1,7 +1,3 @@
-// ============================================================
-// SelectSettingLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SELECTSETTINGLAYER_H_
 #define SELECTSETTINGLAYER_H_
@@ -10,8 +6,6 @@
 
 class SelectSettingLayer {
 public:
-    virtual ~SelectSettingLayer();
-    virtual ~SelectSettingLayer();
     virtual ~SelectSettingLayer();
 
     void idxToValue(SelectSettingType, int);

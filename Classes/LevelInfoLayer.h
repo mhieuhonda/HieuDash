@@ -1,7 +1,3 @@
-// ============================================================
-// LevelInfoLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELINFOLAYER_H_
 #define LEVELINFOLAYER_H_
@@ -10,8 +6,6 @@
 
 class LevelInfoLayer : public cocos2d::CCLayer {
 public:
-    virtual ~LevelInfoLayer();
-    virtual ~LevelInfoLayer();
     virtual ~LevelInfoLayer();
 
     void onFavorite(cocos2d::CCObject*);

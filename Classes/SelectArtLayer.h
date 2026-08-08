@@ -1,7 +1,3 @@
-// ============================================================
-// SelectArtLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SELECTARTLAYER_H_
 #define SELECTARTLAYER_H_
@@ -10,8 +6,6 @@
 
 class SelectArtLayer {
 public:
-    virtual ~SelectArtLayer();
-    virtual ~SelectArtLayer();
     virtual ~SelectArtLayer();
 
     void keyBackClicked();

@@ -1,7 +1,3 @@
-// ============================================================
-// PlayerObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef PLAYEROBJECT_H_
 #define PLAYEROBJECT_H_
@@ -15,8 +11,6 @@ class GameObject;
 
 class PlayerObject : public GameObject {
 public:
-    virtual ~PlayerObject();
-    virtual ~PlayerObject();
     virtual ~PlayerObject();
 
     void bumpPlayer(float, int, bool, GameObject*);

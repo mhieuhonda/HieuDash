@@ -1,7 +1,3 @@
-// ============================================================
-// KeybindingsManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef KEYBINDINGSMANAGER_H_
 #define KEYBINDINGSMANAGER_H_
@@ -10,8 +6,6 @@
 
 class KeybindingsManager {
 public:
-    virtual ~KeybindingsManager();
-    virtual ~KeybindingsManager();
     virtual ~KeybindingsManager();
 
     void dataLoaded(DS_Dictionary*);

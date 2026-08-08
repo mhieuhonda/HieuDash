@@ -1,7 +1,3 @@
-// ============================================================
-// LevelSelectLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELSELECTLAYER_H_
 #define LEVELSELECTLAYER_H_
@@ -10,8 +6,6 @@
 
 class LevelSelectLayer : public cocos2d::CCLayer {
 public:
-    virtual ~LevelSelectLayer();
-    virtual ~LevelSelectLayer();
     virtual ~LevelSelectLayer();
 
     void onDownload(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// GJRequestCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJREQUESTCELL_H_
 #define GJREQUESTCELL_H_
@@ -13,8 +9,6 @@ public:
     GJRequestCell(char const*, float, float);
     GJRequestCell(char const*, float, float);
 
-    virtual ~GJRequestCell();
-    virtual ~GJRequestCell();
     virtual ~GJRequestCell();
 
     void markAsRead();

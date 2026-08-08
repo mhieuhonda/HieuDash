@@ -1,7 +1,3 @@
-// ============================================================
-// ShareLevelSettingsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SHARELEVELSETTINGSLAYER_H_
 #define SHARELEVELSETTINGSLAYER_H_
@@ -10,8 +6,6 @@
 
 class ShareLevelSettingsLayer {
 public:
-    virtual ~ShareLevelSettingsLayer();
-    virtual ~ShareLevelSettingsLayer();
     virtual ~ShareLevelSettingsLayer();
 
     void onUnlisted(cocos2d::CCObject*);

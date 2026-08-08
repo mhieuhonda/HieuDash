@@ -1,7 +1,3 @@
-// ============================================================
-// ArtTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ARTTRIGGERGAMEOBJECT_H_
 #define ARTTRIGGERGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class ArtTriggerGameObject {
 public:
-    virtual ~ArtTriggerGameObject();
-    virtual ~ArtTriggerGameObject();
     virtual ~ArtTriggerGameObject();
 
     void getSaveString(GJBaseGameLayer*);

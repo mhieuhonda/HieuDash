@@ -1,7 +1,3 @@
-// ============================================================
-// SecretLayer3.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SECRETLAYER3_H_
 #define SECRETLAYER3_H_
@@ -10,8 +6,6 @@
 
 class SecretLayer3 {
 public:
-    virtual ~SecretLayer3();
-    virtual ~SecretLayer3();
     virtual ~SecretLayer3();
 
     void animateEyes();

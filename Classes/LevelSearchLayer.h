@@ -1,7 +1,3 @@
-// ============================================================
-// LevelSearchLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELSEARCHLAYER_H_
 #define LEVELSEARCHLAYER_H_
@@ -11,8 +7,6 @@
 
 class LevelSearchLayer {
 public:
-    virtual ~LevelSearchLayer();
-    virtual ~LevelSearchLayer();
     virtual ~LevelSearchLayer();
 
     void getDiffKey(int);

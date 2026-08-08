@@ -1,7 +1,3 @@
-// ============================================================
-// PriceLabel.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef PRICELABEL_H_
 #define PRICELABEL_H_
@@ -10,8 +6,6 @@
 
 class PriceLabel {
 public:
-    virtual ~PriceLabel();
-    virtual ~PriceLabel();
     virtual ~PriceLabel();
 
     void setOpacity(float);

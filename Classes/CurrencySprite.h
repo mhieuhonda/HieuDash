@@ -1,7 +1,3 @@
-// ============================================================
-// CurrencySprite.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CURRENCYSPRITE_H_
 #define CURRENCYSPRITE_H_
@@ -10,8 +6,6 @@
 
 class CurrencySprite {
 public:
-    virtual ~CurrencySprite();
-    virtual ~CurrencySprite();
     virtual ~CurrencySprite();
 
     void initWithSprite(cocos2d::CCSprite*);

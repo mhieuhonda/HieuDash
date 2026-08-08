@@ -1,7 +1,3 @@
-// ============================================================
-// CurrencyRewardLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CURRENCYREWARDLAYER_H_
 #define CURRENCYREWARDLAYER_H_
@@ -10,8 +6,6 @@
 
 class CurrencyRewardLayer {
 public:
-    virtual ~CurrencyRewardLayer();
-    virtual ~CurrencyRewardLayer();
     virtual ~CurrencyRewardLayer();
 
     void pulseSprite(cocos2d::CCSprite*);

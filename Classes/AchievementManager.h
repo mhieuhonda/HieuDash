@@ -1,7 +1,3 @@
-// ============================================================
-// AchievementManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ACHIEVEMENTMANAGER_H_
 #define ACHIEVEMENTMANAGER_H_
@@ -11,8 +7,6 @@
 
 class AchievementManager {
 public:
-    virtual ~AchievementManager();
-    virtual ~AchievementManager();
     virtual ~AchievementManager();
 
     void dataLoaded(DS_Dictionary*);

@@ -1,7 +1,3 @@
-// ============================================================
-// LevelOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELOPTIONSLAYER_H_
 #define LEVELOPTIONSLAYER_H_
@@ -10,8 +6,6 @@
 
 class LevelOptionsLayer {
 public:
-    virtual ~LevelOptionsLayer();
-    virtual ~LevelOptionsLayer();
     virtual ~LevelOptionsLayer();
 
     void onSettings(cocos2d::CCObject*);

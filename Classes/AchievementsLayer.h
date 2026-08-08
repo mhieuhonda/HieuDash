@@ -1,7 +1,3 @@
-// ============================================================
-// AchievementsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ACHIEVEMENTSLAYER_H_
 #define ACHIEVEMENTSLAYER_H_
@@ -10,8 +6,6 @@
 
 class AchievementsLayer {
 public:
-    virtual ~AchievementsLayer();
-    virtual ~AchievementsLayer();
     virtual ~AchievementsLayer();
 
     void onNextPage(cocos2d::CCObject*);

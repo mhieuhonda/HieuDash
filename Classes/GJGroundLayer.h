@@ -1,7 +1,3 @@
-// ============================================================
-// GJGroundLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJGROUNDLAYER_H_
 #define GJGROUNDLAYER_H_
@@ -10,8 +6,6 @@
 
 class GJGroundLayer {
 public:
-    virtual ~GJGroundLayer();
-    virtual ~GJGroundLayer();
     virtual ~GJGroundLayer();
 
     void createLine(int);

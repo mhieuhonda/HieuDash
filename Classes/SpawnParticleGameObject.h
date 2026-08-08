@@ -1,7 +1,3 @@
-// ============================================================
-// SpawnParticleGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SPAWNPARTICLEGAMEOBJECT_H_
 #define SPAWNPARTICLEGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class SpawnParticleGameObject {
 public:
-    virtual ~SpawnParticleGameObject();
-    virtual ~SpawnParticleGameObject();
     virtual ~SpawnParticleGameObject();
 
     void getSaveString(GJBaseGameLayer*);

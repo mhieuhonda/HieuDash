@@ -1,7 +1,3 @@
-// ============================================================
-// GJFollowCommandLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJFOLLOWCOMMANDLAYER_H_
 #define GJFOLLOWCOMMANDLAYER_H_
@@ -10,8 +6,6 @@
 
 class GJFollowCommandLayer {
 public:
-    virtual ~GJFollowCommandLayer();
-    virtual ~GJFollowCommandLayer();
     virtual ~GJFollowCommandLayer();
 
     void updateXMod();

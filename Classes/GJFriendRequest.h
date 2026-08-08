@@ -1,7 +1,3 @@
-// ============================================================
-// GJFriendRequest.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJFRIENDREQUEST_H_
 #define GJFRIENDREQUEST_H_
@@ -10,8 +6,6 @@
 
 class GJFriendRequest {
 public:
-    virtual ~GJFriendRequest();
-    virtual ~GJFriendRequest();
     virtual ~GJFriendRequest();
 
     void init();

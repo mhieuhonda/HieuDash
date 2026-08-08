@@ -1,7 +1,3 @@
-// ============================================================
-// RingObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef RINGOBJECT_H_
 #define RINGOBJECT_H_
@@ -11,8 +7,6 @@
 
 class RingObject {
 public:
-    virtual ~RingObject();
-    virtual ~RingObject();
     virtual ~RingObject();
 
     void resetObject();

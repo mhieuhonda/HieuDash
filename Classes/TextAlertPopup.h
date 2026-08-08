@@ -1,7 +1,3 @@
-// ============================================================
-// TextAlertPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TEXTALERTPOPUP_H_
 #define TEXTALERTPOPUP_H_
@@ -11,8 +7,6 @@
 
 class TextAlertPopup {
 public:
-    virtual ~TextAlertPopup();
-    virtual ~TextAlertPopup();
     virtual ~TextAlertPopup();
 
     void setLabelColor(cocos2d::_ccColor3B);

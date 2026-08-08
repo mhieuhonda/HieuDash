@@ -1,7 +1,3 @@
-// ============================================================
-// GJPromoPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJPROMOPOPUP_H_
 #define GJPROMOPOPUP_H_
@@ -11,8 +7,6 @@
 
 class GJPromoPopup {
 public:
-    virtual ~GJPromoPopup();
-    virtual ~GJPromoPopup();
     virtual ~GJPromoPopup();
 
     void keyBackClicked();

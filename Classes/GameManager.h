@@ -1,7 +1,3 @@
-// ============================================================
-// GameManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAMEMANAGER_H_
 #define GAMEMANAGER_H_
@@ -12,8 +8,6 @@
 class GameManager : public cocos2d::CCNode {
 public:
     static GameManager* create();
-    virtual ~GameManager();
-    virtual ~GameManager();
     virtual ~GameManager();
 
     void addToGJLog(cocos2d::CCString*);

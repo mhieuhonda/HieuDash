@@ -1,7 +1,3 @@
-// ============================================================
-// CustomSongCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CUSTOMSONGCELL_H_
 #define CUSTOMSONGCELL_H_
@@ -14,8 +10,6 @@ public:
     CustomSongCell(char const*, float, float);
     CustomSongCell(char const*, float, float);
 
-    virtual ~CustomSongCell();
-    virtual ~CustomSongCell();
     virtual ~CustomSongCell();
 
     void shouldReload();

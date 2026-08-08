@@ -1,7 +1,3 @@
-// ============================================================
-// SetupPortalPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPPORTALPOPUP_H_
 #define SETUPPORTALPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupPortalPopup {
 public:
-    virtual ~SetupPortalPopup();
-    virtual ~SetupPortalPopup();
     virtual ~SetupPortalPopup();
 
     void onUnboundMode(cocos2d::CCObject*);

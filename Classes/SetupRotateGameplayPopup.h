@@ -1,7 +1,3 @@
-// ============================================================
-// SetupRotateGameplayPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPROTATEGAMEPLAYPOPUP_H_
 #define SETUPROTATEGAMEPLAYPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupRotateGameplayPopup {
 public:
-    virtual ~SetupRotateGameplayPopup();
-    virtual ~SetupRotateGameplayPopup();
     virtual ~SetupRotateGameplayPopup();
 
     void onPlusButton(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SecretRewardsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SECRETREWARDSLAYER_H_
 #define SECRETREWARDSLAYER_H_
@@ -10,8 +6,6 @@
 
 class SecretRewardsLayer {
 public:
-    virtual ~SecretRewardsLayer();
-    virtual ~SecretRewardsLayer();
     virtual ~SecretRewardsLayer();
 
     void fadeInMusic();

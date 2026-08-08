@@ -1,7 +1,3 @@
-// ============================================================
-// LevelListCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELLISTCELL_H_
 #define LEVELLISTCELL_H_
@@ -13,8 +9,6 @@ public:
     LevelListCell(char const*, float, float);
     LevelListCell(char const*, float, float);
 
-    virtual ~LevelListCell();
-    virtual ~LevelListCell();
     virtual ~LevelListCell();
 
     void onListInfo(cocos2d::CCObject*);

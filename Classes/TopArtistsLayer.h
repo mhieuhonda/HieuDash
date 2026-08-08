@@ -1,7 +1,3 @@
-// ============================================================
-// TopArtistsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TOPARTISTSLAYER_H_
 #define TOPARTISTSLAYER_H_
@@ -11,8 +7,6 @@
 
 class TopArtistsLayer {
 public:
-    virtual ~TopArtistsLayer();
-    virtual ~TopArtistsLayer();
     virtual ~TopArtistsLayer();
 
     void onNextPage(cocos2d::CCObject*);

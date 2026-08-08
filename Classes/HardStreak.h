@@ -1,7 +1,3 @@
-// ============================================================
-// HardStreak.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef HARDSTREAK_H_
 #define HARDSTREAK_H_
@@ -10,8 +6,6 @@
 
 class HardStreak {
 public:
-    virtual ~HardStreak();
-    virtual ~HardStreak();
     virtual ~HardStreak();
 
     void firstSetup();

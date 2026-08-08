@@ -1,7 +1,3 @@
-// ============================================================
-// GJMessageCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJMESSAGECELL_H_
 #define GJMESSAGECELL_H_
@@ -13,8 +9,6 @@ public:
     GJMessageCell(char const*, float, float);
     GJMessageCell(char const*, float, float);
 
-    virtual ~GJMessageCell();
-    virtual ~GJMessageCell();
     virtual ~GJMessageCell();
 
     void markAsRead();

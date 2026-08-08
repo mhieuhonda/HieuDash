@@ -1,7 +1,3 @@
-// ============================================================
-// ItemInfoPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ITEMINFOPOPUP_H_
 #define ITEMINFOPOPUP_H_
@@ -10,8 +6,6 @@
 
 class ItemInfoPopup {
 public:
-    virtual ~ItemInfoPopup();
-    virtual ~ItemInfoPopup();
     virtual ~ItemInfoPopup();
 
     void keyBackClicked();

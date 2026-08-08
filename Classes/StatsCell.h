@@ -1,7 +1,3 @@
-// ============================================================
-// StatsCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef STATSCELL_H_
 #define STATSCELL_H_
@@ -13,8 +9,6 @@ public:
     StatsCell(char const*, float, float);
     StatsCell(char const*, float, float);
 
-    virtual ~StatsCell();
-    virtual ~StatsCell();
     virtual ~StatsCell();
 
     void updateBGColor(int);

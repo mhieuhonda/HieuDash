@@ -1,7 +1,3 @@
-// ============================================================
-// GradientTriggerObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GRADIENTTRIGGEROBJECT_H_
 #define GRADIENTTRIGGEROBJECT_H_
@@ -11,8 +7,6 @@
 
 class GradientTriggerObject {
 public:
-    virtual ~GradientTriggerObject();
-    virtual ~GradientTriggerObject();
     virtual ~GradientTriggerObject();
 
     void getSaveString(GJBaseGameLayer*);

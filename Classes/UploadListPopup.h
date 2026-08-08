@@ -1,7 +1,3 @@
-// ============================================================
-// UploadListPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef UPLOADLISTPOPUP_H_
 #define UPLOADLISTPOPUP_H_
@@ -10,8 +6,6 @@
 
 class UploadListPopup {
 public:
-    virtual ~UploadListPopup();
-    virtual ~UploadListPopup();
     virtual ~UploadListPopup();
 
     void keyBackClicked();

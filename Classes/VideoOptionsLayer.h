@@ -1,7 +1,3 @@
-// ============================================================
-// VideoOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef VIDEOOPTIONSLAYER_H_
 #define VIDEOOPTIONSLAYER_H_
@@ -11,8 +7,6 @@
 
 class VideoOptionsLayer {
 public:
-    virtual ~VideoOptionsLayer();
-    virtual ~VideoOptionsLayer();
     virtual ~VideoOptionsLayer();
 
     void onAdvanced(cocos2d::CCObject*);

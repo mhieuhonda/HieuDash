@@ -1,7 +1,3 @@
-// ============================================================
-// MusicBrowser.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MUSICBROWSER_H_
 #define MUSICBROWSER_H_
@@ -11,8 +7,6 @@
 
 class MusicBrowser {
 public:
-    virtual ~MusicBrowser();
-    virtual ~MusicBrowser();
     virtual ~MusicBrowser();
 
     void sliderEnded(Slider*);

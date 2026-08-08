@@ -1,7 +1,3 @@
-// ============================================================
-// GJBaseGameLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJBASEGAMELAYER_H_
 #define GJBASEGAMELAYER_H_
@@ -20,8 +16,6 @@ class PlayerObject;
 class GJBaseGameLayer : public cocos2d::CCLayer {
 public:
     static GJBaseGameLayer* create();
-    virtual ~GJBaseGameLayer();
-    virtual ~GJBaseGameLayer();
     virtual ~GJBaseGameLayer();
 
     void addToGroup(GameObject*, int, bool);

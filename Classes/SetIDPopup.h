@@ -1,7 +1,3 @@
-// ============================================================
-// SetIDPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETIDPOPUP_H_
 #define SETIDPOPUP_H_
@@ -11,8 +7,6 @@
 
 class SetIDPopup {
 public:
-    virtual ~SetIDPopup();
-    virtual ~SetIDPopup();
     virtual ~SetIDPopup();
 
     void textChanged(CCTextInputNode*);

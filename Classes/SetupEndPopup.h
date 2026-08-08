@@ -1,7 +1,3 @@
-// ============================================================
-// SetupEndPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPENDPOPUP_H_
 #define SETUPENDPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupEndPopup {
 public:
-    virtual ~SetupEndPopup();
-    virtual ~SetupEndPopup();
     virtual ~SetupEndPopup();
 
     void onReversed(cocos2d::CCObject*);

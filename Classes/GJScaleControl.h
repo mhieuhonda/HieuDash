@@ -1,7 +1,3 @@
-// ============================================================
-// GJScaleControl.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJSCALECONTROL_H_
 #define GJSCALECONTROL_H_
@@ -11,8 +7,6 @@
 
 class GJScaleControl {
 public:
-    virtual ~GJScaleControl();
-    virtual ~GJScaleControl();
     virtual ~GJScaleControl();
 
     void loadValues(GameObject*, cocos2d::CCArray*, std::unordered_map<int, GameObjectEditorState>, std::equal_to<int>, std::allocator<std::pair<const int, GameObjectEditorState> > >&);

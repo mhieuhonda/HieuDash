@@ -1,7 +1,3 @@
-// ============================================================
-// GJLevelScoreCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJLEVELSCORECELL_H_
 #define GJLEVELSCORECELL_H_
@@ -13,8 +9,6 @@ public:
     GJLevelScoreCell(char const*, float, float);
     GJLevelScoreCell(char const*, float, float);
 
-    virtual ~GJLevelScoreCell();
-    virtual ~GJLevelScoreCell();
     virtual ~GJLevelScoreCell();
 
     void loadFromScore(GJUserScore*);

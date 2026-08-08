@@ -1,7 +1,3 @@
-// ============================================================
-// TOSPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TOSPOPUP_H_
 #define TOSPOPUP_H_
@@ -10,8 +6,6 @@
 
 class TOSPopup {
 public:
-    virtual ~TOSPopup();
-    virtual ~TOSPopup();
     virtual ~TOSPopup();
 
     void keyBackClicked();

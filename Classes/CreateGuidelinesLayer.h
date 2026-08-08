@@ -1,7 +1,3 @@
-// ============================================================
-// CreateGuidelinesLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CREATEGUIDELINESLAYER_H_
 #define CREATEGUIDELINESLAYER_H_
@@ -11,8 +7,6 @@
 
 class CreateGuidelinesLayer {
 public:
-    virtual ~CreateGuidelinesLayer();
-    virtual ~CreateGuidelinesLayer();
     virtual ~CreateGuidelinesLayer();
 
     void toggleItems(bool);

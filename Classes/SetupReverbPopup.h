@@ -1,7 +1,3 @@
-// ============================================================
-// SetupReverbPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPREVERBPOPUP_H_
 #define SETUPREVERBPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupReverbPopup {
 public:
-    virtual ~SetupReverbPopup();
-    virtual ~SetupReverbPopup();
     virtual ~SetupReverbPopup();
 
     void updateReverbLabel();

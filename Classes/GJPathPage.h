@@ -1,7 +1,3 @@
-// ============================================================
-// GJPathPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJPATHPAGE_H_
 #define GJPATHPAGE_H_
@@ -10,8 +6,6 @@
 
 class GJPathPage {
 public:
-    virtual ~GJPathPage();
-    virtual ~GJPathPage();
     virtual ~GJPathPage();
 
     void onIconInfo(cocos2d::CCObject*);

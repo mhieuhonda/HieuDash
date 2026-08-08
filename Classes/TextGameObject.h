@@ -1,7 +1,3 @@
-// ============================================================
-// TextGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TEXTGAMEOBJECT_H_
 #define TEXTGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class TextGameObject {
 public:
-    virtual ~TextGameObject();
-    virtual ~TextGameObject();
     virtual ~TextGameObject();
 
     void getSaveString(GJBaseGameLayer*);

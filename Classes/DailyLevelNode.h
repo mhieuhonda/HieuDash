@@ -1,7 +1,3 @@
-// ============================================================
-// DailyLevelNode.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef DAILYLEVELNODE_H_
 #define DAILYLEVELNODE_H_
@@ -11,8 +7,6 @@
 
 class DailyLevelNode {
 public:
-    virtual ~DailyLevelNode();
-    virtual ~DailyLevelNode();
     virtual ~DailyLevelNode();
 
     void onSkipLevel(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetFolderPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETFOLDERPOPUP_H_
 #define SETFOLDERPOPUP_H_
@@ -11,8 +7,6 @@
 
 class SetFolderPopup {
 public:
-    virtual ~SetFolderPopup();
-    virtual ~SetFolderPopup();
     virtual ~SetFolderPopup();
 
     void valueChanged();

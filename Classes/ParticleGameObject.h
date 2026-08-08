@@ -1,7 +1,3 @@
-// ============================================================
-// ParticleGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef PARTICLEGAMEOBJECT_H_
 #define PARTICLEGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class ParticleGameObject {
 public:
-    virtual ~ParticleGameObject();
-    virtual ~ParticleGameObject();
     virtual ~ParticleGameObject();
 
     void customSetup();

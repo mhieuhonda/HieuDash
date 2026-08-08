@@ -1,7 +1,3 @@
-// ============================================================
-// ShaderLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SHADERLAYER_H_
 #define SHADERLAYER_H_
@@ -10,8 +6,6 @@
 
 class ShaderLayer : public cocos2d::CCLayer {
 public:
-    virtual ~ShaderLayer();
-    virtual ~ShaderLayer();
     virtual ~ShaderLayer();
 
     void tweenValue(float, float, int, float, int, float);

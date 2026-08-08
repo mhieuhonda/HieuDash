@@ -1,7 +1,3 @@
-// ============================================================
-// GJWriteMessagePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJWRITEMESSAGEPOPUP_H_
 #define GJWRITEMESSAGEPOPUP_H_
@@ -11,8 +7,6 @@
 
 class GJWriteMessagePopup {
 public:
-    virtual ~GJWriteMessagePopup();
-    virtual ~GJWriteMessagePopup();
     virtual ~GJWriteMessagePopup();
 
     void updateBody(std::string);

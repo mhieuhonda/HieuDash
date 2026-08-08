@@ -1,7 +1,3 @@
-// ============================================================
-// SetupShakePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSHAKEPOPUP_H_
 #define SETUPSHAKEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupShakePopup {
 public:
-    virtual ~SetupShakePopup();
-    virtual ~SetupShakePopup();
     virtual ~SetupShakePopup();
 
     void textChanged(CCTextInputNode*);

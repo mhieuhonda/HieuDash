@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAnimationPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPANIMATIONPOPUP_H_
 #define SETUPANIMATIONPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAnimationPopup {
 public:
-    virtual ~SetupAnimationPopup();
-    virtual ~SetupAnimationPopup();
     virtual ~SetupAnimationPopup();
 
     void textChanged(CCTextInputNode*);

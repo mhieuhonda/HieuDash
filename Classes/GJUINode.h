@@ -1,7 +1,3 @@
-// ============================================================
-// GJUINode.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJUINODE_H_
 #define GJUINODE_H_
@@ -10,8 +6,6 @@
 
 class GJUINode {
 public:
-    virtual ~GJUINode();
-    virtual ~GJUINode();
     virtual ~GJUINode();
 
     void getOpacity();

@@ -1,7 +1,3 @@
-// ============================================================
-// CreateParticlePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CREATEPARTICLEPOPUP_H_
 #define CREATEPARTICLEPOPUP_H_
@@ -11,8 +7,6 @@
 
 class CreateParticlePopup {
 public:
-    virtual ~CreateParticlePopup();
-    virtual ~CreateParticlePopup();
     virtual ~CreateParticlePopup();
 
     void getPageMenu(int);

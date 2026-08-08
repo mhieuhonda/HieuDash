@@ -1,7 +1,3 @@
-// ============================================================
-// SelectEventLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SELECTEVENTLAYER_H_
 #define SELECTEVENTLAYER_H_
@@ -11,8 +7,6 @@
 
 class SelectEventLayer {
 public:
-    virtual ~SelectEventLayer();
-    virtual ~SelectEventLayer();
     virtual ~SelectEventLayer();
 
     void nextPosition();

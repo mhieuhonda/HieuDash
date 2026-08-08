@@ -1,7 +1,3 @@
-// ============================================================
-// DemonInfoPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef DEMONINFOPOPUP_H_
 #define DEMONINFOPOPUP_H_
@@ -11,8 +7,6 @@
 
 class DemonInfoPopup {
 public:
-    virtual ~DemonInfoPopup();
-    virtual ~DemonInfoPopup();
     virtual ~DemonInfoPopup();
 
     void keyBackClicked();

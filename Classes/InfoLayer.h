@@ -1,7 +1,3 @@
-// ============================================================
-// InfoLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef INFOLAYER_H_
 #define INFOLAYER_H_
@@ -11,8 +7,6 @@
 
 class InfoLayer {
 public:
-    virtual ~InfoLayer();
-    virtual ~InfoLayer();
     virtual ~InfoLayer();
 
     void onNextPage(cocos2d::CCObject*);

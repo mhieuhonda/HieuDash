@@ -1,7 +1,3 @@
-// ============================================================
-// GJAccountManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJACCOUNTMANAGER_H_
 #define GJACCOUNTMANAGER_H_
@@ -11,8 +7,6 @@
 
 class GJAccountManager {
 public:
-    virtual ~GJAccountManager();
-    virtual ~GJAccountManager();
     virtual ~GJAccountManager();
 
     void dataLoaded(DS_Dictionary*);

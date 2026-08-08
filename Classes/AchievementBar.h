@@ -1,7 +1,3 @@
-// ============================================================
-// AchievementBar.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ACHIEVEMENTBAR_H_
 #define ACHIEVEMENTBAR_H_
@@ -10,8 +6,6 @@
 
 class AchievementBar : public cocos2d::CCNode {
 public:
-    virtual ~AchievementBar();
-    virtual ~AchievementBar();
     virtual ~AchievementBar();
 
     void setOpacity(unsigned char);

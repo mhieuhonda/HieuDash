@@ -1,7 +1,3 @@
-// ============================================================
-// SecretLayer2.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SECRETLAYER2_H_
 #define SECRETLAYER2_H_
@@ -11,8 +7,6 @@
 
 class SecretLayer2 {
 public:
-    virtual ~SecretLayer2();
-    virtual ~SecretLayer2();
     virtual ~SecretLayer2();
 
     void getMessage();

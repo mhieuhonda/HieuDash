@@ -1,7 +1,3 @@
-// ============================================================
-// GJRewardItem.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJREWARDITEM_H_
 #define GJREWARDITEM_H_
@@ -11,8 +7,6 @@
 
 class GJRewardItem {
 public:
-    virtual ~GJRewardItem();
-    virtual ~GJRewardItem();
     virtual ~GJRewardItem();
 
     void dataLoaded(DS_Dictionary*);

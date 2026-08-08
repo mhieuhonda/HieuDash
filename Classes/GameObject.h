@@ -1,7 +1,3 @@
-// ============================================================
-// GameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAMEOBJECT_H_
 #define GAMEOBJECT_H_
@@ -13,8 +9,6 @@
 class GameObject : public cocos2d::CCSprite {
 public:
     static GameObject* create();
-    virtual ~GameObject();
-    virtual ~GameObject();
     virtual ~GameObject();
 
     void addToGroup(int);

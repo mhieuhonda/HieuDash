@@ -1,7 +1,3 @@
-// ============================================================
-// SpriteDescription.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SPRITEDESCRIPTION_H_
 #define SPRITEDESCRIPTION_H_
@@ -10,8 +6,6 @@
 
 class SpriteDescription {
 public:
-    virtual ~SpriteDescription();
-    virtual ~SpriteDescription();
     virtual ~SpriteDescription();
 
     void initDescription(DS_Dictionary*);

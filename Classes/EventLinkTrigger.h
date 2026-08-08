@@ -1,7 +1,3 @@
-// ============================================================
-// EventLinkTrigger.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EVENTLINKTRIGGER_H_
 #define EVENTLINKTRIGGER_H_
@@ -11,8 +7,6 @@
 
 class EventLinkTrigger {
 public:
-    virtual ~EventLinkTrigger();
-    virtual ~EventLinkTrigger();
     virtual ~EventLinkTrigger();
 
     void getSaveString(GJBaseGameLayer*);

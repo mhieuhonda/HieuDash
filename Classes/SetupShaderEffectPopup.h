@@ -1,7 +1,3 @@
-// ============================================================
-// SetupShaderEffectPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSHADEREFFECTPOPUP_H_
 #define SETUPSHADEREFFECTPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupShaderEffectPopup {
 public:
-    virtual ~SetupShaderEffectPopup();
-    virtual ~SetupShaderEffectPopup();
     virtual ~SetupShaderEffectPopup();
 
     void setupBulge();

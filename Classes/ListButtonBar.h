@@ -1,7 +1,3 @@
-// ============================================================
-// ListButtonBar.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LISTBUTTONBAR_H_
 #define LISTBUTTONBAR_H_
@@ -10,8 +6,6 @@
 
 class ListButtonBar {
 public:
-    virtual ~ListButtonBar();
-    virtual ~ListButtonBar();
     virtual ~ListButtonBar();
 
     void init(cocos2d::CCArray*, cocos2d::CCPoint, int, int, float, float, float, float, int);

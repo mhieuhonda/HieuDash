@@ -1,7 +1,3 @@
-// ============================================================
-// TriggerControlGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TRIGGERCONTROLGAMEOBJECT_H_
 #define TRIGGERCONTROLGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class TriggerControlGameObject {
 public:
-    virtual ~TriggerControlGameObject();
-    virtual ~TriggerControlGameObject();
     virtual ~TriggerControlGameObject();
 
     void getSaveString(GJBaseGameLayer*);

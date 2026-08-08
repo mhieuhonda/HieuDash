@@ -1,7 +1,3 @@
-// ============================================================
-// PlayerControlGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef PLAYERCONTROLGAMEOBJECT_H_
 #define PLAYERCONTROLGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class PlayerControlGameObject {
 public:
-    virtual ~PlayerControlGameObject();
-    virtual ~PlayerControlGameObject();
     virtual ~PlayerControlGameObject();
 
     void getSaveString(GJBaseGameLayer*);

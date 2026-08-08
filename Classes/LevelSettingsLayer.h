@@ -1,7 +1,3 @@
-// ============================================================
-// LevelSettingsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELSETTINGSLAYER_H_
 #define LEVELSETTINGSLAYER_H_
@@ -11,8 +7,6 @@
 
 class LevelSettingsLayer {
 public:
-    virtual ~LevelSettingsLayer();
-    virtual ~LevelSettingsLayer();
     virtual ~LevelSettingsLayer();
 
     void onLiveEdit(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupZoomTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPZOOMTRIGGERPOPUP_H_
 #define SETUPZOOMTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupZoomTriggerPopup {
 public:
-    virtual ~SetupZoomTriggerPopup();
-    virtual ~SetupZoomTriggerPopup();
     virtual ~SetupZoomTriggerPopup();
 
     void determineStartValues();

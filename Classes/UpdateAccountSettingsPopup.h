@@ -1,7 +1,3 @@
-// ============================================================
-// UpdateAccountSettingsPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef UPDATEACCOUNTSETTINGSPOPUP_H_
 #define UPDATEACCOUNTSETTINGSPOPUP_H_
@@ -11,8 +7,6 @@
 
 class UpdateAccountSettingsPopup {
 public:
-    virtual ~UpdateAccountSettingsPopup();
-    virtual ~UpdateAccountSettingsPopup();
     virtual ~UpdateAccountSettingsPopup();
 
     void keyBackClicked();

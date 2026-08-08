@@ -1,7 +1,3 @@
-// ============================================================
-// CCBlockLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCBLOCKLAYER_H_
 #define CCBLOCKLAYER_H_
@@ -10,8 +6,6 @@
 
 class CCBlockLayer {
 public:
-    virtual ~CCBlockLayer();
-    virtual ~CCBlockLayer();
     virtual ~CCBlockLayer();
 
     void enterLayer();

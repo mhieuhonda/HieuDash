@@ -1,7 +1,3 @@
-// ============================================================
-// MapPackCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MAPPACKCELL_H_
 #define MAPPACKCELL_H_
@@ -14,8 +10,6 @@ public:
     MapPackCell(char const*, float, float);
     MapPackCell(char const*, float, float);
 
-    virtual ~MapPackCell();
-    virtual ~MapPackCell();
     virtual ~MapPackCell();
 
     void reloadCell();

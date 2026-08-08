@@ -1,7 +1,3 @@
-// ============================================================
-// SetupCameraOffsetTrigger.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPCAMERAOFFSETTRIGGER_H_
 #define SETUPCAMERAOFFSETTRIGGER_H_
@@ -10,8 +6,6 @@
 
 class SetupCameraOffsetTrigger {
 public:
-    virtual ~SetupCameraOffsetTrigger();
-    virtual ~SetupCameraOffsetTrigger();
     virtual ~SetupCameraOffsetTrigger();
 
     void textChanged(CCTextInputNode*);

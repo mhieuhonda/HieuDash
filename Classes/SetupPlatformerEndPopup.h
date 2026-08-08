@@ -1,7 +1,3 @@
-// ============================================================
-// SetupPlatformerEndPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPPLATFORMERENDPOPUP_H_
 #define SETUPPLATFORMERENDPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupPlatformerEndPopup {
 public:
-    virtual ~SetupPlatformerEndPopup();
-    virtual ~SetupPlatformerEndPopup();
     virtual ~SetupPlatformerEndPopup();
 
     void init(EndTriggerGameObject*, cocos2d::CCArray*);

@@ -1,7 +1,3 @@
-// ============================================================
-// ArtistCell.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ARTISTCELL_H_
 #define ARTISTCELL_H_
@@ -13,8 +9,6 @@ public:
     ArtistCell(char const*, float, float);
     ArtistCell(char const*, float, float);
 
-    virtual ~ArtistCell();
-    virtual ~ArtistCell();
     virtual ~ArtistCell();
 
     void onNewgrounds(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SpawnTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SPAWNTRIGGERGAMEOBJECT_H_
 #define SPAWNTRIGGERGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class SpawnTriggerGameObject : public EffectGameObject {
 public:
-    virtual ~SpawnTriggerGameObject();
-    virtual ~SpawnTriggerGameObject();
     virtual ~SpawnTriggerGameObject();
 
     void changeRemap(int, int, bool);

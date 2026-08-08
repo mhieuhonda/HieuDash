@@ -1,7 +1,3 @@
-// ============================================================
-// CollisionBlockPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COLLISIONBLOCKPOPUP_H_
 #define COLLISIONBLOCKPOPUP_H_
@@ -11,8 +7,6 @@
 
 class CollisionBlockPopup {
 public:
-    virtual ~CollisionBlockPopup();
-    virtual ~CollisionBlockPopup();
     virtual ~CollisionBlockPopup();
 
     void textChanged(CCTextInputNode*);

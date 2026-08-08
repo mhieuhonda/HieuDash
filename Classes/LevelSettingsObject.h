@@ -1,7 +1,3 @@
-// ============================================================
-// LevelSettingsObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELSETTINGSOBJECT_H_
 #define LEVELSETTINGSOBJECT_H_
@@ -11,8 +7,6 @@
 
 class LevelSettingsObject {
 public:
-    virtual ~LevelSettingsObject();
-    virtual ~LevelSettingsObject();
     virtual ~LevelSettingsObject();
 
     void getSaveString();

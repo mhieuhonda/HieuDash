@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAreaRotateTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPAREAROTATETRIGGERPOPUP_H_
 #define SETUPAREAROTATETRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAreaRotateTriggerPopup {
 public:
-    virtual ~SetupAreaRotateTriggerPopup();
-    virtual ~SetupAreaRotateTriggerPopup();
     virtual ~SetupAreaRotateTriggerPopup();
 
     void init(EnterEffectObject*, cocos2d::CCArray*);

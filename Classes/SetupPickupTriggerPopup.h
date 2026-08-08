@@ -1,7 +1,3 @@
-// ============================================================
-// SetupPickupTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPPICKUPTRIGGERPOPUP_H_
 #define SETUPPICKUPTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupPickupTriggerPopup {
 public:
-    virtual ~SetupPickupTriggerPopup();
-    virtual ~SetupPickupTriggerPopup();
     virtual ~SetupPickupTriggerPopup();
 
     void updateState();

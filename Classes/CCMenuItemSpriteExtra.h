@@ -1,7 +1,3 @@
-// ============================================================
-// CCMenuItemSpriteExtra.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCMENUITEMSPRITEEXTRA_H_
 #define CCMENUITEMSPRITEEXTRA_H_
@@ -10,8 +6,6 @@
 
 class CCMenuItemSpriteExtra {
 public:
-    virtual ~CCMenuItemSpriteExtra();
-    virtual ~CCMenuItemSpriteExtra();
     virtual ~CCMenuItemSpriteExtra();
 
     void unselected();

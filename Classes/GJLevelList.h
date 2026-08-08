@@ -1,7 +1,3 @@
-// ============================================================
-// GJLevelList.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJLEVELLIST_H_
 #define GJLEVELLIST_H_
@@ -11,8 +7,6 @@
 
 class GJLevelList : public cocos2d::CCObject {
 public:
-    virtual ~GJLevelList();
-    virtual ~GJLevelList();
     virtual ~GJLevelList();
 
     void dataLoaded(DS_Dictionary*);

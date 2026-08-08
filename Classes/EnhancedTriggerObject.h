@@ -1,7 +1,3 @@
-// ============================================================
-// EnhancedTriggerObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ENHANCEDTRIGGEROBJECT_H_
 #define ENHANCEDTRIGGEROBJECT_H_
@@ -11,8 +7,6 @@
 
 class EnhancedTriggerObject {
 public:
-    virtual ~EnhancedTriggerObject();
-    virtual ~EnhancedTriggerObject();
     virtual ~EnhancedTriggerObject();
 
     void getSaveString(GJBaseGameLayer*);

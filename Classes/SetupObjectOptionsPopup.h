@@ -1,7 +1,3 @@
-// ============================================================
-// SetupObjectOptionsPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPOBJECTOPTIONSPOPUP_H_
 #define SETUPOBJECTOPTIONSPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupObjectOptionsPopup {
 public:
-    virtual ~SetupObjectOptionsPopup();
-    virtual ~SetupObjectOptionsPopup();
     virtual ~SetupObjectOptionsPopup();
 
     void onDontFade(cocos2d::CCObject*);

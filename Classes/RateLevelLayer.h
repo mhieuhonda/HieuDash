@@ -1,7 +1,3 @@
-// ============================================================
-// RateLevelLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef RATELEVELLAYER_H_
 #define RATELEVELLAYER_H_
@@ -10,8 +6,6 @@
 
 class RateLevelLayer : public cocos2d::CCLayer {
 public:
-    virtual ~RateLevelLayer();
-    virtual ~RateLevelLayer();
     virtual ~RateLevelLayer();
 
     void selectRating(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupCameraModePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPCAMERAMODEPOPUP_H_
 #define SETUPCAMERAMODEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupCameraModePopup {
 public:
-    virtual ~SetupCameraModePopup();
-    virtual ~SetupCameraModePopup();
     virtual ~SetupCameraModePopup();
 
     void onUnboundMode(cocos2d::CCObject*);

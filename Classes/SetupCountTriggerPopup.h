@@ -1,7 +1,3 @@
-// ============================================================
-// SetupCountTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPCOUNTTRIGGERPOPUP_H_
 #define SETUPCOUNTTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupCountTriggerPopup {
 public:
-    virtual ~SetupCountTriggerPopup();
-    virtual ~SetupCountTriggerPopup();
     virtual ~SetupCountTriggerPopup();
 
     void textChanged(CCTextInputNode*);

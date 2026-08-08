@@ -1,7 +1,3 @@
-// ============================================================
-// WorldLevelPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef WORLDLEVELPAGE_H_
 #define WORLDLEVELPAGE_H_
@@ -10,8 +6,6 @@
 
 class WorldLevelPage {
 public:
-    virtual ~WorldLevelPage();
-    virtual ~WorldLevelPage();
     virtual ~WorldLevelPage();
 
     void keyBackClicked();

@@ -1,7 +1,3 @@
-// ============================================================
-// GameOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAMEOPTIONSLAYER_H_
 #define GAMEOPTIONSLAYER_H_
@@ -10,8 +6,6 @@
 
 class GameOptionsLayer {
 public:
-    virtual ~GameOptionsLayer();
-    virtual ~GameOptionsLayer();
     virtual ~GameOptionsLayer();
 
     void onUIOptions(cocos2d::CCObject*);

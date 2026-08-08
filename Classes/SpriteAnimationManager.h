@@ -1,7 +1,3 @@
-// ============================================================
-// SpriteAnimationManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SPRITEANIMATIONMANAGER_H_
 #define SPRITEANIMATIONMANAGER_H_
@@ -11,8 +7,6 @@
 
 class SpriteAnimationManager {
 public:
-    virtual ~SpriteAnimationManager();
-    virtual ~SpriteAnimationManager();
     virtual ~SpriteAnimationManager();
 
     void getAnimType(std::string);

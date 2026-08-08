@@ -1,7 +1,3 @@
-// ============================================================
-// SetupRandAdvTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPRANDADVTRIGGERPOPUP_H_
 #define SETUPRANDADVTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupRandAdvTriggerPopup {
 public:
-    virtual ~SetupRandAdvTriggerPopup();
-    virtual ~SetupRandAdvTriggerPopup();
     virtual ~SetupRandAdvTriggerPopup();
 
     void onAddChance(cocos2d::CCObject*);

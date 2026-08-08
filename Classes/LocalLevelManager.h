@@ -1,7 +1,3 @@
-// ============================================================
-// LocalLevelManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LOCALLEVELMANAGER_H_
 #define LOCALLEVELMANAGER_H_
@@ -10,8 +6,6 @@
 
 class LocalLevelManager {
 public:
-    virtual ~LocalLevelManager();
-    virtual ~LocalLevelManager();
     virtual ~LocalLevelManager();
 
     void dataLoaded(DS_Dictionary*);
@@ -26,6 +20,7 @@ public:
     void updateLevelOrder();
     void getAllLevelsInDict();
     void getMainLevelString(int);
+    void getCustomLevels(int);
     void updateLevelRevision();
     void getAllLevelsWithName(std::string);
     void getLevelsInNameGroups();

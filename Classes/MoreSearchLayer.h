@@ -1,7 +1,3 @@
-// ============================================================
-// MoreSearchLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MORESEARCHLAYER_H_
 #define MORESEARCHLAYER_H_
@@ -11,8 +7,6 @@
 
 class MoreSearchLayer : public cocos2d::CCLayer {
 public:
-    virtual ~MoreSearchLayer();
-    virtual ~MoreSearchLayer();
     virtual ~MoreSearchLayer();
 
     void onFeatured(cocos2d::CCObject*);

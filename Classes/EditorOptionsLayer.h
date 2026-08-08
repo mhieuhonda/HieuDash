@@ -1,7 +1,3 @@
-// ============================================================
-// EditorOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EDITOROPTIONSLAYER_H_
 #define EDITOROPTIONSLAYER_H_
@@ -10,8 +6,6 @@
 
 class EditorOptionsLayer {
 public:
-    virtual ~EditorOptionsLayer();
-    virtual ~EditorOptionsLayer();
     virtual ~EditorOptionsLayer();
 
     void onButtonRows(cocos2d::CCObject*);

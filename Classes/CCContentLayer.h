@@ -1,7 +1,3 @@
-// ============================================================
-// CCContentLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCCONTENTLAYER_H_
 #define CCCONTENTLAYER_H_
@@ -10,8 +6,6 @@
 
 class CCContentLayer {
 public:
-    virtual ~CCContentLayer();
-    virtual ~CCContentLayer();
     virtual ~CCContentLayer();
 
     void setPosition(cocos2d::CCPoint const&);

@@ -1,7 +1,3 @@
-// ============================================================
-// RetryLevelLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef RETRYLEVELLAYER_H_
 #define RETRYLEVELLAYER_H_
@@ -10,8 +6,6 @@
 
 class RetryLevelLayer {
 public:
-    virtual ~RetryLevelLayer();
-    virtual ~RetryLevelLayer();
     virtual ~RetryLevelLayer();
 
     void getEndText();

@@ -1,7 +1,3 @@
-// ============================================================
-// GauntletLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GAUNTLETLAYER_H_
 #define GAUNTLETLAYER_H_
@@ -10,8 +6,6 @@
 
 class GauntletLayer {
 public:
-    virtual ~GauntletLayer();
-    virtual ~GauntletLayer();
     virtual ~GauntletLayer();
 
     void setupGauntlet(cocos2d::CCArray*);

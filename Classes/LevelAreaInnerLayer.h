@@ -1,7 +1,3 @@
-// ============================================================
-// LevelAreaInnerLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELAREAINNERLAYER_H_
 #define LEVELAREAINNERLAYER_H_
@@ -10,8 +6,6 @@
 
 class LevelAreaInnerLayer {
 public:
-    virtual ~LevelAreaInnerLayer();
-    virtual ~LevelAreaInnerLayer();
     virtual ~LevelAreaInnerLayer();
 
     void onNextFloor(cocos2d::CCObject*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SliderTouchLogic.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SLIDERTOUCHLOGIC_H_
 #define SLIDERTOUCHLOGIC_H_
@@ -10,8 +6,6 @@
 
 class SliderTouchLogic : public cocos2d::CCNode {
 public:
-    virtual ~SliderTouchLogic();
-    virtual ~SliderTouchLogic();
     virtual ~SliderTouchLogic();
 
     void setRotated(bool);

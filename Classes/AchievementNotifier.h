@@ -1,7 +1,3 @@
-// ============================================================
-// AchievementNotifier.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ACHIEVEMENTNOTIFIER_H_
 #define ACHIEVEMENTNOTIFIER_H_
@@ -11,8 +7,6 @@
 class AchievementNotifier : public cocos2d::CCNode {
 public:
     static AchievementNotifier* create();
-    virtual ~AchievementNotifier();
-    virtual ~AchievementNotifier();
     virtual ~AchievementNotifier();
 
     void sharedState();

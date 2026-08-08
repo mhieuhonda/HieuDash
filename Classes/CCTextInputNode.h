@@ -1,7 +1,3 @@
-// ============================================================
-// CCTextInputNode.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef CCTEXTINPUTNODE_H_
 #define CCTEXTINPUTNODE_H_
@@ -11,8 +7,6 @@
 
 class CCTextInputNode {
 public:
-    virtual ~CCTextInputNode();
-    virtual ~CCTextInputNode();
     virtual ~CCTextInputNode();
 
     void addTextArea(TextArea*);

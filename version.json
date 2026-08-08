@@ -1,0 +1,19 @@
+{
+  "version": "0.3.0",
+  "version_name": "v0.3",
+  "build": 3,
+  "changelog": [
+    "Removed all decompilation and mod traces",
+    "Fixed triple destructor bug (decompilation artifact)",
+    "Fixed broken init() patterns",
+    "Removed invalid filenames",
+    "Added Crimson Abyss Extreme Demon level",
+    "Added Neon Phantom Insane Demon level",
+    "Added Void Tempest Hard Demon level",
+    "Added Astral Eclipse Insane level",
+    "Added custom level support in editor",
+    "Added level import from JSON",
+    "Cleaned branding and references",
+    "Removed native analysis artifacts"
+  ]
+}

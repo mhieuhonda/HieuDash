@@ -1,7 +1,3 @@
-// ============================================================
-// SongSelectNode.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SONGSELECTNODE_H_
 #define SONGSELECTNODE_H_
@@ -11,8 +7,6 @@
 
 class SongSelectNode {
 public:
-    virtual ~SongSelectNode();
-    virtual ~SongSelectNode();
     virtual ~SongSelectNode();
 
     void onSongMode(cocos2d::CCObject*);

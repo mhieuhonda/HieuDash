@@ -1,7 +1,3 @@
-// ============================================================
-// GJMessagePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJMESSAGEPOPUP_H_
 #define GJMESSAGEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class GJMessagePopup {
 public:
-    virtual ~GJMessagePopup();
-    virtual ~GJMessagePopup();
     virtual ~GJMessagePopup();
 
     void onClosePopup(UploadActionPopup*);

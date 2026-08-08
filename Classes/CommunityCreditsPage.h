@@ -1,7 +1,3 @@
-// ============================================================
-// CommunityCreditsPage.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COMMUNITYCREDITSPAGE_H_
 #define COMMUNITYCREDITSPAGE_H_
@@ -10,8 +6,6 @@
 
 class CommunityCreditsPage {
 public:
-    virtual ~CommunityCreditsPage();
-    virtual ~CommunityCreditsPage();
     virtual ~CommunityCreditsPage();
 
     void onSwitchPage(cocos2d::CCObject*);

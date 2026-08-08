@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAreaMoveTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPAREAMOVETRIGGERPOPUP_H_
 #define SETUPAREAMOVETRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAreaMoveTriggerPopup {
 public:
-    virtual ~SetupAreaMoveTriggerPopup();
-    virtual ~SetupAreaMoveTriggerPopup();
     virtual ~SetupAreaMoveTriggerPopup();
 
     void getModeValues(int, int&, bool&, bool&);

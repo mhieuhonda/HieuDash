@@ -1,7 +1,3 @@
-// ============================================================
-// ColorSelectPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef COLORSELECTPOPUP_H_
 #define COLORSELECTPOPUP_H_
@@ -11,8 +7,6 @@
 
 class ColorSelectPopup : public cocos2d::CCLayer {
 public:
-    virtual ~ColorSelectPopup();
-    virtual ~ColorSelectPopup();
     virtual ~ColorSelectPopup();
 
     void colorToHex(cocos2d::_ccColor3B);

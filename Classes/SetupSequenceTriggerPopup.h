@@ -1,7 +1,3 @@
-// ============================================================
-// SetupSequenceTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSEQUENCETRIGGERPOPUP_H_
 #define SETUPSEQUENCETRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupSequenceTriggerPopup {
 public:
-    virtual ~SetupSequenceTriggerPopup();
-    virtual ~SetupSequenceTriggerPopup();
     virtual ~SetupSequenceTriggerPopup();
 
     void onAddChance(cocos2d::CCObject*);

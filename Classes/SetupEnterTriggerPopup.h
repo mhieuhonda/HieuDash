@@ -1,7 +1,3 @@
-// ============================================================
-// SetupEnterTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPENTERTRIGGERPOPUP_H_
 #define SETUPENTERTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupEnterTriggerPopup {
 public:
-    virtual ~SetupEnterTriggerPopup();
-    virtual ~SetupEnterTriggerPopup();
     virtual ~SetupEnterTriggerPopup();
 
     void onEnterType(cocos2d::CCObject*);

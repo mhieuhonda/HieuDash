@@ -1,7 +1,3 @@
-// ============================================================
-// ExtendedLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EXTENDEDLAYER_H_
 #define EXTENDEDLAYER_H_
@@ -10,8 +6,6 @@
 
 class ExtendedLayer {
 public:
-    virtual ~ExtendedLayer();
-    virtual ~ExtendedLayer();
     virtual ~ExtendedLayer();
 
     void setPosition(cocos2d::CCPoint const&);

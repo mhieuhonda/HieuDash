@@ -1,7 +1,3 @@
-// ============================================================
-// TimerTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef TIMERTRIGGERGAMEOBJECT_H_
 #define TIMERTRIGGERGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class TimerTriggerGameObject : public EffectGameObject {
 public:
-    virtual ~TimerTriggerGameObject();
-    virtual ~TimerTriggerGameObject();
     virtual ~TimerTriggerGameObject();
 
     void getSaveString(GJBaseGameLayer*);

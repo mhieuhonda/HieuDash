@@ -1,7 +1,3 @@
-// ============================================================
-// SetupRotatePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPROTATEPOPUP_H_
 #define SETUPROTATEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupRotatePopup {
 public:
-    virtual ~SetupRotatePopup();
-    virtual ~SetupRotatePopup();
     virtual ~SetupRotatePopup();
 
     void onCustomToggleTriggerValue(cocos2d::CCObject*);

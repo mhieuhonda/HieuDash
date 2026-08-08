@@ -1,7 +1,3 @@
-// ============================================================
-// RotateGameplayGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ROTATEGAMEPLAYGAMEOBJECT_H_
 #define ROTATEGAMEPLAYGAMEOBJECT_H_
@@ -11,8 +7,6 @@
 
 class RotateGameplayGameObject {
 public:
-    virtual ~RotateGameplayGameObject();
-    virtual ~RotateGameplayGameObject();
     virtual ~RotateGameplayGameObject();
 
     void getSaveString(GJBaseGameLayer*);

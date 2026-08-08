@@ -1,7 +1,3 @@
-// ============================================================
-// Slider.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SLIDER_H_
 #define SLIDER_H_
@@ -10,8 +6,6 @@
 
 class Slider : public cocos2d::CCNode {
 public:
-    virtual ~Slider();
-    virtual ~Slider();
     virtual ~Slider();
 
     void hideGroove(bool);

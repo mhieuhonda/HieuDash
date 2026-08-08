@@ -1,7 +1,3 @@
-// ============================================================
-// ShareCommentLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SHARECOMMENTLAYER_H_
 #define SHARECOMMENTLAYER_H_
@@ -11,8 +7,6 @@
 
 class ShareCommentLayer {
 public:
-    virtual ~ShareCommentLayer();
-    virtual ~ShareCommentLayer();
     virtual ~ShareCommentLayer();
 
     void textChanged(CCTextInputNode*);

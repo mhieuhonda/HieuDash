@@ -1,7 +1,3 @@
-// ============================================================
-// SetupAreaTintTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPAREATINTTRIGGERPOPUP_H_
 #define SETUPAREATINTTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupAreaTintTriggerPopup {
 public:
-    virtual ~SetupAreaTintTriggerPopup();
-    virtual ~SetupAreaTintTriggerPopup();
     virtual ~SetupAreaTintTriggerPopup();
 
     void hsvPopupClosed(HSVWidgetPopup*, cocos2d::_ccHSVValue);

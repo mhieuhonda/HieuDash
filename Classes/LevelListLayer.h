@@ -1,7 +1,3 @@
-// ============================================================
-// LevelListLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef LEVELLISTLAYER_H_
 #define LEVELLISTLAYER_H_
@@ -11,8 +7,6 @@
 
 class LevelListLayer : public cocos2d::CCLayer {
 public:
-    virtual ~LevelListLayer();
-    virtual ~LevelListLayer();
     virtual ~LevelListLayer();
 
     void onFavorite(cocos2d::CCObject*);

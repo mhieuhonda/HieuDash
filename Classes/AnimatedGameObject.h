@@ -1,7 +1,3 @@
-// ============================================================
-// AnimatedGameObject.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef ANIMATEDGAMEOBJECT_H_
 #define ANIMATEDGAMEOBJECT_H_
@@ -12,8 +8,6 @@
 
 class AnimatedGameObject : public GameObject {
 public:
-    virtual ~AnimatedGameObject();
-    virtual ~AnimatedGameObject();
     virtual ~AnimatedGameObject();
 
     void setOpacity(unsigned char);

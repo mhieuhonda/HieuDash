@@ -1,7 +1,3 @@
-// ============================================================
-// GJMultiplayerManager.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJMULTIPLAYERMANAGER_H_
 #define GJMULTIPLAYERMANAGER_H_
@@ -11,8 +7,6 @@
 
 class GJMultiplayerManager {
 public:
-    virtual ~GJMultiplayerManager();
-    virtual ~GJMultiplayerManager();
     virtual ~GJMultiplayerManager();
 
     void addComment(std::string, int);

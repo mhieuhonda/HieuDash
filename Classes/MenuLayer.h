@@ -1,7 +1,3 @@
-// ============================================================
-// MenuLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef MENULAYER_H_
 #define MENULAYER_H_
@@ -11,8 +7,6 @@
 class MenuLayer : public cocos2d::CCLayer {
 public:
     static MenuLayer* create();
-    virtual ~MenuLayer();
-    virtual ~MenuLayer();
     virtual ~MenuLayer();
 
     void onFacebook(cocos2d::CCObject*);

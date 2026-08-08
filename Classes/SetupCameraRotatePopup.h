@@ -1,7 +1,3 @@
-// ============================================================
-// SetupCameraRotatePopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPCAMERAROTATEPOPUP_H_
 #define SETUPCAMERAROTATEPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupCameraRotatePopup {
 public:
-    virtual ~SetupCameraRotatePopup();
-    virtual ~SetupCameraRotatePopup();
     virtual ~SetupCameraRotatePopup();
 
     void textChanged(CCTextInputNode*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupKeyframeAnimPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPKEYFRAMEANIMPOPUP_H_
 #define SETUPKEYFRAMEANIMPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupKeyframeAnimPopup {
 public:
-    virtual ~SetupKeyframeAnimPopup();
-    virtual ~SetupKeyframeAnimPopup();
     virtual ~SetupKeyframeAnimPopup();
 
     void init(EffectGameObject*, cocos2d::CCArray*);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupSongTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPSONGTRIGGERPOPUP_H_
 #define SETUPSONGTRIGGERPOPUP_H_
@@ -10,8 +6,6 @@
 
 class SetupSongTriggerPopup {
 public:
-    virtual ~SetupSongTriggerPopup();
-    virtual ~SetupSongTriggerPopup();
     virtual ~SetupSongTriggerPopup();
 
     void onPlayback(SongInfoObject*);

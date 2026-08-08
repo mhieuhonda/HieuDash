@@ -1,7 +1,3 @@
-// ============================================================
-// GJBigSprite.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJBIGSPRITE_H_
 #define GJBIGSPRITE_H_
@@ -11,8 +7,6 @@
 
 class GJBigSprite {
 public:
-    virtual ~GJBigSprite();
-    virtual ~GJBigSprite();
     virtual ~GJBigSprite();
 
     void unloadSprite(std::string, int);

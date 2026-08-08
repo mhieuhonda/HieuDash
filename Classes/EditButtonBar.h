@@ -1,7 +1,3 @@
-// ============================================================
-// EditButtonBar.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef EDITBUTTONBAR_H_
 #define EDITBUTTONBAR_H_
@@ -10,8 +6,6 @@
 
 class EditButtonBar {
 public:
-    virtual ~EditButtonBar();
-    virtual ~EditButtonBar();
     virtual ~EditButtonBar();
 
     void reloadItems(int, int);

@@ -1,7 +1,3 @@
-// ============================================================
-// SetupTriggerPopup.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef SETUPTRIGGERPOPUP_H_
 #define SETUPTRIGGERPOPUP_H_
@@ -11,8 +7,6 @@
 
 class SetupTriggerPopup : public cocos2d::CCLayer {
 public:
-    virtual ~SetupTriggerPopup();
-    virtual ~SetupTriggerPopup();
     virtual ~SetupTriggerPopup();
 
     void getObjects();

@@ -1,7 +1,3 @@
-// ============================================================
-// DemonFilterSelectLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef DEMONFILTERSELECTLAYER_H_
 #define DEMONFILTERSELECTLAYER_H_
@@ -10,8 +6,6 @@
 
 class DemonFilterSelectLayer {
 public:
-    virtual ~DemonFilterSelectLayer();
-    virtual ~DemonFilterSelectLayer();
     virtual ~DemonFilterSelectLayer();
 
     void selectRating(cocos2d::CCObject*);

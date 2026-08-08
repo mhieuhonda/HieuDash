@@ -1,7 +1,3 @@
-// ============================================================
-// UIPOptionsLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef UIPOPTIONSLAYER_H_
 #define UIPOPTIONSLAYER_H_
@@ -10,8 +6,6 @@
 
 class UIPOptionsLayer {
 public:
-    virtual ~UIPOptionsLayer();
-    virtual ~UIPOptionsLayer();
     virtual ~UIPOptionsLayer();
 
     void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);

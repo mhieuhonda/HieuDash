@@ -1,7 +1,3 @@
-// ============================================================
-// GJRateLevelLayer.h — Reconstructed from libcocos2dcpp.so
-// Part of Geometry Dash v2.2.144 decompilation project
-// ============================================================
 
 #ifndef GJRATELEVELLAYER_H_
 #define GJRATELEVELLAYER_H_
@@ -11,8 +7,6 @@
 
 class GJRateLevelLayer {
 public:
-    virtual ~GJRateLevelLayer();
-    virtual ~GJRateLevelLayer();
     virtual ~GJRateLevelLayer();
 
     void onClosePopup(UploadActionPopup*);
