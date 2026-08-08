@@ -1,0 +1,128 @@
+
+/home/z/my-project/apk_raw_extract/lib/armeabi-v7a/libfmod.so:     file format elf32-little
+/home/z/my-project/apk_raw_extract/lib/armeabi-v7a/libfmod.so
+architecture: UNKNOWN!, flags 0x00000150:
+HAS_SYMS, DYNAMIC, D_PAGED
+start address 0x00043000
+
+Program Header:
+    PHDR off    0x00000034 vaddr 0x00000034 paddr 0x00000034 align 2**2
+         filesz 0x00000140 memsz 0x00000140 flags r--
+    LOAD off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00042640 memsz 0x00042640 flags r--
+    LOAD off    0x00043000 vaddr 0x00043000 paddr 0x00043000 align 2**12
+         filesz 0x000a05b0 memsz 0x000a05b0 flags r-x
+    LOAD off    0x000e4000 vaddr 0x000e4000 paddr 0x000e4000 align 2**12
+         filesz 0x000032d8 memsz 0x000032d8 flags rw-
+    LOAD off    0x000e8000 vaddr 0x000e8000 paddr 0x000e8000 align 2**12
+         filesz 0x0000a418 memsz 0x00046774 flags rw-
+ DYNAMIC off    0x000e6054 vaddr 0x000e6054 paddr 0x000e6054 align 2**2
+         filesz 0x000000f0 memsz 0x000000f0 flags rw-
+   RELRO off    0x000e4000 vaddr 0x000e4000 paddr 0x000e4000 align 2**0
+         filesz 0x00004000 memsz 0x00004000 flags r--
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**0
+         filesz 0x00000000 memsz 0x00000000 flags rw-
+    NOTE off    0x00000174 vaddr 0x00000174 paddr 0x00000174 align 2**2
+         filesz 0x000000b8 memsz 0x000000b8 flags r--
+0x70000001 off    0x0001aaf0 vaddr 0x0001aaf0 paddr 0x0001aaf0 align 2**2
+         filesz 0x000000f0 memsz 0x000000f0 flags r--
+
+Dynamic Section:
+  NEEDED               liblog.so
+  NEEDED               libstdc++.so
+  NEEDED               libm.so
+  NEEDED               libdl.so
+  NEEDED               libc.so
+  SONAME               libfmod.so
+  FLAGS                0x00000008
+  FLAGS_1              0x00000001
+  REL                  0x00016a88
+  RELSZ                0x00004068
+  RELENT               0x00000008
+  RELCOUNT             0x000007a9
+  JMPREL               0x0001abe0
+  PLTRELSZ             0x00001b88
+  PLTGOT               0x000e6508
+  PLTREL               0x00000011
+  SYMTAB               0x0000022c
+  SYMENT               0x00000010
+  STRTAB               0x0000c490
+  STRSZ                0x0000a5f6
+  GNU_HASH             0x00006b3c
+  HASH                 0x00009610
+  INIT_ARRAY           0x000e603c
+  INIT_ARRAYSZ         0x00000018
+  FINI_ARRAY           0x000e6034
+  FINI_ARRAYSZ         0x00000008
+  VERSYM               0x00005f1c
+  VERNEED              0x00006abc
+  VERNEEDNUM           0x00000004
+
+Version References:
+  required from libstdc++.so:
+    0x050d693f 0x00 03 LIBC_O
+  required from libm.so:
+    0x00050d63 0x00 04 LIBC
+  required from libdl.so:
+    0x00050d63 0x00 05 LIBC
+  required from libc.so:
+    0x00050d63 0x00 02 LIBC
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .note.android.ident 00000098  00000174  00000174  00000174  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .note.gnu.build-id 00000020  0000020c  0000020c  0000020c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .dynsym       00005cf0  0000022c  0000022c  0000022c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .gnu.version  00000b9e  00005f1c  00005f1c  00005f1c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .gnu.version_r 00000080  00006abc  00006abc  00006abc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .gnu.hash     00002ad4  00006b3c  00006b3c  00006b3c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .hash         00002e80  00009610  00009610  00009610  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .dynstr       0000a5f6  0000c490  0000c490  0000c490  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .rel.dyn      00004068  00016a88  00016a88  00016a88  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  9 .ARM.exidx    000000f0  0001aaf0  0001aaf0  0001aaf0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 .rel.plt      00001b88  0001abe0  0001abe0  0001abe0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 11 .rodata       00025ea7  0001c768  0001c768  0001c768  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 12 .ARM.extab    00000030  00042610  00042610  00042610  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 13 .text         0009ce7c  00043000  00043000  00043000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .plt          00003730  000dfe80  000dfe80  000dfe80  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .data.rel.ro  00002034  000e4000  000e4000  000e4000  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 16 .fini_array   00000008  000e6034  000e6034  000e6034  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 17 .init_array   00000018  000e603c  000e603c  000e603c  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 18 .dynamic      000000f0  000e6054  000e6054  000e6054  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 19 .got          000003c4  000e6144  000e6144  000e6144  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 20 .got.plt      00000dd0  000e6508  000e6508  000e6508  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 21 .data         0000a418  000e8000  000e8000  000e8000  2**5
+                  CONTENTS, ALLOC, LOAD, DATA
+ 22 .bss          0003c354  000f2420  000f2420  000f2418  2**4
+                  ALLOC
+ 23 .comment      00000141  00000000  00000000  000f2418  2**0
+                  CONTENTS, READONLY
+ 24 .ARM.attributes 0000002c  00000000  00000000  000f2559  2**0
+                  CONTENTS, READONLY
+ 25 .gnu_debuglink 00000018  00000000  00000000  000f2588  2**2
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+no symbols
+
+

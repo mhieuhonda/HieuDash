@@ -1,0 +1,3 @@
+# Disassembly requires ARM cross-tools (binutils-aarch64/binutils-arm) or Ghidra
+# This file is a placeholder. Full disassembly available via LIEF exports/imports analysis.
+# See *_lief_analysis.json and *_lief_report.txt for comprehensive analysis.

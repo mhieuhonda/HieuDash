@@ -1,0 +1,36 @@
+
+Dynamic section at offset 0x1218418 contains 33 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libfmod.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libGLESv2.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [liblog.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libz.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so]
+ 0x000000000000000e (SONAME)             Library soname: [libcocos2dcpp.so]
+ 0x0000000000000010 (SYMBOLIC)           0x0
+ 0x0000000000000019 (INIT_ARRAY)         0x111b538
+ 0x000000000000001b (INIT_ARRAYSZ)       2912 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x111c098
+ 0x000000000000001c (FINI_ARRAYSZ)       16 (bytes)
+ 0x0000000000000004 (HASH)               0x1f0
+ 0x0000000000000005 (STRTAB)             0xc9870
+ 0x0000000000000006 (SYMTAB)             0x2aa20
+ 0x000000000000000a (STRSZ)              1080538 (bytes)
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x1228668
+ 0x0000000000000002 (PLTRELSZ)           9960 (bytes)
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000017 (JMPREL)             0x4d5f10
+ 0x0000000000000007 (RELA)               0x1de988
+ 0x0000000000000008 (RELASZ)             3110280 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x0000000000000018 (BIND_NOW)           
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW
+ 0x000000006ffffffe (VERNEED)            0x1de928
+ 0x000000006fffffff (VERNEEDNUM)         3
+ 0x000000006ffffff0 (VERSYM)             0x1d154a
+ 0x000000006ffffff9 (RELACOUNT)          129569
+ 0x0000000000000000 (NULL)               0x0

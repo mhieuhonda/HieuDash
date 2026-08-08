@@ -1,0 +1,132 @@
+
+/home/z/my-project/apk_raw_extract/lib/armeabi-v7a/libcocos2dcpp.so:     file format elf32-little
+/home/z/my-project/apk_raw_extract/lib/armeabi-v7a/libcocos2dcpp.so
+architecture: UNKNOWN!, flags 0x00000150:
+HAS_SYMS, DYNAMIC, D_PAGED
+start address 0x00000000
+
+Program Header:
+    PHDR off    0x00000034 vaddr 0x00000034 paddr 0x00000034 align 2**2
+         filesz 0x00000120 memsz 0x00000120 flags r--
+  INTERP off    0x00000154 vaddr 0x00000154 paddr 0x00000154 align 2**0
+         filesz 0x00000013 memsz 0x00000013 flags r--
+    LOAD off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00a2b968 memsz 0x00a2b968 flags r-x
+    LOAD off    0x00a2bd48 vaddr 0x00a2cd48 paddr 0x00a2cd48 align 2**12
+         filesz 0x000981e4 memsz 0x000a843c flags rw-
+ DYNAMIC off    0x00ab4a50 vaddr 0x00ab5a50 paddr 0x00ab5a50 align 2**2
+         filesz 0x00000140 memsz 0x00000140 flags rw-
+    NOTE off    0x00000168 vaddr 0x00000168 paddr 0x00000168 align 2**2
+         filesz 0x00000024 memsz 0x00000024 flags r--
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**0
+         filesz 0x00000000 memsz 0x00000000 flags rw-
+0x70000001 off    0x0091b558 vaddr 0x0091b558 paddr 0x0091b558 align 2**2
+         filesz 0x0001e260 memsz 0x0001e260 flags r--
+   RELRO off    0x00a2bd48 vaddr 0x00a2cd48 paddr 0x00a2cd48 align 2**3
+         filesz 0x0008c2b8 memsz 0x0008c2b8 flags rw-
+
+Dynamic Section:
+  PLTGOT               0x00ab8990
+  PLTRELSZ             0x00000cc8
+  JMPREL               0x002b1c28
+  PLTREL               0x00000011
+  REL                  0x001b4a80
+  RELSZ                0x000fd1a8
+  RELENT               0x00000008
+  RELCOUNT             0x0001fa18
+  SYMTAB               0x0000018c
+  SYMENT               0x00000010
+  STRTAB               0x0006c21c
+  STRSZ                0x0010ff3a
+  HASH                 0x0017c158
+  NEEDED               libfmod.so
+  NEEDED               libGLESv2.so
+  NEEDED               liblog.so
+  NEEDED               libz.so
+  NEEDED               libdl.so
+  NEEDED               libstdc++.so
+  NEEDED               libm.so
+  NEEDED               libc.so
+  SONAME               libcocos2dcpp.so
+  FINI_ARRAY           0x00a3a658
+  FINI_ARRAYSZ         0x00000008
+  INIT_ARRAY           0x00a3a660
+  INIT_ARRAYSZ         0x000005ac
+  SYMBOLIC             0x00000000
+  FLAGS                0x0000000a
+  FLAGS_1              0x00000001
+  VERSYM               0x001a71f0
+  VERDEF               0x001b4a04
+  VERDEFNUM            0x00000001
+  VERNEED              0x001b4a20
+  VERNEEDNUM           0x00000003
+
+Version definitions:
+1 0x01 0x00f87c9f libcocos2dcpp.so
+
+Version References:
+  required from libc.so:
+    0x00050d63 0x00 02 LIBC
+  required from libm.so:
+    0x00050d63 0x00 03 LIBC
+  required from libdl.so:
+    0x00050d63 0x00 04 LIBC
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .interp       00000013  00000154  00000154  00000154  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .note.gnu.build-id 00000024  00000168  00000168  00000168  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .dynsym       0006c090  0000018c  0000018c  0000018c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .dynstr       0010ff3a  0006c21c  0006c21c  0006c21c  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .hash         0002b098  0017c158  0017c158  0017c158  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .gnu.version  0000d812  001a71f0  001a71f0  001a71f0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .gnu.version_d 0000001c  001b4a04  001b4a04  001b4a04  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .gnu.version_r 00000060  001b4a20  001b4a20  001b4a20  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .rel.dyn      000fd1a8  001b4a80  001b4a80  001b4a80  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  9 .rel.plt      00000cc8  002b1c28  002b1c28  002b1c28  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 .plt          00001340  002b28f0  002b28f0  002b28f0  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 11 .text         00630374  002b4000  002b4000  002b4000  2**12
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .ARM.extab    000371e4  008e4374  008e4374  008e4374  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 13 .ARM.exidx    0001e260  0091b558  0091b558  0091b558  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 14 .rodata       000f21b0  009397b8  009397b8  009397b8  2**3
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 15 .data.rel.ro.local 0000d910  00a2cd48  00a2cd48  00a2bd48  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 16 .fini_array   00000008  00a3a658  00a3a658  00a39658  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 17 .init_array   000005ac  00a3a660  00a3a660  00a39660  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 18 .data.rel.ro  0007ae40  00a3ac10  00a3ac10  00a39c10  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 19 .dynamic      00000140  00ab5a50  00ab5a50  00ab4a50  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 20 .got          0000346c  00ab5b94  00ab5b94  00ab4b94  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 21 .data         0000bf2c  00ab9000  00ab9000  00ab8000  2**3
+                  CONTENTS, ALLOC, LOAD, DATA
+ 22 .bss          00010254  00ac4f30  00ac4f30  00ac3f2c  2**3
+                  ALLOC
+ 23 .comment      00000354  00000000  00000000  00ac3f2c  2**0
+                  CONTENTS, READONLY
+ 24 .note.gnu.gold-version 0000001c  00000000  00000000  00ac4280  2**2
+                  CONTENTS, READONLY, OCTETS
+ 25 .ARM.attributes 0000003a  00000000  00000000  00ac429c  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+no symbols
+
+
