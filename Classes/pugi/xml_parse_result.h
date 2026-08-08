@@ -1,5 +1,6 @@
 // ============================================================
-// xml_parse_result.h — Reconstructed from libcocos2dcpp.so symbols
+// xml_parse_result.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PUGI_XML_PARSE_RESULT_H_

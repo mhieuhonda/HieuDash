@@ -1,5 +1,6 @@
 // ============================================================
-// _M_emplace_back_aux_pugi.h — Reconstructed from libcocos2dcpp.so symbols
+// _M_emplace_back_aux_pugi.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<PUGI_XML_NODE, STD_ALLOCATOR<PUGI_XML_NODE> >__M_EMPLACE_BACK_AUX_PUGI_H_

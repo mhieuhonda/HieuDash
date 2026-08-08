@@ -1,8 +1,6 @@
 // ============================================================
 // allocator_std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "allocator_std.h"
@@ -27,6 +25,7 @@ namespace equal_to<int>, std {
 
 void allocator<std::pair<int const, int> > > >(std::unordered_map<int, int>, std::equal_to<int>, std::allocator<std::pair<const int, int> > >&&) {
     // 0x892a90
+    // TODO: Implement
 }
 
 } // namespace equal_to<int>, std

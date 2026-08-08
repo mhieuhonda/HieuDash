@@ -1,5 +1,6 @@
 // ============================================================
-// CCMotionStreak.h — Reconstructed from libcocos2dcpp.so symbols
+// CCMotionStreak.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCMOTIONSTREAK_H_
@@ -40,6 +41,9 @@ public:
     void create(float, float, float, cocos2d::_ccColor3B const&, cocos2d::CCTexture2D*);
     void update(float);
     void setStroke(float);
+
+protected:
+    cocos2d::CCPoint m_position;
 
 };
 

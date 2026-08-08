@@ -1,5 +1,6 @@
 // ============================================================
-// SetupPulsePopup.h — Reconstructed from libcocos2dcpp.so symbols
+// SetupPulsePopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SETUPPULSEPOPUP_H_
@@ -54,6 +55,9 @@ public:
     void onCopy(cocos2d::CCObject*);
     void onClose(cocos2d::CCObject*);
     void onPaste(cocos2d::CCObject*);
+
+protected:
+    cocos2d::_ccColor3B m_colorValue;
 
 };
 

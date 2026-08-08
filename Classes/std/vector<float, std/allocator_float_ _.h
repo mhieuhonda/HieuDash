@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_float_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_float_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<FLOAT, STD_ALLOCATOR_FLOAT_ __H_

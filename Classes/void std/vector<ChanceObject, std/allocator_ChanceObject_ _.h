@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_ChanceObject_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_ChanceObject_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<CHANCEOBJECT, STD_ALLOCATOR_CHANCEOBJECT_ __H_

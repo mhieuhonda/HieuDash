@@ -1,5 +1,6 @@
 // ============================================================
-// EditorPauseLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// EditorPauseLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef EDITORPAUSELAYER_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class EditorPauseLayer {
+class EditorPauseLayer : public cocos2d::CCLayer {
 public:
     virtual ~EditorPauseLayer();
     virtual ~EditorPauseLayer();
@@ -27,7 +28,7 @@ public:
     void onPasteWColor(cocos2d::CCObject*);
     void onSaveAndExit(cocos2d::CCObject*);
     void onSaveAndPlay(cocos2d::CCObject*);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onCreateExtras(cocos2d::CCObject*);
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void onSelectAllLeft(cocos2d::CCObject*);
@@ -55,7 +56,7 @@ public:
     void toggleEditorColorMode(cocos2d::CCObject*);
     void toggleEditorBackground(cocos2d::CCObject*);
     void togglePreviewParticles(cocos2d::CCObject*);
-    void init(LevelEditorLayer*);
+    void init(LevelEditorLayer*) override;
     void create(LevelEditorLayer*);
     void onHelp(cocos2d::CCObject*);
     void onSave(cocos2d::CCObject*);

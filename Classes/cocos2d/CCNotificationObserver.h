@@ -1,11 +1,13 @@
 // ============================================================
-// CCNotificationObserver.h — Reconstructed from libcocos2dcpp.so symbols
+// CCNotificationObserver.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCNOTIFICATIONOBSERVER_H_
 #define COCOS2D_CCNOTIFICATIONOBSERVER_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -25,6 +27,9 @@ public:
     void getName();
     void getObject();
     void getTarget();
+
+protected:
+    std::string m_name;
 
 };
 

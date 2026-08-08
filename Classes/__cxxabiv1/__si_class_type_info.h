@@ -1,5 +1,6 @@
 // ============================================================
-// __si_class_type_info.h — Reconstructed from libcocos2dcpp.so symbols
+// __si_class_type_info.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef __CXXABIV1___SI_CLASS_TYPE_INFO_H_

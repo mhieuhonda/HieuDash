@@ -1,8 +1,6 @@
 // ============================================================
 // CCRect.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCRect.h"
@@ -10,47 +8,52 @@
 namespace cocos2d {
 
 CCRect::CCRect(cocos2d::CCRect const&) {
-    // Constructor — 0xacebfc
+    // 0xacebfc
 }
 
 CCRect::CCRect(float, float, float, float) {
-    // Constructor — 0xacebb0
+    // 0xacebb0
 }
 
 CCRect::CCRect() {
-    // Constructor — 0xaceb74
+    // 0xaceb74
 }
 
 CCRect::CCRect(cocos2d::CCRect const&) {
-    // Constructor — 0xacebfc
+    // 0xacebfc
 }
 
 CCRect::CCRect(float, float, float, float) {
-    // Constructor — 0xacebb0
+    // 0xacebb0
 }
 
 CCRect::CCRect() {
-    // Constructor — 0xaceb74
+    // 0xaceb74
 }
 
 void CCRect::setRect(float, float, float, float) {
     // 0xaceb34
+    // TODO: Implement
 }
 
 void CCRect::operator=(cocos2d::CCRect const&) {
     // 0xacec40
+    // TODO: Implement
 }
 
 void CCRect::containsPoint(cocos2d::CCPoint const&)) const {
     // 0xaced28
+    // TODO: Implement
 }
 
 void CCRect::intersectsRect(cocos2d::CCRect const&)) const {
     // 0xaceda8
+    // TODO: Implement
 }
 
 void CCRect::equals(cocos2d::CCRect const&)) const {
     // 0xacec74
+    // TODO: Implement
 }
 
 void CCRect::getMaxX()) const {

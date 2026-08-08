@@ -1,5 +1,6 @@
 // ============================================================
-// _ccColor3B&, cocos2d.h — Reconstructed from libcocos2dcpp.so symbols
+// _ccColor3B&, cocos2d.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<PULSEEFFECTACTION, STD_ALLOCATOR<PULSEEFFECTACTION> >_EMPLACE_BACK<FLOAT&, FLOAT&, FLOAT&, PULSEEFFECTTYPE&, INT&, COCOS2D__CCCOLOR3B&, COCOS2D_H_

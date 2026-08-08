@@ -1,37 +1,51 @@
 // ============================================================
 // LoadingCircleSprite.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "LoadingCircleSprite.h"
 
 LoadingCircleSprite::~LoadingCircleSprite() {
-    // Destructor — 0x588d58
+    // 0x588d58
+    this->cleanup();
 }
 
 LoadingCircleSprite::~LoadingCircleSprite() {
-    // Destructor — 0x588d34
+    // 0x588d34
+    this->cleanup();
 }
 
 LoadingCircleSprite::~LoadingCircleSprite() {
-    // Destructor — 0x588d34
+    // 0x588d34
+    this->cleanup();
 }
 
 void LoadingCircleSprite::hideCircle() {
     // 0x5892dc
+    // TODO: Implement
 }
 
 void LoadingCircleSprite::fadeInCircle(bool, float, float) {
     // 0x589244
+    // TODO: Implement
 }
 
 void LoadingCircleSprite::init(float) {
     // 0x589108
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void LoadingCircleSprite::create(float) {
     // 0x589194
+    LoadingCircleSprite* ret = new LoadingCircleSprite();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

@@ -1,5 +1,6 @@
 // ============================================================
-// GJUINode.h — Reconstructed from libcocos2dcpp.so symbols
+// GJUINode.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJUINODE_H_
@@ -38,6 +39,9 @@ public:
     void init(UIButtonConfig&);
     void create(UIButtonConfig&);
     void touchTest(cocos2d::CCPoint);
+
+protected:
+    float m_buttonScale;
 
 };
 

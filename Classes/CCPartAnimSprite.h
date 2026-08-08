@@ -1,11 +1,13 @@
 // ============================================================
-// CCPartAnimSprite.h — Reconstructed from libcocos2dcpp.so symbols
+// CCPartAnimSprite.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCPARTANIMSPRITE_H_
 #define CCPARTANIMSPRITE_H_
 
 #include "cocos2d.h"
+#include <string>
 
 class CCPartAnimSprite {
 public:
@@ -33,6 +35,13 @@ public:
     void setScale(float);
     void setScaleX(float);
     void setScaleY(float);
+
+protected:
+    cocos2d::_ccColor3B m_color;
+    float m_scale;
+    float m_scaleX;
+    float m_scaleY;
+    std::string m_spriteForKey;
 
 };
 

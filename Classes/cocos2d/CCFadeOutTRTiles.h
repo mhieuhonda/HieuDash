@@ -1,5 +1,6 @@
 // ============================================================
-// CCFadeOutTRTiles.h — Reconstructed from libcocos2dcpp.so symbols
+// CCFadeOutTRTiles.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCFADEOUTTRTILES_H_

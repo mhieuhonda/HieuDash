@@ -1,5 +1,6 @@
 // ============================================================
-// EnterEffectObject.h — Reconstructed from libcocos2dcpp.so symbols
+// EnterEffectObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ENTEREFFECTOBJECT_H_
@@ -20,6 +21,9 @@ public:
     void resetEnterAnimValues();
     void init(char const*);
     void create(char const*);
+
+protected:
+    std::string m_saveString;
 
 };
 

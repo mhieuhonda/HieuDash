@@ -1,5 +1,6 @@
 // ============================================================
-// MusicDownloadManager.h — Reconstructed from libcocos2dcpp.so symbols
+// MusicDownloadManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef MUSICDOWNLOADMANAGER_H_
@@ -8,8 +9,9 @@
 #include "cocos2d.h"
 #include <string>
 
-class MusicDownloadManager {
+class MusicDownloadManager : public cocos2d::CCNode {
 public:
+    static MusicDownloadManager* create();
     virtual ~MusicDownloadManager();
     virtual ~MusicDownloadManager();
     virtual ~MusicDownloadManager();
@@ -105,11 +107,20 @@ public:
     void onTryUpdateSFXLibraryCompleted(cocos2d::extension::CCHttpClient*, cocos2d::extension::CCHttpResponse*);
     void onDownloadMusicLibraryCompleted(cocos2d::extension::CCHttpClient*, cocos2d::extension::CCHttpResponse*);
     void onTryUpdateMusicLibraryCompleted(cocos2d::extension::CCHttpClient*, cocos2d::extension::CCHttpResponse*);
-    void init();
+    void init() override;
     void showTOS(FLAlertLayerProtocol*);
     void handleIt(bool, std::string, std::string, GJHttpType);
     void clearSong(int);
     void deleteSFX(int);
+
+protected:
+    int m_allMusicTags;
+    int m_musicArtistForID;
+    std::string m_sFXDownloadKey;
+    int m_sFXFolderObjectForID;
+    int m_sFXFolderPathForID;
+    std::string m_songDownloadKey;
+    std::string m_songInfoKey;
 
 };
 

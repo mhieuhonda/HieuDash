@@ -1,5 +1,6 @@
 // ============================================================
-// StatsObject.h — Reconstructed from libcocos2dcpp.so symbols
+// StatsObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STATSOBJECT_H_

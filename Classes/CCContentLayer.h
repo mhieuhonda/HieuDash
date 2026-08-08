@@ -1,5 +1,6 @@
 // ============================================================
-// CCContentLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// CCContentLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCCONTENTLAYER_H_
@@ -15,6 +16,9 @@ public:
 
     void setPosition(cocos2d::CCPoint const&);
     void create(cocos2d::_ccColor4B const&, float, float);
+
+protected:
+    cocos2d::CCPoint m_position;
 
 };
 

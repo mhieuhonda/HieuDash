@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionMoveInT.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionMoveInT.h"
@@ -10,31 +8,42 @@
 namespace cocos2d {
 
 CCTransitionMoveInT::CCTransitionMoveInT() {
-    // Constructor — 0xaee0ec
+    // 0xaee0ec
 }
 
 CCTransitionMoveInT::CCTransitionMoveInT() {
-    // Constructor — 0xaee0ec
+    // 0xaee0ec
 }
 
 CCTransitionMoveInT::~CCTransitionMoveInT() {
-    // Destructor — 0xaeceb4
+    // 0xaeceb4
+    this->cleanup();
 }
 
 CCTransitionMoveInT::~CCTransitionMoveInT() {
-    // Destructor — 0xaecc2c
+    // 0xaecc2c
+    this->cleanup();
 }
 
 CCTransitionMoveInT::~CCTransitionMoveInT() {
-    // Destructor — 0xaecc2c
+    // 0xaecc2c
+    this->cleanup();
 }
 
 void CCTransitionMoveInT::initScenes() {
     // 0xaed518
+    // TODO: Implement
 }
 
 void CCTransitionMoveInT::create(float, cocos2d::CCScene*) {
     // 0xaee124
+    CCTransitionMoveInT* ret = new CCTransitionMoveInT();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

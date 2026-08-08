@@ -1,5 +1,6 @@
 // ============================================================
-// LocalLevelManager.h — Reconstructed from libcocos2dcpp.so symbols
+// LocalLevelManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LOCALLEVELMANAGER_H_
@@ -32,6 +33,11 @@ public:
     void tryLoadMainLevelString(int);
     void init();
     void firstLoad();
+
+protected:
+    std::string m_allLevelsWithName;
+    std::string m_levelsInNameGroups;
+    std::string m_mainLevelString;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// ColorSetupDelegate.h — Reconstructed from libcocos2dcpp.so symbols
+// ColorSetupDelegate.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COLORSETUPDELEGATE_H_

@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionSceneOriented.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionSceneOriented.h"
@@ -10,31 +8,42 @@
 namespace cocos2d {
 
 CCTransitionSceneOriented::CCTransitionSceneOriented() {
-    // Constructor — 0xaedd9c
+    // 0xaedd9c
 }
 
 CCTransitionSceneOriented::CCTransitionSceneOriented() {
-    // Constructor — 0xaedd9c
+    // 0xaedd9c
 }
 
 CCTransitionSceneOriented::~CCTransitionSceneOriented() {
-    // Destructor — 0xaece00
+    // 0xaece00
+    this->cleanup();
 }
 
 CCTransitionSceneOriented::~CCTransitionSceneOriented() {
-    // Destructor — 0xaecb40
+    // 0xaecb40
+    this->cleanup();
 }
 
 CCTransitionSceneOriented::~CCTransitionSceneOriented() {
-    // Destructor — 0xaecb40
+    // 0xaecb40
+    this->cleanup();
 }
 
 void CCTransitionSceneOriented::initWithDuration(float, cocos2d::CCScene*, cocos2d::tOrientation) {
     // 0xaedc68
+    // TODO: Implement
 }
 
 void CCTransitionSceneOriented::create(float, cocos2d::CCScene*, cocos2d::tOrientation) {
     // 0xaeddcc
+    CCTransitionSceneOriented* ret = new CCTransitionSceneOriented();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

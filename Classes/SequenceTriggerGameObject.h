@@ -1,5 +1,6 @@
 // ============================================================
-// SequenceTriggerGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// SequenceTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SEQUENCETRIGGERGAMEOBJECT_H_
@@ -25,6 +26,9 @@ public:
     void create();
     void addCount(int, int);
     void addTarget(int, int);
+
+protected:
+    std::string m_saveString;
 
 };
 

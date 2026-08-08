@@ -1,5 +1,6 @@
 // ============================================================
-// KeyframeGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// KeyframeGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef KEYFRAMEGAMEOBJECT_H_
@@ -20,6 +21,9 @@ public:
     void updateShadowObjects(GJBaseGameLayer*, EditorUI*);
     void init();
     void create();
+
+protected:
+    std::string m_saveString;
 
 };
 

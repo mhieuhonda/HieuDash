@@ -1,5 +1,6 @@
 // ============================================================
-// _Hashtable_traits_false, false, true_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// _Hashtable_traits_false, false, true_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD__HASHTABLE<INT, STD_PAIR<INT CONST, DOUBLE>, STD_ALLOCATOR<STD_PAIR<INT CONST, DOUBLE> >, STD___DETAIL__SELECT1ST, STD_EQUAL_TO<INT>, STD_HASH<INT>, STD___DETAIL__MOD_RANGE_HASHING, STD___DETAIL__DEFAULT_RANGED_HASH, STD___DETAIL__PRIME_REHASH_POLICY, STD___DETAIL__HASHTABLE_TRAITS<FALSE, FALSE, TRUE> >__M_ASSIGN<STD__HASHTABLE<INT, STD_PAIR<INT CONST, DOUBLE>, STD_ALLOCATOR<STD_PAIR<INT CONST, DOUBLE> >, STD___DETAIL__SELECT1ST, STD_EQUAL_TO<INT>, STD_HASH<INT>, STD___DETAIL__MOD_RANGE_HASHING, STD___DETAIL__DEFAULT_RANGED_HASH, STD___DETAIL__PRIME_REHASH_POLICY, STD___DETAIL__HASHTABLE_TRAITS_FALSE, FALSE, TRUE_ __H_

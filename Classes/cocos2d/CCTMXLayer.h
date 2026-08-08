@@ -1,5 +1,6 @@
 // ============================================================
-// CCTMXLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// CCTMXLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCTMXLAYER_H_
@@ -49,6 +50,9 @@ public:
     void addChild(cocos2d::CCNode*, int, int);
     void tileGIDAt(cocos2d::CCPoint const&);
     void tileGIDAt(cocos2d::CCPoint const&, cocos2d::ccTMXTileFlags_*);
+
+protected:
+    int m_tileGID;
 
 };
 

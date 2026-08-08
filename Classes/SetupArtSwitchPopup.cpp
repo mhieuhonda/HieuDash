@@ -1,37 +1,51 @@
 // ============================================================
 // SetupArtSwitchPopup.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SetupArtSwitchPopup.h"
 
 SetupArtSwitchPopup::~SetupArtSwitchPopup() {
-    // Destructor — 0xa439f8
+    // 0xa439f8
+    this->cleanup();
 }
 
 SetupArtSwitchPopup::~SetupArtSwitchPopup() {
-    // Destructor — 0xa431f0
+    // 0xa431f0
+    this->cleanup();
 }
 
 SetupArtSwitchPopup::~SetupArtSwitchPopup() {
-    // Destructor — 0xa431f0
+    // 0xa431f0
+    this->cleanup();
 }
 
 void SetupArtSwitchPopup::selectArtClosed(SelectArtLayer*) {
     // 0xa515fc
+    // TODO: Implement
 }
 
 void SetupArtSwitchPopup::init(ArtTriggerGameObject*, cocos2d::CCArray*, int) {
     // 0xa5172c
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SetupArtSwitchPopup::onArt(cocos2d::CCObject*) {
     // 0xa43f08
+    // TODO: Implement
 }
 
 void SetupArtSwitchPopup::create(ArtTriggerGameObject*, cocos2d::CCArray*, int) {
     // 0xa51ddc
+    SetupArtSwitchPopup* ret = new SetupArtSwitchPopup();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

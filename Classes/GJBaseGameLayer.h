@@ -1,17 +1,25 @@
 // ============================================================
-// GJBaseGameLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// GJBaseGameLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJBASEGAMELAYER_H_
 #define GJBASEGAMELAYER_H_
 
+#include "GJEffectManager.h"
+#include "PlayerObject.h"
 #include "cocos2d.h"
 #include <string>
 #include <unordered_map>
 #include <vector>
 
-class GJBaseGameLayer {
+// Forward declarations
+class GJEffectManager;
+class PlayerObject;
+
+class GJBaseGameLayer : public cocos2d::CCLayer {
 public:
+    static GJBaseGameLayer* create();
     virtual ~GJBaseGameLayer();
     virtual ~GJBaseGameLayer();
     virtual ~GJBaseGameLayer();
@@ -436,14 +444,37 @@ public:
     void restoreDefaultGameplayOffsetY();
     void processAreaTransformGroupAction(cocos2d::CCArray*, EnterEffectInstance*, cocos2d::CCPoint, int, int, int, int, int, bool, bool);
     void triggerAdvancedFollowEditCommand(AdvancedFollowEditObject*);
-    void init();
+    void init() override;
     void visit();
-    void update(float);
+    void update(float) override;
     void flipArt(bool);
     void hasItem(int);
     void getGroup(int);
     void testTime();
     void addPoints(int);
+
+protected:
+    bool m_activeOrderSpawnObjects;
+    float m_cameraY;
+    std::string m_capacityString;
+    GJEffectManager* m_effectManager;
+    std::string m_enterEasingKey;
+    float m_followSpeedVal;
+    cocos2d::CCArray* m_gameObjects;
+    float m_gameTime;
+    std::string m_groupParentsString;
+    cocos2d::CCArray** m_groups;
+    std::string m_particleKey;
+    std::string m_particleKey2;
+    PlayerObject* m_player1;
+    PlayerObject* m_player2;
+    int m_playerButtonID;
+    std::string m_recordString;
+    cocos2d::CCPoint m_savedPosition;
+    float m_scaledGroundHeight;
+    cocos2d::CCArray* m_sections;
+    std::string m_specialKey;
+    float m_timeMod;
 
 };
 

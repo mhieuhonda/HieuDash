@@ -1,5 +1,6 @@
 // ============================================================
-// exception_ptr.h — Reconstructed from libcocos2dcpp.so symbols
+// exception_ptr.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD___EXCEPTION_PTR_EXCEPTION_PTR_H_

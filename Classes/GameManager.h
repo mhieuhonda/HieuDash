@@ -1,5 +1,6 @@
 // ============================================================
-// GameManager.h — Reconstructed from libcocos2dcpp.so symbols
+// GameManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GAMEMANAGER_H_
@@ -8,8 +9,9 @@
 #include "cocos2d.h"
 #include <string>
 
-class GameManager {
+class GameManager : public cocos2d::CCNode {
 public:
+    static GameManager* create();
     virtual ~GameManager();
     virtual ~GameManager();
     virtual ~GameManager();
@@ -160,10 +162,10 @@ public:
     void checkSteamAchievementUnlock();
     void applicationDidEnterBackground();
     void applicationWillEnterForeground();
-    void init();
+    void init() override;
     void getUGV(char const*);
     void setUGV(char const*, bool);
-    void update(float);
+    void update(float) override;
     void iconKey(int, IconType);
     void colorKey(int, UnlockType);
     void loadFont(int);
@@ -173,6 +175,30 @@ public:
     void firstLoad();
     void lockColor(int, UnlockType);
     void reloadAll(bool, bool, bool, bool, bool);
+
+protected:
+    bool m_gamePlayEnabled;
+    int m_iconRequestID;
+    float m_musicVolume;
+    std::string m_nextUniqueObjectKey;
+    std::string m_nextUsedKey;
+    std::string m_orderedCustomObjectKeys;
+    int m_playerBallID;
+    int m_playerBirdID;
+    int m_playerColorPrimary;
+    int m_playerColorSecondary;
+    int m_playerDeathEffectID;
+    int m_playerFrameID;
+    int m_playerIconID;
+    std::string m_playerName;
+    int m_playerRobotID;
+    int m_playerShipID;
+    int m_playerSpiderID;
+    int m_playerStreakID;
+    int m_playerSwingID;
+    int m_playerUserID;
+    float m_sfxVolume;
+    bool m_smoothFix;
 
 };
 

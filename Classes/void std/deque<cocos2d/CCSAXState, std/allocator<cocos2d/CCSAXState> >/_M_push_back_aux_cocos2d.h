@@ -1,5 +1,6 @@
 // ============================================================
-// _M_push_back_aux_cocos2d.h — Reconstructed from libcocos2dcpp.so symbols
+// _M_push_back_aux_cocos2d.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_DEQUE<COCOS2D_CCSAXSTATE, STD_ALLOCATOR<COCOS2D_CCSAXSTATE> >__M_PUSH_BACK_AUX_COCOS2D_H_

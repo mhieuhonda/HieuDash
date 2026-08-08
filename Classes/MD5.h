@@ -1,5 +1,6 @@
 // ============================================================
-// MD5.h — Reconstructed from libcocos2dcpp.so symbols
+// MD5.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef MD5_H_

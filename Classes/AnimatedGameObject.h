@@ -1,14 +1,16 @@
 // ============================================================
-// AnimatedGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// AnimatedGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ANIMATEDGAMEOBJECT_H_
 #define ANIMATEDGAMEOBJECT_H_
 
+#include "GameObject.h"
 #include "cocos2d.h"
 #include <string>
 
-class AnimatedGameObject {
+class AnimatedGameObject : public GameObject {
 public:
     virtual ~AnimatedGameObject();
     virtual ~AnimatedGameObject();
@@ -29,8 +31,12 @@ public:
     void displayFrameChanged(cocos2d::CCObject*, std::string);
     void updateObjectAnimation();
     void updateChildSpriteColor(cocos2d::_ccColor3B);
-    void init(int);
+    void init(int) override;
     void create(int);
+
+protected:
+    cocos2d::_ccColor3B m_childColor;
+    cocos2d::_ccColor3B m_objectColor;
 
 };
 

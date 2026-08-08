@@ -1,5 +1,6 @@
 // ============================================================
-// SetupSmartBlockLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// SetupSmartBlockLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SETUPSMARTBLOCKLAYER_H_

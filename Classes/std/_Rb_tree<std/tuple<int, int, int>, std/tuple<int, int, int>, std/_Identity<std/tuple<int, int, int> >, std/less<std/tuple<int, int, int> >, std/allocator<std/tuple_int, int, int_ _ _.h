@@ -1,5 +1,6 @@
 // ============================================================
-// tuple_int, int, int_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// tuple_int, int, int_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<STD_TUPLE<INT, INT, INT>, STD_TUPLE<INT, INT, INT>, STD__IDENTITY<STD_TUPLE<INT, INT, INT> >, STD_LESS<STD_TUPLE<INT, INT, INT> >, STD_ALLOCATOR<STD_TUPLE_INT, INT, INT_ _ __H_

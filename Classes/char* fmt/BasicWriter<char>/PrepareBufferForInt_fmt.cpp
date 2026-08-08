@@ -1,8 +1,6 @@
 // ============================================================
 // PrepareBufferForInt_fmt.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "PrepareBufferForInt_fmt.h"
@@ -12,10 +10,12 @@ namespace BasicWriter<char> {
 
 void PrepareBufferForInt<fmt::FormatSpec>(unsigned int, fmt::FormatSpec const&, char const*, unsigned int) {
     // 0xb697e0
+    // TODO: Implement
 }
 
 void PrepareBufferForInt<fmt::AlignSpec>(unsigned int, fmt::AlignSpec const&, char const*, unsigned int) {
     // 0x569ed4
+    // TODO: Implement
 }
 
 } // namespace BasicWriter<char>

@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_DynamicObjectAction_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_DynamicObjectAction_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<DYNAMICOBJECTACTION, STD_ALLOCATOR_DYNAMICOBJECTACTION_ __H_

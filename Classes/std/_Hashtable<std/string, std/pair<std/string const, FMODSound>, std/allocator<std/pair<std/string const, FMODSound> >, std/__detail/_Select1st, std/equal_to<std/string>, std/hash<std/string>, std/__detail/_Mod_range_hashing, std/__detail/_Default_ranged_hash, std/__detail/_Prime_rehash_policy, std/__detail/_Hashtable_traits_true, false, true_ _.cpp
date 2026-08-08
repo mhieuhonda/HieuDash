@@ -1,8 +1,6 @@
 // ============================================================
 // _Hashtable_traits_true, false, true_ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_Hashtable_traits_true, false, true_ _.h"
@@ -31,26 +29,32 @@ namespace __detail {
 
 void _Hashtable_traits<true, false, true> >::_M_find_before_node(unsigned long, std::string const&, unsigned long)) const {
     // 0x5b44dc
+    // TODO: Implement
 }
 
 void _Hashtable_traits<true, false, true> >::count(std::string const&)) const {
     // 0x5aef7c
+    // TODO: Implement
 }
 
 void _Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<const std::string, FMODSound>, true>*) {
     // 0x5b040c
+    // TODO: Implement
 }
 
 void _Hashtable_traits<true, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<const std::string, FMODSound>, true>*) {
     // 0x5ba788
+    // TODO: Implement
 }
 
 void _Hashtable_traits<true, false, true> >::~_Hashtable() {
     // 0x5ac728
+    // TODO: Implement
 }
 
 void _Hashtable_traits<true, false, true> >::~_Hashtable() {
     // 0x5ac728
+    // TODO: Implement
 }
 
 } // namespace __detail

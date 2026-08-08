@@ -1,8 +1,6 @@
 // ============================================================
 // CCEaseBounceInOut.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCEaseBounceInOut.h"
@@ -10,31 +8,45 @@
 namespace cocos2d {
 
 CCEaseBounceInOut::~CCEaseBounceInOut() {
-    // Destructor — 0xab65a8
+    // 0xab65a8
+    this->cleanup();
 }
 
 CCEaseBounceInOut::~CCEaseBounceInOut() {
-    // Destructor — 0xab6594
+    // 0xab6594
+    this->cleanup();
 }
 
 CCEaseBounceInOut::~CCEaseBounceInOut() {
-    // Destructor — 0xab6594
+    // 0xab6594
+    this->cleanup();
 }
 
 void CCEaseBounceInOut::copyWithZone(cocos2d::CCZone*) {
     // 0xab78bc
+    // TODO: Implement
 }
 
 void CCEaseBounceInOut::create(cocos2d::CCActionInterval*) {
     // 0xab92d0
+    CCEaseBounceInOut* ret = new CCEaseBounceInOut();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCEaseBounceInOut::update(float) {
     // 0xab90dc
+    // Game update loop — called every frame
+    // TODO: Implement game logic update
 }
 
 void CCEaseBounceInOut::reverse() {
     // 0xab936c
+    // TODO: Implement
 }
 
 } // namespace cocos2d

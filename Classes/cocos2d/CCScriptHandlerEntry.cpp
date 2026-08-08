@@ -1,8 +1,6 @@
 // ============================================================
 // CCScriptHandlerEntry.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCScriptHandlerEntry.h"
@@ -10,19 +8,29 @@
 namespace cocos2d {
 
 CCScriptHandlerEntry::~CCScriptHandlerEntry() {
-    // Destructor — 0xb10774
+    // 0xb10774
+    this->cleanup();
 }
 
 CCScriptHandlerEntry::~CCScriptHandlerEntry() {
-    // Destructor — 0xb1071c
+    // 0xb1071c
+    this->cleanup();
 }
 
 CCScriptHandlerEntry::~CCScriptHandlerEntry() {
-    // Destructor — 0xb1071c
+    // 0xb1071c
+    this->cleanup();
 }
 
 void CCScriptHandlerEntry::create(int) {
     // 0xb10414
+    CCScriptHandlerEntry* ret = new CCScriptHandlerEntry();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

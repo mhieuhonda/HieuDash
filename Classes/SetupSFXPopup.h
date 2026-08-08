@@ -1,5 +1,6 @@
 // ============================================================
-// SetupSFXPopup.h — Reconstructed from libcocos2dcpp.so symbols
+// SetupSFXPopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SETUPSFXPOPUP_H_
@@ -26,6 +27,9 @@ public:
     void init(SFXTriggerGameObject*, cocos2d::CCArray*);
     void create(SFXTriggerGameObject*, cocos2d::CCArray*);
     void onClose(cocos2d::CCObject*);
+
+protected:
+    int m_activeSFXID;
 
 };
 

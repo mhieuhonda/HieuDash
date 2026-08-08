@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionJumpZoom.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionJumpZoom.h"
@@ -10,31 +8,42 @@
 namespace cocos2d {
 
 CCTransitionJumpZoom::CCTransitionJumpZoom() {
-    // Constructor — 0xaeded8
+    // 0xaeded8
 }
 
 CCTransitionJumpZoom::CCTransitionJumpZoom() {
-    // Constructor — 0xaeded8
+    // 0xaeded8
 }
 
 CCTransitionJumpZoom::~CCTransitionJumpZoom() {
-    // Destructor — 0xaece48
+    // 0xaece48
+    this->cleanup();
 }
 
 CCTransitionJumpZoom::~CCTransitionJumpZoom() {
-    // Destructor — 0xaecbe0
+    // 0xaecbe0
+    this->cleanup();
 }
 
 CCTransitionJumpZoom::~CCTransitionJumpZoom() {
-    // Destructor — 0xaecbe0
+    // 0xaecbe0
+    this->cleanup();
 }
 
 void CCTransitionJumpZoom::create(float, cocos2d::CCScene*) {
     // 0xaedf08
+    CCTransitionJumpZoom* ret = new CCTransitionJumpZoom();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionJumpZoom::onEnter() {
     // 0xaef218
+    // TODO: Implement
 }
 
 } // namespace cocos2d

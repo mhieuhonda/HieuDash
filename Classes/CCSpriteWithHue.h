@@ -1,5 +1,6 @@
 // ============================================================
-// CCSpriteWithHue.h — Reconstructed from libcocos2dcpp.so symbols
+// CCSpriteWithHue.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCSPRITEWITHHUE_H_
@@ -40,6 +41,9 @@ public:
     void setHue(float);
     void getAlpha();
     void updateHue(float);
+
+protected:
+    std::string m_shaderName;
 
 };
 

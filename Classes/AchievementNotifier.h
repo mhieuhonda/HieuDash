@@ -1,5 +1,6 @@
 // ============================================================
-// AchievementNotifier.h — Reconstructed from libcocos2dcpp.so symbols
+// AchievementNotifier.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ACHIEVEMENTNOTIFIER_H_
@@ -7,8 +8,9 @@
 
 #include "cocos2d.h"
 
-class AchievementNotifier {
+class AchievementNotifier : public cocos2d::CCNode {
 public:
+    static AchievementNotifier* create();
     virtual ~AchievementNotifier();
     virtual ~AchievementNotifier();
     virtual ~AchievementNotifier();
@@ -18,7 +20,7 @@ public:
     void willSwitchToScene(cocos2d::CCScene*);
     void showNextAchievement();
     void achievementDisplayFinished();
-    void init();
+    void init() override;
 
 };
 

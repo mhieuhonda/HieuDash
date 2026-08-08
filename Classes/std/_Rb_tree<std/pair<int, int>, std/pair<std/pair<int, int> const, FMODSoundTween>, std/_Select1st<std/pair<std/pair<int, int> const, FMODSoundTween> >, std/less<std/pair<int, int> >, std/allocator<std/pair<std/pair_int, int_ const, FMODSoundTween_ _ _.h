@@ -1,5 +1,6 @@
 // ============================================================
-// pair_int, int_ const, FMODSoundTween_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// pair_int, int_ const, FMODSoundTween_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<STD_PAIR<INT, INT>, STD_PAIR<STD_PAIR<INT, INT> CONST, FMODSOUNDTWEEN>, STD__SELECT1ST<STD_PAIR<STD_PAIR<INT, INT> CONST, FMODSOUNDTWEEN> >, STD_LESS<STD_PAIR<INT, INT> >, STD_ALLOCATOR<STD_PAIR<STD_PAIR_INT, INT_ CONST, FMODSOUNDTWEEN_ _ __H_

@@ -1,8 +1,6 @@
 // ============================================================
 // __ops.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "__ops.h"
@@ -15,6 +13,7 @@ namespace allocator<EffectGameObject*> > >, __gnu_cxx {
 
 void __ops::_Val_comp_iter<bool (*)(GameObject* const&, GameObject* const&)> >(__gnu_cxx::__normal_iterator<EffectGameObject**, std::vector<EffectGameObject*> >, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(GameObject* const&, GameObject* const&)>) {
     // 0x8926b4
+    // TODO: Implement
 }
 
 } // namespace allocator<EffectGameObject*> > >, __gnu_cxx

@@ -1,17 +1,19 @@
 // ============================================================
 // UploadActionDelegate.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "UploadActionDelegate.h"
 
 void UploadActionDelegate::uploadActionFailed(int, int) {
     // 0x608898
+    // Load from file/storage
+    // TODO: Implement loading
 }
 
 void UploadActionDelegate::uploadActionFinished(int, int) {
     // 0x608894
+    // Load from file/storage
+    // TODO: Implement loading
 }
 

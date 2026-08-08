@@ -1,8 +1,6 @@
 // ============================================================
 // CCHttpClient.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCHttpClient.h"
@@ -11,43 +9,51 @@ namespace cocos2d {
 namespace extension {
 
 CCHttpClient::CCHttpClient() {
-    // Constructor — 0xaac624
+    // 0xaac624
 }
 
 CCHttpClient::CCHttpClient() {
-    // Constructor — 0xaac624
+    // 0xaac624
 }
 
 CCHttpClient::~CCHttpClient() {
-    // Destructor — 0xaab67c
+    // 0xaab67c
+    this->cleanup();
 }
 
 CCHttpClient::~CCHttpClient() {
-    // Destructor — 0xaab5f4
+    // 0xaab5f4
+    this->cleanup();
 }
 
 CCHttpClient::~CCHttpClient() {
-    // Destructor — 0xaab5f4
+    // 0xaab5f4
+    this->cleanup();
 }
 
 void CCHttpClient::getInstance() {
     // 0xaac6e8
+    // TODO: Implement
 }
 
 void CCHttpClient::destroyInstance() {
     // 0xaab758
+    // TODO: Implement
 }
 
 void CCHttpClient::availableThreadCount() {
     // 0xaab790
+    // TODO: Implement
 }
 
 void CCHttpClient::dispatchResponseCallbacks(float) {
     // 0xaaad3c
+    // TODO: Implement
 }
 
 void CCHttpClient::send(cocos2d::extension::CCHttpRequest*) {
     // 0xaad4b0
+    // TODO: Implement
 }
 
 } // namespace extension

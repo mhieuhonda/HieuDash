@@ -1,13 +1,15 @@
 // ============================================================
-// EndLevelLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// EndLevelLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ENDLEVELLAYER_H_
 #define ENDLEVELLAYER_H_
 
 #include "cocos2d.h"
+#include <string>
 
-class EndLevelLayer {
+class EndLevelLayer : public cocos2d::CCLayer {
 public:
     virtual ~EndLevelLayer();
     virtual ~EndLevelLayer();
@@ -20,7 +22,7 @@ public:
     void getCoinString();
     void playEndEffect();
     void tryShowBanner(float);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void playCoinEffect(float);
     void playStarEffect(float);
     void coinEnterFinished(cocos2d::CCPoint);
@@ -33,7 +35,7 @@ public:
     void onRestartCheckpoint(cocos2d::CCObject*);
     void diamondEnterFinished();
     void currencyEnterFinished();
-    void init(PlayLayer*);
+    void init(PlayLayer*) override;
     void keyUp(cocos2d::enumKeyCodes, double);
     void create(PlayLayer*);
     void goEdit();
@@ -42,6 +44,9 @@ public:
     void keyDown(cocos2d::enumKeyCodes, double);
     void onReplay(cocos2d::CCObject*);
     void showLayer(bool);
+
+protected:
+    std::string m_coinString;
 
 };
 

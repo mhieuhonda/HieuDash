@@ -1,5 +1,6 @@
 // ============================================================
-// string_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// string_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_MAP<STD_STRING, STD_STRING, STD_LESS<STD_STRING>, STD_ALLOCATOR<STD_PAIR<STD_STRING CONST, STD_STRING_ _ __H_

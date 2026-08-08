@@ -1,8 +1,6 @@
 // ============================================================
 // string const, bool_ _ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "string const, bool_ _ _.h"
@@ -22,14 +20,17 @@ namespace pair<std {
 
 void string const, bool> > >::_M_get_insert_unique_pos(std::string const&) {
     // 0xb4952c
+    // TODO: Implement
 }
 
 void string const, bool> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<const std::string, bool> >, std::string const&) {
     // 0xb49694
+    // TODO: Implement
 }
 
 void string const, bool> > >::_M_erase(std::_Rb_tree_node<std::pair<const std::string, bool> >*) {
     // 0x71a2f0
+    // TODO: Implement
 }
 
 } // namespace pair<std

@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_GameObject__ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_GameObject__ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<GAMEOBJECT*, STD_ALLOCATOR_GAMEOBJECT__ __H_

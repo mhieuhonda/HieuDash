@@ -1,21 +1,22 @@
 // ============================================================
 // EffectManagerState.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "EffectManagerState.h"
 
 EffectManagerState::~EffectManagerState() {
-    // Destructor — 0x5d6084
+    // 0x5d6084
+    this->cleanup();
 }
 
 EffectManagerState::~EffectManagerState() {
-    // Destructor — 0x5d6084
+    // 0x5d6084
+    this->cleanup();
 }
 
 void EffectManagerState::operator=(EffectManagerState&&) {
     // 0x5ddd7c
+    // TODO: Implement
 }
 

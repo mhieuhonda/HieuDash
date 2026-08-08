@@ -1,5 +1,6 @@
 // ============================================================
-// CCSpriteGrayscale.h — Reconstructed from libcocos2dcpp.so symbols
+// CCSpriteGrayscale.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCSPRITEGRAYSCALE_H_
@@ -22,6 +23,9 @@ public:
     void createWithSpriteFrameName(std::string const&);
     void create(std::string const&);
     void create(std::string const&, cocos2d::CCRect const&);
+
+protected:
+    std::string m_shaderName;
 
 };
 

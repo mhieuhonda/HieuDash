@@ -1,5 +1,6 @@
 // ============================================================
-// CustomListView.h — Reconstructed from libcocos2dcpp.so symbols
+// CustomListView.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CUSTOMLISTVIEW_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class CustomListView {
+class CustomListView : public cocos2d::CCLayer {
 public:
     virtual ~CustomListView();
     virtual ~CustomListView();

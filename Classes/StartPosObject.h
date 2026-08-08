@@ -1,5 +1,6 @@
 // ============================================================
-// StartPosObject.h — Reconstructed from libcocos2dcpp.so symbols
+// StartPosObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STARTPOSOBJECT_H_
@@ -20,6 +21,9 @@ public:
     void loadSettingsFromString(std::string);
     void init();
     void create();
+
+protected:
+    std::string m_saveString;
 
 };
 

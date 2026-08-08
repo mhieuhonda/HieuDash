@@ -1,8 +1,6 @@
 // ============================================================
 // CCAnimate.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCAnimate.h"
@@ -10,51 +8,68 @@
 namespace cocos2d {
 
 CCAnimate::CCAnimate() {
-    // Constructor — 0xac47dc
+    // 0xac47dc
 }
 
 CCAnimate::CCAnimate() {
-    // Constructor — 0xac47dc
+    // 0xac47dc
 }
 
 CCAnimate::~CCAnimate() {
-    // Destructor — 0xabfb14
+    // 0xabfb14
+    this->cleanup();
 }
 
 CCAnimate::~CCAnimate() {
-    // Destructor — 0xabfa9c
+    // 0xabfa9c
+    this->cleanup();
 }
 
 CCAnimate::~CCAnimate() {
-    // Destructor — 0xabfa9c
+    // 0xabfa9c
+    this->cleanup();
 }
 
 void CCAnimate::copyWithZone(cocos2d::CCZone*) {
     // 0xac4948
+    // TODO: Implement
 }
 
 void CCAnimate::startWithTarget(cocos2d::CCNode*) {
     // 0xabf194
+    // TODO: Implement
 }
 
 void CCAnimate::initWithAnimation(cocos2d::CCAnimation*) {
     // 0xac4568
+    // TODO: Implement
 }
 
 void CCAnimate::stop() {
     // 0xabfc64
+    // TODO: Implement
 }
 
 void CCAnimate::create(cocos2d::CCAnimation*) {
     // 0xac4844
+    CCAnimate* ret = new CCAnimate();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCAnimate::update(float) {
     // 0xac081c
+    // Game update loop — called every frame
+    // TODO: Implement game logic update
 }
 
 void CCAnimate::reverse() {
     // 0xac4888
+    // TODO: Implement
 }
 
 } // namespace cocos2d

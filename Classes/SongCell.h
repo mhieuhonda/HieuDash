@@ -1,5 +1,6 @@
 // ============================================================
-// SongCell.h — Reconstructed from libcocos2dcpp.so symbols
+// SongCell.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SONGCELL_H_
@@ -7,8 +8,9 @@
 
 #include "cocos2d.h"
 
-class SongCell {
+class SongCell : public cocos2d::CCNode {
 public:
+    static SongCell* create();
     SongCell(char const*, float, float);
     SongCell(char const*, float, float);
 
@@ -18,8 +20,8 @@ public:
 
     void updateBGColor(int);
     void loadFromObject(SongObject*);
-    void draw();
-    void init();
+    void draw() override;
+    void init() override;
     void onClick(cocos2d::CCObject*);
 
 };

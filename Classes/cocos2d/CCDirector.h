@@ -1,5 +1,6 @@
 // ============================================================
-// CCDirector.h — Reconstructed from libcocos2dcpp.so symbols
+// CCDirector.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCDIRECTOR_H_
@@ -102,6 +103,17 @@ public:
     void showStats();
     void getDelegate()) const;
     void getSceneDelegate()) const;
+
+protected:
+    float m_contentScaleFactor;
+    std::string m_keyboardDispatcher;
+    std::string m_keypadDispatcher;
+    float m_screenScaleFactor;
+    float m_screenScaleFactorH;
+    float m_screenScaleFactorMax;
+    float m_screenScaleFactorW;
+    bool m_visibleOrigin;
+    bool m_visibleSize;
 
 };
 

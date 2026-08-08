@@ -1,5 +1,6 @@
 // ============================================================
-// CCControlButton.h — Reconstructed from libcocos2dcpp.so symbols
+// CCControlButton.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCCONTROLBUTTON_H_
@@ -64,6 +65,12 @@ public:
     void create();
     void getColor();
     void setColor(cocos2d::_ccColor3B const&);
+
+protected:
+    cocos2d::_ccColor3B m_color;
+    bool m_enabled;
+    cocos2d::CCPoint m_labelAnchorPoint;
+    cocos2d::_ccColor3B m_titleColorForState;
 
 };
 

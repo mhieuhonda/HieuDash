@@ -1,5 +1,6 @@
 // ============================================================
-// CCScale9Sprite.h — Reconstructed from libcocos2dcpp.so symbols
+// CCScale9Sprite.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCSCALE9SPRITE_H_
@@ -67,6 +68,9 @@ public:
     void create();
     void getColor();
     void setColor(cocos2d::_ccColor3B const&);
+
+protected:
+    cocos2d::_ccColor3B m_color;
 
 };
 

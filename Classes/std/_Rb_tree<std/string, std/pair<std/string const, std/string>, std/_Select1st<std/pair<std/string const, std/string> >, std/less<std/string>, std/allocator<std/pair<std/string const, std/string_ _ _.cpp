@@ -1,8 +1,6 @@
 // ============================================================
 // string_ _ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "string_ _ _.h"
@@ -25,18 +23,22 @@ namespace string const, std {
 
 void string> > >::_M_get_insert_unique_pos(std::string const&) {
     // 0x5842a0
+    // TODO: Implement
 }
 
 void string> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<const std::string, std::string> >, std::string const&) {
     // 0x584408
+    // TODO: Implement
 }
 
 void string> > >::find(std::string const&) {
     // 0xb06a20
+    // TODO: Implement
 }
 
 void string> > >::_M_erase(std::_Rb_tree_node<std::pair<const std::string, std::string> >*) {
     // 0x8a8788
+    // TODO: Implement
 }
 
 } // namespace string const, std

@@ -1,5 +1,6 @@
 // ============================================================
-// BoomScrollLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// BoomScrollLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef BOOMSCROLLLAYER_H_
@@ -46,6 +47,10 @@ public:
     void addPage(cocos2d::CCLayer*);
     void addPage(cocos2d::CCLayer*, int);
     void getPage(int);
+
+protected:
+    float m_dotScale;
+    cocos2d::CCPoint m_pagesIndicatorPosition;
 
 };
 

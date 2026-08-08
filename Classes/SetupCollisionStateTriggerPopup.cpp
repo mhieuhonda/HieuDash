@@ -1,29 +1,41 @@
 // ============================================================
 // SetupCollisionStateTriggerPopup.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SetupCollisionStateTriggerPopup.h"
 
 SetupCollisionStateTriggerPopup::~SetupCollisionStateTriggerPopup() {
-    // Destructor — 0x94f5f8
+    // 0x94f5f8
+    this->cleanup();
 }
 
 SetupCollisionStateTriggerPopup::~SetupCollisionStateTriggerPopup() {
-    // Destructor — 0x94f4d4
+    // 0x94f4d4
+    this->cleanup();
 }
 
 SetupCollisionStateTriggerPopup::~SetupCollisionStateTriggerPopup() {
-    // Destructor — 0x94f4d4
+    // 0x94f4d4
+    this->cleanup();
 }
 
 void SetupCollisionStateTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     // 0x952428
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SetupCollisionStateTriggerPopup::create(EffectGameObject*, cocos2d::CCArray*) {
     // 0x952964
+    SetupCollisionStateTriggerPopup* ret = new SetupCollisionStateTriggerPopup();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

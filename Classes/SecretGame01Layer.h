@@ -1,5 +1,6 @@
 // ============================================================
-// SecretGame01Layer.h — Reconstructed from libcocos2dcpp.so symbols
+// SecretGame01Layer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SECRETGAME01LAYER_H_
@@ -29,6 +30,9 @@ public:
     void create();
     void update(float);
     void resetGame();
+
+protected:
+    int m_countForDifficulty;
 
 };
 

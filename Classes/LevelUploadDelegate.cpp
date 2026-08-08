@@ -1,17 +1,19 @@
 // ============================================================
 // LevelUploadDelegate.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "LevelUploadDelegate.h"
 
 void LevelUploadDelegate::levelUploadFailed(GJGameLevel*) {
     // 0x6e3290
+    // Load from file/storage
+    // TODO: Implement loading
 }
 
 void LevelUploadDelegate::levelUploadFinished(GJGameLevel*) {
     // 0x6e328c
+    // Load from file/storage
+    // TODO: Implement loading
 }
 

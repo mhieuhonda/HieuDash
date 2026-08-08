@@ -1,11 +1,13 @@
 // ============================================================
-// CCTexture2D.h — Reconstructed from libcocos2dcpp.so symbols
+// CCTexture2D.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCTEXTURE2D_H_
 #define COCOS2D_CCTEXTURE2D_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -56,6 +58,9 @@ public:
     void setMaxS(float);
     void setMaxT(float);
     void keepData(void*, unsigned int);
+
+protected:
+    std::string m_name;
 
 };
 

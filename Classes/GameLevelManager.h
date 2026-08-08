@@ -1,5 +1,6 @@
 // ============================================================
-// GameLevelManager.h — Reconstructed from libcocos2dcpp.so symbols
+// GameLevelManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GAMELEVELMANAGER_H_
@@ -8,8 +9,9 @@
 #include "cocos2d.h"
 #include <string>
 
-class GameLevelManager {
+class GameLevelManager : public cocos2d::CCNode {
 public:
+    static GameLevelManager* create();
     virtual ~GameLevelManager();
     virtual ~GameLevelManager();
     virtual ~GameLevelManager();
@@ -309,7 +311,7 @@ public:
     void processOnDownloadLevelCompleted(std::string, std::string, bool);
     void onDeleteServerLevelListCompleted(std::string, std::string);
     void removeLevelDownloadedKeysFromDict(cocos2d::CCDictionary*);
-    void init();
+    void init() override;
     void banUser(int);
     void getNews();
     void getUsers(GJSearchObject*);
@@ -322,6 +324,56 @@ public:
     void rateStars(int, int);
     void saveLevel(GJGameLevel*);
     void setLenVal(int, bool);
+
+protected:
+    cocos2d::CCDictionary* m_GJLevelScore;
+    std::string m_accountCommentKey;
+    int m_activeDailyID;
+    bool m_activeSmartTemplate;
+    int m_allUsedSongIDs;
+    std::string m_basePostString;
+    std::string m_boolForKey;
+    std::string m_commentKey;
+    int m_dailyID;
+    int m_dailyLevelID;
+    std::string m_deleteCommentKey;
+    std::string m_deleteMessageKey;
+    std::string m_demonLevelsString;
+    std::string m_descKey;
+    std::string m_diffKey;
+    std::string m_folderName;
+    std::string m_friendRequestKey;
+    std::string m_gauntletKey;
+    std::string m_gauntletSearchKey;
+    std::string m_intForKey;
+    std::string m_leaderboardKey;
+    std::string m_lenKey;
+    std::string m_levelDownloadKey;
+    std::string m_levelKey;
+    std::string m_levelLeaderboardKey;
+    std::string m_levelListKey;
+    float m_levelRateInfo;
+    std::string m_likeAccountItemKey;
+    std::string m_likeItemKey;
+    std::string m_localLevelByName;
+    std::string m_mapPackKey;
+    std::string m_messageKey;
+    std::string m_messagesKey;
+    int m_nextFreeTemplateID;
+    std::string m_nextLevelName;
+    cocos2d::CCDictionary* m_onlineLevels;
+    std::string m_postCommentKey;
+    float m_rateStarsKey;
+    std::string m_reportKey;
+    int m_savedDailyLevelFromLevelID;
+    cocos2d::CCDictionary* m_savedLevels;
+    std::string m_splitIntFromKey;
+    std::string m_starLevelsString;
+    cocos2d::CCDictionary* m_storedLevels;
+    std::string m_topArtistsKey;
+    std::string m_uploadMessageKey;
+    std::string m_userInfoKey;
+    int m_weeklyLevelID;
 
 };
 

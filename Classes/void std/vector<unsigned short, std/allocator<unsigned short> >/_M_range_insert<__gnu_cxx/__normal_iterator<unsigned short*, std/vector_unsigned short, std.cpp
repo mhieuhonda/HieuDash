@@ -1,8 +1,6 @@
 // ============================================================
 // vector_unsigned short, std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "vector_unsigned short, std.h"
@@ -15,6 +13,7 @@ namespace __normal_iterator<unsigned short*, std {
 
 void vector<unsigned short, std::allocator<unsigned short> > > >(__gnu_cxx::__normal_iterator<unsigned short*, std::vector<unsigned short> >, __gnu_cxx::__normal_iterator<unsigned short*, std::vector<unsigned short> >, __gnu_cxx::__normal_iterator<unsigned short*, std::vector<unsigned short> >, std::forward_iterator_tag) {
     // 0xae78d4
+    // TODO: Implement
 }
 
 } // namespace __normal_iterator<unsigned short*, std

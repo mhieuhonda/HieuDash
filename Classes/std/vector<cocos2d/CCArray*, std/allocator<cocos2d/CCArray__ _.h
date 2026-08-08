@@ -1,5 +1,6 @@
 // ============================================================
-// CCArray__ _.h — Reconstructed from libcocos2dcpp.so symbols
+// CCArray__ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<COCOS2D_CCARRAY*, STD_ALLOCATOR<COCOS2D_CCARRAY__ __H_

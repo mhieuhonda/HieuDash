@@ -1,5 +1,6 @@
 // ============================================================
-// ParticleGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// ParticleGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PARTICLEGAMEOBJECT_H_
@@ -50,6 +51,15 @@ public:
     void setScale(float);
     void setScaleX(float);
     void setScaleY(float);
+
+protected:
+    cocos2d::_ccColor3B m_childColor;
+    cocos2d::_ccColor3B m_objectColor;
+    std::string m_particleString;
+    std::string m_saveString;
+    float m_scale;
+    float m_scaleX;
+    float m_scaleY;
 
 };
 

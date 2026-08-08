@@ -1,5 +1,6 @@
 // ============================================================
-// CCActionInterval.h — Reconstructed from libcocos2dcpp.so symbols
+// CCActionInterval.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCACTIONINTERVAL_H_
@@ -24,6 +25,9 @@ public:
     void create(float);
     void isDone();
     void reverse();
+
+protected:
+    float m_amplitudeRate;
 
 };
 

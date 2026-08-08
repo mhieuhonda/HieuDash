@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionShrinkGrow.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionShrinkGrow.h"
@@ -10,35 +8,47 @@
 namespace cocos2d {
 
 CCTransitionShrinkGrow::CCTransitionShrinkGrow() {
-    // Constructor — 0xaee524
+    // 0xaee524
 }
 
 CCTransitionShrinkGrow::CCTransitionShrinkGrow() {
-    // Constructor — 0xaee524
+    // 0xaee524
 }
 
 CCTransitionShrinkGrow::~CCTransitionShrinkGrow() {
-    // Destructor — 0xaecf8c
+    // 0xaecf8c
+    this->cleanup();
 }
 
 CCTransitionShrinkGrow::~CCTransitionShrinkGrow() {
-    // Destructor — 0xaeccd4
+    // 0xaeccd4
+    this->cleanup();
 }
 
 CCTransitionShrinkGrow::~CCTransitionShrinkGrow() {
-    // Destructor — 0xaeccd4
+    // 0xaeccd4
+    this->cleanup();
 }
 
 void CCTransitionShrinkGrow::easeActionWithAction(cocos2d::CCActionInterval*) {
     // 0xaedb10
+    // TODO: Implement
 }
 
 void CCTransitionShrinkGrow::create(float, cocos2d::CCScene*) {
     // 0xaee55c
+    CCTransitionShrinkGrow* ret = new CCTransitionShrinkGrow();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionShrinkGrow::onEnter() {
     // 0xaef564
+    // TODO: Implement
 }
 
 } // namespace cocos2d

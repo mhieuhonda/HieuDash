@@ -1,5 +1,6 @@
 // ============================================================
-// RandTriggerGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// RandTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef RANDTRIGGERGAMEOBJECT_H_
@@ -21,6 +22,10 @@ public:
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init();
     void create();
+
+protected:
+    int m_randomGroupID;
+    std::string m_saveString;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// OptionsLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// OptionsLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef OPTIONSLAYER_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class OptionsLayer {
+class OptionsLayer : public cocos2d::CCLayer {
 public:
     virtual ~OptionsLayer();
     virtual ~OptionsLayer();

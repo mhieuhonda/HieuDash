@@ -1,5 +1,6 @@
 // ============================================================
-// CCDictionary__ _.h — Reconstructed from libcocos2dcpp.so symbols
+// CCDictionary__ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__DEQUE_BASE<COCOS2D_CCDICTIONARY*, STD_ALLOCATOR<COCOS2D_CCDICTIONARY__ __H_

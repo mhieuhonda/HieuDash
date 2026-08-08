@@ -1,5 +1,6 @@
 // ============================================================
-// vector_int, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_int, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<TOUCHTOGGLEACTION, STD_ALLOCATOR<TOUCHTOGGLEACTION> >__M_EMPLACE_BACK_AUX<INT&, BOOL&, TOUCHTRIGGERTYPE&, TOUCHTRIGGERCONTROL&, BOOL&, STD_VECTOR_INT, STD_H_

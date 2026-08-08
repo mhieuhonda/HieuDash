@@ -1,5 +1,6 @@
 // ============================================================
-// GJEffectManager.h — Reconstructed from libcocos2dcpp.so symbols
+// GJEffectManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJEFFECTMANAGER_H_
@@ -10,7 +11,7 @@
 #include <unordered_map>
 #include <vector>
 
-class GJEffectManager {
+class GJEffectManager : public cocos2d::CCNode {
 public:
     virtual ~GJEffectManager();
     virtual ~GJEffectManager();
@@ -130,9 +131,24 @@ public:
     void processCopyColorPulseActions();
     void removePersistentFromAllItems();
     void removePersistentFromAllTimers();
-    void init();
+    void init() override;
     void reset();
     void create();
+
+protected:
+    cocos2d::_ccColor3B m_activeColor1;
+    cocos2d::_ccColor3B m_activeColor2;
+    cocos2d::_ccColor3B m_allColorActions;
+    cocos2d::_ccColor3B m_allColorSprites;
+    cocos2d::_ccColor3B m_backgroundColor;
+    cocos2d::_ccColor3B m_colorAction;
+    cocos2d::CCArray* m_colorActions;
+    cocos2d::_ccColor3B m_colorSprite;
+    cocos2d::_ccColor3B m_groundColor;
+    cocos2d::_ccColor3B m_mixedColor;
+    std::string m_persistentStateString;
+    cocos2d::CCArray* m_pulseEffects;
+    std::string m_saveString;
 
 };
 

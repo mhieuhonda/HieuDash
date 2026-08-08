@@ -1,11 +1,13 @@
 // ============================================================
-// CCSprite.h — Reconstructed from libcocos2dcpp.so symbols
+// CCSprite.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCSPRITE_H_
 #define COCOS2D_CCSPRITE_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -88,6 +90,16 @@ public:
     void setSkewY(float);
     void setScaleX(float);
     void setScaleY(float);
+
+protected:
+    cocos2d::_ccColor3B m_childColor;
+    cocos2d::_ccColor3B m_color;
+    std::string m_displayFrameWithAnimationName;
+    cocos2d::CCPoint m_position;
+    float m_scale;
+    float m_scaleX;
+    float m_scaleY;
+    bool m_visible;
 
 };
 

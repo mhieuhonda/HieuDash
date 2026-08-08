@@ -1,11 +1,13 @@
 // ============================================================
-// CCEGLViewProtocol.h — Reconstructed from libcocos2dcpp.so symbols
+// CCEGLViewProtocol.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCEGLVIEWPROTOCOL_H_
 #define COCOS2D_CCEGLVIEWPROTOCOL_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -41,6 +43,9 @@ public:
     void getDesignResolutionSize()) const;
     void getScaleX()) const;
     void getScaleY()) const;
+
+protected:
+    std::string m_viewName;
 
 };
 

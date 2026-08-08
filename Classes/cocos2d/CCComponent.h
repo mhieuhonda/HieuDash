@@ -1,11 +1,13 @@
 // ============================================================
-// CCComponent.h — Reconstructed from libcocos2dcpp.so symbols
+// CCComponent.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCCOMPONENT_H_
 #define COCOS2D_CCCOMPONENT_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -30,6 +32,10 @@ public:
     void getName()) const;
     void getOwner()) const;
     void isEnabled()) const;
+
+protected:
+    bool m_enabled;
+    std::string m_name;
 
 };
 

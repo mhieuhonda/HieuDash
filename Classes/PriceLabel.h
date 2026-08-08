@@ -1,5 +1,6 @@
 // ============================================================
-// PriceLabel.h — Reconstructed from libcocos2dcpp.so symbols
+// PriceLabel.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PRICELABEL_H_
@@ -18,6 +19,9 @@ public:
     void create(int);
     void setColor(cocos2d::_ccColor3B);
     void setPrice(int);
+
+protected:
+    cocos2d::_ccColor3B m_color;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// GJSpecialColorSelect.h — Reconstructed from libcocos2dcpp.so symbols
+// GJSpecialColorSelect.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJSPECIALCOLORSELECT_H_
@@ -21,6 +22,9 @@ public:
     void init(int, GJSpecialColorSelectDelegate*, ColorSelectType);
     void create(int, GJSpecialColorSelectDelegate*, ColorSelectType);
     void onClose(cocos2d::CCObject*);
+
+protected:
+    int m_buttonByTag;
 
 };
 

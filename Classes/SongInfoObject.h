@@ -1,5 +1,6 @@
 // ============================================================
-// SongInfoObject.h — Reconstructed from libcocos2dcpp.so symbols
+// SongInfoObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SONGINFOOBJECT_H_
@@ -28,6 +29,11 @@ public:
     void create(int, std::string, std::string, int, float, std::string, std::string, std::string, std::string, int, std::string, bool, int, int);
     void addTags(std::string);
     void canEncode();
+
+protected:
+    std::string m_artistNames;
+    int m_extraArtistCount;
+    int m_tagsString;
 
 };
 

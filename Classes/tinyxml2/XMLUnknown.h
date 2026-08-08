@@ -1,5 +1,6 @@
 // ============================================================
-// XMLUnknown.h — Reconstructed from libcocos2dcpp.so symbols
+// XMLUnknown.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef TINYXML2_XMLUNKNOWN_H_

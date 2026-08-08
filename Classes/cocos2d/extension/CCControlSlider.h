@@ -1,5 +1,6 @@
 // ============================================================
-// CCControlSlider.h — Reconstructed from libcocos2dcpp.so symbols
+// CCControlSlider.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCCONTROLSLIDER_H_
@@ -36,6 +37,9 @@ public:
     void create(char const*, char const*, char const*);
     void create(cocos2d::CCSprite*, cocos2d::CCSprite*, cocos2d::CCSprite*);
     void setValue(float);
+
+protected:
+    bool m_enabled;
 
 };
 

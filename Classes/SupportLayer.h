@@ -1,5 +1,6 @@
 // ============================================================
-// SupportLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// SupportLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SUPPORTLAYER_H_

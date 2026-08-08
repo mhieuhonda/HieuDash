@@ -1,5 +1,6 @@
 // ============================================================
-// ColorSelectPopup.h — Reconstructed from libcocos2dcpp.so symbols
+// ColorSelectPopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COLORSELECTPOPUP_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class ColorSelectPopup {
+class ColorSelectPopup : public cocos2d::CCLayer {
 public:
     virtual ~ColorSelectPopup();
     virtual ~ColorSelectPopup();
@@ -24,7 +25,7 @@ public:
     void sliderChanged(cocos2d::CCObject*);
     void updateHSVMode();
     void updateOpacity();
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onPlayerColor1(cocos2d::CCObject*);
     void onPlayerColor2(cocos2d::CCObject*);
     void updateDurLabel();
@@ -47,7 +48,7 @@ public:
     void updateCustomColorIdx();
     void updateTextInputLabel();
     void updateCopyColorTextInputLabel();
-    void init(EffectGameObject*, cocos2d::CCArray*, ColorAction*);
+    void init(EffectGameObject*, cocos2d::CCArray*, ColorAction*) override;
     void show();
     void create(cocos2d::_ccColor3B);
     void create(ColorAction*);
@@ -56,6 +57,9 @@ public:
     void onCopy(cocos2d::CCObject*);
     void onPaste(cocos2d::CCObject*);
     void onDefault(cocos2d::CCObject*);
+
+protected:
+    cocos2d::_ccColor3B m_colorValue;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// MoreSearchLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// MoreSearchLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef MORESEARCHLAYER_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class MoreSearchLayer {
+class MoreSearchLayer : public cocos2d::CCLayer {
 public:
     virtual ~MoreSearchLayer();
     virtual ~MoreSearchLayer();
@@ -25,13 +26,13 @@ public:
     void onSongFilter(cocos2d::CCObject*);
     void audioPrevious(cocos2d::CCObject*);
     void onUncompleted(cocos2d::CCObject*);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void textInputReturn(CCTextInputNode*);
     void toggleSongNodes(bool, bool);
     void updateAudioLabel();
     void createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint);
     void textInputShouldOffset(CCTextInputNode*, float);
-    void init();
+    void init() override;
     void create();
     void onEpic(cocos2d::CCObject*);
     void onInfo(cocos2d::CCObject*);

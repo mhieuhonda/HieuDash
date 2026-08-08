@@ -1,8 +1,6 @@
 // ============================================================
 // __detail.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "__detail.h"
@@ -31,6 +29,7 @@ namespace allocator<std {
 
 void __detail::_Hash_node<StateKey, false> > > >(StateKey const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<StateKey, false> > > const&, std::integral_constant<bool, true>) {
     // 0x674ec4
+    // TODO: Implement
 }
 
 } // namespace allocator<std

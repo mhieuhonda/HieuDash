@@ -1,8 +1,6 @@
 // ============================================================
 // _M_insert_unique_std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_M_insert_unique_std.h"
@@ -23,6 +21,7 @@ namespace tuple<int, int, int> > > {
 
 void _M_insert_unique<std::tuple<int, int, int> const&>(std::tuple<int, int, int> const&) {
     // 0x87474c
+    // TODO: Implement
 }
 
 } // namespace tuple<int, int, int> > >

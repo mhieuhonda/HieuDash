@@ -1,5 +1,6 @@
 // ============================================================
-// GameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// GameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GAMEOBJECT_H_
@@ -9,8 +10,9 @@
 #include <string>
 #include <vector>
 
-class GameObject {
+class GameObject : public cocos2d::CCSprite {
 public:
+    static GameObject* create();
     virtual ~GameObject();
     virtual ~GameObject();
     virtual ~GameObject();
@@ -249,8 +251,8 @@ public:
     void createOpacityGroupContainer(int);
     void setDefaultSecondaryColorMode(int);
     void updateSecondaryParticleOpacity(unsigned char);
-    void init(char const*);
-    void update(float);
+    void init(char const*) override;
+    void update(float) override;
     void addGlow(std::string);
     void isFlipX();
     void isFlipY();
@@ -270,6 +272,48 @@ public:
     void getObjectRectDirty()) const;
     void getOrientedRectDirty()) const;
     void getType()) const;
+
+protected:
+    bool m_activeColorForMode;
+    int m_baseColorID;
+    cocos2d::_ccColor3B m_childColor;
+    cocos2d::_ccColor3B m_colorFrame;
+    int m_colorIndex;
+    cocos2d::_ccColor3B m_colorKey;
+    cocos2d::_ccColor3B m_defaultMainColorMode;
+    cocos2d::_ccColor3B m_defaultSecondaryColorMode;
+    int m_detailColorID;
+    cocos2d::_ccColor3B m_glowColor;
+    int m_groupID;
+    std::string m_groupString;
+    bool m_hasBeenActivated;
+    bool m_isActive;
+    cocos2d::CCPoint m_lastPosition;
+    cocos2d::_ccColor3B m_mainColor;
+    cocos2d::_ccColor3B m_mainColorMode;
+    cocos2d::_ccColor3B m_objectColor;
+    int m_objectID;
+    cocos2d::CCPoint m_objectRectPointer;
+    cocos2d::CCPoint m_position;
+    float m_rScale;
+    float m_rScaleX;
+    float m_rScaleY;
+    cocos2d::CCPoint m_realPosition;
+    cocos2d::_ccColor3B m_relativeSpriteColor;
+    float m_rotation;
+    std::string m_saveString;
+    float m_scale;
+    float m_scalePosDelta;
+    float m_scaleX;
+    float m_scaleY;
+    cocos2d::_ccColor3B m_secondaryColor;
+    cocos2d::_ccColor3B m_secondaryColorMode;
+    int m_section;
+    cocos2d::CCPoint m_unmodifiedPosition;
+    bool m_visible;
+    float m_x;
+    float m_y;
+    int m_zOrder;
 
 };
 

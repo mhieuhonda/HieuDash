@@ -1,5 +1,6 @@
 // ============================================================
-// CCEditBoxImplAndroid.h — Reconstructed from libcocos2dcpp.so symbols
+// CCEditBoxImplAndroid.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCEDITBOXIMPLANDROID_H_
@@ -42,6 +43,12 @@ public:
     void setFont(char const*, int);
     void setText(char const*);
     void isEditing();
+
+protected:
+    cocos2d::_ccColor3B m_fontColor;
+    cocos2d::_ccColor3B m_placeholderFontColor;
+    cocos2d::CCPoint m_position;
+    bool m_visible;
 
 };
 

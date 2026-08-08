@@ -1,5 +1,6 @@
 // ============================================================
-// XMLVisitor.h — Reconstructed from libcocos2dcpp.so symbols
+// XMLVisitor.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef TINYXML2_XMLVISITOR_H_

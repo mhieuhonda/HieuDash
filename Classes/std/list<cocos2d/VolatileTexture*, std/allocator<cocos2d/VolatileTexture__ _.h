@@ -1,5 +1,6 @@
 // ============================================================
-// VolatileTexture__ _.h — Reconstructed from libcocos2dcpp.so symbols
+// VolatileTexture__ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_LIST<COCOS2D_VOLATILETEXTURE*, STD_ALLOCATOR<COCOS2D_VOLATILETEXTURE__ __H_

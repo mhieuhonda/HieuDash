@@ -1,5 +1,6 @@
 // ============================================================
-// MenuLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// MenuLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef MENULAYER_H_
@@ -7,8 +8,9 @@
 
 #include "cocos2d.h"
 
-class MenuLayer {
+class MenuLayer : public cocos2d::CCLayer {
 public:
+    static MenuLayer* create();
     virtual ~MenuLayer();
     virtual ~MenuLayer();
     virtual ~MenuLayer();
@@ -22,7 +24,7 @@ public:
     void onGameCenter(cocos2d::CCObject*);
     void onNewgrounds(cocos2d::CCObject*);
     void onFullVersion(cocos2d::CCObject*);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onAchievements(cocos2d::CCObject*);
     void showGCQuestion();
     void FLAlert_Clicked(FLAlertLayer*, bool);
@@ -35,7 +37,7 @@ public:
     void videoOptionsOpened();
     void updateUserProfileButton();
     void syncPlatformAchievements(float);
-    void init();
+    void init() override;
     void scene(bool);
     void onPlay(cocos2d::CCObject*);
     void onQuit(cocos2d::CCObject*);

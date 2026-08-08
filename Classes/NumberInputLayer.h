@@ -1,5 +1,6 @@
 // ============================================================
-// NumberInputLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// NumberInputLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef NUMBERINPUTLAYER_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class NumberInputLayer {
+class NumberInputLayer : public cocos2d::CCLayer {
 public:
     virtual ~NumberInputLayer();
     virtual ~NumberInputLayer();
@@ -15,10 +16,10 @@ public:
 
     void deleteLast();
     void inputNumber(int);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void updateNumberState();
-    void registerWithTouchDispatcher();
-    void init();
+    void registerWithTouchDispatcher() override;
+    void init() override;
     void create();
     void onDone(cocos2d::CCObject*);
     void onClose(cocos2d::CCObject*);

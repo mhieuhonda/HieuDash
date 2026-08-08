@@ -1,8 +1,6 @@
 // ============================================================
 // CCHttpRequest.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCHttpRequest.h"
@@ -11,15 +9,18 @@ namespace cocos2d {
 namespace extension {
 
 CCHttpRequest::~CCHttpRequest() {
-    // Destructor — 0x6efe70
+    // 0x6efe70
+    this->cleanup();
 }
 
 CCHttpRequest::~CCHttpRequest() {
-    // Destructor — 0x6efc9c
+    // 0x6efc9c
+    this->cleanup();
 }
 
 CCHttpRequest::~CCHttpRequest() {
-    // Destructor — 0x6efc9c
+    // 0x6efc9c
+    this->cleanup();
 }
 
 } // namespace extension

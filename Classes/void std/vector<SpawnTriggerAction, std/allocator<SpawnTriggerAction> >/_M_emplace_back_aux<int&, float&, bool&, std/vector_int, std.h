@@ -1,5 +1,6 @@
 // ============================================================
-// vector_int, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_int, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<SPAWNTRIGGERACTION, STD_ALLOCATOR<SPAWNTRIGGERACTION> >__M_EMPLACE_BACK_AUX<INT&, FLOAT&, BOOL&, STD_VECTOR_INT, STD_H_

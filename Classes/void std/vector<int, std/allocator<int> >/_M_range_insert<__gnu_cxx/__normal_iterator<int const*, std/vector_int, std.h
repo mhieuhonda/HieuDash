@@ -1,5 +1,6 @@
 // ============================================================
-// vector_int, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_int, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<INT, STD_ALLOCATOR<INT> >__M_RANGE_INSERT<__GNU_CXX___NORMAL_ITERATOR<INT CONST*, STD_VECTOR_INT, STD_H_

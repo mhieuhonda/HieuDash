@@ -1,5 +1,6 @@
 // ============================================================
-// xpath_parse_result.h — Reconstructed from libcocos2dcpp.so symbols
+// xpath_parse_result.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PUGI_XPATH_PARSE_RESULT_H_

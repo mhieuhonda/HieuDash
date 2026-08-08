@@ -1,5 +1,6 @@
 // ============================================================
-// _M_insert_aux_cocos2d.h — Reconstructed from libcocos2dcpp.so symbols
+// _M_insert_aux_cocos2d.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<COCOS2D_CCPOINT*, STD_ALLOCATOR<COCOS2D_CCPOINT*> >__M_INSERT_AUX_COCOS2D_H_

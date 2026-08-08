@@ -1,5 +1,6 @@
 // ============================================================
-// vector_KeyframeObject, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_KeyframeObject, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef KEYFRAMEOBJECT* STD___UNINITIALIZED_COPY<FALSE>___UNINIT_COPY<__GNU_CXX___NORMAL_ITERATOR<KEYFRAMEOBJECT CONST*, STD_VECTOR_KEYFRAMEOBJECT, STD_H_

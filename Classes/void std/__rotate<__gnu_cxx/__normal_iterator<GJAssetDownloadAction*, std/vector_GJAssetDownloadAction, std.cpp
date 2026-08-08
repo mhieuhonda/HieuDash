@@ -1,8 +1,6 @@
 // ============================================================
 // vector_GJAssetDownloadAction, std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "vector_GJAssetDownloadAction, std.h"
@@ -13,6 +11,8 @@ namespace __normal_iterator<GJAssetDownloadAction*, std {
 
 void vector<GJAssetDownloadAction, std::allocator<GJAssetDownloadAction> > > >(__gnu_cxx::__normal_iterator<GJAssetDownloadAction*, std::vector<GJAssetDownloadAction> >, __gnu_cxx::__normal_iterator<GJAssetDownloadAction*, std::vector<GJAssetDownloadAction> >, __gnu_cxx::__normal_iterator<GJAssetDownloadAction*, std::vector<GJAssetDownloadAction> >, std::random_access_iterator_tag) {
     // 0x74832c
+    // Load from file/storage
+    // TODO: Implement loading
 }
 
 } // namespace __normal_iterator<GJAssetDownloadAction*, std

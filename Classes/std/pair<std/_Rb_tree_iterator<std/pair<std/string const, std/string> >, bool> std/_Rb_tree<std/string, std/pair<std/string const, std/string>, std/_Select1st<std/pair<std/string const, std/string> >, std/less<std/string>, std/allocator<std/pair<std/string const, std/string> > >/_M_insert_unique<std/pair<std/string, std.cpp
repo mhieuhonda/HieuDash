@@ -1,8 +1,6 @@
 // ============================================================
 // string, std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "string, std.h"
@@ -33,6 +31,7 @@ namespace pair<std {
 
 void string, std::string> >(std::pair<std::string, std::string>&&) {
     // 0xb06cf0
+    // TODO: Implement
 }
 
 } // namespace pair<std

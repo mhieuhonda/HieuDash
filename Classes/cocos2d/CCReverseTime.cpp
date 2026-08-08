@@ -1,8 +1,6 @@
 // ============================================================
 // CCReverseTime.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCReverseTime.h"
@@ -10,51 +8,68 @@
 namespace cocos2d {
 
 CCReverseTime::CCReverseTime() {
-    // Constructor — 0xac4434
+    // 0xac4434
 }
 
 CCReverseTime::CCReverseTime() {
-    // Constructor — 0xac4434
+    // 0xac4434
 }
 
 CCReverseTime::~CCReverseTime() {
-    // Destructor — 0xabf45c
+    // 0xabf45c
+    this->cleanup();
 }
 
 CCReverseTime::~CCReverseTime() {
-    // Destructor — 0xabf410
+    // 0xabf410
+    this->cleanup();
 }
 
 CCReverseTime::~CCReverseTime() {
-    // Destructor — 0xabf410
+    // 0xabf410
+    this->cleanup();
 }
 
 void CCReverseTime::copyWithZone(cocos2d::CCZone*) {
     // 0xac44b4
+    // TODO: Implement
 }
 
 void CCReverseTime::initWithAction(cocos2d::CCFiniteTimeAction*) {
     // 0xac43dc
+    // TODO: Implement
 }
 
 void CCReverseTime::startWithTarget(cocos2d::CCNode*) {
     // 0xabf078
+    // TODO: Implement
 }
 
 void CCReverseTime::stop() {
     // 0xabfc30
+    // TODO: Implement
 }
 
 void CCReverseTime::create(cocos2d::CCFiniteTimeAction*) {
     // 0xac4470
+    CCReverseTime* ret = new CCReverseTime();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCReverseTime::update(float) {
     // 0xabedbc
+    // Game update loop — called every frame
+    // TODO: Implement game logic update
 }
 
 void CCReverseTime::reverse() {
     // 0xabf17c
+    // TODO: Implement
 }
 
 } // namespace cocos2d

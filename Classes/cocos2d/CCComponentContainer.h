@@ -1,5 +1,6 @@
 // ============================================================
-// CCComponentContainer.h — Reconstructed from libcocos2dcpp.so symbols
+// CCComponentContainer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCCOMPONENTCONTAINER_H_

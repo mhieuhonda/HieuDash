@@ -1,11 +1,13 @@
 // ============================================================
-// CCEditBox.h — Reconstructed from libcocos2dcpp.so symbols
+// CCEditBox.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCEDITBOX_H_
 #define COCOS2D_EXTENSION_CCEDITBOX_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 namespace extension {
@@ -54,6 +56,14 @@ public:
     void onEnter();
     void setFont(char const*, int);
     void setText(char const*);
+
+protected:
+    cocos2d::_ccColor3B m_fontColor;
+    std::string m_fontName;
+    cocos2d::_ccColor3B m_placeholderFontColor;
+    std::string m_placeholderFontName;
+    cocos2d::CCPoint m_position;
+    bool m_visible;
 
 };
 

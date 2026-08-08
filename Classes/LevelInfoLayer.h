@@ -1,5 +1,6 @@
 // ============================================================
-// LevelInfoLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelInfoLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELINFOLAYER_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class LevelInfoLayer {
+class LevelInfoLayer : public cocos2d::CCLayer {
 public:
     virtual ~LevelInfoLayer();
     virtual ~LevelInfoLayer();
@@ -28,7 +29,7 @@ public:
     void onViewProfile(cocos2d::CCObject*);
     void tryCloneLevel(cocos2d::CCObject*);
     void incrementLikes();
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onLevelOptions(cocos2d::CCObject*);
     void onRateStarsMod(cocos2d::CCObject*);
     void setupLevelInfo();
@@ -56,7 +57,7 @@ public:
     void setupPlatformerStats();
     void levelDownloadFinished(GJGameLevel*);
     void onEnterTransitionDidFinish();
-    void init(GJGameLevel*, bool);
+    void init(GJGameLevel*, bool) override;
     void scene(GJGameLevel*, bool);
     void create(GJGameLevel*, bool);
     void onBack(cocos2d::CCObject*);
@@ -74,6 +75,9 @@ public:
     void playStep3();
     void playStep4();
     void tryShowAd();
+
+protected:
+    int m_iDPopupClosed;
 
 };
 

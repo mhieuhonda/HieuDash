@@ -1,5 +1,6 @@
 // ============================================================
-// LevelPage.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelPage.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELPAGE_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class LevelPage {
+class LevelPage : public cocos2d::CCLayer {
 public:
     virtual ~LevelPage();
     virtual ~LevelPage();
@@ -15,18 +16,18 @@ public:
 
     void onTheTower(cocos2d::CCObject*);
     void onMoreGames(cocos2d::CCObject*);
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void dialogClosed(DialogLayer*);
     void onSecretDoor(cocos2d::CCObject*);
     void addSecretCoin();
     void addSecretDoor();
     void playCoinEffect();
-    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void updateDynamicPage(GJGameLevel*);
-    void registerWithTouchDispatcher();
-    void init(GJGameLevel*);
+    void registerWithTouchDispatcher() override;
+    void init(GJGameLevel*) override;
     void create(GJGameLevel*);
     void onInfo(cocos2d::CCObject*);
     void onPlay(cocos2d::CCObject*);

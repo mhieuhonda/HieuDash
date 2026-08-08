@@ -1,39 +1,46 @@
-// ============================================================
-// AppDelegate.h — Reconstructed from libcocos2dcpp.so symbols
-// ============================================================
-
-#ifndef APPDELEGATE_H_
-#define APPDELEGATE_H_
+#ifndef __APP_DELEGATE_H__
+#define __APP_DELEGATE_H__
 
 #include "cocos2d.h"
 
-class AppDelegate {
+/**
+ * @brief The main application delegate for GeometryDash (HieuDash decompilation).
+ *
+ * Sets up the Cocos2d-x director, design resolution, and loads the
+ * initial MenuLayer scene on launch.  Mirrors the original APK's
+ * AppDelegate compiled from the reverse-engineered source.
+ */
+class AppDelegate : public cocos2d::CCApplication
+{
 public:
-    virtual ~AppDelegate();
-    virtual ~AppDelegate();
+    AppDelegate();
     virtual ~AppDelegate();
 
-    void checkSound();
-    void pauseSound();
-    void resumeSound();
-    void setupGLView();
-    void trySaveGame(bool);
-    void platformShutdown();
-    void hideLoadingCircle();
-    void loadingIsFinished();
-    void showLoadingCircle(bool, bool, bool);
-    void willSwitchToScene(cocos2d::CCScene*);
-    void setIdleTimerDisabled(bool);
-    void applicationWillBecomeActive();
-    void applicationWillResignActive();
-    void applicationDidEnterBackground();
-    void applicationDidFinishLaunching();
-    void applicationWillEnterForeground();
-    void get();
-    void bgScale();
-    void musicTest();
-    void pauseGame();
+    /**
+     * @brief Called once the OS has finished launching the application.
+     *
+     * Configures the CCDirector (FPS, projection, design resolution),
+     * then replaces the running scene with MenuLayer.
+     *
+     * @return true on success, false to abort startup.
+     */
+    virtual bool applicationDidFinishLaunching();
 
+    /**
+     * @brief Called when the app transitions to the background
+     *        (e.g. user presses Home or switches apps).
+     *
+     * Pauses the CCDirector animation and stops all scheduled timers
+     * so the OS can reclaim CPU/GPU time.
+     */
+    virtual void applicationDidEnterBackground();
+
+    /**
+     * @brief Called when the app returns to the foreground.
+     *
+     * Resumes the CCDirector animation so rendering continues.
+     */
+    virtual void applicationWillEnterForeground();
 };
 
-#endif // APPDELEGATE_H_
+#endif // __APP_DELEGATE_H__

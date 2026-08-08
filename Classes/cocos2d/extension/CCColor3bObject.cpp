@@ -1,8 +1,6 @@
 // ============================================================
 // CCColor3bObject.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCColor3bObject.h"
@@ -11,15 +9,18 @@ namespace cocos2d {
 namespace extension {
 
 CCColor3bObject::~CCColor3bObject() {
-    // Destructor — 0xa9ad5c
+    // 0xa9ad5c
+    this->cleanup();
 }
 
 CCColor3bObject::~CCColor3bObject() {
-    // Destructor — 0xa9ad48
+    // 0xa9ad48
+    this->cleanup();
 }
 
 CCColor3bObject::~CCColor3bObject() {
-    // Destructor — 0xa9ad48
+    // 0xa9ad48
+    this->cleanup();
 }
 
 } // namespace extension

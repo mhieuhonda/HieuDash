@@ -1,5 +1,6 @@
 // ============================================================
-// SFXInfoObject.h — Reconstructed from libcocos2dcpp.so symbols
+// SFXInfoObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SFXINFOOBJECT_H_
@@ -16,6 +17,9 @@ public:
     void getLowerCaseName();
     void init(int, std::string, int, int, int);
     void create(int, std::string, int, int, int);
+
+protected:
+    std::string m_lowerCaseName;
 
 };
 

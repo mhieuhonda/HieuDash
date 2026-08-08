@@ -1,5 +1,6 @@
 // ============================================================
-// InfoLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// InfoLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef INFOLAYER_H_
@@ -52,6 +53,11 @@ public:
     void isCorrect(char const*);
     void onComment(cocos2d::CCObject*);
     void onSimilar(cocos2d::CCObject*);
+
+protected:
+    int m_accountID;
+    int m_iD;
+    int m_realID;
 
 };
 

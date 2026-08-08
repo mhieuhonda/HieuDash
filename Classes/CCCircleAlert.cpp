@@ -1,29 +1,41 @@
 // ============================================================
 // CCCircleAlert.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCCircleAlert.h"
 
 CCCircleAlert::~CCCircleAlert() {
-    // Destructor — 0x5a6050
+    // 0x5a6050
+    this->cleanup();
 }
 
 CCCircleAlert::~CCCircleAlert() {
-    // Destructor — 0x5a5fdc
+    // 0x5a5fdc
+    this->cleanup();
 }
 
 CCCircleAlert::~CCCircleAlert() {
-    // Destructor — 0x5a5fdc
+    // 0x5a5fdc
+    this->cleanup();
 }
 
 void CCCircleAlert::init(float, float, float) {
     // 0x5a6a48
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void CCCircleAlert::create(float, float, float) {
     // 0x5a6b48
+    CCCircleAlert* ret = new CCCircleAlert();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

@@ -1,8 +1,6 @@
 // ============================================================
 // CCSpriteExtra.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCSpriteExtra.h"
@@ -10,15 +8,18 @@
 namespace cocos2d {
 
 CCSpriteExtra::~CCSpriteExtra() {
-    // Destructor — 0xae2684
+    // 0xae2684
+    this->cleanup();
 }
 
 CCSpriteExtra::~CCSpriteExtra() {
-    // Destructor — 0xae2660
+    // 0xae2660
+    this->cleanup();
 }
 
 CCSpriteExtra::~CCSpriteExtra() {
-    // Destructor — 0xae2660
+    // 0xae2660
+    this->cleanup();
 }
 
 } // namespace cocos2d

@@ -1,5 +1,6 @@
 // ============================================================
-// string_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// string_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<STD_STRING, STD_STRING, STD__IDENTITY<STD_STRING>, STD_LESS<STD_STRING>, STD_ALLOCATOR<STD_STRING_ __H_

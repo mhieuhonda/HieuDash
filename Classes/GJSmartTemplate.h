@@ -1,5 +1,6 @@
 // ============================================================
-// GJSmartTemplate.h — Reconstructed from libcocos2dcpp.so symbols
+// GJSmartTemplate.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJSMARTTEMPLATE_H_
@@ -58,6 +59,12 @@ public:
     void getPrefab(std::string, bool, bool);
     void rotateKey(std::string, int);
     void saveRemap(std::string);
+
+protected:
+    std::string m_noCornerKey;
+    int m_prefabWithID;
+    std::string m_simplifiedKey;
+    std::string m_verySimplifiedKey;
 
 };
 

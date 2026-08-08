@@ -1,8 +1,6 @@
 // ============================================================
 // Array_wchar_t, 500ul_.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "Array_wchar_t, 500ul_.h"
@@ -12,10 +10,12 @@ namespace internal {
 
 void Array<wchar_t, 500ul>::grow(unsigned long) {
     // 0xb68338
+    // TODO: Implement
 }
 
 void Array<wchar_t, 500ul>::append(wchar_t const*, wchar_t const*) {
     // 0xb6871c
+    // TODO: Implement
 }
 
 } // namespace internal

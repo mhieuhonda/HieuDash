@@ -1,5 +1,6 @@
 // ============================================================
-// CCUserDefault.h — Reconstructed from libcocos2dcpp.so symbols
+// CCUserDefault.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCUSERDEFAULT_H_
@@ -40,6 +41,13 @@ public:
     void sharedUserDefault();
     void purgeSharedUserDefault();
     void flush();
+
+protected:
+    std::string m_boolForKey;
+    std::string m_doubleForKey;
+    std::string m_floatForKey;
+    std::string m_integerForKey;
+    std::string m_stringForKey;
 
 };
 

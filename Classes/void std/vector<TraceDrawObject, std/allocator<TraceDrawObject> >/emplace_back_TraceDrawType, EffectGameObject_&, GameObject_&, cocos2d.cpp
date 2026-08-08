@@ -1,8 +1,6 @@
 // ============================================================
 // emplace_back_TraceDrawType, EffectGameObject_&, GameObject_&, cocos2d.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "emplace_back_TraceDrawType, EffectGameObject_&, GameObject_&, cocos2d.h"
@@ -13,6 +11,7 @@ namespace allocator<TraceDrawObject> > {
 
 void emplace_back<TraceDrawType, EffectGameObject*&, GameObject*&, cocos2d::_ccColor4F>(TraceDrawType&&, EffectGameObject*&, GameObject*&, cocos2d::_ccColor4F&&) {
     // 0x66b5ac
+    // TODO: Implement
 }
 
 } // namespace allocator<TraceDrawObject> >

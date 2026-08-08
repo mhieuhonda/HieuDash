@@ -1,5 +1,6 @@
 // ============================================================
-// CCLayerGradient.h — Reconstructed from libcocos2dcpp.so symbols
+// CCLayerGradient.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCLAYERGRADIENT_H_
@@ -36,6 +37,10 @@ public:
     void getVector();
     void setValues(cocos2d::_ccColor3B const&, unsigned char, cocos2d::_ccColor3B const&, unsigned char, cocos2d::CCPoint const&);
     void setVector(cocos2d::CCPoint const&);
+
+protected:
+    cocos2d::_ccColor3B m_endColor;
+    cocos2d::_ccColor3B m_startColor;
 
 };
 

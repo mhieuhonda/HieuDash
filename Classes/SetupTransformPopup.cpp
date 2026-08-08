@@ -1,29 +1,41 @@
 // ============================================================
 // SetupTransformPopup.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SetupTransformPopup.h"
 
 SetupTransformPopup::~SetupTransformPopup() {
-    // Destructor — 0x9a8890
+    // 0x9a8890
+    this->cleanup();
 }
 
 SetupTransformPopup::~SetupTransformPopup() {
-    // Destructor — 0x9a8824
+    // 0x9a8824
+    this->cleanup();
 }
 
 SetupTransformPopup::~SetupTransformPopup() {
-    // Destructor — 0x9a8824
+    // 0x9a8824
+    this->cleanup();
 }
 
 void SetupTransformPopup::init(TransformTriggerGameObject*, cocos2d::CCArray*) {
     // 0x9a891c
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SetupTransformPopup::create(TransformTriggerGameObject*, cocos2d::CCArray*) {
     // 0x9a9558
+    SetupTransformPopup* ret = new SetupTransformPopup();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

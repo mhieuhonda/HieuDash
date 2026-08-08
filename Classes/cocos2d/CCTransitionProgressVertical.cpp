@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionProgressVertical.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionProgressVertical.h"
@@ -10,23 +8,34 @@
 namespace cocos2d {
 
 CCTransitionProgressVertical::~CCTransitionProgressVertical() {
-    // Destructor — 0xaf1074
+    // 0xaf1074
+    this->cleanup();
 }
 
 CCTransitionProgressVertical::~CCTransitionProgressVertical() {
-    // Destructor — 0xaf1060
+    // 0xaf1060
+    this->cleanup();
 }
 
 CCTransitionProgressVertical::~CCTransitionProgressVertical() {
-    // Destructor — 0xaf1060
+    // 0xaf1060
+    this->cleanup();
 }
 
 void CCTransitionProgressVertical::progressTimerNodeWithRenderTexture(cocos2d::CCRenderTexture*) {
     // 0xaf0bf0
+    // TODO: Implement
 }
 
 void CCTransitionProgressVertical::create(float, cocos2d::CCScene*) {
     // 0xaf13f8
+    CCTransitionProgressVertical* ret = new CCTransitionProgressVertical();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

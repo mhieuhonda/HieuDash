@@ -1,5 +1,6 @@
 // ============================================================
-// PrepareBufferForInt_fmt.h — Reconstructed from libcocos2dcpp.so symbols
+// PrepareBufferForInt_fmt.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CHAR* FMT_BASICWRITER<CHAR>_PREPAREBUFFERFORINT_FMT_H_

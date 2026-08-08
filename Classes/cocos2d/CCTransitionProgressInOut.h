@@ -1,5 +1,6 @@
 // ============================================================
-// CCTransitionProgressInOut.h — Reconstructed from libcocos2dcpp.so symbols
+// CCTransitionProgressInOut.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCTRANSITIONPROGRESSINOUT_H_

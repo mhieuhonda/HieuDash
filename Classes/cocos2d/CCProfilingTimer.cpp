@@ -1,8 +1,6 @@
 // ============================================================
 // CCProfilingTimer.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCProfilingTimer.h"
@@ -10,35 +8,41 @@
 namespace cocos2d {
 
 CCProfilingTimer::CCProfilingTimer() {
-    // Constructor — 0xb1e968
+    // 0xb1e968
 }
 
 CCProfilingTimer::CCProfilingTimer() {
-    // Constructor — 0xb1e968
+    // 0xb1e968
 }
 
 CCProfilingTimer::~CCProfilingTimer() {
-    // Destructor — 0xb1e754
+    // 0xb1e754
+    this->cleanup();
 }
 
 CCProfilingTimer::~CCProfilingTimer() {
-    // Destructor — 0xb1e69c
+    // 0xb1e69c
+    this->cleanup();
 }
 
 CCProfilingTimer::~CCProfilingTimer() {
-    // Destructor — 0xb1e69c
+    // 0xb1e69c
+    this->cleanup();
 }
 
 void CCProfilingTimer::description() {
     // 0xb1ead0
+    // TODO: Implement
 }
 
 void CCProfilingTimer::initWithName(char const*) {
     // 0xb1e92c
+    // TODO: Implement
 }
 
 void CCProfilingTimer::reset() {
     // 0xb1eb40
+    // TODO: Implement
 }
 
 } // namespace cocos2d

@@ -1,33 +1,37 @@
 // ============================================================
 // CCSpriteCOpacity.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCSpriteCOpacity.h"
 
 CCSpriteCOpacity::~CCSpriteCOpacity() {
-    // Destructor — 0x5a8040
+    // 0x5a8040
+    this->cleanup();
 }
 
 CCSpriteCOpacity::~CCSpriteCOpacity() {
-    // Destructor — 0x5a7ff8
+    // 0x5a7ff8
+    this->cleanup();
 }
 
 CCSpriteCOpacity::~CCSpriteCOpacity() {
-    // Destructor — 0x5a7ff8
+    // 0x5a7ff8
+    this->cleanup();
 }
 
 void CCSpriteCOpacity::setOpacity(unsigned char) {
     // 0x5a80a4
+    // TODO: Implement
 }
 
 void CCSpriteCOpacity::createWithSpriteFrame(cocos2d::CCSpriteFrame*) {
     // 0x5a871c
+    // TODO: Implement
 }
 
 void CCSpriteCOpacity::createWithSpriteFrameName(char const*) {
     // 0x5a87c4
+    // TODO: Implement
 }
 

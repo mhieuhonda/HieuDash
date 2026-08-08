@@ -1,5 +1,6 @@
 // ============================================================
-// __ops.h — Reconstructed from libcocos2dcpp.so symbols
+// __ops.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD___POP_HEAP<__GNU_CXX___NORMAL_ITERATOR<COUNTTRIGGERACTION*, STD_VECTOR<COUNTTRIGGERACTION, STD_ALLOCATOR<COUNTTRIGGERACTION> > >, __GNU_CXX___OPS_H_

@@ -1,5 +1,6 @@
 // ============================================================
-// CCDictionary.h — Reconstructed from libcocos2dcpp.so symbols
+// CCDictionary.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCDICTIONARY_H_
@@ -45,6 +46,9 @@ public:
     void allKeys();
     void setObject(cocos2d::CCObject*, std::string const&);
     void setObject(cocos2d::CCObject*, long);
+
+protected:
+    std::string m_firstKey;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// vector_unsigned short, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_unsigned short, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<UNSIGNED SHORT, STD_ALLOCATOR<UNSIGNED SHORT> >__M_RANGE_INSERT<__GNU_CXX___NORMAL_ITERATOR<UNSIGNED SHORT*, STD_VECTOR_UNSIGNED SHORT, STD_H_

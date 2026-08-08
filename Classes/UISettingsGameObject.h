@@ -1,5 +1,6 @@
 // ============================================================
-// UISettingsGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// UISettingsGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef UISETTINGSGAMEOBJECT_H_
@@ -18,6 +19,9 @@ public:
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init();
     void create();
+
+protected:
+    std::string m_saveString;
 
 };
 

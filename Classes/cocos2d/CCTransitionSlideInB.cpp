@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionSlideInB.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionSlideInB.h"
@@ -10,39 +8,52 @@
 namespace cocos2d {
 
 CCTransitionSlideInB::CCTransitionSlideInB() {
-    // Constructor — 0xaee470
+    // 0xaee470
 }
 
 CCTransitionSlideInB::CCTransitionSlideInB() {
-    // Constructor — 0xaee470
+    // 0xaee470
 }
 
 CCTransitionSlideInB::~CCTransitionSlideInB() {
-    // Destructor — 0xaecf68
+    // 0xaecf68
+    this->cleanup();
 }
 
 CCTransitionSlideInB::~CCTransitionSlideInB() {
-    // Destructor — 0xaeccb8
+    // 0xaeccb8
+    this->cleanup();
 }
 
 CCTransitionSlideInB::~CCTransitionSlideInB() {
-    // Destructor — 0xaeccb8
+    // 0xaeccb8
+    this->cleanup();
 }
 
 void CCTransitionSlideInB::initScenes() {
     // 0xaed7cc
+    // TODO: Implement
 }
 
 void CCTransitionSlideInB::sceneOrder() {
     // 0xaeca98
+    // TODO: Implement
 }
 
 void CCTransitionSlideInB::action() {
     // 0xaeda74
+    // TODO: Implement
 }
 
 void CCTransitionSlideInB::create(float, cocos2d::CCScene*) {
     // 0xaee4a8
+    CCTransitionSlideInB* ret = new CCTransitionSlideInB();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

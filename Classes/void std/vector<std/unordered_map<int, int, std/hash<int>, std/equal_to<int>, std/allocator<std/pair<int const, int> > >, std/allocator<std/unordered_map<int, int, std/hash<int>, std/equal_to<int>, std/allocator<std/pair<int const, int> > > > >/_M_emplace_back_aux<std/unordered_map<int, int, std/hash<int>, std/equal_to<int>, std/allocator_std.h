@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_std.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<STD_UNORDERED_MAP<INT, INT, STD_HASH<INT>, STD_EQUAL_TO<INT>, STD_ALLOCATOR<STD_PAIR<INT CONST, INT> > >, STD_ALLOCATOR<STD_UNORDERED_MAP<INT, INT, STD_HASH<INT>, STD_EQUAL_TO<INT>, STD_ALLOCATOR<STD_PAIR<INT CONST, INT> > > > >__M_EMPLACE_BACK_AUX<STD_UNORDERED_MAP<INT, INT, STD_HASH<INT>, STD_EQUAL_TO<INT>, STD_ALLOCATOR_STD_H_

@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionRotoZoom.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionRotoZoom.h"
@@ -10,31 +8,42 @@
 namespace cocos2d {
 
 CCTransitionRotoZoom::CCTransitionRotoZoom() {
-    // Constructor — 0xaede2c
+    // 0xaede2c
 }
 
 CCTransitionRotoZoom::CCTransitionRotoZoom() {
-    // Constructor — 0xaede2c
+    // 0xaede2c
 }
 
 CCTransitionRotoZoom::~CCTransitionRotoZoom() {
-    // Destructor — 0xaece24
+    // 0xaece24
+    this->cleanup();
 }
 
 CCTransitionRotoZoom::~CCTransitionRotoZoom() {
-    // Destructor — 0xaecbcc
+    // 0xaecbcc
+    this->cleanup();
 }
 
 CCTransitionRotoZoom::~CCTransitionRotoZoom() {
-    // Destructor — 0xaecbcc
+    // 0xaecbcc
+    this->cleanup();
 }
 
 void CCTransitionRotoZoom::create(float, cocos2d::CCScene*) {
     // 0xaede5c
+    CCTransitionRotoZoom* ret = new CCTransitionRotoZoom();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionRotoZoom::onEnter() {
     // 0xaef07c
+    // TODO: Implement
 }
 
 } // namespace cocos2d

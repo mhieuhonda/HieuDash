@@ -1,5 +1,6 @@
 // ============================================================
-// ProfilePage.h — Reconstructed from libcocos2dcpp.so symbols
+// ProfilePage.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PROFILEPAGE_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class ProfilePage {
+class ProfilePage : public cocos2d::CCLayer {
 public:
     virtual ~ProfilePage();
     virtual ~ProfilePage();
@@ -30,7 +31,7 @@ public:
     void onSendMessage(cocos2d::CCObject*);
     void setupComments();
     void setupPageInfo(std::string, char const*);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void userInfoChanged(GJUserScore*);
     void onCommentHistory(cocos2d::CCObject*);
@@ -51,8 +52,8 @@ public:
     void updateUserScoreFailed();
     void updateUserScoreFinished();
     void toggleMainPageVisibility(bool);
-    void registerWithTouchDispatcher();
-    void init(int, bool);
+    void registerWithTouchDispatcher() override;
+    void init(int, bool) override;
     void show();
     void create(int, bool);
     void onInfo(cocos2d::CCObject*);

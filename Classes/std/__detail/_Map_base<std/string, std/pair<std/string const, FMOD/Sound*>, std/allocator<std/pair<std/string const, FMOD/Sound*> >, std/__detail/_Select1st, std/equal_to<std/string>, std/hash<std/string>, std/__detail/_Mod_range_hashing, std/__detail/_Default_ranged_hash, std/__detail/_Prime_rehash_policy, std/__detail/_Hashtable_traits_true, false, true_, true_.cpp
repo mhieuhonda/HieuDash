@@ -1,8 +1,6 @@
 // ============================================================
 // _Hashtable_traits_true, false, true_, true_.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_Hashtable_traits_true, false, true_, true_.h"
@@ -34,6 +32,7 @@ namespace __detail {
 
 void _Hashtable_traits<true, false, true>, true>::operator[](std::string const&) {
     // 0x5b1f10
+    // TODO: Implement
 }
 
 } // namespace __detail

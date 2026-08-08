@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_TouchToggleAction_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_TouchToggleAction_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<TOUCHTOGGLEACTION, STD_ALLOCATOR_TOUCHTOGGLEACTION_ __H_

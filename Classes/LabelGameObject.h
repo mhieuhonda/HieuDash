@@ -1,5 +1,6 @@
 // ============================================================
-// LabelGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// LabelGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LABELGAMEOBJECT_H_
@@ -35,6 +36,10 @@ public:
     void addMainSpriteToParent(bool);
     void init();
     void create();
+
+protected:
+    cocos2d::_ccColor3B m_objectColor;
+    std::string m_saveString;
 
 };
 

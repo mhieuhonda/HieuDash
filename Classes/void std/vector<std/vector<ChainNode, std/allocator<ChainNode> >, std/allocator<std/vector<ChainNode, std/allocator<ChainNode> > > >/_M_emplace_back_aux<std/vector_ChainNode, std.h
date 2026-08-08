@@ -1,5 +1,6 @@
 // ============================================================
-// vector_ChainNode, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_ChainNode, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<STD_VECTOR<CHAINNODE, STD_ALLOCATOR<CHAINNODE> >, STD_ALLOCATOR<STD_VECTOR<CHAINNODE, STD_ALLOCATOR<CHAINNODE> > > >__M_EMPLACE_BACK_AUX<STD_VECTOR_CHAINNODE, STD_H_

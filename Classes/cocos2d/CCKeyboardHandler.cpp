@@ -1,8 +1,6 @@
 // ============================================================
 // CCKeyboardHandler.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCKeyboardHandler.h"
@@ -10,31 +8,38 @@
 namespace cocos2d {
 
 CCKeyboardHandler::~CCKeyboardHandler() {
-    // Destructor — 0xb40950
+    // 0xb40950
+    this->cleanup();
 }
 
 CCKeyboardHandler::~CCKeyboardHandler() {
-    // Destructor — 0xb408fc
+    // 0xb408fc
+    this->cleanup();
 }
 
 CCKeyboardHandler::~CCKeyboardHandler() {
-    // Destructor — 0xb408fc
+    // 0xb408fc
+    this->cleanup();
 }
 
 void CCKeyboardHandler::getDelegate() {
     // 0xb409c4
+    // TODO: Implement
 }
 
 void CCKeyboardHandler::setDelegate(cocos2d::CCKeyboardDelegate*) {
     // 0xb409cc
+    // TODO: Implement
 }
 
 void CCKeyboardHandler::initWithDelegate(cocos2d::CCKeyboardDelegate*) {
     // 0xb40974
+    // TODO: Implement
 }
 
 void CCKeyboardHandler::handlerWithDelegate(cocos2d::CCKeyboardDelegate*) {
     // 0xb40a38
+    // TODO: Implement
 }
 
 } // namespace cocos2d

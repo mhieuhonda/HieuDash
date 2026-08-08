@@ -1,5 +1,6 @@
 // ============================================================
-// CustomSFXCell.h — Reconstructed from libcocos2dcpp.so symbols
+// CustomSFXCell.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CUSTOMSFXCELL_H_
@@ -21,6 +22,9 @@ public:
     void sfxObjectSelected(SFXInfoObject*);
     void draw();
     void init();
+
+protected:
+    int m_activeSFXID;
 
 };
 

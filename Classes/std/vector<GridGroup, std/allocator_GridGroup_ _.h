@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_GridGroup_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_GridGroup_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<GRIDGROUP, STD_ALLOCATOR_GRIDGROUP_ __H_

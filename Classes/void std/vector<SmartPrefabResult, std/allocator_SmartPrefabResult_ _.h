@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_SmartPrefabResult_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_SmartPrefabResult_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<SMARTPREFABRESULT, STD_ALLOCATOR_SMARTPREFABRESULT_ __H_

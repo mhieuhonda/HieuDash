@@ -1,5 +1,6 @@
 // ============================================================
-// CCLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// CCLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCLAYER_H_
@@ -61,6 +62,13 @@ public:
     void onExit();
     void keyDown(cocos2d::enumKeyCodes, double);
     void onEnter();
+
+protected:
+    bool m_accelerometerEnabled;
+    bool m_keyboardEnabled;
+    bool m_keypadEnabled;
+    bool m_mouseEnabled;
+    bool m_touchEnabled;
 
 };
 

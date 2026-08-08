@@ -1,5 +1,6 @@
 // ============================================================
-// CCTouchHandler.h — Reconstructed from libcocos2dcpp.so symbols
+// CCTouchHandler.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCTOUCHHANDLER_H_
@@ -23,6 +24,9 @@ public:
     void getEnabledSelectors();
     void handlerWithDelegate(cocos2d::CCTouchDelegate*, int);
     void setEnalbedSelectors(int);
+
+protected:
+    bool m_enabledSelectors;
 
 };
 

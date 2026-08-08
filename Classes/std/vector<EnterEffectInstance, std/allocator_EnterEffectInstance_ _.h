@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_EnterEffectInstance_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_EnterEffectInstance_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<ENTEREFFECTINSTANCE, STD_ALLOCATOR_ENTEREFFECTINSTANCE_ __H_

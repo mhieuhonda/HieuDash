@@ -1,5 +1,6 @@
 // ============================================================
-// GManager.h — Reconstructed from libcocos2dcpp.so symbols
+// GManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GMANAGER_H_
@@ -28,6 +29,10 @@ public:
     void saveData(DS_Dictionary*, std::string);
     void saveGMTo(std::string);
     void firstLoad();
+
+protected:
+    std::string m_compressedSaveString;
+    std::string m_saveString;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_unsigned int_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_unsigned int_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<UNSIGNED INT, STD_ALLOCATOR_UNSIGNED INT_ __H_

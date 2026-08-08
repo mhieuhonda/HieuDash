@@ -1,5 +1,6 @@
 // ============================================================
-// ColorAction.h — Reconstructed from libcocos2dcpp.so symbols
+// ColorAction.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COLORACTION_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class ColorAction {
+class ColorAction : public cocos2d::CCObject {
 public:
     virtual ~ColorAction();
     virtual ~ColorAction();
@@ -21,7 +22,7 @@ public:
     void setupFromString(std::string);
     void writeSaveString(fmt::BasicWriter<char>&);
     void updateCustomColor(cocos2d::_ccColor3B, cocos2d::_ccColor3B);
-    void init(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool, int, float, float);
+    void init(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool, int, float, float) override;
     void step(float);
     void create(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool);
     void create(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool, int, float, float);

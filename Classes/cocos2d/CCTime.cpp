@@ -1,8 +1,6 @@
 // ============================================================
 // CCTime.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTime.h"
@@ -11,10 +9,12 @@ namespace cocos2d {
 
 void CCTime::timersubCocos2d(cocos2d::cc_timeval*, cocos2d::cc_timeval*) {
     // 0xb09b18
+    // TODO: Implement
 }
 
 void CCTime::gettimeofdayCocos2d(cocos2d::cc_timeval*, void*) {
     // 0xb09af4
+    // TODO: Implement
 }
 
 } // namespace cocos2d

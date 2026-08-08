@@ -1,8 +1,6 @@
 // ============================================================
 // _M_emplace_back_aux_pugi.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_M_emplace_back_aux_pugi.h"
@@ -15,10 +13,12 @@ namespace xml_node> > {
 
 void _M_emplace_back_aux<pugi::xml_node const&>(pugi::xml_node const&) {
     // 0xb45e04
+    // TODO: Implement
 }
 
 void _M_emplace_back_aux<pugi::xml_node>(pugi::xml_node&&) {
     // 0xb47898
+    // TODO: Implement
 }
 
 } // namespace xml_node> >

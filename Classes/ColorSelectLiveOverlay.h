@@ -1,5 +1,6 @@
 // ============================================================
-// ColorSelectLiveOverlay.h — Reconstructed from libcocos2dcpp.so symbols
+// ColorSelectLiveOverlay.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COLORSELECTLIVEOVERLAY_H_
@@ -34,6 +35,9 @@ public:
     void init(ColorAction*, ColorAction*, EffectGameObject*);
     void show();
     void create(ColorAction*, ColorAction*, EffectGameObject*);
+
+protected:
+    cocos2d::_ccColor3B m_colorValue;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// LevelBrowserLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelBrowserLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELBROWSERLAYER_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class LevelBrowserLayer {
+class LevelBrowserLayer : public cocos2d::CCLayer {
 public:
     virtual ~LevelBrowserLayer();
     virtual ~LevelBrowserLayer();
@@ -21,9 +22,9 @@ public:
     void onFavorites(cocos2d::CCObject*);
     void onLocalMode(cocos2d::CCObject*);
     void onSavedMode(cocos2d::CCObject*);
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void onGoToFolder(cocos2d::CCObject*);
     void createNewList(cocos2d::CCObject*);
     void onClearSearch(cocos2d::CCObject*);
@@ -31,12 +32,12 @@ public:
     void createNewLevel(cocos2d::CCObject*);
     void deleteSelected();
     void getSearchTitle();
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onGoToLastPage(cocos2d::CCObject*);
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void setSearchObject(GJSearchObject*);
     void updatePageLabel();
-    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void loadLevelsFailed(char const*, int);
     void onDeleteSelected(cocos2d::CCObject*);
     void onMyOnlineLevels(cocos2d::CCObject*);
@@ -54,8 +55,8 @@ public:
     void createNewSmartTemplate(cocos2d::CCObject*);
     void getItemsMatchingSearch(cocos2d::CCArray*, std::string, GJSearchObject*);
     void onEnterTransitionDidFinish();
-    void registerWithTouchDispatcher();
-    void init(GJSearchObject*);
+    void registerWithTouchDispatcher() override;
+    void init(GJSearchObject*) override;
     void show();
     void onNew(cocos2d::CCObject*);
     void scene(GJSearchObject*);
@@ -64,13 +65,16 @@ public:
     void onHelp(cocos2d::CCObject*);
     void onInfo(cocos2d::CCObject*);
     void keyDown(cocos2d::enumKeyCodes, double);
-    void onEnter();
+    void onEnter() override;
     void onSaved(cocos2d::CCObject*);
     void loadPage(GJSearchObject*);
     void onSearch(cocos2d::CCObject*);
     void exitLayer(cocos2d::CCObject*);
     void isCorrect(char const*);
     void onRefresh(cocos2d::CCObject*);
+
+protected:
+    int m_iDPopupClosed;
 
 };
 

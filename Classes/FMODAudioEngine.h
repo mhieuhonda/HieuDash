@@ -1,15 +1,19 @@
 // ============================================================
-// FMODAudioEngine.h — Reconstructed from libcocos2dcpp.so symbols
+// FMODAudioEngine.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef FMODAUDIOENGINE_H_
 #define FMODAUDIOENGINE_H_
 
+#include "cocos2d.h"
+#include "fmod.hpp"
 #include <string>
 #include <unordered_set>
 
-class FMODAudioEngine {
+class FMODAudioEngine : public cocos2d::CCNode {
 public:
+    static FMODAudioEngine* create();
     virtual ~FMODAudioEngine();
     virtual ~FMODAudioEngine();
     virtual ~FMODAudioEngine();
@@ -118,12 +122,27 @@ public:
     void stop();
     void setup();
     void start();
-    void update(float);
+    void update(float) override;
     void fadeMusic(float, int, float, float);
     void loadMusic(std::string);
     void loadMusic(std::string, float, float, float, bool, int, int, bool);
     void playMusic(std::string, bool, float, int);
     void stopMusic(int);
+
+protected:
+    bool m_activeMusic;
+    bool m_activeMusicChannel;
+    bool m_isFading;
+    bool m_isMusicPlaying;
+    FMOD::Channel* m_musicChannel;
+    int m_musicChannelID;
+    int m_musicID;
+    std::string m_musicPath;
+    float m_musicVolume;
+    int m_nextChannelID;
+    FMOD::ChannelGroup* m_sfxChannelGroup;
+    float m_sfxVolume;
+    FMOD::System* m_system;
 
 };
 

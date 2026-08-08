@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_KeyframeObject_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_KeyframeObject_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<KEYFRAMEOBJECT, STD_ALLOCATOR_KEYFRAMEOBJECT_ __H_

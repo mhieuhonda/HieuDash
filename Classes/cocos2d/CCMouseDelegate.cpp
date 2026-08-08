@@ -1,8 +1,6 @@
 // ============================================================
 // CCMouseDelegate.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCMouseDelegate.h"
@@ -11,14 +9,17 @@ namespace cocos2d {
 
 void CCMouseDelegate::rightKeyUp() {
     // 0x56baa8
+    // TODO: Implement
 }
 
 void CCMouseDelegate::scrollWheel(float, float) {
     // 0x56baac
+    // TODO: Implement
 }
 
 void CCMouseDelegate::rightKeyDown() {
     // 0x56baa4
+    // TODO: Implement
 }
 
 } // namespace cocos2d

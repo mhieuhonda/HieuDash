@@ -1,8 +1,6 @@
 // ============================================================
 // CCDictMaker.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCDictMaker.h"
@@ -11,14 +9,17 @@ namespace cocos2d {
 
 void CCDictMaker::endElement(void*, char const*) {
     // 0xb0489c
+    // TODO: Implement
 }
 
 void CCDictMaker::textHandler(void*, char const*, int) {
     // 0xb04d38
+    // TODO: Implement
 }
 
 void CCDictMaker::startElement(void*, char const*, char const**) {
     // 0xb08acc
+    // TODO: Implement
 }
 
 } // namespace cocos2d

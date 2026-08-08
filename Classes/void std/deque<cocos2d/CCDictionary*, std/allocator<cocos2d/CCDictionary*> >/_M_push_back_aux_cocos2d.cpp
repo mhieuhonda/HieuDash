@@ -1,8 +1,6 @@
 // ============================================================
 // _M_push_back_aux_cocos2d.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_M_push_back_aux_cocos2d.h"
@@ -15,6 +13,7 @@ namespace CCDictionary*> > {
 
 void _M_push_back_aux<cocos2d::CCDictionary* const&>(cocos2d::CCDictionary* const&) {
     // 0xb0876c
+    // TODO: Implement
 }
 
 } // namespace CCDictionary*> >

@@ -1,8 +1,6 @@
 // ============================================================
 // CCFadeOut.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCFadeOut.h"
@@ -10,31 +8,45 @@
 namespace cocos2d {
 
 CCFadeOut::~CCFadeOut() {
-    // Destructor — 0xabf630
+    // 0xabf630
+    this->cleanup();
 }
 
 CCFadeOut::~CCFadeOut() {
-    // Destructor — 0xabf61c
+    // 0xabf61c
+    this->cleanup();
 }
 
 CCFadeOut::~CCFadeOut() {
-    // Destructor — 0xabf61c
+    // 0xabf61c
+    this->cleanup();
 }
 
 void CCFadeOut::copyWithZone(cocos2d::CCZone*) {
     // 0xac1324
+    // TODO: Implement
 }
 
 void CCFadeOut::create(float) {
     // 0xac38d0
+    CCFadeOut* ret = new CCFadeOut();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCFadeOut::update(float) {
     // 0xabfd04
+    // Game update loop — called every frame
+    // TODO: Implement game logic update
 }
 
 void CCFadeOut::reverse() {
     // 0xac38c8
+    // TODO: Implement
 }
 
 } // namespace cocos2d

@@ -1,8 +1,6 @@
 // ============================================================
 // _Hashtable_traits_false, false, true_ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_Hashtable_traits_false, false, true_ _.h"
@@ -26,34 +24,42 @@ namespace __detail {
 
 void _Hashtable_traits<false, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<const int, int>, false>*) {
     // 0x5b145c
+    // TODO: Implement
 }
 
 void _Hashtable_traits<false, false, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<std::pair<const int, int>, false>*) {
     // 0x8b7738
+    // TODO: Implement
 }
 
 void _Hashtable_traits<false, false, true> >::_M_rehash(unsigned long, unsigned long const&) {
     // 0x6741a4
+    // TODO: Implement
 }
 
 void _Hashtable_traits<false, false, true> >::_Hashtable(std::_Hashtable<int, std::pair<const int, int>, std::allocator<std::pair<const int, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >&&) {
     // 0x892a0c
+    // TODO: Implement
 }
 
 void _Hashtable_traits<false, false, true> >::_Hashtable(std::_Hashtable<int, std::pair<const int, int>, std::allocator<std::pair<const int, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >&&) {
     // 0x892a0c
+    // TODO: Implement
 }
 
 void _Hashtable_traits<false, false, true> >::~_Hashtable() {
     // 0x5acb14
+    // TODO: Implement
 }
 
 void _Hashtable_traits<false, false, true> >::~_Hashtable() {
     // 0x5acb14
+    // TODO: Implement
 }
 
 void _Hashtable_traits<false, false, true> >::operator=(std::_Hashtable<int, std::pair<const int, int>, std::allocator<std::pair<const int, int> >, std::__detail::_Select1st, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> > const&) {
     // 0x5d8b4c
+    // TODO: Implement
 }
 
 } // namespace __detail

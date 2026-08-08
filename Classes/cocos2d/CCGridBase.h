@@ -1,5 +1,6 @@
 // ============================================================
-// CCGridBase.h — Reconstructed from libcocos2dcpp.so symbols
+// CCGridBase.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCGRIDBASE_H_
@@ -27,6 +28,9 @@ public:
     void create(cocos2d::CCSize const&, cocos2d::CCTexture2D*, bool);
     void afterDraw(cocos2d::CCNode*);
     void setActive(bool);
+
+protected:
+    bool m_active;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// EnhancedGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// EnhancedGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ENHANCEDGAMEOBJECT_H_
@@ -47,6 +48,9 @@ public:
     void hasBeenActivatedByPlayer(PlayerObject*);
     void init(char const*);
     void create(char const*);
+
+protected:
+    std::string m_saveString;
 
 };
 

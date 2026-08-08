@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_int_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_int_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_PAIR<STD__RB_TREE_ITERATOR<INT>, BOOL> STD__RB_TREE<INT, INT, STD__IDENTITY<INT>, STD_LESS<INT>, STD_ALLOCATOR_INT_ __H_

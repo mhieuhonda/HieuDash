@@ -1,11 +1,13 @@
 // ============================================================
-// CCLabelTTF.h — Reconstructed from libcocos2dcpp.so symbols
+// CCLabelTTF.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCLABELTTF_H_
 #define COCOS2D_CCLABELTTF_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -51,6 +53,11 @@ public:
     void create();
     void getString();
     void setString(char const*);
+
+protected:
+    cocos2d::_ccColor3B m_fontFillColor;
+    std::string m_fontName;
+    std::string m_string;
 
 };
 

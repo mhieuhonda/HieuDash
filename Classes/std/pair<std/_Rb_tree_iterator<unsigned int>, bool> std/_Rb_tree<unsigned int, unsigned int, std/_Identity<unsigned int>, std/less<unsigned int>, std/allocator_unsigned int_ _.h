@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_unsigned int_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_unsigned int_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_PAIR<STD__RB_TREE_ITERATOR<UNSIGNED INT>, BOOL> STD__RB_TREE<UNSIGNED INT, UNSIGNED INT, STD__IDENTITY<UNSIGNED INT>, STD_LESS<UNSIGNED INT>, STD_ALLOCATOR_UNSIGNED INT_ __H_

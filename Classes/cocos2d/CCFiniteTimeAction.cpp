@@ -1,8 +1,6 @@
 // ============================================================
 // CCFiniteTimeAction.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCFiniteTimeAction.h"
@@ -10,19 +8,23 @@
 namespace cocos2d {
 
 CCFiniteTimeAction::~CCFiniteTimeAction() {
-    // Destructor — 0xab3c04
+    // 0xab3c04
+    this->cleanup();
 }
 
 CCFiniteTimeAction::~CCFiniteTimeAction() {
-    // Destructor — 0xab3bcc
+    // 0xab3bcc
+    this->cleanup();
 }
 
 CCFiniteTimeAction::~CCFiniteTimeAction() {
-    // Destructor — 0xab3bcc
+    // 0xab3bcc
+    this->cleanup();
 }
 
 void CCFiniteTimeAction::reverse() {
     // 0xab3abc
+    // TODO: Implement
 }
 
 } // namespace cocos2d

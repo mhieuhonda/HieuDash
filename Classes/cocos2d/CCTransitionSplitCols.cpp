@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionSplitCols.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionSplitCols.h"
@@ -10,39 +8,52 @@
 namespace cocos2d {
 
 CCTransitionSplitCols::CCTransitionSplitCols() {
-    // Constructor — 0xaeeb60
+    // 0xaeeb60
 }
 
 CCTransitionSplitCols::CCTransitionSplitCols() {
-    // Constructor — 0xaeeb60
+    // 0xaeeb60
 }
 
 CCTransitionSplitCols::~CCTransitionSplitCols() {
-    // Destructor — 0xaed0f4
+    // 0xaed0f4
+    this->cleanup();
 }
 
 CCTransitionSplitCols::~CCTransitionSplitCols() {
-    // Destructor — 0xaecd34
+    // 0xaecd34
+    this->cleanup();
 }
 
 CCTransitionSplitCols::~CCTransitionSplitCols() {
-    // Destructor — 0xaecd34
+    // 0xaecd34
+    this->cleanup();
 }
 
 void CCTransitionSplitCols::easeActionWithAction(cocos2d::CCActionInterval*) {
     // 0xaedb38
+    // TODO: Implement
 }
 
 void CCTransitionSplitCols::action() {
     // 0xaedb24
+    // TODO: Implement
 }
 
 void CCTransitionSplitCols::create(float, cocos2d::CCScene*) {
     // 0xaeeb98
+    CCTransitionSplitCols* ret = new CCTransitionSplitCols();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionSplitCols::onEnter() {
     // 0xaf0594
+    // TODO: Implement
 }
 
 } // namespace cocos2d

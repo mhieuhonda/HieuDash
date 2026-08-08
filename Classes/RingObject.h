@@ -1,5 +1,6 @@
 // ============================================================
-// RingObject.h — Reconstructed from libcocos2dcpp.so symbols
+// RingObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef RINGOBJECT_H_
@@ -26,6 +27,11 @@ public:
     void create(char const*);
     void setScale(float);
     void setRScale(float);
+
+protected:
+    float m_rScale;
+    std::string m_saveString;
+    float m_scale;
 
 };
 

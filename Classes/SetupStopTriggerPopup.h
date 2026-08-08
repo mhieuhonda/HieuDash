@@ -1,5 +1,6 @@
 // ============================================================
-// SetupStopTriggerPopup.h — Reconstructed from libcocos2dcpp.so symbols
+// SetupStopTriggerPopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SETUPSTOPTRIGGERPOPUP_H_

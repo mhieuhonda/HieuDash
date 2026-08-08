@@ -1,8 +1,6 @@
 // ============================================================
 // CCInteger.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCInteger.h"
@@ -10,19 +8,23 @@
 namespace cocos2d {
 
 CCInteger::~CCInteger() {
-    // Destructor — 0x5c8f2c
+    // 0x5c8f2c
+    this->cleanup();
 }
 
 CCInteger::~CCInteger() {
-    // Destructor — 0x5c8f18
+    // 0x5c8f18
+    this->cleanup();
 }
 
 CCInteger::~CCInteger() {
-    // Destructor — 0x5c8f18
+    // 0x5c8f18
+    this->cleanup();
 }
 
 void CCInteger::acceptVisitor(cocos2d::CCDataVisitor&) {
     // 0x5c8530
+    // TODO: Implement
 }
 
 } // namespace cocos2d

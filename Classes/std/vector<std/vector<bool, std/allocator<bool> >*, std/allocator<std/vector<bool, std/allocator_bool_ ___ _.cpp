@@ -1,8 +1,6 @@
 // ============================================================
 // allocator_bool_ ___ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "allocator_bool_ ___ _.h"
@@ -16,6 +14,7 @@ namespace vector<bool, std {
 
 void allocator<bool> >*> >::_M_default_append(unsigned long) {
     // 0x875b24
+    // TODO: Implement
 }
 
 } // namespace vector<bool, std

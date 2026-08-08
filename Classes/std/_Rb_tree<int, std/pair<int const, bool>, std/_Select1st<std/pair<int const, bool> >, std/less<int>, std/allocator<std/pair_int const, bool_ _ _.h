@@ -1,5 +1,6 @@
 // ============================================================
-// pair_int const, bool_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// pair_int const, bool_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<INT, STD_PAIR<INT CONST, BOOL>, STD__SELECT1ST<STD_PAIR<INT CONST, BOOL> >, STD_LESS<INT>, STD_ALLOCATOR<STD_PAIR_INT CONST, BOOL_ _ __H_

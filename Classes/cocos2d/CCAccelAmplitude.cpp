@@ -1,8 +1,6 @@
 // ============================================================
 // CCAccelAmplitude.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCAccelAmplitude.h"
@@ -10,35 +8,50 @@
 namespace cocos2d {
 
 CCAccelAmplitude::~CCAccelAmplitude() {
-    // Destructor — 0xab9978
+    // 0xab9978
+    this->cleanup();
 }
 
 CCAccelAmplitude::~CCAccelAmplitude() {
-    // Destructor — 0xab9920
+    // 0xab9920
+    this->cleanup();
 }
 
 CCAccelAmplitude::~CCAccelAmplitude() {
-    // Destructor — 0xab9920
+    // 0xab9920
+    this->cleanup();
 }
 
 void CCAccelAmplitude::initWithAction(cocos2d::CCAction*, float) {
     // 0xaba148
+    // TODO: Implement
 }
 
 void CCAccelAmplitude::startWithTarget(cocos2d::CCNode*) {
     // 0xab9654
+    // TODO: Implement
 }
 
 void CCAccelAmplitude::create(cocos2d::CCAction*, float) {
     // 0xaba194
+    CCAccelAmplitude* ret = new CCAccelAmplitude();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCAccelAmplitude::update(float) {
     // 0xab9bb4
+    // Game update loop — called every frame
+    // TODO: Implement game logic update
 }
 
 void CCAccelAmplitude::reverse() {
     // 0xaba240
+    // TODO: Implement
 }
 
 } // namespace cocos2d

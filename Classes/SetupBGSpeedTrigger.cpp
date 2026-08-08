@@ -1,29 +1,41 @@
 // ============================================================
 // SetupBGSpeedTrigger.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SetupBGSpeedTrigger.h"
 
 SetupBGSpeedTrigger::~SetupBGSpeedTrigger() {
-    // Destructor — 0xa1f108
+    // 0xa1f108
+    this->cleanup();
 }
 
 SetupBGSpeedTrigger::~SetupBGSpeedTrigger() {
-    // Destructor — 0xa1f070
+    // 0xa1f070
+    this->cleanup();
 }
 
 SetupBGSpeedTrigger::~SetupBGSpeedTrigger() {
-    // Destructor — 0xa1f070
+    // 0xa1f070
+    this->cleanup();
 }
 
 void SetupBGSpeedTrigger::init(EffectGameObject*, cocos2d::CCArray*, int) {
     // 0xa21538
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SetupBGSpeedTrigger::create(EffectGameObject*, cocos2d::CCArray*, int) {
     // 0xa21bf0
+    SetupBGSpeedTrigger* ret = new SetupBGSpeedTrigger();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

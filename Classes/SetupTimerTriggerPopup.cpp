@@ -1,29 +1,41 @@
 // ============================================================
 // SetupTimerTriggerPopup.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SetupTimerTriggerPopup.h"
 
 SetupTimerTriggerPopup::~SetupTimerTriggerPopup() {
-    // Destructor — 0xa7b2c8
+    // 0xa7b2c8
+    this->cleanup();
 }
 
 SetupTimerTriggerPopup::~SetupTimerTriggerPopup() {
-    // Destructor — 0xa7b25c
+    // 0xa7b25c
+    this->cleanup();
 }
 
 SetupTimerTriggerPopup::~SetupTimerTriggerPopup() {
-    // Destructor — 0xa7b25c
+    // 0xa7b25c
+    this->cleanup();
 }
 
 void SetupTimerTriggerPopup::init(TimerTriggerGameObject*, cocos2d::CCArray*) {
     // 0xa7b5a8
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SetupTimerTriggerPopup::create(TimerTriggerGameObject*, cocos2d::CCArray*) {
     // 0xa7c0d0
+    SetupTimerTriggerPopup* ret = new SetupTimerTriggerPopup();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

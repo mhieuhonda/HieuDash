@@ -1,5 +1,6 @@
 // ============================================================
-// CCActionManager.h — Reconstructed from libcocos2dcpp.so symbols
+// CCActionManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCACTIONMANAGER_H_
@@ -33,6 +34,9 @@ public:
     void numberOfRunningActionsInTarget(cocos2d::CCObject*);
     void update(float);
     void addAction(cocos2d::CCAction*, cocos2d::CCNode*, bool);
+
+protected:
+    int m_actionByTag;
 
 };
 

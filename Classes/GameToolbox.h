@@ -1,5 +1,6 @@
 // ============================================================
-// GameToolbox.h — Reconstructed from libcocos2dcpp.so symbols
+// GameToolbox.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GAMETOOLBOX_H_
@@ -65,6 +66,9 @@ public:
     void timestampToHumanReadable(long);
     void isIOS();
     void fast_rand();
+
+protected:
+    std::string m_timeString;
 
 };
 

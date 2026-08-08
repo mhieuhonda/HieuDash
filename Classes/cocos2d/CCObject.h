@@ -1,5 +1,6 @@
 // ============================================================
-// CCObject.h — Reconstructed from libcocos2dcpp.so symbols
+// CCObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCOBJECT_H_
@@ -32,6 +33,9 @@ public:
     void retainCount()) const;
     void isSingleReference()) const;
     void getTag()) const;
+
+protected:
+    int m_tag;
 
 };
 

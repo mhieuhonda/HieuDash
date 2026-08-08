@@ -1,5 +1,6 @@
 // ============================================================
-// emplace_back_TraceDrawType, EffectGameObject_&, GameObject_&, cocos2d.h — Reconstructed from libcocos2dcpp.so symbols
+// emplace_back_TraceDrawType, EffectGameObject_&, GameObject_&, cocos2d.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<TRACEDRAWOBJECT, STD_ALLOCATOR<TRACEDRAWOBJECT> >_EMPLACE_BACK_TRACEDRAWTYPE, EFFECTGAMEOBJECT_&, GAMEOBJECT_&, COCOS2D_H_

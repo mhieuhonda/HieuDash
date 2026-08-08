@@ -1,5 +1,6 @@
 // ============================================================
-// CCScrollLayerExt.h — Reconstructed from libcocos2dcpp.so symbols
+// CCScrollLayerExt.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCSCROLLLAYEREXT_H_

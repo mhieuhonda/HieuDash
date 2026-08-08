@@ -1,8 +1,6 @@
 // ============================================================
 // __ops.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "__ops.h"
@@ -14,6 +12,7 @@ namespace CCObject*, __gnu_cxx {
 
 void __ops::_Iter_comp_iter<bool (*)(cocos2d::CCObject const*, cocos2d::CCObject const*)> >(cocos2d::CCObject**, long, long, cocos2d::CCObject*, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(cocos2d::CCObject const*, cocos2d::CCObject const*)>) {
     // 0xacd9d0
+    // TODO: Implement
 }
 
 } // namespace CCObject*, __gnu_cxx

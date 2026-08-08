@@ -1,8 +1,6 @@
 // ============================================================
 // CCHttpResponse.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCHttpResponse.h"
@@ -11,15 +9,18 @@ namespace cocos2d {
 namespace extension {
 
 CCHttpResponse::~CCHttpResponse() {
-    // Destructor — 0xaab0fc
+    // 0xaab0fc
+    this->cleanup();
 }
 
 CCHttpResponse::~CCHttpResponse() {
-    // Destructor — 0xaab020
+    // 0xaab020
+    this->cleanup();
 }
 
 CCHttpResponse::~CCHttpResponse() {
-    // Destructor — 0xaab020
+    // 0xaab020
+    this->cleanup();
 }
 
 } // namespace extension

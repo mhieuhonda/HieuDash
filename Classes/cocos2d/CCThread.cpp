@@ -1,8 +1,6 @@
 // ============================================================
 // CCThread.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCThread.h"
@@ -10,15 +8,18 @@
 namespace cocos2d {
 
 CCThread::~CCThread() {
-    // Destructor — 0xb04164
+    // 0xb04164
+    this->cleanup();
 }
 
 CCThread::~CCThread() {
-    // Destructor — 0xb04164
+    // 0xb04164
+    this->cleanup();
 }
 
 void CCThread::createAutoreleasePool() {
     // 0xb04168
+    // TODO: Implement
 }
 
 } // namespace cocos2d

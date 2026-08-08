@@ -1,5 +1,6 @@
 // ============================================================
-// GJRewardItem.h — Reconstructed from libcocos2dcpp.so symbols
+// GJRewardItem.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJREWARDITEM_H_
@@ -31,6 +32,9 @@ public:
     void create(int, int, std::string);
     void create();
     void canEncode();
+
+protected:
+    int m_rewardCount;
 
 };
 

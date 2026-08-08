@@ -1,33 +1,46 @@
 // ============================================================
 // CCNodeContainer.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCNodeContainer.h"
 
 CCNodeContainer::~CCNodeContainer() {
-    // Destructor — 0x855964
+    // 0x855964
+    this->cleanup();
 }
 
 CCNodeContainer::~CCNodeContainer() {
-    // Destructor — 0x855950
+    // 0x855950
+    this->cleanup();
 }
 
 CCNodeContainer::~CCNodeContainer() {
-    // Destructor — 0x855950
+    // 0x855950
+    this->cleanup();
 }
 
 void CCNodeContainer::init() {
     // 0x89e994
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void CCNodeContainer::visit() {
     // 0x855844
+    // TODO: Implement
 }
 
 void CCNodeContainer::create() {
     // 0x89e998
+    CCNodeContainer* ret = new CCNodeContainer();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

@@ -1,14 +1,16 @@
 // ============================================================
-// CheckpointGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// CheckpointGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CHECKPOINTGAMEOBJECT_H_
 #define CHECKPOINTGAMEOBJECT_H_
 
+#include "GameObject.h"
 #include <string>
 #include <vector>
 
-class CheckpointGameObject {
+class CheckpointGameObject : public GameObject {
 public:
     virtual ~CheckpointGameObject();
     virtual ~CheckpointGameObject();
@@ -24,8 +26,11 @@ public:
     void setupCustomSprites(std::string);
     void updateSyncedAnimation(float, int);
     void updateCheckpointSpriteVisibility();
-    void init();
+    void init() override;
     void create();
+
+protected:
+    std::string m_saveString;
 
 };
 

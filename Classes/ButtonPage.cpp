@@ -1,29 +1,41 @@
 // ============================================================
 // ButtonPage.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "ButtonPage.h"
 
 ButtonPage::~ButtonPage() {
-    // Destructor — 0x73aac0
+    // 0x73aac0
+    this->cleanup();
 }
 
 ButtonPage::~ButtonPage() {
-    // Destructor — 0x73aa7c
+    // 0x73aa7c
+    this->cleanup();
 }
 
 ButtonPage::~ButtonPage() {
-    // Destructor — 0x73aa7c
+    // 0x73aa7c
+    this->cleanup();
 }
 
 void ButtonPage::init(cocos2d::CCArray*, cocos2d::CCPoint, int, float) {
     // 0x73ab8c
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void ButtonPage::create(cocos2d::CCArray*, cocos2d::CCPoint, int, float) {
     // 0x73ad30
+    ButtonPage* ret = new ButtonPage();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

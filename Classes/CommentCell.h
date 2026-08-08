@@ -1,5 +1,6 @@
 // ============================================================
-// CommentCell.h — Reconstructed from libcocos2dcpp.so symbols
+// CommentCell.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COMMENTCELL_H_
@@ -7,8 +8,9 @@
 
 #include "cocos2d.h"
 
-class CommentCell {
+class CommentCell : public cocos2d::CCNode {
 public:
+    static CommentCell* create();
     CommentCell(char const*, float, float);
     CommentCell(char const*, float, float);
 
@@ -26,8 +28,8 @@ public:
     void onConfirmDelete(cocos2d::CCObject*);
     void incrementDislikes();
     void updateLabelValues();
-    void draw();
-    void init();
+    void draw() override;
+    void init() override;
     void onLike(cocos2d::CCObject*);
     void onDelete();
     void onUnhide(cocos2d::CCObject*);

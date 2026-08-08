@@ -1,17 +1,25 @@
 // ============================================================
-// LevelEditorLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelEditorLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELEDITORLAYER_H_
 #define LEVELEDITORLAYER_H_
 
+#include "EditorUI.h"
+#include "GJBaseGameLayer.h"
+#include "GJGameLevel.h"
 #include "cocos2d.h"
 #include <string>
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
 
-class LevelEditorLayer {
+// Forward declarations
+class EditorUI;
+class GJGameLevel;
+
+class LevelEditorLayer : public GJBaseGameLayer {
 public:
     virtual ~LevelEditorLayer();
     virtual ~LevelEditorLayer();
@@ -172,13 +180,37 @@ public:
     void updateDisabledObjectsLastPos(cocos2d::CCArray*);
     void reverseKeyframeAnimationOrder(int);
     void updateAnimateOnTriggerObjects(bool);
-    void draw();
-    void init(GJGameLevel*, bool);
+    void draw() override;
+    void init(GJGameLevel*, bool) override;
     void scene(GJGameLevel*, bool);
     void create(GJGameLevel*, bool);
     void getSFXIDs();
     void hasAction(bool);
     void updateArt(float);
+
+protected:
+    EditorUI* m_editorUI;
+    float m_gridSize;
+    GJGameLevel* m_level;
+    std::string m_levelString;
+    cocos2d::_ccColor3B m_nextColorChannel;
+    int m_nextFreeAreaEffectID;
+    int m_nextFreeBlockID;
+    int m_nextFreeGradientID;
+    int m_nextFreeGroupID;
+    int m_nextFreeItemID;
+    int m_nextFreeSFXGroupID;
+    int m_nextFreeSFXID;
+    int m_objectCount;
+    cocos2d::CCArray* m_objects;
+    cocos2d::CCArray* m_redoStack;
+    int m_sFXIDs;
+    cocos2d::CCPoint m_savedEditorPosition;
+    cocos2d::CCPoint m_savedEditorPositions;
+    int m_sectionCount;
+    int m_songIDs;
+    cocos2d::CCArray* m_triggers;
+    cocos2d::CCArray* m_undoStack;
 
 };
 

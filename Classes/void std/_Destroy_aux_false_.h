@@ -1,5 +1,6 @@
 // ============================================================
-// _Destroy_aux_false_.h — Reconstructed from libcocos2dcpp.so symbols
+// _Destroy_aux_false_.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD__DESTROY_AUX_FALSE__H_

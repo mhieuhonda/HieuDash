@@ -1,5 +1,6 @@
 // ============================================================
-// uniform_int_distribution_unsigned long_.h — Reconstructed from libcocos2dcpp.so symbols
+// uniform_int_distribution_unsigned long_.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef UNSIGNED LONG STD_UNIFORM_INT_DISTRIBUTION_UNSIGNED LONG__H_

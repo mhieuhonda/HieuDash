@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionSplitRows.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionSplitRows.h"
@@ -10,31 +8,42 @@
 namespace cocos2d {
 
 CCTransitionSplitRows::CCTransitionSplitRows() {
-    // Constructor — 0xaeec14
+    // 0xaeec14
 }
 
 CCTransitionSplitRows::CCTransitionSplitRows() {
-    // Constructor — 0xaeec14
+    // 0xaeec14
 }
 
 CCTransitionSplitRows::~CCTransitionSplitRows() {
-    // Destructor — 0xaed118
+    // 0xaed118
+    this->cleanup();
 }
 
 CCTransitionSplitRows::~CCTransitionSplitRows() {
-    // Destructor — 0xaecd50
+    // 0xaecd50
+    this->cleanup();
 }
 
 CCTransitionSplitRows::~CCTransitionSplitRows() {
-    // Destructor — 0xaecd50
+    // 0xaecd50
+    this->cleanup();
 }
 
 void CCTransitionSplitRows::action() {
     // 0xaedb4c
+    // TODO: Implement
 }
 
 void CCTransitionSplitRows::create(float, cocos2d::CCScene*) {
     // 0xaeec4c
+    CCTransitionSplitRows* ret = new CCTransitionSplitRows();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

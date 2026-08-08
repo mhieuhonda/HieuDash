@@ -1,5 +1,6 @@
 // ============================================================
-// CCControlHuePicker.h — Reconstructed from libcocos2dcpp.so symbols
+// CCControlHuePicker.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCCONTROLHUEPICKER_H_
@@ -29,6 +30,9 @@ public:
     void registerWithTouchDispatcher();
     void create(cocos2d::CCNode*, cocos2d::CCPoint);
     void setHue(float);
+
+protected:
+    bool m_enabled;
 
 };
 

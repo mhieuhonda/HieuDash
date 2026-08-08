@@ -1,5 +1,6 @@
 // ============================================================
-// vector_TraceDrawObject, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_TraceDrawObject, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef __GNU_CXX___NORMAL_ITERATOR<TRACEDRAWOBJECT*, STD_VECTOR<TRACEDRAWOBJECT, STD_ALLOCATOR<TRACEDRAWOBJECT> > > STD___ROTATE_ADAPTIVE<__GNU_CXX___NORMAL_ITERATOR<TRACEDRAWOBJECT*, STD_VECTOR_TRACEDRAWOBJECT, STD_H_

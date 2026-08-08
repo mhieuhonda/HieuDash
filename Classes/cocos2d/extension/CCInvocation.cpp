@@ -1,8 +1,6 @@
 // ============================================================
 // CCInvocation.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCInvocation.h"
@@ -11,31 +9,42 @@ namespace cocos2d {
 namespace extension {
 
 CCInvocation::CCInvocation(cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*, unsigned int), unsigned int) {
-    // Constructor — 0xaa07bc
+    // 0xaa07bc
 }
 
 CCInvocation::CCInvocation(cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*, unsigned int), unsigned int) {
-    // Constructor — 0xaa07bc
+    // 0xaa07bc
 }
 
 CCInvocation::~CCInvocation() {
-    // Destructor — 0xaa0788
+    // 0xaa0788
+    this->cleanup();
 }
 
 CCInvocation::~CCInvocation() {
-    // Destructor — 0xaa0774
+    // 0xaa0774
+    this->cleanup();
 }
 
 CCInvocation::~CCInvocation() {
-    // Destructor — 0xaa0774
+    // 0xaa0774
+    this->cleanup();
 }
 
 void CCInvocation::create(cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*, unsigned int), unsigned int) {
     // 0xaa081c
+    CCInvocation* ret = new CCInvocation();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCInvocation::invoke(cocos2d::CCObject*) {
     // 0xaa0890
+    // TODO: Implement
 }
 
 } // namespace extension

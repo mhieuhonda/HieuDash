@@ -1,41 +1,57 @@
 // ============================================================
 // CameraTriggerGameObject.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CameraTriggerGameObject.h"
 
 CameraTriggerGameObject::~CameraTriggerGameObject() {
-    // Destructor — 0x749fe0
+    // 0x749fe0
+    this->cleanup();
 }
 
 CameraTriggerGameObject::~CameraTriggerGameObject() {
-    // Destructor — 0x749fbc
+    // 0x749fbc
+    this->cleanup();
 }
 
 CameraTriggerGameObject::~CameraTriggerGameObject() {
-    // Destructor — 0x749fbc
+    // 0x749fbc
+    this->cleanup();
 }
 
 void CameraTriggerGameObject::getSaveString(GJBaseGameLayer*) {
     // 0x7851ec
+    // Save to file/storage
+    // TODO: Implement saving
 }
 
 void CameraTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
     // 0x7703c4
+    // TODO: Implement
 }
 
 void CameraTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
     // 0x74e52c
+    // TODO: Implement
 }
 
 void CameraTriggerGameObject::init(char const*) {
     // 0x7690ac
+    bool ret = EffectGameObject::init() if "EffectGameObject" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void CameraTriggerGameObject::create(char const*) {
     // 0x7690b0
+    CameraTriggerGameObject* ret = new CameraTriggerGameObject();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

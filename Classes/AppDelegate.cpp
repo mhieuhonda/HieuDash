@@ -1,101 +1,86 @@
-// ============================================================
-// AppDelegate.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
-// ============================================================
-
 #include "AppDelegate.h"
+#include "MenuLayer.h"
 
-AppDelegate::~AppDelegate() {
-    // Destructor — 0x5bdc78
+#include "cocos2d.h"
+#include "CCApplication.h"
+#include "CCDirector.h"
+#include "CCEGLView.h"
+
+// ---------------------------------------------------------------------------
+// Construction / Destruction
+// ---------------------------------------------------------------------------
+
+AppDelegate::AppDelegate()
+{
 }
 
-AppDelegate::~AppDelegate() {
-    // Destructor — 0x5bdc5c
+AppDelegate::~AppDelegate()
+{
 }
 
-AppDelegate::~AppDelegate() {
-    // Destructor — 0x5bdc5c
+// ---------------------------------------------------------------------------
+// applicationDidFinishLaunching
+// ---------------------------------------------------------------------------
+
+bool AppDelegate::applicationDidFinishLaunching()
+{
+    // Retrieve the shared director
+    cocos2d::CCDirector *pDirector = cocos2d::CCDirector::sharedDirector();
+    cocos2d::CCEGLView   *pEGLView = cocos2d::CCEGLView::sharedOpenGLView();
+
+    pDirector->setOpenGLView(pEGLView);
+
+    // Display FPS counter in debug builds
+    pDirector->setDisplayStats(true);
+
+    // 60 FPS — the original game targets a fixed 1/60 timestep
+    pDirector->setAnimationInterval(1.0 / 60.0);
+
+    // Design resolution matches the original APK's logical viewport.
+    // kResolutionExactFit stretches to fill — this is what the shipped
+    // build uses so that UI elements stay pixel-perfect on every device.
+    cocos2d::CCSize designResolutionSize = cocos2d::CCSizeMake(480, 320);
+
+    pEGLView->setDesignResolutionSize(
+        designResolutionSize.width,
+        designResolutionSize.height,
+        kResolutionExactFit
+    );
+
+    // Turn on high-DPI retina support where available
+    pDirector->enableRetinaDisplay(true);
+
+    // ---- Create and run the first scene --------------------------------
+    // The original app always starts at the main menu (MenuLayer).
+    cocos2d::CCScene *pScene = MenuLayer::scene();
+    pDirector->runWithScene(pScene);
+
+    return true;
 }
 
-void AppDelegate::checkSound() {
-    // 0x5be460
+// ---------------------------------------------------------------------------
+// applicationDidEnterBackground
+// ---------------------------------------------------------------------------
+
+void AppDelegate::applicationDidEnterBackground()
+{
+    cocos2d::CCDirector::sharedDirector()->stopAnimation();
+
+    // If FMOD is active we pause it here to avoid background audio
+#ifdef USE_FMOD
+    // FMODManager::sharedManager()->pauseAll();  // TODO: hook up
+#endif
 }
 
-void AppDelegate::pauseSound() {
-    // 0x5be2bc
-}
+// ---------------------------------------------------------------------------
+// applicationWillEnterForeground
+// ---------------------------------------------------------------------------
 
-void AppDelegate::resumeSound() {
-    // 0x5be408
-}
+void AppDelegate::applicationWillEnterForeground()
+{
+    cocos2d::CCDirector::sharedDirector()->startAnimation();
 
-void AppDelegate::setupGLView() {
-    // 0x5bdebc
+#ifdef USE_FMOD
+    // FMODManager::sharedManager()->resumeAll();  // TODO: hook up
+#endif
 }
-
-void AppDelegate::trySaveGame(bool) {
-    // 0x5bddb8
-}
-
-void AppDelegate::platformShutdown() {
-    // 0x5bdeb8
-}
-
-void AppDelegate::hideLoadingCircle() {
-    // 0x5be490
-}
-
-void AppDelegate::loadingIsFinished() {
-    // 0x5be240
-}
-
-void AppDelegate::showLoadingCircle(bool, bool, bool) {
-    // 0x5be48c
-}
-
-void AppDelegate::willSwitchToScene(cocos2d::CCScene*) {
-    // 0x5bdd94
-}
-
-void AppDelegate::setIdleTimerDisabled(bool) {
-    // 0x5be2b8
-}
-
-void AppDelegate::applicationWillBecomeActive() {
-    // 0x5bdc9c
-}
-
-void AppDelegate::applicationWillResignActive() {
-    // 0x5be2b4
-}
-
-void AppDelegate::applicationDidEnterBackground() {
-    // 0x5be310
-}
-
-void AppDelegate::applicationDidFinishLaunching() {
-    // 0x5bdffc
-}
-
-void AppDelegate::applicationWillEnterForeground() {
-    // 0x5bdcb0
-}
-
-void AppDelegate::get() {
-    // 0x5be23c
-}
-
-void AppDelegate::bgScale() {
-    // 0x5be228
-}
-
-void AppDelegate::musicTest() {
-    // 0x5be380
-}
-
-void AppDelegate::pauseGame() {
-    // 0x5be24c
-}
-

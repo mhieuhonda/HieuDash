@@ -1,5 +1,6 @@
 // ============================================================
-// CCGrid3DAction.h — Reconstructed from libcocos2dcpp.so symbols
+// CCGrid3DAction.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCGRID3DACTION_H_

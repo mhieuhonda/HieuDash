@@ -1,8 +1,6 @@
 // ============================================================
 // XMLDeclaration.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "XMLDeclaration.h"
@@ -10,47 +8,56 @@
 namespace tinyxml2 {
 
 XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*) {
-    // Constructor — 0xb24ee4
+    // 0xb24ee4
 }
 
 XMLDeclaration::XMLDeclaration(tinyxml2::XMLDocument*) {
-    // Constructor — 0xb24ee4
+    // 0xb24ee4
 }
 
 XMLDeclaration::~XMLDeclaration() {
-    // Destructor — 0xb24638
+    // 0xb24638
+    this->cleanup();
 }
 
 XMLDeclaration::~XMLDeclaration() {
-    // Destructor — 0xb24624
+    // 0xb24624
+    this->cleanup();
 }
 
 XMLDeclaration::~XMLDeclaration() {
-    // Destructor — 0xb24624
+    // 0xb24624
+    this->cleanup();
 }
 
 void XMLDeclaration::ToDeclaration() {
     // 0xb222dc
+    // TODO: Implement
 }
 
 void XMLDeclaration::ParseDeep(char*, tinyxml2::StrPair*) {
     // 0xb27490
+    // TODO: Implement
 }
 
 void XMLDeclaration::ShallowClone(tinyxml2::XMLDocument*)) const {
     // 0xb270f8
+    // TODO: Implement
 }
 
 void XMLDeclaration::ShallowEqual(tinyxml2::XMLNode const*)) const {
     // 0xb23d20
+    // TODO: Implement
 }
 
 void XMLDeclaration::ToDeclaration()) const {
     // 0xb222e0
+    // TODO: Implement
 }
 
 void XMLDeclaration::Accept(tinyxml2::XMLVisitor*)) const {
     // 0xb223ec
+    // TODO: Implement
 }
 
 } // namespace tinyxml2

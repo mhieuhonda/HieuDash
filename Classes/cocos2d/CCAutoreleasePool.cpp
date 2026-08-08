@@ -1,8 +1,6 @@
 // ============================================================
 // CCAutoreleasePool.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCAutoreleasePool.h"
@@ -10,35 +8,41 @@
 namespace cocos2d {
 
 CCAutoreleasePool::CCAutoreleasePool() {
-    // Constructor — 0xaceeb0
+    // 0xaceeb0
 }
 
 CCAutoreleasePool::CCAutoreleasePool() {
-    // Constructor — 0xaceeb0
+    // 0xaceeb0
 }
 
 CCAutoreleasePool::~CCAutoreleasePool() {
-    // Destructor — 0xacee8c
+    // 0xacee8c
+    this->cleanup();
 }
 
 CCAutoreleasePool::~CCAutoreleasePool() {
-    // Destructor — 0xacee44
+    // 0xacee44
+    this->cleanup();
 }
 
 CCAutoreleasePool::~CCAutoreleasePool() {
-    // Destructor — 0xacee44
+    // 0xacee44
+    this->cleanup();
 }
 
 void CCAutoreleasePool::removeObject(cocos2d::CCObject*) {
     // 0xacef2c
+    // TODO: Implement
 }
 
 void CCAutoreleasePool::clear() {
     // 0xacef80
+    // TODO: Implement
 }
 
 void CCAutoreleasePool::addObject(cocos2d::CCObject*) {
     // 0xaceef8
+    // TODO: Implement
 }
 
 } // namespace cocos2d

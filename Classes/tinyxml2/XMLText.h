@@ -1,5 +1,6 @@
 // ============================================================
-// XMLText.h — Reconstructed from libcocos2dcpp.so symbols
+// XMLText.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef TINYXML2_XMLTEXT_H_

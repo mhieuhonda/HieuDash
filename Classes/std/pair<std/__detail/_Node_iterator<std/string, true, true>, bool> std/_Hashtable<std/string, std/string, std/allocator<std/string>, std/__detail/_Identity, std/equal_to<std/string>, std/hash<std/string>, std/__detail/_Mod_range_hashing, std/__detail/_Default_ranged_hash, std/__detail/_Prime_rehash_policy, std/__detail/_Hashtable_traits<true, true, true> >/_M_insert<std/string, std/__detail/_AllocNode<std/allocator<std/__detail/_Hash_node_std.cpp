@@ -1,8 +1,6 @@
 // ============================================================
 // _Hash_node_std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_Hash_node_std.h"
@@ -40,6 +38,7 @@ namespace __detail {
 
 void _Hash_node<std::string, true> > > >(std::string&&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::string, true> > > const&, std::integral_constant<bool, true>) {
     // 0x731430
+    // TODO: Implement
 }
 
 } // namespace __detail

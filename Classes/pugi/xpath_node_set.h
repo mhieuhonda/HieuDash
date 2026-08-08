@@ -1,5 +1,6 @@
 // ============================================================
-// xpath_node_set.h — Reconstructed from libcocos2dcpp.so symbols
+// xpath_node_set.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PUGI_XPATH_NODE_SET_H_

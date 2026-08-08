@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_RecordButtonCommand_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_RecordButtonCommand_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<RECORDBUTTONCOMMAND, STD_ALLOCATOR_RECORDBUTTONCOMMAND_ __H_

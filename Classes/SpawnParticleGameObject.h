@@ -1,5 +1,6 @@
 // ============================================================
-// SpawnParticleGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// SpawnParticleGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SPAWNPARTICLEGAMEOBJECT_H_
@@ -18,6 +19,9 @@ public:
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init();
     void create();
+
+protected:
+    std::string m_saveString;
 
 };
 

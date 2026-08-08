@@ -1,5 +1,6 @@
 // ============================================================
-// xml_tree_walker.h — Reconstructed from libcocos2dcpp.so symbols
+// xml_tree_walker.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PUGI_XML_TREE_WALKER_H_

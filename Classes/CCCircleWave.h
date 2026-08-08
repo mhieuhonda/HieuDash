@@ -1,5 +1,6 @@
 // ============================================================
-// CCCircleWave.h — Reconstructed from libcocos2dcpp.so symbols
+// CCCircleWave.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCCIRCLEWAVE_H_
@@ -23,6 +24,9 @@ public:
     void create(float, float, float, bool);
     void create(float, float, float, bool, bool);
     void baseSetup(float);
+
+protected:
+    cocos2d::CCPoint m_position;
 
 };
 

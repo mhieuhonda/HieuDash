@@ -1,8 +1,6 @@
 // ============================================================
 // CCCatmullRomBy.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCCatmullRomBy.h"
@@ -10,23 +8,34 @@
 namespace cocos2d {
 
 CCCatmullRomBy::~CCCatmullRomBy() {
-    // Destructor — 0xab4d08
+    // 0xab4d08
+    this->cleanup();
 }
 
 CCCatmullRomBy::~CCCatmullRomBy() {
-    // Destructor — 0xab4cf4
+    // 0xab4cf4
+    this->cleanup();
 }
 
 CCCatmullRomBy::~CCCatmullRomBy() {
-    // Destructor — 0xab4cf4
+    // 0xab4cf4
+    this->cleanup();
 }
 
 void CCCatmullRomBy::initWithDuration(float, cocos2d::CCPointArray*) {
     // 0xab57c0
+    // TODO: Implement
 }
 
 void CCCatmullRomBy::create(float, cocos2d::CCPointArray*) {
     // 0xab57c8
+    CCCatmullRomBy* ret = new CCCatmullRomBy();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

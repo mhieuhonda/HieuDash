@@ -1,5 +1,6 @@
 // ============================================================
-// CCRenderTexture.h — Reconstructed from libcocos2dcpp.so symbols
+// CCRenderTexture.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCRENDERTEXTURE_H_
@@ -52,6 +53,9 @@ public:
     void getClearDepth()) const;
     void getClearFlags()) const;
     void getClearStencil()) const;
+
+protected:
+    cocos2d::_ccColor3B m_clearColor;
 
 };
 

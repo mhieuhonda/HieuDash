@@ -1,5 +1,6 @@
 // ============================================================
-// CCTextInputNode.h — Reconstructed from libcocos2dcpp.so symbols
+// CCTextInputNode.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCTEXTINPUTNODE_H_
@@ -45,6 +46,13 @@ public:
     void create(float, float, char const*, char const*, int, char const*);
     void getString();
     void setString(std::string);
+
+protected:
+    cocos2d::_ccColor3B m_labelNormalColor;
+    cocos2d::_ccColor3B m_labelPlaceholderColor;
+    float m_labelPlaceholderScale;
+    float m_maxLabelScale;
+    std::string m_string;
 
 };
 

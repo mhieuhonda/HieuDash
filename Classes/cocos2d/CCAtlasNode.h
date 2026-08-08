@@ -1,5 +1,6 @@
 // ============================================================
-// CCAtlasNode.h — Reconstructed from libcocos2dcpp.so symbols
+// CCAtlasNode.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCATLASNODE_H_
@@ -40,6 +41,10 @@ public:
     void create(char const*, unsigned int, unsigned int, unsigned int);
     void getColor();
     void setColor(cocos2d::_ccColor3B const&);
+
+protected:
+    cocos2d::_ccColor3B m_color;
+    float m_ignoreContentScaleFactor;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// SetColorIDPopup.h — Reconstructed from libcocos2dcpp.so symbols
+// SetColorIDPopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SETCOLORIDPOPUP_H_

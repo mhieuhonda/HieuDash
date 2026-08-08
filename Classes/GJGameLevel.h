@@ -1,5 +1,6 @@
 // ============================================================
-// GJGameLevel.h — Reconstructed from libcocos2dcpp.so symbols
+// GJGameLevel.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJGAMELEVEL_H_
@@ -50,6 +51,26 @@ public:
     void create(cocos2d::CCDictionary*, bool);
     void create();
     void canEncode();
+
+protected:
+    std::string m_audioFileName;
+    std::string m_coinKey;
+    std::string m_creatorName;
+    int m_difficulty;
+    int m_downloads;
+    int m_featureScore;
+    bool m_isEpic;
+    bool m_isUploaded;
+    bool m_isVerified;
+    std::string m_lengthKey;
+    int m_levelID;
+    std::string m_levelName;
+    std::string m_levelString;
+    int m_likes;
+    int m_normalPercent;
+    int m_practicePercent;
+    std::string m_songName;
+    int m_stars;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// ObjectManager.h — Reconstructed from libcocos2dcpp.so symbols
+// ObjectManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef OBJECTMANAGER_H_

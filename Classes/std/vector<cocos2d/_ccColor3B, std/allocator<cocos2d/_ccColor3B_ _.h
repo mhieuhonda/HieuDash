@@ -1,5 +1,6 @@
 // ============================================================
-// _ccColor3B_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// _ccColor3B_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<COCOS2D__CCCOLOR3B, STD_ALLOCATOR<COCOS2D__CCCOLOR3B_ __H_

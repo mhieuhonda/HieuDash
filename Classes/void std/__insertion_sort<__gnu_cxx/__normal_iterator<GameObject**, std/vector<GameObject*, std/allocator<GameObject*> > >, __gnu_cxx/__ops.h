@@ -1,5 +1,6 @@
 // ============================================================
-// __ops.h — Reconstructed from libcocos2dcpp.so symbols
+// __ops.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD___INSERTION_SORT<__GNU_CXX___NORMAL_ITERATOR<GAMEOBJECT**, STD_VECTOR<GAMEOBJECT*, STD_ALLOCATOR<GAMEOBJECT*> > >, __GNU_CXX___OPS_H_

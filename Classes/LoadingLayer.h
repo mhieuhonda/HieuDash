@@ -1,9 +1,12 @@
 // ============================================================
-// LoadingLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// LoadingLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LOADINGLAYER_H_
 #define LOADINGLAYER_H_
+
+#include <string>
 
 class LoadingLayer {
 public:
@@ -18,6 +21,9 @@ public:
     void init(bool);
     void scene(bool);
     void create(bool);
+
+protected:
+    std::string m_loadingString;
 
 };
 

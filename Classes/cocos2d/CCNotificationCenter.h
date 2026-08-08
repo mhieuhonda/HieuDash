@@ -1,11 +1,13 @@
 // ============================================================
-// CCNotificationCenter.h — Reconstructed from libcocos2dcpp.so symbols
+// CCNotificationCenter.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCNOTIFICATIONCENTER_H_
 #define COCOS2D_CCNOTIFICATIONCENTER_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -29,6 +31,9 @@ public:
     void getObserverHandlerByName(char const*);
     void sharedNotificationCenter();
     void unregisterScriptObserver(cocos2d::CCObject*, char const*);
+
+protected:
+    std::string m_observerHandlerByName;
 
 };
 

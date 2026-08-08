@@ -1,8 +1,6 @@
 // ============================================================
 // allocator_double_ _ _ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "allocator_double_ _ _ _.h"
@@ -16,10 +14,12 @@ namespace vector<double, std {
 
 void allocator<double> > > >::~vector() {
     // 0xa7e1a0
+    // TODO: Implement
 }
 
 void allocator<double> > > >::~vector() {
     // 0xa7e1a0
+    // TODO: Implement
 }
 
 } // namespace vector<double, std

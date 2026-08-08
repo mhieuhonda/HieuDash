@@ -1,5 +1,6 @@
 // ============================================================
-// CCMenuItemSprite.h — Reconstructed from libcocos2dcpp.so symbols
+// CCMenuItemSprite.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCMENUITEMSPRITE_H_
@@ -29,6 +30,9 @@ public:
     void create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCNode*);
     void create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
     void selected();
+
+protected:
+    bool m_enabled;
 
 };
 

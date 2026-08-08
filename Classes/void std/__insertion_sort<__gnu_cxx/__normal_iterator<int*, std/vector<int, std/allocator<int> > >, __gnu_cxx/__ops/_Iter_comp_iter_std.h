@@ -1,5 +1,6 @@
 // ============================================================
-// _Iter_comp_iter_std.h — Reconstructed from libcocos2dcpp.so symbols
+// _Iter_comp_iter_std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD___INSERTION_SORT<__GNU_CXX___NORMAL_ITERATOR<INT*, STD_VECTOR<INT, STD_ALLOCATOR<INT> > >, __GNU_CXX___OPS__ITER_COMP_ITER_STD_H_

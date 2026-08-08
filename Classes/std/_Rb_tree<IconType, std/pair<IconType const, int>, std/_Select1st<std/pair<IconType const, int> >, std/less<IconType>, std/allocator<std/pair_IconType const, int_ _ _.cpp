@@ -1,8 +1,6 @@
 // ============================================================
 // pair_IconType const, int_ _ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "pair_IconType const, int_ _ _.h"
@@ -17,10 +15,12 @@ namespace allocator<std {
 
 void pair<IconType const, int> > >::_M_get_insert_unique_pos(IconType const&) {
     // 0x793ae0
+    // TODO: Implement
 }
 
 void pair<IconType const, int> > >::_M_erase(std::_Rb_tree_node<std::pair<const IconType, int> >*) {
     // 0x793964
+    // TODO: Implement
 }
 
 } // namespace allocator<std

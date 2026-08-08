@@ -1,8 +1,6 @@
 // ============================================================
 // CCTouch.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTouch.h"
@@ -10,15 +8,18 @@
 namespace cocos2d {
 
 CCTouch::~CCTouch() {
-    // Destructor — 0xb09e44
+    // 0xb09e44
+    this->cleanup();
 }
 
 CCTouch::~CCTouch() {
-    // Destructor — 0xb09e30
+    // 0xb09e30
+    this->cleanup();
 }
 
 CCTouch::~CCTouch() {
-    // Destructor — 0xb09e30
+    // 0xb09e30
+    this->cleanup();
 }
 
 void CCTouch::getLocation()) const {

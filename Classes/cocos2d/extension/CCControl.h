@@ -1,5 +1,6 @@
 // ============================================================
-// CCControl.h — Reconstructed from libcocos2dcpp.so symbols
+// CCControl.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCCONTROL_H_
@@ -45,6 +46,9 @@ public:
     void onExit();
     void onEnter();
     void isEnabled();
+
+protected:
+    bool m_enabled;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// GJMultiplayerManager.h — Reconstructed from libcocos2dcpp.so symbols
+// GJMultiplayerManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJMULTIPLAYERMANAGER_H_
@@ -39,6 +40,10 @@ public:
     void handleIt(bool, std::string, std::string, GJHttpType);
     void exitLobby(int);
     void joinLobby(int);
+
+protected:
+    std::string m_basePostString;
+    int m_lastCommentIDForGame;
 
 };
 

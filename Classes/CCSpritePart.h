@@ -1,5 +1,6 @@
 // ============================================================
-// CCSpritePart.h — Reconstructed from libcocos2dcpp.so symbols
+// CCSpritePart.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCSPRITEPART_H_
@@ -24,6 +25,9 @@ public:
     void updateDisplayFrame(std::string);
     void createWithSpriteFrameName(char const*);
     void create(cocos2d::CCTexture2D*);
+
+protected:
+    bool m_visible;
 
 };
 

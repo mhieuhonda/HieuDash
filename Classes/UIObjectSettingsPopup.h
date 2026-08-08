@@ -1,5 +1,6 @@
 // ============================================================
-// UIObjectSettingsPopup.h — Reconstructed from libcocos2dcpp.so symbols
+// UIObjectSettingsPopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef UIOBJECTSETTINGSPOPUP_H_

@@ -1,5 +1,6 @@
 // ============================================================
-// string const, bool_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// string const, bool_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<STD_STRING, STD_PAIR<STD_STRING CONST, BOOL>, STD__SELECT1ST<STD_PAIR<STD_STRING CONST, BOOL> >, STD_LESS<STD_STRING>, STD_ALLOCATOR<STD_PAIR<STD_STRING CONST, BOOL_ _ __H_

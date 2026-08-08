@@ -1,8 +1,6 @@
 // ============================================================
 // allocator_CountTriggerAction_ _ _, false_ _ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "allocator_CountTriggerAction_ _ _, false_ _ _.h"
@@ -23,6 +21,7 @@ namespace vector<CountTriggerAction, std {
 
 void allocator<CountTriggerAction> > >, false> > >::operator()<std::pair<const int, std::vector<CountTriggerAction> > const&>(std::pair<const int, std::vector<CountTriggerAction> > const&)) const {
     // 0x8ad150
+    // TODO: Implement
 }
 
 } // namespace vector<CountTriggerAction, std

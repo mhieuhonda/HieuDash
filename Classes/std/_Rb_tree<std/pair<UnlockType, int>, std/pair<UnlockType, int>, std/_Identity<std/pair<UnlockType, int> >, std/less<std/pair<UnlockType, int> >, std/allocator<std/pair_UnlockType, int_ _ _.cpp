@@ -1,8 +1,6 @@
 // ============================================================
 // pair_UnlockType, int_ _ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "pair_UnlockType, int_ _ _.h"
@@ -19,10 +17,12 @@ namespace allocator<std {
 
 void pair<UnlockType, int> > >::find(std::pair<UnlockType, int> const&)) const {
     // 0x7af720
+    // TODO: Implement
 }
 
 void pair<UnlockType, int> > >::_M_erase(std::_Rb_tree_node<std::pair<UnlockType, int> >*) {
     // 0x7af480
+    // TODO: Implement
 }
 
 } // namespace allocator<std

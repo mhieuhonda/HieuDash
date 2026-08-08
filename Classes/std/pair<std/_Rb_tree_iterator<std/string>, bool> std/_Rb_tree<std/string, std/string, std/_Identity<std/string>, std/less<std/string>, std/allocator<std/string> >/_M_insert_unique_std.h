@@ -1,5 +1,6 @@
 // ============================================================
-// _M_insert_unique_std.h — Reconstructed from libcocos2dcpp.so symbols
+// _M_insert_unique_std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_PAIR<STD__RB_TREE_ITERATOR<STD_STRING>, BOOL> STD__RB_TREE<STD_STRING, STD_STRING, STD__IDENTITY<STD_STRING>, STD_LESS<STD_STRING>, STD_ALLOCATOR<STD_STRING> >__M_INSERT_UNIQUE_STD_H_

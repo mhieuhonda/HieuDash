@@ -1,5 +1,6 @@
 // ============================================================
-// CreateGuidelinesLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// CreateGuidelinesLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CREATEGUIDELINESLAYER_H_
@@ -37,6 +38,9 @@ public:
     void onClose(cocos2d::CCObject*);
     void onRecord(cocos2d::CCObject*);
     void playMusic();
+
+protected:
+    std::string m_mergedRecordString;
 
 };
 

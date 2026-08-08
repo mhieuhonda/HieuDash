@@ -1,5 +1,6 @@
 // ============================================================
-// DialogLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// DialogLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef DIALOGLAYER_H_
@@ -7,20 +8,20 @@
 
 #include "cocos2d.h"
 
-class DialogLayer {
+class DialogLayer : public cocos2d::CCLayer {
 public:
     virtual ~DialogLayer();
     virtual ~DialogLayer();
     virtual ~DialogLayer();
 
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void addToMainScene();
-    void keyBackClicked();
+    void keyBackClicked() override;
     void animateInDialog();
     void handleDialogTap();
-    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void createDialogLayer(DialogObject*, cocos2d::CCArray*, int);
     void createWithObjects(cocos2d::CCArray*, int);
     void displayNextObject();
@@ -30,12 +31,12 @@ public:
     void updateChatPlacement(DialogChatPlacement);
     void updateNavButtonFrame();
     void finishCurrentAnimation();
-    void registerWithTouchDispatcher();
-    void init(DialogObject*, cocos2d::CCArray*, int);
+    void registerWithTouchDispatcher() override;
+    void init(DialogObject*, cocos2d::CCArray*, int) override;
     void create(DialogObject*, int);
     void keyDown(cocos2d::enumKeyCodes, double);
     void onClose();
-    void onEnter();
+    void onEnter() override;
     void animateIn(DialogAnimationType);
 
 };

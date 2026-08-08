@@ -1,5 +1,6 @@
 // ============================================================
-// __foreign_exception.h — Reconstructed from libcocos2dcpp.so symbols
+// __foreign_exception.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef __CXXABIV1___FOREIGN_EXCEPTION_H_

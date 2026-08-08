@@ -1,8 +1,6 @@
 // ============================================================
 // CCSchedulerScriptHandlerEntry.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCSchedulerScriptHandlerEntry.h"
@@ -10,23 +8,37 @@
 namespace cocos2d {
 
 CCSchedulerScriptHandlerEntry::~CCSchedulerScriptHandlerEntry() {
-    // Destructor — 0xb107d0
+    // 0xb107d0
+    this->cleanup();
 }
 
 CCSchedulerScriptHandlerEntry::~CCSchedulerScriptHandlerEntry() {
-    // Destructor — 0xb10798
+    // 0xb10798
+    this->cleanup();
 }
 
 CCSchedulerScriptHandlerEntry::~CCSchedulerScriptHandlerEntry() {
-    // Destructor — 0xb10798
+    // 0xb10798
+    this->cleanup();
 }
 
 void CCSchedulerScriptHandlerEntry::init(float, bool) {
     // 0xb10478
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void CCSchedulerScriptHandlerEntry::create(int, float, bool) {
     // 0xb104e0
+    CCSchedulerScriptHandlerEntry* ret = new CCSchedulerScriptHandlerEntry();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 } // namespace cocos2d

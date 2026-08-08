@@ -1,5 +1,6 @@
 // ============================================================
-// LevelTools.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelTools.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELTOOLS_H_
@@ -39,6 +40,10 @@ public:
     void sortChannelOrderObjects(cocos2d::CCArray*, cocos2d::CCDictionary*, bool);
     void moveTriggerObjectsToArray(cocos2d::CCArray*, cocos2d::CCDictionary*, int);
     void getLevel(int, bool);
+
+protected:
+    std::string m_audioFileName;
+    std::string m_audioString;
 
 };
 

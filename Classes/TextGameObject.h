@@ -1,5 +1,6 @@
 // ============================================================
-// TextGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// TextGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef TEXTGAMEOBJECT_H_
@@ -22,6 +23,9 @@ public:
     void updateTextKerning(int);
     void init(cocos2d::CCTexture2D*);
     void create(cocos2d::CCTexture2D*);
+
+protected:
+    std::string m_saveString;
 
 };
 

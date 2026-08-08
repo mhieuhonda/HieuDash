@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_double_ _ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_double_ _ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<STD_VECTOR<DOUBLE, STD_ALLOCATOR<DOUBLE> >, STD_ALLOCATOR<STD_VECTOR<DOUBLE, STD_ALLOCATOR_DOUBLE_ _ _ __H_

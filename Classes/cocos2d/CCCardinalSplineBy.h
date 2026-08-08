@@ -1,5 +1,6 @@
 // ============================================================
-// CCCardinalSplineBy.h — Reconstructed from libcocos2dcpp.so symbols
+// CCCardinalSplineBy.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCCARDINALSPLINEBY_H_

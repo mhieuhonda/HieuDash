@@ -1,5 +1,6 @@
 // ============================================================
-// EditLevelLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// EditLevelLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef EDITLEVELLAYER_H_
@@ -50,6 +51,9 @@ public:
     void onDelete();
     void playStep2();
     void playStep3();
+
+protected:
+    int m_iDPopupClosed;
 
 };
 

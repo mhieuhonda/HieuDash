@@ -1,5 +1,6 @@
 // ============================================================
-// CCControlSwitch.h — Reconstructed from libcocos2dcpp.so symbols
+// CCControlSwitch.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCCONTROLSWITCH_H_
@@ -31,6 +32,9 @@ public:
     void setOn(bool, bool);
     void create(cocos2d::CCSprite*, cocos2d::CCSprite*, cocos2d::CCSprite*, cocos2d::CCSprite*);
     void create(cocos2d::CCSprite*, cocos2d::CCSprite*, cocos2d::CCSprite*, cocos2d::CCSprite*, cocos2d::CCLabelTTF*, cocos2d::CCLabelTTF*);
+
+protected:
+    bool m_enabled;
 
 };
 

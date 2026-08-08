@@ -1,5 +1,6 @@
 // ============================================================
-// GJShopLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// GJShopLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJSHOPLAYER_H_

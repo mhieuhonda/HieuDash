@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_CAState_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_CAState_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<CASTATE, STD_ALLOCATOR_CASTATE_ __H_

@@ -1,5 +1,6 @@
 // ============================================================
-// UserListDelegate.h — Reconstructed from libcocos2dcpp.so symbols
+// UserListDelegate.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef USERLISTDELEGATE_H_

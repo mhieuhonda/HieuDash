@@ -1,5 +1,6 @@
 // ============================================================
-// CCLayerColor.h — Reconstructed from libcocos2dcpp.so symbols
+// CCLayerColor.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCLAYERCOLOR_H_
@@ -36,6 +37,9 @@ public:
     void create(cocos2d::_ccColor4B const&, float, float);
     void create();
     void setColor(cocos2d::_ccColor3B const&);
+
+protected:
+    cocos2d::_ccColor3B m_color;
 
 };
 

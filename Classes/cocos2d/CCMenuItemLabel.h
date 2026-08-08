@@ -1,11 +1,13 @@
 // ============================================================
-// CCMenuItemLabel.h — Reconstructed from libcocos2dcpp.so symbols
+// CCMenuItemLabel.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCMENUITEMLABEL_H_
 #define COCOS2D_CCMENUITEMLABEL_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -27,6 +29,11 @@ public:
     void selected();
     void setLabel(cocos2d::CCNode*);
     void setString(char const*);
+
+protected:
+    cocos2d::_ccColor3B m_disabledColor;
+    bool m_enabled;
+    std::string m_string;
 
 };
 

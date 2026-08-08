@@ -1,8 +1,6 @@
 // ============================================================
 // vector_ChainNode, std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "vector_ChainNode, std.h"
@@ -18,10 +16,12 @@ namespace _M_emplace_back_aux<std {
 
 void vector<ChainNode, std::allocator<ChainNode> > const&>(std::vector<ChainNode> const&) {
     // 0x66e0b8
+    // TODO: Implement
 }
 
 void vector<ChainNode, std::allocator<ChainNode> > >(std::vector<ChainNode>&&) {
     // 0x66f4a0
+    // TODO: Implement
 }
 
 } // namespace _M_emplace_back_aux<std

@@ -1,8 +1,6 @@
 // ============================================================
 // CCObject__ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCObject__ _.h"
@@ -19,10 +17,12 @@ namespace allocator<cocos2d {
 
 void CCObject*> >::_M_copy(std::_Rb_tree_node<cocos2d::CCObject*> const*, std::_Rb_tree_node<cocos2d::CCObject*>*) {
     // 0xad30e8
+    // TODO: Implement
 }
 
 void CCObject*> >::_M_erase(std::_Rb_tree_node<cocos2d::CCObject*>*) {
     // 0xad2e80
+    // TODO: Implement
 }
 
 } // namespace allocator<cocos2d

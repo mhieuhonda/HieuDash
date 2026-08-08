@@ -1,5 +1,6 @@
 // ============================================================
-// LevelSelectLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelSelectLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELSELECTLAYER_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class LevelSelectLayer {
+class LevelSelectLayer : public cocos2d::CCLayer {
 public:
     virtual ~LevelSelectLayer();
     virtual ~LevelSelectLayer();
@@ -16,10 +17,10 @@ public:
     void onDownload(cocos2d::CCObject*);
     void colorForPage(int);
     void getColorValue(int, int, float);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void scrollLayerMoved(cocos2d::CCPoint);
     void updatePageWithObject(cocos2d::CCObject*, cocos2d::CCObject*);
-    void init(int);
+    void init(int) override;
     void scene(int);
     void create(int);
     void onBack(cocos2d::CCObject*);
@@ -29,6 +30,9 @@ public:
     void onPrev(cocos2d::CCObject*);
     void keyDown(cocos2d::enumKeyCodes, double);
     void tryShowAd();
+
+protected:
+    cocos2d::_ccColor3B m_colorValue;
 
 };
 

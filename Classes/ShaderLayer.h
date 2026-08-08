@@ -1,5 +1,6 @@
 // ============================================================
-// ShaderLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// ShaderLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SHADERLAYER_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class ShaderLayer {
+class ShaderLayer : public cocos2d::CCLayer {
 public:
     virtual ~ShaderLayer();
     virtual ~ShaderLayer();
@@ -85,10 +86,10 @@ public:
     void updateMotionBlurSpeedY(float, float);
     void preChromaticGlitchShader();
     void setupChromaticGlitchUniforms();
-    void init();
+    void init() override;
     void visit();
     void create();
-    void update(float);
+    void update(float) override;
 
 };
 

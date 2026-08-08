@@ -1,5 +1,6 @@
 // ============================================================
-// LevelSearchLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelSearchLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELSEARCHLAYER_H_
@@ -57,6 +58,12 @@ public:
     void checkDiff(int);
     void checkTime(int);
     void onFriends(cocos2d::CCObject*);
+
+protected:
+    std::string m_diffKey;
+    std::string m_levelLenKey;
+    std::string m_searchDiffKey;
+    std::string m_timeKey;
 
 };
 

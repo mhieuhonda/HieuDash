@@ -1,5 +1,6 @@
 // ============================================================
-// DS_Dictionary.h — Reconstructed from libcocos2dcpp.so symbols
+// DS_Dictionary.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef DS_DICTIONARY_H_
@@ -9,8 +10,9 @@
 #include <string>
 #include <vector>
 
-class DS_Dictionary {
+class DS_Dictionary : public cocos2d::CCObject {
 public:
+    static DS_Dictionary* create();
     DS_Dictionary();
     DS_Dictionary();
 
@@ -77,6 +79,25 @@ public:
     void copyFile(char const*, char const*);
     void removeKey(char const*);
     void removeKey(unsigned int);
+
+protected:
+    std::string m_allKeys;
+    std::string m_arrayForKey;
+    std::string m_boolForKey;
+    std::string m_dictForKey;
+    std::string m_floatForKey;
+    int m_indexOfKey;
+    int m_indexOfKeyWithClosestAlphaNumericalMatch;
+    std::string m_integerForKey;
+    std::string m_key;
+    std::string m_numKeys;
+    std::string m_objectForKey;
+    std::string m_rectArrayForKey;
+    std::string m_rectForKey;
+    std::string m_stringArrayForKey;
+    std::string m_stringForKey;
+    std::string m_vec2ArrayForKey;
+    std::string m_vec2ForKey;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// __ops.h — Reconstructed from libcocos2dcpp.so symbols
+// __ops.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef __GNU_CXX___NORMAL_ITERATOR<CHAR*, STD_STRING> STD___REMOVE_IF<__GNU_CXX___NORMAL_ITERATOR<CHAR*, STD_STRING>, __GNU_CXX___OPS_H_

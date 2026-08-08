@@ -1,5 +1,6 @@
 // ============================================================
-// _AsyncStruct__ _.h — Reconstructed from libcocos2dcpp.so symbols
+// _AsyncStruct__ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__DEQUE_BASE<COCOS2D__ASYNCSTRUCT*, STD_ALLOCATOR<COCOS2D__ASYNCSTRUCT__ __H_

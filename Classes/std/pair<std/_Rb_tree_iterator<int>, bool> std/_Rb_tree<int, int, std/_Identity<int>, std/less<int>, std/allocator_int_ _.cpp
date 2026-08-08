@@ -1,8 +1,6 @@
 // ============================================================
 // allocator_int_ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "allocator_int_ _.h"
@@ -16,10 +14,12 @@ namespace less<int>, std {
 
 void allocator<int> >::_M_insert_unique<int const&>(int const&) {
     // 0x66cc6c
+    // TODO: Implement
 }
 
 void allocator<int> >::_M_insert_unique<int>(int&&) {
     // 0x5d8098
+    // TODO: Implement
 }
 
 } // namespace less<int>, std

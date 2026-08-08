@@ -1,14 +1,17 @@
 // ============================================================
-// GameStatsManager.h — Reconstructed from libcocos2dcpp.so symbols
+// GameStatsManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GAMESTATSMANAGER_H_
 #define GAMESTATSMANAGER_H_
 
+#include "cocos2d.h"
 #include <string>
 
-class GameStatsManager {
+class GameStatsManager : public cocos2d::CCNode {
 public:
+    static GameStatsManager* create();
     virtual ~GameStatsManager();
     virtual ~GameStatsManager();
     virtual ~GameStatsManager();
@@ -174,11 +177,40 @@ public:
     void storeSecondaryQueuedChallenge(int, GJChallengeItem*);
     void markLevelAsCompletedAndClaimed(GJGameLevel*);
     void removeQueuedSecondaryChallenge(int);
-    void init();
+    void init() override;
     void getStat(char const*);
     void setStat(char const*, int);
     void logCoins();
     void tempClear();
+
+protected:
+    std::string m_challengeKey;
+    std::string m_currencyKey;
+    std::string m_dailyLevelKey;
+    std::string m_demonLevelKey;
+    int m_diamonds;
+    std::string m_eventRewardKey;
+    std::string m_gauntletRewardKey;
+    std::string m_itemKey;
+    int m_keys;
+    int m_legendScore;
+    std::string m_levelKey;
+    std::string m_listRewardKey;
+    std::string m_mapPackKey;
+    int m_moons;
+    int m_nextGoldChestID;
+    int m_orbs;
+    std::string m_pathRewardKey;
+    cocos2d::CCDictionary* m_playerStats;
+    std::string m_rewardKey;
+    std::string m_secretCoinKey;
+    int m_secretCoins;
+    std::string m_secretOnlineRewardKey;
+    std::string m_specialChestKeyForItem;
+    std::string m_starLevelKey;
+    int m_stars;
+    std::string m_statFromKey;
+    int m_userCoins;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// TextAlertPopup.h — Reconstructed from libcocos2dcpp.so symbols
+// TextAlertPopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef TEXTALERTPOPUP_H_
@@ -18,6 +19,10 @@ public:
     void setAlertPosition(cocos2d::CCPoint, cocos2d::CCPoint);
     void init(std::string, float, float, int, std::string);
     void create(std::string, float, float, int, std::string);
+
+protected:
+    cocos2d::CCPoint m_alertPosition;
+    cocos2d::_ccColor3B m_labelColor;
 
 };
 

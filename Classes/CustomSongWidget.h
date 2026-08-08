@@ -1,5 +1,6 @@
 // ============================================================
-// CustomSongWidget.h — Reconstructed from libcocos2dcpp.so symbols
+// CustomSongWidget.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CUSTOMSONGWIDGET_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class CustomSongWidget {
+class CustomSongWidget : public cocos2d::CCNode {
 public:
     virtual ~CustomSongWidget();
     virtual ~CustomSongWidget();
@@ -51,7 +52,7 @@ public:
     void updateWithMultiAssets(std::string, std::string, int);
     void updateDownloadProgress(float);
     void startMultiAssetDownload();
-    void init(SongInfoObject*, CustomSongDelegate*, bool, bool, bool, bool, bool, bool, int);
+    void init(SongInfoObject*, CustomSongDelegate*, bool, bool, bool, bool, bool, bool, int) override;
     void create(SongInfoObject*, CustomSongDelegate*, bool, bool, bool, bool, bool, bool, int);
     void onInfo(cocos2d::CCObject*);
     void onMore(cocos2d::CCObject*);

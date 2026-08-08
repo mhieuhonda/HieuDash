@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_GroupCommandObject2__ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_GroupCommandObject2__ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<GROUPCOMMANDOBJECT2*, STD_ALLOCATOR_GROUPCOMMANDOBJECT2__ __H_

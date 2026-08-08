@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_EffectGameObject__ ___ ___ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_EffectGameObject__ ___ ___ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<STD_VECTOR<STD_VECTOR<EFFECTGAMEOBJECT*, STD_ALLOCATOR<EFFECTGAMEOBJECT*> >*, STD_ALLOCATOR<STD_VECTOR<EFFECTGAMEOBJECT*, STD_ALLOCATOR<EFFECTGAMEOBJECT*> >*> >*, STD_ALLOCATOR<STD_VECTOR<STD_VECTOR<EFFECTGAMEOBJECT*, STD_ALLOCATOR<EFFECTGAMEOBJECT*> >*, STD_ALLOCATOR<STD_VECTOR<EFFECTGAMEOBJECT*, STD_ALLOCATOR_EFFECTGAMEOBJECT__ ___ ___ __H_

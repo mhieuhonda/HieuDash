@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_bool_ ___ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_bool_ ___ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<STD_VECTOR<BOOL, STD_ALLOCATOR<BOOL> >*, STD_ALLOCATOR<STD_VECTOR<BOOL, STD_ALLOCATOR_BOOL_ ___ __H_

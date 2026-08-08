@@ -1,5 +1,6 @@
 // ============================================================
-// ForceBlockGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// ForceBlockGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef FORCEBLOCKGAMEOBJECT_H_
@@ -19,6 +20,9 @@ public:
     void calculateForceToTarget(GameObject*);
     void init(char const*);
     void create(char const*);
+
+protected:
+    std::string m_saveString;
 
 };
 

@@ -1,8 +1,6 @@
 // ============================================================
 // pair_int, UnlockType_ const, int_ _ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "pair_int, UnlockType_ const, int_ _ _.h"
@@ -17,6 +15,7 @@ namespace pair<std {
 
 void pair<int, UnlockType> const, int> > >::operator[](std::pair<int, UnlockType>&&) {
     // 0xa8150c
+    // TODO: Implement
 }
 
 } // namespace pair<std

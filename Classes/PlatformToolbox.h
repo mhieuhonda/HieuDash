@@ -1,5 +1,6 @@
 // ============================================================
-// PlatformToolbox.h — Reconstructed from libcocos2dcpp.so symbols
+// PlatformToolbox.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PLATFORMTOOLBOX_H_
@@ -60,6 +61,12 @@ public:
     void logEvent(char const*);
     void sendMail(char const*, char const*, char const*);
     void getUserID();
+
+protected:
+    std::string m_clipboardString;
+    float m_deviceRefreshRate;
+    int m_uniqueUserID;
+    int m_userID;
 
 };
 

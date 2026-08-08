@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionFlipAngular.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionFlipAngular.h"
@@ -10,35 +8,53 @@
 namespace cocos2d {
 
 CCTransitionFlipAngular::CCTransitionFlipAngular() {
-    // Constructor — 0xaee708
+    // 0xaee708
 }
 
 CCTransitionFlipAngular::CCTransitionFlipAngular() {
-    // Constructor — 0xaee708
+    // 0xaee708
 }
 
 CCTransitionFlipAngular::~CCTransitionFlipAngular() {
-    // Destructor — 0xaecff8
+    // 0xaecff8
+    this->cleanup();
 }
 
 CCTransitionFlipAngular::~CCTransitionFlipAngular() {
-    // Destructor — 0xaecb7c
+    // 0xaecb7c
+    this->cleanup();
 }
 
 CCTransitionFlipAngular::~CCTransitionFlipAngular() {
-    // Destructor — 0xaecb7c
+    // 0xaecb7c
+    this->cleanup();
 }
 
 void CCTransitionFlipAngular::create(float, cocos2d::CCScene*) {
     // 0xaee798
+    CCTransitionFlipAngular* ret = new CCTransitionFlipAngular();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionFlipAngular::create(float, cocos2d::CCScene*, cocos2d::tOrientation) {
     // 0xaee738
+    CCTransitionFlipAngular* ret = new CCTransitionFlipAngular();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionFlipAngular::onEnter() {
     // 0xaef988
+    // TODO: Implement
 }
 
 } // namespace cocos2d

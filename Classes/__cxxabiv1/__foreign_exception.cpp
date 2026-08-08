@@ -1,8 +1,6 @@
 // ============================================================
 // __foreign_exception.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "__foreign_exception.h"
@@ -10,15 +8,18 @@
 namespace __cxxabiv1 {
 
 __foreign_exception::~__foreign_exception() {
-    // Destructor — 0xd1f020
+    // 0xd1f020
+    this->cleanup();
 }
 
 __foreign_exception::~__foreign_exception() {
-    // Destructor — 0xd1f01c
+    // 0xd1f01c
+    this->cleanup();
 }
 
 __foreign_exception::~__foreign_exception() {
-    // Destructor — 0xd1f01c
+    // 0xd1f01c
+    this->cleanup();
 }
 
 } // namespace __cxxabiv1

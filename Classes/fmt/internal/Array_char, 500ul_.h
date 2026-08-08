@@ -1,5 +1,6 @@
 // ============================================================
-// Array_char, 500ul_.h — Reconstructed from libcocos2dcpp.so symbols
+// Array_char, 500ul_.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef FMT_INTERNAL_ARRAY_CHAR, 500UL__H_

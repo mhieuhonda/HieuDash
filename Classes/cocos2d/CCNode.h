@@ -1,5 +1,6 @@
 // ============================================================
-// CCNode.h — Reconstructed from libcocos2dcpp.so symbols
+// CCNode.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCNODE_H_
@@ -160,6 +161,21 @@ public:
     void getComponent(char const*)) const;
     void getContentSize()) const;
     void getChildrenCount()) const;
+
+protected:
+    int m_actionByTag;
+    cocos2d::CCPoint m_anchorPoint;
+    cocos2d::CCPoint m_anchorPointInPoints;
+    int m_childByTag;
+    cocos2d::CCPoint m_position;
+    cocos2d::CCPoint m_positionX;
+    cocos2d::CCPoint m_positionY;
+    float m_scale;
+    float m_scaleX;
+    float m_scaleY;
+    float m_scaledContentSize;
+    int m_useChildIndex;
+    bool m_visible;
 
 };
 

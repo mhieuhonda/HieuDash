@@ -1,8 +1,6 @@
 // ============================================================
 // CCGrabber.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCGrabber.h"
@@ -10,35 +8,41 @@
 namespace cocos2d {
 
 CCGrabber::CCGrabber() {
-    // Constructor — 0xadb1b4
+    // 0xadb1b4
 }
 
 CCGrabber::CCGrabber() {
-    // Constructor — 0xadb1b4
+    // 0xadb1b4
 }
 
 CCGrabber::~CCGrabber() {
-    // Destructor — 0xadb190
+    // 0xadb190
+    this->cleanup();
 }
 
 CCGrabber::~CCGrabber() {
-    // Destructor — 0xadb154
+    // 0xadb154
+    this->cleanup();
 }
 
 CCGrabber::~CCGrabber() {
-    // Destructor — 0xadb154
+    // 0xadb154
+    this->cleanup();
 }
 
 void CCGrabber::afterRender(cocos2d::CCTexture2D*) {
     // 0xadb2c0
+    // TODO: Implement
 }
 
 void CCGrabber::beforeRender(cocos2d::CCTexture2D*) {
     // 0xadb268
+    // TODO: Implement
 }
 
 void CCGrabber::grab(cocos2d::CCTexture2D*) {
     // 0xadb1f8
+    // TODO: Implement
 }
 
 } // namespace cocos2d

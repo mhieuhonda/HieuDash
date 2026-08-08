@@ -1,37 +1,51 @@
 // ============================================================
 // SetColorIDPopup.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SetColorIDPopup.h"
 
 SetColorIDPopup::~SetColorIDPopup() {
-    // Destructor — 0x8c1efc
+    // 0x8c1efc
+    this->cleanup();
 }
 
 SetColorIDPopup::~SetColorIDPopup() {
-    // Destructor — 0x8c1d00
+    // 0x8c1d00
+    this->cleanup();
 }
 
 SetColorIDPopup::~SetColorIDPopup() {
-    // Destructor — 0x8c1d00
+    // 0x8c1d00
+    this->cleanup();
 }
 
 void SetColorIDPopup::colorSelectClosed(GJSpecialColorSelect*, int) {
     // 0x8c4cdc
+    // TODO: Implement
 }
 
 void SetColorIDPopup::onSelectSpecialColor(cocos2d::CCObject*) {
     // 0x8c3188
+    // TODO: Implement
 }
 
 void SetColorIDPopup::init(int) {
     // 0x8d2830
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SetColorIDPopup::create(int) {
     // 0x8d2b84
+    SetColorIDPopup* ret = new SetColorIDPopup();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

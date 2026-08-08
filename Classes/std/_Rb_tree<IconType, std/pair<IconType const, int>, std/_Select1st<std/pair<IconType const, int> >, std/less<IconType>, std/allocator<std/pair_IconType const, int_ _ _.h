@@ -1,5 +1,6 @@
 // ============================================================
-// pair_IconType const, int_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// pair_IconType const, int_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<ICONTYPE, STD_PAIR<ICONTYPE CONST, INT>, STD__SELECT1ST<STD_PAIR<ICONTYPE CONST, INT> >, STD_LESS<ICONTYPE>, STD_ALLOCATOR<STD_PAIR_ICONTYPE CONST, INT_ _ __H_

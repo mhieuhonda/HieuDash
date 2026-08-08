@@ -1,5 +1,6 @@
 // ============================================================
-// CCNodeRGBA.h — Reconstructed from libcocos2dcpp.so symbols
+// CCNodeRGBA.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCNODERGBA_H_
@@ -34,6 +35,12 @@ public:
     void create();
     void getColor();
     void setColor(cocos2d::_ccColor3B const&);
+
+protected:
+    bool m_cascadeColorEnabled;
+    bool m_cascadeOpacityEnabled;
+    cocos2d::_ccColor3B m_color;
+    cocos2d::_ccColor3B m_displayedColor;
 
 };
 

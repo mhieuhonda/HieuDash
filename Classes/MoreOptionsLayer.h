@@ -1,5 +1,6 @@
 // ============================================================
-// MoreOptionsLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// MoreOptionsLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef MOREOPTIONSLAYER_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class MoreOptionsLayer {
+class MoreOptionsLayer : public cocos2d::CCLayer {
 public:
     virtual ~MoreOptionsLayer();
     virtual ~MoreOptionsLayer();
@@ -24,7 +25,7 @@ public:
     void nextPosition(int);
     void onKeybindings(cocos2d::CCObject*);
     void onSongBrowser(cocos2d::CCObject*);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void objectsForPage(int);
     void textInputReturn(CCTextInputNode*);
     void offsetToNextPage();
@@ -32,7 +33,7 @@ public:
     void incrementCountForPage(int);
     void textInputShouldOffset(CCTextInputNode*, float);
     void dropDownLayerWillClose(GJDropDownLayer*);
-    void init();
+    void init() override;
     void create();
     void onInfo(cocos2d::CCObject*);
     void infoKey(int);

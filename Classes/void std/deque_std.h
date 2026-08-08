@@ -1,5 +1,6 @@
 // ============================================================
-// deque_std.h — Reconstructed from libcocos2dcpp.so symbols
+// deque_std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_DEQUE_STD_H_

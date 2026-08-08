@@ -1,5 +1,6 @@
 // ============================================================
-// GJLevelList.h — Reconstructed from libcocos2dcpp.so symbols
+// GJLevelList.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJLEVELLIST_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class GJLevelList {
+class GJLevelList : public cocos2d::CCObject {
 public:
     virtual ~GJLevelList();
     virtual ~GJLevelList();
@@ -33,7 +34,7 @@ public:
     void removeLevelFromList(int);
     void frameForListDifficulty(int, DifficultyIconType);
     void getUnpackedDescription();
-    void init();
+    void init() override;
     void create(cocos2d::CCDictionary*);
     void create();
     void canEncode();

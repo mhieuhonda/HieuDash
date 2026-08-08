@@ -1,29 +1,41 @@
 // ============================================================
 // SongObject.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SongObject.h"
 
 SongObject::~SongObject() {
-    // Destructor — 0x60a8d0
+    // 0x60a8d0
+    this->cleanup();
 }
 
 SongObject::~SongObject() {
-    // Destructor — 0x60a8bc
+    // 0x60a8bc
+    this->cleanup();
 }
 
 SongObject::~SongObject() {
-    // Destructor — 0x60a8bc
+    // 0x60a8bc
+    this->cleanup();
 }
 
 void SongObject::init(int) {
     // 0x614e14
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SongObject::create(int) {
     // 0x614e20
+    SongObject* ret = new SongObject();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 

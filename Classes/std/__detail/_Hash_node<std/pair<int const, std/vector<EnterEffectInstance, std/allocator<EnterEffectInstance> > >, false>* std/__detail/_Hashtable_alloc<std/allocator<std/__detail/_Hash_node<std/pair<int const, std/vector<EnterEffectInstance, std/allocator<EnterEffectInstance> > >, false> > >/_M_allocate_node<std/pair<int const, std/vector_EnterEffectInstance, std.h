@@ -1,5 +1,6 @@
 // ============================================================
-// vector_EnterEffectInstance, std.h — Reconstructed from libcocos2dcpp.so symbols
+// vector_EnterEffectInstance, std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD___DETAIL__HASH_NODE<STD_PAIR<INT CONST, STD_VECTOR<ENTEREFFECTINSTANCE, STD_ALLOCATOR<ENTEREFFECTINSTANCE> > >, FALSE>* STD___DETAIL__HASHTABLE_ALLOC<STD_ALLOCATOR<STD___DETAIL__HASH_NODE<STD_PAIR<INT CONST, STD_VECTOR<ENTEREFFECTINSTANCE, STD_ALLOCATOR<ENTEREFFECTINSTANCE> > >, FALSE> > >__M_ALLOCATE_NODE<STD_PAIR<INT CONST, STD_VECTOR_ENTEREFFECTINSTANCE, STD_H_

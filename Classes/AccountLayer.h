@@ -1,5 +1,6 @@
 // ============================================================
-// AccountLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// AccountLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ACCOUNTLAYER_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class AccountLayer {
+class AccountLayer : public cocos2d::CCLayer {
 public:
     virtual ~AccountLayer();
     virtual ~AccountLayer();

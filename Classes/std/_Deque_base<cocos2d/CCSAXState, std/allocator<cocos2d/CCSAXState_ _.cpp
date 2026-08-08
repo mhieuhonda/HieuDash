@@ -1,8 +1,6 @@
 // ============================================================
 // CCSAXState_ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCSAXState_ _.h"
@@ -14,6 +12,7 @@ namespace allocator<cocos2d {
 
 void CCSAXState> >::_M_initialize_map(unsigned long) {
     // 0xb078b8
+    // TODO: Implement
 }
 
 } // namespace allocator<cocos2d

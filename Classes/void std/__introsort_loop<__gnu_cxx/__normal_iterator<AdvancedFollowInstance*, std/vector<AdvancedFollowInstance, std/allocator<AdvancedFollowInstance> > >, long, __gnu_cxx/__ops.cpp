@@ -1,8 +1,6 @@
 // ============================================================
 // __ops.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "__ops.h"
@@ -15,6 +13,7 @@ namespace allocator<AdvancedFollowInstance> > >, long, __gnu_cxx {
 
 void __ops::_Iter_comp_iter<bool (*)(AdvancedFollowInstance const&, AdvancedFollowInstance const&)> >(__gnu_cxx::__normal_iterator<AdvancedFollowInstance*, std::vector<AdvancedFollowInstance> >, __gnu_cxx::__normal_iterator<AdvancedFollowInstance*, std::vector<AdvancedFollowInstance> >, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(AdvancedFollowInstance const&, AdvancedFollowInstance const&)>) {
     // 0x896280
+    // TODO: Implement
 }
 
 } // namespace allocator<AdvancedFollowInstance> > >, long, __gnu_cxx

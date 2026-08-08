@@ -1,8 +1,6 @@
 // ============================================================
 // VolatileTexture__ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "VolatileTexture__ _.h"
@@ -14,10 +12,12 @@ namespace allocator<cocos2d {
 
 void VolatileTexture*> >::~list() {
     // 0xb33ccc
+    // TODO: Implement
 }
 
 void VolatileTexture*> >::~list() {
     // 0xb33ccc
+    // TODO: Implement
 }
 
 } // namespace allocator<cocos2d

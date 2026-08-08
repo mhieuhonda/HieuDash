@@ -1,5 +1,6 @@
 // ============================================================
-// UndoObject.h — Reconstructed from libcocos2dcpp.so symbols
+// UndoObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef UNDOOBJECT_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class UndoObject {
+class UndoObject : public cocos2d::CCObject {
 public:
     virtual ~UndoObject();
     virtual ~UndoObject();
@@ -17,8 +18,8 @@ public:
     void createWithArray(cocos2d::CCArray*, UndoCommand);
     void initWithTransformObjects(cocos2d::CCArray*, UndoCommand);
     void createWithTransformObjects(cocos2d::CCArray*, UndoCommand);
-    void init(GameObject*, UndoCommand);
-    void init(cocos2d::CCArray*, UndoCommand);
+    void init(GameObject*, UndoCommand) override;
+    void init(cocos2d::CCArray*, UndoCommand) override;
     void create(GameObject*, UndoCommand);
 
 };

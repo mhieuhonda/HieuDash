@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_SFXTriggerState_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_SFXTriggerState_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<SFXTRIGGERSTATE, STD_ALLOCATOR_SFXTRIGGERSTATE_ __H_

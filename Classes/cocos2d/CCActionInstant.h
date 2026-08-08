@@ -1,5 +1,6 @@
 // ============================================================
-// CCActionInstant.h — Reconstructed from libcocos2dcpp.so symbols
+// CCActionInstant.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCACTIONINSTANT_H_

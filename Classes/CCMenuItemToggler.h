@@ -1,5 +1,6 @@
 // ============================================================
-// CCMenuItemToggler.h — Reconstructed from libcocos2dcpp.so symbols
+// CCMenuItemToggler.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCMENUITEMTOGGLER_H_
@@ -24,6 +25,9 @@ public:
     void toggle(bool);
     void activate();
     void selected();
+
+protected:
+    bool m_enabled;
 
 };
 

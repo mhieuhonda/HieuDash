@@ -1,0 +1,140 @@
+{
+    "name": "GeometryDash",
+    "version": "1.9",
+    "package": "com.robtopx.geometryjump",
+    "engine": "cocos2d-x-2.2.3",
+    "description": "Reverse-engineered resource manifest for HieuDash decompilation project",
+
+    "categories": {
+        "sprites": {
+            "description": "Game sprites and texture atlases PNGs",
+            "files": [
+                "GJ_GameSheet.png",
+                "GJ_GameSheet02.png",
+                "GJ_GameSheet03.png",
+                "GJ_GameSheet04.png",
+                "GJ_GameSheet05.png",
+                "GJ_GameSheetGlow.png",
+                "GJ_LaunchSheet.png",
+                "GJ_UISheet.png",
+                "GJ_SquareSheet.png",
+                "editBtnBk.png",
+                "editBtnPage.png"
+            ],
+            "plist": [
+                "GJ_GameSheet.plist",
+                "GJ_GameSheet02.plist",
+                "GJ_GameSheet03.plist",
+                "GJ_GameSheet04.plist",
+                "GJ_GameSheet05.plist",
+                "GJ_GameSheetGlow.plist",
+                "GJ_LaunchSheet.plist",
+                "GJ_UISheet.plist",
+                "GJ_SquareSheet.plist"
+            ]
+        },
+
+        "audio": {
+            "description": "Music tracks (MP3) and SFX (OGG)",
+            "music": [
+                "musicLoop_0.mp3",
+                "musicLoop_1.mp3",
+                "musicLoop_2.mp3",
+                "musicLoop_3.mp3",
+                "practiceModeLoop.mp3",
+                "secretLoop.mp3"
+            ],
+            "sfx": [
+                "playSound_01.ogg",
+                "playSound_02.ogg",
+                "playSound_03.ogg",
+                "playSound_04.ogg",
+                "playSound_05.ogg",
+                "playSound_06.ogg",
+                "playSound_07.ogg",
+                "playSound_08.ogg",
+                "playSound_09.ogg",
+                "deathSound.ogg",
+                "jumpSound_01.ogg",
+                "jumpSound_02.ogg",
+                "orbSound.ogg",
+                "portalSound.ogg",
+                "coinSound.ogg"
+            ]
+        },
+
+        "fonts": {
+            "description": "Bitmap and TTF fonts used by the game UI",
+            "files": [
+                "bigFont.fnt",
+                "bigFont.png",
+                "goldFont.fnt",
+                "goldFont.png",
+                "font01.fnt",
+                "font01.png",
+                "font02.fnt",
+                "font02.png",
+                "scoreFont.fnt",
+                "scoreFont.png",
+                "gjFont01.ttf",
+                "gjFont02.ttf"
+            ]
+        },
+
+        "particles": {
+            "description": "Cocos2d-x particle .plist definitions and textures",
+            "files": [
+                "deathEffect.plist",
+                "explosion.plist",
+                "groundBreak.plist",
+                "landEffect.plist",
+                "musicParticle.plist",
+                "portalParticle.plist",
+                "spark.plist",
+                "squareEffect.plist",
+                "trail.plist",
+                "uibg.plist",
+                "particleBg.png"
+            ]
+        },
+
+        "shaders": {
+            "description": "Custom GLSL vertex/fragment shaders",
+            "files": [
+                "bump.vsh",
+                "bump.fsh",
+                "glow.vsh",
+                "glow.fsh",
+                "gradient.vsh",
+                "gradient.fsh",
+                "pulse.vsh",
+                "pulse.fsh",
+                "swirl.vsh",
+                "swirl.fsh"
+            ]
+        },
+
+        "levels": {
+            "description": "Built-in level data files extracted from the APK",
+            "files": [
+                "levels.dat",
+                "dailyLevel.dat",
+                "gauntletLevels.dat",
+                "mapPacks.dat",
+                "quests.dat"
+            ]
+        },
+
+        "ui": {
+            "description": "UI layout and localization resources",
+            "files": [
+                "Languages.plist",
+                "shopIcons.plist",
+                "achievements.plist",
+                "secretIcons.plist"
+            ]
+        }
+    },
+
+    "total_resources": 87
+}

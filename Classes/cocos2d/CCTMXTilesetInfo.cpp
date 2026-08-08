@@ -1,8 +1,6 @@
 // ============================================================
 // CCTMXTilesetInfo.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTMXTilesetInfo.h"
@@ -10,27 +8,31 @@
 namespace cocos2d {
 
 CCTMXTilesetInfo::CCTMXTilesetInfo() {
-    // Constructor — 0xb3baa4
+    // 0xb3baa4
 }
 
 CCTMXTilesetInfo::CCTMXTilesetInfo() {
-    // Constructor — 0xb3baa4
+    // 0xb3baa4
 }
 
 CCTMXTilesetInfo::~CCTMXTilesetInfo() {
-    // Destructor — 0xb3b064
+    // 0xb3b064
+    this->cleanup();
 }
 
 CCTMXTilesetInfo::~CCTMXTilesetInfo() {
-    // Destructor — 0xb3af4c
+    // 0xb3af4c
+    this->cleanup();
 }
 
 CCTMXTilesetInfo::~CCTMXTilesetInfo() {
-    // Destructor — 0xb3af4c
+    // 0xb3af4c
+    this->cleanup();
 }
 
 void CCTMXTilesetInfo::rectForGID(unsigned int) {
     // 0xb3bb1c
+    // TODO: Implement
 }
 
 } // namespace cocos2d

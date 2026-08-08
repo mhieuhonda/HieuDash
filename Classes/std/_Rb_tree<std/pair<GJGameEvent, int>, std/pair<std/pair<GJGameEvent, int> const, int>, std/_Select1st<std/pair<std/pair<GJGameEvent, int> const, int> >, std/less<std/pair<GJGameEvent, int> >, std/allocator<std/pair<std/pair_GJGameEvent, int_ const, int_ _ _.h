@@ -1,5 +1,6 @@
 // ============================================================
-// pair_GJGameEvent, int_ const, int_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// pair_GJGameEvent, int_ const, int_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<STD_PAIR<GJGAMEEVENT, INT>, STD_PAIR<STD_PAIR<GJGAMEEVENT, INT> CONST, INT>, STD__SELECT1ST<STD_PAIR<STD_PAIR<GJGAMEEVENT, INT> CONST, INT> >, STD_LESS<STD_PAIR<GJGAMEEVENT, INT> >, STD_ALLOCATOR<STD_PAIR<STD_PAIR_GJGAMEEVENT, INT_ CONST, INT_ _ __H_

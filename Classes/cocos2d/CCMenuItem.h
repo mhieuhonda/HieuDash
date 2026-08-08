@@ -1,5 +1,6 @@
 // ============================================================
-// CCMenuItem.h — Reconstructed from libcocos2dcpp.so symbols
+// CCMenuItem.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCMENUITEM_H_
@@ -28,6 +29,9 @@ public:
     void selected();
     void isEnabled();
     void setTarget(cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
+
+protected:
+    bool m_enabled;
 
 };
 

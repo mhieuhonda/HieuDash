@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionZoomFlipX.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionZoomFlipX.h"
@@ -10,35 +8,53 @@
 namespace cocos2d {
 
 CCTransitionZoomFlipX::CCTransitionZoomFlipX() {
-    // Constructor — 0xaee7a0
+    // 0xaee7a0
 }
 
 CCTransitionZoomFlipX::CCTransitionZoomFlipX() {
-    // Constructor — 0xaee7a0
+    // 0xaee7a0
 }
 
 CCTransitionZoomFlipX::~CCTransitionZoomFlipX() {
-    // Destructor — 0xaed01c
+    // 0xaed01c
+    this->cleanup();
 }
 
 CCTransitionZoomFlipX::~CCTransitionZoomFlipX() {
-    // Destructor — 0xaecb90
+    // 0xaecb90
+    this->cleanup();
 }
 
 CCTransitionZoomFlipX::~CCTransitionZoomFlipX() {
-    // Destructor — 0xaecb90
+    // 0xaecb90
+    this->cleanup();
 }
 
 void CCTransitionZoomFlipX::create(float, cocos2d::CCScene*) {
     // 0xaee830
+    CCTransitionZoomFlipX* ret = new CCTransitionZoomFlipX();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionZoomFlipX::create(float, cocos2d::CCScene*, cocos2d::tOrientation) {
     // 0xaee7d0
+    CCTransitionZoomFlipX* ret = new CCTransitionZoomFlipX();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionZoomFlipX::onEnter() {
     // 0xaefae4
+    // TODO: Implement
 }
 
 } // namespace cocos2d

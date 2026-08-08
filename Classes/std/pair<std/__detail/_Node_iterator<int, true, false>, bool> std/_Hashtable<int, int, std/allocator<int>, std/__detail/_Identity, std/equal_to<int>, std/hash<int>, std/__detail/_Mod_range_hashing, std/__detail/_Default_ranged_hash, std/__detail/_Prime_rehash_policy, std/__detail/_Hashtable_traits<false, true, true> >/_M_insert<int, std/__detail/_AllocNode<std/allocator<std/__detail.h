@@ -1,5 +1,6 @@
 // ============================================================
-// __detail.h — Reconstructed from libcocos2dcpp.so symbols
+// __detail.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_PAIR<STD___DETAIL__NODE_ITERATOR<INT, TRUE, FALSE>, BOOL> STD__HASHTABLE<INT, INT, STD_ALLOCATOR<INT>, STD___DETAIL__IDENTITY, STD_EQUAL_TO<INT>, STD_HASH<INT>, STD___DETAIL__MOD_RANGE_HASHING, STD___DETAIL__DEFAULT_RANGED_HASH, STD___DETAIL__PRIME_REHASH_POLICY, STD___DETAIL__HASHTABLE_TRAITS<FALSE, TRUE, TRUE> >__M_INSERT<INT, STD___DETAIL__ALLOCNODE<STD_ALLOCATOR<STD___DETAIL_H_

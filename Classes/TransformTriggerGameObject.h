@@ -1,5 +1,6 @@
 // ============================================================
-// TransformTriggerGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// TransformTriggerGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef TRANSFORMTRIGGERGAMEOBJECT_H_
@@ -19,6 +20,9 @@ public:
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init(char const*);
     void create(char const*);
+
+protected:
+    std::string m_saveString;
 
 };
 

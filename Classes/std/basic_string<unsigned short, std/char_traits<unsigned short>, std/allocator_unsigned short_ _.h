@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_unsigned short_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_unsigned short_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_BASIC_STRING<UNSIGNED SHORT, STD_CHAR_TRAITS<UNSIGNED SHORT>, STD_ALLOCATOR_UNSIGNED SHORT_ __H_

@@ -1,5 +1,6 @@
 // ============================================================
-// xml_writer_stream.h — Reconstructed from libcocos2dcpp.so symbols
+// xml_writer_stream.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PUGI_XML_WRITER_STREAM_H_

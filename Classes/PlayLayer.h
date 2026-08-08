@@ -1,15 +1,25 @@
 // ============================================================
-// PlayLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// PlayLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PLAYLAYER_H_
 #define PLAYLAYER_H_
 
+#include "GJBaseGameLayer.h"
+#include "GJEffectManager.h"
+#include "GJGameLevel.h"
+#include "PlayerObject.h"
 #include "cocos2d.h"
 #include <string>
 #include <vector>
 
-class PlayLayer {
+// Forward declarations
+class GJEffectManager;
+class GJGameLevel;
+class PlayerObject;
+
+class PlayLayer : public GJBaseGameLayer {
 public:
     virtual ~PlayLayer();
     virtual ~PlayLayer();
@@ -127,10 +137,10 @@ public:
     void processCreateObjectsFromSetup();
     void createObjectsFromSetupFinished();
     void playPlatformerEndAnimationToPos(cocos2d::CCPoint, bool);
-    void init(GJGameLevel*, bool, bool);
+    void init(GJGameLevel*, bool, bool) override;
     void scene(GJGameLevel*, bool, bool);
     void create(GJGameLevel*, bool, bool);
-    void onExit();
+    void onExit() override;
     void onQuit();
     void resume();
     void flipArt(bool);
@@ -141,6 +151,21 @@ public:
     void fullReset();
     void pauseGame(bool);
     void startGame();
+
+protected:
+    int m_attemptCount;
+    float m_cameraY;
+    GJEffectManager* m_effectManager;
+    cocos2d::CCPoint m_endPosition;
+    cocos2d::CCArray* m_gameObjects;
+    float m_gameTime;
+    float m_gameTimeMod;
+    bool m_isPaused;
+    GJGameLevel* m_level;
+    PlayerObject* m_player1;
+    PlayerObject* m_player2;
+    cocos2d::CCArray* m_sections;
+    float m_speed;
 
 };
 

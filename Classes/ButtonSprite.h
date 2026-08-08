@@ -1,11 +1,13 @@
 // ============================================================
-// ButtonSprite.h — Reconstructed from libcocos2dcpp.so symbols
+// ButtonSprite.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef BUTTONSPRITE_H_
 #define BUTTONSPRITE_H_
 
 #include "cocos2d.h"
+#include <string>
 
 class ButtonSprite {
 public:
@@ -28,6 +30,10 @@ public:
     void create(cocos2d::CCSprite*, int, int, float, float, bool, char const*, bool);
     void setColor(cocos2d::_ccColor3B);
     void setString(char const*);
+
+protected:
+    cocos2d::_ccColor3B m_color;
+    std::string m_string;
 
 };
 

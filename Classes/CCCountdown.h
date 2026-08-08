@@ -1,5 +1,6 @@
 // ============================================================
-// CCCountdown.h — Reconstructed from libcocos2dcpp.so symbols
+// CCCountdown.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCCOUNTDOWN_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class CCCountdown {
+class CCCountdown : public cocos2d::CCLabelTTF {
 public:
     virtual ~CCCountdown();
     virtual ~CCCountdown();
@@ -16,7 +17,7 @@ public:
     void setOpacity(unsigned char);
     void lapFinished();
     void startTimerWithSeconds(float, void (cocos2d::CCObject::*)(), cocos2d::CCNode*);
-    void init();
+    void init() override;
     void create();
 
 };

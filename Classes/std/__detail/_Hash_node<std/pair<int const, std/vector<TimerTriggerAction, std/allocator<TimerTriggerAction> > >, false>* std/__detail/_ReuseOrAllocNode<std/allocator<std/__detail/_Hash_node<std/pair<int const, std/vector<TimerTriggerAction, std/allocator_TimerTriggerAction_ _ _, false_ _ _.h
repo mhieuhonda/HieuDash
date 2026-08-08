@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_TimerTriggerAction_ _ _, false_ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_TimerTriggerAction_ _ _, false_ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD___DETAIL__HASH_NODE<STD_PAIR<INT CONST, STD_VECTOR<TIMERTRIGGERACTION, STD_ALLOCATOR<TIMERTRIGGERACTION> > >, FALSE>* STD___DETAIL__REUSEORALLOCNODE<STD_ALLOCATOR<STD___DETAIL__HASH_NODE<STD_PAIR<INT CONST, STD_VECTOR<TIMERTRIGGERACTION, STD_ALLOCATOR_TIMERTRIGGERACTION_ _ _, FALSE_ _ __H_

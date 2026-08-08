@@ -1,19 +1,21 @@
 // ============================================================
-// GJListLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// GJListLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GJLISTLAYER_H_
 #define GJLISTLAYER_H_
 
+#include "ListLayer.h"
 #include "cocos2d.h"
 
-class GJListLayer {
+class GJListLayer : public ListLayer {
 public:
     virtual ~GJListLayer();
     virtual ~GJListLayer();
     virtual ~GJListLayer();
 
-    void init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, int);
+    void init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, int) override;
     void create(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, int);
 
 };

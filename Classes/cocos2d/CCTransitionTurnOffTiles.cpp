@@ -1,8 +1,6 @@
 // ============================================================
 // CCTransitionTurnOffTiles.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTransitionTurnOffTiles.h"
@@ -10,39 +8,52 @@
 namespace cocos2d {
 
 CCTransitionTurnOffTiles::CCTransitionTurnOffTiles() {
-    // Constructor — 0xaeeaac
+    // 0xaeeaac
 }
 
 CCTransitionTurnOffTiles::CCTransitionTurnOffTiles() {
-    // Constructor — 0xaeeaac
+    // 0xaeeaac
 }
 
 CCTransitionTurnOffTiles::~CCTransitionTurnOffTiles() {
-    // Destructor — 0xaed0d0
+    // 0xaed0d0
+    this->cleanup();
 }
 
 CCTransitionTurnOffTiles::~CCTransitionTurnOffTiles() {
-    // Destructor — 0xaecd18
+    // 0xaecd18
+    this->cleanup();
 }
 
 CCTransitionTurnOffTiles::~CCTransitionTurnOffTiles() {
-    // Destructor — 0xaecd18
+    // 0xaecd18
+    this->cleanup();
 }
 
 void CCTransitionTurnOffTiles::sceneOrder() {
     // 0xaecad0
+    // TODO: Implement
 }
 
 void CCTransitionTurnOffTiles::easeActionWithAction(cocos2d::CCActionInterval*) {
     // 0xaecad8
+    // TODO: Implement
 }
 
 void CCTransitionTurnOffTiles::create(float, cocos2d::CCScene*) {
     // 0xaeeae4
+    CCTransitionTurnOffTiles* ret = new CCTransitionTurnOffTiles();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void CCTransitionTurnOffTiles::onEnter() {
     // 0xaf04a0
+    // TODO: Implement
 }
 
 } // namespace cocos2d

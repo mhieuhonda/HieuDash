@@ -1,5 +1,6 @@
 // ============================================================
-// JniHelper.h — Reconstructed from libcocos2dcpp.so symbols
+// JniHelper.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_JNIHELPER_H_
@@ -18,6 +19,9 @@ public:
     void getPlatformTimestamp();
     void getJavaVM();
     void setJavaVM(_JavaVM*);
+
+protected:
+    int m_classID;
 
 };
 

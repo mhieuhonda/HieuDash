@@ -1,5 +1,6 @@
 // ============================================================
-// CCControlPotentiometer.h — Reconstructed from libcocos2dcpp.so symbols
+// CCControlPotentiometer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCCONTROLPOTENTIOMETER_H_
@@ -37,6 +38,9 @@ public:
     void create(char const*, char const*, char const*);
     void getValue();
     void setValue(float);
+
+protected:
+    bool m_enabled;
 
 };
 

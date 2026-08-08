@@ -1,8 +1,6 @@
 // ============================================================
 // BitmapDC.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "BitmapDC.h"
@@ -10,11 +8,13 @@
 namespace cocos2d {
 
 BitmapDC::~BitmapDC() {
-    // Destructor — 0xb0b95c
+    // 0xb0b95c
+    this->cleanup();
 }
 
 BitmapDC::~BitmapDC() {
-    // Destructor — 0xb0b95c
+    // 0xb0b95c
+    this->cleanup();
 }
 
 } // namespace cocos2d

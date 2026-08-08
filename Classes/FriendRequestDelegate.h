@@ -1,5 +1,6 @@
 // ============================================================
-// FriendRequestDelegate.h — Reconstructed from libcocos2dcpp.so symbols
+// FriendRequestDelegate.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef FRIENDREQUESTDELEGATE_H_

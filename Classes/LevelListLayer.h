@@ -1,5 +1,6 @@
 // ============================================================
-// LevelListLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelListLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELLISTLAYER_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class LevelListLayer {
+class LevelListLayer : public cocos2d::CCLayer {
 public:
     virtual ~LevelListLayer();
     virtual ~LevelListLayer();
@@ -43,18 +44,21 @@ public:
     void cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*);
     void levelListDeleteFailed(int);
     void levelListDeleteFinished(int);
-    void init(GJLevelList*);
+    void init(GJLevelList*) override;
     void scene(GJLevelList*);
     void create(GJLevelList*);
     void onBack(cocos2d::CCObject*);
-    void onExit();
+    void onExit() override;
     void onInfo(cocos2d::CCObject*);
     void onLike(cocos2d::CCObject*);
-    void onEnter();
+    void onEnter() override;
     void onShare(cocos2d::CCObject*);
     void onDelete();
     void cloneList();
     void likedItem(LikeItemType, int, bool);
+
+protected:
+    int m_iDPopupClosed;
 
 };
 

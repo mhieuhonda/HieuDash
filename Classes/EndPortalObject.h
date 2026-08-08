@@ -1,5 +1,6 @@
 // ============================================================
-// EndPortalObject.h — Reconstructed from libcocos2dcpp.so symbols
+// EndPortalObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ENDPORTALOBJECT_H_
@@ -21,6 +22,10 @@ public:
     void triggerObject(GJBaseGameLayer*);
     void init();
     void create();
+
+protected:
+    cocos2d::CCPoint m_position;
+    bool m_visible;
 
 };
 

@@ -1,5 +1,6 @@
 // ============================================================
-// SetupTriggerPopup.h — Reconstructed from libcocos2dcpp.so symbols
+// SetupTriggerPopup.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SETUPTRIGGERPOPUP_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class SetupTriggerPopup {
+class SetupTriggerPopup : public cocos2d::CCLayer {
 public:
     virtual ~SetupTriggerPopup();
     virtual ~SetupTriggerPopup();
@@ -24,14 +25,14 @@ public:
     void updateLabel(int, std::string);
     void updateValue(int, float);
     void addInfoLabel(std::string, float, cocos2d::CCPoint, int, int);
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void onPlusButton(cocos2d::CCObject*);
     void updateSlider(int);
     void updateSlider(int, float);
     void valueChanged(int, float);
     void addHelpButton(std::string, std::string, float);
     void addCloseButton(std::string);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onCustomButton(cocos2d::CCObject*);
     void onDisableValue(cocos2d::CCObject*);
     void onMultiTrigger(cocos2d::CCObject*);
@@ -112,7 +113,7 @@ public:
     void createToggleValueControlAdvanced(int, std::string, cocos2d::CCPoint, bool, int, int, float, float, float, cocos2d::CCPoint);
     void createMultiTriggerItemsDefaultVertical();
     void createMultiTriggerItemsDefaultHorizontal();
-    void init(EffectGameObject*, cocos2d::CCArray*, float, float, int);
+    void init(EffectGameObject*, cocos2d::CCArray*, float, float, int) override;
     void show();
     void create(EffectGameObject*, cocos2d::CCArray*, float, float, int);
     void create(float, float);
@@ -126,6 +127,9 @@ public:
     void preSetup();
     void toggleBG(bool);
     void postSetup();
+
+protected:
+    int m_truncatedValueByTag;
 
 };
 

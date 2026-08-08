@@ -1,5 +1,6 @@
 // ============================================================
-// FormatInt_unsigned long, fmt.h — Reconstructed from libcocos2dcpp.so symbols
+// FormatInt_unsigned long, fmt.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID FMT_BASICWRITER<CHAR>_FORMATINT_UNSIGNED LONG, FMT_H_

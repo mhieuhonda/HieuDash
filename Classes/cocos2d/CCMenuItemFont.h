@@ -1,11 +1,13 @@
 // ============================================================
-// CCMenuItemFont.h — Reconstructed from libcocos2dcpp.so symbols
+// CCMenuItemFont.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCMENUITEMFONT_H_
 #define COCOS2D_CCMENUITEMFONT_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -27,6 +29,10 @@ public:
     void create(char const*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*));
     void fontName();
     void fontSize();
+
+protected:
+    std::string m_fontName;
+    std::string m_fontNameObj;
 
 };
 

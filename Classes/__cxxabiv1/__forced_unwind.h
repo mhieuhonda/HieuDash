@@ -1,5 +1,6 @@
 // ============================================================
-// __forced_unwind.h — Reconstructed from libcocos2dcpp.so symbols
+// __forced_unwind.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef __CXXABIV1___FORCED_UNWIND_H_

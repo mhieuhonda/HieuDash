@@ -1,5 +1,6 @@
 // ============================================================
-// URLCell.h — Reconstructed from libcocos2dcpp.so symbols
+// URLCell.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef URLCELL_H_

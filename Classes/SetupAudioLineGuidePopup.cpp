@@ -1,37 +1,51 @@
 // ============================================================
 // SetupAudioLineGuidePopup.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "SetupAudioLineGuidePopup.h"
 
 SetupAudioLineGuidePopup::~SetupAudioLineGuidePopup() {
-    // Destructor — 0xa43b18
+    // 0xa43b18
+    this->cleanup();
 }
 
 SetupAudioLineGuidePopup::~SetupAudioLineGuidePopup() {
-    // Destructor — 0xa432d0
+    // 0xa432d0
+    this->cleanup();
 }
 
 SetupAudioLineGuidePopup::~SetupAudioLineGuidePopup() {
-    // Destructor — 0xa432d0
+    // 0xa432d0
+    this->cleanup();
 }
 
 void SetupAudioLineGuidePopup::selectSettingClosed(SelectSettingLayer*) {
     // 0xa44038
+    // TODO: Implement
 }
 
 void SetupAudioLineGuidePopup::init(AudioLineGuideGameObject*, cocos2d::CCArray*) {
     // 0xa4f5fc
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void SetupAudioLineGuidePopup::create(AudioLineGuideGameObject*, cocos2d::CCArray*) {
     // 0xa4fee8
+    SetupAudioLineGuidePopup* ret = new SetupAudioLineGuidePopup();
+    if (ret && ret->init()) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return nullptr;
 }
 
 void SetupAudioLineGuidePopup::onSpeed(cocos2d::CCObject*) {
     // 0xa43ebc
+    // TODO: Implement
 }
 

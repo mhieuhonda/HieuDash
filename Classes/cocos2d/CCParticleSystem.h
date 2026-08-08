@@ -1,5 +1,6 @@
 // ============================================================
-// CCParticleSystem.h — Reconstructed from libcocos2dcpp.so symbols
+// CCParticleSystem.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCPARTICLESYSTEM_H_
@@ -137,6 +138,22 @@ public:
     void setPosVar(cocos2d::CCPoint const&);
     void setScaleX(float);
     void setScaleY(float);
+
+protected:
+    float m_emissionRate;
+    cocos2d::_ccColor3B m_endColor;
+    cocos2d::_ccColor3B m_endColorVar;
+    int m_particleCount;
+    cocos2d::CCPoint m_positionType;
+    float m_scale;
+    float m_scaleX;
+    float m_scaleY;
+    cocos2d::CCPoint m_sourcePosition;
+    float m_speed;
+    float m_speedVar;
+    cocos2d::_ccColor3B m_startColor;
+    cocos2d::_ccColor3B m_startColorVar;
+    bool m_visible;
 
 };
 

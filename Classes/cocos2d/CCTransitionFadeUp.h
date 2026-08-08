@@ -1,5 +1,6 @@
 // ============================================================
-// CCTransitionFadeUp.h — Reconstructed from libcocos2dcpp.so symbols
+// CCTransitionFadeUp.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCTRANSITIONFADEUP_H_

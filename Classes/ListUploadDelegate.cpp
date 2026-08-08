@@ -1,17 +1,19 @@
 // ============================================================
 // ListUploadDelegate.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "ListUploadDelegate.h"
 
 void ListUploadDelegate::listUploadFailed(GJLevelList*, int) {
     // 0xa71fc4
+    // Load from file/storage
+    // TODO: Implement loading
 }
 
 void ListUploadDelegate::listUploadFinished(GJLevelList*) {
     // 0xa71fc0
+    // Load from file/storage
+    // TODO: Implement loading
 }
 

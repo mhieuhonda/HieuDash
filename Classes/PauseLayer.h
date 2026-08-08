@@ -1,5 +1,6 @@
 // ============================================================
-// PauseLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// PauseLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PAUSELAYER_H_
@@ -8,7 +9,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class PauseLayer {
+class PauseLayer : public cocos2d::CCLayer {
 public:
     virtual ~PauseLayer();
     virtual ~PauseLayer();
@@ -19,7 +20,7 @@ public:
     void onNormalMode(cocos2d::CCObject*);
     void onRestartFull(cocos2d::CCObject*);
     void tryShowBanner(float);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onPracticeMode(cocos2d::CCObject*);
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void onRecordReplays(cocos2d::CCObject*);
@@ -27,7 +28,7 @@ public:
     void setupProgressBars();
     void createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint);
     void musicSliderChanged(cocos2d::CCObject*);
-    void init(bool);
+    void init(bool) override;
     void keyUp(cocos2d::enumKeyCodes, double);
     void create(bool);
     void goEdit();

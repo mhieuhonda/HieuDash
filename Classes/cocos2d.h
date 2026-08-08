@@ -1,11 +1,11 @@
 // ============================================================
-// cocos2d.h — Reconstructed from libcocos2dcpp.so symbols
+// cocos2d.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_H_
 #define COCOS2D_H_
 
-#include "cocos2d.h"
 #include <string>
 #include <vector>
 
@@ -203,6 +203,9 @@ public:
     void ccpLength(cocos2d::CCPoint const&);
     void unzOpen64(void const*);
     void unztell64(void*);
+
+protected:
+    int m_characterCountInUTF8String;
 
 };
 

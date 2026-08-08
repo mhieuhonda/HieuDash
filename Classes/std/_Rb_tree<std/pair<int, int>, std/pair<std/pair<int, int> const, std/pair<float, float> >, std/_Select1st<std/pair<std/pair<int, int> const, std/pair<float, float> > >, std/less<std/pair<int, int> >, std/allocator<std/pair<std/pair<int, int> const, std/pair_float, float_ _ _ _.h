@@ -1,5 +1,6 @@
 // ============================================================
-// pair_float, float_ _ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// pair_float, float_ _ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<STD_PAIR<INT, INT>, STD_PAIR<STD_PAIR<INT, INT> CONST, STD_PAIR<FLOAT, FLOAT> >, STD__SELECT1ST<STD_PAIR<STD_PAIR<INT, INT> CONST, STD_PAIR<FLOAT, FLOAT> > >, STD_LESS<STD_PAIR<INT, INT> >, STD_ALLOCATOR<STD_PAIR<STD_PAIR<INT, INT> CONST, STD_PAIR_FLOAT, FLOAT_ _ _ __H_

@@ -1,5 +1,6 @@
 // ============================================================
-// MenuGameLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// MenuGameLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef MENUGAMELAYER_H_
@@ -27,6 +28,9 @@ public:
     void create();
     void update(float);
     void tryJump(float);
+
+protected:
+    cocos2d::_ccColor3B m_bGColor;
 
 };
 

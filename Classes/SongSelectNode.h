@@ -1,11 +1,13 @@
 // ============================================================
-// SongSelectNode.h — Reconstructed from libcocos2dcpp.so symbols
+// SongSelectNode.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SONGSELECTNODE_H_
 #define SONGSELECTNODE_H_
 
 #include "cocos2d.h"
+#include <string>
 
 class SongSelectNode {
 public:
@@ -30,6 +32,10 @@ public:
     void init(int, bool, LevelSettingsObject*, SongSelectType, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCMenu*, bool);
     void create(int, bool, LevelSettingsObject*, SongSelectType, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCMenu*, bool);
     void audioNext(cocos2d::CCObject*);
+
+protected:
+    int m_activeSongID;
+    std::string m_songFileName;
 
 };
 

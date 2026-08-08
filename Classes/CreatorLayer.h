@@ -1,5 +1,6 @@
 // ============================================================
-// CreatorLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// CreatorLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CREATORLAYER_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class CreatorLayer {
+class CreatorLayer : public cocos2d::CCLayer {
 public:
     virtual ~CreatorLayer();
     virtual ~CreatorLayer();
@@ -26,7 +27,7 @@ public:
     void onSavedLevels(cocos2d::CCObject*);
     void onSecretVault(cocos2d::CCObject*);
     void onWeeklyLevel(cocos2d::CCObject*);
-    void keyBackClicked();
+    void keyBackClicked() override;
     void onAdventureMap(cocos2d::CCObject*);
     void onLeaderboards(cocos2d::CCObject*);
     void onOnlineLevels(cocos2d::CCObject*);
@@ -36,7 +37,7 @@ public:
     void checkQuestsStatus();
     void onOnlyFullVersion(cocos2d::CCObject*);
     void canPlayOnlineLevels();
-    void init();
+    void init() override;
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

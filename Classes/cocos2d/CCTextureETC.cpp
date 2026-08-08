@@ -1,8 +1,6 @@
 // ============================================================
 // CCTextureETC.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTextureETC.h"
@@ -10,31 +8,37 @@
 namespace cocos2d {
 
 CCTextureETC::CCTextureETC() {
-    // Constructor — 0xb36eb8
+    // 0xb36eb8
 }
 
 CCTextureETC::CCTextureETC() {
-    // Constructor — 0xb36eb8
+    // 0xb36eb8
 }
 
 CCTextureETC::~CCTextureETC() {
-    // Destructor — 0xb36e94
+    // 0xb36e94
+    this->cleanup();
 }
 
 CCTextureETC::~CCTextureETC() {
-    // Destructor — 0xb36e80
+    // 0xb36e80
+    this->cleanup();
 }
 
 CCTextureETC::~CCTextureETC() {
-    // Destructor — 0xb36e80
+    // 0xb36e80
+    this->cleanup();
 }
 
 void CCTextureETC::loadTexture(char const*) {
     // 0xb36f70
+    // Load from file/storage
+    // TODO: Implement loading
 }
 
 void CCTextureETC::initWithFile(char const*) {
     // 0xb3716c
+    // TODO: Implement
 }
 
 void CCTextureETC::getName()) const {

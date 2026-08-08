@@ -1,5 +1,6 @@
 // ============================================================
-// CCSAXState_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// CCSAXState_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__DEQUE_BASE<COCOS2D_CCSAXSTATE, STD_ALLOCATOR<COCOS2D_CCSAXSTATE_ __H_

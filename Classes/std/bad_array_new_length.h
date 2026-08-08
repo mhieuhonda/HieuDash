@@ -1,5 +1,6 @@
 // ============================================================
-// bad_array_new_length.h — Reconstructed from libcocos2dcpp.so symbols
+// bad_array_new_length.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_BAD_ARRAY_NEW_LENGTH_H_

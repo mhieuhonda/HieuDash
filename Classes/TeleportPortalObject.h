@@ -1,5 +1,6 @@
 // ============================================================
-// TeleportPortalObject.h — Reconstructed from libcocos2dcpp.so symbols
+// TeleportPortalObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef TELEPORTPORTALOBJECT_H_
@@ -30,6 +31,11 @@ public:
     void setStartPosOverride(cocos2d::CCPoint);
     void init(char const*, bool);
     void create(char const*, bool);
+
+protected:
+    cocos2d::CCPoint m_position;
+    cocos2d::CCPoint m_positionOverride;
+    std::string m_saveString;
 
 };
 

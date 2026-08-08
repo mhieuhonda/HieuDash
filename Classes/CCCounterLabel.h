@@ -1,5 +1,6 @@
 // ============================================================
-// CCCounterLabel.h — Reconstructed from libcocos2dcpp.so symbols
+// CCCounterLabel.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CCCOUNTERLABEL_H_
@@ -21,6 +22,9 @@ public:
     void fastUpdateCounter();
     void init(int, char const*, FormatterType);
     void create(int, char const*, FormatterType);
+
+protected:
+    int m_targetCount;
 
 };
 

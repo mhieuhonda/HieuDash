@@ -1,8 +1,6 @@
 // ============================================================
 // CCTimer.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCTimer.h"
@@ -10,55 +8,67 @@
 namespace cocos2d {
 
 CCTimer::CCTimer() {
-    // Constructor — 0xab0b70
+    // 0xab0b70
 }
 
 CCTimer::CCTimer() {
-    // Constructor — 0xab0b70
+    // 0xab0b70
 }
 
 CCTimer::~CCTimer() {
-    // Destructor — 0xab0b3c
+    // 0xab0b3c
+    this->cleanup();
 }
 
 CCTimer::~CCTimer() {
-    // Destructor — 0xab0b28
+    // 0xab0b28
+    this->cleanup();
 }
 
 CCTimer::~CCTimer() {
-    // Destructor — 0xab0b28
+    // 0xab0b28
+    this->cleanup();
 }
 
 void CCTimer::setInterval(float) {
     // 0xab0d60
+    // TODO: Implement
 }
 
 void CCTimer::initWithTarget(cocos2d::CCObject*, void (cocos2d::CCObject::*)(float)) {
     // 0xab0d48
+    // TODO: Implement
 }
 
 void CCTimer::initWithTarget(cocos2d::CCObject*, void (cocos2d::CCObject::*)(float), float, unsigned int, float) {
     // 0xab0c40
+    // TODO: Implement
 }
 
 void CCTimer::timerWithTarget(cocos2d::CCObject*, void (cocos2d::CCObject::*)(float)) {
     // 0xab0c84
+    // TODO: Implement
 }
 
 void CCTimer::timerWithTarget(cocos2d::CCObject*, void (cocos2d::CCObject::*)(float), float) {
     // 0xab0ce4
+    // TODO: Implement
 }
 
 void CCTimer::initWithScriptHandler(int, float) {
     // 0xab0bd4
+    // TODO: Implement
 }
 
 void CCTimer::timerWithScriptHandler(int, float) {
     // 0xab0bf0
+    // TODO: Implement
 }
 
 void CCTimer::update(float) {
     // 0xab176c
+    // Game update loop — called every frame
+    // TODO: Implement game logic update
 }
 
 void CCTimer::getInterval()) const {

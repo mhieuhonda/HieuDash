@@ -1,5 +1,6 @@
 // ============================================================
-// LevelCell.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelCell.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELCELL_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class LevelCell {
+class LevelCell : public cocos2d::CCNode {
 public:
     LevelCell(char const*, float, float);
     LevelCell(char const*, float, float);
@@ -23,8 +24,8 @@ public:
     void updateCellMode(int);
     void loadLocalLevelCell();
     void loadCustomLevelCell();
-    void draw();
-    void init();
+    void draw() override;
+    void init() override;
     void create(float, float);
     void onClick(cocos2d::CCObject*);
     void onToggle(cocos2d::CCObject*);

@@ -1,5 +1,6 @@
 // ============================================================
-// BoomListView.h — Reconstructed from libcocos2dcpp.so symbols
+// BoomListView.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef BOOMLISTVIEW_H_
@@ -7,7 +8,7 @@
 
 #include "cocos2d.h"
 
-class BoomListView {
+class BoomListView : public cocos2d::CCLayer {
 public:
     virtual ~BoomListView();
     virtual ~BoomListView();
@@ -23,8 +24,8 @@ public:
     void TableViewWillReloadCellForRowAtIndexPath(CCIndexPath&, TableViewCell*, TableView*);
     void TableViewWillDisplayCellForRowAtIndexPath(CCIndexPath&, TableViewCell*, TableView*);
     void TableViewCommitCellEditingStyleForRowAtIndexPath(TableView*, TableViewCellEditingStyle, CCIndexPath&);
-    void draw();
-    void init(cocos2d::CCArray*, TableViewCellDelegate*, float, float, int, BoomListType, float);
+    void draw() override;
+    void init(cocos2d::CCArray*, TableViewCellDelegate*, float, float, int, BoomListType, float) override;
     void create(cocos2d::CCArray*, TableViewCellDelegate*, float, float, int, BoomListType, float);
     void loadCell(TableViewCell*, int);
     void lockList(bool);

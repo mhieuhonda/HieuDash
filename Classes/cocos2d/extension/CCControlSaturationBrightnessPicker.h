@@ -1,5 +1,6 @@
 // ============================================================
-// CCControlSaturationBrightnessPicker.h — Reconstructed from libcocos2dcpp.so symbols
+// CCControlSaturationBrightnessPicker.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCCONTROLSATURATIONBRIGHTNESSPICKER_H_
@@ -29,6 +30,9 @@ public:
     void updateSliderPosition(cocos2d::CCPoint);
     void registerWithTouchDispatcher();
     void create(cocos2d::CCNode*, cocos2d::CCPoint);
+
+protected:
+    bool m_enabled;
 
 };
 

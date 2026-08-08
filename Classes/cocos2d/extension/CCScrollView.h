@@ -1,5 +1,6 @@
 // ============================================================
-// CCScrollView.h — Reconstructed from libcocos2dcpp.so symbols
+// CCScrollView.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCSCROLLVIEW_H_
@@ -62,6 +63,11 @@ public:
     void addChild(cocos2d::CCNode*, int, int);
     void afterDraw();
     void getContentSize()) const;
+
+protected:
+    bool m_touchEnabled;
+    float m_zoomScale;
+    float m_zoomScaleInDuration;
 
 };
 

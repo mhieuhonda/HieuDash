@@ -1,8 +1,6 @@
 // ============================================================
 // _M_insert_unique_std.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "_M_insert_unique_std.h"
@@ -23,10 +21,12 @@ namespace string> > {
 
 void _M_insert_unique<std::string const&>(std::string const&) {
     // 0x71aa58
+    // TODO: Implement
 }
 
 void _M_insert_unique<std::string>(std::string&&) {
     // 0xb1b8c4
+    // TODO: Implement
 }
 
 } // namespace string> >

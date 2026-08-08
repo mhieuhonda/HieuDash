@@ -1,5 +1,6 @@
 // ============================================================
-// CCSortedObject.h — Reconstructed from libcocos2dcpp.so symbols
+// CCSortedObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_EXTENSION_CCSORTEDOBJECT_H_
@@ -18,6 +19,9 @@ public:
 
     void getObjectID();
     void setObjectID(unsigned int);
+
+protected:
+    int m_objectID;
 
 };
 

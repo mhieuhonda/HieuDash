@@ -1,5 +1,6 @@
 // ============================================================
-// LevelOptionsLayer2.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelOptionsLayer2.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELOPTIONSLAYER2_H_

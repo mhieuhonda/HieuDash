@@ -1,14 +1,19 @@
 // ============================================================
-// PlayerObject.h — Reconstructed from libcocos2dcpp.so symbols
+// PlayerObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef PLAYEROBJECT_H_
 #define PLAYEROBJECT_H_
 
+#include "GameObject.h"
 #include "cocos2d.h"
 #include <string>
 
-class PlayerObject {
+// Forward declarations
+class GameObject;
+
+class PlayerObject : public GameObject {
 public:
     virtual ~PlayerObject();
     virtual ~PlayerObject();
@@ -219,9 +224,9 @@ public:
     void stopPlatformerJumpAnimation();
     void handleRotatedObjectCollision(float, GameObject*, cocos2d::CCRect, bool);
     void handleRotatedCollisionInternal(float, GameObject*, cocos2d::CCRect, bool, bool, bool);
-    void init(int, int, GJBaseGameLayer*, cocos2d::CCLayer*, bool);
+    void init(int, int, GJBaseGameLayer*, cocos2d::CCLayer*, bool) override;
     void create(int, int, GJBaseGameLayer*, cocos2d::CCLayer*, bool);
-    void update(float);
+    void update(float) override;
     void flipMod();
     void speedUp();
     void isFlying();
@@ -238,6 +243,32 @@ public:
     void setScaleX(float);
     void setScaleY(float);
     void speedDown();
+
+protected:
+    bool m_activeMode;
+    GameObject* m_activePortal;
+    int m_bufferStates;
+    cocos2d::_ccColor3B m_color;
+    float m_gravity;
+    IconType m_iconType;
+    bool m_isDashing;
+    bool m_isDead;
+    bool m_isInPlayMode;
+    bool m_isOnGround;
+    bool m_isRising;
+    float m_jumpHeight;
+    cocos2d::CCPoint m_oldPosition;
+    float m_playerSpeed;
+    cocos2d::CCPoint m_position;
+    cocos2d::CCPoint m_realPosition;
+    float m_rotationSpeed;
+    float m_scale;
+    float m_scaleX;
+    float m_scaleY;
+    cocos2d::_ccColor3B m_secondColor;
+    float m_vehicleSize;
+    bool m_visible;
+    float m_yVelocity;
 
 };
 

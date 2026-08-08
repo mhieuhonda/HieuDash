@@ -1,5 +1,6 @@
 // ============================================================
-// LevelSettingsObject.h — Reconstructed from libcocos2dcpp.so symbols
+// LevelSettingsObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef LEVELSETTINGSOBJECT_H_
@@ -21,6 +22,9 @@ public:
     void setupColorsFromLegacyMode(cocos2d::CCDictionary*);
     void init();
     void create();
+
+protected:
+    std::string m_saveString;
 
 };
 

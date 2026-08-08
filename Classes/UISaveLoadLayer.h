@@ -1,5 +1,6 @@
 // ============================================================
-// UISaveLoadLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// UISaveLoadLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef UISAVELOADLAYER_H_

@@ -1,5 +1,6 @@
 // ============================================================
-// CCMenu.h — Reconstructed from libcocos2dcpp.so symbols
+// CCMenu.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCMENU_H_
@@ -50,6 +51,9 @@ public:
     void addChild(cocos2d::CCNode*, int);
     void addChild(cocos2d::CCNode*, int, int);
     void isEnabled();
+
+protected:
+    bool m_enabled;
 
 };
 

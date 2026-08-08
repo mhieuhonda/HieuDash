@@ -1,49 +1,60 @@
 // ============================================================
 // GameCell.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "GameCell.h"
 
 GameCell::GameCell(char const*, float, float) {
-    // Constructor — 0x56c5a4
+    // 0x56c5a4
 }
 
 GameCell::GameCell(char const*, float, float) {
-    // Constructor — 0x56c5a4
+    // 0x56c5a4
 }
 
 GameCell::~GameCell() {
-    // Destructor — 0x56c0c0
+    // 0x56c0c0
+    this->cleanup();
 }
 
 GameCell::~GameCell() {
-    // Destructor — 0x56bfd8
+    // 0x56bfd8
+    this->cleanup();
 }
 
 GameCell::~GameCell() {
-    // Destructor — 0x56bfd8
+    // 0x56bfd8
+    this->cleanup();
 }
 
 void GameCell::updateBGColor(int) {
     // 0x56ce7c
+    // TODO: Implement
 }
 
 void GameCell::loadFromString(std::string) {
     // 0x56c70c
+    // Load from file/storage
+    // TODO: Implement loading
 }
 
 void GameCell::draw() {
     // 0x56be0c
+    // Render/draw logic
+    // TODO: Implement rendering
 }
 
 void GameCell::init() {
     // 0x56bb4c
+    bool ret = ::init() if "" else true;
+    if (!ret) return false;
+    // TODO: Initialize members and UI
+    return true;
 }
 
 void GameCell::onTouch(cocos2d::CCObject*) {
     // 0x56bec8
+    // TODO: Implement
 }
 

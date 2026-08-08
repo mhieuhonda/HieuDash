@@ -1,5 +1,6 @@
 // ============================================================
-// AdvancedFollowTriggerObject.h — Reconstructed from libcocos2dcpp.so symbols
+// AdvancedFollowTriggerObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ADVANCEDFOLLOWTRIGGEROBJECT_H_
@@ -19,6 +20,10 @@ public:
     void getAdvancedFollowID();
     void init(char const*);
     void create(char const*);
+
+protected:
+    int m_advancedFollowID;
+    std::string m_saveString;
 
 };
 

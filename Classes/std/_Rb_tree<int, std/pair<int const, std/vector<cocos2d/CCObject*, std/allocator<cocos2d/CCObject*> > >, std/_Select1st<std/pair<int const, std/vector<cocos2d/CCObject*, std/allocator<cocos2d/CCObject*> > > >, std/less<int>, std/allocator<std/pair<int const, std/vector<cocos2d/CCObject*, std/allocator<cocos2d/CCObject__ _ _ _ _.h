@@ -1,5 +1,6 @@
 // ============================================================
-// CCObject__ _ _ _ _.h — Reconstructed from libcocos2dcpp.so symbols
+// CCObject__ _ _ _ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD__RB_TREE<INT, STD_PAIR<INT CONST, STD_VECTOR<COCOS2D_CCOBJECT*, STD_ALLOCATOR<COCOS2D_CCOBJECT*> > >, STD__SELECT1ST<STD_PAIR<INT CONST, STD_VECTOR<COCOS2D_CCOBJECT*, STD_ALLOCATOR<COCOS2D_CCOBJECT*> > > >, STD_LESS<INT>, STD_ALLOCATOR<STD_PAIR<INT CONST, STD_VECTOR<COCOS2D_CCOBJECT*, STD_ALLOCATOR<COCOS2D_CCOBJECT__ _ _ _ __H_

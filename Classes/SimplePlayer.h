@@ -1,5 +1,6 @@
 // ============================================================
-// SimplePlayer.h — Reconstructed from libcocos2dcpp.so symbols
+// SimplePlayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SIMPLEPLAYER_H_
@@ -31,6 +32,11 @@ public:
     void setColor(cocos2d::_ccColor3B const&);
     void setColors(cocos2d::_ccColor3B const&, cocos2d::_ccColor3B const&);
     void setFrames(char const*, char const*, char const*, char const*, char const*);
+
+protected:
+    cocos2d::_ccColor3B m_color;
+    cocos2d::_ccColor3B m_colors;
+    cocos2d::_ccColor3B m_secondColor;
 
 };
 

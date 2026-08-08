@@ -1,5 +1,6 @@
 // ============================================================
-// SliderTouchLogic.h — Reconstructed from libcocos2dcpp.so symbols
+// SliderTouchLogic.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SLIDERTOUCHLOGIC_H_
@@ -7,19 +8,19 @@
 
 #include "cocos2d.h"
 
-class SliderTouchLogic {
+class SliderTouchLogic : public cocos2d::CCNode {
 public:
     virtual ~SliderTouchLogic();
     virtual ~SliderTouchLogic();
     virtual ~SliderTouchLogic();
 
     void setRotated(bool);
-    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*);
-    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    void ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
+    void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void setMaxOffset(float);
-    void registerWithTouchDispatcher();
-    void init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, float);
+    void registerWithTouchDispatcher() override;
+    void init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, float) override;
     void create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, float);
 
 };

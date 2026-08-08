@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_ChainNode_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_ChainNode_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<CHAINNODE, STD_ALLOCATOR_CHAINNODE_ __H_

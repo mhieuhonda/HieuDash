@@ -1,5 +1,6 @@
 // ============================================================
-// __uninitialized_copy_false_.h — Reconstructed from libcocos2dcpp.so symbols
+// __uninitialized_copy_false_.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef GROUPCOMMANDOBJECT2* STD___UNINITIALIZED_COPY_FALSE__H_

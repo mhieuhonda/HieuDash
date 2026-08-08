@@ -1,5 +1,6 @@
 // ============================================================
-// CustomizeObjectLayer.h — Reconstructed from libcocos2dcpp.so symbols
+// CustomizeObjectLayer.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef CUSTOMIZEOBJECTLAYER_H_
@@ -53,6 +54,10 @@ public:
     void onClose(cocos2d::CCObject*);
     void onPaste(cocos2d::CCObject*);
     void onBrowse(cocos2d::CCObject*);
+
+protected:
+    bool m_activeMode;
+    int m_buttonByTag;
 
 };
 

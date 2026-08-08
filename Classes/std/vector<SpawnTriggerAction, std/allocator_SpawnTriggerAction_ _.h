@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_SpawnTriggerAction_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_SpawnTriggerAction_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef STD_VECTOR<SPAWNTRIGGERACTION, STD_ALLOCATOR_SPAWNTRIGGERACTION_ __H_

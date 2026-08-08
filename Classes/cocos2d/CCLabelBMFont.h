@@ -1,11 +1,13 @@
 // ============================================================
-// CCLabelBMFont.h — Reconstructed from libcocos2dcpp.so symbols
+// CCLabelBMFont.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCLABELBMFONT_H_
 #define COCOS2D_CCLABELBMFONT_H_
 
 #include "cocos2d.h"
+#include <string>
 
 namespace cocos2d {
 
@@ -62,6 +64,17 @@ public:
     void setString(char const*, bool);
     void setString(unsigned short*, bool);
     void getConfiguration()) const;
+
+protected:
+    std::string m_cString;
+    bool m_cascadeColorEnabled;
+    bool m_cascadeOpacityEnabled;
+    cocos2d::_ccColor3B m_color;
+    cocos2d::_ccColor3B m_displayedColor;
+    float m_scale;
+    float m_scaleX;
+    float m_scaleY;
+    std::string m_string;
 
 };
 

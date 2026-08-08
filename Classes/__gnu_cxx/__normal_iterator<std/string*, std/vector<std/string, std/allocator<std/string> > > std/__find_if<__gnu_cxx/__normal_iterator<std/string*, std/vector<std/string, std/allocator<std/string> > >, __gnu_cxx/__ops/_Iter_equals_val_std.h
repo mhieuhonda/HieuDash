@@ -1,5 +1,6 @@
 // ============================================================
-// _Iter_equals_val_std.h — Reconstructed from libcocos2dcpp.so symbols
+// _Iter_equals_val_std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef __GNU_CXX___NORMAL_ITERATOR<STD_STRING*, STD_VECTOR<STD_STRING, STD_ALLOCATOR<STD_STRING> > > STD___FIND_IF<__GNU_CXX___NORMAL_ITERATOR<STD_STRING*, STD_VECTOR<STD_STRING, STD_ALLOCATOR<STD_STRING> > >, __GNU_CXX___OPS__ITER_EQUALS_VAL_STD_H_

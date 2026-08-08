@@ -1,5 +1,6 @@
 // ============================================================
-// _M_emplace_back_aux_std.h — Reconstructed from libcocos2dcpp.so symbols
+// _M_emplace_back_aux_std.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<STD_STRING, STD_ALLOCATOR<STD_STRING> >__M_EMPLACE_BACK_AUX_STD_H_

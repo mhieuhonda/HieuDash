@@ -1,5 +1,6 @@
 // ============================================================
-// AchievementManager.h — Reconstructed from libcocos2dcpp.so symbols
+// AchievementManager.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef ACHIEVEMENTMANAGER_H_
@@ -41,6 +42,9 @@ public:
     void reportPlatformAchievementWithID(char const*, int);
     void init();
     void setup();
+
+protected:
+    int m_achievementsWithID;
 
 };
 

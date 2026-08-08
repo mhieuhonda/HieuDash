@@ -1,5 +1,6 @@
 // ============================================================
-// SpecialAnimGameObject.h — Reconstructed from libcocos2dcpp.so symbols
+// SpecialAnimGameObject.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef SPECIALANIMGAMEOBJECT_H_
@@ -23,6 +24,9 @@ public:
     void updateSyncedAnimation(float, int);
     void init(char const*);
     void create(char const*);
+
+protected:
+    std::string m_saveString;
 
 };
 

@@ -1,8 +1,6 @@
 // ============================================================
 // allocator_unsigned int_ _.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "allocator_unsigned int_ _.h"
@@ -16,10 +14,12 @@ namespace less<unsigned int>, std {
 
 void allocator<unsigned int> >::_M_insert_unique<unsigned int const&>(unsigned int const&) {
     // 0xae4ce8
+    // TODO: Implement
 }
 
 void allocator<unsigned int> >::_M_insert_unique<unsigned int>(unsigned int&&) {
     // 0xaa7d5c
+    // TODO: Implement
 }
 
 } // namespace less<unsigned int>, std

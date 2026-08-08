@@ -1,5 +1,6 @@
 // ============================================================
-// allocator_FMODQueuedEffect_ _.h — Reconstructed from libcocos2dcpp.so symbols
+// allocator_FMODQueuedEffect_ _.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef VOID STD_VECTOR<FMODQUEUEDEFFECT, STD_ALLOCATOR_FMODQUEUEDEFFECT_ __H_

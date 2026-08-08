@@ -1,8 +1,6 @@
 // ============================================================
 // CCAnimationFrame.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "CCAnimationFrame.h"
@@ -10,31 +8,36 @@
 namespace cocos2d {
 
 CCAnimationFrame::CCAnimationFrame() {
-    // Constructor — 0xb13120
+    // 0xb13120
 }
 
 CCAnimationFrame::CCAnimationFrame() {
-    // Constructor — 0xb13120
+    // 0xb13120
 }
 
 CCAnimationFrame::~CCAnimationFrame() {
-    // Destructor — 0xb130d8
+    // 0xb130d8
+    this->cleanup();
 }
 
 CCAnimationFrame::~CCAnimationFrame() {
-    // Destructor — 0xb13054
+    // 0xb13054
+    this->cleanup();
 }
 
 CCAnimationFrame::~CCAnimationFrame() {
-    // Destructor — 0xb13054
+    // 0xb13054
+    this->cleanup();
 }
 
 void CCAnimationFrame::copyWithZone(cocos2d::CCZone*) {
     // 0xb131f8
+    // TODO: Implement
 }
 
 void CCAnimationFrame::initWithSpriteFrame(cocos2d::CCSpriteFrame*, float, cocos2d::CCDictionary*) {
     // 0xb13168
+    // TODO: Implement
 }
 
 } // namespace cocos2d

@@ -1,5 +1,6 @@
 // ============================================================
-// recursive_init_error.h — Reconstructed from libcocos2dcpp.so symbols
+// recursive_init_error.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef __GNU_CXX_RECURSIVE_INIT_ERROR_H_

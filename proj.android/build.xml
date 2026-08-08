@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ===================================================================
+     GeometryDash — Android Ant build script
+     (Cocos2d-x 2.2.3 decompilation project)
+     =================================================================== -->
+<project name="GeometryDash" default="help">
+
+    <!-- The local.properties file is created by 'android update project'
+         and holds the path to the SDK.  Do not check it into VCS. -->
+    <property file="local.properties" />
+
+    <!-- The ant.properties file can be used to override default
+         properties such as build.dir or sign.*. -->
+    <property file="ant.properties" />
+
+    <!-- Load project-specific properties -->
+    <property file="project.properties" />
+
+    <!-- Quick-check: SDK must be defined -->
+    <fail
+        message="sdk.dir is missing.  Run 'android update project' or set it in local.properties."
+        unless="sdk.dir"
+    />
+
+    <!-- Import the Android Ant build rules -->
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

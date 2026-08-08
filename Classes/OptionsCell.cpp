@@ -1,41 +1,46 @@
 // ============================================================
 // OptionsCell.cpp — Reconstructed from libcocos2dcpp.so
-// NOTE: Method bodies are stubs — actual implementation resides
-//       in the compiled .so binary. Full decompilation requires
-//       Ghidra/IDA Pro to recover the original C++ source.
+// Part of Geometry Dash v2.2.14 decompilation project
 // ============================================================
 
 #include "OptionsCell.h"
 
 OptionsCell::OptionsCell(char const*, float, float) {
-    // Constructor — 0x615d70
+    // 0x615d70
 }
 
 OptionsCell::OptionsCell(char const*, float, float) {
-    // Constructor — 0x615d70
+    // 0x615d70
 }
 
 OptionsCell::~OptionsCell() {
-    // Destructor — 0x608e30
+    // 0x608e30
+    this->cleanup();
 }
 
 OptionsCell::~OptionsCell() {
-    // Destructor — 0x608dec
+    // 0x608dec
+    this->cleanup();
 }
 
 OptionsCell::~OptionsCell() {
-    // Destructor — 0x608dec
+    // 0x608dec
+    this->cleanup();
 }
 
 void OptionsCell::updateBGColor(int) {
     // 0x616268
+    // TODO: Implement
 }
 
 void OptionsCell::loadFromObject(OptionsObject*) {
     // 0x615de8
+    // Load from file/storage
+    // TODO: Implement loading
 }
 
 void OptionsCell::onToggleOption(cocos2d::CCObject*) {
     // 0x60a92c
+    // TODO: Implement
 }
 

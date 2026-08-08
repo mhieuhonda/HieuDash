@@ -1,5 +1,6 @@
 // ============================================================
-// CCTwirl.h — Reconstructed from libcocos2dcpp.so symbols
+// CCTwirl.h — Reconstructed from libcocos2dcpp.so
+// Part of Geometry Dash v2.2.144 decompilation project
 // ============================================================
 
 #ifndef COCOS2D_CCTWIRL_H_
@@ -20,6 +21,9 @@ public:
     void initWithDuration(float, cocos2d::CCSize const&, cocos2d::CCPoint, unsigned int, float);
     void create(float, cocos2d::CCSize const&, cocos2d::CCPoint, unsigned int, float);
     void update(float);
+
+protected:
+    cocos2d::CCPoint m_position;
 
 };
 
