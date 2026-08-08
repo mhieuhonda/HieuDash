@@ -8,7 +8,7 @@
 
 **Bản dịch ngược này được thực hiện vì mục đích chung của cộng đồng và thử nghiệm.**
 
-Đã có sự cho phép hoàn toàn từ bên phía nhà phát hành (BANDISHARE) để thực hiện cuộc dịch ngược này.
+Đã có sự cho phép hoàn toàn từ bên phía nhà phát hành (Robtop) để thực hiện cuộc dịch ngược này.
 
 ### 🚫 Cấm sao chép — READ CAREFULLY
 
