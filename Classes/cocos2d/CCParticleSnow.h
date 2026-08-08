@@ -1,0 +1,27 @@
+// ============================================================
+// CCParticleSnow.h — Reconstructed from libcocos2dcpp.so symbols
+// ============================================================
+
+#ifndef COCOS2D_CCPARTICLESNOW_H_
+#define COCOS2D_CCPARTICLESNOW_H_
+
+#include "cocos2d.h"
+
+namespace cocos2d {
+
+class CCParticleSnow {
+public:
+    virtual ~CCParticleSnow();
+    virtual ~CCParticleSnow();
+    virtual ~CCParticleSnow();
+
+    void initWithTotalParticles(unsigned int);
+    void createWithTotalParticles(unsigned int);
+    void init();
+    void create();
+
+};
+
+} // namespace cocos2d
+
+#endif // COCOS2D_CCPARTICLESNOW_H_

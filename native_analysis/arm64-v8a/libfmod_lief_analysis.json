@@ -1,0 +1,5364 @@
+{
+  "format": "FORMATS.ELF",
+  "architecture": "ARCH.AARCH64",
+  "entrypoint": 327680,
+  "is_pie": false,
+  "has_nx": true,
+  "libraries": [
+    "liblog.so",
+    "libstdc++.so",
+    "libm.so",
+    "libdl.so",
+    "libc.so"
+  ],
+  "sections": [
+    {
+      "name": "",
+      "size": 0,
+      "vaddr": 0,
+      "type": "TYPE.SHT_NULL_"
+    },
+    {
+      "name": ".note.android.ident",
+      "size": 152,
+      "vaddr": 624,
+      "type": "TYPE.NOTE"
+    },
+    {
+      "name": ".note.gnu.build-id",
+      "size": 32,
+      "vaddr": 776,
+      "type": "TYPE.NOTE"
+    },
+    {
+      "name": ".dynsym",
+      "size": 33528,
+      "vaddr": 808,
+      "type": "TYPE.DYNSYM"
+    },
+    {
+      "name": ".gnu.version",
+      "size": 2794,
+      "vaddr": 34336,
+      "type": "TYPE.GNU_VERSYM"
+    },
+    {
+      "name": ".gnu.version_r",
+      "size": 128,
+      "vaddr": 37132,
+      "type": "TYPE.GNU_VERNEED"
+    },
+    {
+      "name": ".gnu.hash",
+      "size": 8552,
+      "vaddr": 37264,
+      "type": "TYPE.GNU_HASH"
+    },
+    {
+      "name": ".hash",
+      "size": 11184,
+      "vaddr": 45816,
+      "type": "TYPE.HASH"
+    },
+    {
+      "name": ".dynstr",
+      "size": 41673,
+      "vaddr": 57000,
+      "type": "TYPE.STRTAB"
+    },
+    {
+      "name": ".rela.dyn",
+      "size": 48360,
+      "vaddr": 98680,
+      "type": "TYPE.RELA"
+    },
+    {
+      "name": ".rela.plt",
+      "size": 19704,
+      "vaddr": 147040,
+      "type": "TYPE.RELA"
+    },
+    {
+      "name": ".rodata",
+      "size": 159679,
+      "vaddr": 166752,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".eh_frame_hdr",
+      "size": 20,
+      "vaddr": 326432,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".eh_frame",
+      "size": 52,
+      "vaddr": 326456,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".text",
+      "size": 748332,
+      "vaddr": 327680,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".plt",
+      "size": 13168,
+      "vaddr": 1076016,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".data.rel.ro",
+      "size": 13696,
+      "vaddr": 1097728,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".fini_array",
+      "size": 16,
+      "vaddr": 1111424,
+      "type": "TYPE.FINI_ARRAY"
+    },
+    {
+      "name": ".init_array",
+      "size": 48,
+      "vaddr": 1111440,
+      "type": "TYPE.INIT_ARRAY"
+    },
+    {
+      "name": ".dynamic",
+      "size": 480,
+      "vaddr": 1111488,
+      "type": "TYPE.DYNAMIC"
+    },
+    {
+      "name": ".got",
+      "size": 1720,
+      "vaddr": 1111968,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".got.plt",
+      "size": 6592,
+      "vaddr": 1113688,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".data",
+      "size": 46928,
+      "vaddr": 1130496,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".bss",
+      "size": 258584,
+      "vaddr": 1177424,
+      "type": "TYPE.NOBITS"
+    },
+    {
+      "name": ".comment",
+      "size": 343,
+      "vaddr": 0,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".gnu_debuglink",
+      "size": 24,
+      "vaddr": 0,
+      "type": "TYPE.PROGBITS"
+    },
+    {
+      "name": ".shstrtab",
+      "size": 257,
+      "vaddr": 0,
+      "type": "TYPE.STRTAB"
+    }
+  ],
+  "exported_functions": [
+    {
+      "name": "FMOD_ChannelGroup_GetFadePoints",
+      "addr": 332084
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl13setVolumeRampEb",
+      "addr": 849616
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DDistanceFilter",
+      "addr": 466448
+    },
+    {
+      "name": "FMOD5_Reverb3D_SetUserData",
+      "addr": 466872
+    },
+    {
+      "name": "FMOD5_System_IsRecording",
+      "addr": 465696
+    },
+    {
+      "name": "FMOD_System_LoadPlugin",
+      "addr": 328776
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup21getMaxAudibleBehaviorEP24FMOD_SOUNDGROUP_BEHAVIOR",
+      "addr": 895052
+    },
+    {
+      "name": "_ZN4FMOD3DSP16getChannelFormatEPjPiP16FMOD_SPEAKERMODE",
+      "addr": 866316
+    },
+    {
+      "name": "_ZN4FMOD3DSP16getParameterInfoEiPP23FMOD_DSP_PARAMETER_DESC",
+      "addr": 869632
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetMode",
+      "addr": 466292
+    },
+    {
+      "name": "FMOD5_DSP_GetInput",
+      "addr": 466592
+    },
+    {
+      "name": "FMOD_Channel_IsPlaying",
+      "addr": 330716
+    },
+    {
+      "name": "FMOD5_Channel_GetLoopCount",
+      "addr": 466196
+    },
+    {
+      "name": "FMOD5_DSP_SetWetDryMix",
+      "addr": 466616
+    },
+    {
+      "name": "FMOD_DSP_GetParameterData",
+      "addr": 333264
+    },
+    {
+      "name": "_ZN4FMOD3DSP5resetEv",
+      "addr": 867120
+    },
+    {
+      "name": "FMOD5_System_LockDSP",
+      "addr": 465660
+    },
+    {
+      "name": "FMOD5_System_Set3DSettings",
+      "addr": 465528
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl12getMixMatrixEPfPiS2_i",
+      "addr": 852568
+    },
+    {
+      "name": "_ZN4FMOD5Sound13setLoopPointsEjjjj",
+      "addr": 892408
+    },
+    {
+      "name": "_ZN4FMOD6System26detachChannelGroupFromPortEPNS_12ChannelGroupE",
+      "addr": 909568
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetNumGroups",
+      "addr": 466472
+    },
+    {
+      "name": "FMOD5_Channel_GetFadePoints",
+      "addr": 466044
+    },
+    {
+      "name": "_ZN4FMOD6System15setNetworkProxyEPKc",
+      "addr": 912840
+    },
+    {
+      "name": "FMOD5_Channel_GetDSPClock",
+      "addr": 466020
+    },
+    {
+      "name": "FMOD_DSP_DisconnectAll",
+      "addr": 332824
+    },
+    {
+      "name": "FMOD5_Channel_SetLowPassGain",
+      "addr": 465976
+    },
+    {
+      "name": "FMOD_Channel_Get3DOcclusion",
+      "addr": 331140
+    },
+    {
+      "name": "FMOD5_Channel_GetMode",
+      "addr": 465988
+    },
+    {
+      "name": "FMOD_Channel_GetMixMatrix",
+      "addr": 330808
+    },
+    {
+      "name": "FMOD_Channel_GetReverbProperties",
+      "addr": 330644
+    },
+    {
+      "name": "FMOD_Sound_SetLoopCount",
+      "addr": 330248
+    },
+    {
+      "name": "FMOD5_Sound_DeleteSyncPoint",
+      "addr": 465860
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetPan",
+      "addr": 331916
+    },
+    {
+      "name": "FMOD_Channel_SetVolume",
+      "addr": 330460
+    },
+    {
+      "name": "FMOD_System_GetSpeakerPosition",
+      "addr": 329000
+    },
+    {
+      "name": "_ZN4FMOD5Sound15deleteSyncPointEP14FMOD_SYNCPOINT",
+      "addr": 891768
+    },
+    {
+      "name": "_ZN4FMOD6System13getNumDriversEPi",
+      "addr": 896772
+    },
+    {
+      "name": "_ZN4FMOD6System19getStreamBufferSizeEPjS1_",
+      "addr": 904372
+    },
+    {
+      "name": "FMOD_OS_File_Seek",
+      "addr": 945116
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetNumGroups",
+      "addr": 332500
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetVolumeRamp",
+      "addr": 331640
+    },
+    {
+      "name": "FMOD_SoundGroup_GetVolume",
+      "addr": 332680
+    },
+    {
+      "name": "FMOD_System_SetFileSystem",
+      "addr": 328704
+    },
+    {
+      "name": "_ZN4FMOD8Geometry20setPolygonAttributesEiffb",
+      "addr": 872936
+    },
+    {
+      "name": "FMOD_OS_File_Close",
+      "addr": 945028
+    },
+    {
+      "name": "FMOD_Channel_SetReverbProperties",
+      "addr": 330632
+    },
+    {
+      "name": "FMOD_System_Get3DListenerAttributes",
+      "addr": 329140
+    },
+    {
+      "name": "FMOD_System_GetChannelsPlaying",
+      "addr": 329236
+    },
+    {
+      "name": "_ZN4FMOD6System16attachFileSystemEPF11FMOD_RESULTPKcPjPPvS5_EPFS1_S5_S5_EPFS1_S5_S5_jS4_S5_EPFS1_S5_jS5_E",
+      "addr": 899264
+    },
+    {
+      "name": "JNI_OnLoad",
+      "addr": 942880
+    },
+    {
+      "name": "FMOD_System_GetFileUsage",
+      "addr": 329260
+    },
+    {
+      "name": "FMOD5_Channel_Get3DDistanceFilter",
+      "addr": 466148
+    },
+    {
+      "name": "FMOD5_Channel_GetVolumeRamp",
+      "addr": 465944
+    },
+    {
+      "name": "FMOD5_SoundGroup_SetMaxAudible",
+      "addr": 466504
+    },
+    {
+      "name": "FMOD5_Sound_Get3DConeSettings",
+      "addr": 465780
+    },
+    {
+      "name": "_ZN4FMOD3DSP16setChannelFormatEji16FMOD_SPEAKERMODE",
+      "addr": 866012
+    },
+    {
+      "name": "FMOD_System_Create",
+      "addr": 328312
+    },
+    {
+      "name": "_ZN4FMOD8Geometry9getActiveEPb",
+      "addr": 873156
+    },
+    {
+      "name": "FMOD_SoundGroup_GetMaxAudibleBehavior",
+      "addr": 332632
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup13setMaxAudibleEi",
+      "addr": 894792
+    },
+    {
+      "name": "FMOD5_Channel_Set3DDistanceFilter",
+      "addr": 466144
+    },
+    {
+      "name": "FMOD5_System_SetNetworkProxy",
+      "addr": 465720
+    },
+    {
+      "name": "FMOD5_Channel_SetCallback",
+      "addr": 465992
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl14getLowPassGainEPf",
+      "addr": 850860
+    },
+    {
+      "name": "FMOD5_Reverb3D_Get3DAttributes",
+      "addr": 466852
+    },
+    {
+      "name": "FMOD_Channel_AddDSP",
+      "addr": 330948
+    },
+    {
+      "name": "FMOD_System_Set3DListenerAttributes",
+      "addr": 329128
+    },
+    {
+      "name": "FMOD_System_SetDSPBufferSize",
+      "addr": 328680
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl17setMixLevelsInputEPfi",
+      "addr": 852188
+    },
+    {
+      "name": "FMOD5_Sound_SetLoopCount",
+      "addr": 465872
+    },
+    {
+      "name": "FMOD_Channel_SetPosition",
+      "addr": 331352
+    },
+    {
+      "name": "FMOD_DSPConnection_GetMixMatrix",
+      "addr": 333632
+    },
+    {
+      "name": "FMOD_OS_CriticalSection_Leave",
+      "addr": 946328
+    },
+    {
+      "name": "FMOD5_Channel_Get3DMinMaxDistance",
+      "addr": 466084
+    },
+    {
+      "name": "FMOD5_System_RegisterDSP",
+      "addr": 465492
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetMixLevelsInput",
+      "addr": 331940
+    },
+    {
+      "name": "FMOD_Channel_Set3DOcclusion",
+      "addr": 331128
+    },
+    {
+      "name": "FMOD_Channel_SetChannelGroup",
+      "addr": 331376
+    },
+    {
+      "name": "FMOD_SoundGroup_SetUserData",
+      "addr": 332752
+    },
+    {
+      "name": "FMOD_System_CreateSoundGroup",
+      "addr": 329332
+    },
+    {
+      "name": "_ZN4FMOD6System13setPluginPathEPKc",
+      "addr": 899984
+    },
+    {
+      "name": "FMOD5_Sound_GetMusicNumChannels",
+      "addr": 465888
+    },
+    {
+      "name": "FMOD5_Sound_GetName",
+      "addr": 465800
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DSpread",
+      "addr": 332324
+    },
+    {
+      "name": "_ZN4FMOD6SoundI19setUserDataInternalEPv",
+      "addr": 433412
+    },
+    {
+      "name": "FMOD_System_GetSpeakerModeChannels",
+      "addr": 329200
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl19getReverbPropertiesEiPf",
+      "addr": 850532
+    },
+    {
+      "name": "_ZN4FMOD9GeometryI11setUserDataEPv",
+      "addr": 389020
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DAttributes",
+      "addr": 466376
+    },
+    {
+      "name": "FMOD_OS_Thread_Create",
+      "addr": 945772
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetLowPassGain",
+      "addr": 331820
+    },
+    {
+      "name": "FMOD_SoundGroup_SetVolume",
+      "addr": 332668
+    },
+    {
+      "name": "_ZN4FMOD3DSP12setWetDryMixEfff",
+      "addr": 865728
+    },
+    {
+      "name": "FMOD5_Channel_GetCurrentSound",
+      "addr": 466212
+    },
+    {
+      "name": "FMOD5_Channel_Set3DMinMaxDistance",
+      "addr": 466080
+    },
+    {
+      "name": "FMOD_File_SetDiskBusy",
+      "addr": 914820
+    },
+    {
+      "name": "FMOD_Sound_GetNumSyncPoints",
+      "addr": 330164
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl8setPitchEf",
+      "addr": 849880
+    },
+    {
+      "name": "_ZN4FMOD8Geometry16getPolygonVertexEiiP11FMOD_VECTOR",
+      "addr": 872892
+    },
+    {
+      "name": "FMOD5_Reverb3D_GetProperties",
+      "addr": 466860
+    },
+    {
+      "name": "Java_org_fmod_FMOD_SetInputEnumerationChanged",
+      "addr": 947664
+    },
+    {
+      "name": "FMOD_DSP_SetParameterBool",
+      "addr": 333152
+    },
+    {
+      "name": "_ZN4FMOD7Channel15setChannelGroupEPNS_12ChannelGroupE",
+      "addr": 846932
+    },
+    {
+      "name": "FMOD5_Channel_SetPaused",
+      "addr": 465924
+    },
+    {
+      "name": "FMOD_Geometry_SetPosition",
+      "addr": 333944
+    },
+    {
+      "name": "_ZN4FMOD6System19getMasterSoundGroupEPPNS_10SoundGroupE",
+      "addr": 909168
+    },
+    {
+      "name": "_ZN4FMOD8Geometry9setActiveEb",
+      "addr": 873112
+    },
+    {
+      "name": "FMOD_Sound_Set3DConeSettings",
+      "addr": 329884
+    },
+    {
+      "name": "FMOD_System_SetUserData",
+      "addr": 329764
+    },
+    {
+      "name": "_ZN4FMOD8Geometry11setRotationEPK11FMOD_VECTORS3_",
+      "addr": 873196
+    },
+    {
+      "name": "FMOD5_Channel_Set3DConeOrientation",
+      "addr": 466096
+    },
+    {
+      "name": "FMOD5_Geometry_GetPolygonNumVertices",
+      "addr": 466780
+    },
+    {
+      "name": "FMOD_Channel_Get3DSpread",
+      "addr": 331164
+    },
+    {
+      "name": "FMOD_SoundGroup_Release",
+      "addr": 332572
+    },
+    {
+      "name": "_ZN4FMOD5Sound17set3DConeSettingsEfff",
+      "addr": 886988
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetDSPIndex",
+      "addr": 332156
+    },
+    {
+      "name": "_ZN4FMOD3DSP8addInputEPS0_PPNS_13DSPConnectionE23FMOD_DSPCONNECTION_TYPE",
+      "addr": 864064
+    },
+    {
+      "name": "FMOD_System_GetStreamBufferSize",
+      "addr": 329068
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl12addFadePointEyf",
+      "addr": 853756
+    },
+    {
+      "name": "_ZN4FMOD7SystemI8validateEPNS_6SystemEPPS0_PNS_15SystemLockScopeE",
+      "addr": 433880
+    },
+    {
+      "name": "FMOD5_Geometry_GetMaxPolygons",
+      "addr": 466776
+    },
+    {
+      "name": "FMOD5_Geometry_SetUserData",
+      "addr": 466836
+    },
+    {
+      "name": "FMOD_Sound_GetSoundGroup",
+      "addr": 330152
+    },
+    {
+      "name": "FMOD_Sound_Set3DCustomRolloff",
+      "addr": 329908
+    },
+    {
+      "name": "_ZN4FMOD6System16setDSPBufferSizeEji",
+      "addr": 898324
+    },
+    {
+      "name": "FMOD5_File_GetDiskBusy",
+      "addr": 465356
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetNumPlaying",
+      "addr": 466552
+    },
+    {
+      "name": "FMOD5_Sound_GetUserData",
+      "addr": 465912
+    },
+    {
+      "name": "FMOD5_System_SetCallback",
+      "addr": 465436
+    },
+    {
+      "name": "_ZN4FMOD7SystemI14createDiskFileEPKcP22FMOD_CREATESOUNDEXINFOPPNS_4FileEPb",
+      "addr": 493404
+    },
+    {
+      "name": "FMOD_System_CreateStream",
+      "addr": 329284
+    },
+    {
+      "name": "FMOD_Sound_SetUserData",
+      "addr": 330356
+    },
+    {
+      "name": "FMOD_System_SetStreamBufferSize",
+      "addr": 329056
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup8getSoundEiPPNS_5SoundE",
+      "addr": 895804
+    },
+    {
+      "name": "_ZN4FMOD6System13setFileSystemEPF11FMOD_RESULTPKcPjPPvS5_EPFS1_S5_S5_EPFS1_S5_S5_jS4_S5_EPFS1_S5_jS5_EPFS1_P18FMOD_ASYNCREADINFOS5_ESI_i",
+      "addr": 898732
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetDelay",
+      "addr": 466332
+    },
+    {
+      "name": "FMOD_ChannelGroup_Release",
+      "addr": 332468
+    },
+    {
+      "name": "FMOD_System_AttachFileSystem",
+      "addr": 328716
+    },
+    {
+      "name": "_ZN4FMOD5Sound9getLengthEPjj",
+      "addr": 888200
+    },
+    {
+      "name": "_ZN4FMOD6System19setSoftwareChannelsEi",
+      "addr": 897528
+    },
+    {
+      "name": "FMOD5_DSP_SetParameterFloat",
+      "addr": 466644
+    },
+    {
+      "name": "FMOD_Channel_GetDSPIndex",
+      "addr": 330996
+    },
+    {
+      "name": "FMOD5_Channel_SetPriority",
+      "addr": 466168
+    },
+    {
+      "name": "FMOD_Reverb3D_GetActive",
+      "addr": 334108
+    },
+    {
+      "name": "_ZN4FMOD6System17getSoftwareFormatEPiP16FMOD_SPEAKERMODES1_",
+      "addr": 898004
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection11setUserDataEPv",
+      "addr": 691664
+    },
+    {
+      "name": "_ZN4FMOD6System17get3DNumListenersEPi",
+      "addr": 904840
+    },
+    {
+      "name": "FMOD5_System_DetachChannelGroupFromPort",
+      "addr": 465648
+    },
+    {
+      "name": "FMOD5_System_GetDSPInfoByType",
+      "addr": 465628
+    },
+    {
+      "name": "_ZN4FMOD3DSP11setCallbackEPF11FMOD_RESULTP8FMOD_DSP22FMOD_DSP_CALLBACK_TYPEPvE",
+      "addr": 867204
+    },
+    {
+      "name": "FMOD5_System_SetUserData",
+      "addr": 465736
+    },
+    {
+      "name": "FMOD_System_Update",
+      "addr": 328968
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DCustomRolloff",
+      "addr": 466412
+    },
+    {
+      "name": "FMOD_Sound_SetMode",
+      "addr": 330224
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11getDSPClockEPyS1_",
+      "addr": 852740
+    },
+    {
+      "name": "_ZN4FMOD3DSP7releaseEv",
+      "addr": 863892
+    },
+    {
+      "name": "_ZN4FMOD8Geometry11setPositionEPK11FMOD_VECTOR",
+      "addr": 873284
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11set3DSpreadEf",
+      "addr": 857976
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl7getModeEPj",
+      "addr": 851056
+    },
+    {
+      "name": "FMOD_System_GetPluginHandle",
+      "addr": 328836
+    },
+    {
+      "name": "_ZN4FMOD5Sound7getNameEPci",
+      "addr": 888052
+    },
+    {
+      "name": "_ZN4FMOD8Geometry21getPolygonNumVerticesEiPi",
+      "addr": 872796
+    },
+    {
+      "name": "FMOD_System_CreateGeometry",
+      "addr": 329656
+    },
+    {
+      "name": "FMOD_System_GetRecordPosition",
+      "addr": 329556
+    },
+    {
+      "name": "_ZN4FMOD6System12mixerSuspendEv",
+      "addr": 905744
+    },
+    {
+      "name": "FMOD5_DSP_GetParameterBool",
+      "addr": 466668
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetMixMatrix",
+      "addr": 466316
+    },
+    {
+      "name": "FMOD5_DSP_SetMeteringEnabled",
+      "addr": 466712
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetSystemObject",
+      "addr": 466500
+    },
+    {
+      "name": "FMOD5_SoundGroup_SetMaxAudibleBehavior",
+      "addr": 466512
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl12setMixMatrixEPfiii",
+      "addr": 852392
+    },
+    {
+      "name": "_ZN4FMOD6System10recordStopEi",
+      "addr": 911448
+    },
+    {
+      "name": "FMOD5_Reverb3D_Set3DAttributes",
+      "addr": 466848
+    },
+    {
+      "name": "FMOD5_Reverb3D_GetActive",
+      "addr": 466868
+    },
+    {
+      "name": "FMOD_Channel_GetMute",
+      "addr": 330588
+    },
+    {
+      "name": "_ZN4FMOD3DSP21getDataParameterIndexEiPi",
+      "addr": 869848
+    },
+    {
+      "name": "FMOD5_Sound_SetMusicChannelVolume",
+      "addr": 465892
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetDSP",
+      "addr": 332096
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetMixMatrix",
+      "addr": 331952
+    },
+    {
+      "name": "FMOD_DSP_GetBypass",
+      "addr": 332992
+    },
+    {
+      "name": "FMOD_Geometry_GetMaxPolygons",
+      "addr": 333724
+    },
+    {
+      "name": "FMOD_Reverb3D_SetActive",
+      "addr": 334088
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl20get3DConeOrientationEP11FMOD_VECTOR",
+      "addr": 857252
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D7releaseEv",
+      "addr": 883708
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DOcclusion",
+      "addr": 466420
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetVolume",
+      "addr": 331616
+    },
+    {
+      "name": "FMOD_DSP_ShowConfigDialog",
+      "addr": 333312
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11getUserDataEPPv",
+      "addr": 859256
+    },
+    {
+      "name": "FMOD_Channel_Set3DCustomRolloff",
+      "addr": 331104
+    },
+    {
+      "name": "_ZN4FMOD6System17createDSPByPluginEjPPNS_3DSPE",
+      "addr": 902000
+    },
+    {
+      "name": "_ZN4FMOD6System17setNetworkTimeoutEi",
+      "addr": 913028
+    },
+    {
+      "name": "FMOD5_Channel_SetUserData",
+      "addr": 466152
+    },
+    {
+      "name": "FMOD5_System_GetOutputHandle",
+      "addr": 465576
+    },
+    {
+      "name": "FMOD_System_GetGeometryOcclusion",
+      "addr": 329704
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl9isPlayingEPb",
+      "addr": 851244
+    },
+    {
+      "name": "FMOD5_System_GetMasterChannelGroup",
+      "addr": 465636
+    },
+    {
+      "name": "FMOD_Sound_GetMusicNumChannels",
+      "addr": 330296
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetMute",
+      "addr": 466264
+    },
+    {
+      "name": "FMOD_OS_CriticalSection_Free",
+      "addr": 946232
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DConeOrientation",
+      "addr": 466404
+    },
+    {
+      "name": "FMOD_Channel_AddFadePoint",
+      "addr": 330888
+    },
+    {
+      "name": "FMOD5_DSP_GetParameterInt",
+      "addr": 466664
+    },
+    {
+      "name": "FMOD_DSP_DisconnectFrom",
+      "addr": 332812
+    },
+    {
+      "name": "_ZN4FMOD3DSP9getOutputEiPPS0_PPNS_13DSPConnectionE",
+      "addr": 865248
+    },
+    {
+      "name": "FMOD5_ChannelGroup_AddGroup",
+      "addr": 466468
+    },
+    {
+      "name": "FMOD5_SoundGroup_Stop",
+      "addr": 466536
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetPitch",
+      "addr": 331712
+    },
+    {
+      "name": "FMOD_ChannelGroup_IsPlaying",
+      "addr": 331868
+    },
+    {
+      "name": "FMOD5_DSP_GetDataParameterIndex",
+      "addr": 466684
+    },
+    {
+      "name": "FMOD5_Geometry_GetPolygonVertex",
+      "addr": 466788
+    },
+    {
+      "name": "FMOD_ChannelGroup_Stop",
+      "addr": 331532
+    },
+    {
+      "name": "_ZN4FMOD8Geometry14getMaxPolygonsEPiS1_",
+      "addr": 872752
+    },
+    {
+      "name": "FMOD5_DSP_GetNumParameters",
+      "addr": 466676
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetUserData",
+      "addr": 466560
+    },
+    {
+      "name": "FMOD_System_Get3DSettings",
+      "addr": 329092
+    },
+    {
+      "name": "FMOD5_Channel_SetMute",
+      "addr": 465960
+    },
+    {
+      "name": "FMOD5_Geometry_SetRotation",
+      "addr": 466808
+    },
+    {
+      "name": "FMOD_Sound_Get3DConeSettings",
+      "addr": 329896
+    },
+    {
+      "name": "_ZN4FMOD5Sound12addSyncPointEjjPKcPP14FMOD_SYNCPOINT",
+      "addr": 891380
+    },
+    {
+      "name": "FMOD5_DSPConnection_GetType",
+      "addr": 466752
+    },
+    {
+      "name": "FMOD5_Sound_GetDefaults",
+      "addr": 465764
+    },
+    {
+      "name": "FMOD_Channel_SetMixLevelsOutput",
+      "addr": 330772
+    },
+    {
+      "name": "_ZN4FMOD3DSP9setActiveEb",
+      "addr": 865356
+    },
+    {
+      "name": "_ZN4FMOD6System19getRecordDriverInfoEiPciP9FMOD_GUIDPiP16FMOD_SPEAKERMODES4_Pj",
+      "addr": 910328
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DCustomRolloff",
+      "addr": 332276
+    },
+    {
+      "name": "_ZN4FMOD5Sound19getMusicNumChannelsEPi",
+      "addr": 892776
+    },
+    {
+      "name": "FMOD_DSP_GetMeteringEnabled",
+      "addr": 333460
+    },
+    {
+      "name": "FMOD_Sound_SetDefaults",
+      "addr": 329836
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DOcclusion",
+      "addr": 466416
+    },
+    {
+      "name": "FMOD5_Channel_GetDelay",
+      "addr": 466028
+    },
+    {
+      "name": "FMOD5_System_CreateDSP",
+      "addr": 465600
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetLowPassGain",
+      "addr": 331808
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetVolume",
+      "addr": 331604
+    },
+    {
+      "name": "FMOD_DSP_GetDataParameterIndex",
+      "addr": 333300
+    },
+    {
+      "name": "FMOD_Geometry_GetPolygonVertex",
+      "addr": 333760
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup16getMuteFadeSpeedEPf",
+      "addr": 895248
+    },
+    {
+      "name": "FMOD5_Channel_GetVolume",
+      "addr": 465936
+    },
+    {
+      "name": "FMOD5_Geometry_GetPosition",
+      "addr": 466820
+    },
+    {
+      "name": "FMOD5_Sound_Get3DMinMaxDistance",
+      "addr": 465772
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl18set3DCustomRolloffEP11FMOD_VECTORi",
+      "addr": 857336
+    },
+    {
+      "name": "_ZN4FMOD3DSP7getInfoEPcPjPiS3_S3_",
+      "addr": 870284
+    },
+    {
+      "name": "FMOD5_System_GetDSPInfoByPlugin",
+      "addr": 465484
+    },
+    {
+      "name": "FMOD5_System_GetNumNestedPlugins",
+      "addr": 465452
+    },
+    {
+      "name": "FMOD_Geometry_SetScale",
+      "addr": 333968
+    },
+    {
+      "name": "FMOD5_SoundGroup_Release",
+      "addr": 466496
+    },
+    {
+      "name": "FMOD5_Sound_SetMusicSpeed",
+      "addr": 465900
+    },
+    {
+      "name": "FMOD_DSP_SetChannelFormat",
+      "addr": 333068
+    },
+    {
+      "name": "_ZN4FMOD5Sound11setUserDataEPv",
+      "addr": 893588
+    },
+    {
+      "name": "FMOD_Reverb3D_GetUserData",
+      "addr": 334172
+    },
+    {
+      "name": "_ZN4FMOD3DSP17setParameterFloatEif",
+      "addr": 867308
+    },
+    {
+      "name": "FMOD5_Channel_GetIndex",
+      "addr": 466216
+    },
+    {
+      "name": "FMOD5_DSP_DisconnectFrom",
+      "addr": 466576
+    },
+    {
+      "name": "FMOD5_Sound_Set3DMinMaxDistance",
+      "addr": 465768
+    },
+    {
+      "name": "FMOD5_System_CreateDSPByType",
+      "addr": 465604
+    },
+    {
+      "name": "FMOD_Channel_SetFrequency",
+      "addr": 331304
+    },
+    {
+      "name": "FMOD_DSP_GetActive",
+      "addr": 332920
+    },
+    {
+      "name": "_ZN4FMOD3DSP9getActiveEPb",
+      "addr": 865456
+    },
+    {
+      "name": "_ZN4FMOD8Geometry11setUserDataEPv",
+      "addr": 873488
+    },
+    {
+      "name": "FMOD5_DSP_GetParameterFloat",
+      "addr": 466660
+    },
+    {
+      "name": "FMOD_DSP_GetCPUUsage",
+      "addr": 333560
+    },
+    {
+      "name": "FMOD_System_GetReverbProperties",
+      "addr": 329488
+    },
+    {
+      "name": "_ZN4FMOD5Sound21setMusicChannelVolumeEif",
+      "addr": 892912
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetDelay",
+      "addr": 331988
+    },
+    {
+      "name": "FMOD_Channel_GetCurrentSound",
+      "addr": 331496
+    },
+    {
+      "name": "FMOD_Sound_Get3DMinMaxDistance",
+      "addr": 329872
+    },
+    {
+      "name": "FMOD_System_GetDriverInfo",
+      "addr": 328596
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl19set3DDistanceFilterEbff",
+      "addr": 858600
+    },
+    {
+      "name": "_ZN4FMOD6System19getAdvancedSettingsEP21FMOD_ADVANCEDSETTINGS",
+      "addr": 899684
+    },
+    {
+      "name": "FMOD5_System_LoadPlugin",
+      "addr": 465444
+    },
+    {
+      "name": "FMOD_System_GetDSPInfoByPlugin",
+      "addr": 328896
+    },
+    {
+      "name": "FMOD5_Channel_IsPlaying",
+      "addr": 465996
+    },
+    {
+      "name": "FMOD5_Geometry_AddPolygon",
+      "addr": 466768
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetGroup",
+      "addr": 332512
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup10getChannelEiPPNS_7ChannelE",
+      "addr": 861248
+    },
+    {
+      "name": "_ZN4FMOD6System24attachChannelGroupToPortE14FMOD_PORT_TYPEyPNS_12ChannelGroupEb",
+      "addr": 909252
+    },
+    {
+      "name": "_ZN4FMOD8Geometry14getNumPolygonsEPi",
+      "addr": 872712
+    },
+    {
+      "name": "FMOD5_ChannelGroup_AddDSP",
+      "addr": 466356
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetNumChannels",
+      "addr": 466488
+    },
+    {
+      "name": "FMOD_System_SetReverbProperties",
+      "addr": 329476
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl17set3DConeSettingsEfff",
+      "addr": 856584
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl19get3DMinMaxDistanceEPfS1_",
+      "addr": 856384
+    },
+    {
+      "name": "FMOD5_Sound_GetNumSubSounds",
+      "addr": 465812
+    },
+    {
+      "name": "_ZN4FMOD7SystemI16createMemoryFileEPPNS_4FileE",
+      "addr": 493196
+    },
+    {
+      "name": "_ZN4FMOD4DSPI8validateEPNS_3DSPEPPS0_PNS_15SystemLockScopeE",
+      "addr": 825452
+    },
+    {
+      "name": "FMOD_Geometry_Release",
+      "addr": 333680
+    },
+    {
+      "name": "FMOD_Sound_Set3DMinMaxDistance",
+      "addr": 329860
+    },
+    {
+      "name": "FMOD_System_DetachChannelGroupFromPort",
+      "addr": 329464
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl16setFadePointRampEyf",
+      "addr": 853996
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DSpread",
+      "addr": 466428
+    },
+    {
+      "name": "FMOD5_DSP_GetOutput",
+      "addr": 466596
+    },
+    {
+      "name": "FMOD_Debug_Initialize",
+      "addr": 914684
+    },
+    {
+      "name": "FMOD_DSP_GetNumInputs",
+      "addr": 332852
+    },
+    {
+      "name": "_ZN4FMOD6System11getCPUUsageEP14FMOD_CPU_USAGE",
+      "addr": 906420
+    },
+    {
+      "name": "_ZN4FMOD6System17set3DNumListenersEi",
+      "addr": 904748
+    },
+    {
+      "name": "FMOD_System_GetVersion",
+      "addr": 329212
+    },
+    {
+      "name": "FMOD5_DSP_DisconnectAll",
+      "addr": 466580
+    },
+    {
+      "name": "FMOD_DSP_AddInput",
+      "addr": 332800
+    },
+    {
+      "name": "FMOD_DSP_GetWetDryMix",
+      "addr": 333056
+    },
+    {
+      "name": "_ZN4FMOD6System13getNumPluginsE15FMOD_PLUGINTYPEPi",
+      "addr": 900900
+    },
+    {
+      "name": "_ZN4FMOD6System20getGeometryOcclusionEPK11FMOD_VECTORS3_PfS4_",
+      "addr": 912524
+    },
+    {
+      "name": "_ZN4FMOD6System14createGeometryEiiPPNS_8GeometryE",
+      "addr": 911740
+    },
+    {
+      "name": "FMOD_Reverb3D_Release",
+      "addr": 334028
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup13getNumPlayingEPi",
+      "addr": 895928
+    },
+    {
+      "name": "FMOD_System_RegisterOutput",
+      "addr": 328932
+    },
+    {
+      "name": "_ZN4FMOD6System9getDriverEPi",
+      "addr": 897448
+    },
+    {
+      "name": "FMOD5_SoundGroup_SetMuteFadeSpeed",
+      "addr": 466520
+    },
+    {
+      "name": "FMOD_Sound_GetOpenState",
+      "addr": 330028
+    },
+    {
+      "name": "FMOD_System_GetNumDrivers",
+      "addr": 328584
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl14setLowPassGainEf",
+      "addr": 850736
+    },
+    {
+      "name": "_ZN4FMOD5Sound13getMusicSpeedEPf",
+      "addr": 893444
+    },
+    {
+      "name": "FMOD_System_GetDriver",
+      "addr": 328620
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl14get3DOcclusionEPfS1_",
+      "addr": 857876
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetPaused",
+      "addr": 466232
+    },
+    {
+      "name": "FMOD5_DSP_GetUserData",
+      "addr": 466708
+    },
+    {
+      "name": "FMOD_System_CreateDSPByPlugin",
+      "addr": 328884
+    },
+    {
+      "name": "_ZN4FMOD6System19getReverbPropertiesEiP22FMOD_REVERB_PROPERTIES",
+      "addr": 909852
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection6setMixEf",
+      "addr": 690584
+    },
+    {
+      "name": "PLII_Encode",
+      "addr": 1073088
+    },
+    {
+      "name": "FMOD5_Sound_GetMode",
+      "addr": 465868
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetFadePointRamp",
+      "addr": 332060
+    },
+    {
+      "name": "FMOD_Channel_Get3DLevel",
+      "addr": 331188
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup21setMaxAudibleBehaviorE24FMOD_SOUNDGROUP_BEHAVIOR",
+      "addr": 894960
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetFadePoints",
+      "addr": 466348
+    },
+    {
+      "name": "FMOD_Channel_SetPitch",
+      "addr": 330552
+    },
+    {
+      "name": "FMOD_System_GetDSPInfoByType",
+      "addr": 329408
+    },
+    {
+      "name": "FMOD_System_GetDefaultMixMatrix",
+      "addr": 329188
+    },
+    {
+      "name": "FMOD5_DSP_GetParameterInfo",
+      "addr": 466680
+    },
+    {
+      "name": "FMOD_SoundGroup_GetMuteFadeSpeed",
+      "addr": 332656
+    },
+    {
+      "name": "_ZN4FMOD6System10getVersionEPj",
+      "addr": 906124
+    },
+    {
+      "name": "_ZN4FMOD6System13registerCodecEP22FMOD_CODEC_DESCRIPTIONPjj",
+      "addr": 902400
+    },
+    {
+      "name": "FMOD5_Channel_AddDSP",
+      "addr": 466052
+    },
+    {
+      "name": "FMOD5_DSP_GetChannelFormat",
+      "addr": 466628
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetUserData",
+      "addr": 332456
+    },
+    {
+      "name": "_ZN4FMOD6System9setDriverEi",
+      "addr": 897356
+    },
+    {
+      "name": "FMOD5_Channel_GetPosition",
+      "addr": 466180
+    },
+    {
+      "name": "FMOD_Sound_SetLoopPoints",
+      "addr": 330272
+    },
+    {
+      "name": "FMOD_System_UnlockDSP",
+      "addr": 329512
+    },
+    {
+      "name": "FMOD5_ChannelGroup_RemoveDSP",
+      "addr": 466360
+    },
+    {
+      "name": "FMOD_ChannelGroup_RemoveFadePoints",
+      "addr": 332072
+    },
+    {
+      "name": "_ZN4FMOD5Sound11setDefaultsEfi",
+      "addr": 886124
+    },
+    {
+      "name": "_ZN4FMOD6System19setReverbPropertiesEiPK22FMOD_REVERB_PROPERTIES",
+      "addr": 909652
+    },
+    {
+      "name": "_ZN4FMOD5Sound15getSystemObjectEPPNS_6SystemE",
+      "addr": 885052
+    },
+    {
+      "name": "FMOD5_Reverb3D_SetActive",
+      "addr": 466864
+    },
+    {
+      "name": "FMOD5_System_SetPluginPath",
+      "addr": 465440
+    },
+    {
+      "name": "FMOD_System_GetMasterSoundGroup",
+      "addr": 329432
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl15get3DAttributesEP11FMOD_VECTORS2_",
+      "addr": 855940
+    },
+    {
+      "name": "_ZN4FMOD5Sound19get3DMinMaxDistanceEPfS1_",
+      "addr": 886844
+    },
+    {
+      "name": "_ZN4FMOD6System18setSpeakerPositionE12FMOD_SPEAKERffb",
+      "addr": 903548
+    },
+    {
+      "name": "_ZN4FMOD8Geometry11getPositionEP11FMOD_VECTOR",
+      "addr": 873324
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl17get3DDopplerLevelEPf",
+      "addr": 858516
+    },
+    {
+      "name": "FMOD5_Geometry_SetPolygonAttributes",
+      "addr": 466792
+    },
+    {
+      "name": "FMOD_DSP_SetBypass",
+      "addr": 332972
+    },
+    {
+      "name": "FMOD5_DSP_AddInput",
+      "addr": 466572
+    },
+    {
+      "name": "FMOD5_Sound_GetOpenState",
+      "addr": 465824
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DConeOrientation",
+      "addr": 332252
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetAudibility",
+      "addr": 331688
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetVolumeRamp",
+      "addr": 331628
+    },
+    {
+      "name": "FMOD_Sound_Lock",
+      "addr": 329812
+    },
+    {
+      "name": "_ZN4FMOD6System11recordStartEiPNS_5SoundEb",
+      "addr": 911152
+    },
+    {
+      "name": "FMOD_Channel_GetNumDSPs",
+      "addr": 330972
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl6addDSPEiPNS_3DSPE",
+      "addr": 854952
+    },
+    {
+      "name": "FMOD5_System_GetGeometrySettings",
+      "addr": 465708
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DSpread",
+      "addr": 332312
+    },
+    {
+      "name": "FMOD_Channel_SetPan",
+      "addr": 330760
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl8setDelayEyyb",
+      "addr": 853052
+    },
+    {
+      "name": "FMOD_System_Set3DRolloffCallback",
+      "addr": 329152
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl10getNumDSPsEPi",
+      "addr": 855240
+    },
+    {
+      "name": "FMOD5_Channel_Get3DLevel",
+      "addr": 466132
+    },
+    {
+      "name": "FMOD_DSP_SetParameterData",
+      "addr": 333172
+    },
+    {
+      "name": "FMOD_System_GetCPUUsage",
+      "addr": 329248
+    },
+    {
+      "name": "FMOD_System_GetOutput",
+      "addr": 328572
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection11getUserDataEPPv",
+      "addr": 691740
+    },
+    {
+      "name": "_ZN4FMOD6System7lockDSPEv",
+      "addr": 910052
+    },
+    {
+      "name": "FMOD5_Channel_GetAudibility",
+      "addr": 465948
+    },
+    {
+      "name": "FMOD5_Sound_Unlock",
+      "addr": 465756
+    },
+    {
+      "name": "FMOD5_System_GetRecordPosition",
+      "addr": 465684
+    },
+    {
+      "name": "FMOD_Sound_GetMusicSpeed",
+      "addr": 330344
+    },
+    {
+      "name": "FMOD_System_MixerResume",
+      "addr": 329176
+    },
+    {
+      "name": "_ZN4FMOD6System19getNumNestedPluginsEjPi",
+      "addr": 900432
+    },
+    {
+      "name": "FMOD5_System_SetGeometrySettings",
+      "addr": 465704
+    },
+    {
+      "name": "FMOD_OS_File_Open",
+      "addr": 944676
+    },
+    {
+      "name": "_ZN4FMOD3DSP15getParameterIntEiPiPci",
+      "addr": 868524
+    },
+    {
+      "name": "FMOD_Geometry_GetUserData",
+      "addr": 334016
+    },
+    {
+      "name": "FMOD_System_CreateReverb3D",
+      "addr": 329344
+    },
+    {
+      "name": "_ZN4FMOD5Sound18get3DCustomRolloffEPP11FMOD_VECTORPi",
+      "addr": 887576
+    },
+    {
+      "name": "FMOD_Channel_Set3DSpread",
+      "addr": 331152
+    },
+    {
+      "name": "FMOD_SoundGroup_GetName",
+      "addr": 332704
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup12getNumGroupsEPi",
+      "addr": 860556
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetDSPIndex",
+      "addr": 332144
+    },
+    {
+      "name": "FMOD_DSPConnection_GetMix",
+      "addr": 333608
+    },
+    {
+      "name": "FMOD_DSPConnection_SetMix",
+      "addr": 333596
+    },
+    {
+      "name": "_ZN4FMOD6System9getOutputEP15FMOD_OUTPUTTYPE",
+      "addr": 896688
+    },
+    {
+      "name": "FMOD5_Channel_SetLoopPoints",
+      "addr": 466200
+    },
+    {
+      "name": "FMOD_SoundGroup_GetMaxAudible",
+      "addr": 332608
+    },
+    {
+      "name": "FMOD_Sound_Release",
+      "addr": 329788
+    },
+    {
+      "name": "FMOD_System_RecordStop",
+      "addr": 329588
+    },
+    {
+      "name": "FMOD_Channel_GetPriority",
+      "addr": 331340
+    },
+    {
+      "name": "FMOD_System_GetNumPlugins",
+      "addr": 328824
+    },
+    {
+      "name": "_ZN4FMOD6System20set3DRolloffCallbackEPFfP19FMOD_CHANNELCONTROLfE",
+      "addr": 905640
+    },
+    {
+      "name": "FMOD5_DSP_GetMeteringInfo",
+      "addr": 466720
+    },
+    {
+      "name": "FMOD5_File_SetDiskBusy",
+      "addr": 465352
+    },
+    {
+      "name": "FMOD5_Sound_SetUserData",
+      "addr": 465908
+    },
+    {
+      "name": "FMOD_Sound_GetSyncPointInfo",
+      "addr": 330188
+    },
+    {
+      "name": "_ZN4FMOD6System13getDriverInfoEiPciP9FMOD_GUIDPiP16FMOD_SPEAKERMODES4_",
+      "addr": 896852
+    },
+    {
+      "name": "_ZN4FMOD6System19getRecordNumDriversEPiS1_",
+      "addr": 910228
+    },
+    {
+      "name": "FMOD_Channel_GetMode",
+      "addr": 330692
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetParentGroup",
+      "addr": 466480
+    },
+    {
+      "name": "FMOD5_Channel_SetVolume",
+      "addr": 465932
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetName",
+      "addr": 332536
+    },
+    {
+      "name": "FMOD5_Reverb3D_SetProperties",
+      "addr": 466856
+    },
+    {
+      "name": "FMOD_Channel_SetDSPIndex",
+      "addr": 330984
+    },
+    {
+      "name": "FMOD_Geometry_GetScale",
+      "addr": 333980
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DConeSettings",
+      "addr": 466392
+    },
+    {
+      "name": "FMOD5_DSPConnection_GetInput",
+      "addr": 466728
+    },
+    {
+      "name": "FMOD_Sound_Unlock",
+      "addr": 329824
+    },
+    {
+      "name": "_ZN4FMOD7Channel12setLoopCountEi",
+      "addr": 847708
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetDSPIndex",
+      "addr": 466372
+    },
+    {
+      "name": "FMOD_DSP_SetActive",
+      "addr": 332900
+    },
+    {
+      "name": "_ZN4FMOD6System11mixerResumeEv",
+      "addr": 905824
+    },
+    {
+      "name": "_ZN4FMOD7Channel11setPriorityEi",
+      "addr": 846236
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetNumSounds",
+      "addr": 466544
+    },
+    {
+      "name": "FMOD_Sound_GetSyncPoint",
+      "addr": 330176
+    },
+    {
+      "name": "FMOD_System_GetPluginInfo",
+      "addr": 328848
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetMode",
+      "addr": 466288
+    },
+    {
+      "name": "FMOD5_Channel_GetFrequency",
+      "addr": 466164
+    },
+    {
+      "name": "FMOD5_DSP_SetParameterInt",
+      "addr": 466648
+    },
+    {
+      "name": "FMOD5_Sound_Set3DCustomRolloff",
+      "addr": 465784
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetMute",
+      "addr": 331736
+    },
+    {
+      "name": "FMOD_Geometry_GetPolygonNumVertices",
+      "addr": 333736
+    },
+    {
+      "name": "FMOD_OS_Time_Sleep",
+      "addr": 945352
+    },
+    {
+      "name": "FMOD_Sound_SetSoundGroup",
+      "addr": 330140
+    },
+    {
+      "name": "FMOD5_DSP_GetParameterData",
+      "addr": 466672
+    },
+    {
+      "name": "FMOD5_Sound_GetFormat",
+      "addr": 465808
+    },
+    {
+      "name": "FMOD5_Sound_Lock",
+      "addr": 465752
+    },
+    {
+      "name": "FMOD_Channel_Set3DLevel",
+      "addr": 331176
+    },
+    {
+      "name": "_ZN4FMOD5Sound13setMusicSpeedEf",
+      "addr": 893252
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup14getNumChannelsEPi",
+      "addr": 861164
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup14getParentGroupEPPS0_",
+      "addr": 860848
+    },
+    {
+      "name": "_ZN4FMOD3DSP14disconnectFromEPS0_PNS_13DSPConnectionE",
+      "addr": 864384
+    },
+    {
+      "name": "_ZN4FMOD6System16getDSPInfoByTypeE13FMOD_DSP_TYPEPPK20FMOD_DSP_DESCRIPTION",
+      "addr": 908888
+    },
+    {
+      "name": "FMOD5_Sound_GetLoopPoints",
+      "addr": 465884
+    },
+    {
+      "name": "FMOD_DSPConnection_SetMixMatrix",
+      "addr": 333620
+    },
+    {
+      "name": "FMOD_System_Release",
+      "addr": 328556
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetReverbProperties",
+      "addr": 466276
+    },
+    {
+      "name": "FMOD5_Sound_GetSystemObject",
+      "addr": 465748
+    },
+    {
+      "name": "FMOD_Geometry_GetPolygonAttributes",
+      "addr": 333792
+    },
+    {
+      "name": "_ZN4FMOD6System10loadPluginEPKcPjj",
+      "addr": 900064
+    },
+    {
+      "name": "FMOD5_Channel_SetMode",
+      "addr": 465984
+    },
+    {
+      "name": "FMOD_Sound_GetSubSound",
+      "addr": 329932
+    },
+    {
+      "name": "FMOD5_Channel_Get3DOcclusion",
+      "addr": 466116
+    },
+    {
+      "name": "FMOD_Channel_Get3DMinMaxDistance",
+      "addr": 331044
+    },
+    {
+      "name": "FMOD_System_SetSoftwareFormat",
+      "addr": 328656
+    },
+    {
+      "name": "_ZN4FMOD6System14createReverb3DEPPNS_8Reverb3DE",
+      "addr": 908016
+    },
+    {
+      "name": "_ZN4FMOD7Channel11setPositionEjj",
+      "addr": 846424
+    },
+    {
+      "name": "FMOD5_DSP_SetCallback",
+      "addr": 466640
+    },
+    {
+      "name": "FMOD_Channel_GetUserData",
+      "addr": 331292
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetReverbProperties",
+      "addr": 466272
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl13getFadePointsEPjPyPf",
+      "addr": 854356
+    },
+    {
+      "name": "_ZN4FMOD6System11setCallbackEPF11FMOD_RESULTP11FMOD_SYSTEMjPvS4_S4_Ej",
+      "addr": 899768
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetVolumeRamp",
+      "addr": 466248
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetVolume",
+      "addr": 466532
+    },
+    {
+      "name": "FMOD5_System_SetFileSystem",
+      "addr": 465420
+    },
+    {
+      "name": "FMOD_System_PlaySound",
+      "addr": 329356
+    },
+    {
+      "name": "_ZN4FMOD5Sound8readDataEPvjPj",
+      "addr": 889812
+    },
+    {
+      "name": "FMOD5_DSP_GetSystemObject",
+      "addr": 466568
+    },
+    {
+      "name": "FMOD_System_SetDriver",
+      "addr": 328608
+    },
+    {
+      "name": "_ZN4FMOD5Sound11getDefaultsEPfPi",
+      "addr": 886408
+    },
+    {
+      "name": "_ZN4FMOD8Geometry10addPolygonEffbiPK11FMOD_VECTORPi",
+      "addr": 872604
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetPaused",
+      "addr": 466228
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DDistanceFilter",
+      "addr": 332396
+    },
+    {
+      "name": "FMOD_DSP_GetOutputChannelFormat",
+      "addr": 333092
+    },
+    {
+      "name": "FMOD_System_CreateSound",
+      "addr": 329272
+    },
+    {
+      "name": "_ZN4FMOD8Geometry16setPolygonVertexEiiPK11FMOD_VECTOR",
+      "addr": 872848
+    },
+    {
+      "name": "FMOD5_Channel_SetVolumeRamp",
+      "addr": 465940
+    },
+    {
+      "name": "FMOD_Sound_SeekData",
+      "addr": 330128
+    },
+    {
+      "name": "_ZN4FMOD6System19getSoftwareChannelsEPi",
+      "addr": 897620
+    },
+    {
+      "name": "FMOD_Channel_GetLoopPoints",
+      "addr": 331436
+    },
+    {
+      "name": "_ZN4FMOD6System18getDSPInfoByPluginEjPPK20FMOD_DSP_DESCRIPTION",
+      "addr": 902200
+    },
+    {
+      "name": "_ZN4FMOD6System19getDefaultMixMatrixE16FMOD_SPEAKERMODES1_Pfi",
+      "addr": 905992
+    },
+    {
+      "name": "FMOD5_Channel_Set3DLevel",
+      "addr": 466128
+    },
+    {
+      "name": "FMOD5_Channel_SetLoopCount",
+      "addr": 466192
+    },
+    {
+      "name": "FMOD_System_PlayDSP",
+      "addr": 329376
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DLevel",
+      "addr": 466436
+    },
+    {
+      "name": "FMOD_Sound_ReadData",
+      "addr": 330116
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl13getAudibilityEPf",
+      "addr": 849796
+    },
+    {
+      "name": "_ZN4FMOD7Channel11getPriorityEPi",
+      "addr": 846328
+    },
+    {
+      "name": "DSP_Saturate",
+      "addr": 1072372
+    },
+    {
+      "name": "FMOD_Geometry_GetRotation",
+      "addr": 333932
+    },
+    {
+      "name": "FMOD_System_GetNetworkProxy",
+      "addr": 329728
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Stop",
+      "addr": 466224
+    },
+    {
+      "name": "FMOD5_DSPConnection_GetOutput",
+      "addr": 466732
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DMinMaxDistance",
+      "addr": 332204
+    },
+    {
+      "name": "_ZN4FMOD6System11isRecordingEiPb",
+      "addr": 911540
+    },
+    {
+      "name": "_ZN4FMOD6System15getNetworkProxyEPci",
+      "addr": 912920
+    },
+    {
+      "name": "_ZN4FMOD6System17setSoftwareFormatEi16FMOD_SPEAKERMODEi",
+      "addr": 897700
+    },
+    {
+      "name": "_ZN4FMOD10getGlobalsEPPNS_6GlobalE",
+      "addr": 389940
+    },
+    {
+      "name": "FMOD5_DSPConnection_GetMixMatrix",
+      "addr": 466748
+    },
+    {
+      "name": "FMOD_Channel_SetMixMatrix",
+      "addr": 330796
+    },
+    {
+      "name": "_ZN4FMOD6System9createDSPEPK20FMOD_DSP_DESCRIPTIONPPNS_3DSPE",
+      "addr": 907216
+    },
+    {
+      "name": "FMOD5_Channel_GetNumDSPs",
+      "addr": 466060
+    },
+    {
+      "name": "FMOD5_SoundGroup_SetUserData",
+      "addr": 466556
+    },
+    {
+      "name": "FMOD5_Sound_GetLength",
+      "addr": 465804
+    },
+    {
+      "name": "FMOD_OS_File_Write",
+      "addr": 945100
+    },
+    {
+      "name": "FMOD_Channel_Get3DConeOrientation",
+      "addr": 331092
+    },
+    {
+      "name": "FMOD_Channel_GetLowPassGain",
+      "addr": 330668
+    },
+    {
+      "name": "FMOD_DSP_GetIdle",
+      "addr": 333356
+    },
+    {
+      "name": "FMOD5_System_RegisterCodec",
+      "addr": 465488
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DMinMaxDistance",
+      "addr": 332192
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection9getOutputEPPNS_3DSPE",
+      "addr": 690508
+    },
+    {
+      "name": "_ZN4FMOD5Sound7getModeEPj",
+      "addr": 892028
+    },
+    {
+      "name": "FMOD5_Sound_SetDefaults",
+      "addr": 465760
+    },
+    {
+      "name": "FMOD5_System_LoadGeometry",
+      "addr": 465712
+    },
+    {
+      "name": "PLII_Encode_Init",
+      "addr": 1071188
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl15set3DAttributesEPK11FMOD_VECTORS3_",
+      "addr": 855736
+    },
+    {
+      "name": "_ZN4FMOD6System17getNetworkTimeoutEPi",
+      "addr": 913120
+    },
+    {
+      "name": "FMOD5_System_GetCPUUsage",
+      "addr": 465584
+    },
+    {
+      "name": "FMOD_Channel_GetDSP",
+      "addr": 330936
+    },
+    {
+      "name": "FMOD_System_GetRecordDriverInfo",
+      "addr": 329536
+    },
+    {
+      "name": "FMOD_System_SetOutputByPlugin",
+      "addr": 328860
+    },
+    {
+      "name": "FMOD5_Sound_GetNumSyncPoints",
+      "addr": 465844
+    },
+    {
+      "name": "FMOD5_System_MixerResume",
+      "addr": 465560
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup4stopEv",
+      "addr": 895520
+    },
+    {
+      "name": "FMOD5_Geometry_SetScale",
+      "addr": 466824
+    },
+    {
+      "name": "FMOD_Channel_GetFadePoints",
+      "addr": 330924
+    },
+    {
+      "name": "FMOD_System_SetOutput",
+      "addr": 328560
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup16setMuteFadeSpeedEf",
+      "addr": 895128
+    },
+    {
+      "name": "_ZN4FMOD6System15getNestedPluginEjiPj",
+      "addr": 900632
+    },
+    {
+      "name": "_ZN4FMOD6System15getOutputHandleEPPv",
+      "addr": 906204
+    },
+    {
+      "name": "FMOD5_Geometry_SetPosition",
+      "addr": 466816
+    },
+    {
+      "name": "FMOD_Geometry_Save",
+      "addr": 333992
+    },
+    {
+      "name": "FMOD_SoundGroup_GetSound",
+      "addr": 332728
+    },
+    {
+      "name": "FMOD_System_GetNestedPlugin",
+      "addr": 328812
+    },
+    {
+      "name": "FMOD_System_UnloadPlugin",
+      "addr": 328788
+    },
+    {
+      "name": "FMOD_System_GetAdvancedSettings",
+      "addr": 328740
+    },
+    {
+      "name": "FMOD_System_MixerSuspend",
+      "addr": 329164
+    },
+    {
+      "name": "_ZN4FMOD5Sound13getLoopPointsEPjjS1_j",
+      "addr": 892580
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetName",
+      "addr": 466540
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetDSPClock",
+      "addr": 331976
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetDelay",
+      "addr": 332000
+    },
+    {
+      "name": "FMOD_Channel_Get3DDistanceFilter",
+      "addr": 331236
+    },
+    {
+      "name": "_ZN4FMOD3DSP11setUserDataEPv",
+      "addr": 870852
+    },
+    {
+      "name": "_ZN4FMOD5Sound9getFormatEP15FMOD_SOUND_TYPEP17FMOD_SOUND_FORMATPiS5_",
+      "addr": 888348
+    },
+    {
+      "name": "_ZN4FMOD6System7playDSPEPNS_3DSPEPNS_12ChannelGroupEbPPNS_7ChannelE",
+      "addr": 908444
+    },
+    {
+      "name": "FMOD_Reverb3D_SetUserData",
+      "addr": 334160
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11setUserDataEPv",
+      "addr": 859172
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl8getDelayEPyS1_Pb",
+      "addr": 853384
+    },
+    {
+      "name": "_ZN4FMOD5Sound16getNumSyncPointsEPi",
+      "addr": 890504
+    },
+    {
+      "name": "FMOD5_System_Create",
+      "addr": 465364
+    },
+    {
+      "name": "FMOD_DSP_GetInfo",
+      "addr": 333332
+    },
+    {
+      "name": "FMOD_Sound_DeleteSyncPoint",
+      "addr": 330212
+    },
+    {
+      "name": "FMOD_Thread_SetAttributes",
+      "addr": 934144
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetMaxAudibleBehavior",
+      "addr": 466516
+    },
+    {
+      "name": "FMOD5_System_GetStreamBufferSize",
+      "addr": 465524
+    },
+    {
+      "name": "FMOD_System_SetAdvancedSettings",
+      "addr": 328728
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup9setVolumeEf",
+      "addr": 895324
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DDopplerLevel",
+      "addr": 466440
+    },
+    {
+      "name": "FMOD_Channel_Set3DDistanceFilter",
+      "addr": 331224
+    },
+    {
+      "name": "_ZN4FMOD7Channel12setFrequencyEf",
+      "addr": 847116
+    },
+    {
+      "name": "FMOD_System_SetNetworkTimeout",
+      "addr": 329740
+    },
+    {
+      "name": "_ZN4FMOD3DSP17getParameterFloatEiPfPci",
+      "addr": 868212
+    },
+    {
+      "name": "_ZN4FMOD5Sound7setModeEj",
+      "addr": 891900
+    },
+    {
+      "name": "_ZN4FMOD6System11setUserDataEPv",
+      "addr": 913200
+    },
+    {
+      "name": "FMOD5_Channel_GetSystemObject",
+      "addr": 465916
+    },
+    {
+      "name": "FMOD5_DSP_GetIdle",
+      "addr": 466700
+    },
+    {
+      "name": "FMOD_System_GetRecordNumDrivers",
+      "addr": 329524
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup15getSystemObjectEPPNS_6SystemE",
+      "addr": 894716
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl19get3DDistanceFilterEPbPfS2_",
+      "addr": 858916
+    },
+    {
+      "name": "_ZN4FMOD8Geometry20getPolygonAttributesEiPfS1_Pb",
+      "addr": 873020
+    },
+    {
+      "name": "FMOD5_System_SetStreamBufferSize",
+      "addr": 465520
+    },
+    {
+      "name": "Java_org_fmod_MediaCodec_fmodGetSize",
+      "addr": 961952
+    },
+    {
+      "name": "FMOD_Channel_GetDSPClock",
+      "addr": 330820
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl18setMixLevelsOutputEffffffff",
+      "addr": 851520
+    },
+    {
+      "name": "_ZN4FMOD6System12unloadPluginEj",
+      "addr": 900340
+    },
+    {
+      "name": "_ZN4FMOD7Channel9isVirtualEPb",
+      "addr": 847368
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Release",
+      "addr": 466464
+    },
+    {
+      "name": "FMOD5_Sound_GetMusicChannelVolume",
+      "addr": 465896
+    },
+    {
+      "name": "FMOD5_System_GetVersion",
+      "addr": 465572
+    },
+    {
+      "name": "FMOD_Channel_GetVolumeRamp",
+      "addr": 330496
+    },
+    {
+      "name": "_ZN4FMOD6System15getPluginHandleE15FMOD_PLUGINTYPEiPj",
+      "addr": 901100
+    },
+    {
+      "name": "FMOD5_Channel_GetMixMatrix",
+      "addr": 466016
+    },
+    {
+      "name": "FMOD_Sound_GetName",
+      "addr": 329956
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D13setPropertiesEPK22FMOD_REVERB_PROPERTIES",
+      "addr": 884284
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetPan",
+      "addr": 466304
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup7getNameEPci",
+      "addr": 860944
+    },
+    {
+      "name": "FMOD_DSPConnection_GetOutput",
+      "addr": 333584
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl9getVolumeEPf",
+      "addr": 849532
+    },
+    {
+      "name": "FMOD_Channel_Set3DMinMaxDistance",
+      "addr": 331032
+    },
+    {
+      "name": "FMOD5_Sound_GetSyncPoint",
+      "addr": 465848
+    },
+    {
+      "name": "FMOD5_System_SetSpeakerPosition",
+      "addr": 465512
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetCallback",
+      "addr": 331856
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup8getGroupEiPPS0_",
+      "addr": 860640
+    },
+    {
+      "name": "FMOD5_Channel_Set3DConeSettings",
+      "addr": 466088
+    },
+    {
+      "name": "FMOD5_System_GetFileUsage",
+      "addr": 465588
+    },
+    {
+      "name": "_ZN4FMOD3DSP11getCPUUsageEPjS1_",
+      "addr": 871516
+    },
+    {
+      "name": "FMOD5_DSP_GetInfo",
+      "addr": 466692
+    },
+    {
+      "name": "Java_org_fmod_FMOD_SetOutputEnumerationChanged",
+      "addr": 944448
+    },
+    {
+      "name": "FMOD_Channel_GetPitch",
+      "addr": 330564
+    },
+    {
+      "name": "FMOD_DSP_GetType",
+      "addr": 333344
+    },
+    {
+      "name": "FMOD_System_GetSoftwareFormat",
+      "addr": 328668
+    },
+    {
+      "name": "FMOD5_DSPConnection_GetUserData",
+      "addr": 466760
+    },
+    {
+      "name": "FMOD5_DSP_SetUserData",
+      "addr": 466704
+    },
+    {
+      "name": "FMOD5_System_GetPluginHandle",
+      "addr": 465464
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetSystemObject",
+      "addr": 331520
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DDistanceFilter",
+      "addr": 332384
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup13getMaxAudibleEPi",
+      "addr": 894884
+    },
+    {
+      "name": "_ZN4FMOD6System12createStreamEPKcjP22FMOD_CREATESOUNDEXINFOPPNS_5SoundE",
+      "addr": 907116
+    },
+    {
+      "name": "FMOD5_Debug_Initialize",
+      "addr": 465348
+    },
+    {
+      "name": "FMOD5_Geometry_Release",
+      "addr": 466764
+    },
+    {
+      "name": "_ZN4FMOD3DSP16getParameterDataEiPPvPjPci",
+      "addr": 869148
+    },
+    {
+      "name": "FMOD5_DSP_GetNumInputs",
+      "addr": 466584
+    },
+    {
+      "name": "FMOD_Android_JNI_Close",
+      "addr": 944188
+    },
+    {
+      "name": "FMOD_SoundGroup_Stop",
+      "addr": 332692
+    },
+    {
+      "name": "FMOD_System_GetSoftwareChannels",
+      "addr": 328644
+    },
+    {
+      "name": "_ZN4FMOD3DSP22getOutputChannelFormatEji16FMOD_SPEAKERMODEPjPiPS1_",
+      "addr": 866584
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetChannel",
+      "addr": 466492
+    },
+    {
+      "name": "FMOD_System_SetSpeakerPosition",
+      "addr": 328980
+    },
+    {
+      "name": "FMOD_OS_CriticalSection_Create",
+      "addr": 946080
+    },
+    {
+      "name": "FMOD5_Memory_GetStats",
+      "addr": 465344
+    },
+    {
+      "name": "FMOD_Channel_Set3DConeSettings",
+      "addr": 331056
+    },
+    {
+      "name": "FMOD_Channel_SetCallback",
+      "addr": 330704
+    },
+    {
+      "name": "FMOD_SoundGroup_GetNumSounds",
+      "addr": 332716
+    },
+    {
+      "name": "_ZN4FMOD6System19setGeometrySettingsEf",
+      "addr": 912008
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DLevel",
+      "addr": 466432
+    },
+    {
+      "name": "FMOD5_System_GetDSPBufferSize",
+      "addr": 465416
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl19set3DMinMaxDistanceEff",
+      "addr": 856144
+    },
+    {
+      "name": "FMOD5_Channel_Set3DDopplerLevel",
+      "addr": 466136
+    },
+    {
+      "name": "FMOD5_Channel_SetPosition",
+      "addr": 466176
+    },
+    {
+      "name": "FMOD5_Reverb3D_Release",
+      "addr": 466844
+    },
+    {
+      "name": "FMOD_Channel_SetMute",
+      "addr": 330576
+    },
+    {
+      "name": "FMOD_Geometry_GetActive",
+      "addr": 333868
+    },
+    {
+      "name": "FMOD_System_SetSoftwareChannels",
+      "addr": 328632
+    },
+    {
+      "name": "FMOD5_Channel_Set3DOcclusion",
+      "addr": 466112
+    },
+    {
+      "name": "FMOD5_Channel_GetReverbProperties",
+      "addr": 465972
+    },
+    {
+      "name": "FMOD5_Channel_SetPan",
+      "addr": 466000
+    },
+    {
+      "name": "FMOD_Sound_Get3DCustomRolloff",
+      "addr": 329920
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetVolume",
+      "addr": 466240
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetPitch",
+      "addr": 466256
+    },
+    {
+      "name": "FMOD5_DSP_ShowConfigDialog",
+      "addr": 466688
+    },
+    {
+      "name": "FMOD5_SoundGroup_SetVolume",
+      "addr": 466528
+    },
+    {
+      "name": "FMOD5_System_CreateDSPByPlugin",
+      "addr": 465480
+    },
+    {
+      "name": "FMOD5_System_CreateSound",
+      "addr": 465592
+    },
+    {
+      "name": "FMOD_OS_CriticalSection_IsLocked",
+      "addr": 946420
+    },
+    {
+      "name": "FMOD_ChannelGroup_AddGroup",
+      "addr": 332480
+    },
+    {
+      "name": "FMOD_Sound_GetLoopCount",
+      "addr": 330260
+    },
+    {
+      "name": "FMOD5_Channel_Set3DCustomRolloff",
+      "addr": 466104
+    },
+    {
+      "name": "FMOD_Channel_GetSystemObject",
+      "addr": 330380
+    },
+    {
+      "name": "FMOD_System_Set3DNumListeners",
+      "addr": 329104
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl19setReverbPropertiesEif",
+      "addr": 850268
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetNumDSPs",
+      "addr": 466364
+    },
+    {
+      "name": "FMOD5_Channel_SetReverbProperties",
+      "addr": 465968
+    },
+    {
+      "name": "FMOD5_DSP_SetParameterBool",
+      "addr": 466652
+    },
+    {
+      "name": "FMOD_Reverb3D_GetProperties",
+      "addr": 334076
+    },
+    {
+      "name": "_ZN4FMOD6System19getGeometrySettingsEPf",
+      "addr": 912148
+    },
+    {
+      "name": "FMOD5_DSP_GetType",
+      "addr": 466696
+    },
+    {
+      "name": "FMOD5_System_GetSpeakerModeChannels",
+      "addr": 465568
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl10set3DLevelEf",
+      "addr": 858184
+    },
+    {
+      "name": "_ZN4FMOD8Geometry8setScaleEPK11FMOD_VECTOR",
+      "addr": 873364
+    },
+    {
+      "name": "_ZN4FMOD7SystemI19createClientProfileEv",
+      "addr": 433988
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DConeOrientation",
+      "addr": 466400
+    },
+    {
+      "name": "FMOD_Channel_SetDelay",
+      "addr": 330832
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetUserData",
+      "addr": 466460
+    },
+    {
+      "name": "FMOD5_Channel_Get3DSpread",
+      "addr": 466124
+    },
+    {
+      "name": "FMOD5_Geometry_GetNumPolygons",
+      "addr": 466772
+    },
+    {
+      "name": "FMOD_DSPConnection_GetType",
+      "addr": 333644
+    },
+    {
+      "name": "FMOD5_System_UnlockDSP",
+      "addr": 465664
+    },
+    {
+      "name": "FMOD_DSP_SetParameterFloat",
+      "addr": 333128
+    },
+    {
+      "name": "_ZN4FMOD6System17setOutputByPluginEj",
+      "addr": 901828
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetMode",
+      "addr": 331844
+    },
+    {
+      "name": "FMOD_Channel_SetFadePointRamp",
+      "addr": 330900
+    },
+    {
+      "name": "FMOD5_ChannelGroup_IsPlaying",
+      "addr": 466300
+    },
+    {
+      "name": "FMOD_Channel_GetLoopCount",
+      "addr": 331412
+    },
+    {
+      "name": "FMOD_Sound_GetNumTags",
+      "addr": 330004
+    },
+    {
+      "name": "FMOD_System_GetOutputByPlugin",
+      "addr": 328872
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DConeSettings",
+      "addr": 466396
+    },
+    {
+      "name": "FMOD5_Sound_GetSoundGroup",
+      "addr": 465840
+    },
+    {
+      "name": "FMOD_Geometry_SetUserData",
+      "addr": 334004
+    },
+    {
+      "name": "FMOD_System_Set3DSettings",
+      "addr": 329080
+    },
+    {
+      "name": "FMOD_SoundGroup_SetMaxAudibleBehavior",
+      "addr": 332620
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup11setUserDataEPv",
+      "addr": 896004
+    },
+    {
+      "name": "_ZN4FMOD6System4initEijPv",
+      "addr": 903076
+    },
+    {
+      "name": "FMOD5_System_CreateStream",
+      "addr": 465596
+    },
+    {
+      "name": "FMOD5_System_Get3DSettings",
+      "addr": 465532
+    },
+    {
+      "name": "FMOD5_System_RecordStop",
+      "addr": 465692
+    },
+    {
+      "name": "FMOD_Channel_RemoveFadePoints",
+      "addr": 330912
+    },
+    {
+      "name": "FMOD5_Channel_Get3DAttributes",
+      "addr": 466076
+    },
+    {
+      "name": "FMOD5_Channel_SetMixLevelsOutput",
+      "addr": 466004
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DLevel",
+      "addr": 332348
+    },
+    {
+      "name": "FMOD_Channel_SetLowPassGain",
+      "addr": 330656
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl7getMuteEPb",
+      "addr": 850184
+    },
+    {
+      "name": "_ZN4FMOD6System10getChannelEiPPNS_7ChannelE",
+      "addr": 908788
+    },
+    {
+      "name": "_ZN4FMOD6System11registerDSPEPK20FMOD_DSP_DESCRIPTIONPj",
+      "addr": 902676
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DSpread",
+      "addr": 466424
+    },
+    {
+      "name": "FMOD5_Channel_GetDSPIndex",
+      "addr": 466068
+    },
+    {
+      "name": "FMOD_System_GetChannel",
+      "addr": 329396
+    },
+    {
+      "name": "_ZN4FMOD7Channel13getLoopPointsEPjjS1_j",
+      "addr": 848276
+    },
+    {
+      "name": "FMOD5_DSP_GetMeteringEnabled",
+      "addr": 466716
+    },
+    {
+      "name": "FMOD_Channel_SetPriority",
+      "addr": 331328
+    },
+    {
+      "name": "FMOD_Memory_Initialize",
+      "addr": 327740
+    },
+    {
+      "name": "FMOD_Sound_SetMusicChannelVolume",
+      "addr": 330308
+    },
+    {
+      "name": "_ZN4FMOD5Sound17getSubSoundParentEPPS0_",
+      "addr": 887988
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DOcclusion",
+      "addr": 332300
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl17set3DDopplerLevelEf",
+      "addr": 858392
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D11setUserDataEPv",
+      "addr": 884620
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DDopplerLevel",
+      "addr": 466444
+    },
+    {
+      "name": "Pole_Zero_Filter_Phase",
+      "addr": 1072632
+    },
+    {
+      "name": "FMOD_System_GetNetworkTimeout",
+      "addr": 329752
+    },
+    {
+      "name": "FMOD5_DSP_SetChannelFormat",
+      "addr": 466624
+    },
+    {
+      "name": "FMOD5_Geometry_SetPolygonVertex",
+      "addr": 466784
+    },
+    {
+      "name": "FMOD5_Reverb3D_GetUserData",
+      "addr": 466876
+    },
+    {
+      "name": "FMOD_Channel_IsVirtual",
+      "addr": 331448
+    },
+    {
+      "name": "FMOD_DSP_GetUserData",
+      "addr": 333420
+    },
+    {
+      "name": "FMOD5_System_GetReverbProperties",
+      "addr": 465656
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup11getUserDataEPPv",
+      "addr": 896080
+    },
+    {
+      "name": "_ZN4FMOD5Sound13getSoundGroupEPPNS_10SoundGroupE",
+      "addr": 890388
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetDSPIndex",
+      "addr": 466368
+    },
+    {
+      "name": "FMOD5_System_GetDriverInfo",
+      "addr": 465384
+    },
+    {
+      "name": "FMOD_Channel_Get3DCustomRolloff",
+      "addr": 331116
+    },
+    {
+      "name": "_ZN4FMOD3DSP16setParameterBoolEib",
+      "addr": 867680
+    },
+    {
+      "name": "_ZN4FMOD5Sound16getSyncPointInfoEP14FMOD_SYNCPOINTPciPjj",
+      "addr": 890884
+    },
+    {
+      "name": "_ZN4FMOD7Channel8getIndexEPi",
+      "addr": 847608
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetMaxAudible",
+      "addr": 466508
+    },
+    {
+      "name": "FMOD5_System_Release",
+      "addr": 465368
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DAttributes",
+      "addr": 332180
+    },
+    {
+      "name": "_ZN4FMOD5Sound8seekDataEj",
+      "addr": 890112
+    },
+    {
+      "name": "FMOD_System_SetNetworkProxy",
+      "addr": 329716
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl20set3DConeOrientationEP11FMOD_VECTOR",
+      "addr": 857168
+    },
+    {
+      "name": "_ZN4FMOD3DSP11getUserDataEPPv",
+      "addr": 870932
+    },
+    {
+      "name": "FMOD5_DSP_GetWetDryMix",
+      "addr": 466620
+    },
+    {
+      "name": "FMOD5_System_SetReverbProperties",
+      "addr": 465652
+    },
+    {
+      "name": "FMOD_Geometry_SetPolygonVertex",
+      "addr": 333748
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetUserData",
+      "addr": 332444
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl15getSystemObjectEPPNS_6SystemE",
+      "addr": 848956
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D13getPropertiesEP22FMOD_REVERB_PROPERTIES",
+      "addr": 884356
+    },
+    {
+      "name": "FMOD5_Channel_Get3DConeSettings",
+      "addr": 466092
+    },
+    {
+      "name": "FMOD_DSPConnection_GetUserData",
+      "addr": 333668
+    },
+    {
+      "name": "_ZN4FMOD5Sound21getMusicChannelVolumeEiPf",
+      "addr": 893100
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D11getUserDataEPPv",
+      "addr": 884692
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DCustomRolloff",
+      "addr": 466408
+    },
+    {
+      "name": "FMOD5_Sound_GetSubSound",
+      "addr": 465792
+    },
+    {
+      "name": "FMOD5_System_SetOutputByPlugin",
+      "addr": 465472
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetDSP",
+      "addr": 466352
+    },
+    {
+      "name": "FMOD5_System_GetDriver",
+      "addr": 465392
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection6getMixEPf",
+      "addr": 690740
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DOcclusion",
+      "addr": 332288
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11setCallbackEPF11FMOD_RESULTP19FMOD_CHANNELCONTROL24FMOD_CHANNELCONTROL_TYPE33FMOD_CHANNELCONTROL_CALLBACK_TYPEPvS6_E",
+      "addr": 851144
+    },
+    {
+      "name": "FMOD5_Sound_SeekData",
+      "addr": 465832
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup8addGroupEPS0_bPPNS_13DSPConnectionE",
+      "addr": 860284
+    },
+    {
+      "name": "_ZN4FMOD6System9setOutputE15FMOD_OUTPUTTYPE",
+      "addr": 896596
+    },
+    {
+      "name": "FMOD5_System_GetNumDrivers",
+      "addr": 465380
+    },
+    {
+      "name": "FMOD5_System_Update",
+      "addr": 465508
+    },
+    {
+      "name": "FMOD_OS_File_Read",
+      "addr": 945088
+    },
+    {
+      "name": "FMOD_Channel_Get3DConeSettings",
+      "addr": 331068
+    },
+    {
+      "name": "FMOD_Channel_Set3DDopplerLevel",
+      "addr": 331200
+    },
+    {
+      "name": "FMOD_Channel_SetUserData",
+      "addr": 331280
+    },
+    {
+      "name": "_ZN4FMOD3DSP15getMeteringInfoEP22FMOD_DSP_METERING_INFOS2_",
+      "addr": 871316
+    },
+    {
+      "name": "_ZN4FMOD5Sound13setSoundGroupEPNS_10SoundGroupE",
+      "addr": 890240
+    },
+    {
+      "name": "_ZN4FMOD6System11getUserDataEPPv",
+      "addr": 913280
+    },
+    {
+      "name": "FMOD5_Channel_SetPitch",
+      "addr": 465952
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DConeSettings",
+      "addr": 332216
+    },
+    {
+      "name": "FMOD_Channel_Get3DAttributes",
+      "addr": 331020
+    },
+    {
+      "name": "FMOD_Channel_GetPaused",
+      "addr": 330416
+    },
+    {
+      "name": "FMOD5_Channel_Get3DDopplerLevel",
+      "addr": 466140
+    },
+    {
+      "name": "FMOD5_Sound_SetMode",
+      "addr": 465864
+    },
+    {
+      "name": "FMOD5_System_PlayDSP",
+      "addr": 465624
+    },
+    {
+      "name": "_ZN4FMOD8Geometry8getScaleEP11FMOD_VECTOR",
+      "addr": 873404
+    },
+    {
+      "name": "FMOD5_Sound_ReadData",
+      "addr": 465828
+    },
+    {
+      "name": "FMOD5_System_CreateChannelGroup",
+      "addr": 465608
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetMute",
+      "addr": 331724
+    },
+    {
+      "name": "FMOD5_Channel_AddFadePoint",
+      "addr": 466032
+    },
+    {
+      "name": "FMOD_Android_JNI_Init",
+      "addr": 943236
+    },
+    {
+      "name": "FMOD_System_RecordStart",
+      "addr": 329568
+    },
+    {
+      "name": "_ZN4FMOD5Sound19set3DMinMaxDistanceEff",
+      "addr": 886648
+    },
+    {
+      "name": "_ZN4FMOD8Geometry11getRotationEP11FMOD_VECTORS2_",
+      "addr": 873240
+    },
+    {
+      "name": "FMOD5_System_GetDefaultMixMatrix",
+      "addr": 465564
+    },
+    {
+      "name": "FMOD_DSP_GetParameterInt",
+      "addr": 333196
+    },
+    {
+      "name": "_ZN4FMOD5Sound12setLoopCountEi",
+      "addr": 892152
+    },
+    {
+      "name": "_ZN4FMOD6System17getRecordPositionEiPj",
+      "addr": 910952
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetMixLevelsOutput",
+      "addr": 466308
+    },
+    {
+      "name": "FMOD5_Geometry_GetActive",
+      "addr": 466804
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetNumChannels",
+      "addr": 332548
+    },
+    {
+      "name": "FMOD_Channel_RemoveDSP",
+      "addr": 330960
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetMixMatrix",
+      "addr": 466320
+    },
+    {
+      "name": "FMOD5_System_SetSoftwareFormat",
+      "addr": 465404
+    },
+    {
+      "name": "FMOD_DSP_GetNumParameters",
+      "addr": 333276
+    },
+    {
+      "name": "FMOD_System_CreateChannelGroup",
+      "addr": 329320
+    },
+    {
+      "name": "_ZN4FMOD5Sound6unlockEPvS1_jj",
+      "addr": 885720
+    },
+    {
+      "name": "Biquad_Filter",
+      "addr": 1072824
+    },
+    {
+      "name": "FMOD_DSP_SetWetDryMix",
+      "addr": 333044
+    },
+    {
+      "name": "FMOD_Geometry_SetActive",
+      "addr": 333848
+    },
+    {
+      "name": "_ZN4FMOD3DSP15setParameterIntEii",
+      "addr": 867452
+    },
+    {
+      "name": "_ZN4FMOD5Sound11getSubSoundEiPPS0_",
+      "addr": 887720
+    },
+    {
+      "name": "_ZN4FMOD8Geometry4saveEPvPi",
+      "addr": 873444
+    },
+    {
+      "name": "_ZN4FMOD8Geometry7releaseEv",
+      "addr": 872564
+    },
+    {
+      "name": "FMOD5_Channel_Set3DAttributes",
+      "addr": 466072
+    },
+    {
+      "name": "FMOD5_System_GetMasterSoundGroup",
+      "addr": 465640
+    },
+    {
+      "name": "FMOD5_Channel_GetDSP",
+      "addr": 466048
+    },
+    {
+      "name": "FMOD5_Sound_GetLoopCount",
+      "addr": 465876
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DConeOrientation",
+      "addr": 332240
+    },
+    {
+      "name": "FMOD_DSP_GetParameterFloat",
+      "addr": 333184
+    },
+    {
+      "name": "FMOD_DSP_Reset",
+      "addr": 333104
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl9setPausedEb",
+      "addr": 849216
+    },
+    {
+      "name": "FMOD5_DSP_GetBypass",
+      "addr": 466612
+    },
+    {
+      "name": "FMOD5_System_Init",
+      "addr": 465500
+    },
+    {
+      "name": "FMOD5_System_SetDriver",
+      "addr": 465388
+    },
+    {
+      "name": "FMOD_File_GetDiskBusy",
+      "addr": 914884
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetChannel",
+      "addr": 332560
+    },
+    {
+      "name": "FMOD_DSP_GetNumOutputs",
+      "addr": 332864
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetAudibility",
+      "addr": 466252
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetLowPassGain",
+      "addr": 466284
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetVolume",
+      "addr": 466236
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetVolumeRamp",
+      "addr": 466244
+    },
+    {
+      "name": "FMOD5_System_GetOutput",
+      "addr": 465376
+    },
+    {
+      "name": "_ZN4FMOD6System19setStreamBufferSizeEjj",
+      "addr": 904264
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetCallback",
+      "addr": 466296
+    },
+    {
+      "name": "FMOD5_Channel_Stop",
+      "addr": 465920
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DLevel",
+      "addr": 332336
+    },
+    {
+      "name": "FMOD_System_GetDSPBufferSize",
+      "addr": 328692
+    },
+    {
+      "name": "FMOD5_Geometry_GetScale",
+      "addr": 466828
+    },
+    {
+      "name": "FMOD5_System_GetGeometryOcclusion",
+      "addr": 465716
+    },
+    {
+      "name": "FMOD_SoundGroup_SetMuteFadeSpeed",
+      "addr": 332644
+    },
+    {
+      "name": "_ZN4FMOD6System22getSpeakerModeChannelsE16FMOD_SPEAKERMODEPi",
+      "addr": 905904
+    },
+    {
+      "name": "FMOD5_System_Get3DListenerAttributes",
+      "addr": 465548
+    },
+    {
+      "name": "FMOD_Channel_SetPaused",
+      "addr": 330404
+    },
+    {
+      "name": "FMOD_Sound_GetNumSubSounds",
+      "addr": 329992
+    },
+    {
+      "name": "FMOD_Sound_SetMusicSpeed",
+      "addr": 330332
+    },
+    {
+      "name": "FMOD_OS_CriticalSection_Enter",
+      "addr": 946304
+    },
+    {
+      "name": "FMOD5_Sound_GetSubSoundParent",
+      "addr": 465796
+    },
+    {
+      "name": "FMOD_Channel_SetLoopPoints",
+      "addr": 331424
+    },
+    {
+      "name": "_ZN4FMOD6System16createSoundGroupEPKcPPNS_10SoundGroupE",
+      "addr": 907816
+    },
+    {
+      "name": "FMOD5_Channel_SetFrequency",
+      "addr": 466160
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl16removeFadePointsEyy",
+      "addr": 854128
+    },
+    {
+      "name": "_ZN4FMOD5Sound12getOpenStateEP14FMOD_OPENSTATEPjPbS4_",
+      "addr": 889448
+    },
+    {
+      "name": "_ZN4FMOD7Channel13setLoopPointsEjjjj",
+      "addr": 847896
+    },
+    {
+      "name": "FMOD_Sound_GetMode",
+      "addr": 330236
+    },
+    {
+      "name": "_ZN4FMOD6System13set3DSettingsEfff",
+      "addr": 904472
+    },
+    {
+      "name": "_ZN4FMOD6System7releaseEv",
+      "addr": 896512
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetNumDSPs",
+      "addr": 332132
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DCustomRolloff",
+      "addr": 332264
+    },
+    {
+      "name": "FMOD_DSP_GetParameterBool",
+      "addr": 333208
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection7getTypeEP23FMOD_DSPCONNECTION_TYPE",
+      "addr": 691588
+    },
+    {
+      "name": "FMOD_DSP_SetMeteringEnabled",
+      "addr": 333432
+    },
+    {
+      "name": "FMOD_Geometry_AddPolygon",
+      "addr": 333692
+    },
+    {
+      "name": "FMOD5_Geometry_SetActive",
+      "addr": 466800
+    },
+    {
+      "name": "FMOD5_System_AttachChannelGroupToPort",
+      "addr": 465644
+    },
+    {
+      "name": "FMOD_ChannelGroup_AddDSP",
+      "addr": 332108
+    },
+    {
+      "name": "FMOD_SoundGroup_GetSystemObject",
+      "addr": 332584
+    },
+    {
+      "name": "FMOD_SoundGroup_SetMaxAudible",
+      "addr": 332596
+    },
+    {
+      "name": "FMOD_Sound_GetFormat",
+      "addr": 329980
+    },
+    {
+      "name": "FMOD_Sound_GetUserData",
+      "addr": 330368
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11setDSPIndexEPNS_3DSPEi",
+      "addr": 855328
+    },
+    {
+      "name": "FMOD5_DSPConnection_GetMix",
+      "addr": 466740
+    },
+    {
+      "name": "FMOD5_DSPConnection_SetMix",
+      "addr": 466736
+    },
+    {
+      "name": "FMOD5_System_Set3DListenerAttributes",
+      "addr": 465544
+    },
+    {
+      "name": "FMOD_Geometry_GetNumPolygons",
+      "addr": 333712
+    },
+    {
+      "name": "_ZN4FMOD6System15createDSPByTypeE13FMOD_DSP_TYPEPPNS_3DSPE",
+      "addr": 907416
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetMixLevelsInput",
+      "addr": 466312
+    },
+    {
+      "name": "FMOD_Sound_AddSyncPoint",
+      "addr": 330200
+    },
+    {
+      "name": "FMOD_System_LockDSP",
+      "addr": 329500
+    },
+    {
+      "name": "_ZN4FMOD7Channel11getPositionEPjj",
+      "addr": 846668
+    },
+    {
+      "name": "FMOD5_Sound_GetSyncPointInfo",
+      "addr": 465852
+    },
+    {
+      "name": "FMOD_Channel_SetMode",
+      "addr": 330680
+    },
+    {
+      "name": "FMOD5_System_CreateGeometry",
+      "addr": 465700
+    },
+    {
+      "name": "FMOD_Channel_Stop",
+      "addr": 330392
+    },
+    {
+      "name": "FMOD_Reverb3D_Get3DAttributes",
+      "addr": 334052
+    },
+    {
+      "name": "_ZN4FMOD3DSP13disconnectAllEbb",
+      "addr": 864596
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetLowPassGain",
+      "addr": 466280
+    },
+    {
+      "name": "FMOD5_System_SetOutput",
+      "addr": 465372
+    },
+    {
+      "name": "FMOD_DSP_SetCallback",
+      "addr": 333116
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl14set3DOcclusionEff",
+      "addr": 857744
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetName",
+      "addr": 466484
+    },
+    {
+      "name": "FMOD_OS_Time_GetUs",
+      "addr": 945260
+    },
+    {
+      "name": "Pole_Zero_Filter",
+      "addr": 1072436
+    },
+    {
+      "name": "FMOD_System_Init",
+      "addr": 328944
+    },
+    {
+      "name": "_ZN4FMOD3DSP13getNumOutputsEPi",
+      "addr": 864900
+    },
+    {
+      "name": "FMOD5_System_GetRecordDriverInfo",
+      "addr": 465672
+    },
+    {
+      "name": "FMOD_System_GetOutputHandle",
+      "addr": 329224
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetDSPClock",
+      "addr": 466324
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetMixLevelsOutput",
+      "addr": 331928
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection8getInputEPPNS_3DSPE",
+      "addr": 690432
+    },
+    {
+      "name": "_ZN4FMOD6System21getMasterChannelGroupEPPNS_12ChannelGroupE",
+      "addr": 909088
+    },
+    {
+      "name": "_ZN4FMOD6SoundI19getUserDataInternalEPPv",
+      "addr": 433420
+    },
+    {
+      "name": "FMOD5_DSP_GetActive",
+      "addr": 466604
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup12getNumSoundsEPi",
+      "addr": 895728
+    },
+    {
+      "name": "_ZN4FMOD12ChannelGroup7releaseEv",
+      "addr": 860148
+    },
+    {
+      "name": "FMOD5_System_GetPluginInfo",
+      "addr": 465468
+    },
+    {
+      "name": "_ZN4FMOD3DSP16showConfigDialogEPvb",
+      "addr": 870064
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetMute",
+      "addr": 466268
+    },
+    {
+      "name": "FMOD5_Channel_Get3DConeOrientation",
+      "addr": 466100
+    },
+    {
+      "name": "_ZN4FMOD3DSP7getIdleEPb",
+      "addr": 870772
+    },
+    {
+      "name": "FMOD5_System_SetNetworkTimeout",
+      "addr": 465728
+    },
+    {
+      "name": "FMOD5_Channel_GetChannelGroup",
+      "addr": 466188
+    },
+    {
+      "name": "FMOD_DSP_GetChannelFormat",
+      "addr": 333080
+    },
+    {
+      "name": "FMOD_System_Get3DNumListeners",
+      "addr": 329116
+    },
+    {
+      "name": "_ZN4FMOD7Channel12getLoopCountEPi",
+      "addr": 847800
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetFadePointRamp",
+      "addr": 466340
+    },
+    {
+      "name": "FMOD5_Sound_SetLoopPoints",
+      "addr": 465880
+    },
+    {
+      "name": "FMOD_Channel_Get3DDopplerLevel",
+      "addr": 331212
+    },
+    {
+      "name": "FMOD_Channel_GetPosition",
+      "addr": 331364
+    },
+    {
+      "name": "_ZN4FMOD5Sound6getTagEPKciP8FMOD_TAG",
+      "addr": 889148
+    },
+    {
+      "name": "FMOD5_Sound_AddSyncPoint",
+      "addr": 465856
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DDopplerLevel",
+      "addr": 332360
+    },
+    {
+      "name": "FMOD_Geometry_SetPolygonAttributes",
+      "addr": 333772
+    },
+    {
+      "name": "FMOD_SoundGroup_GetUserData",
+      "addr": 332764
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl10get3DLevelEPf",
+      "addr": 858308
+    },
+    {
+      "name": "_ZN4FMOD6System14registerOutputEPK23FMOD_OUTPUT_DESCRIPTIONPj",
+      "addr": 902876
+    },
+    {
+      "name": "_ZN4FMOD8Geometry11getUserDataEPPv",
+      "addr": 873528
+    },
+    {
+      "name": "FMOD5_DSPConnection_SetMixMatrix",
+      "addr": 466744
+    },
+    {
+      "name": "FMOD5_Sound_Release",
+      "addr": 465744
+    },
+    {
+      "name": "FMOD_OS_Thread_Destroy",
+      "addr": 946076
+    },
+    {
+      "name": "FMOD_DSP_GetOutput",
+      "addr": 332888
+    },
+    {
+      "name": "FMOD_Geometry_SetRotation",
+      "addr": 333920
+    },
+    {
+      "name": "_ZN4FMOD8ChannelI8validateEPNS_7ChannelEPPS0_PNS_15SystemLockScopeE",
+      "addr": 365620
+    },
+    {
+      "name": "FMOD_Channel_GetAudibility",
+      "addr": 330540
+    },
+    {
+      "name": "FMOD_System_SetPluginPath",
+      "addr": 328764
+    },
+    {
+      "name": "_ZN4FMOD5Sound15getNumSubSoundsEPi",
+      "addr": 888780
+    },
+    {
+      "name": "FMOD5_Channel_GetMute",
+      "addr": 465964
+    },
+    {
+      "name": "FMOD5_System_PlaySound",
+      "addr": 465620
+    },
+    {
+      "name": "FMOD_SoundGroup_GetNumPlaying",
+      "addr": 332740
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl9removeDSPEPNS_3DSPE",
+      "addr": 855156
+    },
+    {
+      "name": "FMOD5_ChannelGroup_RemoveFadePoints",
+      "addr": 466344
+    },
+    {
+      "name": "FMOD_Sound_GetLength",
+      "addr": 329968
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl7setModeEj",
+      "addr": 850944
+    },
+    {
+      "name": "_ZN4FMOD3DSP8getInputEiPPS0_PPNS_13DSPConnectionE",
+      "addr": 864984
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetPitch",
+      "addr": 466260
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup9getVolumeEPf",
+      "addr": 895444
+    },
+    {
+      "name": "_ZN4FMOD6System6updateEv",
+      "addr": 903468
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetMixMatrix",
+      "addr": 331964
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetParentGroup",
+      "addr": 332524
+    },
+    {
+      "name": "FMOD_Geometry_GetPosition",
+      "addr": 333956
+    },
+    {
+      "name": "FMOD_System_GetNumNestedPlugins",
+      "addr": 328800
+    },
+    {
+      "name": "FMOD_System_GetUserData",
+      "addr": 329776
+    },
+    {
+      "name": "FMOD5_System_GetSoftwareFormat",
+      "addr": 465408
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl8getPitchEPf",
+      "addr": 850004
+    },
+    {
+      "name": "_ZN4FMOD3DSP18setMeteringEnabledEbb",
+      "addr": 871012
+    },
+    {
+      "name": "FMOD5_DSP_GetOutputChannelFormat",
+      "addr": 466632
+    },
+    {
+      "name": "FMOD5_DSP_SetParameterData",
+      "addr": 466656
+    },
+    {
+      "name": "FMOD5_System_RecordStart",
+      "addr": 465688
+    },
+    {
+      "name": "FMOD_Channel_GetDelay",
+      "addr": 330844
+    },
+    {
+      "name": "FMOD_System_AttachChannelGroupToPort",
+      "addr": 329444
+    },
+    {
+      "name": "FMOD_System_CreateDSP",
+      "addr": 329296
+    },
+    {
+      "name": "FMOD5_Sound_GetMusicSpeed",
+      "addr": 465904
+    },
+    {
+      "name": "FMOD_System_CreateDSPByType",
+      "addr": 329308
+    },
+    {
+      "name": "_ZN4FMOD6System23get3DListenerAttributesEiP11FMOD_VECTORS2_S2_S2_",
+      "addr": 905280
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl9getPausedEPb",
+      "addr": 849312
+    },
+    {
+      "name": "FMOD5_Geometry_GetUserData",
+      "addr": 466840
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection12getMixMatrixEPfPiS2_i",
+      "addr": 691212
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetMuteFadeSpeed",
+      "addr": 466524
+    },
+    {
+      "name": "FMOD_ChannelGroup_Set3DAttributes",
+      "addr": 332168
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetUserData",
+      "addr": 466456
+    },
+    {
+      "name": "FMOD5_Channel_Set3DSpread",
+      "addr": 466120
+    },
+    {
+      "name": "FMOD_Channel_GetIndex",
+      "addr": 331508
+    },
+    {
+      "name": "_ZN4FMOD3DSP9setBypassEb",
+      "addr": 865544
+    },
+    {
+      "name": "FMOD5_DSP_Release",
+      "addr": 466564
+    },
+    {
+      "name": "FMOD_System_IsRecording",
+      "addr": 329600
+    },
+    {
+      "name": "_ZN4FMOD6System11createSoundEPKcjP22FMOD_CREATESOUNDEXINFOPPNS_5SoundE",
+      "addr": 906808
+    },
+    {
+      "name": "_ZN4FMOD6System5closeEv",
+      "addr": 903384
+    },
+    {
+      "name": "FMOD5_System_GetNetworkProxy",
+      "addr": 465724
+    },
+    {
+      "name": "FMOD_System_GetMasterChannelGroup",
+      "addr": 329420
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl6setPanEf",
+      "addr": 851396
+    },
+    {
+      "name": "_ZN4FMOD6System18createChannelGroupEPKcPPNS_12ChannelGroupE",
+      "addr": 907616
+    },
+    {
+      "name": "FMOD5_Channel_GetPriority",
+      "addr": 466172
+    },
+    {
+      "name": "FMOD5_Sound_Get3DCustomRolloff",
+      "addr": 465788
+    },
+    {
+      "name": "FMOD5_System_GetNumPlugins",
+      "addr": 465460
+    },
+    {
+      "name": "FMOD_Channel_Set3DConeOrientation",
+      "addr": 331080
+    },
+    {
+      "name": "FMOD_Sound_GetDefaults",
+      "addr": 329848
+    },
+    {
+      "name": "FMOD5_Channel_SetMixMatrix",
+      "addr": 466012
+    },
+    {
+      "name": "FMOD_DSP_GetMeteringInfo",
+      "addr": 333548
+    },
+    {
+      "name": "_ZN4FMOD6System18getChannelsPlayingEPiS1_",
+      "addr": 906288
+    },
+    {
+      "name": "FMOD5_ChannelGroup_SetDelay",
+      "addr": 466328
+    },
+    {
+      "name": "FMOD5_DSP_SetBypass",
+      "addr": 466608
+    },
+    {
+      "name": "FMOD5_System_Set3DNumListeners",
+      "addr": 465536
+    },
+    {
+      "name": "FMOD_Channel_GetChannelGroup",
+      "addr": 331388
+    },
+    {
+      "name": "_ZN4FMOD5Sound12getLoopCountEPi",
+      "addr": 892292
+    },
+    {
+      "name": "_ZN4FMOD6System9unlockDSPEv",
+      "addr": 910140
+    },
+    {
+      "name": "_ZN4FMOD7SystemI19setInternalCallbackEiPF11FMOD_RESULTP11FMOD_SYSTEMjPvS4_S4_ES4_",
+      "addr": 438032
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetSystemObject",
+      "addr": 466220
+    },
+    {
+      "name": "FMOD5_System_CreateReverb3D",
+      "addr": 465616
+    },
+    {
+      "name": "FMOD5_System_GetUserData",
+      "addr": 465740
+    },
+    {
+      "name": "_ZN4FMOD3DSP12getWetDryMixEPfS1_S1_",
+      "addr": 865900
+    },
+    {
+      "name": "FMOD5_ChannelGroup_GetGroup",
+      "addr": 466476
+    },
+    {
+      "name": "FMOD5_Memory_Initialize",
+      "addr": 465340
+    },
+    {
+      "name": "_ZN4FMOD5Sound17get3DConeSettingsEPfS1_S1_",
+      "addr": 887216
+    },
+    {
+      "name": "_ZN4FMOD6System19setAdvancedSettingsEP21FMOD_ADVANCEDSETTINGS",
+      "addr": 899600
+    },
+    {
+      "name": "_ZN4FMOD3DSP15getSystemObjectEPPNS_6SystemE",
+      "addr": 863984
+    },
+    {
+      "name": "FMOD5_ChannelGroup_AddFadePoint",
+      "addr": 466336
+    },
+    {
+      "name": "FMOD5_System_Set3DRolloffCallback",
+      "addr": 465552
+    },
+    {
+      "name": "FMOD_Channel_Set3DAttributes",
+      "addr": 331008
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11get3DSpreadEPf",
+      "addr": 858100
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl18get3DCustomRolloffEPP11FMOD_VECTORPi",
+      "addr": 857540
+    },
+    {
+      "name": "_ZN4FMOD7Channel15getCurrentSoundEPPNS_5SoundE",
+      "addr": 847508
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DDistanceFilter",
+      "addr": 466452
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetPaused",
+      "addr": 331556
+    },
+    {
+      "name": "_ZN4FMOD5Sound10getNumTagsEPiS1_",
+      "addr": 888896
+    },
+    {
+      "name": "_ZN4FMOD5Sound12getSyncPointEiPP14FMOD_SYNCPOINT",
+      "addr": 890636
+    },
+    {
+      "name": "FMOD5_Channel_SetFadePointRamp",
+      "addr": 466036
+    },
+    {
+      "name": "FMOD5_System_GetNestedPlugin",
+      "addr": 465456
+    },
+    {
+      "name": "FMOD_Sound_GetSystemObject",
+      "addr": 329800
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup7getNameEPci",
+      "addr": 895604
+    },
+    {
+      "name": "FMOD5_Channel_IsVirtual",
+      "addr": 466208
+    },
+    {
+      "name": "FMOD5_DSP_GetCPUUsage",
+      "addr": 466724
+    },
+    {
+      "name": "FMOD5_System_GetAdvancedSettings",
+      "addr": 465432
+    },
+    {
+      "name": "FMOD5_System_GetOutputByPlugin",
+      "addr": 465476
+    },
+    {
+      "name": "_ZN4FMOD3DSP7getTypeEP13FMOD_DSP_TYPE",
+      "addr": 870688
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D9getActiveEPb",
+      "addr": 884536
+    },
+    {
+      "name": "FMOD5_System_SetDSPBufferSize",
+      "addr": 465412
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetMode",
+      "addr": 331832
+    },
+    {
+      "name": "FMOD_Channel_GetFrequency",
+      "addr": 331316
+    },
+    {
+      "name": "FMOD_DSP_SetParameterInt",
+      "addr": 333140
+    },
+    {
+      "name": "_ZN4FMOD10SoundGroup7releaseEv",
+      "addr": 894632
+    },
+    {
+      "name": "_ZN4FMOD6System12loadGeometryEPKviPPNS_8GeometryE",
+      "addr": 912240
+    },
+    {
+      "name": "FMOD_DSP_GetParameterInfo",
+      "addr": 333288
+    },
+    {
+      "name": "FMOD_DSP_SetUserData",
+      "addr": 333408
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl9setVolumeEf",
+      "addr": 849396
+    },
+    {
+      "name": "_ZN4FMOD7Channel15getChannelGroupEPPNS_12ChannelGroupE",
+      "addr": 847020
+    },
+    {
+      "name": "FMOD5_Channel_SetChannelGroup",
+      "addr": 466184
+    },
+    {
+      "name": "FMOD5_Sound_SetSoundGroup",
+      "addr": 465836
+    },
+    {
+      "name": "FMOD5_System_CreateSoundGroup",
+      "addr": 465612
+    },
+    {
+      "name": "FMOD5_System_RegisterOutput",
+      "addr": 465496
+    },
+    {
+      "name": "FMOD5_Thread_SetAttributes",
+      "addr": 465360
+    },
+    {
+      "name": "FMOD_ChannelGroup_AddFadePoint",
+      "addr": 332048
+    },
+    {
+      "name": "FMOD_Sound_GetTag",
+      "addr": 330016
+    },
+    {
+      "name": "_ZN4FMOD3DSP9getBypassEPb",
+      "addr": 865640
+    },
+    {
+      "name": "FMOD5_Channel_RemoveFadePoints",
+      "addr": 466040
+    },
+    {
+      "name": "FMOD5_DSPConnection_SetUserData",
+      "addr": 466756
+    },
+    {
+      "name": "FMOD5_System_SetAdvancedSettings",
+      "addr": 465428
+    },
+    {
+      "name": "Java_org_fmod_MediaCodec_fmodReadAt",
+      "addr": 961772
+    },
+    {
+      "name": "FMOD_Sound_GetSubSoundParent",
+      "addr": 329944
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl11getDSPIndexEPNS_3DSPEPi",
+      "addr": 855532
+    },
+    {
+      "name": "FMOD5_System_GetSpeakerPosition",
+      "addr": 465516
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DConeSettings",
+      "addr": 332228
+    },
+    {
+      "name": "FMOD_ChannelGroup_RemoveDSP",
+      "addr": 332120
+    },
+    {
+      "name": "_ZN4FMOD3DSP12getNumInputsEPi",
+      "addr": 864804
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DMinMaxDistance",
+      "addr": 466388
+    },
+    {
+      "name": "FMOD_DSP_Release",
+      "addr": 332776
+    },
+    {
+      "name": "FMOD_Memory_GetStats",
+      "addr": 328004
+    },
+    {
+      "name": "FMOD_Sound_GetLoopPoints",
+      "addr": 330284
+    },
+    {
+      "name": "FMOD5_System_GetRecordNumDrivers",
+      "addr": 465668
+    },
+    {
+      "name": "FMOD_Channel_SetVolumeRamp",
+      "addr": 330484
+    },
+    {
+      "name": "_ZN4FMOD6System13get3DSettingsEPfS1_S1_",
+      "addr": 904636
+    },
+    {
+      "name": "_ZN4FMOD9GeometryI11getUserDataEPPv",
+      "addr": 389028
+    },
+    {
+      "name": "_ZN4FMOD6System17getOutputByPluginEPj",
+      "addr": 901920
+    },
+    {
+      "name": "FMOD5_System_GetChannelsPlaying",
+      "addr": 465580
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl13getVolumeRampEPb",
+      "addr": 849712
+    },
+    {
+      "name": "_ZN4FMOD3DSP16getParameterBoolEiPbPci",
+      "addr": 868836
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Set3DMinMaxDistance",
+      "addr": 466384
+    },
+    {
+      "name": "FMOD5_Channel_GetUserData",
+      "addr": 466156
+    },
+    {
+      "name": "FMOD5_Channel_SetMixLevelsInput",
+      "addr": 466008
+    },
+    {
+      "name": "FMOD5_Sound_Set3DConeSettings",
+      "addr": 465776
+    },
+    {
+      "name": "FMOD5_System_GetNetworkTimeout",
+      "addr": 465732
+    },
+    {
+      "name": "FMOD_DSPConnection_SetUserData",
+      "addr": 333656
+    },
+    {
+      "name": "_ZN4FMOD3DSP16getNumParametersEPi",
+      "addr": 869552
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D15set3DAttributesEPK11FMOD_VECTORff",
+      "addr": 883828
+    },
+    {
+      "name": "FMOD5_Geometry_GetPolygonAttributes",
+      "addr": 466796
+    },
+    {
+      "name": "__powisf2",
+      "addr": 1075932
+    },
+    {
+      "name": "FMOD_System_RegisterDSP",
+      "addr": 328920
+    },
+    {
+      "name": "_ZN4FMOD5Sound11getUserDataEPPv",
+      "addr": 893676
+    },
+    {
+      "name": "_ZN4FMOD6System18getSpeakerPositionE12FMOD_SPEAKERPfS2_Pb",
+      "addr": 903932
+    },
+    {
+      "name": "FMOD_System_GetGeometrySettings",
+      "addr": 329680
+    },
+    {
+      "name": "FMOD5_Channel_GetPitch",
+      "addr": 465956
+    },
+    {
+      "name": "FMOD_ChannelGroup_Get3DDopplerLevel",
+      "addr": 332372
+    },
+    {
+      "name": "FMOD_DSP_GetSystemObject",
+      "addr": 332788
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetPaused",
+      "addr": 331544
+    },
+    {
+      "name": "FMOD5_Channel_GetPaused",
+      "addr": 465928
+    },
+    {
+      "name": "FMOD5_DSP_SetActive",
+      "addr": 466600
+    },
+    {
+      "name": "FMOD5_Geometry_Save",
+      "addr": 466832
+    },
+    {
+      "name": "FMOD5_System_Close",
+      "addr": 465504
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl4stopEv",
+      "addr": 849076
+    },
+    {
+      "name": "_ZN4FMOD6System9playSoundEPNS_5SoundEPNS_12ChannelGroupEbPPNS_7ChannelE",
+      "addr": 908100
+    },
+    {
+      "name": "FMOD_Channel_SetMixLevelsInput",
+      "addr": 330784
+    },
+    {
+      "name": "FMOD_System_SetGeometrySettings",
+      "addr": 329668
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl17get3DConeSettingsEPfS1_S1_",
+      "addr": 856912
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl6getDSPEiPPNS_3DSPE",
+      "addr": 854748
+    },
+    {
+      "name": "FMOD_DSP_GetInput",
+      "addr": 332876
+    },
+    {
+      "name": "_ZN4FMOD3DSP16setParameterDataEiPvj",
+      "addr": 867908
+    },
+    {
+      "name": "FMOD_Channel_SetLoopCount",
+      "addr": 331400
+    },
+    {
+      "name": "_ZN4FMOD13DSPConnection12setMixMatrixEPfiii",
+      "addr": 690828
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D15get3DAttributesEP11FMOD_VECTORPfS3_",
+      "addr": 883976
+    },
+    {
+      "name": "FMOD5_Channel_Get3DCustomRolloff",
+      "addr": 466108
+    },
+    {
+      "name": "FMOD5_System_AttachFileSystem",
+      "addr": 465424
+    },
+    {
+      "name": "FMOD5_Geometry_GetRotation",
+      "addr": 466812
+    },
+    {
+      "name": "FMOD5_System_GetSoftwareChannels",
+      "addr": 465400
+    },
+    {
+      "name": "FMOD_OS_Debug_Output",
+      "addr": 932540
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetPitch",
+      "addr": 331700
+    },
+    {
+      "name": "_ZN4FMOD5Sound7releaseEv",
+      "addr": 884884
+    },
+    {
+      "name": "FMOD5_Sound_GetTag",
+      "addr": 465820
+    },
+    {
+      "name": "_ZN4FMOD6System23set3DListenerAttributesEiPK11FMOD_VECTORS3_S3_S3_",
+      "addr": 904920
+    },
+    {
+      "name": "FMOD5_Channel_RemoveDSP",
+      "addr": 466056
+    },
+    {
+      "name": "FMOD_ChannelGroup_GetReverbProperties",
+      "addr": 331796
+    },
+    {
+      "name": "_ZN4FMOD14ChannelControl7setMuteEb",
+      "addr": 850088
+    },
+    {
+      "name": "_ZN4FMOD7Channel12getFrequencyEPf",
+      "addr": 847260
+    },
+    {
+      "name": "FMOD5_Channel_GetLoopPoints",
+      "addr": 466204
+    },
+    {
+      "name": "FMOD5_System_SetSoftwareChannels",
+      "addr": 465396
+    },
+    {
+      "name": "FMOD_System_SetCallback",
+      "addr": 328752
+    },
+    {
+      "name": "_ZN4FMOD5Sound4lockEjjPPvS2_PjS3_",
+      "addr": 885140
+    },
+    {
+      "name": "FMOD5_Channel_GetLowPassGain",
+      "addr": 465980
+    },
+    {
+      "name": "FMOD_OS_CriticalSection_TryEnter",
+      "addr": 946352
+    },
+    {
+      "name": "FMOD_Reverb3D_Set3DAttributes",
+      "addr": 334040
+    },
+    {
+      "name": "FMOD_Sound_GetMusicChannelVolume",
+      "addr": 330320
+    },
+    {
+      "name": "FMOD5_System_GetChannel",
+      "addr": 465632
+    },
+    {
+      "name": "Java_org_fmod_FMOD_OutputAAudioHeadphonesChanged",
+      "addr": 947756
+    },
+    {
+      "name": "FMOD_System_RegisterCodec",
+      "addr": 328908
+    },
+    {
+      "name": "_ZN4FMOD3DSP18getMeteringEnabledEPbS1_",
+      "addr": 871116
+    },
+    {
+      "name": "FMOD5_DSP_GetNumOutputs",
+      "addr": 466588
+    },
+    {
+      "name": "FMOD_ChannelGroup_SetReverbProperties",
+      "addr": 331784
+    },
+    {
+      "name": "FMOD_Channel_GetVolume",
+      "addr": 330472
+    },
+    {
+      "name": "FMOD_System_LoadGeometry",
+      "addr": 329692
+    },
+    {
+      "name": "FMOD5_ChannelGroup_Get3DAttributes",
+      "addr": 466380
+    },
+    {
+      "name": "FMOD5_Channel_SetDSPIndex",
+      "addr": 466064
+    },
+    {
+      "name": "FMOD5_Channel_SetDelay",
+      "addr": 466024
+    },
+    {
+      "name": "FMOD_Reverb3D_SetProperties",
+      "addr": 334064
+    },
+    {
+      "name": "_ZN4FMOD8Reverb3D9setActiveEb",
+      "addr": 884428
+    },
+    {
+      "name": "FMOD_DSPConnection_GetInput",
+      "addr": 333572
+    },
+    {
+      "name": "FMOD_System_Close",
+      "addr": 328956
+    },
+    {
+      "name": "_ZN4FMOD6System12getFileUsageEPxS1_S1_",
+      "addr": 906500
+    },
+    {
+      "name": "_ZN4FMOD6System16getDSPBufferSizeEPjPi",
+      "addr": 898532
+    },
+    {
+      "name": "FMOD5_DSP_Reset",
+      "addr": 466636
+    },
+    {
+      "name": "_ZN4FMOD6System13getPluginInfoEjP15FMOD_PLUGINTYPEPciPj",
+      "addr": 901368
+    },
+    {
+      "name": "FMOD5_SoundGroup_GetSound",
+      "addr": 466548
+    },
+    {
+      "name": "FMOD5_System_UnloadPlugin",
+      "addr": 465448
+    },
+    {
+      "name": "FMOD5_Sound_GetNumTags",
+      "addr": 465816
+    },
+    {
+      "name": "FMOD5_System_MixerSuspend",
+      "addr": 465556
+    },
+    {
+      "name": "_ZN4FMOD5Sound18set3DCustomRolloffEP11FMOD_VECTORi",
+      "addr": 887424
+    },
+    {
+      "name": "FMOD5_System_Get3DNumListeners",
+      "addr": 465540
+    }
+  ],
+  "imported_functions": [
+    {
+      "name": "__cxa_finalize",
+      "addr": 0
+    },
+    {
+      "name": "__cxa_atexit",
+      "addr": 0
+    },
+    {
+      "name": "_ZdlPv",
+      "addr": 0
+    },
+    {
+      "name": "__cxa_pure_virtual",
+      "addr": 0
+    },
+    {
+      "name": "acosf",
+      "addr": 0
+    },
+    {
+      "name": "memset",
+      "addr": 0
+    },
+    {
+      "name": "sincosf",
+      "addr": 0
+    },
+    {
+      "name": "memcpy",
+      "addr": 0
+    },
+    {
+      "name": "memcmp",
+      "addr": 0
+    },
+    {
+      "name": "__FD_SET_chk",
+      "addr": 0
+    },
+    {
+      "name": "__errno",
+      "addr": 0
+    },
+    {
+      "name": "accept",
+      "addr": 0
+    },
+    {
+      "name": "bind",
+      "addr": 0
+    },
+    {
+      "name": "close",
+      "addr": 0
+    },
+    {
+      "name": "connect",
+      "addr": 0
+    },
+    {
+      "name": "fcntl",
+      "addr": 0
+    },
+    {
+      "name": "freeaddrinfo",
+      "addr": 0
+    },
+    {
+      "name": "getaddrinfo",
+      "addr": 0
+    },
+    {
+      "name": "getsockopt",
+      "addr": 0
+    },
+    {
+      "name": "listen",
+      "addr": 0
+    },
+    {
+      "name": "recv",
+      "addr": 0
+    },
+    {
+      "name": "select",
+      "addr": 0
+    },
+    {
+      "name": "send",
+      "addr": 0
+    },
+    {
+      "name": "setsockopt",
+      "addr": 0
+    },
+    {
+      "name": "shutdown",
+      "addr": 0
+    },
+    {
+      "name": "socket",
+      "addr": 0
+    },
+    {
+      "name": "log10f",
+      "addr": 0
+    },
+    {
+      "name": "memmove",
+      "addr": 0
+    },
+    {
+      "name": "expf",
+      "addr": 0
+    },
+    {
+      "name": "logf",
+      "addr": 0
+    },
+    {
+      "name": "powf",
+      "addr": 0
+    },
+    {
+      "name": "strncpy",
+      "addr": 0
+    },
+    {
+      "name": "asinf",
+      "addr": 0
+    },
+    {
+      "name": "cosf",
+      "addr": 0
+    },
+    {
+      "name": "sinf",
+      "addr": 0
+    },
+    {
+      "name": "strncmp",
+      "addr": 0
+    },
+    {
+      "name": "atan2f",
+      "addr": 0
+    },
+    {
+      "name": "__cxa_guard_acquire",
+      "addr": 0
+    },
+    {
+      "name": "__cxa_guard_release",
+      "addr": 0
+    },
+    {
+      "name": "ldexpf",
+      "addr": 0
+    },
+    {
+      "name": "exp2f",
+      "addr": 0
+    },
+    {
+      "name": "atoi",
+      "addr": 0
+    },
+    {
+      "name": "tanf",
+      "addr": 0
+    },
+    {
+      "name": "qsort",
+      "addr": 0
+    },
+    {
+      "name": "strtoul",
+      "addr": 0
+    },
+    {
+      "name": "vsnprintf",
+      "addr": 0
+    },
+    {
+      "name": "fclose",
+      "addr": 0
+    },
+    {
+      "name": "fdopen",
+      "addr": 0
+    },
+    {
+      "name": "feof",
+      "addr": 0
+    },
+    {
+      "name": "fread",
+      "addr": 0
+    },
+    {
+      "name": "fseek",
+      "addr": 0
+    },
+    {
+      "name": "ftell",
+      "addr": 0
+    },
+    {
+      "name": "fflush",
+      "addr": 0
+    },
+    {
+      "name": "fopen",
+      "addr": 0
+    },
+    {
+      "name": "fwrite",
+      "addr": 0
+    },
+    {
+      "name": "__android_log_write",
+      "addr": 0
+    },
+    {
+      "name": "clock_gettime",
+      "addr": 0
+    },
+    {
+      "name": "dlclose",
+      "addr": 0
+    },
+    {
+      "name": "dlopen",
+      "addr": 0
+    },
+    {
+      "name": "dlsym",
+      "addr": 0
+    },
+    {
+      "name": "fprintf",
+      "addr": 0
+    },
+    {
+      "name": "free",
+      "addr": 0
+    },
+    {
+      "name": "gettid",
+      "addr": 0
+    },
+    {
+      "name": "malloc",
+      "addr": 0
+    },
+    {
+      "name": "nanosleep",
+      "addr": 0
+    },
+    {
+      "name": "pthread_attr_destroy",
+      "addr": 0
+    },
+    {
+      "name": "pthread_attr_init",
+      "addr": 0
+    },
+    {
+      "name": "pthread_attr_setdetachstate",
+      "addr": 0
+    },
+    {
+      "name": "pthread_attr_setstacksize",
+      "addr": 0
+    },
+    {
+      "name": "pthread_create",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutex_destroy",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutex_init",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutex_lock",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutex_trylock",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutex_unlock",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutexattr_destroy",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutexattr_init",
+      "addr": 0
+    },
+    {
+      "name": "pthread_mutexattr_settype",
+      "addr": 0
+    },
+    {
+      "name": "realloc",
+      "addr": 0
+    },
+    {
+      "name": "sem_destroy",
+      "addr": 0
+    },
+    {
+      "name": "sem_init",
+      "addr": 0
+    },
+    {
+      "name": "sem_post",
+      "addr": 0
+    },
+    {
+      "name": "sem_wait",
+      "addr": 0
+    },
+    {
+      "name": "setpriority",
+      "addr": 0
+    },
+    {
+      "name": "syscall",
+      "addr": 0
+    },
+    {
+      "name": "calloc",
+      "addr": 0
+    },
+    {
+      "name": "log",
+      "addr": 0
+    },
+    {
+      "name": "memchr",
+      "addr": 0
+    },
+    {
+      "name": "sincos",
+      "addr": 0
+    },
+    {
+      "name": "ldexp",
+      "addr": 0
+    },
+    {
+      "name": "pow",
+      "addr": 0
+    },
+    {
+      "name": "sin",
+      "addr": 0
+    },
+    {
+      "name": "dlerror",
+      "addr": 0
+    },
+    {
+      "name": "open",
+      "addr": 0
+    },
+    {
+      "name": "pthread_once",
+      "addr": 0
+    },
+    {
+      "name": "read",
+      "addr": 0
+    },
+    {
+      "name": "__assert2",
+      "addr": 0
+    }
+  ],
+  "imported_symbols": [
+    {
+      "name": "__cxa_finalize"
+    },
+    {
+      "name": "__cxa_atexit"
+    },
+    {
+      "name": "_ZdlPv"
+    },
+    {
+      "name": "__cxa_pure_virtual"
+    },
+    {
+      "name": "acosf"
+    },
+    {
+      "name": "memset"
+    },
+    {
+      "name": "sincosf"
+    },
+    {
+      "name": "memcpy"
+    },
+    {
+      "name": "memcmp"
+    },
+    {
+      "name": "__FD_SET_chk"
+    },
+    {
+      "name": "__errno"
+    },
+    {
+      "name": "accept"
+    },
+    {
+      "name": "bind"
+    },
+    {
+      "name": "close"
+    },
+    {
+      "name": "connect"
+    },
+    {
+      "name": "fcntl"
+    },
+    {
+      "name": "freeaddrinfo"
+    },
+    {
+      "name": "getaddrinfo"
+    },
+    {
+      "name": "getsockopt"
+    },
+    {
+      "name": "listen"
+    },
+    {
+      "name": "recv"
+    },
+    {
+      "name": "select"
+    },
+    {
+      "name": "send"
+    },
+    {
+      "name": "setsockopt"
+    },
+    {
+      "name": "shutdown"
+    },
+    {
+      "name": "socket"
+    },
+    {
+      "name": "log10f"
+    },
+    {
+      "name": "memmove"
+    },
+    {
+      "name": "expf"
+    },
+    {
+      "name": "logf"
+    },
+    {
+      "name": "powf"
+    },
+    {
+      "name": "strncpy"
+    },
+    {
+      "name": "asinf"
+    },
+    {
+      "name": "cosf"
+    },
+    {
+      "name": "sinf"
+    },
+    {
+      "name": "strncmp"
+    },
+    {
+      "name": "atan2f"
+    },
+    {
+      "name": "__cxa_guard_acquire"
+    },
+    {
+      "name": "__cxa_guard_release"
+    },
+    {
+      "name": "ldexpf"
+    },
+    {
+      "name": "exp2f"
+    },
+    {
+      "name": "atoi"
+    },
+    {
+      "name": "tanf"
+    },
+    {
+      "name": "qsort"
+    },
+    {
+      "name": "strtoul"
+    },
+    {
+      "name": "vsnprintf"
+    },
+    {
+      "name": "fclose"
+    },
+    {
+      "name": "fdopen"
+    },
+    {
+      "name": "feof"
+    },
+    {
+      "name": "fread"
+    },
+    {
+      "name": "fseek"
+    },
+    {
+      "name": "ftell"
+    },
+    {
+      "name": "fflush"
+    },
+    {
+      "name": "fopen"
+    },
+    {
+      "name": "fwrite"
+    },
+    {
+      "name": "__android_log_write"
+    },
+    {
+      "name": "__sF"
+    },
+    {
+      "name": "clock_gettime"
+    },
+    {
+      "name": "dlclose"
+    },
+    {
+      "name": "dlopen"
+    },
+    {
+      "name": "dlsym"
+    },
+    {
+      "name": "fprintf"
+    },
+    {
+      "name": "free"
+    },
+    {
+      "name": "gettid"
+    },
+    {
+      "name": "malloc"
+    },
+    {
+      "name": "nanosleep"
+    },
+    {
+      "name": "pthread_attr_destroy"
+    },
+    {
+      "name": "pthread_attr_init"
+    },
+    {
+      "name": "pthread_attr_setdetachstate"
+    },
+    {
+      "name": "pthread_attr_setstacksize"
+    },
+    {
+      "name": "pthread_create"
+    },
+    {
+      "name": "pthread_mutex_destroy"
+    },
+    {
+      "name": "pthread_mutex_init"
+    },
+    {
+      "name": "pthread_mutex_lock"
+    },
+    {
+      "name": "pthread_mutex_trylock"
+    },
+    {
+      "name": "pthread_mutex_unlock"
+    },
+    {
+      "name": "pthread_mutexattr_destroy"
+    },
+    {
+      "name": "pthread_mutexattr_init"
+    },
+    {
+      "name": "pthread_mutexattr_settype"
+    },
+    {
+      "name": "realloc"
+    },
+    {
+      "name": "sem_destroy"
+    },
+    {
+      "name": "sem_init"
+    },
+    {
+      "name": "sem_post"
+    },
+    {
+      "name": "sem_wait"
+    },
+    {
+      "name": "setpriority"
+    },
+    {
+      "name": "syscall"
+    },
+    {
+      "name": "calloc"
+    },
+    {
+      "name": "log"
+    },
+    {
+      "name": "memchr"
+    },
+    {
+      "name": "sincos"
+    },
+    {
+      "name": "ldexp"
+    },
+    {
+      "name": "pow"
+    },
+    {
+      "name": "sin"
+    },
+    {
+      "name": "dlerror"
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "pthread_once"
+    },
+    {
+      "name": "read"
+    },
+    {
+      "name": "__assert2"
+    }
+  ],
+  "exported_count": 1124,
+  "imported_count": 97
+}

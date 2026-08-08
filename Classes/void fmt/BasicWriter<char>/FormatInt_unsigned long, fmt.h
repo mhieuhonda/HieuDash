@@ -1,0 +1,20 @@
+// ============================================================
+// FormatInt_unsigned long, fmt.h — Reconstructed from libcocos2dcpp.so symbols
+// ============================================================
+
+#ifndef VOID FMT_BASICWRITER<CHAR>_FORMATINT_UNSIGNED LONG, FMT_H_
+#define VOID FMT_BASICWRITER<CHAR>_FORMATINT_UNSIGNED LONG, FMT_H_
+
+namespace void fmt {
+namespace BasicWriter<char> {
+
+class FormatInt<unsigned long, fmt {
+public:
+    void FormatSpec>(unsigned long, fmt::FormatSpec const&);
+
+};
+
+} // namespace BasicWriter<char>
+} // namespace void fmt
+
+#endif // VOID FMT_BASICWRITER<CHAR>_FORMATINT_UNSIGNED LONG, FMT_H_

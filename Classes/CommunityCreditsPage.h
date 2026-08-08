@@ -1,0 +1,28 @@
+// ============================================================
+// CommunityCreditsPage.h — Reconstructed from libcocos2dcpp.so symbols
+// ============================================================
+
+#ifndef COMMUNITYCREDITSPAGE_H_
+#define COMMUNITYCREDITSPAGE_H_
+
+#include "cocos2d.h"
+
+class CommunityCreditsPage {
+public:
+    virtual ~CommunityCreditsPage();
+    virtual ~CommunityCreditsPage();
+    virtual ~CommunityCreditsPage();
+
+    void onSwitchPage(cocos2d::CCObject*);
+    void keyBackClicked();
+    void FLAlert_Clicked(FLAlertLayer*, bool);
+    void registerWithTouchDispatcher();
+    void init();
+    void show();
+    void create();
+    void onClose(cocos2d::CCObject*);
+    void goToPage(int);
+
+};
+
+#endif // COMMUNITYCREDITSPAGE_H_
