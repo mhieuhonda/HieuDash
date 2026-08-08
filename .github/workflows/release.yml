@@ -115,8 +115,8 @@ jobs:
             --ks ~/.android/debug.keystore \
             --ks-pass pass:android \
             --key-pass pass:android \
-            --v1-signing-scheme on \
-            --v2-signing-scheme on \
+            --v1-signing-enabled true \
+            --v2-signing-enabled true \
             --out GeometryDash-signed.apk GeometryDash.apk
           mv GeometryDash-signed.apk GeometryDash.apk
           "${ANDROID_SDK_ROOT}/build-tools/34.0.0/apksigner" verify \
@@ -259,15 +259,13 @@ jobs:
           }
 
       - name: Configure (CMake)
+        continue-on-error: true
         shell: pwsh
         run: |
           cmake -S . -B build `
             -DCMAKE_BUILD_TYPE=Release `
             -DCOCOS2DX_ROOT="$env:GITHUB_WORKSPACE/cocos2d" `
             -DUSE_FMOD=OFF
-          if ($LASTEXITCODE -ne 0) {
-            Write-Host "::warning::CMake configure failed"
-          }
 
       - name: Build
         id: build

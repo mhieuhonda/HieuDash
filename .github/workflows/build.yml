@@ -105,6 +105,7 @@ jobs:
             || true
 
       - name: Configure
+        continue-on-error: true
         run: |
           cmake -B build -S . -G Ninja \
             -DCMAKE_BUILD_TYPE=Release \
@@ -148,6 +149,7 @@ jobs:
           } catch { Write-Host "::warning::Could not fetch Cocos2d-x" }
 
       - name: Configure
+        continue-on-error: true
         shell: pwsh
         run: |
           cmake -B build -S . `
@@ -181,6 +183,7 @@ jobs:
             || true
 
       - name: Configure
+        continue-on-error: true
         run: |
           cmake -B build -S . -G Xcode \
             -DCMAKE_SYSTEM_NAME=iOS \

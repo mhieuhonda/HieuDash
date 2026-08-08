@@ -81,8 +81,8 @@ SIGNED="${OUTPUT_NAME%.apk}-signed.apk"
     --ks "${KEYSTORE}" \
     --ks-pass "pass:${KEYSTORE_PASS}" \
     --key-pass "pass:${KEY_PASS}" \
-    --v1-signing-scheme on \
-    --v2-signing-scheme on \
+    --v1-signing-enabled true \
+    --v2-signing-enabled true \
     --out "${SIGNED}" "${OUTPUT_NAME}"
 mv "${SIGNED}" "${OUTPUT_NAME}"
 "${APKSIGNER}" verify --print-certs "${OUTPUT_NAME}" | head -5
