@@ -1,5 +1,5 @@
 version: 2.10.0
-apkFileName: geometry_dash_mod.apk
+apkFileName: geometry_dash.apk
 isFrameworkApk: false
 usesFramework:
   ids:
@@ -22,4 +22,3 @@ doNotCompress:
 - mp3
 - png
 - ogg
-- assets/data.save

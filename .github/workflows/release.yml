@@ -1,0 +1,416 @@
+# =============================================================================
+# GeometryDash (HieuDash) — Release Pipeline
+# Triggers automatically when a new release is published.
+# Builds APK, Linux, Windows, iOS artifacts and attaches them to the release.
+# =============================================================================
+
+name: Release
+
+on:
+  release:
+    types: [ published ]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to upload assets to (e.g. v0.2)'
+        required: true
+        default: 'v0.2'
+
+permissions:
+  contents: write   # required by softprops/action-gh-release to upload assets
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+# ---------------------------------------------------------------------------
+# Build matrix — every job runs in parallel, failures on one platform do not
+# block the others.  The final release job runs `if: always()` and uploads
+# whichever artifacts were successfully produced.
+# ---------------------------------------------------------------------------
+jobs:
+
+  # -------------------------------------------------------------------------
+  # Android APK — rebuilt from the decompiled smali/resources via apktool
+  # -------------------------------------------------------------------------
+  build-apk:
+    name: Android APK
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Install apktool & Android build-tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends wget unzip
+          # --- apktool ---
+          wget -q -O /tmp/apktool.jar \
+            https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar
+          sudo install -m 0755 /tmp/apktool.jar /usr/local/bin/apktool.jar
+          printf '#!/usr/bin/env bash\nexec java -jar /usr/local/bin/apktool.jar "$@"\n' \
+            | sudo tee /usr/local/bin/apktool > /dev/null
+          sudo chmod +x /usr/local/bin/apktool
+          # --- Android SDK build-tools (for apksigner / zipalign) ---
+          ANDROID_SDK_ROOT=/usr/local/android-sdk
+          sudo mkdir -p "${ANDROID_SDK_ROOT}/cmdline-tools"
+          wget -q -O /tmp/cmdline-tools.zip \
+            https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+          sudo unzip -q /tmp/cmdline-tools.zip -d "${ANDROID_SDK_ROOT}/cmdline-tools"
+          sudo mv "${ANDROID_SDK_ROOT}/cmdline-tools/cmdline-tools" \
+                 "${ANDROID_SDK_ROOT}/cmdline-tools/latest" 2>/dev/null || true
+          yes | sudo "${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager" \
+                  --licenses > /dev/null 2>&1 || true
+          sudo "${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin/sdkmanager" \
+                  "platform-tools" "build-tools;34.0.0" "platforms;android-34"
+          echo "ANDROID_SDK_ROOT=${ANDROID_SDK_ROOT}" >> $GITHUB_ENV
+          echo "ANDROID_HOME=${ANDROID_SDK_ROOT}"     >> $GITHUB_ENV
+
+      - name: Rebuild APK with apktool
+        run: |
+          set -euo pipefail
+          apktool b . -o GeometryDash.apk \
+            --use-aapt2 || apktool b . -o GeometryDash.apk
+          ls -lh GeometryDash.apk
+
+      - name: Generate debug keystore
+        run: |
+          set -euo pipefail
+          if [ ! -f ~/.android/debug.keystore ]; then
+            mkdir -p ~/.android
+            keytool -genkey -v -keystore ~/.android/debug.keystore \
+              -storepass android -alias androiddebugkey -keypass android \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+          ls -la ~/.android/debug.keystore
+
+      - name: Zipalign APK
+        run: |
+          set -euo pipefail
+          "${ANDROID_SDK_ROOT}/build-tools/34.0.0/zipalign" \
+            -p -f -v 4 GeometryDash.apk GeometryDash-aligned.apk \
+            > /dev/null
+          mv GeometryDash-aligned.apk GeometryDash.apk
+
+      - name: Sign APK
+        run: |
+          set -euo pipefail
+          "${ANDROID_SDK_ROOT}/build-tools/34.0.0/apksigner" sign \
+            --ks ~/.android/debug.keystore \
+            --ks-pass pass:android \
+            --key-pass pass:android \
+            --v1-signing-scheme on \
+            --v2-signing-scheme on \
+            --out GeometryDash-signed.apk GeometryDash.apk
+          mv GeometryDash-signed.apk GeometryDash.apk
+          "${ANDROID_SDK_ROOT}/build-tools/34.0.0/apksigner" verify \
+            --print-certs GeometryDash.apk | head -5
+          ls -lh GeometryDash.apk
+
+      - name: Rename for release
+        run: |
+          TAG="${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2' }}"
+          mv GeometryDash.apk "GeometryDash-${TAG}-android.apk"
+          ls -lh "GeometryDash-${TAG}-android.apk"
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apk
+          path: GeometryDash-*-android.apk
+          if-no-files-found: error
+          retention-days: 7
+
+  # -------------------------------------------------------------------------
+  # Linux desktop build — CMake + gcc
+  # -------------------------------------------------------------------------
+  build-linux:
+    name: Linux
+    runs-on: ubuntu-22.04
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            cmake build-essential ninja-build \
+            libgl1-mesa-dev libglu1-mesa-dev \
+            libx11-dev libxrandr-dev libxi-dev libxxf86vm-dev \
+            libcurl4-openssl-dev libssl-dev \
+            libfmodex-dev 2>/dev/null || true
+
+      - name: Fetch Cocos2d-x 2.2.3
+        run: |
+          set -euo pipefail
+          # Cocos2d-x 2.2.3 is no longer hosted as a zip — clone from the
+          # cocos2d-x archive mirror at the v2.2.3 tag and strip .git
+          git clone --depth 1 --branch cocos2d-x-2.2.3 \
+            https://github.com/cocos2d/cocos2d-x.git cocos2d 2>/dev/null \
+            || git clone --depth 1 \
+                 https://github.com/nicholasgasior/cocos2d-x-2.2.3.git cocos2d \
+            || true
+          rm -rf cocos2d/.git 2>/dev/null || true
+          if [ -d cocos2d/cocos2dx ]; then
+            echo "Cocos2d-x located successfully"
+          else
+            echo "::warning::Cocos2d-x sources not found — Linux build will likely fail"
+          fi
+
+      - name: Configure (CMake)
+        run: |
+          cmake -S . -B build -G Ninja \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DCOCOS2DX_ROOT="$GITHUB_WORKSPACE/cocos2d" \
+            -DUSE_FMOD=OFF || true
+
+      - name: Build
+        id: build
+        continue-on-error: true
+        run: |
+          cmake --build build --config Release -j"$(nproc)" || true
+          if compgen -G "build/GeometryDash" > /dev/null; then
+            echo "binary_found=true" >> $GITHUB_OUTPUT
+          else
+            echo "binary_found=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Package
+        if: steps.build.outputs.binary_found == 'true'
+        run: |
+          TAG="${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2' }}"
+          mkdir -p dist/GeometryDash-linux
+          cp -v build/GeometryDash dist/GeometryDash-linux/
+          [ -d Resources ] && cp -r Resources dist/GeometryDash-linux/ || true
+          [ -d assets ]    && cp -r assets    dist/GeometryDash-linux/ || true
+          cd dist && tar czf "../GeometryDash-${TAG}-linux.tar.gz" GeometryDash-linux
+          cd ..
+          ls -lh "GeometryDash-${TAG}-linux.tar.gz"
+
+      - name: Upload Linux artifact
+        if: steps.build.outputs.binary_found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-tarball
+          path: GeometryDash-*-linux.tar.gz
+          if-no-files-found: error
+          retention-days: 7
+
+  # -------------------------------------------------------------------------
+  # Windows desktop build — CMake + MSVC
+  # -------------------------------------------------------------------------
+  build-windows:
+    name: Windows
+    runs-on: windows-2022
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up MSVC dev cmd
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      - name: Fetch Cocos2d-x 2.2.3
+        shell: pwsh
+        run: |
+          try {
+            git clone --depth 1 --branch cocos2d-x-2.2.3 `
+              https://github.com/cocos2d/cocos2d-x.git cocos2d 2>$null
+          } catch {
+            Write-Host "::warning::Could not fetch Cocos2d-x — Windows build may fail"
+          }
+          if (Test-Path cocos2d/cocos2dx) {
+            Write-Host "Cocos2d-x located successfully"
+          } else {
+            Write-Host "::warning::Cocos2d-x sources not found — Windows build will likely fail"
+          }
+
+      - name: Configure (CMake)
+        shell: pwsh
+        run: |
+          cmake -S . -B build `
+            -DCMAKE_BUILD_TYPE=Release `
+            -DCOCOS2DX_ROOT="$env:GITHUB_WORKSPACE/cocos2d" `
+            -DUSE_FMOD=OFF
+          if ($LASTEXITCODE -ne 0) {
+            Write-Host "::warning::CMake configure failed"
+          }
+
+      - name: Build
+        id: build
+        continue-on-error: true
+        shell: pwsh
+        run: |
+          cmake --build build --config Release --parallel
+          $bin = "build\Release\GeometryDash.exe"
+          if (Test-Path $bin) {
+            "binary_found=true" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          } else {
+            $bin2 = "build\GeometryDash.exe"
+            if (Test-Path $bin2) {
+              "binary_found=true" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+            } else {
+              "binary_found=false" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+            }
+          }
+
+      - name: Package
+        if: steps.build.outputs.binary_found == 'true'
+        shell: pwsh
+        run: |
+          $tag = "${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2' }}"
+          New-Item -ItemType Directory -Force -Path "dist\GeometryDash-windows" | Out-Null
+          $candidates = @("build\Release\GeometryDash.exe","build\GeometryDash.exe")
+          foreach ($c in $candidates) {
+            if (Test-Path $c) { Copy-Item $c "dist\GeometryDash-windows\"; break }
+          }
+          if (Test-Path Resources) { Copy-Item -Recurse Resources "dist\GeometryDash-windows\" }
+          Compress-Archive -Path "dist\GeometryDash-windows\*" `
+            -DestinationPath "GeometryDash-$tag-windows.zip" -Force
+          Get-ChildItem "GeometryDash-$tag-windows.zip" | Format-List Name,Length
+
+      - name: Upload Windows artifact
+        if: steps.build.outputs.binary_found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-zip
+          path: GeometryDash-*-windows.zip
+          if-no-files-found: error
+          retention-days: 7
+
+  # -------------------------------------------------------------------------
+  # iOS build — CMake + Xcode (no code-signing, just .app + .ipa for archive)
+  # -------------------------------------------------------------------------
+  build-ios:
+    name: iOS
+    runs-on: macos-14
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: brew install cmake ninja
+
+      - name: Fetch Cocos2d-x 2.2.3
+        run: |
+          git clone --depth 1 --branch cocos2d-x-2.2.3 \
+            https://github.com/cocos2d/cocos2d-x.git cocos2d 2>/dev/null \
+            || true
+          if [ -d cocos2d/cocos2dx ]; then
+            echo "Cocos2d-x located successfully"
+          else
+            echo "::warning::Cocos2d-x sources not found — iOS build will likely fail"
+          fi
+
+      - name: Configure (CMake / Xcode)
+        run: |
+          cmake -S . -B build -G Xcode \
+            -DCMAKE_SYSTEM_NAME=iOS \
+            -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 \
+            -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGNING_REQUIRED=NO \
+            -DCMAKE_XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY="" \
+            -DCOCOS2DX_ROOT="$GITHUB_WORKSPACE/cocos2d" \
+            -DUSE_FMOD=OFF || true
+
+      - name: Build
+        id: build
+        continue-on-error: true
+        run: |
+          cmake --build build --config Release \
+            -- -sdk iphoneos -destination 'generic/platform=iOS' \
+               -parallelizeTargets \
+               CODE_SIGNING_ALLOWED=NO \
+               CODE_SIGNING_REQUIRED=NO \
+               CODE_SIGN_IDENTITY="" \
+            || true
+          # Locate any .app produced
+          APP_PATH="$(find build -name '*.app' -type d 2>/dev/null | head -1)"
+          if [ -n "${APP_PATH}" ]; then
+            echo "app_path=${APP_PATH}"     >> $GITHUB_OUTPUT
+            echo "binary_found=true"        >> $GITHUB_OUTPUT
+          else
+            echo "binary_found=false"       >> $GITHUB_OUTPUT
+          fi
+
+      - name: Package .ipa
+        if: steps.build.outputs.binary_found == 'true'
+        run: |
+          TAG="${{ github.event.release.tag_name || github.event.inputs.tag || 'v0.2' }}"
+          APP_PATH="${{ steps.build.outputs.app_path }}"
+          mkdir -p Payload
+          cp -R "${APP_PATH}" Payload/
+          zip -qry "GeometryDash-${TAG}-ios.ipa" Payload
+          ls -lh "GeometryDash-${TAG}-ios.ipa"
+
+      - name: Upload iOS artifact
+        if: steps.build.outputs.binary_found == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ios-ipa
+          path: GeometryDash-*-ios.ipa
+          if-no-files-found: error
+          retention-days: 7
+
+  # -------------------------------------------------------------------------
+  # Release upload — runs after every build job, uploads all artifacts that
+  # were successfully produced.  Uses `if: always()` so a single platform
+  # failure never blocks the release.
+  # -------------------------------------------------------------------------
+  publish-release:
+    name: Publish to Release
+    runs-on: ubuntu-22.04
+    if: always()
+    needs: [ build-apk, build-linux, build-windows, build-ios ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+          merge-multiple: true
+
+      - name: Inspect artifacts
+        run: |
+          set -euo pipefail
+          echo "=== Downloaded release artifacts ==="
+          ls -lh release-assets/ || true
+          echo "=== Files ready for upload ==="
+          find release-assets -type f -print -exec ls -lh {} \; || true
+
+      - name: Determine release tag
+        id: tag
+        run: |
+          TAG="${{ github.event.release.tag_name || github.event.inputs.tag || '' }}"
+          if [ -z "${TAG}" ]; then
+            TAG="$(echo "${{ github.ref }}" | sed -E 's@^refs/tags/@@')"
+          fi
+          echo "tag=${TAG}" >> $GITHUB_OUTPUT
+          echo "Publishing assets to release: ${TAG}"
+
+      - name: Upload assets to release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: ${{ steps.tag.outputs.tag }}
+          files: release-assets/*
+          fail_on_unmatched_files: false
+          generate_release_notes: true
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

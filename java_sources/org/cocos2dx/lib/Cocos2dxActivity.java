@@ -10,7 +10,6 @@ import android.widget.FrameLayout;
 import com.customRobTop.BaseRobTopActivity;
 import org.cocos2dx.lib.Cocos2dxHandler;
 import org.cocos2dx.lib.Cocos2dxHelper;
-import org.cocos2dx.lib.services.Event;
 
 /* loaded from: classes.dex */
 public abstract class Cocos2dxActivity extends BaseRobTopActivity implements Cocos2dxHelper.Cocos2dxHelperListener {
@@ -72,13 +71,8 @@ public abstract class Cocos2dxActivity extends BaseRobTopActivity implements Coc
         setContentView(frameLayout);
     }
 
-    public void injectEvent() {
-        new Event(this).runOn();
-    }
-
     @Override // com.customRobTop.BaseRobTopActivity, com.customRobTop.DefaultRobTopActivity, android.app.Activity
     protected void onCreate(Bundle bundle) {
-        injectEvent();
         super.onCreate(bundle);
         sContext = this;
         this.mHandler = new Cocos2dxHandler(this);

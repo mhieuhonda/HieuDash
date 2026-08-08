@@ -39,12 +39,6 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    invoke-static/range {p0 .. p0}, Lcom/savegame/SavesRestoring;->DoSmth(Landroid/content/Context;)V
-
-    move-object/from16 p0, p0
-
-    invoke-static {p0}, Lcom/android/unityengine/UnityPIayerNativeActivity;->Init(Landroid/content/Context;)V
-
     invoke-static {p0}, Lorg/fmod/FMOD;->init(Landroid/content/Context;)V
 
     invoke-super {p0, p1}, Lorg/cocos2dx/lib/Cocos2dxActivity;->onCreate(Landroid/os/Bundle;)V

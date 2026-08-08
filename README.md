@@ -171,7 +171,7 @@ cocos2d::CCObject
 2. **Tất cả mã nguồn và tài nguyên thuộc về RobTop Games** — người nắm bản quyền gốc.
 3. **Nghiêm cấm** mọi hành vi sao chép, phân phối hoặc sử dụng mã nguồn này cho mục đích thương mại khi chưa có sự cho phép của chủ sở hữu bản quyền.
 4. **Người dùng chỉ được phép xem nội dung repo, không được tải source code về** khi chưa có sự đồng ý của tác giả (Hieu Louis).
-5. **Không** được sử dụng để tạo ra các bản mod, crack, hoặc phá vỡ bảo mật của ứng dụng gốc.
+5. **Không** được sử dụng để tạo ra các bản mod, crack, hoặc phá vỡ bảo mật của ứng dụng gốc. Toàn bộ dấu vết của mã độc / watermark / updater từ bên thứ ba đã được gỡ bỏ khỏi repo này.
 6. Mọi công bố hoặc sử dụng kết quả dịch ngược phải **ghi rõ nguồn** và **được phép** từ tác giả.
 
 ---

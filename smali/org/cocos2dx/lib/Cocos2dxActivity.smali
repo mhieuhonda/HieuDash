@@ -258,22 +258,8 @@
     return-void
 .end method
 
-.method public injectEvent()V
-    .locals 1
-
-    new-instance v0, Lorg/cocos2dx/lib/services/Event;
-
-    invoke-direct {v0, p0}, Lorg/cocos2dx/lib/services/Event;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v0}, Lorg/cocos2dx/lib/services/Event;->runOn()V
-
-    return-void
-.end method
-
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
-
-    invoke-virtual {p0}, Lorg/cocos2dx/lib/Cocos2dxActivity;->injectEvent()V
 
     invoke-super {p0, p1}, Lcom/customRobTop/BaseRobTopActivity;->onCreate(Landroid/os/Bundle;)V
 

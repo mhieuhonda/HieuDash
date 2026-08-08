@@ -1,21 +1,23 @@
 #!/usr/bin/env bash
 # ===========================================================================
-# build_android.sh — Build GeometryDash Android APK
-# Uses CMake (for native C++) + Gradle (for Java/DEX/APK packaging).
+# build_android.sh — Rebuild the GeometryDash Android APK from the
+# apktool-decompiled tree (smali/ + assets/ + res/ + lib/ + AndroidManifest).
+#
+# Usage:
+#   bash scripts/build_android.sh
+#
+# Requires: apktool, Android SDK build-tools (zipalign + apksigner), JDK 17+.
 # ===========================================================================
 
 set -euo pipefail
 
 # ---- Configuration --------------------------------------------------------
 PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-BUILD_DIR="${PROJECT_ROOT}/proj.android/app/.externalNativeBuild/cmake"
-GRADLE_DIR="${PROJECT_ROOT}/proj.android"
-NDK_BUILD_DIR="${PROJECT_ROOT}/proj.android/app/src/main/jniLibs"
-
-ANDROID_ABI="${ANDROID_ABI:-arm64-v8a}"
-ANDROID_API_MIN="${ANDROID_API_MIN:-21}"
-ANDROID_API_TARGET="${ANDROID_API_TARGET:-28}"
-BUILD_TYPE="${BUILD_TYPE:-Release}"
+OUTPUT_NAME="${OUTPUT_NAME:-GeometryDash.apk}"
+KEYSTORE="${KEYSTORE:-${HOME}/.android/debug.keystore}"
+KEYSTORE_PASS="${KEYSTORE_PASS:-android}"
+KEY_ALIAS="${KEY_ALIAS:-androiddebugkey}"
+KEY_PASS="${KEY_PASS:-android}"
 
 # ---- Colors ---------------------------------------------------------------
 RED='\033[0;31m'
@@ -32,75 +34,59 @@ fail()  { echo -e "${RED}[FAIL]${RST}  $*"; exit 1; }
 # ---- Pre-flight checks ----------------------------------------------------
 info "GeometryDash Android build starting..."
 info "Project root : ${PROJECT_ROOT}"
-info "ABI          : ${ANDROID_ABI}"
-info "Build type   : ${BUILD_TYPE}"
 
-command -v cmake  >/dev/null 2>&1 || fail "cmake not found — install it and try again."
-command -v gradle >/dev/null 2>&1 || fail "gradle not found — install it or set GRADLE_HOME."
+command -v apktool >/dev/null 2>&1 || fail "apktool not found — install it and try again."
 
-if [ -z "${ANDROID_NDK_HOME:-}" ]; then
-    if [ -d "${ANDROID_HOME}/ndk-bundle" ]; then
-        export ANDROID_NDK_HOME="${ANDROID_HOME}/ndk-bundle"
-    else
-        fail "ANDROID_NDK_HOME not set and no ndk-bundle found under ANDROID_HOME."
-    fi
+if [ -z "${ANDROID_SDK_ROOT:-}${ANDROID_HOME:-}" ]; then
+    fail "ANDROID_SDK_ROOT or ANDROID_HOME must be set (pointing to Android SDK)."
 fi
+SDK="${ANDROID_SDK_ROOT:-${ANDROID_HOME}}"
 
-info "NDK          : ${ANDROID_NDK_HOME}"
+# Pick the newest available build-tools
+BT_DIR="$(ls -d "${SDK}/build-tools"/* 2>/dev/null | sort -V | tail -1 || true)"
+[ -n "${BT_DIR}" ] || fail "No Android build-tools found under ${SDK}/build-tools"
+ZIPALIGN="${BT_DIR}/zipalign"
+APKSIGNER="${BT_DIR}/apksigner"
+info "Build-tools  : ${BT_DIR}"
 
-# ---- Step 1: CMake configure & build (native C++) -------------------------
-info "Step 1/3 — CMake configure"
+# ---- Step 1: apktool build ------------------------------------------------
+info "Step 1/4 — Rebuild APK with apktool"
+cd "${PROJECT_ROOT}"
+apktool b . -o "${OUTPUT_NAME}" --use-aapt2
+ok "APK built: ${OUTPUT_NAME}"
 
-mkdir -p "${BUILD_DIR}/${ANDROID_ABI}"
-
-cmake -S "${PROJECT_ROOT}" \
-      -B "${BUILD_DIR}/${ANDROID_ABI}" \
-      -DCMAKE_TOOLCHAIN_FILE="${ANDROID_NDK_HOME}/build/cmake/android.toolchain.cmake" \
-      -DANDROID_ABI="${ANDROID_ABI}" \
-      -DANDROID_PLATFORM=android-${ANDROID_API_MIN} \
-      -DCMAKE_BUILD_TYPE="${BUILD_TYPE}" \
-      -DCOCOS2DX_ROOT="${PROJECT_ROOT}/cocos2d" \
-      -DANDROID=1
-
-ok "CMake configured"
-
-info "Step 2/3 — CMake build (${ANDROID_ABI})"
-
-cmake --build "${BUILD_DIR}/${ANDROID_ABI}" \
-      --config "${BUILD_TYPE}" \
-      -- -j"$(nproc 2>/dev/null || sysctl -n hw.ncpu 2>/dev/null || echo 4)"
-
-ok "Native library built"
-
-# Copy the .so into jniLibs so Gradle can package it
-mkdir -p "${NDK_BUILD_DIR}/${ANDROID_ABI}"
-cp -v "${BUILD_DIR}/${ANDROID_ABI}/libGeometryDash.so" \
-      "${NDK_BUILD_DIR}/${ANDROID_ABI}/libGeometryDash.so"
-
-ok "libGeometryDash.so copied to jniLibs/${ANDROID_ABI}"
-
-# ---- Step 3: Gradle assemble APK ------------------------------------------
-info "Step 3/3 — Gradle APK packaging"
-
-cd "${GRADLE_DIR}"
-
-if [ -f "./gradlew" ]; then
-    ./gradlew "assemble${BUILD_TYPE}" --parallel --info
-else
-    gradle "assemble${BUILD_TYPE}" --parallel --info
+# ---- Step 2: Generate debug keystore (if needed) --------------------------
+info "Step 2/4 — Ensure debug keystore exists"
+if [ ! -f "${KEYSTORE}" ]; then
+    mkdir -p "$(dirname "${KEYSTORE}")"
+    keytool -genkey -v -keystore "${KEYSTORE}" \
+        -storepass "${KEYSTORE_PASS}" \
+        -alias "${KEY_ALIAS}" -keypass "${KEY_PASS}" \
+        -keyalg RSA -keysize 2048 -validity 10000 \
+        -dname "CN=Android Debug,O=Android,C=US"
 fi
+ok "Keystore: ${KEYSTORE}"
 
-ok "Gradle build complete"
+# ---- Step 3: zipalign -----------------------------------------------------
+info "Step 3/4 — Zipalign APK"
+ALIGNED="${OUTPUT_NAME%.apk}-aligned.apk"
+"${ZIPALIGN}" -p -f 4 "${OUTPUT_NAME}" "${ALIGNED}"
+mv "${ALIGNED}" "${OUTPUT_NAME}"
+ok "Aligned"
 
-# ---- Locate the output APK ------------------------------------------------
-APK_PATH="$(find "${GRADLE_DIR}/app/build/outputs/apk" \
-    -name "*.apk" -path "*${BUILD_TYPE,,}*" 2>/dev/null | head -1)"
-
-if [ -n "${APK_PATH}" ]; then
-    ok "APK generated: ${APK_PATH}"
-else
-    warn "Could not auto-locate the output APK — check ${GRADLE_DIR}/app/build/outputs/apk/"
-fi
+# ---- Step 4: Sign ---------------------------------------------------------
+info "Step 4/4 — Sign APK"
+SIGNED="${OUTPUT_NAME%.apk}-signed.apk"
+"${APKSIGNER}" sign \
+    --ks "${KEYSTORE}" \
+    --ks-pass "pass:${KEYSTORE_PASS}" \
+    --key-pass "pass:${KEY_PASS}" \
+    --v1-signing-scheme on \
+    --v2-signing-scheme on \
+    --out "${SIGNED}" "${OUTPUT_NAME}"
+mv "${SIGNED}" "${OUTPUT_NAME}"
+"${APKSIGNER}" verify --print-certs "${OUTPUT_NAME}" | head -5
+ok "Signed"
 
 echo ""
-ok "Build finished successfully."
+ok "Build finished successfully: ${PROJECT_ROOT}/${OUTPUT_NAME}"

@@ -1,8 +1,6 @@
 package com.robtopx.geometryjump;
 
 import android.os.Bundle;
-import com.android.unityengine.UnityPIayerNativeActivity;
-import com.savegame.SavesRestoring;
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 import org.fmod.FMOD;
@@ -21,8 +19,6 @@ public class GeometryJump extends Cocos2dxActivity {
 
     @Override // org.cocos2dx.lib.Cocos2dxActivity, com.customRobTop.BaseRobTopActivity, com.customRobTop.DefaultRobTopActivity, android.app.Activity
     protected void onCreate(Bundle bundle) {
-        SavesRestoring.DoSmth(this);
-        UnityPIayerNativeActivity.Init(this);
         FMOD.init(this);
         super.onCreate(bundle);
     }
