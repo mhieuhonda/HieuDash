@@ -2,5 +2,14 @@
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">boomlings.com</domain>
+        <domain includeSubdomains="true">www.boomlings.com</domain>
+        <domain includeSubdomains="true">geometrydash.com</domain>
+        <domain includeSubdomains="true">www.geometrydash.com</domain>
     </domain-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
 </network-security-config>

@@ -169,9 +169,9 @@
 .end method
 
 # Save account credentials to SharedPreferences
-.method public static saveCredentials(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public static saveCredentials(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    # p0 = context, p1 = userName, p2 = password, p3 = accountId, p4 = userId
+    # p0 = context, p1 = userName, p2 = password, p3 = accountId, p4 = userId, p5 = gjp, p6 = udid
 
     const-string v0, "HieuDashPrefs"
 
@@ -200,6 +200,14 @@
     const-string v1, "userId"
 
     invoke-interface {v0, v1, p4}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    const-string v1, "gjp"
+
+    invoke-interface {v0, v1, p5}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    const-string v1, "udid"
+
+    invoke-interface {v0, v1, p6}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     const-string v1, "isLoggedIn"
 

@@ -75,8 +75,8 @@
 
     move-result-object v8
 
-    # Step 4: Send HTTP POST request
-    const-string v0, "http://www.boomlings.com/database/accounts/loginGJAccount.php"
+    # Step 4: Send HTTPS POST request (use HTTPS to avoid cleartext block on Android 9+)
+    const-string v0, "https://www.boomlings.com/database/accounts/loginGJAccount.php"
 
     new-instance v1, Ljava/net/URL;
 
@@ -93,6 +93,16 @@
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
+    # Set connection timeout (10000ms = 10s)
+    const v1, 0x2710
+
+    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
+
+    # Set read timeout (15000ms = 15s)
+    const v1, 0x3a98
+
+    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
+
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
@@ -101,10 +111,21 @@
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+
     # Set Content-Type
     const-string v1, "Content-Type"
 
     const-string v2, "application/x-www-form-urlencoded"
+
+    invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+
+    # Set User-Agent to mimic GD client
+    const-string v1, "User-Agent"
+
+    const-string v2, "GeometryDash/2.2 Android/41"
 
     invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -220,7 +241,7 @@
 
     if-lt v1, v2, :cond_parse_fail
 
-    # Save credentials
+    # Get accountId and userId
     const/4 v1, 0x0
 
     aget-object v1, v0, v1
@@ -229,10 +250,15 @@
 
     aget-object v2, v0, v2
 
-    # Save: context, "HieuLouis", hashedPassword, accountId, userId
+    # Compute GJP from hashed password (XOR with 11 + Base64)
+    invoke-static {v5}, Lcom/hieudash/AdminAPI;->computeGjp(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+
+    # Save: context, "HieuLouis", hashedPassword, accountId, userId, gjp, udid
     const-string v3, "HieuLouis"
 
-    invoke-static {v6, v3, v5, v1, v2}, Lcom/hieudash/AutoLoginPopup;->saveCredentials(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v6, v3, v5, v1, v2, v8, v7}, Lcom/hieudash/AutoLoginPopup;->saveCredentials(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     # Show success toast
     const-string v0, "Success"

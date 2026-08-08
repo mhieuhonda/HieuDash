@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ===========================================================================
-# build_android.sh — Rebuild the GeometryDash Android APK from the
+# build_android.sh — Rebuild the HieuDash Android APK from the
 # apktool-decompiled tree (smali/ + assets/ + res/ + lib/ + AndroidManifest).
 #
 # Usage:
@@ -32,7 +32,7 @@ ok()    { echo -e "${GRN}[ OK ]${RST}  $*"; }
 fail()  { echo -e "${RED}[FAIL]${RST}  $*"; exit 1; }
 
 # ---- Pre-flight checks ----------------------------------------------------
-info "GeometryDash Android build starting..."
+info "HieuDash Android build starting..."
 info "Project root : ${PROJECT_ROOT}"
 
 command -v apktool >/dev/null 2>&1 || fail "apktool not found — install it and try again."
@@ -52,8 +52,15 @@ info "Build-tools  : ${BT_DIR}"
 # ---- Step 1: apktool build ------------------------------------------------
 info "Step 1/4 — Rebuild APK with apktool"
 cd "${PROJECT_ROOT}"
-apktool b . -o "${OUTPUT_NAME}" --use-aapt2
-ok "APK built: ${OUTPUT_NAME}"
+# Try with --use-aapt2 first; fall back to without if it fails
+if apktool b . -o "${OUTPUT_NAME}" --use-aapt2 2>&1; then
+    ok "APK built with --use-aapt2: ${OUTPUT_NAME}"
+elif apktool b . -o "${OUTPUT_NAME}" 2>&1; then
+    warn "APK built without --use-aapt2 (fallback): ${OUTPUT_NAME}"
+else
+    fail "apktool build failed (tried both with and without --use-aapt2)"
+fi
+[ -f "${OUTPUT_NAME}" ] || fail "APK file not found after build: ${OUTPUT_NAME}"
 
 # ---- Step 2: Generate debug keystore (if needed) --------------------------
 info "Step 2/4 — Ensure debug keystore exists"

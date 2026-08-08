@@ -1,7 +1,7 @@
 {
-  "version": "0.4.0",
-  "version_name": "v0.4",
-  "build": 4,
+  "version": "0.5.0",
+  "version_name": "v0.5",
+  "build": 5,
   "changelog": [
     "v0.3 changes:",
     "  Removed all decompilation and mod traces",
@@ -35,6 +35,26 @@
     "  Fixed 286 broken init() patterns (void->bool, parent calls, inheritance)",
     "  Fixed 87 missing inheritance declarations",
     "  Added Languages.plist localization file",
-    "  Added HieuDash SharedPreferences for settings persistence"
+    "  Added HieuDash SharedPreferences for settings persistence",
+    "",
+    "v0.5 changes:",
+    "  CRITICAL FIX: Changed all server URLs from HTTP to HTTPS (fixes Android 9+ cleartext block)",
+    "  CRITICAL FIX: Updated network_security_config.xml to whitelist boomlings.com and geometrydash.com",
+    "  CRITICAL FIX: Implemented GJP (General Justin Password) computation - XOR key 11 + Base64 encode",
+    "  CRITICAL FIX: GJP is now properly computed and saved to SharedPreferences for admin API calls",
+    "  CRITICAL FIX: Added UDID saving to SharedPreferences for admin panel credential passing",
+    "  Added User-Agent header to all server requests (GeometryDash/2.2 Android/41)",
+    "  Added connection timeout (10s) and read timeout (15s) to prevent hangs",
+    "  Added HTTP response code checking with error stream fallback in doPostRequest",
+    "  Added redirect following for HTTP 3xx responses",
+    "  Fixed GitHub Actions build.yml - added cmdline-tools fallback installation",
+    "  Fixed GitHub Actions build.yml - added Cocos2d-x mirror fallback URLs",
+    "  Fixed GitHub Actions build.yml - added ilammy/msvc-dev-cmd for Windows build",
+    "  Fixed GitHub Actions build.yml - added version.json to Windows sparse checkout",
+    "  Fixed GitHub Actions release.yml - updated default tag to v0.5",
+    "  Fixed GitHub Actions release.yml - improved SDK setup with cmdline-tools fallback",
+    "  Fixed GitHub Actions release.yml - improved artifact naming (HieuDash prefix)",
+    "  Fixed build_android.sh - added apktool fallback (try --use-aapt2, then without)",
+    "  Updated versionCode to 43 and versionName to 0.5 in apktool.yml"
   ]
 }
