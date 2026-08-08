@@ -5,27 +5,19 @@ FontObject::~FontObject() {
     this->cleanup();
 }
 
-FontObject::~FontObject() {
-    this->cleanup();
-}
-
-FontObject::~FontObject() {
-    this->cleanup();
-}
-
 void FontObject::getFontWidth(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FontObject::parseConfigFile(char const*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FontObject::initWithConfigFile(char const*, float) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void FontObject::createWithConfigFile(char const*, float) {
-    // TODO: Implement
+FontObject* FontObject::createWithConfigFile(char const*, float) {
+    return nullptr;
 }
 

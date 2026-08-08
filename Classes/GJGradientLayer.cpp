@@ -5,18 +5,10 @@ GJGradientLayer::~GJGradientLayer() {
     this->cleanup();
 }
 
-GJGradientLayer::~GJGradientLayer() {
-    this->cleanup();
-}
-
-GJGradientLayer::~GJGradientLayer() {
-    this->cleanup();
-}
-
-void GJGradientLayer::init() {
-    bool ret = true;
+bool GJGradientLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class SecretGame01Layer {
+class SecretGame01Layer : public cocos2d::CCLayer {
 public:
     virtual ~SecretGame01Layer();
 
@@ -20,7 +20,7 @@ public:
     void getCountForDifficulty(int);
     void getFrameForDifficulty(int);
     void didSelectCorrectObject(CCMenuItemSpriteExtra*);
-    void init();
+    bool init();
     void create();
     void update(float);
     void resetGame();

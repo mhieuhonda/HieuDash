@@ -5,54 +5,46 @@ GJAccountSettingsLayer::~GJAccountSettingsLayer() {
     this->cleanup();
 }
 
-GJAccountSettingsLayer::~GJAccountSettingsLayer() {
-    this->cleanup();
-}
-
-GJAccountSettingsLayer::~GJAccountSettingsLayer() {
-    this->cleanup();
-}
-
 void GJAccountSettingsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::onCommentSetting(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::onFriendRequests(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::onMessageSetting(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::updateScoreValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJAccountSettingsLayer::closeAccInputNodes(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint, float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -67,10 +59,10 @@ void GJAccountSettingsLayer::create(int) {
 }
 
 void GJAccountSettingsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSettingsLayer::onUpdate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

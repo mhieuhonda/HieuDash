@@ -5,50 +5,42 @@ CCCounterLabel::~CCCounterLabel() {
     this->cleanup();
 }
 
-CCCounterLabel::~CCCounterLabel() {
-    this->cleanup();
-}
-
-CCCounterLabel::~CCCounterLabel() {
-    this->cleanup();
-}
-
 void CCCounterLabel::updateString() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CCCounterLabel::enableCounter() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCCounterLabel::updateCounter(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CCCounterLabel::disableCounter() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCCounterLabel::getTargetCount() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCCounterLabel::setTargetCount(int) {
-    // TODO: Set m_targetCount
+    // Setter operation - stub
 }
 
 void CCCounterLabel::calculateStepSize(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCCounterLabel::fastUpdateCounter() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CCCounterLabel::init(int, char const*, FormatterType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

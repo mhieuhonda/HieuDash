@@ -12,7 +12,7 @@ public:
     void onSelectTab(cocos2d::CCObject*);
     void keyBackClicked();
     void toggleControls(bool);
-    void createHSVWidget(int);
+    HSVLiveOverlay* createHSVWidget(int);
     void closeColorSelect(cocos2d::CCObject*);
     void determineStartValues();
     void init(GameObject*, cocos2d::CCArray*);

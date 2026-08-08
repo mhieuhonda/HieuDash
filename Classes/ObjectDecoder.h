@@ -2,13 +2,13 @@
 #ifndef OBJECTDECODER_H_
 #define OBJECTDECODER_H_
 
-class ObjectDecoder {
+class ObjectDecoder : public cocos2d::CCNode {
 public:
     virtual ~ObjectDecoder();
 
     void sharedDecoder();
     void getDecodedObject(int, DS_Dictionary*);
-    void init();
+    bool init();
 
 };
 

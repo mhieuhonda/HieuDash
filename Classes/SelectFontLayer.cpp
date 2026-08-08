@@ -5,30 +5,22 @@ SelectFontLayer::~SelectFontLayer() {
     this->cleanup();
 }
 
-SelectFontLayer::~SelectFontLayer() {
-    this->cleanup();
-}
-
-SelectFontLayer::~SelectFontLayer() {
-    this->cleanup();
-}
-
 void SelectFontLayer::onChangeFont(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectFontLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectFontLayer::updateFontLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SelectFontLayer::init(LevelEditorLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,6 +35,6 @@ void SelectFontLayer::create(LevelEditorLayer*) {
 }
 
 void SelectFontLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

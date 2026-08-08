@@ -5,87 +5,79 @@ GJShopLayer::~GJShopLayer() {
     this->cleanup();
 }
 
-GJShopLayer::~GJShopLayer() {
-    this->cleanup();
-}
-
-GJShopLayer::~GJShopLayer() {
-    this->cleanup();
-}
-
 void GJShopLayer::onPlushies(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::onSelectItem(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::didPurchaseItem(GJStoreItem*) {
-    // TODO: Implement
+    // Purchase operation - stub
 }
 
 void GJShopLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::exitVideoAdItems() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::showReactMessage() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJShopLayer::onCommunityCredits(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::rewardedVideoFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::showCantAffordMessage(GJStoreItem*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJShopLayer::updateCurrencyCounter() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJShopLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::init(ShopType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJShopLayer::scene(ShopType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::create(ShopType) {
@@ -99,14 +91,14 @@ void GJShopLayer::create(ShopType) {
 }
 
 void GJShopLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShopLayer::onVideoAd(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

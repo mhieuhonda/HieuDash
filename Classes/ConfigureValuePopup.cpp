@@ -5,42 +5,34 @@ ConfigureValuePopup::~ConfigureValuePopup() {
     this->cleanup();
 }
 
-ConfigureValuePopup::~ConfigureValuePopup() {
-    this->cleanup();
-}
-
-ConfigureValuePopup::~ConfigureValuePopup() {
-    this->cleanup();
-}
-
 void ConfigureValuePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ConfigureValuePopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ConfigureValuePopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ConfigureValuePopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ConfigureValuePopup::addInfoAlertButton(std::string, std::string) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void ConfigureValuePopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ConfigureValuePopup::init(ConfigureValuePopupDelegate*, float, float, float, std::string, std::string, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -55,10 +47,10 @@ void ConfigureValuePopup::create(ConfigureValuePopupDelegate*, float, float, flo
 }
 
 void ConfigureValuePopup::onArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ConfigureValuePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

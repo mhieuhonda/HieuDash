@@ -18,7 +18,7 @@ public:
     void loadFromMapPack(GJMapPack*);
     void playCompleteEffect();
     void draw() override;
-    void init() override;
+    bool init() override;
     void onClick(cocos2d::CCObject*);
 
 };

@@ -5,31 +5,22 @@ GJSmartPrefab::~GJSmartPrefab() {
     this->cleanup();
 }
 
-GJSmartPrefab::~GJSmartPrefab() {
-    this->cleanup();
-}
-
-GJSmartPrefab::~GJSmartPrefab() {
-    this->cleanup();
-}
-
 void GJSmartPrefab::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
-void GJSmartPrefab::createWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+GJSmartPrefab* GJSmartPrefab::createWithCoder(DS_Dictionary*) {
+    return nullptr;
 }
 
 void GJSmartPrefab::encodeWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+    // Save/encode operation - stub
 }
 
-void GJSmartPrefab::init() {
-    bool ret = true;
+bool GJSmartPrefab::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,7 +34,7 @@ void GJSmartPrefab::create() {
     return nullptr;
 }
 
-void GJSmartPrefab::canEncode() {
-    // TODO: Implement
+bool GJSmartPrefab::canEncode() {
+    return false;
 }
 

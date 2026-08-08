@@ -5,68 +5,58 @@ SimplePlayer::~SimplePlayer() {
     this->cleanup();
 }
 
-SimplePlayer::~SimplePlayer() {
-    this->cleanup();
-}
-
-SimplePlayer::~SimplePlayer() {
-    this->cleanup();
-}
-
 void SimplePlayer::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SimplePlayer::updateColors() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SimplePlayer::asyncLoadIcon(int, IconType) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void SimplePlayer::hideSecondary() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SimplePlayer::setSecondColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_secondColor
+    // Setter operation - stub
 }
 
-void SimplePlayer::createRobotSprite(int) {
-    // TODO: Implement
+SimplePlayer* SimplePlayer::createRobotSprite(int) {
+    return nullptr;
 }
 
 void SimplePlayer::updatePlayerFrame(int, IconType) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SimplePlayer::createSpiderSprite(int) {
-    // TODO: Implement
+SimplePlayer* SimplePlayer::createSpiderSprite(int) {
+    return nullptr;
 }
 
 void SimplePlayer::iconFinishedLoading(int, IconType) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void SimplePlayer::enableCustomGlowColor(cocos2d::_ccColor3B const&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SimplePlayer::disableCustomGlowColor() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SimplePlayer::tryEnableCustomGlowColor(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SimplePlayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -81,18 +71,18 @@ void SimplePlayer::create(int) {
 }
 
 void SimplePlayer::hideAll() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SimplePlayer::setColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_color
+    // Setter operation - stub
 }
 
 void SimplePlayer::setColors(cocos2d::_ccColor3B const&, cocos2d::_ccColor3B const&) {
-    // TODO: Set m_colors
+    // Setter operation - stub
 }
 
 void SimplePlayer::setFrames(char const*, char const*, char const*, char const*, char const*) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 

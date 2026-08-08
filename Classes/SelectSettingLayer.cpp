@@ -5,46 +5,38 @@ SelectSettingLayer::~SelectSettingLayer() {
     this->cleanup();
 }
 
-SelectSettingLayer::~SelectSettingLayer() {
-    this->cleanup();
-}
-
-SelectSettingLayer::~SelectSettingLayer() {
-    this->cleanup();
-}
-
 void SelectSettingLayer::idxToValue(SelectSettingType, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::valueToIdx(SelectSettingType, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::frameForItem(SelectSettingType, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::frameForValue(SelectSettingType, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::getSelectedFrame() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::getSelectedValue() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::init(SelectSettingType, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -59,10 +51,10 @@ void SelectSettingLayer::create(SelectSettingType, int) {
 }
 
 void SelectSettingLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSettingLayer::onSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

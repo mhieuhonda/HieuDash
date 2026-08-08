@@ -11,7 +11,7 @@ public:
     void loadAssets();
     void updateProgress(int);
     void loadingFinished();
-    void getLoadingString();
+    std::string getLoadingString();
     void init(bool);
     void scene(bool);
     void create(bool);

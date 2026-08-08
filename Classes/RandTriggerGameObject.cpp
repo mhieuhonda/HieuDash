@@ -5,39 +5,30 @@ RandTriggerGameObject::~RandTriggerGameObject() {
     this->cleanup();
 }
 
-RandTriggerGameObject::~RandTriggerGameObject() {
-    this->cleanup();
-}
-
-RandTriggerGameObject::~RandTriggerGameObject() {
-    this->cleanup();
-}
-
-void RandTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string RandTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void RandTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RandTriggerGameObject::getTotalChance() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RandTriggerGameObject::getRandomGroupID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RandTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void RandTriggerGameObject::init() {
-    bool ret = true;
+bool RandTriggerGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

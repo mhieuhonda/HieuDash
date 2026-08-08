@@ -5,38 +5,30 @@ SetupAreaAnimTriggerPopup::~SetupAreaAnimTriggerPopup() {
     this->cleanup();
 }
 
-SetupAreaAnimTriggerPopup::~SetupAreaAnimTriggerPopup() {
-    this->cleanup();
-}
-
-SetupAreaAnimTriggerPopup::~SetupAreaAnimTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupAreaAnimTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaAnimTriggerPopup::updateTargetIDLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAreaAnimTriggerPopup::onDeactivateAnimValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaAnimTriggerPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SetupAreaAnimTriggerPopup::createValueControlAdvancedAnim(int, std::string, cocos2d::CCPoint, float, bool, InputValueType, int, bool, float, float, int, int, GJInputStyle) {
-    // TODO: Implement
+SetupAreaAnimTriggerPopup* SetupAreaAnimTriggerPopup::createValueControlAdvancedAnim(int, std::string, cocos2d::CCPoint, float, bool, InputValueType, int, bool, float, float, int, int, GJInputStyle) {
+    return nullptr;
 }
 
 void SetupAreaAnimTriggerPopup::init(EnterEffectObject*, cocos2d::CCArray*, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

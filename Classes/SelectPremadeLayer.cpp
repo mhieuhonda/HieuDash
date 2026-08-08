@@ -5,26 +5,18 @@ SelectPremadeLayer::~SelectPremadeLayer() {
     this->cleanup();
 }
 
-SelectPremadeLayer::~SelectPremadeLayer() {
-    this->cleanup();
-}
-
-SelectPremadeLayer::~SelectPremadeLayer() {
-    this->cleanup();
-}
-
 void SelectPremadeLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectPremadeLayer::onSelectPremade(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SelectPremadeLayer::init() {
-    bool ret = true;
+bool SelectPremadeLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,6 +31,6 @@ void SelectPremadeLayer::create() {
 }
 
 void SelectPremadeLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

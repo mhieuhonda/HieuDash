@@ -5,73 +5,63 @@ LeaderboardsLayer::~LeaderboardsLayer() {
     this->cleanup();
 }
 
-LeaderboardsLayer::~LeaderboardsLayer() {
-    this->cleanup();
-}
-
-LeaderboardsLayer::~LeaderboardsLayer() {
-    this->cleanup();
-}
-
 void LeaderboardsLayer::onCreators(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::refreshTabs() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LeaderboardsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::toggleTabButtons() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::selectLeaderboard(LeaderboardType, LeaderboardStat) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::setupLevelBrowser(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void LeaderboardsLayer::loadLeaderboardFailed(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LeaderboardsLayer::updateUserScoreFailed() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LeaderboardsLayer::loadLeaderboardFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LeaderboardsLayer::updateUserScoreFinished() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LeaderboardsLayer::init(LeaderboardType, LeaderboardStat) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LeaderboardsLayer::onTop(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::scene(LeaderboardType, LeaderboardStat) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::create(LeaderboardType, LeaderboardStat) {
@@ -85,30 +75,30 @@ void LeaderboardsLayer::create(LeaderboardType, LeaderboardStat) {
 }
 
 void LeaderboardsLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::onStat(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::onWeek(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LeaderboardsLayer::onGlobal(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void LeaderboardsLayer::isCorrect(std::string) {
-    // TODO: Implement
+bool LeaderboardsLayer::isCorrect(std::string) {
+    return false;
 }
 
 void LeaderboardsLayer::setupTabs() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

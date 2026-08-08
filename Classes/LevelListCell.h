@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class LevelListCell {
+class LevelListCell : public cocos2d::CCNode {
 public:
     LevelListCell(char const*, float, float);
     LevelListCell(char const*, float, float);
@@ -16,7 +16,7 @@ public:
     void onViewProfile(cocos2d::CCObject*);
     void updateBGColor(int);
     void draw();
-    void init();
+    bool init();
     void create(float, float);
     void onClick(cocos2d::CCObject*);
 

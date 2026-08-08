@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJMessageCell {
+class GJMessageCell : public cocos2d::CCNode {
 public:
     GJMessageCell(char const*, float, float);
     GJMessageCell(char const*, float, float);
@@ -23,7 +23,7 @@ public:
     void uploadActionFailed(int, int);
     void uploadActionFinished(int, int);
     void draw();
-    void init();
+    bool init();
     void onToggle(cocos2d::CCObject*);
 
 };

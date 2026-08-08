@@ -2,17 +2,11 @@
 #include "TableViewCell.h"
 
 TableViewCell::TableViewCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 TableViewCell::TableViewCell(char const*, float, float) {
-}
-
-TableViewCell::~TableViewCell() {
-    this->cleanup();
-}
-
-TableViewCell::~TableViewCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 TableViewCell::~TableViewCell() {
@@ -20,6 +14,6 @@ TableViewCell::~TableViewCell() {
 }
 
 void TableViewCell::updateVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

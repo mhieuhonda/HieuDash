@@ -19,13 +19,13 @@ public:
     void showLoadingUI();
     void keyBackClicked();
     void FLAlert_Clicked(FLAlertLayer*, bool);
-    void createTextInput(cocos2d::CCPoint, cocos2d::CCSize, char const*, int);
-    void createTextLabel(cocos2d::CCPoint, char const*, cocos2d::CCSize);
+    AccountLoginLayer* createTextInput(cocos2d::CCPoint, cocos2d::CCSize, char const*, int);
+    AccountLoginLayer* createTextLabel(cocos2d::CCPoint, char const*, cocos2d::CCSize);
     void textInputClosed(CCTextInputNode*);
     void textInputOpened(CCTextInputNode*);
     void onForgotPassword(cocos2d::CCObject*);
     void loginAccountFailed(AccountError);
-    void createTextBackground(cocos2d::CCPoint, char const*, cocos2d::CCSize);
+    AccountLoginLayer* createTextBackground(cocos2d::CCPoint, char const*, cocos2d::CCSize);
     void loginAccountFinished(int, int);
     void registerWithTouchDispatcher();
     void init(std::string);

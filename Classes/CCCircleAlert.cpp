@@ -5,18 +5,10 @@ CCCircleAlert::~CCCircleAlert() {
     this->cleanup();
 }
 
-CCCircleAlert::~CCCircleAlert() {
-    this->cleanup();
-}
-
-CCCircleAlert::~CCCircleAlert() {
-    this->cleanup();
-}
-
 void CCCircleAlert::init(float, float, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

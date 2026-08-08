@@ -5,15 +5,15 @@
 #include <string>
 #include <vector>
 
-class KeyframeGameObject {
+class KeyframeGameObject : public GameObject {
 public:
     virtual ~KeyframeGameObject();
 
     void setOpacity(unsigned char);
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void updateShadowObjects(GJBaseGameLayer*, EditorUI*);
-    void init();
+    bool init();
     void create();
 
 protected:

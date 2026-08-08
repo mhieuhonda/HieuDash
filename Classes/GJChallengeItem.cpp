@@ -5,39 +5,30 @@ GJChallengeItem::~GJChallengeItem() {
     this->cleanup();
 }
 
-GJChallengeItem::~GJChallengeItem() {
-    this->cleanup();
-}
-
-GJChallengeItem::~GJChallengeItem() {
-    this->cleanup();
-}
-
 void GJChallengeItem::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void GJChallengeItem::incrementCount(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJChallengeItem::createWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+GJChallengeItem* GJChallengeItem::createWithCoder(DS_Dictionary*) {
+    return nullptr;
 }
 
 void GJChallengeItem::encodeWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+    // Save/encode operation - stub
 }
 
-void GJChallengeItem::createFromString(std::string) {
-    // TODO: Implement
+GJChallengeItem* GJChallengeItem::createFromString(std::string) {
+    return nullptr;
 }
 
-void GJChallengeItem::init(GJChallengeType, int, int, int, std::string) {
+bool GJChallengeItem::init(GJChallengeType, int, int, int, std::string) {
     bool ret = cocos2d::CCObject::init() if "cocos2d::CCObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -61,7 +52,7 @@ void GJChallengeItem::create() {
     return nullptr;
 }
 
-void GJChallengeItem::canEncode() {
-    // TODO: Implement
+bool GJChallengeItem::canEncode() {
+    return false;
 }
 

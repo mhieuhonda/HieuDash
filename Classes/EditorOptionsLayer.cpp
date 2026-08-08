@@ -5,30 +5,22 @@ EditorOptionsLayer::~EditorOptionsLayer() {
     this->cleanup();
 }
 
-EditorOptionsLayer::~EditorOptionsLayer() {
-    this->cleanup();
-}
-
-EditorOptionsLayer::~EditorOptionsLayer() {
-    this->cleanup();
-}
-
 void EditorOptionsLayer::onButtonRows(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditorOptionsLayer::setupOptions() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EditorOptionsLayer::onButtonsPerRow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void EditorOptionsLayer::init() {
-    bool ret = true;
+bool EditorOptionsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,6 +35,6 @@ void EditorOptionsLayer::create() {
 }
 
 void EditorOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

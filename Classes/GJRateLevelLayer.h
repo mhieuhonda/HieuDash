@@ -18,7 +18,7 @@ public:
     void onCustomButton(cocos2d::CCObject*);
     void rateInfoFailed(int, int);
     void FLAlert_Clicked(FLAlertLayer*, bool);
-    void createStatPillar(int, int, int, cocos2d::_ccColor3B, cocos2d::_ccColor3B, cocos2d::CCPoint, std::string);
+    GJRateLevelLayer* createStatPillar(int, int, int, cocos2d::_ccColor3B, cocos2d::_ccColor3B, cocos2d::CCPoint, std::string);
     void rateInfoFinished(int, std::string);
     void uploadActionFailed(int, int);
     void uploadActionFinished(int, int);

@@ -5,27 +5,18 @@ EnhancedTriggerObject::~EnhancedTriggerObject() {
     this->cleanup();
 }
 
-EnhancedTriggerObject::~EnhancedTriggerObject() {
-    this->cleanup();
-}
-
-EnhancedTriggerObject::~EnhancedTriggerObject() {
-    this->cleanup();
-}
-
-void EnhancedTriggerObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string EnhancedTriggerObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void EnhancedTriggerObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EnhancedTriggerObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

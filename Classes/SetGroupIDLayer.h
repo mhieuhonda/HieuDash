@@ -21,7 +21,7 @@ public:
     void removeGroupID(int);
     void keyBackClicked();
     void onNextGroupID1(cocos2d::CCObject*);
-    void createTextInput(cocos2d::CCPoint, int, int, std::string, float, int);
+    SetGroupIDLayer* createTextInput(cocos2d::CCPoint, int, int, std::string, float, int);
     void onToggleTraceIn(cocos2d::CCObject*);
     void textInputClosed(CCTextInputNode*);
     void onAddGroupParent(cocos2d::CCObject*);

@@ -5,27 +5,19 @@ SpriteDescription::~SpriteDescription() {
     this->cleanup();
 }
 
-SpriteDescription::~SpriteDescription() {
-    this->cleanup();
-}
-
-SpriteDescription::~SpriteDescription() {
-    this->cleanup();
-}
-
 void SpriteDescription::initDescription(DS_Dictionary*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SpriteDescription::initDescription(cocos2d::CCDictionary*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void SpriteDescription::createDescription(DS_Dictionary*) {
-    // TODO: Implement
+SpriteDescription* SpriteDescription::createDescription(DS_Dictionary*) {
+    return nullptr;
 }
 
-void SpriteDescription::createDescription(cocos2d::CCDictionary*) {
-    // TODO: Implement
+SpriteDescription* SpriteDescription::createDescription(cocos2d::CCDictionary*) {
+    return nullptr;
 }
 

@@ -5,127 +5,119 @@ BoomScrollLayer::~BoomScrollLayer() {
     this->cleanup();
 }
 
-BoomScrollLayer::~BoomScrollLayer() {
-    this->cleanup();
-}
-
-BoomScrollLayer::~BoomScrollLayer() {
-    this->cleanup();
-}
-
 void BoomScrollLayer::claimTouch(cocos2d::CCTouch*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void BoomScrollLayer::moveToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::removePage(cocos2d::CCLayer*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void BoomScrollLayer::selectPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::updateDots(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void BoomScrollLayer::quickUpdate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void BoomScrollLayer::setDotScale(float) {
-    // TODO: Set m_dotScale
+    // Setter operation - stub
 }
 
 void BoomScrollLayer::updatePages() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void BoomScrollLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::getTotalPages() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::moveToPageEnded() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::instantMoveToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void BoomScrollLayer::cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+bool BoomScrollLayer::cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+    return false;
 }
 
 void BoomScrollLayer::removePageWithNumber(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void BoomScrollLayer::togglePageIndicators(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::getRelativePageForNum(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::getRelativePosForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::pageNumberForPosition(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::repositionPagesLooped() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::setupDynamicScrolling(cocos2d::CCArray*, DynamicScrollDelegate*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void BoomScrollLayer::positionForPageWithNumber(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::setPagesIndicatorPosition(cocos2d::CCPoint) {
-    // TODO: Set m_pagesIndicatorPosition
+    // Setter operation - stub
 }
 
 void BoomScrollLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::init(cocos2d::CCArray*, int, bool, cocos2d::CCArray*, DynamicScrollDelegate*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void BoomScrollLayer::visit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayer::create(cocos2d::CCArray*, int, bool) {
@@ -149,14 +141,14 @@ void BoomScrollLayer::create(cocos2d::CCArray*, int, bool, cocos2d::CCArray*, Dy
 }
 
 void BoomScrollLayer::addPage(cocos2d::CCLayer*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void BoomScrollLayer::addPage(cocos2d::CCLayer*, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void BoomScrollLayer::getPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

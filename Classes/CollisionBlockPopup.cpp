@@ -5,75 +5,67 @@ CollisionBlockPopup::~CollisionBlockPopup() {
     this->cleanup();
 }
 
-CollisionBlockPopup::~CollisionBlockPopup() {
-    this->cleanup();
-}
-
-CollisionBlockPopup::~CollisionBlockPopup() {
-    this->cleanup();
-}
-
 void CollisionBlockPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::onNextItemID(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::updateItemID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CollisionBlockPopup::onItemIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::onDynamicBlock(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void CollisionBlockPopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::updateEditorLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CollisionBlockPopup::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CollisionBlockPopup::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CollisionBlockPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CollisionBlockPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CollisionBlockPopup::create(EffectGameObject*, cocos2d::CCArray*) {
@@ -87,6 +79,6 @@ void CollisionBlockPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void CollisionBlockPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

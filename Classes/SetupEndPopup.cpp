@@ -5,50 +5,42 @@ SetupEndPopup::~SetupEndPopup() {
     this->cleanup();
 }
 
-SetupEndPopup::~SetupEndPopup() {
-    this->cleanup();
-}
-
-SetupEndPopup::~SetupEndPopup() {
-    this->cleanup();
-}
-
 void SetupEndPopup::onReversed(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEndPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEndPopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupEndPopup::onMultiActivate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEndPopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEndPopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEndPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEndPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupEndPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -63,10 +55,10 @@ void SetupEndPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupEndPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEndPopup::onLockY(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 

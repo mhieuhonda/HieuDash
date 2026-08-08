@@ -68,7 +68,7 @@ void AppDelegate::applicationDidEnterBackground()
 
     // If FMOD is active we pause it here to avoid background audio
 #ifdef USE_FMOD
-    // FMODManager::sharedManager()->pauseAll();  // TODO: hook up
+    // FMODManager::sharedManager()->pauseAll();  // Stub: hook up
 #endif
 }
 
@@ -81,6 +81,6 @@ void AppDelegate::applicationWillEnterForeground()
     cocos2d::CCDirector::sharedDirector()->startAnimation();
 
 #ifdef USE_FMOD
-    // FMODManager::sharedManager()->resumeAll();  // TODO: hook up
+    // FMODManager::sharedManager()->resumeAll();  // Stub: hook up
 #endif
 }

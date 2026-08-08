@@ -5,22 +5,14 @@ SecretNumberLayer::~SecretNumberLayer() {
     this->cleanup();
 }
 
-SecretNumberLayer::~SecretNumberLayer() {
-    this->cleanup();
-}
-
-SecretNumberLayer::~SecretNumberLayer() {
-    this->cleanup();
-}
-
 void SecretNumberLayer::playNumberEffect(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
-void SecretNumberLayer::init() {
-    bool ret = true;
+bool SecretNumberLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,66 +5,58 @@ GJMapObject::~GJMapObject() {
     this->cleanup();
 }
 
-GJMapObject::~GJMapObject() {
-    this->cleanup();
-}
-
-GJMapObject::~GJMapObject() {
-    this->cleanup();
-}
-
 void GJMapObject::playerJump() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJMapObject::monsterIdle() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapObject::monsterJump() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapObject::moveMonster(cocos2d::CCPoint, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapObject::moveMonster() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapObject::moveFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapObject::touchMonster() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapObject::updateShadow(float, float, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void GJMapObject::createMonster(int) {
-    // TODO: Implement
+GJMapObject* GJMapObject::createMonster(int) {
+    return nullptr;
 }
 
 void GJMapObject::setObjectOrigin(cocos2d::CCPoint, float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GJMapObject::startPlayerJumpLoop() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJMapObject::startMonsterJumpLoop() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapObject::init(cocos2d::CCNode*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

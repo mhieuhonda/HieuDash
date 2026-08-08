@@ -5,47 +5,38 @@ SequenceTriggerGameObject::~SequenceTriggerGameObject() {
     this->cleanup();
 }
 
-SequenceTriggerGameObject::~SequenceTriggerGameObject() {
-    this->cleanup();
-}
-
-SequenceTriggerGameObject::~SequenceTriggerGameObject() {
-    this->cleanup();
-}
-
 void SequenceTriggerGameObject::resetObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SequenceTriggerGameObject::deleteTarget(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void SequenceTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string SequenceTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void SequenceTriggerGameObject::reorderTarget(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SequenceTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SequenceTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SequenceTriggerGameObject::updateSequenceTotalCount() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SequenceTriggerGameObject::init() {
-    bool ret = true;
+bool SequenceTriggerGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -60,10 +51,10 @@ void SequenceTriggerGameObject::create() {
 }
 
 void SequenceTriggerGameObject::addCount(int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SequenceTriggerGameObject::addTarget(int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

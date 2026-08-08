@@ -11,13 +11,13 @@ public:
 
     void dataLoaded(DS_Dictionary*);
     void incrementCount(int);
-    void createWithCoder(DS_Dictionary*);
+    GJChallengeItem* createWithCoder(DS_Dictionary*);
     void encodeWithCoder(DS_Dictionary*);
-    void createFromString(std::string);
+    GJChallengeItem* createFromString(std::string);
     void init(GJChallengeType, int, int, int, std::string) override;
     void create(GJChallengeType, int, int, int, std::string);
     void create();
-    void canEncode();
+    bool canEncode();
 
 };
 

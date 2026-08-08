@@ -2,11 +2,11 @@
 #ifndef PLAYERCHECKPOINT_H_
 #define PLAYERCHECKPOINT_H_
 
-class PlayerCheckpoint {
+class PlayerCheckpoint : public cocos2d::CCNode {
 public:
     virtual ~PlayerCheckpoint();
 
-    void init();
+    bool init();
     void create();
 
 };

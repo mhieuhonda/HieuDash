@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GhostTrailEffect {
+class GhostTrailEffect : public cocos2d::CCNode {
 public:
     virtual ~GhostTrailEffect();
 
@@ -12,7 +12,7 @@ public:
     void trailSnapshot(float);
     void doBlendAdditive();
     void draw();
-    void init();
+    bool init();
     void create();
     void stopTrail();
 

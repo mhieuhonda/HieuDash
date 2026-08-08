@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJPathsLayer {
+class GJPathsLayer : public cocos2d::CCLayer {
 public:
     virtual ~GJPathsLayer();
 
@@ -12,7 +12,7 @@ public:
     void darkenButtons(bool);
     void keyBackClicked();
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onExit();

@@ -4,12 +4,12 @@
 
 #include "cocos2d.h"
 
-class TOSPopup {
+class TOSPopup : public FLAlertLayer {
 public:
     virtual ~TOSPopup();
 
     void keyBackClicked();
-    void init();
+    bool init();
     void onTOS(cocos2d::CCObject*);
     void create();
     void onClose(cocos2d::CCObject*);

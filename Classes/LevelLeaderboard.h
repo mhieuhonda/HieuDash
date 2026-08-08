@@ -30,7 +30,7 @@ public:
     void create(GJGameLevel*, LevelLeaderboardType, LevelLeaderboardMode);
     void onClose(cocos2d::CCObject*);
     void onUpdate(cocos2d::CCObject*);
-    void isCorrect(char const*);
+    bool isCorrect(char const*);
 
 };
 

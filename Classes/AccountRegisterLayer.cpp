@@ -5,108 +5,98 @@ AccountRegisterLayer::~AccountRegisterLayer() {
     this->cleanup();
 }
 
-AccountRegisterLayer::~AccountRegisterLayer() {
-    this->cleanup();
-}
-
-AccountRegisterLayer::~AccountRegisterLayer() {
-    this->cleanup();
-}
-
 void AccountRegisterLayer::resetLabel(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::validEmail(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::resetLabels() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::updateLabel(AccountError) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AccountRegisterLayer::disableNodes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::hideLoadingUI() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void AccountRegisterLayer::showLoadingUI() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void AccountRegisterLayer::validPassword(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::allowTextInput(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AccountRegisterLayer::createTextInput(cocos2d::CCPoint, cocos2d::CCSize, std::string, int) {
-    // TODO: Implement
+AccountRegisterLayer* AccountRegisterLayer::createTextInput(cocos2d::CCPoint, cocos2d::CCSize, std::string, int) {
+    return nullptr;
 }
 
-void AccountRegisterLayer::createTextLabel(cocos2d::CCPoint, std::string, cocos2d::CCSize) {
-    // TODO: Implement
+AccountRegisterLayer* AccountRegisterLayer::createTextLabel(cocos2d::CCPoint, std::string, cocos2d::CCSize) {
+    return nullptr;
 }
 
 void AccountRegisterLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AccountRegisterLayer::createTextBackground(cocos2d::CCPoint, cocos2d::CCSize) {
-    // TODO: Implement
+AccountRegisterLayer* AccountRegisterLayer::createTextBackground(cocos2d::CCPoint, cocos2d::CCSize) {
+    return nullptr;
 }
 
 void AccountRegisterLayer::registerAccountFailed(AccountError) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::registerAccountFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AccountRegisterLayer::init() {
-    bool ret = true;
+bool AccountRegisterLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -121,18 +111,18 @@ void AccountRegisterLayer::create() {
 }
 
 void AccountRegisterLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::onSubmit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::toggleUI(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountRegisterLayer::validUser(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

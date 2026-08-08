@@ -5,161 +5,150 @@ GJSmartTemplate::~GJSmartTemplate() {
     this->cleanup();
 }
 
-GJSmartTemplate::~GJSmartTemplate() {
-    this->cleanup();
-}
-
-GJSmartTemplate::~GJSmartTemplate() {
-    this->cleanup();
-}
-
 void GJSmartTemplate::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void GJSmartTemplate::getPrefabs(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::savePrefab(std::string, std::string) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
-void GJSmartTemplate::isUnrequired(std::string) {
-    // TODO: Implement
+bool GJSmartTemplate::isUnrequired(std::string) {
+    return false;
 }
 
 void GJSmartTemplate::offsetForDir(GJSmartDirection, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::removePrefab(std::string, int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJSmartTemplate::flipBlockType(SmartBlockType, bool, bool) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJSmartTemplate::offsetForType(SmartBlockType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::scanForPrefab(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::flipBlockTypeX(SmartBlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJSmartTemplate::flipBlockTypeY(SmartBlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void GJSmartTemplate::getNoCornerKey(std::string) {
-    // TODO: Implement
+std::string GJSmartTemplate::getNoCornerKey(std::string) {
+    return "";
 }
 
-void GJSmartTemplate::createWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+GJSmartTemplate* GJSmartTemplate::createWithCoder(DS_Dictionary*) {
+    return nullptr;
 }
 
 void GJSmartTemplate::encodeWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+    // Save/encode operation - stub
 }
 
 void GJSmartTemplate::getPrefabWithID(std::string, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::getRandomPrefab(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::offsetForObject(SmartGameObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::rotateBlockType(SmartBlockType, int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJSmartTemplate::saveRemapToDict(std::string, std::string, cocos2d::CCDictionary*) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
-void GJSmartTemplate::getSimplifiedKey(std::string) {
-    // TODO: Implement
+std::string GJSmartTemplate::getSimplifiedKey(std::string) {
+    return "";
 }
 
 void GJSmartTemplate::getTemplateState(std::vector<SmartPrefabResult>&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::keyFromNeighbors(SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::keyFromNeighbors(cocos2d::CCPoint, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::generateRemapDict() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::getSimplifiedType(SmartBlockType, bool&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::logTemplateStatus(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::rotateBlockType90(SmartBlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJSmartTemplate::smartObjectToType(SmartGameObject*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::keyFromNeighborsOld(bool, bool, bool, bool, bool, bool, bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::resetScannedPrefabs() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJSmartTemplate::shouldDiscardObject(SmartBlockType, GJSmartDirection) {
-    // TODO: Implement
+bool GJSmartTemplate::shouldDiscardObject(SmartBlockType, GJSmartDirection) {
+    return false;
 }
 
-void GJSmartTemplate::getVerySimplifiedKey(std::string) {
-    // TODO: Implement
+std::string GJSmartTemplate::getVerySimplifiedKey(std::string) {
+    return "";
 }
 
 void GJSmartTemplate::smartTypeToObjectKey(SmartBlockType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::getTotalChanceForPrefab(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::applyTransformationsForType(SmartBlockType, cocos2d::CCSprite*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJSmartTemplate::init() {
-    bool ret = true;
+bool GJSmartTemplate::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -174,27 +163,26 @@ void GJSmartTemplate::create() {
 }
 
 void GJSmartTemplate::flipKey(std::string, bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJSmartTemplate::canEncode() {
-    // TODO: Implement
+bool GJSmartTemplate::canEncode() {
+    return false;
 }
 
 void GJSmartTemplate::getPrefab(cocos2d::CCPoint, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::getPrefab(std::string, bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::rotateKey(std::string, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartTemplate::saveRemap(std::string) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 

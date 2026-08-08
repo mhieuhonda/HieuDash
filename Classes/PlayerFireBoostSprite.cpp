@@ -5,30 +5,22 @@ PlayerFireBoostSprite::~PlayerFireBoostSprite() {
     this->cleanup();
 }
 
-PlayerFireBoostSprite::~PlayerFireBoostSprite() {
-    this->cleanup();
-}
-
-PlayerFireBoostSprite::~PlayerFireBoostSprite() {
-    this->cleanup();
-}
-
 void PlayerFireBoostSprite::animateFireIn() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PlayerFireBoostSprite::animateFireOut() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PlayerFireBoostSprite::loopFireAnimation() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void PlayerFireBoostSprite::init() {
-    bool ret = true;
+bool PlayerFireBoostSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

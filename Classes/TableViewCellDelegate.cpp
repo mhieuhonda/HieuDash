@@ -2,18 +2,18 @@
 #include "TableViewCellDelegate.h"
 
 void TableViewCellDelegate::getSelectedCellIdx() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableViewCellDelegate::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableViewCellDelegate::getCellDelegateType() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void TableViewCellDelegate::shouldSnapToSelected() {
-    // TODO: Implement
+bool TableViewCellDelegate::shouldSnapToSelected() {
+    return false;
 }
 

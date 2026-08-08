@@ -5,34 +5,26 @@ CCContentManager::~CCContentManager() {
     this->cleanup();
 }
 
-CCContentManager::~CCContentManager() {
-    this->cleanup();
-}
-
-CCContentManager::~CCContentManager() {
-    this->cleanup();
-}
-
 void CCContentManager::clearCache() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CCContentManager::sharedManager() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CCContentManager::init() {
-    bool ret = true;
+bool CCContentManager::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CCContentManager::addDict(char const*, bool) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void CCContentManager::addDictDS(char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

@@ -5,22 +5,14 @@ HSVWidgetPopup::~HSVWidgetPopup() {
     this->cleanup();
 }
 
-HSVWidgetPopup::~HSVWidgetPopup() {
-    this->cleanup();
-}
-
-HSVWidgetPopup::~HSVWidgetPopup() {
-    this->cleanup();
-}
-
 void HSVWidgetPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HSVWidgetPopup::init(cocos2d::_ccHSVValue, HSVWidgetDelegate*, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void HSVWidgetPopup::create(cocos2d::_ccHSVValue, HSVWidgetDelegate*, std::strin
 }
 
 void HSVWidgetPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

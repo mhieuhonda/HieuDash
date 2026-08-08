@@ -10,10 +10,10 @@ class EndTriggerGameObject : public EffectGameObject {
 public:
     virtual ~EndTriggerGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void triggerObject(GJBaseGameLayer*, int, std::vector<int> const*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
-    void init() override;
+    bool init() override;
     void create();
 
 protected:

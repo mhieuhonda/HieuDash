@@ -5,90 +5,82 @@ GJPFollowCommandLayer::~GJPFollowCommandLayer() {
     this->cleanup();
 }
 
-GJPFollowCommandLayer::~GJPFollowCommandLayer() {
-    this->cleanup();
-}
-
-GJPFollowCommandLayer::~GJPFollowCommandLayer() {
-    this->cleanup();
-}
-
 void GJPFollowCommandLayer::updateXMod() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updateYMod() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPFollowCommandLayer::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPFollowCommandLayer::updateDurLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updateDuration() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updateMaxSpeed() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::onUpdateGroupID(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updateXModLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updateYModLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::sliderXModChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPFollowCommandLayer::sliderYModChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPFollowCommandLayer::updateOffsetLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updatePlayerOffset() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updateMaxSpeedLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::updateTargetGroupID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPFollowCommandLayer::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPFollowCommandLayer::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -103,6 +95,6 @@ void GJPFollowCommandLayer::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void GJPFollowCommandLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

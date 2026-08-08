@@ -5,26 +5,18 @@ GJChestSprite::~GJChestSprite() {
     this->cleanup();
 }
 
-GJChestSprite::~GJChestSprite() {
-    this->cleanup();
-}
-
-GJChestSprite::~GJChestSprite() {
-    this->cleanup();
-}
-
 void GJChestSprite::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GJChestSprite::switchToState(ChestSpriteState, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJChestSprite::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,6 +31,6 @@ void GJChestSprite::create(int) {
 }
 
 void GJChestSprite::setColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_color
+    // Setter operation - stub
 }
 

@@ -5,34 +5,26 @@ GJWorldNode::~GJWorldNode() {
     this->cleanup();
 }
 
-GJWorldNode::~GJWorldNode() {
-    this->cleanup();
-}
-
-GJWorldNode::~GJWorldNode() {
-    this->cleanup();
-}
-
 void GJWorldNode::addDotsToLevel(int, bool) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJWorldNode::unlockActiveItem() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJWorldNode::dotPositionForLevel(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWorldNode::positionForLevelButton(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWorldNode::init(int, WorldSelectLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,18 +39,18 @@ void GJWorldNode::create(int, WorldSelectLayer*) {
 }
 
 void GJWorldNode::onLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWorldNode::playStep1() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJWorldNode::playStep2() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJWorldNode::playStep3() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

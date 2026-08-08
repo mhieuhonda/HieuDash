@@ -5,86 +5,66 @@ GManager::~GManager() {
     this->cleanup();
 }
 
-GManager::~GManager() {
-    this->cleanup();
-}
-
-GManager::~GManager() {
-    this->cleanup();
-}
-
 void GManager::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void GManager::tryLoadData(DS_Dictionary*, std::string const&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GManager::encodeDataTo(DS_Dictionary*) {
-    // TODO: Implement
+    // Data encoding to dictionary - stub
 }
 
-void GManager::getSaveString() {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string GManager::getSaveString() {
+    return "";
 }
 
 void GManager::loadFromString(std::string&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GManager::loadDataFromFile(std::string const&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void GManager::getCompressedSaveString() {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string GManager::getCompressedSaveString() {
+    return "";
 }
 
 void GManager::loadFromCompressedString(std::string&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void GManager::init() {
+bool GManager::init() {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GManager::load() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GManager::save() {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void GManager::setup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GManager::saveData(DS_Dictionary*, std::string) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void GManager::saveGMTo(std::string) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void GManager::firstLoad() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

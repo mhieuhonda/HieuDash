@@ -16,7 +16,7 @@ public:
     void setRotation(float);
     void setStartPos(cocos2d::CCPoint);
     void setRotation2(float);
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void getTeleportXOff(cocos2d::CCNode*);
     void removeFromGroup(int);
     void removeFromGroup2(int);

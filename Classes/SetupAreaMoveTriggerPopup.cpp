@@ -5,62 +5,54 @@ SetupAreaMoveTriggerPopup::~SetupAreaMoveTriggerPopup() {
     this->cleanup();
 }
 
-SetupAreaMoveTriggerPopup::~SetupAreaMoveTriggerPopup() {
-    this->cleanup();
-}
-
-SetupAreaMoveTriggerPopup::~SetupAreaMoveTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupAreaMoveTriggerPopup::getModeValues(int, int&, bool&, bool&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaMoveTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaMoveTriggerPopup::onSpecialTarget(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaMoveTriggerPopup::updateInputNode(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAreaMoveTriggerPopup::updateInputValue(int, float&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAreaMoveTriggerPopup::onNextFreeEffectID(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaMoveTriggerPopup::addAreaDefaultControls(int) {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void SetupAreaMoveTriggerPopup::updateEnterTargetIDState() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAreaMoveTriggerPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAreaMoveTriggerPopup::triggerSliderValueFromValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaMoveTriggerPopup::triggerValueFromSliderValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaMoveTriggerPopup::init(EnterEffectObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -75,6 +67,6 @@ void SetupAreaMoveTriggerPopup::create(EnterEffectObject*, cocos2d::CCArray*) {
 }
 
 void SetupAreaMoveTriggerPopup::onMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

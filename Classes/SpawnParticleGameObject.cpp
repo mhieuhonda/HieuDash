@@ -5,27 +5,18 @@ SpawnParticleGameObject::~SpawnParticleGameObject() {
     this->cleanup();
 }
 
-SpawnParticleGameObject::~SpawnParticleGameObject() {
-    this->cleanup();
-}
-
-SpawnParticleGameObject::~SpawnParticleGameObject() {
-    this->cleanup();
-}
-
-void SpawnParticleGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string SpawnParticleGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void SpawnParticleGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void SpawnParticleGameObject::init() {
-    bool ret = true;
+bool SpawnParticleGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

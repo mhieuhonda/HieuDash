@@ -28,11 +28,11 @@ public:
     void checkForEnd();
     void colorObject(int, cocos2d::_ccColor3B);
     void commitJumps();
-    void shouldBlend(int);
+    bool shouldBlend(int);
     void showNewBest(bool, int, int, bool, bool, bool);
     void spawnCircle();
     void updateColor(cocos2d::_ccColor3B&, float, int, bool, float, cocos2d::_ccHSVValue&, int, bool, EffectGameObject*, int, int);
-    void canPauseGame();
+    bool canPauseGame();
     void dialogClosed(DialogLayer*);
     void prepareMusic(bool);
     void showEndLayer();
@@ -53,7 +53,7 @@ public:
     void updateAttempts();
     void updateTimeWarp(float);
     void queueCheckpoint();
-    void shouldDebugDraw();
+    bool shouldDebugDraw();
     void storeCheckpoint(CheckpointObject*);
     void toggleDebugDraw();
     void toggleInfoLabel();
@@ -61,11 +61,11 @@ public:
     void updateTimeLabel(int, int, bool);
     void applyEnterEffect(GameObject*, int, bool);
     void checkpointWithID(int);
-    void createCheckpoint();
+    PlayLayer* createCheckpoint();
     void currencyWillExit(CurrencyRewardLayer*);
     void delayedFullReset();
     void getTempMilliTime();
-    void isGameplayActive();
+    bool isGameplayActive();
     void opacityForObject(GameObject*);
     void removeAllObjects();
     void removeCheckpoint(bool);
@@ -129,7 +129,7 @@ public:
     void activatePlatformerEndTrigger(EndTriggerGameObject*, std::vector<int> const&);
     void prepareCreateObjectsFromSetup(std::string&);
     void processCreateObjectsFromSetup();
-    void createObjectsFromSetupFinished();
+    PlayLayer* createObjectsFromSetupFinished();
     void playPlatformerEndAnimationToPos(cocos2d::CCPoint, bool);
     void init(GJGameLevel*, bool, bool) override;
     void scene(GJGameLevel*, bool, bool);

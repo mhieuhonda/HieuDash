@@ -5,415 +5,407 @@ SetupTriggerPopup::~SetupTriggerPopup() {
     this->cleanup();
 }
 
-SetupTriggerPopup::~SetupTriggerPopup() {
-    this->cleanup();
-}
-
-SetupTriggerPopup::~SetupTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupTriggerPopup::getObjects() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onEaseRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::pageChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::sliderBegan(Slider*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::sliderEnded(Slider*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::toggleGroup(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateLabel(int, std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateValue(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::addInfoLabel(std::string, float, cocos2d::CCPoint, int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupTriggerPopup::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onPlusButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateSlider(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateSlider(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::valueChanged(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::addHelpButton(std::string, std::string, float) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupTriggerPopup::addCloseButton(std::string) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupTriggerPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onCustomButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onDisableValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onMultiTrigger(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::addCustomButton(int, ButtonSprite*, cocos2d::CCPoint, int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupTriggerPopup::addObjectToPage(cocos2d::CCObject*, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupTriggerPopup::closeInputNodes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::getTriggerValue(int, GameObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateEaseLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateInputNode(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::addObjectToGroup(cocos2d::CCObject*, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupTriggerPopup::addObjectsToPage(cocos2d::CCArray*, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
-void SetupTriggerPopup::createPlusButton(int, cocos2d::CCPoint, float, std::string, int, int) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createPlusButton(int, cocos2d::CCPoint, float, std::string, int, int) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::getPageContainer(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onCustomEaseRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onTouchTriggered(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SetupTriggerPopup::shouldLimitValue(int) {
-    // TODO: Implement
+bool SetupTriggerPopup::shouldLimitValue(int) {
+    return false;
 }
 
 void SetupTriggerPopup::toggleLimitValue(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::togglePageArrows(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::triggerArrowLeft(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateInputValue(int, float&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateToggleItem(int, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::valuePopupClosed(ConfigureValuePopup*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::addObjectsToGroup(cocos2d::CCArray*, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
-void SetupTriggerPopup::createPageButtons(float, int) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createPageButtons(float, int) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::getGroupContainer(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::getMaxSliderValue(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::getMinSliderValue(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::getTruncatedValue(float, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onCustomEaseArrow(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::setMaxSliderValue(float, int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SetupTriggerPopup::setMinSliderValue(float, int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SetupTriggerPopup::triggerArrowRight(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateEditorLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SetupTriggerPopup::createCustomButton(int, std::string, std::string, cocos2d::CCPoint, float, float, bool, int, int) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createCustomButton(int, std::string, std::string, cocos2d::CCPoint, float, float, bool, int, int) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SetupTriggerPopup::createValueControl(int, std::string, cocos2d::CCPoint, float, float, float) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createValueControl(int, std::string, cocos2d::CCPoint, float, float, float) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::onSpawnedByTrigger(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onCustomEaseArrowUp(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::resetDisabledValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::triggerArrowChanged(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateEaseRateLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateValueControls(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SetupTriggerPopup::createEasingControls(cocos2d::CCPoint, float, int, int) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createEasingControls(cocos2d::CCPoint, float, int, int) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::removeObjectFromPage(cocos2d::CCObject*, int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupTriggerPopup::toggleDisableButtons(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::triggerSliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateInputNodeLabel(int, std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateTouchTriggered() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::onCustomEaseArrowDown(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::removeObjectFromGroup(cocos2d::CCObject*, int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupTriggerPopup::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateCustomEaseLabel(int, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateMultiTriggerBtn() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::getTruncatedValueByTag(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::refreshGroupVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateSpawnedByTrigger() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SetupTriggerPopup::createMultiTriggerItems(cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::CCPoint) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createMultiTriggerItems(cocos2d::CCPoint, cocos2d::CCPoint, cocos2d::CCPoint) {
+    return nullptr;
 }
 
-void SetupTriggerPopup::createToggleValueControl(int, std::string, cocos2d::CCPoint, bool, int, int, float) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createToggleValueControl(int, std::string, cocos2d::CCPoint, bool, int, int, float) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::toggleEaseRateVisibility() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SetupTriggerPopup::createValueControlWArrows(int, std::string, cocos2d::CCPoint, float) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createValueControlWArrows(int, std::string, cocos2d::CCPoint, float) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::updateCustomEaseRateLabel(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::updateCustomToggleTrigger(int, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SetupTriggerPopup::createCustomEasingControls(std::string, cocos2d::CCPoint, float, int, int, int, int) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createCustomEasingControls(std::string, cocos2d::CCPoint, float, int, int, int, int) {
+    return nullptr;
 }
 
-void SetupTriggerPopup::createValueControlAdvanced(int, std::string, cocos2d::CCPoint, float, bool, InputValueType, int, bool, float, float, int, int, GJInputStyle, int, bool) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createValueControlAdvanced(int, std::string, cocos2d::CCPoint, float, bool, InputValueType, int, bool, float, float, int, int, GJInputStyle, int, bool) {
+    return nullptr;
 }
 
 void SetupTriggerPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTriggerPopup::triggerSliderValueFromValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::triggerValueFromSliderValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SetupTriggerPopup::createMultiTriggerItemsCorner() {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createMultiTriggerItemsCorner() {
+    return nullptr;
 }
 
-void SetupTriggerPopup::createCustomToggleValueControl(int, bool, bool, std::string, cocos2d::CCPoint, bool, int, int) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createCustomToggleValueControl(int, bool, bool, std::string, cocos2d::CCPoint, bool, int, int) {
+    return nullptr;
 }
 
-void SetupTriggerPopup::createMultiTriggerItemsDefault() {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createMultiTriggerItemsDefault() {
+    return nullptr;
 }
 
 void SetupTriggerPopup::toggleCustomEaseRateVisibility(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SetupTriggerPopup::createToggleValueControlAdvanced(int, std::string, cocos2d::CCPoint, bool, int, int, float, float, float, cocos2d::CCPoint) {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createToggleValueControlAdvanced(int, std::string, cocos2d::CCPoint, bool, int, int, float, float, float, cocos2d::CCPoint) {
+    return nullptr;
 }
 
-void SetupTriggerPopup::createMultiTriggerItemsDefaultVertical() {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createMultiTriggerItemsDefaultVertical() {
+    return nullptr;
 }
 
-void SetupTriggerPopup::createMultiTriggerItemsDefaultHorizontal() {
-    // TODO: Implement
+SetupTriggerPopup* SetupTriggerPopup::createMultiTriggerItemsDefaultHorizontal() {
+    return nullptr;
 }
 
-void SetupTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*, float, float, int) {
+bool SetupTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*, float, float, int) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupTriggerPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupTriggerPopup::create(EffectGameObject*, cocos2d::CCArray*, float, float, int) {
@@ -437,42 +429,42 @@ void SetupTriggerPopup::create(float, float) {
 }
 
 void SetupTriggerPopup::onEase(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::onPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::hideAll() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupTriggerPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::addTitle(std::string) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupTriggerPopup::getValue(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::goToPage(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::preSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupTriggerPopup::toggleBG(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTriggerPopup::postSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

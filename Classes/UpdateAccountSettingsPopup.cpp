@@ -5,30 +5,22 @@ UpdateAccountSettingsPopup::~UpdateAccountSettingsPopup() {
     this->cleanup();
 }
 
-UpdateAccountSettingsPopup::~UpdateAccountSettingsPopup() {
-    this->cleanup();
-}
-
-UpdateAccountSettingsPopup::~UpdateAccountSettingsPopup() {
-    this->cleanup();
-}
-
 void UpdateAccountSettingsPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UpdateAccountSettingsPopup::updateSettingsFailed() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void UpdateAccountSettingsPopup::updateSettingsFinished() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void UpdateAccountSettingsPopup::init(GJAccountSettingsLayer*, int, int, int, std::string, std::string, std::string, std::string, std::string, std::string, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,6 +35,6 @@ void UpdateAccountSettingsPopup::create(GJAccountSettingsLayer*, int, int, int, 
 }
 
 void UpdateAccountSettingsPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

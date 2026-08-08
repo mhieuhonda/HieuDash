@@ -5,18 +5,10 @@ GJUserMessage::~GJUserMessage() {
     this->cleanup();
 }
 
-GJUserMessage::~GJUserMessage() {
-    this->cleanup();
-}
-
-GJUserMessage::~GJUserMessage() {
-    this->cleanup();
-}
-
-void GJUserMessage::init() {
-    bool ret = true;
+bool GJUserMessage::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

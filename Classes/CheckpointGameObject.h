@@ -11,7 +11,7 @@ public:
     virtual ~CheckpointGameObject();
 
     void resetObject();
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void restoreObject();
     void triggerObject(GJBaseGameLayer*, int, std::vector<int> const*);
     void resetCheckpoint();
@@ -20,7 +20,7 @@ public:
     void setupCustomSprites(std::string);
     void updateSyncedAnimation(float, int);
     void updateCheckpointSpriteVisibility();
-    void init() override;
+    bool init() override;
     void create();
 
 protected:

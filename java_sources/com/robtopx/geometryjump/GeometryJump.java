@@ -1,11 +1,15 @@
 package com.robtopx.geometryjump;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 import org.fmod.FMOD;
+import com.hieudash.LanguageManager;
+import com.hieudash.LanguageSettingsPopup;
+import com.hieudash.AutoLoginPopup;
 
-/* loaded from: classes.dex */
+/* loaded from: classes.dex - Modified for HieuDash */
 public class GeometryJump extends Cocos2dxActivity {
     static {
         System.loadLibrary("fmod");
@@ -21,6 +25,24 @@ public class GeometryJump extends Cocos2dxActivity {
     protected void onCreate(Bundle bundle) {
         FMOD.init(this);
         super.onCreate(bundle);
+
+        // --- HieuDash: First launch check and language/auto-login integration ---
+        SharedPreferences prefs = getSharedPreferences("HieuDashPrefs", 0);
+
+        // Check if first launch
+        if (prefs.getBoolean("firstLaunch", true)) {
+            // Mark as no longer first launch
+            prefs.edit().putBoolean("firstLaunch", false).apply();
+
+            // Show language settings popup on first launch
+            new LanguageSettingsPopup(this).show();
+        }
+
+        // Load language preference
+        LanguageManager.getLanguage(this);
+
+        // Show auto-login popup
+        new AutoLoginPopup(this).show();
     }
 
     @Override // org.cocos2dx.lib.Cocos2dxActivity

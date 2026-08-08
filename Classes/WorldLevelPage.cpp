@@ -5,27 +5,19 @@ WorldLevelPage::~WorldLevelPage() {
     this->cleanup();
 }
 
-WorldLevelPage::~WorldLevelPage() {
-    this->cleanup();
-}
-
-WorldLevelPage::~WorldLevelPage() {
-    this->cleanup();
-}
-
 void WorldLevelPage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldLevelPage::init(GJGameLevel*, GJWorldNode*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void WorldLevelPage::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void WorldLevelPage::create(GJGameLevel*, GJWorldNode*) {
@@ -39,18 +31,18 @@ void WorldLevelPage::create(GJGameLevel*, GJWorldNode*) {
 }
 
 void WorldLevelPage::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldLevelPage::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void WorldLevelPage::onSong(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldLevelPage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

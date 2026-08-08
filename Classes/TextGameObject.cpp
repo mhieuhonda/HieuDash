@@ -5,39 +5,30 @@ TextGameObject::~TextGameObject() {
     this->cleanup();
 }
 
-TextGameObject::~TextGameObject() {
-    this->cleanup();
-}
-
-TextGameObject::~TextGameObject() {
-    this->cleanup();
-}
-
-void TextGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string TextGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void TextGameObject::getTextKerning() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TextGameObject::updateTextObject(std::string, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void TextGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void TextGameObject::updateTextKerning(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void TextGameObject::init(cocos2d::CCTexture2D*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

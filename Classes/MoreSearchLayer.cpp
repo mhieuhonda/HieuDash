@@ -5,86 +5,78 @@ MoreSearchLayer::~MoreSearchLayer() {
     this->cleanup();
 }
 
-MoreSearchLayer::~MoreSearchLayer() {
-    this->cleanup();
-}
-
-MoreSearchLayer::~MoreSearchLayer() {
-    this->cleanup();
-}
-
 void MoreSearchLayer::onFeatured(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onFollowed(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onOriginal(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onSongMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::selectSong(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onCompleted(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onLegendary(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onTwoPlayer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MoreSearchLayer::onSongFilter(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::audioPrevious(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onUncompleted(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::toggleSongNodes(bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::updateAudioLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MoreSearchLayer::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MoreSearchLayer::init() {
+bool MoreSearchLayer::init() {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -99,34 +91,34 @@ void MoreSearchLayer::create() {
 }
 
 void MoreSearchLayer::onEpic(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onCoins(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onMythic(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onNoStar(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::audioNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreSearchLayer::onFriends(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

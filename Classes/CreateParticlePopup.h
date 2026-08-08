@@ -50,7 +50,7 @@ public:
     void centerAlignParticle(cocos2d::CCObject*);
     void onAnimateActiveOnly(cocos2d::CCObject*);
     void updateSliderForType(gjParticleValue);
-    void createParticleSlider(gjParticleValue, int, bool, cocos2d::CCPoint, cocos2d::CCArray*);
+    CreateParticlePopup* createParticleSlider(gjParticleValue, int, bool, cocos2d::CCPoint, cocos2d::CCArray*);
     void maxSliderValueForType(gjParticleValue);
     void minSliderValueForType(gjParticleValue);
     void textInputShouldOffset(CCTextInputNode*, float);

@@ -2,10 +2,10 @@
 #include "GJAccountSettingsDelegate.h"
 
 void GJAccountSettingsDelegate::updateSettingsFailed() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJAccountSettingsDelegate::updateSettingsFinished() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

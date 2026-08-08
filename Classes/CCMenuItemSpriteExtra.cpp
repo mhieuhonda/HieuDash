@@ -5,30 +5,22 @@ CCMenuItemSpriteExtra::~CCMenuItemSpriteExtra() {
     this->cleanup();
 }
 
-CCMenuItemSpriteExtra::~CCMenuItemSpriteExtra() {
-    this->cleanup();
-}
-
-CCMenuItemSpriteExtra::~CCMenuItemSpriteExtra() {
-    this->cleanup();
-}
-
 void CCMenuItemSpriteExtra::unselected() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemSpriteExtra::setSizeMult(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCMenuItemSpriteExtra::useAnimationType(MenuAnimationType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemSpriteExtra::init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,10 +35,10 @@ void CCMenuItemSpriteExtra::create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::
 }
 
 void CCMenuItemSpriteExtra::activate() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemSpriteExtra::selected() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

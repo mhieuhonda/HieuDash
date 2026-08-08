@@ -5,28 +5,18 @@ EditButtonBar::~EditButtonBar() {
     this->cleanup();
 }
 
-EditButtonBar::~EditButtonBar() {
-    this->cleanup();
-}
-
-EditButtonBar::~EditButtonBar() {
-    this->cleanup();
-}
-
 void EditButtonBar::reloadItems(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void EditButtonBar::loadFromItems(cocos2d::CCArray*, int, int, bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void EditButtonBar::init(cocos2d::CCArray*, cocos2d::CCPoint, int, bool, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -41,18 +31,18 @@ void EditButtonBar::create(cocos2d::CCArray*, cocos2d::CCPoint, int, bool, int, 
 }
 
 void EditButtonBar::onLeft(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditButtonBar::getPage() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditButtonBar::onRight(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditButtonBar::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,22 +5,14 @@ ExplodeItemNode::~ExplodeItemNode() {
     this->cleanup();
 }
 
-ExplodeItemNode::~ExplodeItemNode() {
-    this->cleanup();
-}
-
-ExplodeItemNode::~ExplodeItemNode() {
-    this->cleanup();
-}
-
-void ExplodeItemNode::createSprites(int, int, float, float, float, float, float, float, cocos2d::_ccColor4F, cocos2d::_ccColor4F, bool) {
-    // TODO: Implement
+ExplodeItemNode* ExplodeItemNode::createSprites(int, int, float, float, float, float, float, float, cocos2d::_ccColor4F, cocos2d::_ccColor4F, bool) {
+    return nullptr;
 }
 
 void ExplodeItemNode::init(cocos2d::CCRenderTexture*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,7 +27,6 @@ void ExplodeItemNode::create(cocos2d::CCRenderTexture*) {
 }
 
 void ExplodeItemNode::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 

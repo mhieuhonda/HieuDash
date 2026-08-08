@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class SecretLayer2 {
+class SecretLayer2 : public cocos2d::CCLayer {
 public:
     virtual ~SecretLayer2();
 
@@ -27,7 +27,7 @@ public:
     void updateSearchLabel(char const*);
     void showCompletedLevel();
     void updateMessageLabel(std::string);
-    void init();
+    bool init();
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

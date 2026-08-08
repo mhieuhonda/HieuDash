@@ -12,13 +12,13 @@ public:
 
     void changeRemap(int, int, bool);
     void removeRemap(int, int);
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void triggerObject(GJBaseGameLayer*, int, std::vector<int> const*);
     void updateRemapKeys(std::vector<int> const&);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void getRemapWithSource(int);
     void getRemapWithTarget(int);
-    void init() override;
+    bool init() override;
     void create();
     void addRemap(int, int);
 

@@ -5,22 +5,22 @@
 #include "cocos2d.h"
 #include <string>
 
-class CustomSongCell {
+class CustomSongCell : public cocos2d::CCNode {
 public:
     CustomSongCell(char const*, float, float);
     CustomSongCell(char const*, float, float);
 
     virtual ~CustomSongCell();
 
-    void shouldReload();
+    bool shouldReload();
     void songIDChanged(int);
     void updateBGColor(int);
     void loadFromObject(SongInfoObject*);
     void getActiveSongID();
-    void getSongFileName();
+    std::string getSongFileName();
     void getLevelSettings();
     void draw();
-    void init();
+    bool init();
     void onDelete(cocos2d::CCObject*);
 
 protected:

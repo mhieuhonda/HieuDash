@@ -5,47 +5,38 @@ GJRotationControl::~GJRotationControl() {
     this->cleanup();
 }
 
-GJRotationControl::~GJRotationControl() {
-    this->cleanup();
-}
-
-GJRotationControl::~GJRotationControl() {
-    this->cleanup();
-}
-
 void GJRotationControl::finishTouch() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRotationControl::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRotationControl::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRotationControl::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRotationControl::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRotationControl::updateSliderPosition(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRotationControl::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GJRotationControl::init() {
-    bool ret = true;
+bool GJRotationControl::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -60,6 +51,6 @@ void GJRotationControl::create() {
 }
 
 void GJRotationControl::setAngle(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 

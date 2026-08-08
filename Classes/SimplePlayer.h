@@ -13,9 +13,9 @@ public:
     void asyncLoadIcon(int, IconType);
     void hideSecondary();
     void setSecondColor(cocos2d::_ccColor3B const&);
-    void createRobotSprite(int);
+    SimplePlayer* createRobotSprite(int);
     void updatePlayerFrame(int, IconType);
-    void createSpiderSprite(int);
+    SimplePlayer* createSpiderSprite(int);
     void iconFinishedLoading(int, IconType);
     void enableCustomGlowColor(cocos2d::_ccColor3B const&);
     void disableCustomGlowColor();

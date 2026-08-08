@@ -19,13 +19,13 @@ public:
     void itemWasUsed(int);
     void resumeTimer(int);
     void saveToState(EffectManagerState&);
-    void shouldBlend(int);
+    bool shouldBlend(int);
     void spawnObject(GameObject*, float, std::vector<int> const&, int, int);
     void timeForItem(int);
     void timerExists(int);
     void toggleGroup(int, bool);
     void updateTimer(int, double);
-    void countForItem(int);
+    int countForItem(int);
     void playerButton(bool, bool);
     void resetEffects();
     void setFollowing(int, int, bool);
@@ -35,7 +35,7 @@ public:
     void wasFollowing(int, int);
     void colorForIndex(int);
     void getMixedColor(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float);
-    void getSaveString();
+    std::string getSaveString();
     void loadFromState(EffectManagerState&);
     void processColors();
     void updateEffects(float);
@@ -44,7 +44,7 @@ public:
     void colorForEffect(cocos2d::_ccColor3B, cocos2d::_ccHSVValue);
     void getColorAction(int);
     void getColorSprite(int);
-    void isGroupEnabled(int);
+    bool isGroupEnabled(int);
     void runPulseEffect(int, bool, float, float, float, PulseEffectType, cocos2d::_ccColor3B, cocos2d::_ccHSVValue, int, bool, bool, bool, bool, int, int);
     void setColorAction(ColorAction*, int);
     void colorForGroupID(int, cocos2d::_ccColor3B const&, bool);
@@ -56,10 +56,10 @@ public:
     void runTimerTrigger(int, double, bool, int, std::vector<int> const&, int, int);
     void setupFromString(std::string);
     void wouldCreateLoop(InheritanceNode*, int);
-    void hasBeenTriggered(int, int);
+    bool hasBeenTriggered(int, int);
     void resetMoveActions();
     void storeTriggeredID(int, int);
-    void createMoveCommand(cocos2d::CCPoint, int, float, int, float, bool, bool, bool, bool, float, float, int, int);
+    GJEffectManager* createMoveCommand(cocos2d::CCPoint, int, float, int, float, bool, bool, bool, bool, float, float, int, int);
     void preCollisionCheck();
     void removeColorAction(int);
     void removeTriggeredID(int, int);
@@ -72,7 +72,7 @@ public:
     void getAllColorSprites();
     void getMoveCommandNode(GroupCommandObject2*);
     void getPersistentState(std::unordered_map<int, int>, std::equal_to<int>, std::allocator<std::pair<const int, int> > >&, std::unordered_map<int, TimerItem>, std::equal_to<int>, std::allocator<std::pair<const int, TimerItem> > >&);
-    void hasActiveDualTouch();
+    bool hasActiveDualTouch();
     void keyForGroupIDColor(int, cocos2d::_ccColor3B const&, bool);
     void opacityModForGroup(int);
     void postCollisionCheck();
@@ -84,8 +84,8 @@ public:
     void updatePulseEffects(float);
     void activeColorForIndex(int);
     void colorForPulseEffect(cocos2d::_ccColor3B const&, PulseEffectAction*);
-    void createFollowCommand(float, float, float, int, int, int, int);
-    void createRotateCommand(float, float, int, int, int, float, bool, bool, bool, int, int);
+    GJEffectManager* createFollowCommand(float, float, float, int, int, int, int);
+    GJEffectManager* createRotateCommand(float, float, int, int, int, float, bool, bool, bool, int, int);
     void getLoadedMoveOffset(std::unordered_map<int, std::pair<double>, std::hash<int>, std::equal_to<int>, std::allocator<std::pair<const int, std::pair<double, double> > > >&);
     void getTempGroupCommand();
     void processPulseActions();
@@ -96,12 +96,12 @@ public:
     void updateOpacityEffects(float);
     void activeOpacityForIndex(int);
     void calculateLightBGColor(cocos2d::_ccColor3B);
-    void createKeyframeCommand(int, cocos2d::CCArray*, GameObject*, int, int, bool, float, float, float, float, float, float, std::vector<int> const&);
+    GJEffectManager* createKeyframeCommand(int, cocos2d::CCArray*, GameObject*, int, int, bool, float, float, float, float, float, float, std::vector<int> const&);
     void handleObjectCollision(bool, int, int);
     void removeAllPulseActions();
     void toggleTimerPersistent(int, bool);
     void tryGetMoveCommandNode(int);
-    void createTransformCommand(double, double, double, double, bool, float, int, int, int, float, bool, bool, int, int);
+    GJEffectManager* createTransformCommand(double, double, double, double, bool, float, int, int, int, float, bool, bool, int, int);
     void processInheritedColors();
     void resetTempGroupCommands(bool);
     void runTouchTriggerCommand(int, bool, TouchTriggerType, TouchTriggerControl, bool, std::vector<int> const&, int, int);
@@ -112,12 +112,12 @@ public:
     void transferPersistentItems();
     void controlActionsForTrigger(EffectGameObject*, GJActionCommand);
     void getOpacityActionForGroup(int);
-    void getPersistentStateString();
-    void hasPulseEffectForGroupID(int);
+    std::string getPersistentStateString();
+    bool hasPulseEffectForGroupID(int);
     void registerCollisionTrigger(int, int, int, bool, bool, std::vector<int> const&, int, int);
     void traverseInheritanceChain(InheritanceNode*);
     void calculateBaseActiveColors();
-    void createPlayerFollowCommand(float, float, int, float, float, int, int, int);
+    GJEffectManager* createPlayerFollowCommand(float, float, int, float, float, int, int, int);
     void loadPersistentStateString(std::string);
     void controlActionsForControlID(int, GJActionCommand);
     void updateActiveOpacityEffects();
@@ -125,7 +125,7 @@ public:
     void processCopyColorPulseActions();
     void removePersistentFromAllItems();
     void removePersistentFromAllTimers();
-    void init() override;
+    bool init() override;
     void reset();
     void create();
 

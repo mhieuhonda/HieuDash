@@ -5,26 +5,18 @@ TextAlertPopup::~TextAlertPopup() {
     this->cleanup();
 }
 
-TextAlertPopup::~TextAlertPopup() {
-    this->cleanup();
-}
-
-TextAlertPopup::~TextAlertPopup() {
-    this->cleanup();
-}
-
 void TextAlertPopup::setLabelColor(cocos2d::_ccColor3B) {
-    // TODO: Set m_labelColor
+    // Setter operation - stub
 }
 
 void TextAlertPopup::setAlertPosition(cocos2d::CCPoint, cocos2d::CCPoint) {
-    // TODO: Set m_alertPosition
+    // Setter operation - stub
 }
 
 void TextAlertPopup::init(std::string, float, float, int, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

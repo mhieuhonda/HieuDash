@@ -11,7 +11,7 @@ public:
     virtual ~SpecialAnimGameObject();
 
     void resetObject();
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void updateMainColor(cocos2d::_ccColor3B const&);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void updateSecondaryColor(cocos2d::_ccColor3B const&);

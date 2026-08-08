@@ -13,36 +13,26 @@ StatsCell::~StatsCell() {
     this->cleanup();
 }
 
-StatsCell::~StatsCell() {
-    this->cleanup();
-}
-
-StatsCell::~StatsCell() {
-    this->cleanup();
-}
-
 void StatsCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void StatsCell::loadFromObject(StatsObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void StatsCell::getTitleFromKey(char const*) {
-    // TODO: Implement
+std::string StatsCell::getTitleFromKey(char const*) {
+    return "";
 }
 
 void StatsCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void StatsCell::init() {
-    bool ret = true;
+bool StatsCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

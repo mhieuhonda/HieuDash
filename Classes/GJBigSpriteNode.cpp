@@ -5,18 +5,10 @@ GJBigSpriteNode::~GJBigSpriteNode() {
     this->cleanup();
 }
 
-GJBigSpriteNode::~GJBigSpriteNode() {
-    this->cleanup();
-}
-
-GJBigSpriteNode::~GJBigSpriteNode() {
-    this->cleanup();
-}
-
-void GJBigSpriteNode::init() {
-    bool ret = true;
+bool GJBigSpriteNode::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

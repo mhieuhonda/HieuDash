@@ -2,13 +2,13 @@
 #ifndef CCCONTENTMANAGER_H_
 #define CCCONTENTMANAGER_H_
 
-class CCContentManager {
+class CCContentManager : public GManager {
 public:
     virtual ~CCContentManager();
 
     void clearCache();
     void sharedManager();
-    void init();
+    bool init();
     void addDict(char const*, bool);
     void addDictDS(char const*);
 

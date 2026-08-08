@@ -5,200 +5,187 @@ LevelInfoLayer::~LevelInfoLayer() {
     this->cleanup();
 }
 
-LevelInfoLayer::~LevelInfoLayer() {
-    this->cleanup();
-}
-
-LevelInfoLayer::~LevelInfoLayer() {
-    this->cleanup();
-}
-
 void LevelInfoLayer::onFavorite(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onAddToList(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void LevelInfoLayer::onLevelInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onRateDemon(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onRateStars(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onSetFolder(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::confirmClone(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onPlayReplay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelInfoLayer::confirmDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelInfoLayer::downloadLevel() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelInfoLayer::loadLevelStep() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelInfoLayer::onOwnerDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelInfoLayer::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::tryCloneLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::incrementLikes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onLevelOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onRateStarsMod(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::setupLevelInfo() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void LevelInfoLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::rateLevelClosed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::showSongWarning() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LevelInfoLayer::showUpdateAlert(UpdateResponse) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelInfoLayer::confirmMoveToTop(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::setIDPopupClosed(SetIDPopup*, int) {
-    // TODO: Set m_iDPopupClosed
+    // Setter operation - stub
 }
 
 void LevelInfoLayer::incrementDislikes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::levelDeleteFailed(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelInfoLayer::levelUpdateFailed(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelInfoLayer::numberInputClosed(NumberInputLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::setupProgressBars() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void LevelInfoLayer::updateLabelValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelInfoLayer::updateSideButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelInfoLayer::confirmOwnerDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelInfoLayer::onLevelLeaderboard(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::confirmMoveToBottom(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::levelDeleteFinished(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelInfoLayer::levelDownloadFailed(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelInfoLayer::levelUpdateFinished(GJGameLevel*, UpdateResponse) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void LevelInfoLayer::shouldDownloadLevel() {
-    // Load from file/storage
-    // TODO: Implement loading
+bool LevelInfoLayer::shouldDownloadLevel() {
+    return false;
 }
 
 void LevelInfoLayer::setupPlatformerStats() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void LevelInfoLayer::levelDownloadFinished(GJGameLevel*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelInfoLayer::onEnterTransitionDidFinish() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void LevelInfoLayer::init(GJGameLevel*, bool) {
+bool LevelInfoLayer::init(GJGameLevel*, bool) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelInfoLayer::scene(GJGameLevel*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::create(GJGameLevel*, bool) {
@@ -212,62 +199,62 @@ void LevelInfoLayer::create(GJGameLevel*, bool) {
 }
 
 void LevelInfoLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onLike(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelInfoLayer::onRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onClone(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelInfoLayer::onGarage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::onUpdate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelInfoLayer::likedItem(LikeItemType, int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelInfoLayer::playStep2() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelInfoLayer::playStep3() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelInfoLayer::playStep4() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelInfoLayer::tryShowAd() {
-    // TODO: Implement
+    // Display operation - stub
 }
 

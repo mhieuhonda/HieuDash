@@ -2,20 +2,22 @@
 #include "ColorAction2.h"
 
 ColorAction2::ColorAction2(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool, int, float, float) {
+    // Stub - not yet implemented
 }
 
 ColorAction2::ColorAction2(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool, int, float, float) {
+    // Stub - not yet implemented
 }
 
 void ColorAction2::resetAction() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorAction2::updateCustomColor(cocos2d::_ccColor3B, cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorAction2::step(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

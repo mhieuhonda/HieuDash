@@ -5,18 +5,10 @@ ExplodeItemSprite::~ExplodeItemSprite() {
     this->cleanup();
 }
 
-ExplodeItemSprite::~ExplodeItemSprite() {
-    this->cleanup();
-}
-
-ExplodeItemSprite::~ExplodeItemSprite() {
-    this->cleanup();
-}
-
-void ExplodeItemSprite::init() {
-    bool ret = true;
+bool ExplodeItemSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

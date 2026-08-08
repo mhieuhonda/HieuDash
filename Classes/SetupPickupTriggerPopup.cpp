@@ -5,30 +5,22 @@ SetupPickupTriggerPopup::~SetupPickupTriggerPopup() {
     this->cleanup();
 }
 
-SetupPickupTriggerPopup::~SetupPickupTriggerPopup() {
-    this->cleanup();
-}
-
-SetupPickupTriggerPopup::~SetupPickupTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupPickupTriggerPopup::updateState() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPickupTriggerPopup::onPlusButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPickupTriggerPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPickupTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

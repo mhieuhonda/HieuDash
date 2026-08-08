@@ -16,8 +16,8 @@ public:
     void animateInDialog();
     void handleDialogTap();
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
-    void createDialogLayer(DialogObject*, cocos2d::CCArray*, int);
-    void createWithObjects(cocos2d::CCArray*, int);
+    DialogLayer* createDialogLayer(DialogObject*, cocos2d::CCArray*, int);
+    DialogLayer* createWithObjects(cocos2d::CCArray*, int);
     void displayNextObject();
     void fadeInTextFinished(TextArea*);
     void animateInRandomSide();

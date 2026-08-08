@@ -5,79 +5,71 @@ CustomSongLayer::~CustomSongLayer() {
     this->cleanup();
 }
 
-CustomSongLayer::~CustomSongLayer() {
-    this->cleanup();
-}
-
-CustomSongLayer::~CustomSongLayer() {
-    this->cleanup();
-}
-
 void CustomSongLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::onNCSBrowser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::onCreateLines(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::onSongBrowser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::onMusicBrowser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::musicBrowserClosed(MusicBrowser*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::onNewgroundsBrowser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::showNewgroundsMessage() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CustomSongLayer::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::dropDownLayerWillClose(GJDropDownLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::init(CustomSongDelegate*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CustomSongLayer::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CustomSongLayer::create(CustomSongDelegate*) {
@@ -91,14 +83,14 @@ void CustomSongLayer::create(CustomSongDelegate*) {
 }
 
 void CustomSongLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::onSearch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongLayer::onOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

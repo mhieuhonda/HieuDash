@@ -5,22 +5,14 @@ SFXInfoObject::~SFXInfoObject() {
     this->cleanup();
 }
 
-SFXInfoObject::~SFXInfoObject() {
-    this->cleanup();
-}
-
-SFXInfoObject::~SFXInfoObject() {
-    this->cleanup();
-}
-
-void SFXInfoObject::getLowerCaseName() {
-    // TODO: Implement
+std::string SFXInfoObject::getLowerCaseName() {
+    return "";
 }
 
 void SFXInfoObject::init(int, std::string, int, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

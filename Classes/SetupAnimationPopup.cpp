@@ -5,50 +5,42 @@ SetupAnimationPopup::~SetupAnimationPopup() {
     this->cleanup();
 }
 
-SetupAnimationPopup::~SetupAnimationPopup() {
-    this->cleanup();
-}
-
-SetupAnimationPopup::~SetupAnimationPopup() {
-    this->cleanup();
-}
-
 void SetupAnimationPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAnimationPopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAnimationPopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAnimationPopup::updateAnimationID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAnimationPopup::onAnimationIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAnimationPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAnimationPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAnimationPopup::updateAnimationTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAnimationPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -63,6 +55,6 @@ void SetupAnimationPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupAnimationPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

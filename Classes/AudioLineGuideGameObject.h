@@ -5,13 +5,13 @@
 #include <string>
 #include <vector>
 
-class AudioLineGuideGameObject {
+class AudioLineGuideGameObject : public GameObject {
 public:
     virtual ~AudioLineGuideGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
-    void init();
+    bool init();
     void create();
 
 protected:

@@ -5,58 +5,50 @@ MenuGameLayer::~MenuGameLayer() {
     this->cleanup();
 }
 
-MenuGameLayer::~MenuGameLayer() {
-    this->cleanup();
-}
-
-MenuGameLayer::~MenuGameLayer() {
-    this->cleanup();
-}
-
 void MenuGameLayer::getBGColor(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuGameLayer::resetPlayer() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MenuGameLayer::updateColor(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MenuGameLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuGameLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuGameLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuGameLayer::updateColors() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MenuGameLayer::destroyPlayer() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MenuGameLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuGameLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MenuGameLayer::init() {
-    bool ret = true;
+bool MenuGameLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -71,11 +63,10 @@ void MenuGameLayer::create() {
 }
 
 void MenuGameLayer::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 
 void MenuGameLayer::tryJump(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

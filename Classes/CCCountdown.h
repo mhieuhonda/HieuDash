@@ -11,7 +11,7 @@ public:
     void setOpacity(unsigned char);
     void lapFinished();
     void startTimerWithSeconds(float, void (cocos2d::CCObject::*)(), cocos2d::CCNode*);
-    void init() override;
+    bool init() override;
     void create();
 
 };

@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJLevelScoreCell {
+class GJLevelScoreCell : public cocos2d::CCNode {
 public:
     GJLevelScoreCell(char const*, float, float);
     GJLevelScoreCell(char const*, float, float);
@@ -15,7 +15,7 @@ public:
     void onViewProfile(cocos2d::CCObject*);
     void updateBGColor(int);
     void draw();
-    void init();
+    bool init();
 
 };
 

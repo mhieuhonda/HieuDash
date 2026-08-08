@@ -12,7 +12,7 @@ public:
     void setOpacity(unsigned char);
     void initWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int, bool);
     void readColorInfo(std::string);
-    void createWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int, bool);
+    MultilineBitmapFont* createWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int, bool);
     void stringWithMaxWidth(std::string, float, float);
     void moveSpecialDescriptors(int, int);
 

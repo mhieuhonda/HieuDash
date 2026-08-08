@@ -5,184 +5,158 @@ CustomSongWidget::~CustomSongWidget() {
     this->cleanup();
 }
 
-CustomSongWidget::~CustomSongWidget() {
-    this->cleanup();
-}
-
-CustomSongWidget::~CustomSongWidget() {
-    this->cleanup();
-}
-
 void CustomSongWidget::deleteSong() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CustomSongWidget::onDownload(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::onPlayback(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CustomSongWidget::updateError(GJSongError) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::verifySongID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::onGetSongInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::startDownload() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::downloadFailed() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::updateSongInfo() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::addExtraVisuals(bool, bool) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void CustomSongWidget::updateLengthMod(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::onCancelDownload(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::songStateChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::updateSongObject(SongInfoObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::downloadSFXFailed(int, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::musicActionFailed(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::updatePlaybackBtn() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::updateProgressBar(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::downloadSongFailed(int, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::loadSongInfoFailed(int, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::toggleUpdateButton(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::downloadAssetFailed(int, GJAssetType, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::downloadSFXFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::downloadSongStarted(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::musicActionFinished(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::positionInfoObjects() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::downloadSongFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::loadSongInfoFinished(SongInfoObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::startMonitorDownload() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::updateMultiAssetInfo(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::downloadAssetFinished(int, GJAssetType) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::getSongInfoIfUnloaded() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::processNextMultiAsset() {
-    // Process data/event
-    // TODO: Implement processing logic
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::updateWithMultiAssets(std::string, std::string, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongWidget::updateDownloadProgress(float) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongWidget::startMultiAssetDownload() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void CustomSongWidget::init(SongInfoObject*, CustomSongDelegate*, bool, bool, bool, bool, bool, bool, int) {
+bool CustomSongWidget::init(SongInfoObject*, CustomSongDelegate*, bool, bool, bool, bool, bool, bool, int) {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -197,22 +171,22 @@ void CustomSongWidget::create(SongInfoObject*, CustomSongDelegate*, bool, bool, 
 }
 
 void CustomSongWidget::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::onMore(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::onDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CustomSongWidget::onSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongWidget::showError(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 

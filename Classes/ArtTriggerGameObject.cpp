@@ -5,31 +5,22 @@ ArtTriggerGameObject::~ArtTriggerGameObject() {
     this->cleanup();
 }
 
-ArtTriggerGameObject::~ArtTriggerGameObject() {
-    this->cleanup();
-}
-
-ArtTriggerGameObject::~ArtTriggerGameObject() {
-    this->cleanup();
-}
-
-void ArtTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string ArtTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void ArtTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ArtTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ArtTriggerGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

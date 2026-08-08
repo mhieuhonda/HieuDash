@@ -2,11 +2,11 @@
 #ifndef GJGRADIENTLAYER_H_
 #define GJGRADIENTLAYER_H_
 
-class GJGradientLayer {
+class GJGradientLayer : public cocos2d::CCLayer {
 public:
     virtual ~GJGradientLayer();
 
-    void init();
+    bool init();
     void create();
 
 };

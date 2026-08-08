@@ -2,21 +2,18 @@
 #include "MessageListDelegate.h"
 
 void MessageListDelegate::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void MessageListDelegate::loadMessagesFailed(char const*, GJErrorCode) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessageListDelegate::forceReloadMessages(bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessageListDelegate::loadMessagesFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

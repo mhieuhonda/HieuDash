@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class EndPortalObject {
+class EndPortalObject : public cocos2d::CCNode {
 public:
     virtual ~EndPortalObject();
 
@@ -14,7 +14,7 @@ public:
     void updateColors(cocos2d::_ccColor3B);
     void updateEndPos(bool);
     void triggerObject(GJBaseGameLayer*);
-    void init();
+    bool init();
     void create();
 
 protected:

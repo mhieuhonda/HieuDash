@@ -5,104 +5,94 @@ GJGroundLayer::~GJGroundLayer() {
     this->cleanup();
 }
 
-GJGroundLayer::~GJGroundLayer() {
-    this->cleanup();
-}
-
-GJGroundLayer::~GJGroundLayer() {
-    this->cleanup();
-}
-
-void GJGroundLayer::createLine(int) {
-    // TODO: Implement
+GJGroundLayer* GJGroundLayer::createLine(int) {
+    return nullptr;
 }
 
 void GJGroundLayer::getGroundY() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::showGround() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJGroundLayer::hideShadows() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJGroundLayer::scaleGround(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::fadeInGround(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::fadeOutGround(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::updateShadows() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGroundLayer::fadeInFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::positionGround(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::toggleVisible01(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::toggleVisible02(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::updateGroundPos(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGroundLayer::updateLineBlend(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGroundLayer::deactivateGround() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::updateShadowXPos(float, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGroundLayer::loadGroundSprites(int, bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJGroundLayer::updateGroundWidth(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGroundLayer::updateGround01Color(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGroundLayer::updateGround02Color(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGroundLayer::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void GJGroundLayer::init(int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

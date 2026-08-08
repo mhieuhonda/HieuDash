@@ -11,12 +11,12 @@ public:
     void dataLoaded(DS_Dictionary*);
     void tryLoadData(DS_Dictionary*, std::string const&);
     void encodeDataTo(DS_Dictionary*);
-    void getSaveString();
+    std::string getSaveString();
     void loadFromString(std::string&);
     void loadDataFromFile(std::string const&);
-    void getCompressedSaveString();
+    std::string getCompressedSaveString();
     void loadFromCompressedString(std::string&);
-    void init();
+    bool init();
     void load();
     void save();
     void setup();

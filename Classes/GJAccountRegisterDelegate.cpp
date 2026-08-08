@@ -2,10 +2,10 @@
 #include "GJAccountRegisterDelegate.h"
 
 void GJAccountRegisterDelegate::registerAccountFailed(AccountError) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountRegisterDelegate::registerAccountFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,38 +5,30 @@ GameOptionsLayer::~GameOptionsLayer() {
     this->cleanup();
 }
 
-GameOptionsLayer::~GameOptionsLayer() {
-    this->cleanup();
-}
-
-GameOptionsLayer::~GameOptionsLayer() {
-    this->cleanup();
-}
-
 void GameOptionsLayer::onUIOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameOptionsLayer::onUIPOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameOptionsLayer::setupOptions() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GameOptionsLayer::onPracticeMusicSync(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameOptionsLayer::showPracticeMusicSyncUnlockInfo() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GameOptionsLayer::init(GJBaseGameLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,6 +43,6 @@ void GameOptionsLayer::create(GJBaseGameLayer*) {
 }
 
 void GameOptionsLayer::didToggle(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

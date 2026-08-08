@@ -5,31 +5,23 @@ NCSInfoLayer::~NCSInfoLayer() {
     this->cleanup();
 }
 
-NCSInfoLayer::~NCSInfoLayer() {
-    this->cleanup();
-}
-
-NCSInfoLayer::~NCSInfoLayer() {
-    this->cleanup();
-}
-
 void NCSInfoLayer::onNCSUsage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NCSInfoLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NCSInfoLayer::init(CustomSongLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void NCSInfoLayer::onNCS(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NCSInfoLayer::create(CustomSongLayer*) {
@@ -43,14 +35,14 @@ void NCSInfoLayer::create(CustomSongLayer*) {
 }
 
 void NCSInfoLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NCSInfoLayer::onNCSIO(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NCSInfoLayer::onLibrary(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

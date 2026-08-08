@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class GJMultiplayerManager {
+class GJMultiplayerManager : public GManager {
 public:
     virtual ~GJMultiplayerManager();
 
@@ -13,24 +13,24 @@ public:
     void dataLoaded(DS_Dictionary*);
     void firstSetup();
     void handleItND(cocos2d::CCNode*, void*);
-    void isDLActive(char const*);
+    bool isDLActive(char const*);
     void getDLObject(char const*);
-    void sharedState();
+    GJMultiplayerManager* sharedState();
     void encodeDataTo(DS_Dictionary*);
     void addDLToActive(char const*);
     void addDLToActive(char const*, cocos2d::CCObject*);
     void uploadComment(std::string, int);
     void handleItDelayed(bool, std::string, std::string, GJHttpType);
-    void getBasePostString();
+    std::string getBasePostString();
     void ProcessHttpRequest(std::string, std::string, std::string, GJHttpType);
     void removeDLFromActive(char const*);
-    void createAndAddComment(std::string, int);
+    GJMultiplayerManager* createAndAddComment(std::string, int);
     void onExitLobbyCompleted(std::string, std::string);
     void onJoinLobbyCompleted(std::string, std::string);
     void getLastCommentIDForGame(int);
     void onUploadCommentCompleted(std::string, std::string);
     void onProcessHttpRequestCompleted(cocos2d::extension::CCHttpClient*, cocos2d::extension::CCHttpResponse*);
-    void init();
+    bool init();
     void handleIt(bool, std::string, std::string, GJHttpType);
     void exitLobby(int);
     void joinLobby(int);

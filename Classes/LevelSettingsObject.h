@@ -5,16 +5,16 @@
 #include "cocos2d.h"
 #include <string>
 
-class LevelSettingsObject {
+class LevelSettingsObject : public cocos2d::CCNode {
 public:
     virtual ~LevelSettingsObject();
 
-    void getSaveString();
+    std::string getSaveString();
     void objectFromDict(cocos2d::CCDictionary*);
     void objectFromString(std::string const&);
-    void shouldUseYSection();
+    bool shouldUseYSection();
     void setupColorsFromLegacyMode(cocos2d::CCDictionary*);
-    void init();
+    bool init();
     void create();
 
 protected:

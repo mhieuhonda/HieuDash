@@ -13,7 +13,7 @@ public:
     void customSetup();
     void onEveryplay(cocos2d::CCObject*);
     void onHideLayer(cocos2d::CCObject*);
-    void getCoinString();
+    std::string getCoinString();
     void playEndEffect();
     void tryShowBanner(float);
     void keyBackClicked() override;

@@ -5,38 +5,30 @@ ChanceTriggerGameObject::~ChanceTriggerGameObject() {
     this->cleanup();
 }
 
-ChanceTriggerGameObject::~ChanceTriggerGameObject() {
-    this->cleanup();
-}
-
-ChanceTriggerGameObject::~ChanceTriggerGameObject() {
-    this->cleanup();
-}
-
 void ChanceTriggerGameObject::getTargetIDs(std::vector<int>&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChanceTriggerGameObject::containsTargetID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChanceTriggerGameObject::editChanceObject(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChanceTriggerGameObject::revertChanceRemap() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChanceTriggerGameObject::remapChanceObjects(std::unordered_map<int, int>, std::equal_to<int>, std::allocator<std::pair<const int, int> > > const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ChanceTriggerGameObject::init(char const*) {
+bool ChanceTriggerGameObject::init(char const*) {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

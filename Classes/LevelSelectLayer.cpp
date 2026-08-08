@@ -5,48 +5,39 @@ LevelSelectLayer::~LevelSelectLayer() {
     this->cleanup();
 }
 
-LevelSelectLayer::~LevelSelectLayer() {
-    this->cleanup();
-}
-
-LevelSelectLayer::~LevelSelectLayer() {
-    this->cleanup();
-}
-
 void LevelSelectLayer::onDownload(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelSelectLayer::colorForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::getColorValue(int, int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::scrollLayerMoved(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::updatePageWithObject(cocos2d::CCObject*, cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void LevelSelectLayer::init(int) {
+bool LevelSelectLayer::init(int) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelSelectLayer::scene(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::create(int) {
@@ -60,30 +51,30 @@ void LevelSelectLayer::create(int) {
 }
 
 void LevelSelectLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::onNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelSelectLayer::onPrev(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSelectLayer::tryShowAd() {
-    // TODO: Implement
+    // Display operation - stub
 }
 

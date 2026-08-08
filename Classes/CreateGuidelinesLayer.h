@@ -20,7 +20,7 @@ public:
     void recordingDidStop();
     void doClearGuidelines();
     void onClearGuidelines(cocos2d::CCObject*);
-    void getMergedRecordString(std::string, std::string);
+    std::string getMergedRecordString(std::string, std::string);
     void registerWithTouchDispatcher();
     void init(CustomSongDelegate*, AudioGuidelinesType);
     void keyUp(cocos2d::enumKeyCodes, double);

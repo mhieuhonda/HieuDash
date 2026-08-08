@@ -2,6 +2,6 @@
 #include "CCExtenderNode.h"
 
 void CCExtenderNode::setOpacity(unsigned int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 

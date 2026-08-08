@@ -5,47 +5,39 @@ LevelAreaLayer::~LevelAreaLayer() {
     this->cleanup();
 }
 
-LevelAreaLayer::~LevelAreaLayer() {
-    this->cleanup();
-}
-
-LevelAreaLayer::~LevelAreaLayer() {
-    this->cleanup();
-}
-
 void LevelAreaLayer::showDialog() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LevelAreaLayer::onClickDoor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaLayer::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaLayer::onEnterTower() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaLayer::fadeInsideTower() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void LevelAreaLayer::init() {
-    bool ret = true;
+bool LevelAreaLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelAreaLayer::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaLayer::create() {
@@ -59,18 +51,18 @@ void LevelAreaLayer::create() {
 }
 
 void LevelAreaLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaLayer::addTorch(cocos2d::CCNode*, cocos2d::CCPoint, int, float, int, bool, int, cocos2d::CCArray*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void LevelAreaLayer::addGodRay(float, float, float, float, float, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

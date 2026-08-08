@@ -5,32 +5,22 @@ GJGameLoadingLayer::~GJGameLoadingLayer() {
     this->cleanup();
 }
 
-GJGameLoadingLayer::~GJGameLoadingLayer() {
-    this->cleanup();
-}
-
-GJGameLoadingLayer::~GJGameLoadingLayer() {
-    this->cleanup();
-}
-
 void GJGameLoadingLayer::gameLayerDidUnload() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJGameLoadingLayer::transitionToLoadingLayer(GJGameLevel*, bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJGameLoadingLayer::onEnterTransitionDidFinish() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGameLoadingLayer::init(GJGameLevel*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -45,11 +35,10 @@ void GJGameLoadingLayer::create(GJGameLevel*, bool) {
 }
 
 void GJGameLoadingLayer::onEnter() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGameLoadingLayer::loadLevel() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

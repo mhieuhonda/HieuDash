@@ -5,34 +5,26 @@ GJColorSetupLayer::~GJColorSetupLayer() {
     this->cleanup();
 }
 
-GJColorSetupLayer::~GJColorSetupLayer() {
-    this->cleanup();
-}
-
-GJColorSetupLayer::~GJColorSetupLayer() {
-    this->cleanup();
-}
-
 void GJColorSetupLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJColorSetupLayer::colorSelectClosed(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJColorSetupLayer::updateSpriteColor(ColorChannelSprite*, cocos2d::CCLabelBMFont*, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJColorSetupLayer::updateSpriteColors() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJColorSetupLayer::init(LevelSettingsObject*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,18 +39,18 @@ void GJColorSetupLayer::create(LevelSettingsObject*) {
 }
 
 void GJColorSetupLayer::onPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJColorSetupLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJColorSetupLayer::onColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJColorSetupLayer::showPage(int) {
-    // TODO: Implement
+    // Display operation - stub
 }
 

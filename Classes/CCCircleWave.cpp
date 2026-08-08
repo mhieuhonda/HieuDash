@@ -5,43 +5,34 @@ CCCircleWave::~CCCircleWave() {
     this->cleanup();
 }
 
-CCCircleWave::~CCCircleWave() {
-    this->cleanup();
-}
-
-CCCircleWave::~CCCircleWave() {
-    this->cleanup();
-}
-
 void CCCircleWave::setPosition(cocos2d::CCPoint const&) {
-    // TODO: Set m_position
+    // Setter operation - stub
 }
 
 void CCCircleWave::followObject(cocos2d::CCNode*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCCircleWave::updatePosition(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CCCircleWave::updateTweenAction(float, char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CCCircleWave::removeMeAndCleanup() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CCCircleWave::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void CCCircleWave::init(float, float, float, bool, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -66,6 +57,6 @@ void CCCircleWave::create(float, float, float, bool, bool) {
 }
 
 void CCCircleWave::baseSetup(float) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

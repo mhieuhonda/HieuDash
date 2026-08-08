@@ -2,12 +2,12 @@
 #ifndef CCALERTCIRCLE_H_
 #define CCALERTCIRCLE_H_
 
-class CCAlertCircle {
+class CCAlertCircle : public cocos2d::CCSprite {
 public:
     virtual ~CCAlertCircle();
 
     void draw();
-    void init();
+    bool init();
     void create();
 
 };

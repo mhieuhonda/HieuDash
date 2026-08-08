@@ -5,13 +5,13 @@
 #include <string>
 #include <vector>
 
-class KeyframeAnimTriggerObject {
+class KeyframeAnimTriggerObject : public cocos2d::CCNode {
 public:
     virtual ~KeyframeAnimTriggerObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
-    void init();
+    bool init();
     void create();
 
 protected:

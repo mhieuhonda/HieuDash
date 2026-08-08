@@ -5,75 +5,67 @@ SecretLayer3::~SecretLayer3() {
     this->cleanup();
 }
 
-SecretLayer3::~SecretLayer3() {
-    this->cleanup();
-}
-
-SecretLayer3::~SecretLayer3() {
-    this->cleanup();
-}
-
 void SecretLayer3::animateEyes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::revealStep1() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::revealStep2() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::revealStep3() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::revealStep4() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::revealStep5() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::showUnlockDialog() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SecretLayer3::firstInteractionStep1() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::firstInteractionStep2() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::firstInteractionStep3() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::firstInteractionStep4() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SecretLayer3::init() {
-    bool ret = true;
+bool SecretLayer3::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SecretLayer3::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::create() {
@@ -87,22 +79,22 @@ void SecretLayer3::create() {
 }
 
 void SecretLayer3::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::onChest01(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer3::onChest02(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

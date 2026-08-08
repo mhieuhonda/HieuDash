@@ -4,12 +4,12 @@
 
 #include <string>
 
-class LocalLevelManager {
+class LocalLevelManager : public GManager {
 public:
     virtual ~LocalLevelManager();
 
     void dataLoaded(DS_Dictionary*);
-    void sharedState();
+    LocalLevelManager* sharedState();
     void encodeDataTo(DS_Dictionary*);
     void reorderLists();
     void reorderLevels();
@@ -19,14 +19,14 @@ public:
     void getCreatedLevels(int);
     void updateLevelOrder();
     void getAllLevelsInDict();
-    void getMainLevelString(int);
+    std::string getMainLevelString(int);
     void getCustomLevels(int);
     void updateLevelRevision();
-    void getAllLevelsWithName(std::string);
-    void getLevelsInNameGroups();
+    std::string getAllLevelsWithName(std::string);
+    std::string getLevelsInNameGroups();
     void markLevelsAsUnmodified();
     void tryLoadMainLevelString(int);
-    void init();
+    bool init();
     void firstLoad();
 
 protected:

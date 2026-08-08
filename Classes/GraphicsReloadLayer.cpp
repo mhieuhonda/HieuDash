@@ -5,28 +5,19 @@ GraphicsReloadLayer::~GraphicsReloadLayer() {
     this->cleanup();
 }
 
-GraphicsReloadLayer::~GraphicsReloadLayer() {
-    this->cleanup();
-}
-
-GraphicsReloadLayer::~GraphicsReloadLayer() {
-    this->cleanup();
-}
-
 void GraphicsReloadLayer::performReload() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GraphicsReloadLayer::init(cocos2d::TextureQuality, cocos2d::CCSize, bool, bool, bool, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GraphicsReloadLayer::scene(cocos2d::TextureQuality, cocos2d::CCSize, bool, bool, bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GraphicsReloadLayer::create(cocos2d::TextureQuality, cocos2d::CCSize, bool, bool, bool, bool) {

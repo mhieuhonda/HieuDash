@@ -5,34 +5,26 @@ TextStyleSection::~TextStyleSection() {
     this->cleanup();
 }
 
-TextStyleSection::~TextStyleSection() {
-    this->cleanup();
+TextStyleSection* TextStyleSection::createDelaySection(int, float) {
+    return nullptr;
 }
 
-TextStyleSection::~TextStyleSection() {
-    this->cleanup();
+TextStyleSection* TextStyleSection::createShakeSection(int, int, int, int) {
+    return nullptr;
 }
 
-void TextStyleSection::createDelaySection(int, float) {
-    // TODO: Implement
+TextStyleSection* TextStyleSection::createColoredSection(cocos2d::_ccColor3B, int, int) {
+    return nullptr;
 }
 
-void TextStyleSection::createShakeSection(int, int, int, int) {
-    // TODO: Implement
-}
-
-void TextStyleSection::createColoredSection(cocos2d::_ccColor3B, int, int) {
-    // TODO: Implement
-}
-
-void TextStyleSection::createInstantSection(int, int, float) {
-    // TODO: Implement
+TextStyleSection* TextStyleSection::createInstantSection(int, int, float) {
+    return nullptr;
 }
 
 void TextStyleSection::init(int, int, TextStyleType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

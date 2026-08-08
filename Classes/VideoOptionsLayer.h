@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class VideoOptionsLayer {
+class VideoOptionsLayer : public cocos2d::CCLayer {
 public:
     virtual ~VideoOptionsLayer();
 
@@ -23,7 +23,7 @@ public:
     void onTextureQualityNext(cocos2d::CCObject*);
     void onTextureQualityPrev(cocos2d::CCObject*);
     void updateTextureQuality(int);
-    void init();
+    bool init();
     void create();
     void onInfo(cocos2d::CCObject*);
     void onApply(cocos2d::CCObject*);

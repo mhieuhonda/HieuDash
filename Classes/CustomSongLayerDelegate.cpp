@@ -2,6 +2,6 @@
 #include "CustomSongLayerDelegate.h"
 
 void CustomSongLayerDelegate::customSongLayerClosed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

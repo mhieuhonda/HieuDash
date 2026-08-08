@@ -2,15 +2,15 @@
 #ifndef OBJECTTOOLBOX_H_
 #define OBJECTTOOLBOX_H_
 
-class ObjectToolbox {
+class ObjectToolbox : public GManager {
 public:
     virtual ~ObjectToolbox();
 
-    void sharedState();
+    ObjectToolbox* sharedState();
     void intKeyToFrame(int);
     void gridNodeSizeForKey(int);
     void perspectiveBlockFrame(int);
-    void init();
+    bool init();
     void allKeys();
 
 };

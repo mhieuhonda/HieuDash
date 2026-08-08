@@ -8,9 +8,9 @@ class GJUserScore : public cocos2d::CCObject {
 public:
     virtual ~GJUserScore();
 
-    void isCurrentUser();
+    bool isCurrentUser();
     void mergeWithScore(GJUserScore*);
-    void init() override;
+    bool init() override;
     void create(cocos2d::CCDictionary*);
     void create();
 

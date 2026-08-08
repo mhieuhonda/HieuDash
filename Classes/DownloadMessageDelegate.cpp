@@ -2,12 +2,10 @@
 #include "DownloadMessageDelegate.h"
 
 void DownloadMessageDelegate::downloadMessageFailed(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void DownloadMessageDelegate::downloadMessageFinished(GJUserMessage*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

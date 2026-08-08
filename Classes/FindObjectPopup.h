@@ -4,12 +4,12 @@
 
 #include "cocos2d.h"
 
-class FindObjectPopup {
+class FindObjectPopup : public FLAlertLayer {
 public:
     virtual ~FindObjectPopup();
 
     void onFindObjectID(cocos2d::CCObject*);
-    void init();
+    bool init();
     void create();
 
 };

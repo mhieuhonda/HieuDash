@@ -5,50 +5,42 @@ ParentalOptionsLayer::~ParentalOptionsLayer() {
     this->cleanup();
 }
 
-ParentalOptionsLayer::~ParentalOptionsLayer() {
-    this->cleanup();
-}
-
-ParentalOptionsLayer::~ParentalOptionsLayer() {
-    this->cleanup();
-}
-
 void ParentalOptionsLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ParentalOptionsLayer::countForPage(int) {
-    // TODO: Implement
+int ParentalOptionsLayer::countForPage(int) {
+    return 0;
 }
 
 void ParentalOptionsLayer::layerForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::nextPosition(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::objectsForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::incrementCountForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ParentalOptionsLayer::init() {
-    bool ret = true;
+bool ParentalOptionsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -63,38 +55,38 @@ void ParentalOptionsLayer::create() {
 }
 
 void ParentalOptionsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::infoKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::pageKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::layerKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParentalOptionsLayer::addToggle(char const*, char const*, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void ParentalOptionsLayer::objectKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

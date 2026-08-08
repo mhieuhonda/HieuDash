@@ -5,95 +5,86 @@ GJLevelList::~GJLevelList() {
     this->cleanup();
 }
 
-GJLevelList::~GJLevelList() {
-    this->cleanup();
-}
-
-GJLevelList::~GJLevelList() {
-    this->cleanup();
-}
-
 void GJLevelList::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void GJLevelList::totalLevels() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::reorderLevel(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::showListInfo() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJLevelList::orderForLevel(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::addLevelToList(GJGameLevel*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJLevelList::completedLevels() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJLevelList::createWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+GJLevelList* GJLevelList::createWithCoder(DS_Dictionary*) {
+    return nullptr;
 }
 
 void GJLevelList::encodeWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+    // Save/encode operation - stub
 }
 
 void GJLevelList::parseListLevels(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::reorderLevelStep(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJLevelList::hasMatchingLevels(GJLevelList*) {
-    // TODO: Implement
+bool GJLevelList::hasMatchingLevels(GJLevelList*) {
+    return false;
 }
 
 void GJLevelList::getListLevelsArray(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::updateLevelsString() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJLevelList::duplicateListLevels(GJLevelList*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::handleStatsConflict(GJLevelList*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::removeLevelFromList(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJLevelList::frameForListDifficulty(int, DifficultyIconType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJLevelList::getUnpackedDescription() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJLevelList::init() {
+bool GJLevelList::init() {
     bool ret = cocos2d::CCObject::init() if "cocos2d::CCObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -117,7 +108,7 @@ void GJLevelList::create() {
     return nullptr;
 }
 
-void GJLevelList::canEncode() {
-    // TODO: Implement
+bool GJLevelList::canEncode() {
+    return false;
 }
 

@@ -2,16 +2,16 @@
 #ifndef GJSMARTPREFAB_H_
 #define GJSMARTPREFAB_H_
 
-class GJSmartPrefab {
+class GJSmartPrefab : public cocos2d::CCNode {
 public:
     virtual ~GJSmartPrefab();
 
     void dataLoaded(DS_Dictionary*);
-    void createWithCoder(DS_Dictionary*);
+    GJSmartPrefab* createWithCoder(DS_Dictionary*);
     void encodeWithCoder(DS_Dictionary*);
-    void init();
+    bool init();
     void create();
-    void canEncode();
+    bool canEncode();
 
 };
 

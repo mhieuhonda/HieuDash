@@ -2,17 +2,11 @@
 #include "SmartTemplateCell.h"
 
 SmartTemplateCell::SmartTemplateCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 SmartTemplateCell::SmartTemplateCell(char const*, float, float) {
-}
-
-SmartTemplateCell::~SmartTemplateCell() {
-    this->cleanup();
-}
-
-SmartTemplateCell::~SmartTemplateCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 SmartTemplateCell::~SmartTemplateCell() {
@@ -20,27 +14,25 @@ SmartTemplateCell::~SmartTemplateCell() {
 }
 
 void SmartTemplateCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SmartTemplateCell::loadFromObject(GJSmartTemplate*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void SmartTemplateCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void SmartTemplateCell::init() {
-    bool ret = true;
+bool SmartTemplateCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SmartTemplateCell::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

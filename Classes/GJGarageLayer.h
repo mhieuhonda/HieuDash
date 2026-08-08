@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJGarageLayer {
+class GJGarageLayer : public cocos2d::CCLayer {
 public:
     virtual ~GJGarageLayer();
 
@@ -35,7 +35,7 @@ public:
     void descriptionForUnlock(int, UnlockType);
     void rewardedVideoFinished();
     void listButtonBarSwitchedPage(ListButtonBar*, int);
-    void init();
+    bool init();
     void scene();
     void onBack(cocos2d::CCObject*);
     void onInfo(cocos2d::CCObject*);

@@ -5,18 +5,10 @@ SongObject::~SongObject() {
     this->cleanup();
 }
 
-SongObject::~SongObject() {
-    this->cleanup();
-}
-
-SongObject::~SongObject() {
-    this->cleanup();
-}
-
 void SongObject::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,30 +5,22 @@ FindBPMLayer::~FindBPMLayer() {
     this->cleanup();
 }
 
-FindBPMLayer::~FindBPMLayer() {
-    this->cleanup();
-}
-
-FindBPMLayer::~FindBPMLayer() {
-    this->cleanup();
-}
-
 void FindBPMLayer::calculateBPM() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FindBPMLayer::registerTouch() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FindBPMLayer::recordingDidStop() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FindBPMLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,18 +35,18 @@ void FindBPMLayer::create(int) {
 }
 
 void FindBPMLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FindBPMLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FindBPMLayer::onRecord(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FindBPMLayer::playMusic() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

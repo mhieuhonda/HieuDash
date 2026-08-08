@@ -5,39 +5,31 @@ GJPathsLayer::~GJPathsLayer() {
     this->cleanup();
 }
 
-GJPathsLayer::~GJPathsLayer() {
-    this->cleanup();
-}
-
-GJPathsLayer::~GJPathsLayer() {
-    this->cleanup();
-}
-
 void GJPathsLayer::nameForPath(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathsLayer::darkenButtons(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathsLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJPathsLayer::init() {
-    bool ret = true;
+bool GJPathsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJPathsLayer::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJPathsLayer::create() {
@@ -51,14 +43,14 @@ void GJPathsLayer::create() {
 }
 
 void GJPathsLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathsLayer::onPath(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,56 +5,47 @@ SongInfoLayer::~SongInfoLayer() {
     this->cleanup();
 }
 
-SongInfoLayer::~SongInfoLayer() {
-    this->cleanup();
-}
-
-SongInfoLayer::~SongInfoLayer() {
-    this->cleanup();
-}
-
 void SongInfoLayer::onDownload(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void SongInfoLayer::onMenuMusic(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongInfoLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongInfoLayer::onPracticeMusic(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongInfoLayer::showCustomMusicUnlockInfo() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SongInfoLayer::init(std::string, std::string, std::string, std::string, std::string, std::string, int, std::string, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SongInfoLayer::onFB(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongInfoLayer::onNG(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongInfoLayer::onYT(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongInfoLayer::onBPM(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongInfoLayer::create(std::string, std::string, std::string, std::string, std::string, std::string, int, std::string, int) {
@@ -78,6 +69,6 @@ void SongInfoLayer::create(int) {
 }
 
 void SongInfoLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

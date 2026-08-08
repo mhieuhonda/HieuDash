@@ -4,19 +4,19 @@
 
 #include "cocos2d.h"
 
-class ParentalOptionsLayer {
+class ParentalOptionsLayer : public cocos2d::CCLayer {
 public:
     virtual ~ParentalOptionsLayer();
 
     void onNextPage(cocos2d::CCObject*);
     void onPrevPage(cocos2d::CCObject*);
-    void countForPage(int);
+    int countForPage(int);
     void layerForPage(int);
     void nextPosition(int);
     void keyBackClicked();
     void objectsForPage(int);
     void incrementCountForPage(int);
-    void init();
+    bool init();
     void create();
     void onInfo(cocos2d::CCObject*);
     void infoKey(int);

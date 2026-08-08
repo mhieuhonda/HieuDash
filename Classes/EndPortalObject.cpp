@@ -5,42 +5,34 @@ EndPortalObject::~EndPortalObject() {
     this->cleanup();
 }
 
-EndPortalObject::~EndPortalObject() {
-    this->cleanup();
-}
-
-EndPortalObject::~EndPortalObject() {
-    this->cleanup();
-}
-
 void EndPortalObject::setVisible(bool) {
-    // TODO: Set m_visible
+    // Setter operation - stub
 }
 
 void EndPortalObject::getSpawnPos() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndPortalObject::setPosition(cocos2d::CCPoint const&) {
-    // TODO: Set m_position
+    // Setter operation - stub
 }
 
 void EndPortalObject::updateColors(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void EndPortalObject::updateEndPos(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void EndPortalObject::triggerObject(GJBaseGameLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void EndPortalObject::init() {
-    bool ret = true;
+bool EndPortalObject::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

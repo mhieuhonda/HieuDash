@@ -10,8 +10,8 @@ public:
 
     void initDescription(DS_Dictionary*);
     void initDescription(cocos2d::CCDictionary*);
-    void createDescription(DS_Dictionary*);
-    void createDescription(cocos2d::CCDictionary*);
+    SpriteDescription* createDescription(DS_Dictionary*);
+    SpriteDescription* createDescription(cocos2d::CCDictionary*);
 
 };
 

@@ -5,38 +5,30 @@ GJSmartBlockPreview::~GJSmartBlockPreview() {
     this->cleanup();
 }
 
-GJSmartBlockPreview::~GJSmartBlockPreview() {
-    this->cleanup();
-}
-
-GJSmartBlockPreview::~GJSmartBlockPreview() {
-    this->cleanup();
-}
-
 void GJSmartBlockPreview::addPreview(std::string, std::string, LevelEditorLayer*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
-void GJSmartBlockPreview::createInfoLabel() {
-    // TODO: Implement
+GJSmartBlockPreview* GJSmartBlockPreview::createInfoLabel() {
+    return nullptr;
 }
 
 void GJSmartBlockPreview::addTemplateGuide(SmartPrefabResult, float) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJSmartBlockPreview::addTemplateGuide(std::string, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJSmartBlockPreview::toggleSelectItem(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartBlockPreview::init(std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,10 +43,10 @@ void GJSmartBlockPreview::create(std::string) {
 }
 
 void GJSmartBlockPreview::addCount(int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJSmartBlockPreview::addChance(int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

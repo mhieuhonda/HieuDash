@@ -5,16 +5,16 @@
 #include <string>
 #include <vector>
 
-class RandTriggerGameObject {
+class RandTriggerGameObject : public GameObject {
 public:
     virtual ~RandTriggerGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void triggerObject(GJBaseGameLayer*, int, std::vector<int> const*);
     void getTotalChance();
     void getRandomGroupID();
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
-    void init();
+    bool init();
     void create();
 
 protected:

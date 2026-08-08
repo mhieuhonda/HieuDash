@@ -5,95 +5,87 @@ SecretLayer2::~SecretLayer2() {
     this->cleanup();
 }
 
-SecretLayer2::~SecretLayer2() {
-    this->cleanup();
-}
-
-SecretLayer2::~SecretLayer2() {
-    this->cleanup();
-}
-
 void SecretLayer2::getMessage() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::nodeWithTag(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::onSecretLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::selectAThread() {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void SecretLayer2::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::playCoinEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void SecretLayer2::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::getBasicMessage() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::getErrorMessage() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::showSecretLevel() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SecretLayer2::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::getThreadMessage() {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void SecretLayer2::updateSearchLabel(char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SecretLayer2::showCompletedLevel() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SecretLayer2::updateMessageLabel(std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void SecretLayer2::init() {
-    bool ret = true;
+bool SecretLayer2::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SecretLayer2::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::create() {
@@ -107,18 +99,18 @@ void SecretLayer2::create() {
 }
 
 void SecretLayer2::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::onDoor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer2::onSubmit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

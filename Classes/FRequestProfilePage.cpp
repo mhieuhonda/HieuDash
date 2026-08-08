@@ -5,103 +5,90 @@ FRequestProfilePage::~FRequestProfilePage() {
     this->cleanup();
 }
 
-FRequestProfilePage::~FRequestProfilePage() {
-    this->cleanup();
-}
-
-FRequestProfilePage::~FRequestProfilePage() {
-    this->cleanup();
-}
-
 void FRequestProfilePage::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::untoggleAll() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void FRequestProfilePage::deleteSelected() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void FRequestProfilePage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::onSentRequests(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::onDeleteSelected(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void FRequestProfilePage::updatePageArrows() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FRequestProfilePage::updateLevelsLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FRequestProfilePage::onToggleAllObjects(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FRequestProfilePage::forceReloadRequests(bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FRequestProfilePage::loadFRequestsFailed(char const*, GJErrorCode) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FRequestProfilePage::setupCommentsBrowser(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void FRequestProfilePage::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FRequestProfilePage::loadFRequestsFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FRequestProfilePage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::init(bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -116,19 +103,18 @@ void FRequestProfilePage::create(bool) {
 }
 
 void FRequestProfilePage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FRequestProfilePage::loadPage(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FRequestProfilePage::onUpdate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void FRequestProfilePage::isCorrect(char const*) {
-    // TODO: Implement
+bool FRequestProfilePage::isCorrect(char const*) {
+    return false;
 }
 

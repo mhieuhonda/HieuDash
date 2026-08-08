@@ -15,38 +15,30 @@ AchievementNotifier::~AchievementNotifier() {
     this->cleanup();
 }
 
-AchievementNotifier::~AchievementNotifier() {
-    this->cleanup();
-}
-
-AchievementNotifier::~AchievementNotifier() {
-    this->cleanup();
-}
-
-void AchievementNotifier::sharedState() {
-    // TODO: Implement
+AchievementNotifier* AchievementNotifier::sharedState() {
+    return nullptr;
 }
 
 void AchievementNotifier::notifyAchievement(char const*, char const*, char const*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementNotifier::willSwitchToScene(cocos2d::CCScene*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementNotifier::showNextAchievement() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void AchievementNotifier::achievementDisplayFinished() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
-void AchievementNotifier::init() {
+bool AchievementNotifier::init() {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,54 +5,43 @@ ColorAction::~ColorAction() {
     this->cleanup();
 }
 
-ColorAction::~ColorAction() {
-    this->cleanup();
-}
-
-ColorAction::~ColorAction() {
-    this->cleanup();
-}
-
 void ColorAction::resetAction() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorAction::saveToState(CAState&) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void ColorAction::setupFromMap(std::map<std::string, std::string, std::less<std::string>, std::allocator<std::pair<const std::string, std::string> > >&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ColorAction::loadFromState(CAState&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ColorAction::setupFromString(std::string) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ColorAction::writeSaveString(fmt::BasicWriter<char>&) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void ColorAction::updateCustomColor(cocos2d::_ccColor3B, cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void ColorAction::init(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool, int, float, float) {
+bool ColorAction::init(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool, int, float, float) {
     bool ret = cocos2d::CCObject::init() if "cocos2d::CCObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ColorAction::step(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorAction::create(cocos2d::_ccColor3B, cocos2d::_ccColor3B, float, double, bool) {
@@ -96,10 +85,10 @@ void ColorAction::create() {
 }
 
 void ColorAction::getCopy() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ColorAction::isInUse() {
-    // TODO: Implement
+bool ColorAction::isInUse() {
+    return false;
 }
 

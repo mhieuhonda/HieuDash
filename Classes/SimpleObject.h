@@ -2,11 +2,11 @@
 #ifndef SIMPLEOBJECT_H_
 #define SIMPLEOBJECT_H_
 
-class SimpleObject {
+class SimpleObject : public cocos2d::CCNode {
 public:
     virtual ~SimpleObject();
 
-    void init();
+    bool init();
     void create();
 
 };

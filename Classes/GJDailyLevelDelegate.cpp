@@ -2,10 +2,10 @@
 #include "GJDailyLevelDelegate.h"
 
 void GJDailyLevelDelegate::dailyStatusFailed(GJTimedLevelType, GJErrorCode) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDailyLevelDelegate::dailyStatusFinished(GJTimedLevelType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

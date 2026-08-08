@@ -5,66 +5,56 @@ AccountLayer::~AccountLayer() {
     this->cleanup();
 }
 
-AccountLayer::~AccountLayer() {
-    this->cleanup();
-}
-
-AccountLayer::~AccountLayer() {
-    this->cleanup();
-}
-
 void AccountLayer::onRegister(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::updatePage(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AccountLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AccountLayer::layerHidden() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::hideLoadingUI() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void AccountLayer::showLoadingUI() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void AccountLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::syncAccountFailed(BackupAccountError, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::backupAccountFailed(BackupAccountError, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::syncAccountFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::accountStatusChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::backupAccountFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::create() {
@@ -78,38 +68,38 @@ void AccountLayer::create() {
 }
 
 void AccountLayer::doSync() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::onHelp(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::onMore(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::onSync(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::onLogin(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::doBackup() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::onBackup(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::toggleUI(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLayer::exitLayer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

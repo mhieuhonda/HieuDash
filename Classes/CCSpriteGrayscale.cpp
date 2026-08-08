@@ -5,36 +5,28 @@ CCSpriteGrayscale::~CCSpriteGrayscale() {
     this->cleanup();
 }
 
-CCSpriteGrayscale::~CCSpriteGrayscale() {
-    this->cleanup();
-}
-
-CCSpriteGrayscale::~CCSpriteGrayscale() {
-    this->cleanup();
-}
-
 void CCSpriteGrayscale::shaderBody() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CCSpriteGrayscale::getShaderName() {
-    // TODO: Implement
+std::string CCSpriteGrayscale::getShaderName() {
+    return "";
 }
 
-void CCSpriteGrayscale::createWithTexture(cocos2d::CCTexture2D*) {
-    // TODO: Implement
+CCSpriteGrayscale* CCSpriteGrayscale::createWithTexture(cocos2d::CCTexture2D*) {
+    return nullptr;
 }
 
-void CCSpriteGrayscale::createWithTexture(cocos2d::CCTexture2D*, cocos2d::CCRect const&, bool) {
-    // TODO: Implement
+CCSpriteGrayscale* CCSpriteGrayscale::createWithTexture(cocos2d::CCTexture2D*, cocos2d::CCRect const&, bool) {
+    return nullptr;
 }
 
-void CCSpriteGrayscale::createWithSpriteFrame(cocos2d::CCSpriteFrame*) {
-    // TODO: Implement
+CCSpriteGrayscale* CCSpriteGrayscale::createWithSpriteFrame(cocos2d::CCSpriteFrame*) {
+    return nullptr;
 }
 
-void CCSpriteGrayscale::createWithSpriteFrameName(std::string const&) {
-    // TODO: Implement
+CCSpriteGrayscale* CCSpriteGrayscale::createWithSpriteFrameName(std::string const&) {
+    return nullptr;
 }
 
 void CCSpriteGrayscale::create(std::string const&) {

@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class AccountRegisterLayer {
+class AccountRegisterLayer : public cocos2d::CCLayer {
 public:
     virtual ~AccountRegisterLayer();
 
@@ -21,17 +21,17 @@ public:
     void allowTextInput(CCTextInputNode*);
     void keyBackClicked();
     void FLAlert_Clicked(FLAlertLayer*, bool);
-    void createTextInput(cocos2d::CCPoint, cocos2d::CCSize, std::string, int);
-    void createTextLabel(cocos2d::CCPoint, std::string, cocos2d::CCSize);
+    AccountRegisterLayer* createTextInput(cocos2d::CCPoint, cocos2d::CCSize, std::string, int);
+    AccountRegisterLayer* createTextLabel(cocos2d::CCPoint, std::string, cocos2d::CCSize);
     void textInputClosed(CCTextInputNode*);
     void textInputOpened(CCTextInputNode*);
     void textInputReturn(CCTextInputNode*);
-    void createTextBackground(cocos2d::CCPoint, cocos2d::CCSize);
+    AccountRegisterLayer* createTextBackground(cocos2d::CCPoint, cocos2d::CCSize);
     void registerAccountFailed(AccountError);
     void textInputShouldOffset(CCTextInputNode*, float);
     void registerAccountFinished();
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void create();
     void onClose(cocos2d::CCObject*);
     void onSubmit(cocos2d::CCObject*);

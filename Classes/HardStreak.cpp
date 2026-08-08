@@ -5,63 +5,55 @@ HardStreak::~HardStreak() {
     this->cleanup();
 }
 
-HardStreak::~HardStreak() {
-    this->cleanup();
-}
-
-HardStreak::~HardStreak() {
-    this->cleanup();
-}
-
 void HardStreak::firstSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void HardStreak::stopStroke() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void HardStreak::resumeStroke() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HardStreak::updateStroke(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void HardStreak::clearAboveXPos(float) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void HardStreak::normalizeAngle(double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HardStreak::clearBehindXPos(float) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void HardStreak::createDuplicate() {
-    // TODO: Implement
+HardStreak* HardStreak::createDuplicate() {
+    return nullptr;
 }
 
 void HardStreak::quadCornerOffset(cocos2d::CCPoint, cocos2d::CCPoint, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HardStreak::scheduleAutoUpdate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void HardStreak::init() {
-    bool ret = true;
+bool HardStreak::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void HardStreak::reset() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HardStreak::create() {
@@ -75,6 +67,6 @@ void HardStreak::create() {
 }
 
 void HardStreak::addPoint(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

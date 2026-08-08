@@ -5,42 +5,34 @@ SliderTouchLogic::~SliderTouchLogic() {
     this->cleanup();
 }
 
-SliderTouchLogic::~SliderTouchLogic() {
-    this->cleanup();
-}
-
-SliderTouchLogic::~SliderTouchLogic() {
-    this->cleanup();
-}
-
 void SliderTouchLogic::setRotated(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SliderTouchLogic::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SliderTouchLogic::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SliderTouchLogic::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SliderTouchLogic::setMaxOffset(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SliderTouchLogic::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SliderTouchLogic::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, float) {
+bool SliderTouchLogic::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, float) {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

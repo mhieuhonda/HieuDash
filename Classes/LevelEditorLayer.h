@@ -31,9 +31,9 @@ public:
     void validGroup(GameObject*, bool);
     void addKeyframe(KeyframeGameObject*);
     void objectMoved(GameObject*);
-    void shouldBlend(int);
+    bool shouldBlend(int);
     void updateColor(cocos2d::_ccColor3B&, float, int, bool, float, cocos2d::_ccHSVValue&, int, bool, EffectGameObject*, int, int);
-    void createObject(int, cocos2d::CCPoint, bool);
+    LevelEditorLayer* createObject(int, cocos2d::CCPoint, bool);
     void handleAction(bool, cocos2d::CCArray*);
     void removeObject(GameObject*, bool);
     void stopPlayback();
@@ -42,10 +42,10 @@ public:
     void addToRedoList(UndoObject*);
     void addToUndoList(UndoObject*, bool);
     void addTouchPoint(cocos2d::CCPoint);
-    void canPasteState();
+    bool canPasteState();
     void getAllObjects();
     void getObjectRect(GameObject*, bool, bool);
-    void isLayerLocked(int);
+    bool isLayerLocked(int);
     void objectsInRect(cocos2d::CCRect, bool);
     void removeSpecial(GameObject*);
     void resetPlayback();
@@ -53,7 +53,7 @@ public:
     void addPlayerPoint(cocos2d::CCPoint);
     void findGameObject(int);
     void getLastObjectX();
-    void getLevelString();
+    std::string getLevelString();
     void onStopPlaytest();
     void recreateGroups();
     void redoLastAction();
@@ -142,19 +142,19 @@ public:
     void updateKeyframeObjects();
     void updatePreviewParticle(ParticleGameObject*);
     void addTriggersWithGroupID(std::unordered_set<int>, std::equal_to<int>, std::allocator<int> >&, cocos2d::CCArray*, std::unordered_map<int, int>, std::equal_to<int>, std::allocator<std::pair<const int, int> > >&, int);
-    void createObjectsFromSetup(std::string&);
+    LevelEditorLayer* createObjectsFromSetup(std::string&);
     void getNextFreeEditorLayer(std::unordered_set<int>, std::equal_to<int>, std::allocator<int> > const&);
-    void getSavedEditorPosition(int);
+    std::string getSavedEditorPosition(int);
     void getSelectedEditorOrder();
     void removeAllObjectsOfType(int);
     void resetDelayedSpawnNodes();
     void updatePreviewParticles();
     void addPlayerCollisionBlock();
-    void createObjectsFromString(std::string const&, bool, bool);
+    LevelEditorLayer* createObjectsFromString(std::string const&, bool, bool);
     void getNextFreeAreaEffectID(std::unordered_set<int>, std::equal_to<int>, std::allocator<int> > const&);
     void getNextFreeEnterChannel(std::unordered_set<int>, std::equal_to<int>, std::allocator<int> > const&);
     void getNextFreeOrderChannel(std::unordered_set<int>, std::equal_to<int>, std::allocator<int> > const&);
-    void getSavedEditorPositions();
+    std::string getSavedEditorPositions();
     void getSelectedOrderChannel();
     void quickUpdateAllPositions();
     void resetEffectTriggerOptim(GameObject*, cocos2d::CCArray*);
@@ -179,7 +179,7 @@ public:
     void scene(GJGameLevel*, bool);
     void create(GJGameLevel*, bool);
     void getSFXIDs();
-    void hasAction(bool);
+    bool hasAction(bool);
     void updateArt(float);
 
 protected:

@@ -5,22 +5,14 @@ GameObjectCopy::~GameObjectCopy() {
     this->cleanup();
 }
 
-GameObjectCopy::~GameObjectCopy() {
-    this->cleanup();
-}
-
-GameObjectCopy::~GameObjectCopy() {
-    this->cleanup();
-}
-
 void GameObjectCopy::resetObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameObjectCopy::init(GameObject*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

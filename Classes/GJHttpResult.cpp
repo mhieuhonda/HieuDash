@@ -5,18 +5,10 @@ GJHttpResult::~GJHttpResult() {
     this->cleanup();
 }
 
-GJHttpResult::~GJHttpResult() {
-    this->cleanup();
-}
-
-GJHttpResult::~GJHttpResult() {
-    this->cleanup();
-}
-
 void GJHttpResult::init(bool, std::string, std::string, GJHttpType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

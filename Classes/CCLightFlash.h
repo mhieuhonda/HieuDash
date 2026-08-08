@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class CCLightFlash {
+class CCLightFlash : public cocos2d::CCSprite {
 public:
     virtual ~CCLightFlash();
 
@@ -12,7 +12,7 @@ public:
     void cleanupFlash();
     void removeLights();
     void fadeAndRemove();
-    void init();
+    bool init();
     void create();
     void showFlash();
 

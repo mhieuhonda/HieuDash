@@ -2,17 +2,11 @@
 #include "GJLocalLevelScoreCell.h"
 
 GJLocalLevelScoreCell::GJLocalLevelScoreCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 GJLocalLevelScoreCell::GJLocalLevelScoreCell(char const*, float, float) {
-}
-
-GJLocalLevelScoreCell::~GJLocalLevelScoreCell() {
-    this->cleanup();
-}
-
-GJLocalLevelScoreCell::~GJLocalLevelScoreCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 GJLocalLevelScoreCell::~GJLocalLevelScoreCell() {
@@ -20,23 +14,21 @@ GJLocalLevelScoreCell::~GJLocalLevelScoreCell() {
 }
 
 void GJLocalLevelScoreCell::loadFromScore(GJLocalScore*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJLocalLevelScoreCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJLocalLevelScoreCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GJLocalLevelScoreCell::init() {
-    bool ret = true;
+bool GJLocalLevelScoreCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

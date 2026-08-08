@@ -5,18 +5,10 @@ SetupBGSpeedTrigger::~SetupBGSpeedTrigger() {
     this->cleanup();
 }
 
-SetupBGSpeedTrigger::~SetupBGSpeedTrigger() {
-    this->cleanup();
-}
-
-SetupBGSpeedTrigger::~SetupBGSpeedTrigger() {
-    this->cleanup();
-}
-
 void SetupBGSpeedTrigger::init(EffectGameObject*, cocos2d::CCArray*, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

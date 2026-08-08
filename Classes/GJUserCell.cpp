@@ -2,17 +2,11 @@
 #include "GJUserCell.h"
 
 GJUserCell::GJUserCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 GJUserCell::GJUserCell(char const*, float, float) {
-}
-
-GJUserCell::~GJUserCell() {
-    this->cleanup();
-}
-
-GJUserCell::~GJUserCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 GJUserCell::~GJUserCell() {
@@ -20,65 +14,61 @@ GJUserCell::~GJUserCell() {
 }
 
 void GJUserCell::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUserCell::loadFromScore(GJUserScore*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJUserCell::onSendMessage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUserCell::onUnblockUser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJUserCell::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUserCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUserCell::onRemoveFriend(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJUserCell::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUserCell::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJUserCell::onViewFriendRequest(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUserCell::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJUserCell::onCancelFriendRequest(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUserCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GJUserCell::init() {
-    bool ret = true;
+bool GJUserCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

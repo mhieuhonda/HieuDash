@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class CCAnimateFrameCache {
+class CCAnimateFrameCache : public cocos2d::CCNode {
 public:
     virtual ~CCAnimateFrameCache();
 
@@ -14,7 +14,7 @@ public:
     void addSpriteFramesWithFile(char const*);
     void purgeSharedSpriteFrameCache();
     void addCustomSpriteFramesWithFile(char const*);
-    void init();
+    bool init();
     void addDict(DS_Dictionary*, char const*);
     void addDict(cocos2d::CCDictionary*, char const*);
 

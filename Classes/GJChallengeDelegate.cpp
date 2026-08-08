@@ -2,10 +2,10 @@
 #include "GJChallengeDelegate.h"
 
 void GJChallengeDelegate::challengeStatusFailed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJChallengeDelegate::challengeStatusFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,34 +5,26 @@ SFXSearchResult::~SFXSearchResult() {
     this->cleanup();
 }
 
-SFXSearchResult::~SFXSearchResult() {
-    this->cleanup();
-}
-
-SFXSearchResult::~SFXSearchResult() {
-    this->cleanup();
-}
-
 void SFXSearchResult::updateObjects(AudioSortType) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SFXSearchResult::getActiveFolder() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXSearchResult::getSelectedPage(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXSearchResult::setActiveFolder(SFXFolderObject*) {
-    // TODO: Set m_activeFolder
+    // Setter operation - stub
 }
 
 void SFXSearchResult::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -2,21 +2,18 @@
 #include "FriendRequestDelegate.h"
 
 void FriendRequestDelegate::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void FriendRequestDelegate::forceReloadRequests(bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FriendRequestDelegate::loadFRequestsFailed(char const*, GJErrorCode) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FriendRequestDelegate::loadFRequestsFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

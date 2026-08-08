@@ -5,119 +5,106 @@ GJMultiplayerManager::~GJMultiplayerManager() {
     this->cleanup();
 }
 
-GJMultiplayerManager::~GJMultiplayerManager() {
-    this->cleanup();
-}
-
-GJMultiplayerManager::~GJMultiplayerManager() {
-    this->cleanup();
-}
-
 void GJMultiplayerManager::addComment(std::string, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJMultiplayerManager::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void GJMultiplayerManager::firstSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJMultiplayerManager::handleItND(cocos2d::CCNode*, void*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJMultiplayerManager::isDLActive(char const*) {
-    // TODO: Implement
+bool GJMultiplayerManager::isDLActive(char const*) {
+    return false;
 }
 
 void GJMultiplayerManager::getDLObject(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJMultiplayerManager::sharedState() {
-    // TODO: Implement
+GJMultiplayerManager* GJMultiplayerManager::sharedState() {
+    return nullptr;
 }
 
 void GJMultiplayerManager::encodeDataTo(DS_Dictionary*) {
-    // TODO: Implement
+    // Data encoding to dictionary - stub
 }
 
 void GJMultiplayerManager::addDLToActive(char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJMultiplayerManager::addDLToActive(char const*, cocos2d::CCObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJMultiplayerManager::uploadComment(std::string, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMultiplayerManager::handleItDelayed(bool, std::string, std::string, GJHttpType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJMultiplayerManager::getBasePostString() {
-    // TODO: Implement
+std::string GJMultiplayerManager::getBasePostString() {
+    return "";
 }
 
 void GJMultiplayerManager::ProcessHttpRequest(std::string, std::string, std::string, GJHttpType) {
-    // Process data/event
-    // TODO: Implement processing logic
+    // Stub - not yet implemented
 }
 
 void GJMultiplayerManager::removeDLFromActive(char const*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void GJMultiplayerManager::createAndAddComment(std::string, int) {
-    // TODO: Implement
+GJMultiplayerManager* GJMultiplayerManager::createAndAddComment(std::string, int) {
+    return nullptr;
 }
 
 void GJMultiplayerManager::onExitLobbyCompleted(std::string, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMultiplayerManager::onJoinLobbyCompleted(std::string, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMultiplayerManager::getLastCommentIDForGame(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMultiplayerManager::onUploadCommentCompleted(std::string, std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMultiplayerManager::onProcessHttpRequestCompleted(cocos2d::extension::CCHttpClient*, cocos2d::extension::CCHttpResponse*) {
-    // Process data/event
-    // TODO: Implement processing logic
+    // Stub - not yet implemented
 }
 
-void GJMultiplayerManager::init() {
-    bool ret = true;
+bool GJMultiplayerManager::init() {
+    bool ret = GManager::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJMultiplayerManager::handleIt(bool, std::string, std::string, GJHttpType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMultiplayerManager::exitLobby(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMultiplayerManager::joinLobby(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

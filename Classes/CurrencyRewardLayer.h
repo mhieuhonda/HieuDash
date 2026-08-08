@@ -9,10 +9,10 @@ public:
     virtual ~CurrencyRewardLayer();
 
     void pulseSprite(cocos2d::CCSprite*);
-    void createObjects(CurrencySpriteType, int, cocos2d::CCPoint, float);
+    CurrencyRewardLayer* createObjects(CurrencySpriteType, int, cocos2d::CCPoint, float);
     void incrementCount(int);
-    void createObjectsFull(CurrencySpriteType, int, cocos2d::CCSprite*, cocos2d::CCPoint, float);
-    void createUnlockObject(cocos2d::CCSprite*, cocos2d::CCPoint, float);
+    CurrencyRewardLayer* createObjectsFull(CurrencySpriteType, int, cocos2d::CCSprite*, cocos2d::CCPoint, float);
+    CurrencyRewardLayer* createUnlockObject(cocos2d::CCSprite*, cocos2d::CCPoint, float);
     void incrementMoonsCount(int);
     void incrementStarsCount(int);
     void incrementDiamondsCount(int);

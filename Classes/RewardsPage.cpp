@@ -5,63 +5,55 @@ RewardsPage::~RewardsPage() {
     this->cleanup();
 }
 
-RewardsPage::~RewardsPage() {
-    this->cleanup();
-}
-
-RewardsPage::~RewardsPage() {
-    this->cleanup();
-}
-
 void RewardsPage::onFreeStuff(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::updateTimers(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void RewardsPage::tryGetRewards() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::getRewardFrame(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::unlockLayerClosed(RewardUnlockLayer*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void RewardsPage::rewardsStatusFailed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::rewardsStatusFinished(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void RewardsPage::init() {
-    bool ret = true;
+bool RewardsPage::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void RewardsPage::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void RewardsPage::create() {
@@ -75,10 +67,10 @@ void RewardsPage::create() {
 }
 
 void RewardsPage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardsPage::onReward(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

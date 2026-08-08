@@ -5,34 +5,26 @@ CurrencySprite::~CurrencySprite() {
     this->cleanup();
 }
 
-CurrencySprite::~CurrencySprite() {
-    this->cleanup();
-}
-
-CurrencySprite::~CurrencySprite() {
-    this->cleanup();
-}
-
 void CurrencySprite::initWithSprite(cocos2d::CCSprite*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void CurrencySprite::createWithSprite(cocos2d::CCSprite*) {
-    // TODO: Implement
+CurrencySprite* CurrencySprite::createWithSprite(cocos2d::CCSprite*) {
+    return nullptr;
 }
 
 void CurrencySprite::spriteTypeToStat(CurrencySpriteType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CurrencySprite::rewardToSpriteType(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CurrencySprite::init(CurrencySpriteType, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

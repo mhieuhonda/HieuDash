@@ -2,10 +2,10 @@
 #include "GJRewardDelegate.h"
 
 void GJRewardDelegate::rewardsStatusFailed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRewardDelegate::rewardsStatusFinished(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

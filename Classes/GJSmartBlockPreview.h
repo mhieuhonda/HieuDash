@@ -9,7 +9,7 @@ public:
     virtual ~GJSmartBlockPreview();
 
     void addPreview(std::string, std::string, LevelEditorLayer*);
-    void createInfoLabel();
+    GJSmartBlockPreview* createInfoLabel();
     void addTemplateGuide(SmartPrefabResult, float);
     void addTemplateGuide(std::string, int);
     void toggleSelectItem(bool);

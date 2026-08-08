@@ -5,51 +5,43 @@ LevelFeatureLayer::~LevelFeatureLayer() {
     this->cleanup();
 }
 
-LevelFeatureLayer::~LevelFeatureLayer() {
-    this->cleanup();
-}
-
-LevelFeatureLayer::~LevelFeatureLayer() {
-    this->cleanup();
-}
-
 void LevelFeatureLayer::updateStars() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelFeatureLayer::onToggleEpic(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::onSetEpicOnly(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::onSetFeatured(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::onRemoveValues(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelFeatureLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelFeatureLayer::onUp(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::onUp2(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::create(int) {
@@ -63,14 +55,14 @@ void LevelFeatureLayer::create(int) {
 }
 
 void LevelFeatureLayer::onDown(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelFeatureLayer::onDown2(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

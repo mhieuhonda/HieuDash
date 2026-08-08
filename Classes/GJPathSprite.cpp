@@ -5,34 +5,26 @@ GJPathSprite::~GJPathSprite() {
     this->cleanup();
 }
 
-GJPathSprite::~GJPathSprite() {
-    this->cleanup();
-}
-
-GJPathSprite::~GJPathSprite() {
-    this->cleanup();
-}
-
 void GJPathSprite::updateState() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJPathSprite::addRankLabel(int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJPathSprite::addShardSprite() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJPathSprite::changeToLockedArt() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJPathSprite::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class ShardsPage {
+class ShardsPage : public cocos2d::CCLayer {
 public:
     virtual ~ShardsPage();
 
@@ -13,7 +13,7 @@ public:
     void keyBackClicked();
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onClose(cocos2d::CCObject*);

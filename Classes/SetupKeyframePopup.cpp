@@ -5,42 +5,34 @@ SetupKeyframePopup::~SetupKeyframePopup() {
     this->cleanup();
 }
 
-SetupKeyframePopup::~SetupKeyframePopup() {
-    this->cleanup();
-}
-
-SetupKeyframePopup::~SetupKeyframePopup() {
-    this->cleanup();
-}
-
 void SetupKeyframePopup::onTimeMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupKeyframePopup::onCustomButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupKeyframePopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupKeyframePopup::refreshPreviewArt() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupKeyframePopup::updateTimeModeButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupKeyframePopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupKeyframePopup::init(KeyframeGameObject*, cocos2d::CCArray*, LevelEditorLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -55,6 +47,6 @@ void SetupKeyframePopup::create(KeyframeGameObject*, cocos2d::CCArray*, LevelEdi
 }
 
 void SetupKeyframePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

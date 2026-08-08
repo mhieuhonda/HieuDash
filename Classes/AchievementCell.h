@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class AchievementCell {
+class AchievementCell : public cocos2d::CCNode {
 public:
     AchievementCell(char const*, float, float);
     AchievementCell(char const*, float, float);
@@ -14,7 +14,7 @@ public:
     void loadFromDict(cocos2d::CCDictionary*);
     void updateBGColor(int);
     void draw();
-    void init();
+    bool init();
 
 };
 

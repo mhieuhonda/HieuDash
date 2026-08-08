@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class SlideInLayer {
+class SlideInLayer : public cocos2d::CCLayer {
 public:
     virtual ~SlideInLayer();
 
@@ -20,7 +20,7 @@ public:
     void enterAnimFinished();
     void registerWithTouchDispatcher();
     void draw();
-    void init();
+    bool init();
     void create();
     void enableUI();
     void disableUI();

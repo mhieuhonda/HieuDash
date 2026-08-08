@@ -10,7 +10,7 @@ public:
 
     void keyBackClicked();
     void nameForUnlockType(int, UnlockType);
-    void isUnlockedByDefault(int, UnlockType);
+    bool isUnlockedByDefault(int, UnlockType);
     void init(int, UnlockType);
     void create(int, UnlockType);
     void onClose(cocos2d::CCObject*);

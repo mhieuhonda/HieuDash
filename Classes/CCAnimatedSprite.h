@@ -14,7 +14,7 @@ public:
     void runAnimation(std::string);
     void switchToMode(spriteMode);
     void cleanupSprite();
-    void createWithType(char const*, cocos2d::CCTexture2D*, bool);
+    CCAnimatedSprite* createWithType(char const*, cocos2d::CCTexture2D*, bool);
     void tweenToAnimation(std::string, float);
     void animationFinished(char const*);
     void willPlayAnimation();

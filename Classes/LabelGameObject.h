@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-class LabelGameObject {
+class LabelGameObject : public GameObject {
 public:
     virtual ~LabelGameObject();
 
@@ -16,7 +16,7 @@ public:
     void resetObject();
     void updateLabel(std::string);
     void updateLabel(float);
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void getTextKerning();
     void setObjectColor(cocos2d::_ccColor3B const&);
     void queueUpdateLabel(std::string);
@@ -28,7 +28,7 @@ public:
     void updateLabelIfDirty();
     void updatePreviewLabel();
     void addMainSpriteToParent(bool);
-    void init();
+    bool init();
     void create();
 
 protected:

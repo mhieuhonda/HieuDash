@@ -5,31 +5,22 @@ EndTriggerGameObject::~EndTriggerGameObject() {
     this->cleanup();
 }
 
-EndTriggerGameObject::~EndTriggerGameObject() {
-    this->cleanup();
-}
-
-EndTriggerGameObject::~EndTriggerGameObject() {
-    this->cleanup();
-}
-
-void EndTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string EndTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void EndTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void EndTriggerGameObject::init() {
+bool EndTriggerGameObject::init() {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

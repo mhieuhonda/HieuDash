@@ -5,50 +5,42 @@ CCAnimateFrameCache::~CCAnimateFrameCache() {
     this->cleanup();
 }
 
-CCAnimateFrameCache::~CCAnimateFrameCache() {
-    this->cleanup();
-}
-
-CCAnimateFrameCache::~CCAnimateFrameCache() {
-    this->cleanup();
-}
-
 void CCAnimateFrameCache::spriteFrameByName(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimateFrameCache::removeSpriteFrames() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CCAnimateFrameCache::sharedSpriteFrameCache() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimateFrameCache::addSpriteFramesWithFile(char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void CCAnimateFrameCache::purgeSharedSpriteFrameCache() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimateFrameCache::addCustomSpriteFramesWithFile(char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
-void CCAnimateFrameCache::init() {
-    bool ret = true;
+bool CCAnimateFrameCache::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CCAnimateFrameCache::addDict(DS_Dictionary*, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void CCAnimateFrameCache::addDict(cocos2d::CCDictionary*, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

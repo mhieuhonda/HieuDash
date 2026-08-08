@@ -5,36 +5,26 @@ FileSaveManager::~FileSaveManager() {
     this->cleanup();
 }
 
-FileSaveManager::~FileSaveManager() {
-    this->cleanup();
-}
-
-FileSaveManager::~FileSaveManager() {
-    this->cleanup();
-}
-
-void FileSaveManager::sharedState() {
-    // TODO: Implement
+FileSaveManager* FileSaveManager::sharedState() {
+    return nullptr;
 }
 
 void FileSaveManager::getStoreData() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FileSaveManager::loadDataFromFile(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void FileSaveManager::init() {
-    bool ret = true;
+bool FileSaveManager::init() {
+    bool ret = GManager::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void FileSaveManager::firstLoad() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

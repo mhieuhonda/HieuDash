@@ -5,18 +5,10 @@ SetupResetTriggerPopup::~SetupResetTriggerPopup() {
     this->cleanup();
 }
 
-SetupResetTriggerPopup::~SetupResetTriggerPopup() {
-    this->cleanup();
-}
-
-SetupResetTriggerPopup::~SetupResetTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupResetTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

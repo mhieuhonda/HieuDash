@@ -30,8 +30,8 @@ public:
     void onFeaturedLevels(cocos2d::CCObject*);
     void checkQuestsStatus();
     void onOnlyFullVersion(cocos2d::CCObject*);
-    void canPlayOnlineLevels();
-    void init() override;
+    bool canPlayOnlineLevels();
+    bool init() override;
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

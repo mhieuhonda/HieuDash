@@ -5,54 +5,46 @@ SetupCameraModePopup::~SetupCameraModePopup() {
     this->cleanup();
 }
 
-SetupCameraModePopup::~SetupCameraModePopup() {
-    this->cleanup();
-}
-
-SetupCameraModePopup::~SetupCameraModePopup() {
-    this->cleanup();
-}
-
 void SetupCameraModePopup::onUnboundMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraModePopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraModePopup::updateCameraEasing() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraModePopup::updateCameraPadding() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraModePopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraModePopup::onEditCameraSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraModePopup::updateItemVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraModePopup::updateCameraEasingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraModePopup::updateCameraPaddingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraModePopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -67,6 +59,6 @@ void SetupCameraModePopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupCameraModePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

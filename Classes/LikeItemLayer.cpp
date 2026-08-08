@@ -5,26 +5,18 @@ LikeItemLayer::~LikeItemLayer() {
     this->cleanup();
 }
 
-LikeItemLayer::~LikeItemLayer() {
-    this->cleanup();
-}
-
-LikeItemLayer::~LikeItemLayer() {
-    this->cleanup();
-}
-
 void LikeItemLayer::triggerLike(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LikeItemLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LikeItemLayer::init(LikeItemType, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,14 +31,14 @@ void LikeItemLayer::create(LikeItemType, int, int) {
 }
 
 void LikeItemLayer::onLike(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LikeItemLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LikeItemLayer::onDislike(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

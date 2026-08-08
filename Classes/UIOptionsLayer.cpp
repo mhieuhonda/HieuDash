@@ -5,51 +5,42 @@ UIOptionsLayer::~UIOptionsLayer() {
     this->cleanup();
 }
 
-UIOptionsLayer::~UIOptionsLayer() {
-    this->cleanup();
-}
-
-UIOptionsLayer::~UIOptionsLayer() {
-    this->cleanup();
-}
-
 void UIOptionsLayer::onSaveLoad(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Save/encode operation - stub
 }
 
 void UIOptionsLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::toggleUIGroup(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::init(bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -64,18 +55,18 @@ void UIOptionsLayer::create(bool) {
 }
 
 void UIOptionsLayer::getNode(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::onReset(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIOptionsLayer::getValue(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

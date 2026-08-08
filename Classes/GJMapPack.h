@@ -5,15 +5,15 @@
 #include "cocos2d.h"
 #include <string>
 
-class GJMapPack {
+class GJMapPack : public cocos2d::CCNode {
 public:
     virtual ~GJMapPack();
 
     void completedMaps();
     void parsePackColors(std::string, std::string);
     void parsePackLevels(std::string);
-    void hasCompletedMapPack();
-    void init();
+    bool hasCompletedMapPack();
+    bool init();
     void create(cocos2d::CCDictionary*);
     void create();
     void totalMaps();

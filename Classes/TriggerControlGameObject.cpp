@@ -5,35 +5,26 @@ TriggerControlGameObject::~TriggerControlGameObject() {
     this->cleanup();
 }
 
-TriggerControlGameObject::~TriggerControlGameObject() {
-    this->cleanup();
-}
-
-TriggerControlGameObject::~TriggerControlGameObject() {
-    this->cleanup();
-}
-
-void TriggerControlGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string TriggerControlGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void TriggerControlGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TriggerControlGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void TriggerControlGameObject::updateTriggerControlFrame() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void TriggerControlGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

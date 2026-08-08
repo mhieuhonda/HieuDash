@@ -2,10 +2,10 @@
 #include "LevelRateInfoDelegate.h"
 
 void LevelRateInfoDelegate::rateInfoFailed(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelRateInfoDelegate::rateInfoFinished(int, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

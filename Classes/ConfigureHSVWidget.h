@@ -17,7 +17,7 @@ public:
     void onToggleVConst(cocos2d::CCObject*);
     void textInputClosed(CCTextInputNode*);
     void textInputOpened(CCTextInputNode*);
-    void createTextInputNode(cocos2d::CCPoint, int);
+    ConfigureHSVWidget* createTextInputNode(cocos2d::CCPoint, int);
     void init(cocos2d::_ccHSVValue, bool, bool);
     void create(cocos2d::_ccHSVValue, bool, bool);
     void getHSV(GameObject*, cocos2d::CCArray*, int);

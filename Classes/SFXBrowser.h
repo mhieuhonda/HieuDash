@@ -23,7 +23,7 @@ public:
     void cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*);
     void musicActionFinished(GJMusicAction);
     void onToggleCompactMode(cocos2d::CCObject*);
-    void shouldSnapToSelected();
+    bool shouldSnapToSelected();
     void registerWithTouchDispatcher();
     void init(int);
     void create(int);

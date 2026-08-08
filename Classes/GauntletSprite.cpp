@@ -5,38 +5,30 @@ GauntletSprite::~GauntletSprite() {
     this->cleanup();
 }
 
-GauntletSprite::~GauntletSprite() {
-    this->cleanup();
-}
-
-GauntletSprite::~GauntletSprite() {
-    this->cleanup();
-}
-
 void GauntletSprite::colorForType(GauntletType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSprite::addLockedSprite() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GauntletSprite::addNormalSprite() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GauntletSprite::luminanceForType(GauntletType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSprite::toggleLockedSprite(bool) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GauntletSprite::init(GauntletType, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

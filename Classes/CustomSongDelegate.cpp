@@ -2,10 +2,10 @@
 #include "CustomSongDelegate.h"
 
 void CustomSongDelegate::songIDChanged(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongDelegate::getActiveSongID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -2,10 +2,10 @@
 #include "GJAccountSyncDelegate.h"
 
 void GJAccountSyncDelegate::syncAccountFailed(BackupAccountError, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountSyncDelegate::syncAccountFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

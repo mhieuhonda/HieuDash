@@ -12,17 +12,11 @@ MapPackCell* MapPackCell::create() {
 }
 
 MapPackCell::MapPackCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 MapPackCell::MapPackCell(char const*, float, float) {
-}
-
-MapPackCell::~MapPackCell() {
-    this->cleanup();
-}
-
-MapPackCell::~MapPackCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 MapPackCell::~MapPackCell() {
@@ -30,40 +24,37 @@ MapPackCell::~MapPackCell() {
 }
 
 void MapPackCell::reloadCell() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MapPackCell::onClaimReward(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void MapPackCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MapPackCell::loadFromMapPack(GJMapPack*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MapPackCell::playCompleteEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MapPackCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void MapPackCell::init() {
+bool MapPackCell::init() {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void MapPackCell::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

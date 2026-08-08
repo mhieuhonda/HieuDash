@@ -4,7 +4,7 @@
 
 #include <string>
 
-class StatsCell {
+class StatsCell : public cocos2d::CCNode {
 public:
     StatsCell(char const*, float, float);
     StatsCell(char const*, float, float);
@@ -13,9 +13,9 @@ public:
 
     void updateBGColor(int);
     void loadFromObject(StatsObject*);
-    void getTitleFromKey(char const*);
+    std::string getTitleFromKey(char const*);
     void draw();
-    void init();
+    bool init();
 
 protected:
     std::string m_titleFromKey;

@@ -2,11 +2,11 @@
 #ifndef GJFLYGROUNDLAYER_H_
 #define GJFLYGROUNDLAYER_H_
 
-class GJFlyGroundLayer {
+class GJFlyGroundLayer : public cocos2d::CCLayer {
 public:
     virtual ~GJFlyGroundLayer();
 
-    void init();
+    bool init();
     void create();
 
 };

@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class ChallengesPage {
+class ChallengesPage : public cocos2d::CCLayer {
 public:
     virtual ~ChallengesPage();
 
@@ -15,11 +15,11 @@ public:
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void currencyWillExit(CurrencyRewardLayer*);
     void tryGetChallenges();
-    void createChallengeNode(int, bool, float, bool);
+    ChallengesPage* createChallengeNode(int, bool, float, bool);
     void challengeStatusFailed();
     void challengeStatusFinished();
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onClose(cocos2d::CCObject*);

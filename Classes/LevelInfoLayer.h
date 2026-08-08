@@ -47,7 +47,7 @@ public:
     void levelDeleteFinished(int);
     void levelDownloadFailed(int);
     void levelUpdateFinished(GJGameLevel*, UpdateResponse);
-    void shouldDownloadLevel();
+    bool shouldDownloadLevel();
     void setupPlatformerStats();
     void levelDownloadFinished(GJGameLevel*);
     void onEnterTransitionDidFinish();

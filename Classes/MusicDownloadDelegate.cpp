@@ -2,49 +2,42 @@
 #include "MusicDownloadDelegate.h"
 
 void MusicDownloadDelegate::songStateChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicDownloadDelegate::downloadSFXFailed(int, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MusicDownloadDelegate::musicActionFailed(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicDownloadDelegate::downloadSongFailed(int, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MusicDownloadDelegate::loadSongInfoFailed(int, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MusicDownloadDelegate::downloadSFXFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MusicDownloadDelegate::downloadSongStarted(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MusicDownloadDelegate::musicActionFinished(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicDownloadDelegate::downloadSongFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MusicDownloadDelegate::loadSongInfoFinished(SongInfoObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

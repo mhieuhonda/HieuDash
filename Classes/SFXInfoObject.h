@@ -8,7 +8,7 @@ class SFXInfoObject {
 public:
     virtual ~SFXInfoObject();
 
-    void getLowerCaseName();
+    std::string getLowerCaseName();
     void init(int, std::string, int, int, int);
     void create(int, std::string, int, int, int);
 

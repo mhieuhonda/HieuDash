@@ -5,40 +5,30 @@ RateDemonLayer::~RateDemonLayer() {
     this->cleanup();
 }
 
-RateDemonLayer::~RateDemonLayer() {
-    this->cleanup();
-}
-
-RateDemonLayer::~RateDemonLayer() {
-    this->cleanup();
-}
-
 void RateDemonLayer::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateDemonLayer::selectRating(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateDemonLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateDemonLayer::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void RateDemonLayer::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void RateDemonLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -53,10 +43,10 @@ void RateDemonLayer::create(int) {
 }
 
 void RateDemonLayer::onRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateDemonLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

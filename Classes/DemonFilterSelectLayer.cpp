@@ -5,26 +5,18 @@ DemonFilterSelectLayer::~DemonFilterSelectLayer() {
     this->cleanup();
 }
 
-DemonFilterSelectLayer::~DemonFilterSelectLayer() {
-    this->cleanup();
-}
-
-DemonFilterSelectLayer::~DemonFilterSelectLayer() {
-    this->cleanup();
-}
-
 void DemonFilterSelectLayer::selectRating(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DemonFilterSelectLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void DemonFilterSelectLayer::init() {
-    bool ret = true;
+bool DemonFilterSelectLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,6 +31,6 @@ void DemonFilterSelectLayer::create() {
 }
 
 void DemonFilterSelectLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

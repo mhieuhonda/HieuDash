@@ -5,72 +5,63 @@ CCAnimatedSprite::~CCAnimatedSprite() {
     this->cleanup();
 }
 
-CCAnimatedSprite::~CCAnimatedSprite() {
-    this->cleanup();
-}
-
-CCAnimatedSprite::~CCAnimatedSprite() {
-    this->cleanup();
-}
-
 void CCAnimatedSprite::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCAnimatedSprite::initWithType(char const*, cocos2d::CCTexture2D*, bool) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void CCAnimatedSprite::runAnimation(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimatedSprite::switchToMode(spriteMode) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimatedSprite::cleanupSprite() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CCAnimatedSprite::createWithType(char const*, cocos2d::CCTexture2D*, bool) {
-    // TODO: Implement
+CCAnimatedSprite* CCAnimatedSprite::createWithType(char const*, cocos2d::CCTexture2D*, bool) {
+    return nullptr;
 }
 
 void CCAnimatedSprite::tweenToAnimation(std::string, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimatedSprite::animationFinished(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimatedSprite::willPlayAnimation() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CCAnimatedSprite::animationFinishedO(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimatedSprite::runAnimationForced(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimatedSprite::tweenToAnimationFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCAnimatedSprite::loadType(char const*, cocos2d::CCTexture2D*, bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CCAnimatedSprite::setColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_color
+    // Setter operation - stub
 }
 
 void CCAnimatedSprite::stopTween() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

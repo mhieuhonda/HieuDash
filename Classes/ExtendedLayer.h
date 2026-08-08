@@ -4,12 +4,12 @@
 
 #include "cocos2d.h"
 
-class ExtendedLayer {
+class ExtendedLayer : public cocos2d::CCLayer {
 public:
     virtual ~ExtendedLayer();
 
     void setPosition(cocos2d::CCPoint const&);
-    void init();
+    bool init();
     void create();
 
 protected:

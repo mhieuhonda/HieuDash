@@ -5,70 +5,62 @@ SetupCountTriggerPopup::~SetupCountTriggerPopup() {
     this->cleanup();
 }
 
-SetupCountTriggerPopup::~SetupCountTriggerPopup() {
-    this->cleanup();
-}
-
-SetupCountTriggerPopup::~SetupCountTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupCountTriggerPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCountTriggerPopup::updateItemID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCountTriggerPopup::onEnableGroup(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCountTriggerPopup::onItemIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCountTriggerPopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCountTriggerPopup::onMultiActivate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCountTriggerPopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCountTriggerPopup::updateTargetCount() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCountTriggerPopup::onTargetCountArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCountTriggerPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCountTriggerPopup::updateItemIDInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCountTriggerPopup::updateTargetIDInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCountTriggerPopup::updateCountTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCountTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -83,6 +75,6 @@ void SetupCountTriggerPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupCountTriggerPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

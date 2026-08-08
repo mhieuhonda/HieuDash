@@ -5,26 +5,18 @@ RateLevelLayer::~RateLevelLayer() {
     this->cleanup();
 }
 
-RateLevelLayer::~RateLevelLayer() {
-    this->cleanup();
-}
-
-RateLevelLayer::~RateLevelLayer() {
-    this->cleanup();
-}
-
 void RateLevelLayer::selectRating(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateLevelLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void RateLevelLayer::init(int) {
+bool RateLevelLayer::init(int) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,10 +31,10 @@ void RateLevelLayer::create(int) {
 }
 
 void RateLevelLayer::onRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateLevelLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

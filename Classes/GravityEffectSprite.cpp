@@ -5,27 +5,18 @@ GravityEffectSprite::~GravityEffectSprite() {
     this->cleanup();
 }
 
-GravityEffectSprite::~GravityEffectSprite() {
-    this->cleanup();
-}
-
-GravityEffectSprite::~GravityEffectSprite() {
-    this->cleanup();
-}
-
 void GravityEffectSprite::updateSpritesColor(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GravityEffectSprite::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GravityEffectSprite::init() {
-    bool ret = true;
+bool GravityEffectSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

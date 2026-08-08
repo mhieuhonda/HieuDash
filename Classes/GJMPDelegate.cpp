@@ -2,19 +2,18 @@
 #include "GJMPDelegate.h"
 
 void GJMPDelegate::updateComments() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMPDelegate::joinLobbyFailed(int, GJMPErrorCode) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMPDelegate::joinLobbyFinished(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMPDelegate::didUploadMPComment(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

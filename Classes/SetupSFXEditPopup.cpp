@@ -5,18 +5,10 @@ SetupSFXEditPopup::~SetupSFXEditPopup() {
     this->cleanup();
 }
 
-SetupSFXEditPopup::~SetupSFXEditPopup() {
-    this->cleanup();
-}
-
-SetupSFXEditPopup::~SetupSFXEditPopup() {
-    this->cleanup();
-}
-
 void SetupSFXEditPopup::init(SFXTriggerGameObject*, cocos2d::CCArray*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

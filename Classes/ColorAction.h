@@ -23,7 +23,7 @@ public:
     void create(cocos2d::_ccColor3B, bool, int);
     void create();
     void getCopy();
-    void isInUse();
+    bool isInUse();
 
 };
 

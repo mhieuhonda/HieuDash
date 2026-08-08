@@ -5,74 +5,66 @@ SongSelectNode::~SongSelectNode() {
     this->cleanup();
 }
 
-SongSelectNode::~SongSelectNode() {
-    this->cleanup();
-}
-
-SongSelectNode::~SongSelectNode() {
-    this->cleanup();
-}
-
 void SongSelectNode::onSongMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::onSongMode(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::selectSong(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::audioPrevious(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::songIDChanged(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::getActiveSongID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SongSelectNode::getSongFileName() {
-    // TODO: Implement
+std::string SongSelectNode::getSongFileName() {
+    return "";
 }
 
 void SongSelectNode::getLevelSettings() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::onOpenCustomSong(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::updateAudioLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SongSelectNode::showCustomSongSelect() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SongSelectNode::customSongLayerClosed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongSelectNode::updateWidgetVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SongSelectNode::init(int, bool, LevelSettingsObject*, SongSelectType, cocos2d::CCPoint, cocos2d::CCNode*, cocos2d::CCMenu*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -87,6 +79,6 @@ void SongSelectNode::create(int, bool, LevelSettingsObject*, SongSelectType, coc
 }
 
 void SongSelectNode::audioNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

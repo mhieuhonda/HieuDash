@@ -5,38 +5,30 @@ SetupSequenceTriggerPopup::~SetupSequenceTriggerPopup() {
     this->cleanup();
 }
 
-SetupSequenceTriggerPopup::~SetupSequenceTriggerPopup() {
-    this->cleanup();
-}
-
-SetupSequenceTriggerPopup::~SetupSequenceTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupSequenceTriggerPopup::onAddChance(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupSequenceTriggerPopup::onChangeOrder(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSequenceTriggerPopup::onDeleteSelected(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupSequenceTriggerPopup::updateGroupIDButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupSequenceTriggerPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSequenceTriggerPopup::init(SequenceTriggerGameObject*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,6 +43,6 @@ void SetupSequenceTriggerPopup::create(SequenceTriggerGameObject*) {
 }
 
 void SetupSequenceTriggerPopup::onSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

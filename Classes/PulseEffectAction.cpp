@@ -11,15 +11,15 @@ PulseEffectAction* PulseEffectAction::create() {
     return nullptr;
 }
 
-void PulseEffectAction::isFinished() {
-    // TODO: Implement
+bool PulseEffectAction::isFinished() {
+    return false;
 }
 
 void PulseEffectAction::valueForDelta(float, float, float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PulseEffectAction::step(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

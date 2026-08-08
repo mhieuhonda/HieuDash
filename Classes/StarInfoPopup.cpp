@@ -5,30 +5,22 @@ StarInfoPopup::~StarInfoPopup() {
     this->cleanup();
 }
 
-StarInfoPopup::~StarInfoPopup() {
-    this->cleanup();
-}
-
-StarInfoPopup::~StarInfoPopup() {
-    this->cleanup();
-}
-
 void StarInfoPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void StarInfoPopup::createFromString(std::string) {
-    // TODO: Implement
+StarInfoPopup* StarInfoPopup::createFromString(std::string) {
+    return nullptr;
 }
 
-void StarInfoPopup::createFromStringMoons(std::string) {
-    // TODO: Implement
+StarInfoPopup* StarInfoPopup::createFromStringMoons(std::string) {
+    return nullptr;
 }
 
 void StarInfoPopup::init(int, int, int, int, int, int, int, int, int, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,6 +35,6 @@ void StarInfoPopup::create(int, int, int, int, int, int, int, int, int, bool) {
 }
 
 void StarInfoPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

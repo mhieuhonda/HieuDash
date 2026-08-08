@@ -5,30 +5,22 @@ ShareListLayer::~ShareListLayer() {
     this->cleanup();
 }
 
-ShareListLayer::~ShareListLayer() {
-    this->cleanup();
-}
-
-ShareListLayer::~ShareListLayer() {
-    this->cleanup();
-}
-
 void ShareListLayer::onUnlisted(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareListLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareListLayer::updateUnlistedF() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ShareListLayer::init(GJLevelList*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,14 +35,14 @@ void ShareListLayer::create(GJLevelList*) {
 }
 
 void ShareListLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareListLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareListLayer::onShare(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

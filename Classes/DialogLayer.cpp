@@ -5,90 +5,82 @@ DialogLayer::~DialogLayer() {
     this->cleanup();
 }
 
-DialogLayer::~DialogLayer() {
-    this->cleanup();
-}
-
-DialogLayer::~DialogLayer() {
-    this->cleanup();
-}
-
 void DialogLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::addToMainScene() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void DialogLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::animateInDialog() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::handleDialogTap() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void DialogLayer::createDialogLayer(DialogObject*, cocos2d::CCArray*, int) {
-    // TODO: Implement
+DialogLayer* DialogLayer::createDialogLayer(DialogObject*, cocos2d::CCArray*, int) {
+    return nullptr;
 }
 
-void DialogLayer::createWithObjects(cocos2d::CCArray*, int) {
-    // TODO: Implement
+DialogLayer* DialogLayer::createWithObjects(cocos2d::CCArray*, int) {
+    return nullptr;
 }
 
 void DialogLayer::displayNextObject() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void DialogLayer::fadeInTextFinished(TextArea*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::animateInRandomSide() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::displayDialogObject(DialogObject*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void DialogLayer::updateChatPlacement(DialogChatPlacement) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void DialogLayer::updateNavButtonFrame() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void DialogLayer::finishCurrentAnimation() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void DialogLayer::init(DialogObject*, cocos2d::CCArray*, int) {
+bool DialogLayer::init(DialogObject*, cocos2d::CCArray*, int) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -103,18 +95,18 @@ void DialogLayer::create(DialogObject*, int) {
 }
 
 void DialogLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::onClose() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::onEnter() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DialogLayer::animateIn(DialogAnimationType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

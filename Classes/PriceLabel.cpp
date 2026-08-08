@@ -5,22 +5,14 @@ PriceLabel::~PriceLabel() {
     this->cleanup();
 }
 
-PriceLabel::~PriceLabel() {
-    this->cleanup();
-}
-
-PriceLabel::~PriceLabel() {
-    this->cleanup();
-}
-
 void PriceLabel::setOpacity(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void PriceLabel::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,10 +27,10 @@ void PriceLabel::create(int) {
 }
 
 void PriceLabel::setColor(cocos2d::_ccColor3B) {
-    // TODO: Set m_color
+    // Setter operation - stub
 }
 
 void PriceLabel::setPrice(int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 

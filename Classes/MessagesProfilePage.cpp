@@ -5,103 +5,90 @@ MessagesProfilePage::~MessagesProfilePage() {
     this->cleanup();
 }
 
-MessagesProfilePage::~MessagesProfilePage() {
-    this->cleanup();
-}
-
-MessagesProfilePage::~MessagesProfilePage() {
-    this->cleanup();
-}
-
 void MessagesProfilePage::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::untoggleAll() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void MessagesProfilePage::deleteSelected() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void MessagesProfilePage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::onSentMessages(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::onDeleteSelected(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void MessagesProfilePage::updatePageArrows() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MessagesProfilePage::updateLevelsLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MessagesProfilePage::loadMessagesFailed(char const*, GJErrorCode) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessagesProfilePage::onToggleAllObjects(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessagesProfilePage::forceReloadMessages(bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessagesProfilePage::loadMessagesFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessagesProfilePage::setupCommentsBrowser(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void MessagesProfilePage::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessagesProfilePage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::init(bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -116,19 +103,18 @@ void MessagesProfilePage::create(bool) {
 }
 
 void MessagesProfilePage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MessagesProfilePage::loadPage(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MessagesProfilePage::onUpdate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void MessagesProfilePage::isCorrect(char const*) {
-    // TODO: Implement
+bool MessagesProfilePage::isCorrect(char const*) {
+    return false;
 }
 

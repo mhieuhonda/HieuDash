@@ -5,35 +5,26 @@ ItemTriggerGameObject::~ItemTriggerGameObject() {
     this->cleanup();
 }
 
-ItemTriggerGameObject::~ItemTriggerGameObject() {
-    this->cleanup();
-}
-
-ItemTriggerGameObject::~ItemTriggerGameObject() {
-    this->cleanup();
-}
-
 void ItemTriggerGameObject::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void ItemTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string ItemTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void ItemTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ItemTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ItemTriggerGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -9,12 +9,12 @@ public:
     static AchievementNotifier* create();
     virtual ~AchievementNotifier();
 
-    void sharedState();
+    AchievementNotifier* sharedState();
     void notifyAchievement(char const*, char const*, char const*, bool);
     void willSwitchToScene(cocos2d::CCScene*);
     void showNextAchievement();
     void achievementDisplayFinished();
-    void init() override;
+    bool init() override;
 
 };
 

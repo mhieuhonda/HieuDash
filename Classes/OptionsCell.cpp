@@ -2,17 +2,11 @@
 #include "OptionsCell.h"
 
 OptionsCell::OptionsCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 OptionsCell::OptionsCell(char const*, float, float) {
-}
-
-OptionsCell::~OptionsCell() {
-    this->cleanup();
-}
-
-OptionsCell::~OptionsCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 OptionsCell::~OptionsCell() {
@@ -20,15 +14,14 @@ OptionsCell::~OptionsCell() {
 }
 
 void OptionsCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void OptionsCell::loadFromObject(OptionsObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void OptionsCell::onToggleOption(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

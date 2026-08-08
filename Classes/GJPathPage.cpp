@@ -5,63 +5,55 @@ GJPathPage::~GJPathPage() {
     this->cleanup();
 }
 
-GJPathPage::~GJPathPage() {
-    this->cleanup();
-}
-
-GJPathPage::~GJPathPage() {
-    this->cleanup();
-}
-
 void GJPathPage::onIconInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathPage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathPage::onActivatePath(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathPage::didPurchaseItem(GJStoreItem*) {
-    // TODO: Implement
+    // Purchase operation - stub
 }
 
 void GJPathPage::playUnlockAnimation() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJPathPage::unlockAnimationStep2() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJPathPage::unlockAnimationStep3() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJPathPage::showCantAffordMessage(GJStoreItem*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJPathPage::unlockAnimationFinished() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJPathPage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathPage::init(int, GJPathsLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJPathPage::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJPathPage::create(int, GJPathsLayer*) {
@@ -75,10 +67,10 @@ void GJPathPage::create(int, GJPathsLayer*) {
 }
 
 void GJPathPage::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathPage::onUnlock(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 

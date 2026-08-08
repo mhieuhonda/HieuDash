@@ -5,18 +5,10 @@ ListButtonPage::~ListButtonPage() {
     this->cleanup();
 }
 
-ListButtonPage::~ListButtonPage() {
-    this->cleanup();
-}
-
-ListButtonPage::~ListButtonPage() {
-    this->cleanup();
-}
-
 void ListButtonPage::init(cocos2d::CCArray*, cocos2d::CCPoint, int, int, float, float, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

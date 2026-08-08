@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class LoadingCircle {
+class LoadingCircle : public cocos2d::CCNode {
 public:
     virtual ~LoadingCircle();
 
@@ -15,7 +15,7 @@ public:
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void registerWithTouchDispatcher();
     void draw();
-    void init();
+    bool init();
     void show();
     void create();
 

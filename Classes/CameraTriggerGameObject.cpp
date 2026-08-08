@@ -5,31 +5,22 @@ CameraTriggerGameObject::~CameraTriggerGameObject() {
     this->cleanup();
 }
 
-CameraTriggerGameObject::~CameraTriggerGameObject() {
-    this->cleanup();
-}
-
-CameraTriggerGameObject::~CameraTriggerGameObject() {
-    this->cleanup();
-}
-
-void CameraTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string CameraTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void CameraTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CameraTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void CameraTriggerGameObject::init(char const*) {
+bool CameraTriggerGameObject::init(char const*) {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -8,10 +8,10 @@ class TextStyleSection {
 public:
     virtual ~TextStyleSection();
 
-    void createDelaySection(int, float);
-    void createShakeSection(int, int, int, int);
-    void createColoredSection(cocos2d::_ccColor3B, int, int);
-    void createInstantSection(int, int, float);
+    TextStyleSection* createDelaySection(int, float);
+    TextStyleSection* createShakeSection(int, int, int, int);
+    TextStyleSection* createColoredSection(cocos2d::_ccColor3B, int, int);
+    TextStyleSection* createInstantSection(int, int, float);
     void init(int, int, TextStyleType);
     void create(int, int, TextStyleType);
 

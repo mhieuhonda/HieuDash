@@ -5,39 +5,30 @@ AudioEffectsLayer::~AudioEffectsLayer() {
     this->cleanup();
 }
 
-AudioEffectsLayer::~AudioEffectsLayer() {
-    this->cleanup();
-}
-
-AudioEffectsLayer::~AudioEffectsLayer() {
-    this->cleanup();
-}
-
 void AudioEffectsLayer::getBGSquare() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioEffectsLayer::triggerEffect(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioEffectsLayer::resetAudioVars() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioEffectsLayer::updateTweenAction(float, char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AudioEffectsLayer::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void AudioEffectsLayer::init(std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -52,10 +43,10 @@ void AudioEffectsLayer::create(std::string) {
 }
 
 void AudioEffectsLayer::audioStep(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioEffectsLayer::goingDown() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

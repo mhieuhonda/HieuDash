@@ -2,6 +2,6 @@
 #include "GJSpecialColorSelectDelegate.h"
 
 void GJSpecialColorSelectDelegate::colorSelectClosed(GJSpecialColorSelect*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

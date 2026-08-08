@@ -5,75 +5,66 @@ CCBlockLayer::~CCBlockLayer() {
     this->cleanup();
 }
 
-CCBlockLayer::~CCBlockLayer() {
-    this->cleanup();
-}
-
-CCBlockLayer::~CCBlockLayer() {
-    this->cleanup();
-}
-
 void CCBlockLayer::enterLayer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void CCBlockLayer::layerHidden() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::layerVisible() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::enterAnimFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::decrementForcePrio() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::incrementForcePrio() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void CCBlockLayer::init() {
-    bool ret = true;
+bool CCBlockLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -88,22 +79,22 @@ void CCBlockLayer::create() {
 }
 
 void CCBlockLayer::enableUI() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::disableUI() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::exitLayer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCBlockLayer::hideLayer(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CCBlockLayer::showLayer(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 

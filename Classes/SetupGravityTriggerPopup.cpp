@@ -5,22 +5,14 @@ SetupGravityTriggerPopup::~SetupGravityTriggerPopup() {
     this->cleanup();
 }
 
-SetupGravityTriggerPopup::~SetupGravityTriggerPopup() {
-    this->cleanup();
-}
-
-SetupGravityTriggerPopup::~SetupGravityTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupGravityTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGravityTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

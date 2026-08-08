@@ -2,10 +2,10 @@
 #include "RewardedVideoDelegate.h"
 
 void RewardedVideoDelegate::rewardedVideoFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void RewardedVideoDelegate::shouldOffsetRewardCurrency() {
-    // TODO: Implement
+bool RewardedVideoDelegate::shouldOffsetRewardCurrency() {
+    return false;
 }
 

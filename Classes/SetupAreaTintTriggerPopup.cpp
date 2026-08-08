@@ -5,39 +5,31 @@ SetupAreaTintTriggerPopup::~SetupAreaTintTriggerPopup() {
     this->cleanup();
 }
 
-SetupAreaTintTriggerPopup::~SetupAreaTintTriggerPopup() {
-    this->cleanup();
-}
-
-SetupAreaTintTriggerPopup::~SetupAreaTintTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupAreaTintTriggerPopup::hsvPopupClosed(HSVWidgetPopup*, cocos2d::_ccHSVValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaTintTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaTintTriggerPopup::updateHSVButton() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAreaTintTriggerPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaTintTriggerPopup::init(EnterEffectObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupAreaTintTriggerPopup::onHSV(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAreaTintTriggerPopup::create(EnterEffectObject*, cocos2d::CCArray*) {
@@ -51,6 +43,6 @@ void SetupAreaTintTriggerPopup::create(EnterEffectObject*, cocos2d::CCArray*) {
 }
 
 void SetupAreaTintTriggerPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

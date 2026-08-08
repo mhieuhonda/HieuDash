@@ -2,26 +2,26 @@
 #include "CCScrollLayerExtDelegate.h"
 
 void CCScrollLayerExtDelegate::scrollViewTouchEnd(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExtDelegate::scrollViewTouchBegin(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExtDelegate::scrollViewTouchMoving(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExtDelegate::scrollViewDidEndMoving(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExtDelegate::scrollViewDidEndDecelerating(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExtDelegate::scrllViewWillBeginDecelerating(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

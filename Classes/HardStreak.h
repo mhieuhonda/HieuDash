@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class HardStreak {
+class HardStreak : public cocos2d::CCNode {
 public:
     virtual ~HardStreak();
 
@@ -15,10 +15,10 @@ public:
     void clearAboveXPos(float);
     void normalizeAngle(double);
     void clearBehindXPos(float);
-    void createDuplicate();
+    HardStreak* createDuplicate();
     void quadCornerOffset(cocos2d::CCPoint, cocos2d::CCPoint, float);
     void scheduleAutoUpdate();
-    void init();
+    bool init();
     void reset();
     void create();
     void addPoint(cocos2d::CCPoint);

@@ -5,71 +5,62 @@ GJRewardItem::~GJRewardItem() {
     this->cleanup();
 }
 
-GJRewardItem::~GJRewardItem() {
-    this->cleanup();
-}
-
-GJRewardItem::~GJRewardItem() {
-    this->cleanup();
-}
-
 void GJRewardItem::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
-void GJRewardItem::isShardType(SpecialRewardItem) {
-    // TODO: Implement
+bool GJRewardItem::isShardType(SpecialRewardItem) {
+    return false;
 }
 
-void GJRewardItem::createSpecial(GJRewardType, int, int, SpecialRewardItem, int, SpecialRewardItem, int, int, int) {
-    // TODO: Implement
+GJRewardItem* GJRewardItem::createSpecial(GJRewardType, int, int, SpecialRewardItem, int, SpecialRewardItem, int, int, int) {
+    return nullptr;
 }
 
 void GJRewardItem::getRewardCount(SpecialRewardItem) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJRewardItem::createWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+GJRewardItem* GJRewardItem::createWithCoder(DS_Dictionary*) {
+    return nullptr;
 }
 
 void GJRewardItem::encodeWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+    // Save/encode operation - stub
 }
 
-void GJRewardItem::createWithObject(GJRewardType, GJRewardObject*) {
-    // TODO: Implement
+GJRewardItem* GJRewardItem::createWithObject(GJRewardType, GJRewardObject*) {
+    return nullptr;
 }
 
 void GJRewardItem::getNextShardType(SpecialRewardItem) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRewardItem::rewardItemToStat(SpecialRewardItem) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJRewardItem::createWithObjects(GJRewardType, cocos2d::CCArray*) {
-    // TODO: Implement
+GJRewardItem* GJRewardItem::createWithObjects(GJRewardType, cocos2d::CCArray*) {
+    return nullptr;
 }
 
 void GJRewardItem::getRandomShardType() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRewardItem::getRewardObjectForType(SpecialRewardItem) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRewardItem::getRandomNonMaxShardType() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRewardItem::init(int, int, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -93,7 +84,7 @@ void GJRewardItem::create() {
     return nullptr;
 }
 
-void GJRewardItem::canEncode() {
-    // TODO: Implement
+bool GJRewardItem::canEncode() {
+    return false;
 }
 

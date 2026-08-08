@@ -5,46 +5,38 @@ UIPOptionsLayer::~UIPOptionsLayer() {
     this->cleanup();
 }
 
-UIPOptionsLayer::~UIPOptionsLayer() {
-    this->cleanup();
-}
-
-UIPOptionsLayer::~UIPOptionsLayer() {
-    this->cleanup();
-}
-
 void UIPOptionsLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::getTouchRect() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void UIPOptionsLayer::init() {
-    bool ret = true;
+bool UIPOptionsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -59,14 +51,14 @@ void UIPOptionsLayer::create() {
 }
 
 void UIPOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::onReset(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UIPOptionsLayer::getValue(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

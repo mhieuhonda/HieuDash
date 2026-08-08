@@ -5,37 +5,29 @@ ButtonSprite::~ButtonSprite() {
     this->cleanup();
 }
 
-ButtonSprite::~ButtonSprite() {
-    this->cleanup();
-}
-
-ButtonSprite::~ButtonSprite() {
-    this->cleanup();
-}
-
 void ButtonSprite::updateBGImage(char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ButtonSprite::updateSpriteBGSize() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ButtonSprite::updateSpriteOffset(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ButtonSprite::init(char const*, int, int, float, bool, char const*, char const*, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ButtonSprite::init(cocos2d::CCSprite*, int, int, float, float, bool, char const*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -120,10 +112,10 @@ void ButtonSprite::create(cocos2d::CCSprite*, int, int, float, float, bool, char
 }
 
 void ButtonSprite::setColor(cocos2d::_ccColor3B) {
-    // TODO: Set m_color
+    // Setter operation - stub
 }
 
 void ButtonSprite::setString(char const*) {
-    // TODO: Set m_string
+    // Setter operation - stub
 }
 

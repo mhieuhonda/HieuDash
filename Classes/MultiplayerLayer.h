@@ -4,12 +4,12 @@
 
 #include "cocos2d.h"
 
-class MultiplayerLayer {
+class MultiplayerLayer : public cocos2d::CCLayer {
 public:
     virtual ~MultiplayerLayer();
 
     void keyBackClicked();
-    void init();
+    bool init();
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

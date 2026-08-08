@@ -5,43 +5,35 @@ SetTextPopup::~SetTextPopup() {
     this->cleanup();
 }
 
-SetTextPopup::~SetTextPopup() {
-    this->cleanup();
-}
-
-SetTextPopup::~SetTextPopup() {
-    this->cleanup();
-}
-
 void SetTextPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetTextPopup::onResetValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetTextPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetTextPopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetTextPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetTextPopup::init(std::string, std::string, int, std::string, std::string, bool, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetTextPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetTextPopup::create(std::string, std::string, int, std::string, std::string, bool, float) {
@@ -55,10 +47,10 @@ void SetTextPopup::create(std::string, std::string, int, std::string, std::strin
 }
 
 void SetTextPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetTextPopup::onCancel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

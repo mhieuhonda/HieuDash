@@ -2,12 +2,12 @@
 #ifndef FMODLEVELVISUALIZER_H_
 #define FMODLEVELVISUALIZER_H_
 
-class FMODLevelVisualizer {
+class FMODLevelVisualizer : public cocos2d::CCLayer {
 public:
     virtual ~FMODLevelVisualizer();
 
     void updateVisualizer(float, float, float);
-    void init();
+    bool init();
     void create();
 
 };

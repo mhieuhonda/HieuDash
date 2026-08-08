@@ -5,27 +5,19 @@ TOSPopup::~TOSPopup() {
     this->cleanup();
 }
 
-TOSPopup::~TOSPopup() {
-    this->cleanup();
-}
-
-TOSPopup::~TOSPopup() {
-    this->cleanup();
-}
-
 void TOSPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void TOSPopup::init() {
-    bool ret = true;
+bool TOSPopup::init() {
+    bool ret = FLAlertLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void TOSPopup::onTOS(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TOSPopup::create() {
@@ -39,10 +31,10 @@ void TOSPopup::create() {
 }
 
 void TOSPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TOSPopup::onPrivacy(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

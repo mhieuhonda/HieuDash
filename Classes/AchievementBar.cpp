@@ -5,27 +5,19 @@ AchievementBar::~AchievementBar() {
     this->cleanup();
 }
 
-AchievementBar::~AchievementBar() {
-    this->cleanup();
-}
-
-AchievementBar::~AchievementBar() {
-    this->cleanup();
-}
-
 void AchievementBar::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
-void AchievementBar::init(char const*, char const*, char const*, bool) {
+bool AchievementBar::init(char const*, char const*, char const*, bool) {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void AchievementBar::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void AchievementBar::create(char const*, char const*, char const*, bool) {

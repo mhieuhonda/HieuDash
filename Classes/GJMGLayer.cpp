@@ -5,76 +5,66 @@ GJMGLayer::~GJMGLayer() {
     this->cleanup();
 }
 
-GJMGLayer::~GJMGLayer() {
-    this->cleanup();
-}
-
-GJMGLayer::~GJMGLayer() {
-    this->cleanup();
-}
-
 void GJMGLayer::showGround() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJMGLayer::scaleGround(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMGLayer::toggleVisible01(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMGLayer::toggleVisible02(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMGLayer::updateGroundPos(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMGLayer::updateMG01Blend(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMGLayer::updateMG02Blend(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMGLayer::deactivateGround() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMGLayer::loadGroundSprites(int, bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMGLayer::updateGroundColor(cocos2d::_ccColor3B, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMGLayer::updateGroundWidth(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMGLayer::updateGroundOpacity(unsigned char, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMGLayer::defaultYOffsetForBG2(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMGLayer::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void GJMGLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

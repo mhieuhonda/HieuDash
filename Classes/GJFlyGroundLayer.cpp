@@ -5,18 +5,10 @@ GJFlyGroundLayer::~GJFlyGroundLayer() {
     this->cleanup();
 }
 
-GJFlyGroundLayer::~GJFlyGroundLayer() {
-    this->cleanup();
-}
-
-GJFlyGroundLayer::~GJFlyGroundLayer() {
-    this->cleanup();
-}
-
-void GJFlyGroundLayer::init() {
-    bool ret = true;
+bool GJFlyGroundLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

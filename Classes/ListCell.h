@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class ListCell {
+class ListCell : public cocos2d::CCNode {
 public:
     ListCell(char const*, float, float);
     ListCell(char const*, float, float);
@@ -14,7 +14,7 @@ public:
     void updateBGColor(int);
     void loadFromObject(cocos2d::CCObject*, int, int, int);
     void draw();
-    void init();
+    bool init();
 
 };
 

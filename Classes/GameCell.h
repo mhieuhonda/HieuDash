@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class GameCell {
+class GameCell : public cocos2d::CCNode {
 public:
     GameCell(char const*, float, float);
     GameCell(char const*, float, float);
@@ -15,7 +15,7 @@ public:
     void updateBGColor(int);
     void loadFromString(std::string);
     void draw();
-    void init();
+    bool init();
     void onTouch(cocos2d::CCObject*);
 
 };

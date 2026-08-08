@@ -5,123 +5,115 @@ SetupObjectOptionsPopup::~SetupObjectOptionsPopup() {
     this->cleanup();
 }
 
-SetupObjectOptionsPopup::~SetupObjectOptionsPopup() {
-    this->cleanup();
-}
-
-SetupObjectOptionsPopup::~SetupObjectOptionsPopup() {
-    this->cleanup();
-}
-
 void SetupObjectOptionsPopup::onDontFade(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onIceBlock(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void SetupObjectOptionsPopup::onPassable(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onDontBoost(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onDontEnter(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onGripSlope(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onNonStickX(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onNonStickY(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onAlwaysHide(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupObjectOptionsPopup::onDontBoostX(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onHighDetail(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onNoParticle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onDisableGlow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onExtraSticky(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onHideEffects(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupObjectOptionsPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onCenterEffect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onNoAudioScale(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onDisableObject(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onApplyScaleStick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onToggleAreaParent(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onExtendedCollision(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onSinglePlayerTouch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void SetupObjectOptionsPopup::onToggleGroupParent(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::init(GameObject*, cocos2d::CCArray*, SetGroupIDLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupObjectOptionsPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupObjectOptionsPopup::create(GameObject*, cocos2d::CCArray*, SetGroupIDLayer*) {
@@ -135,10 +127,10 @@ void SetupObjectOptionsPopup::create(GameObject*, cocos2d::CCArray*, SetGroupIDL
 }
 
 void SetupObjectOptionsPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptionsPopup::onReverse(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

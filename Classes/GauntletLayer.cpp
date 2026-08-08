@@ -5,45 +5,35 @@ GauntletLayer::~GauntletLayer() {
     this->cleanup();
 }
 
-GauntletLayer::~GauntletLayer() {
-    this->cleanup();
-}
-
-GauntletLayer::~GauntletLayer() {
-    this->cleanup();
-}
-
 void GauntletLayer::setupGauntlet(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GauntletLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletLayer::loadLevelsFailed(char const*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GauntletLayer::unlockActiveItem() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GauntletLayer::loadLevelsFinished(cocos2d::CCArray*, char const*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GauntletLayer::init(GauntletType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GauntletLayer::scene(GauntletType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletLayer::create(GauntletType) {
@@ -57,10 +47,10 @@ void GauntletLayer::create(GauntletType) {
 }
 
 void GauntletLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletLayer::onLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

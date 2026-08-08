@@ -14,7 +14,7 @@ public:
     void onPrevPage(cocos2d::CCObject*);
     void onFMODDebug(cocos2d::CCObject*);
     void onGPSignOut(cocos2d::CCObject*);
-    void countForPage(int);
+    int countForPage(int);
     void layerForPage(int);
     void nextPosition(int);
     void onKeybindings(cocos2d::CCObject*);
@@ -27,7 +27,7 @@ public:
     void incrementCountForPage(int);
     void textInputShouldOffset(CCTextInputNode*, float);
     void dropDownLayerWillClose(GJDropDownLayer*);
-    void init() override;
+    bool init() override;
     void create();
     void onInfo(cocos2d::CCObject*);
     void infoKey(int);

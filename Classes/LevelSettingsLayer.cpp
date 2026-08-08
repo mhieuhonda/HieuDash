@@ -5,107 +5,99 @@ LevelSettingsLayer::~LevelSettingsLayer() {
     this->cleanup();
 }
 
-LevelSettingsLayer::~LevelSettingsLayer() {
-    this->cleanup();
-}
-
-LevelSettingsLayer::~LevelSettingsLayer() {
-    this->cleanup();
-}
-
 void LevelSettingsLayer::onLiveEdit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::showPicker(ColorAction*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LevelSettingsLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onSelectFont(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onSelectMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onShowPicker(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LevelSettingsLayer::onSelectSpeed(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onGameplayMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelSettingsLayer::onOptionToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::selectArtClosed(SelectArtLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::colorSelectClosed(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::updateColorSprite(ColorChannelSprite*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelSettingsLayer::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::updateColorSprites() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelSettingsLayer::selectSettingClosed(SelectSettingLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::updateGameplayModeButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelSettingsLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::init(LevelSettingsObject*, LevelEditorLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelSettingsLayer::onCol(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::create(LevelSettingsObject*, LevelEditorLayer*) {
@@ -119,30 +111,30 @@ void LevelSettingsLayer::create(LevelSettingsObject*, LevelEditorLayer*) {
 }
 
 void LevelSettingsLayer::onGArt(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onBGArt(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onFGArt(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onSpeed(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsLayer::onDisable(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

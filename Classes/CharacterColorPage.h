@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class CharacterColorPage {
+class CharacterColorPage : public cocos2d::CCLayer {
 public:
     virtual ~CharacterColorPage();
 
@@ -16,13 +16,13 @@ public:
     void keyBackClicked();
     void offsetForIndex(int);
     void FLAlert_Clicked(FLAlertLayer*, bool);
-    void createColorMenu();
+    CharacterColorPage* createColorMenu();
     void toggleGlowItems(bool);
     void updateColorMode(int);
     void updateIconColors();
     void activeColorForMode(int);
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onMode(cocos2d::CCObject*);

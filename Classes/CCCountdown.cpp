@@ -5,30 +5,22 @@ CCCountdown::~CCCountdown() {
     this->cleanup();
 }
 
-CCCountdown::~CCCountdown() {
-    this->cleanup();
-}
-
-CCCountdown::~CCCountdown() {
-    this->cleanup();
-}
-
 void CCCountdown::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCCountdown::lapFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCCountdown::startTimerWithSeconds(float, void (cocos2d::CCObject::*)(), cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CCCountdown::init() {
+bool CCCountdown::init() {
     bool ret = cocos2d::CCLabelTTF::init() if "cocos2d::CCLabelTTF" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,72 +5,62 @@ GJRateLevelLayer::~GJRateLevelLayer() {
     this->cleanup();
 }
 
-GJRateLevelLayer::~GJRateLevelLayer() {
-    this->cleanup();
-}
-
-GJRateLevelLayer::~GJRateLevelLayer() {
-    this->cleanup();
-}
-
 void GJRateLevelLayer::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::selectRating(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::onToggleCoins(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::setupRateInfo(std::string) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJRateLevelLayer::getStarsButton(int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::onCustomButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::rateInfoFailed(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJRateLevelLayer::createStatPillar(int, int, int, cocos2d::_ccColor3B, cocos2d::_ccColor3B, cocos2d::CCPoint, std::string) {
-    // TODO: Implement
+GJRateLevelLayer* GJRateLevelLayer::createStatPillar(int, int, int, cocos2d::_ccColor3B, cocos2d::_ccColor3B, cocos2d::CCPoint, std::string) {
+    return nullptr;
 }
 
 void GJRateLevelLayer::rateInfoFinished(int, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJRateLevelLayer::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJRateLevelLayer::init(GJGameLevel*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -85,14 +75,14 @@ void GJRateLevelLayer::create(GJGameLevel*) {
 }
 
 void GJRateLevelLayer::onRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRateLevelLayer::onFeature(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

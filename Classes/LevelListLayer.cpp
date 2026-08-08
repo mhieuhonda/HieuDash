@@ -5,141 +5,131 @@ LevelListLayer::~LevelListLayer() {
     this->cleanup();
 }
 
-LevelListLayer::~LevelListLayer() {
-    this->cleanup();
-}
-
-LevelListLayer::~LevelListLayer() {
-    this->cleanup();
-}
-
 void LevelListLayer::onFavorite(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onListInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::ownerDelete() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelListLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::confirmClone(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onSelectIcon(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::confirmDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelListLayer::onClaimReward(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void LevelListLayer::onDescription(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::updateEditMode() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelListLayer::updateStatsArt() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelListLayer::verifyListName() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::iconSelectClosed(SelectListIconLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::loadLevelsFailed(char const*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelListLayer::onToggleEditMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::setIDPopupClosed(SetIDPopup*, int) {
-    // TODO: Set m_iDPopupClosed
+    // Setter operation - stub
 }
 
 void LevelListLayer::updateResultArray(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelListLayer::updateSideButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelListLayer::confirmOwnerDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelListLayer::loadLevelsFinished(cocos2d::CCArray*, char const*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelListLayer::onRefreshLevelList(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelListLayer::shareCommentClosed(std::string, ShareCommentLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::levelListDeleteFailed(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelListLayer::levelListDeleteFinished(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void LevelListLayer::init(GJLevelList*) {
+bool LevelListLayer::init(GJLevelList*) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelListLayer::scene(GJLevelList*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::create(GJLevelList*) {
@@ -153,38 +143,38 @@ void LevelListLayer::create(GJLevelList*) {
 }
 
 void LevelListLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onLike(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onEnter() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onShare(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::onDelete() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelListLayer::cloneList() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListLayer::likedItem(LikeItemType, int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

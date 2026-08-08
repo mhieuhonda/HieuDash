@@ -37,11 +37,81 @@
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
-    .locals 0
+    .locals 4
 
     invoke-static {p0}, Lorg/fmod/FMOD;->init(Landroid/content/Context;)V
 
     invoke-super {p0, p1}, Lorg/cocos2dx/lib/Cocos2dxActivity;->onCreate(Landroid/os/Bundle;)V
+
+    # --- HieuDash: First launch check and language/auto-login integration ---
+
+    # Get SharedPreferences
+    const-string v0, "HieuDashPrefs"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v2
+
+    # Check if first launch (default true = 1)
+    const-string v0, "firstLaunch"
+
+    const/4 v1, 0x1
+
+    invoke-interface {v2, v0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_after_first_launch
+
+    # First launch: mark as no longer first launch
+    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v1, "firstLaunch"
+
+    const/4 v3, 0x0
+
+    invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    # Show language settings popup on first launch
+    new-instance v0, Lcom/hieudash/LanguageSettingsPopup;
+
+    invoke-direct {v0, p0}, Lcom/hieudash/LanguageSettingsPopup;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0}, Lcom/hieudash/LanguageSettingsPopup;->show()V
+
+    :cond_after_first_launch
+    # Load language preference
+    invoke-static {p0}, Lcom/hieudash/LanguageManager;->getLanguage(Landroid/content/Context;)I
+
+    # Show auto-login popup
+    new-instance v0, Lcom/hieudash/AutoLoginPopup;
+
+    invoke-direct {v0, p0}, Lcom/hieudash/AutoLoginPopup;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0}, Lcom/hieudash/AutoLoginPopup;->show()V
+
+    # --- HieuDash: Show Admin Panel after 3 second delay ---
+    new-instance v0, Landroid/os/Handler;
+
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    new-instance v1, Lcom/hieudash/AdminPanel$ShowAdminRunnable;
+
+    invoke-direct {v1, p0}, Lcom/hieudash/AdminPanel$ShowAdminRunnable;-><init>(Landroid/app/Activity;)V
+
+    const-wide/16 v2, 0xbb8
+
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     return-void
 .end method

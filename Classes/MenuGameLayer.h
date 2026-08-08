@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class MenuGameLayer {
+class MenuGameLayer : public cocos2d::CCLayer {
 public:
     virtual ~MenuGameLayer();
 
@@ -18,7 +18,7 @@ public:
     void destroyPlayer();
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void create();
     void update(float);
     void tryJump(float);

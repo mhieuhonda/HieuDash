@@ -5,16 +5,8 @@ SongsLayer::~SongsLayer() {
     this->cleanup();
 }
 
-SongsLayer::~SongsLayer() {
-    this->cleanup();
-}
-
-SongsLayer::~SongsLayer() {
-    this->cleanup();
-}
-
 void SongsLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SongsLayer::create() {

@@ -18,9 +18,9 @@ public:
     void setRotationY(float);
     void removeFollower(cocos2d::CCNode*);
     void initWithTexture(cocos2d::CCTexture2D*);
-    void createWithSpriteFrame(cocos2d::CCSpriteFrame*);
+    CCSpritePlus* createWithSpriteFrame(cocos2d::CCSpriteFrame*);
     void initWithSpriteFrameName(char const*);
-    void createWithSpriteFrameName(char const*);
+    CCSpritePlus* createWithSpriteFrameName(char const*);
     void setFlipX(bool);
     void setFlipY(bool);
     void setScale(float);

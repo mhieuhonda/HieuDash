@@ -5,52 +5,42 @@ RingObject::~RingObject() {
     this->cleanup();
 }
 
-RingObject::~RingObject() {
-    this->cleanup();
-}
-
-RingObject::~RingObject() {
-    this->cleanup();
-}
-
 void RingObject::resetObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RingObject::setRotation(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void RingObject::spawnCircle() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void RingObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string RingObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void RingObject::powerOnObject(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RingObject::triggerActivated(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RingObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void RingObject::shouldDrawEditorHitbox() {
-    // Render/draw logic
-    // TODO: Implement rendering
+bool RingObject::shouldDrawEditorHitbox() {
+    return false;
 }
 
 void RingObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -65,10 +55,10 @@ void RingObject::create(char const*) {
 }
 
 void RingObject::setScale(float) {
-    // TODO: Set m_scale
+    // Setter operation - stub
 }
 
 void RingObject::setRScale(float) {
-    // TODO: Set m_rScale
+    // Setter operation - stub
 }
 

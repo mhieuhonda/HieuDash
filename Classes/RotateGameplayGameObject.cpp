@@ -5,35 +5,26 @@ RotateGameplayGameObject::~RotateGameplayGameObject() {
     this->cleanup();
 }
 
-RotateGameplayGameObject::~RotateGameplayGameObject() {
-    this->cleanup();
-}
-
-RotateGameplayGameObject::~RotateGameplayGameObject() {
-    this->cleanup();
-}
-
-void RotateGameplayGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string RotateGameplayGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void RotateGameplayGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void RotateGameplayGameObject::updateStartValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void RotateGameplayGameObject::updateGameplayRotation() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void RotateGameplayGameObject::init() {
-    bool ret = true;
+bool RotateGameplayGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

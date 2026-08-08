@@ -2,30 +2,30 @@
 #include "GJScaleControlDelegate.h"
 
 void GJScaleControlDelegate::scaleXChanged(float, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControlDelegate::scaleYChanged(float, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControlDelegate::scaleXYChanged(float, float, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControlDelegate::anchorPointMoved(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControlDelegate::scaleChangeBegin() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControlDelegate::scaleChangeEnded() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControlDelegate::updateScaleControl() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

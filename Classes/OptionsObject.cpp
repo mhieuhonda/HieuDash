@@ -5,22 +5,14 @@ OptionsObject::~OptionsObject() {
     this->cleanup();
 }
 
-OptionsObject::~OptionsObject() {
-    this->cleanup();
-}
-
-OptionsObject::~OptionsObject() {
-    this->cleanup();
-}
-
 void OptionsObject::toggleState() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsObject::init(int, bool, std::string, OptionsObjectDelegate*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

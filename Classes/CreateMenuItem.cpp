@@ -5,18 +5,10 @@ CreateMenuItem::~CreateMenuItem() {
     this->cleanup();
 }
 
-CreateMenuItem::~CreateMenuItem() {
-    this->cleanup();
-}
-
-CreateMenuItem::~CreateMenuItem() {
-    this->cleanup();
-}
-
 void CreateMenuItem::init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

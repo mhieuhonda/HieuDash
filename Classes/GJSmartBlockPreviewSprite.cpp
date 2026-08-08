@@ -5,23 +5,15 @@ GJSmartBlockPreviewSprite::~GJSmartBlockPreviewSprite() {
     this->cleanup();
 }
 
-GJSmartBlockPreviewSprite::~GJSmartBlockPreviewSprite() {
-    this->cleanup();
-}
-
-GJSmartBlockPreviewSprite::~GJSmartBlockPreviewSprite() {
-    this->cleanup();
-}
-
-void GJSmartBlockPreviewSprite::init() {
-    bool ret = true;
+bool GJSmartBlockPreviewSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJSmartBlockPreviewSprite::visit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSmartBlockPreviewSprite::create() {

@@ -15,9 +15,9 @@ public:
     void applyTagFilters(cocos2d::CCArray*);
     void updateFutureCount(cocos2d::CCArray*, cocos2d::CCArray*);
     void applyArtistFilters(cocos2d::CCArray*);
-    void createTagFilterObjects();
+    MusicSearchResult* createTagFilterObjects();
     void getFilesMatchingSearch(cocos2d::CCArray*, std::string);
-    void createArtistFilterObjects();
+    MusicSearchResult* createArtistFilterObjects();
     void init(GJSongType);
     void create(GJSongType);
 

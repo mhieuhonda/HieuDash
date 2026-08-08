@@ -2,10 +2,10 @@
 #include "HSVWidgetDelegate.h"
 
 void HSVWidgetDelegate::hsvChanged(ConfigureHSVWidget*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HSVWidgetDelegate::hsvPopupClosed(HSVWidgetPopup*, cocos2d::_ccHSVValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

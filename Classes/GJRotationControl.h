@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJRotationControl {
+class GJRotationControl : public cocos2d::CCNode {
 public:
     virtual ~GJRotationControl();
 
@@ -15,7 +15,7 @@ public:
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void updateSliderPosition(cocos2d::CCPoint);
     void draw();
-    void init();
+    bool init();
     void create();
     void setAngle(float);
 

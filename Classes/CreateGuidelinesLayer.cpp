@@ -5,75 +5,67 @@ CreateGuidelinesLayer::~CreateGuidelinesLayer() {
     this->cleanup();
 }
 
-CreateGuidelinesLayer::~CreateGuidelinesLayer() {
-    this->cleanup();
-}
-
-CreateGuidelinesLayer::~CreateGuidelinesLayer() {
-    this->cleanup();
-}
-
 void CreateGuidelinesLayer::toggleItems(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::registerTouch() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::recordingDidStop() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CreateGuidelinesLayer::doClearGuidelines() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CreateGuidelinesLayer::onClearGuidelines(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void CreateGuidelinesLayer::getMergedRecordString(std::string, std::string) {
-    // TODO: Implement
+std::string CreateGuidelinesLayer::getMergedRecordString(std::string, std::string) {
+    return "";
 }
 
 void CreateGuidelinesLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::init(CustomSongDelegate*, AudioGuidelinesType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CreateGuidelinesLayer::keyUp(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::create(CustomSongDelegate*, AudioGuidelinesType) {
@@ -87,31 +79,30 @@ void CreateGuidelinesLayer::create(CustomSongDelegate*, AudioGuidelinesType) {
 }
 
 void CreateGuidelinesLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::onStop(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CreateGuidelinesLayer::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 
 void CreateGuidelinesLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::onRecord(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateGuidelinesLayer::playMusic() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

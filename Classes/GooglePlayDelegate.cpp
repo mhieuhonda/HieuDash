@@ -2,6 +2,6 @@
 #include "GooglePlayDelegate.h"
 
 void GooglePlayDelegate::googlePlaySignedIn() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

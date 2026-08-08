@@ -5,16 +5,8 @@ StatsLayer::~StatsLayer() {
     this->cleanup();
 }
 
-StatsLayer::~StatsLayer() {
-    this->cleanup();
-}
-
-StatsLayer::~StatsLayer() {
-    this->cleanup();
-}
-
 void StatsLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void StatsLayer::create() {

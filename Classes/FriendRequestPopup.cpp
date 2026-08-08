@@ -5,45 +5,34 @@ FriendRequestPopup::~FriendRequestPopup() {
     this->cleanup();
 }
 
-FriendRequestPopup::~FriendRequestPopup() {
-    this->cleanup();
-}
-
-FriendRequestPopup::~FriendRequestPopup() {
-    this->cleanup();
-}
-
 void FriendRequestPopup::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendRequestPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendRequestPopup::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendRequestPopup::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FriendRequestPopup::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FriendRequestPopup::loadFromGJFriendRequest(GJFriendRequest*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FriendRequestPopup::init(GJFriendRequest*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -58,22 +47,22 @@ void FriendRequestPopup::create(GJFriendRequest*) {
 }
 
 void FriendRequestPopup::onBlock(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void FriendRequestPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendRequestPopup::onAccept(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendRequestPopup::onRemove(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void FriendRequestPopup::blockUser() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 

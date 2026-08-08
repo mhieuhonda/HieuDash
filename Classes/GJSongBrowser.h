@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJSongBrowser {
+class GJSongBrowser : public cocos2d::CCLayer {
 public:
     virtual ~GJSongBrowser();
 
@@ -17,7 +17,7 @@ public:
     void setupSongBrowser(cocos2d::CCArray*);
     void getSelectedCellIdx();
     void cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*);
-    void init();
+    bool init();
     void create();
     void loadPage(int);
     void exitLayer(cocos2d::CCObject*);

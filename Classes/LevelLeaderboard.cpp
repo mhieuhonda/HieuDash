@@ -5,91 +5,79 @@ LevelLeaderboard::~LevelLeaderboard() {
     this->cleanup();
 }
 
-LevelLeaderboard::~LevelLeaderboard() {
-    this->cleanup();
-}
-
-LevelLeaderboard::~LevelLeaderboard() {
-    this->cleanup();
-}
-
 void LevelLeaderboard::loadScores() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelLeaderboard::onChangeMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::onChangeType(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::getLocalScores() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::getSpriteButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float, cocos2d::CCPoint, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::setupLeaderboard(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void LevelLeaderboard::deleteLocalScores() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelLeaderboard::reloadLeaderboard(LevelLeaderboardType, LevelLeaderboardMode) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelLeaderboard::onDeleteLocalScores(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelLeaderboard::loadLeaderboardFailed(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelLeaderboard::updateUserScoreFailed() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelLeaderboard::loadLeaderboardFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelLeaderboard::updateUserScoreFinished() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelLeaderboard::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::init(GJGameLevel*, LevelLeaderboardType, LevelLeaderboardMode) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelLeaderboard::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LevelLeaderboard::create(GJGameLevel*, LevelLeaderboardType, LevelLeaderboardMode) {
@@ -103,14 +91,14 @@ void LevelLeaderboard::create(GJGameLevel*, LevelLeaderboardType, LevelLeaderboa
 }
 
 void LevelLeaderboard::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelLeaderboard::onUpdate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void LevelLeaderboard::isCorrect(char const*) {
-    // TODO: Implement
+bool LevelLeaderboard::isCorrect(char const*) {
+    return false;
 }
 

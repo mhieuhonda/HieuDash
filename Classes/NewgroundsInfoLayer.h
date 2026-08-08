@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class NewgroundsInfoLayer {
+class NewgroundsInfoLayer : public cocos2d::CCLayer {
 public:
     virtual ~NewgroundsInfoLayer();
 
@@ -13,7 +13,7 @@ public:
     void onNewgrounds(cocos2d::CCObject*);
     void keyBackClicked();
     void FLAlert_Clicked(FLAlertLayer*, bool);
-    void init();
+    bool init();
     void create();
     void onInfo(cocos2d::CCObject*);
     void onClose(cocos2d::CCObject*);

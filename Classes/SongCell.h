@@ -15,7 +15,7 @@ public:
     void updateBGColor(int);
     void loadFromObject(SongObject*);
     void draw() override;
-    void init() override;
+    bool init() override;
     void onClick(cocos2d::CCObject*);
 
 };

@@ -2,17 +2,11 @@
 #include "ArtistCell.h"
 
 ArtistCell::ArtistCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 ArtistCell::ArtistCell(char const*, float, float) {
-}
-
-ArtistCell::~ArtistCell() {
-    this->cleanup();
-}
-
-ArtistCell::~ArtistCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 ArtistCell::~ArtistCell() {
@@ -20,31 +14,29 @@ ArtistCell::~ArtistCell() {
 }
 
 void ArtistCell::onNewgrounds(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ArtistCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ArtistCell::loadFromObject(SongInfoObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ArtistCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void ArtistCell::init() {
-    bool ret = true;
+bool ArtistCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ArtistCell::onYouTube(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

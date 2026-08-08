@@ -2,11 +2,11 @@
 #ifndef EXPLODEITEMSPRITE_H_
 #define EXPLODEITEMSPRITE_H_
 
-class ExplodeItemSprite {
+class ExplodeItemSprite : public cocos2d::CCSprite {
 public:
     virtual ~ExplodeItemSprite();
 
-    void init();
+    bool init();
     void create();
 
 };

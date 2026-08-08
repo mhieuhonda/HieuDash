@@ -13,7 +13,7 @@ public:
     void keyBackClicked() override;
     void updateNumberState();
     void registerWithTouchDispatcher() override;
-    void init() override;
+    bool init() override;
     void create();
     void onDone(cocos2d::CCObject*);
     void onClose(cocos2d::CCObject*);

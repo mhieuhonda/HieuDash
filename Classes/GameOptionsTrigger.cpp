@@ -5,27 +5,18 @@ GameOptionsTrigger::~GameOptionsTrigger() {
     this->cleanup();
 }
 
-GameOptionsTrigger::~GameOptionsTrigger() {
-    this->cleanup();
-}
-
-GameOptionsTrigger::~GameOptionsTrigger() {
-    this->cleanup();
-}
-
-void GameOptionsTrigger::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string GameOptionsTrigger::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void GameOptionsTrigger::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GameOptionsTrigger::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

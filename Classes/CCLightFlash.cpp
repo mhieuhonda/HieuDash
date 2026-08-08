@@ -5,34 +5,26 @@ CCLightFlash::~CCLightFlash() {
     this->cleanup();
 }
 
-CCLightFlash::~CCLightFlash() {
-    this->cleanup();
-}
-
-CCLightFlash::~CCLightFlash() {
-    this->cleanup();
-}
-
 void CCLightFlash::playEffect(cocos2d::CCPoint, cocos2d::_ccColor3B, float, float, float, float, float, float, float, float, float, float, float, float, float, float, int, bool, bool, float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CCLightFlash::cleanupFlash() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCLightFlash::removeLights() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CCLightFlash::fadeAndRemove() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void CCLightFlash::init() {
-    bool ret = true;
+bool CCLightFlash::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,6 +39,6 @@ void CCLightFlash::create() {
 }
 
 void CCLightFlash::showFlash() {
-    // TODO: Implement
+    // Display operation - stub
 }
 

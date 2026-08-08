@@ -5,34 +5,26 @@ SetupTimeWarpPopup::~SetupTimeWarpPopup() {
     this->cleanup();
 }
 
-SetupTimeWarpPopup::~SetupTimeWarpPopup() {
-    this->cleanup();
-}
-
-SetupTimeWarpPopup::~SetupTimeWarpPopup() {
-    this->cleanup();
-}
-
 void SetupTimeWarpPopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTimeWarpPopup::updateTimeWarp() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTimeWarpPopup::updateTimeWarpLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTimeWarpPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTimeWarpPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,6 +39,6 @@ void SetupTimeWarpPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupTimeWarpPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

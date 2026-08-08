@@ -5,26 +5,18 @@ SetColorIDPopup::~SetColorIDPopup() {
     this->cleanup();
 }
 
-SetColorIDPopup::~SetColorIDPopup() {
-    this->cleanup();
-}
-
-SetColorIDPopup::~SetColorIDPopup() {
-    this->cleanup();
-}
-
 void SetColorIDPopup::colorSelectClosed(GJSpecialColorSelect*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetColorIDPopup::onSelectSpecialColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetColorIDPopup::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

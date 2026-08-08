@@ -17,7 +17,7 @@ public:
     void resetTextureRect();
     void markAsNotBeingUsed();
     void updateDisplayFrame(std::string);
-    void createWithSpriteFrameName(char const*);
+    CCSpritePart* createWithSpriteFrameName(char const*);
     void create(cocos2d::CCTexture2D*);
 
 protected:

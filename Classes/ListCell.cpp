@@ -2,17 +2,11 @@
 #include "ListCell.h"
 
 ListCell::ListCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 ListCell::ListCell(char const*, float, float) {
-}
-
-ListCell::~ListCell() {
-    this->cleanup();
-}
-
-ListCell::~ListCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 ListCell::~ListCell() {
@@ -20,23 +14,21 @@ ListCell::~ListCell() {
 }
 
 void ListCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ListCell::loadFromObject(cocos2d::CCObject*, int, int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ListCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void ListCell::init() {
-    bool ret = true;
+bool ListCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

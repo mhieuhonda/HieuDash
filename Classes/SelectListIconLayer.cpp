@@ -5,22 +5,14 @@ SelectListIconLayer::~SelectListIconLayer() {
     this->cleanup();
 }
 
-SelectListIconLayer::~SelectListIconLayer() {
-    this->cleanup();
-}
-
-SelectListIconLayer::~SelectListIconLayer() {
-    this->cleanup();
-}
-
 void SelectListIconLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectListIconLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,10 +27,10 @@ void SelectListIconLayer::create(int) {
 }
 
 void SelectListIconLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectListIconLayer::onSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

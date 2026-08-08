@@ -5,48 +5,38 @@ RateStarsLayer::~RateStarsLayer() {
     this->cleanup();
 }
 
-RateStarsLayer::~RateStarsLayer() {
-    this->cleanup();
-}
-
-RateStarsLayer::~RateStarsLayer() {
-    this->cleanup();
-}
-
 void RateStarsLayer::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateStarsLayer::selectRating(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateStarsLayer::onToggleCoins(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateStarsLayer::getStarsButton(int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateStarsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateStarsLayer::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void RateStarsLayer::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void RateStarsLayer::init(int, bool, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -61,14 +51,14 @@ void RateStarsLayer::create(int, bool, bool) {
 }
 
 void RateStarsLayer::onRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateStarsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RateStarsLayer::onFeature(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

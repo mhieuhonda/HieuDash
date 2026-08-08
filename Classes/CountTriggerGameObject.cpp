@@ -5,31 +5,22 @@ CountTriggerGameObject::~CountTriggerGameObject() {
     this->cleanup();
 }
 
-CountTriggerGameObject::~CountTriggerGameObject() {
-    this->cleanup();
-}
-
-CountTriggerGameObject::~CountTriggerGameObject() {
-    this->cleanup();
-}
-
-void CountTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string CountTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void CountTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CountTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void CountTriggerGameObject::init(char const*) {
+bool CountTriggerGameObject::init(char const*) {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,30 +5,22 @@ SelectEventLayer::~SelectEventLayer() {
     this->cleanup();
 }
 
-SelectEventLayer::~SelectEventLayer() {
-    this->cleanup();
-}
-
-SelectEventLayer::~SelectEventLayer() {
-    this->cleanup();
-}
-
 void SelectEventLayer::nextPosition() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectEventLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectEventLayer::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectEventLayer::init(SetupEventLinkPopup*, std::set<int, std::less<int>, std::allocator<int> >&) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,14 +35,14 @@ void SelectEventLayer::create(SetupEventLinkPopup*, std::set<int, std::less<int>
 }
 
 void SelectEventLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectEventLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectEventLayer::addToggle(int, std::string) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

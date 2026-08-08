@@ -8,7 +8,7 @@ class ExplodeItemNode {
 public:
     virtual ~ExplodeItemNode();
 
-    void createSprites(int, int, float, float, float, float, float, float, cocos2d::_ccColor4F, cocos2d::_ccColor4F, bool);
+    ExplodeItemNode* createSprites(int, int, float, float, float, float, float, float, cocos2d::_ccColor4F, cocos2d::_ccColor4F, bool);
     void init(cocos2d::CCRenderTexture*);
     void create(cocos2d::CCRenderTexture*);
     void update(float);

@@ -5,18 +5,10 @@ GJFriendRequest::~GJFriendRequest() {
     this->cleanup();
 }
 
-GJFriendRequest::~GJFriendRequest() {
-    this->cleanup();
-}
-
-GJFriendRequest::~GJFriendRequest() {
-    this->cleanup();
-}
-
-void GJFriendRequest::init() {
-    bool ret = true;
+bool GJFriendRequest::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

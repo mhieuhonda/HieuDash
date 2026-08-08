@@ -5,67 +5,59 @@ ChallengesPage::~ChallengesPage() {
     this->cleanup();
 }
 
-ChallengesPage::~ChallengesPage() {
-    this->cleanup();
-}
-
-ChallengesPage::~ChallengesPage() {
-    this->cleanup();
-}
-
 void ChallengesPage::updateDots() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ChallengesPage::updateTimers(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ChallengesPage::exitNodeAtSlot(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChallengesPage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChallengesPage::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChallengesPage::currencyWillExit(CurrencyRewardLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChallengesPage::tryGetChallenges() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ChallengesPage::createChallengeNode(int, bool, float, bool) {
-    // TODO: Implement
+ChallengesPage* ChallengesPage::createChallengeNode(int, bool, float, bool) {
+    return nullptr;
 }
 
 void ChallengesPage::challengeStatusFailed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChallengesPage::challengeStatusFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChallengesPage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ChallengesPage::init() {
-    bool ret = true;
+bool ChallengesPage::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ChallengesPage::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void ChallengesPage::create() {
@@ -79,10 +71,10 @@ void ChallengesPage::create() {
 }
 
 void ChallengesPage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ChallengesPage::claimItem(ChallengeNode*, GJChallengeItem*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 

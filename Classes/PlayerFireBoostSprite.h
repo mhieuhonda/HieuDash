@@ -2,14 +2,14 @@
 #ifndef PLAYERFIREBOOSTSPRITE_H_
 #define PLAYERFIREBOOSTSPRITE_H_
 
-class PlayerFireBoostSprite {
+class PlayerFireBoostSprite : public cocos2d::CCSprite {
 public:
     virtual ~PlayerFireBoostSprite();
 
     void animateFireIn();
     void animateFireOut();
     void loopFireAnimation();
-    void init();
+    bool init();
     void create();
 
 };

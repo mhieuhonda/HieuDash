@@ -2,7 +2,7 @@
 #ifndef GJLOCALLEVELSCORECELL_H_
 #define GJLOCALLEVELSCORECELL_H_
 
-class GJLocalLevelScoreCell {
+class GJLocalLevelScoreCell : public cocos2d::CCNode {
 public:
     GJLocalLevelScoreCell(char const*, float, float);
     GJLocalLevelScoreCell(char const*, float, float);
@@ -12,7 +12,7 @@ public:
     void loadFromScore(GJLocalScore*);
     void updateBGColor(int);
     void draw();
-    void init();
+    bool init();
 
 };
 

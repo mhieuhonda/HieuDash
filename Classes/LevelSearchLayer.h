@@ -9,8 +9,8 @@ class LevelSearchLayer {
 public:
     virtual ~LevelSearchLayer();
 
-    void getDiffKey(int);
-    void getTimeKey(int);
+    std::string getDiffKey(int);
+    std::string getTimeKey(int);
     void onFollowed(cocos2d::CCObject*);
     void onTrending(cocos2d::CCObject*);
     void toggleStar(cocos2d::CCObject*);
@@ -26,14 +26,14 @@ public:
     void onLatestStars(cocos2d::CCObject*);
     void onMoreOptions(cocos2d::CCObject*);
     void toggleTimeNum(int, bool);
-    void getLevelLenKey();
+    std::string getLevelLenKey();
     void keyBackClicked();
     void onSpecialDemon(cocos2d::CCObject*);
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void getSearchObject(SearchType, std::string);
     void textInputClosed(CCTextInputNode*);
     void textInputOpened(CCTextInputNode*);
-    void getSearchDiffKey();
+    std::string getSearchDiffKey();
     void onMostDownloaded(cocos2d::CCObject*);
     void onPasteClipboard(cocos2d::CCObject*);
     void toggleDifficulty(cocos2d::CCObject*);

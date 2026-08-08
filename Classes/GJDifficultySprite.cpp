@@ -5,34 +5,26 @@ GJDifficultySprite::~GJDifficultySprite() {
     this->cleanup();
 }
 
-GJDifficultySprite::~GJDifficultySprite() {
-    this->cleanup();
-}
-
-GJDifficultySprite::~GJDifficultySprite() {
-    this->cleanup();
-}
-
 void GJDifficultySprite::getDifficultyFrame(int, GJDifficultyName) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDifficultySprite::updateFeatureState(GJFeatureState) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJDifficultySprite::updateDifficultyFrame(int, GJDifficultyName) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJDifficultySprite::updateFeatureStateFromLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJDifficultySprite::init(int, GJDifficultyName) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

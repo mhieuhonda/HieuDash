@@ -2,16 +2,14 @@
 #include "OnlineListDelegate.h"
 
 void OnlineListDelegate::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void OnlineListDelegate::loadListFailed(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void OnlineListDelegate::loadListFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

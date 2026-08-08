@@ -2,14 +2,14 @@
 #ifndef FILESAVEMANAGER_H_
 #define FILESAVEMANAGER_H_
 
-class FileSaveManager {
+class FileSaveManager : public GManager {
 public:
     virtual ~FileSaveManager();
 
-    void sharedState();
+    FileSaveManager* sharedState();
     void getStoreData();
     void loadDataFromFile(char const*);
-    void init();
+    bool init();
     void firstLoad();
 
 };

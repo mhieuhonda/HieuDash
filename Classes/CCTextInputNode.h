@@ -38,7 +38,7 @@ public:
     void init(float, float, char const*, char const*, int, char const*);
     void visit();
     void create(float, float, char const*, char const*, int, char const*);
-    void getString();
+    std::string getString();
     void setString(std::string);
 
 protected:

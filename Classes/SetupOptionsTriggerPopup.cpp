@@ -5,22 +5,14 @@ SetupOptionsTriggerPopup::~SetupOptionsTriggerPopup() {
     this->cleanup();
 }
 
-SetupOptionsTriggerPopup::~SetupOptionsTriggerPopup() {
-    this->cleanup();
-}
-
-SetupOptionsTriggerPopup::~SetupOptionsTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupOptionsTriggerPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupOptionsTriggerPopup::init(GameOptionsTrigger*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void SetupOptionsTriggerPopup::create(GameOptionsTrigger*, cocos2d::CCArray*) {
 }
 
 void SetupOptionsTriggerPopup::addOption(int, std::string) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

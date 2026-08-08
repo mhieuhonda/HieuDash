@@ -5,47 +5,39 @@ PromoInterstitial::~PromoInterstitial() {
     this->cleanup();
 }
 
-PromoInterstitial::~PromoInterstitial() {
-    this->cleanup();
-}
-
-PromoInterstitial::~PromoInterstitial() {
-    this->cleanup();
-}
-
 void PromoInterstitial::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PromoInterstitial::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PromoInterstitial::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PromoInterstitial::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PromoInterstitial::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PromoInterstitial::init(bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void PromoInterstitial::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void PromoInterstitial::setup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void PromoInterstitial::create(bool) {
@@ -59,10 +51,10 @@ void PromoInterstitial::create(bool) {
 }
 
 void PromoInterstitial::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PromoInterstitial::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

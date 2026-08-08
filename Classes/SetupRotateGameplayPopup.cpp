@@ -5,26 +5,18 @@ SetupRotateGameplayPopup::~SetupRotateGameplayPopup() {
     this->cleanup();
 }
 
-SetupRotateGameplayPopup::~SetupRotateGameplayPopup() {
-    this->cleanup();
-}
-
-SetupRotateGameplayPopup::~SetupRotateGameplayPopup() {
-    this->cleanup();
-}
-
 void SetupRotateGameplayPopup::onPlusButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRotateGameplayPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRotateGameplayPopup::init(RotateGameplayGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

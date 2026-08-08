@@ -5,23 +5,15 @@ CCSpriteCOpacity::~CCSpriteCOpacity() {
     this->cleanup();
 }
 
-CCSpriteCOpacity::~CCSpriteCOpacity() {
-    this->cleanup();
-}
-
-CCSpriteCOpacity::~CCSpriteCOpacity() {
-    this->cleanup();
-}
-
 void CCSpriteCOpacity::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
-void CCSpriteCOpacity::createWithSpriteFrame(cocos2d::CCSpriteFrame*) {
-    // TODO: Implement
+CCSpriteCOpacity* CCSpriteCOpacity::createWithSpriteFrame(cocos2d::CCSpriteFrame*) {
+    return nullptr;
 }
 
-void CCSpriteCOpacity::createWithSpriteFrameName(char const*) {
-    // TODO: Implement
+CCSpriteCOpacity* CCSpriteCOpacity::createWithSpriteFrameName(char const*) {
+    return nullptr;
 }
 

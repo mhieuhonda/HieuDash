@@ -2,10 +2,10 @@
 #include "TableViewDataSource.h"
 
 void TableViewDataSource::numberOfSectionsInTableView(TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableViewDataSource::TableViewCommitCellEditingStyleForRowAtIndexPath(TableView*, TableViewCellEditingStyle, CCIndexPath&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

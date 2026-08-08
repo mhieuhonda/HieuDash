@@ -2,6 +2,6 @@
 #include "DemonFilterDelegate.h"
 
 void DemonFilterDelegate::demonFilterSelectClosed(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

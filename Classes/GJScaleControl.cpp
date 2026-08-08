@@ -5,79 +5,70 @@ GJScaleControl::~GJScaleControl() {
     this->cleanup();
 }
 
-GJScaleControl::~GJScaleControl() {
-    this->cleanup();
-}
-
-GJScaleControl::~GJScaleControl() {
-    this->cleanup();
-}
-
 void GJScaleControl::loadValues(GameObject*, cocos2d::CCArray*, std::unordered_map<int, GameObjectEditorState>, std::equal_to<int>, std::allocator<std::pair<const int, GameObjectEditorState> > >&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJScaleControl::finishTouch() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::updateLabelX(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJScaleControl::updateLabelY(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJScaleControl::skewFromValue(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::updateLabelXY(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJScaleControl::valueFromSkew(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::scaleFromValue(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::valueFromScale(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScaleControl::onToggleLockScale(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void GJScaleControl::init() {
-    bool ret = true;
+bool GJScaleControl::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

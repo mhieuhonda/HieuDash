@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class CommunityCreditsPage {
+class CommunityCreditsPage : public cocos2d::CCLayer {
 public:
     virtual ~CommunityCreditsPage();
 
@@ -12,7 +12,7 @@ public:
     void keyBackClicked();
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onClose(cocos2d::CCObject*);

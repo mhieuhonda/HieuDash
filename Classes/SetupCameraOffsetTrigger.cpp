@@ -5,102 +5,94 @@ SetupCameraOffsetTrigger::~SetupCameraOffsetTrigger() {
     this->cleanup();
 }
 
-SetupCameraOffsetTrigger::~SetupCameraOffsetTrigger() {
-    this->cleanup();
-}
-
-SetupCameraOffsetTrigger::~SetupCameraOffsetTrigger() {
-    this->cleanup();
-}
-
 void SetupCameraOffsetTrigger::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::onEasingRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::onTargetMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::sliderXChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::sliderYChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::updateDurLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::updateDuration() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::valuePopupClosed(ConfigureValuePopup*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::updateEasingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::updateValueXLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::updateValueYLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::posFromSliderValue(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::sliderValueFromPos(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::updateEasingRateLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::updateMoveCommandPosX() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::updateMoveCommandPosY() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::updateMoveCommandEasing() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::toggleEasingRateVisibility() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::updateMoveCommandEasingRate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraOffsetTrigger::init(CameraTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -115,10 +107,10 @@ void SetupCameraOffsetTrigger::create(CameraTriggerGameObject*, cocos2d::CCArray
 }
 
 void SetupCameraOffsetTrigger::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraOffsetTrigger::onEasing(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

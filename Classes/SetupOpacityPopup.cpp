@@ -5,62 +5,54 @@ SetupOpacityPopup::~SetupOpacityPopup() {
     this->cleanup();
 }
 
-SetupOpacityPopup::~SetupOpacityPopup() {
-    this->cleanup();
-}
-
-SetupOpacityPopup::~SetupOpacityPopup() {
-    this->cleanup();
-}
-
 void SetupOpacityPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupOpacityPopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupOpacityPopup::updateOpacity() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupOpacityPopup::updateDurLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupOpacityPopup::updateDuration() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupOpacityPopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupOpacityPopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupOpacityPopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupOpacityPopup::updateOpacityLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupOpacityPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupOpacityPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupOpacityPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -75,6 +67,6 @@ void SetupOpacityPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupOpacityPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

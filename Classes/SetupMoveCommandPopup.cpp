@@ -5,46 +5,38 @@ SetupMoveCommandPopup::~SetupMoveCommandPopup() {
     this->cleanup();
 }
 
-SetupMoveCommandPopup::~SetupMoveCommandPopup() {
-    this->cleanup();
-}
-
-SetupMoveCommandPopup::~SetupMoveCommandPopup() {
-    this->cleanup();
-}
-
 void SetupMoveCommandPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMoveCommandPopup::updateInputNode(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMoveCommandPopup::updateInputValue(int, float&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMoveCommandPopup::updateControlVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMoveCommandPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMoveCommandPopup::triggerSliderValueFromValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMoveCommandPopup::triggerValueFromSliderValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMoveCommandPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

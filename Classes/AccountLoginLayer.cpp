@@ -5,96 +5,86 @@ AccountLoginLayer::~AccountLoginLayer() {
     this->cleanup();
 }
 
-AccountLoginLayer::~AccountLoginLayer() {
-    this->cleanup();
-}
-
-AccountLoginLayer::~AccountLoginLayer() {
-    this->cleanup();
-}
-
 void AccountLoginLayer::resetLabel(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::resetLabels() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::updateLabel(AccountError) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AccountLoginLayer::disableNodes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::onForgotUser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::hideLoadingUI() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void AccountLoginLayer::showLoadingUI() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void AccountLoginLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AccountLoginLayer::createTextInput(cocos2d::CCPoint, cocos2d::CCSize, char const*, int) {
-    // TODO: Implement
+AccountLoginLayer* AccountLoginLayer::createTextInput(cocos2d::CCPoint, cocos2d::CCSize, char const*, int) {
+    return nullptr;
 }
 
-void AccountLoginLayer::createTextLabel(cocos2d::CCPoint, char const*, cocos2d::CCSize) {
-    // TODO: Implement
+AccountLoginLayer* AccountLoginLayer::createTextLabel(cocos2d::CCPoint, char const*, cocos2d::CCSize) {
+    return nullptr;
 }
 
 void AccountLoginLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::onForgotPassword(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::loginAccountFailed(AccountError) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AccountLoginLayer::createTextBackground(cocos2d::CCPoint, char const*, cocos2d::CCSize) {
-    // TODO: Implement
+AccountLoginLayer* AccountLoginLayer::createTextBackground(cocos2d::CCPoint, char const*, cocos2d::CCSize) {
+    return nullptr;
 }
 
 void AccountLoginLayer::loginAccountFinished(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::init(std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -109,14 +99,14 @@ void AccountLoginLayer::create(std::string) {
 }
 
 void AccountLoginLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::onSubmit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountLoginLayer::toggleUI(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

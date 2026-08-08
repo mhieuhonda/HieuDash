@@ -2,10 +2,10 @@
 #include "LevelListDeleteDelegate.h"
 
 void LevelListDeleteDelegate::levelListDeleteFailed(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelListDeleteDelegate::levelListDeleteFinished(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 

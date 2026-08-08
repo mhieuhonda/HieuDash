@@ -5,54 +5,46 @@ KeybindingsLayer::~KeybindingsLayer() {
     this->cleanup();
 }
 
-KeybindingsLayer::~KeybindingsLayer() {
-    this->cleanup();
-}
-
-KeybindingsLayer::~KeybindingsLayer() {
-    this->cleanup();
-}
-
 void KeybindingsLayer::addKeyPair(char const*, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void KeybindingsLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void KeybindingsLayer::countForPage(int) {
-    // TODO: Implement
+int KeybindingsLayer::countForPage(int) {
+    return 0;
 }
 
 void KeybindingsLayer::layerForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::nextPosition(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::objectsForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::incrementCountForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void KeybindingsLayer::init() {
-    bool ret = true;
+bool KeybindingsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -67,34 +59,34 @@ void KeybindingsLayer::create() {
 }
 
 void KeybindingsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::infoKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::pageKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::layerKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsLayer::objectKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

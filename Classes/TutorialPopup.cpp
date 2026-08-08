@@ -5,39 +5,31 @@ TutorialPopup::~TutorialPopup() {
     this->cleanup();
 }
 
-TutorialPopup::~TutorialPopup() {
-    this->cleanup();
-}
-
-TutorialPopup::~TutorialPopup() {
-    this->cleanup();
-}
-
 void TutorialPopup::animateMenu() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TutorialPopup::closeTutorial(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TutorialPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TutorialPopup::registerForCallback(void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TutorialPopup::init(std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void TutorialPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void TutorialPopup::create(std::string) {

@@ -5,39 +5,30 @@ GJRewardObject::~GJRewardObject() {
     this->cleanup();
 }
 
-GJRewardObject::~GJRewardObject() {
-    this->cleanup();
-}
-
-GJRewardObject::~GJRewardObject() {
-    this->cleanup();
-}
-
 void GJRewardObject::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
-void GJRewardObject::isSpecialType() {
-    // TODO: Implement
+bool GJRewardObject::isSpecialType() {
+    return false;
 }
 
-void GJRewardObject::createWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+GJRewardObject* GJRewardObject::createWithCoder(DS_Dictionary*) {
+    return nullptr;
 }
 
 void GJRewardObject::encodeWithCoder(DS_Dictionary*) {
-    // TODO: Implement
+    // Save/encode operation - stub
 }
 
-void GJRewardObject::createItemUnlock(UnlockType, int) {
-    // TODO: Implement
+GJRewardObject* GJRewardObject::createItemUnlock(UnlockType, int) {
+    return nullptr;
 }
 
 void GJRewardObject::init(SpecialRewardItem, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -61,7 +52,7 @@ void GJRewardObject::create() {
     return nullptr;
 }
 
-void GJRewardObject::canEncode() {
-    // TODO: Implement
+bool GJRewardObject::canEncode() {
+    return false;
 }
 

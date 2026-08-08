@@ -10,7 +10,7 @@ class SongTriggerGameObject : public EffectGameObject {
 public:
     virtual ~SongTriggerGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init(char const*) override;
     void create(char const*);

@@ -4,13 +4,13 @@
 
 #include "cocos2d.h"
 
-class GravityEffectSprite {
+class GravityEffectSprite : public cocos2d::CCSprite {
 public:
     virtual ~GravityEffectSprite();
 
     void updateSpritesColor(cocos2d::_ccColor3B);
     void draw();
-    void init();
+    bool init();
     void create();
 
 };

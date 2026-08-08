@@ -2,13 +2,13 @@
 #ifndef GOOGLEPLAYMANAGER_H_
 #define GOOGLEPLAYMANAGER_H_
 
-class GooglePlayManager {
+class GooglePlayManager : public GManager {
 public:
     virtual ~GooglePlayManager();
 
-    void sharedState();
+    GooglePlayManager* sharedState();
     void googlePlaySignedIn();
-    void init();
+    bool init();
 
 };
 

@@ -5,64 +5,54 @@ ShareCommentLayer::~ShareCommentLayer() {
     this->cleanup();
 }
 
-ShareCommentLayer::~ShareCommentLayer() {
-    this->cleanup();
-}
-
-ShareCommentLayer::~ShareCommentLayer() {
-    this->cleanup();
-}
-
 void ShareCommentLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::updateDescText(std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ShareCommentLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::updatePercentLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ShareCommentLayer::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ShareCommentLayer::updateCharCountLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ShareCommentLayer::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ShareCommentLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::init(std::string, int, CommentType, int, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -77,18 +67,18 @@ void ShareCommentLayer::create(std::string, int, CommentType, int, std::string) 
 }
 
 void ShareCommentLayer::onClear(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void ShareCommentLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::onShare(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareCommentLayer::onPercent(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

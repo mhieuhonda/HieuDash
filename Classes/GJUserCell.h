@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJUserCell {
+class GJUserCell : public cocos2d::CCNode {
 public:
     GJUserCell(char const*, float, float);
     GJUserCell(char const*, float, float);
@@ -24,7 +24,7 @@ public:
     void uploadActionFinished(int, int);
     void onCancelFriendRequest(cocos2d::CCObject*);
     void draw();
-    void init();
+    bool init();
 
 };
 

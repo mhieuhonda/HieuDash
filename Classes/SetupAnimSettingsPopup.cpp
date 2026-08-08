@@ -5,22 +5,14 @@ SetupAnimSettingsPopup::~SetupAnimSettingsPopup() {
     this->cleanup();
 }
 
-SetupAnimSettingsPopup::~SetupAnimSettingsPopup() {
-    this->cleanup();
-}
-
-SetupAnimSettingsPopup::~SetupAnimSettingsPopup() {
-    this->cleanup();
-}
-
 void SetupAnimSettingsPopup::updateAnimSettings() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAnimSettingsPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void SetupAnimSettingsPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupAnimSettingsPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -8,18 +8,18 @@ class GJSearchObject {
 public:
     virtual ~GJSearchObject();
 
-    void getSearchKey(SearchType, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, int, int, int);
-    void createFromKey(char const*);
+    std::string getSearchKey(SearchType, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, int, int, int);
+    GJSearchObject* createFromKey(char const*);
     void getPageObject(int);
-    void getNextPageKey();
+    std::string getNextPageKey();
     void getNextPageObject();
     void getPrevPageObject();
-    void isLevelSearchObject();
+    bool isLevelSearchObject();
     void init(SearchType, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, int, int, int);
     void create(SearchType);
     void create(SearchType, std::string);
     void create(SearchType, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, int, int, int);
-    void getKey();
+    std::string getKey();
 
 protected:
     std::string m_key;

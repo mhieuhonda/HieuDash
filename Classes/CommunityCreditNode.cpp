@@ -5,18 +5,10 @@ CommunityCreditNode::~CommunityCreditNode() {
     this->cleanup();
 }
 
-CommunityCreditNode::~CommunityCreditNode() {
-    this->cleanup();
-}
-
-CommunityCreditNode::~CommunityCreditNode() {
-    this->cleanup();
-}
-
 void CommunityCreditNode::init(int, int, int, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

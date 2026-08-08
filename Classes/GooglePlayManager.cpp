@@ -5,26 +5,18 @@ GooglePlayManager::~GooglePlayManager() {
     this->cleanup();
 }
 
-GooglePlayManager::~GooglePlayManager() {
-    this->cleanup();
-}
-
-GooglePlayManager::~GooglePlayManager() {
-    this->cleanup();
-}
-
-void GooglePlayManager::sharedState() {
-    // TODO: Implement
+GooglePlayManager* GooglePlayManager::sharedState() {
+    return nullptr;
 }
 
 void GooglePlayManager::googlePlaySignedIn() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
-void GooglePlayManager::init() {
-    bool ret = true;
+bool GooglePlayManager::init() {
+    bool ret = GManager::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

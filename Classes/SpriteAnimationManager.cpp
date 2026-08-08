@@ -5,108 +5,99 @@ SpriteAnimationManager::~SpriteAnimationManager() {
     this->cleanup();
 }
 
-SpriteAnimationManager::~SpriteAnimationManager() {
-    this->cleanup();
-}
-
-SpriteAnimationManager::~SpriteAnimationManager() {
-    this->cleanup();
-}
-
 void SpriteAnimationManager::getAnimType(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::overridePrio() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::runAnimation(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::initWithOwner(CCAnimatedSprite*, std::string) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SpriteAnimationManager::loadAnimations(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void SpriteAnimationManager::queueAnimation(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::resetAnimState() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::stopAnimations() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void SpriteAnimationManager::storeAnimation(cocos2d::CCAnimate*, cocos2d::CCAnimate*, std::string, int, spriteMode, cocos2d::CCSpriteFrame*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SpriteAnimationManager::createWithOwner(CCAnimatedSprite*, std::string) {
-    // TODO: Implement
+SpriteAnimationManager* SpriteAnimationManager::createWithOwner(CCAnimatedSprite*, std::string) {
+    return nullptr;
 }
 
 void SpriteAnimationManager::finishAnimation(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SpriteAnimationManager::createAnimations(std::string) {
-    // TODO: Implement
+SpriteAnimationManager* SpriteAnimationManager::createAnimations(std::string) {
+    return nullptr;
 }
 
 void SpriteAnimationManager::executeAnimation(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::animationFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::runQueuedAnimation() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::updateAnimationSpeed(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SpriteAnimationManager::callAnimationFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::playSoundForAnimation(std::string) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void SpriteAnimationManager::offsetCurrentAnimation(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::storeSoundForAnimation(cocos2d::CCString*, std::string, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::switchToFirstFrameOfAnimation(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::getPrio(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::doCleanup() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpriteAnimationManager::playSound(std::string) {
-    // TODO: Implement
+    // Media operation - stub
 }
 

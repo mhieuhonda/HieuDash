@@ -23,7 +23,7 @@ public:
     void moveToPageEnded();
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void instantMoveToPage(int);
-    void cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*);
+    bool cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void removePageWithNumber(int);
     void togglePageIndicators(bool);
     void getRelativePageForNum(int);

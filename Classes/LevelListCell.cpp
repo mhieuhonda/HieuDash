@@ -2,17 +2,11 @@
 #include "LevelListCell.h"
 
 LevelListCell::LevelListCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 LevelListCell::LevelListCell(char const*, float, float) {
-}
-
-LevelListCell::~LevelListCell() {
-    this->cleanup();
-}
-
-LevelListCell::~LevelListCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 LevelListCell::~LevelListCell() {
@@ -20,31 +14,29 @@ LevelListCell::~LevelListCell() {
 }
 
 void LevelListCell::onListInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListCell::loadFromList(GJLevelList*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelListCell::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelListCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelListCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void LevelListCell::init() {
-    bool ret = true;
+bool LevelListCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -59,6 +51,6 @@ void LevelListCell::create(float, float) {
 }
 
 void LevelListCell::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

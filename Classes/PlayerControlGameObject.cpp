@@ -5,27 +5,18 @@ PlayerControlGameObject::~PlayerControlGameObject() {
     this->cleanup();
 }
 
-PlayerControlGameObject::~PlayerControlGameObject() {
-    this->cleanup();
-}
-
-PlayerControlGameObject::~PlayerControlGameObject() {
-    this->cleanup();
-}
-
-void PlayerControlGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string PlayerControlGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void PlayerControlGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void PlayerControlGameObject::init() {
-    bool ret = true;
+bool PlayerControlGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

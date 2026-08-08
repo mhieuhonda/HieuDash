@@ -21,7 +21,7 @@ public:
     void onBlockUser(cocos2d::CCObject*);
     void onClosePopup(UploadActionPopup*);
     void onSocialPage(cocos2d::CCObject*);
-    void isOnWatchlist(int);
+    bool isOnWatchlist(int);
     void onSendMessage(cocos2d::CCObject*);
     void setupComments();
     void setupPageInfo(std::string, char const*);
@@ -57,7 +57,7 @@ public:
     void onFriend(cocos2d::CCObject*);
     void onUpdate(cocos2d::CCObject*);
     void blockUser();
-    void isCorrect(char const*);
+    bool isCorrect(char const*);
     void onComment(cocos2d::CCObject*);
     void onFriends(cocos2d::CCObject*);
     void onMyLists(cocos2d::CCObject*);

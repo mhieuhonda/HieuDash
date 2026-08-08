@@ -23,7 +23,7 @@ public:
     void incrementDislikes();
     void updateLabelValues();
     void draw() override;
-    void init() override;
+    bool init() override;
     void onLike(cocos2d::CCObject*);
     void onDelete();
     void onUnhide(cocos2d::CCObject*);

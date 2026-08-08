@@ -13,57 +13,46 @@ CustomSongCell::~CustomSongCell() {
     this->cleanup();
 }
 
-CustomSongCell::~CustomSongCell() {
-    this->cleanup();
-}
-
-CustomSongCell::~CustomSongCell() {
-    this->cleanup();
-}
-
-void CustomSongCell::shouldReload() {
-    // Load from file/storage
-    // TODO: Implement loading
+bool CustomSongCell::shouldReload() {
+    return false;
 }
 
 void CustomSongCell::songIDChanged(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSongCell::loadFromObject(SongInfoObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSongCell::getActiveSongID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CustomSongCell::getSongFileName() {
-    // TODO: Implement
+std::string CustomSongCell::getSongFileName() {
+    return "";
 }
 
 void CustomSongCell::getLevelSettings() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSongCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void CustomSongCell::init() {
-    bool ret = true;
+bool CustomSongCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CustomSongCell::onDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 

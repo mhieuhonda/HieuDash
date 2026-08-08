@@ -5,38 +5,30 @@ GJSpecialColorSelect::~GJSpecialColorSelect() {
     this->cleanup();
 }
 
-GJSpecialColorSelect::~GJSpecialColorSelect() {
-    this->cleanup();
-}
-
-GJSpecialColorSelect::~GJSpecialColorSelect() {
-    this->cleanup();
-}
-
 void GJSpecialColorSelect::onSelectColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSpecialColorSelect::getButtonByTag(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSpecialColorSelect::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSpecialColorSelect::textForColorIdx(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSpecialColorSelect::highlightSelected(ButtonSprite*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSpecialColorSelect::init(int, GJSpecialColorSelectDelegate*, ColorSelectType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,6 +43,6 @@ void GJSpecialColorSelect::create(int, GJSpecialColorSelectDelegate*, ColorSelec
 }
 
 void GJSpecialColorSelect::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,27 +5,18 @@ SongTriggerGameObject::~SongTriggerGameObject() {
     this->cleanup();
 }
 
-SongTriggerGameObject::~SongTriggerGameObject() {
-    this->cleanup();
-}
-
-SongTriggerGameObject::~SongTriggerGameObject() {
-    this->cleanup();
-}
-
-void SongTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string SongTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void SongTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void SongTriggerGameObject::init(char const*) {
+bool SongTriggerGameObject::init(char const*) {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

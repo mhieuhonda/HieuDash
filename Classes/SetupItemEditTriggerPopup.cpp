@@ -5,38 +5,30 @@ SetupItemEditTriggerPopup::~SetupItemEditTriggerPopup() {
     this->cleanup();
 }
 
-SetupItemEditTriggerPopup::~SetupItemEditTriggerPopup() {
-    this->cleanup();
-}
-
-SetupItemEditTriggerPopup::~SetupItemEditTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupItemEditTriggerPopup::onOpButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupItemEditTriggerPopup::updateOpButton(CCMenuItemSpriteExtra*, int, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupItemEditTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupItemEditTriggerPopup::updateFormulaLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupItemEditTriggerPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupItemEditTriggerPopup::init(ItemTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

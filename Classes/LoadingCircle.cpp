@@ -5,52 +5,43 @@ LoadingCircle::~LoadingCircle() {
     this->cleanup();
 }
 
-LoadingCircle::~LoadingCircle() {
-    this->cleanup();
-}
-
-LoadingCircle::~LoadingCircle() {
-    this->cleanup();
-}
-
 void LoadingCircle::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LoadingCircle::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LoadingCircle::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LoadingCircle::fadeAndRemove() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LoadingCircle::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LoadingCircle::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LoadingCircle::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void LoadingCircle::init() {
-    bool ret = true;
+bool LoadingCircle::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LoadingCircle::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LoadingCircle::create() {

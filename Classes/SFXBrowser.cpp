@@ -5,82 +5,74 @@ SFXBrowser::~SFXBrowser() {
     this->cleanup();
 }
 
-SFXBrowser::~SFXBrowser() {
-    this->cleanup();
-}
-
-SFXBrowser::~SFXBrowser() {
-    this->cleanup();
-}
-
 void SFXBrowser::onExitFolder(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::onClearSearch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SFXBrowser::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::onUpdateLibrary(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SFXBrowser::setupSFXBrowser() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SFXBrowser::updatePageLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SFXBrowser::sortSelectClosed(SelectSFXSortLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::musicActionFailed(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::getSelectedCellIdx() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::setTextPopupClosed(SetTextPopup*, std::string) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SFXBrowser::trySetupSFXBrowser() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SFXBrowser::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::musicActionFinished(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::onToggleCompactMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SFXBrowser::shouldSnapToSelected() {
-    // TODO: Implement
+bool SFXBrowser::shouldSnapToSelected() {
+    return false;
 }
 
 void SFXBrowser::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -95,26 +87,26 @@ void SFXBrowser::create(int) {
 }
 
 void SFXBrowser::onPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::onSearch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::onCredits(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::onSorting(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXBrowser::setupList(SFXSearchResult*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

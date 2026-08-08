@@ -5,63 +5,55 @@ MapSelectLayer::~MapSelectLayer() {
     this->cleanup();
 }
 
-MapSelectLayer::~MapSelectLayer() {
-    this->cleanup();
-}
-
-MapSelectLayer::~MapSelectLayer() {
-    this->cleanup();
-}
-
 void MapSelectLayer::scrollWheel(float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::checkTouchMonster(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MapSelectLayer::createObjectAtPoint(cocos2d::CCPoint) {
-    // TODO: Implement
+MapSelectLayer* MapSelectLayer::createObjectAtPoint(cocos2d::CCPoint) {
+    return nullptr;
 }
 
 void MapSelectLayer::getConstrainedMapPos(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MapSelectLayer::init() {
-    bool ret = true;
+bool MapSelectLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void MapSelectLayer::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::create() {
@@ -75,15 +67,14 @@ void MapSelectLayer::create() {
 }
 
 void MapSelectLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MapSelectLayer::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 

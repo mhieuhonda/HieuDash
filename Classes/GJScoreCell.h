@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJScoreCell {
+class GJScoreCell : public cocos2d::CCNode {
 public:
     GJScoreCell(char const*, float, float);
     GJScoreCell(char const*, float, float);
@@ -17,7 +17,7 @@ public:
     void updateBGColor(int);
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void draw();
-    void init();
+    bool init();
     void onBan(cocos2d::CCObject*);
     void onCheck(cocos2d::CCObject*);
 

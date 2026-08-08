@@ -5,78 +5,70 @@ AnimatedGameObject::~AnimatedGameObject() {
     this->cleanup();
 }
 
-AnimatedGameObject::~AnimatedGameObject() {
-    this->cleanup();
-}
-
-AnimatedGameObject::~AnimatedGameObject() {
-    this->cleanup();
-}
-
 void AnimatedGameObject::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void AnimatedGameObject::resetObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedGameObject::getTweenTime(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedGameObject::playAnimation(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void AnimatedGameObject::setChildColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_childColor
+    // Setter operation - stub
 }
 
 void AnimatedGameObject::activateObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedGameObject::animationForID(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedGameObject::setObjectColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_objectColor
+    // Setter operation - stub
 }
 
 void AnimatedGameObject::deactivateObject(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedGameObject::animationFinished(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedGameObject::setupAnimatedSize(int) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AnimatedGameObject::setupChildSprites() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AnimatedGameObject::displayFrameChanged(cocos2d::CCObject*, std::string) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void AnimatedGameObject::updateObjectAnimation() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AnimatedGameObject::updateChildSpriteColor(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void AnimatedGameObject::init(int) {
+bool AnimatedGameObject::init(int) {
     bool ret = GameObject::init() if "GameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

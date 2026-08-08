@@ -5,55 +5,47 @@ FollowRewardPage::~FollowRewardPage() {
     this->cleanup();
 }
 
-FollowRewardPage::~FollowRewardPage() {
-    this->cleanup();
-}
-
-FollowRewardPage::~FollowRewardPage() {
-    this->cleanup();
-}
-
 void FollowRewardPage::updateRate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FollowRewardPage::onSpecialItem(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FollowRewardPage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FollowRewardPage::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FollowRewardPage::onRewardedVideo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FollowRewardPage::switchToOpenedState(CCMenuItemSpriteExtra*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FollowRewardPage::rewardedVideoFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FollowRewardPage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FollowRewardPage::init() {
-    bool ret = true;
+bool FollowRewardPage::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void FollowRewardPage::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void FollowRewardPage::create() {
@@ -67,6 +59,6 @@ void FollowRewardPage::create() {
 }
 
 void FollowRewardPage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

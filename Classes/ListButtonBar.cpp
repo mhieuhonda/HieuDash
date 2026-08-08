@@ -5,18 +5,10 @@ ListButtonBar::~ListButtonBar() {
     this->cleanup();
 }
 
-ListButtonBar::~ListButtonBar() {
-    this->cleanup();
-}
-
-ListButtonBar::~ListButtonBar() {
-    this->cleanup();
-}
-
 void ListButtonBar::init(cocos2d::CCArray*, cocos2d::CCPoint, int, int, float, float, float, float, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -31,18 +23,18 @@ void ListButtonBar::create(cocos2d::CCArray*, cocos2d::CCPoint, int, int, float,
 }
 
 void ListButtonBar::onLeft(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ListButtonBar::getPage() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ListButtonBar::onRight(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ListButtonBar::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,22 +5,14 @@ SetupObjectTogglePopup::~SetupObjectTogglePopup() {
     this->cleanup();
 }
 
-SetupObjectTogglePopup::~SetupObjectTogglePopup() {
-    this->cleanup();
-}
-
-SetupObjectTogglePopup::~SetupObjectTogglePopup() {
-    this->cleanup();
-}
-
 void SetupObjectTogglePopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectTogglePopup::init(EffectGameObject*, cocos2d::CCArray*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void SetupObjectTogglePopup::create(EffectGameObject*, cocos2d::CCArray*, bool) 
 }
 
 void SetupObjectTogglePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

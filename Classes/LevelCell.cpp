@@ -2,17 +2,11 @@
 #include "LevelCell.h"
 
 LevelCell::LevelCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 LevelCell::LevelCell(char const*, float, float) {
-}
-
-LevelCell::~LevelCell() {
-    this->cleanup();
-}
-
-LevelCell::~LevelCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 LevelCell::~LevelCell() {
@@ -20,45 +14,41 @@ LevelCell::~LevelCell() {
 }
 
 void LevelCell::updateToggle() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelCell::loadFromLevel(GJGameLevel*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelCell::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelCell::updateCellMode(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelCell::loadLocalLevelCell() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelCell::loadCustomLevelCell() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void LevelCell::init() {
+bool LevelCell::init() {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -73,10 +63,10 @@ void LevelCell::create(float, float) {
 }
 
 void LevelCell::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelCell::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,30 +5,22 @@ LevelOptionsLayer::~LevelOptionsLayer() {
     this->cleanup();
 }
 
-LevelOptionsLayer::~LevelOptionsLayer() {
-    this->cleanup();
-}
-
-LevelOptionsLayer::~LevelOptionsLayer() {
-    this->cleanup();
-}
-
 void LevelOptionsLayer::onSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelOptionsLayer::setupOptions() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void LevelOptionsLayer::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelOptionsLayer::init(LevelSettingsObject*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,10 +35,10 @@ void LevelOptionsLayer::create(LevelSettingsObject*) {
 }
 
 void LevelOptionsLayer::getValue(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelOptionsLayer::didToggle(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

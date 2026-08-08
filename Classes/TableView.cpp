@@ -2,17 +2,11 @@
 #include "TableView.h"
 
 TableView::TableView(cocos2d::CCRect) {
+    // Stub - not yet implemented
 }
 
 TableView::TableView(cocos2d::CCRect) {
-}
-
-TableView::~TableView() {
-    this->cleanup();
-}
-
-TableView::~TableView() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 TableView::~TableView() {
@@ -20,116 +14,115 @@ TableView::~TableView() {
 }
 
 void TableView::claimTouch(cocos2d::CCTouch*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void TableView::reloadData() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void TableView::scrollWheel(float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::touchFinish(cocos2d::CCTouch*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::cellForTouch(cocos2d::CCTouch*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::checkLastCell(TableViewCell*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::checkFirstCell(TableViewCell*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::scrollToIndexPath(CCIndexPath&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::initTableViewCells() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void TableView::cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+bool TableView::cancelAndStoleTouch(cocos2d::CCTouch*, cocos2d::CCEvent*) {
+    return false;
 }
 
 void TableView::checkBoundaryOfCell(TableViewCell*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::checkBoundaryOfCell(cocos2d::CCPoint&, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::deleteTableViewCell(TableViewCell*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void TableView::isDuplicateIndexPath(CCIndexPath&) {
-    // TODO: Implement
+bool TableView::isDuplicateIndexPath(CCIndexPath&) {
+    return false;
 }
 
 void TableView::cellForRowAtIndexPath(CCIndexPath&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::scrollViewTouchMoving(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::checkBoundaryOfContent(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::scrollViewDidEndMoving(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::scrollViewDidEndDecelerating(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void TableView::isDuplicateInVisibleCellArray(CCIndexPath*) {
-    // TODO: Implement
+bool TableView::isDuplicateInVisibleCellArray(CCIndexPath*) {
+    return false;
 }
 
 void TableView::scrllViewWillBeginDecelerating(CCScrollLayerExt*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::dequeueReusableCellWithIdentifier(char const*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void TableView::removeIndexPathFromPathAddedArray(CCIndexPath&) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void TableView::create(TableViewDelegate*, TableViewDataSource*, TableViewCellDelegate*, cocos2d::CCRect) {
@@ -143,10 +136,10 @@ void TableView::create(TableViewDelegate*, TableViewDataSource*, TableViewCellDe
 }
 
 void TableView::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableView::onEnter() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

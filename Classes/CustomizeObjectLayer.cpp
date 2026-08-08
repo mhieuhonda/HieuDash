@@ -5,143 +5,135 @@ CustomizeObjectLayer::~CustomizeObjectLayer() {
     this->cleanup();
 }
 
-CustomizeObjectLayer::~CustomizeObjectLayer() {
-    this->cleanup();
-}
-
-CustomizeObjectLayer::~CustomizeObjectLayer() {
-    this->cleanup();
-}
-
 void CustomizeObjectLayer::onLiveEdit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onEditColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onBreakApart(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onSelectMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::getActiveMode(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onSelectColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::recreateLayer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::toggleVisible() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::getButtonByTag(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::hsvPopupClosed(HSVWidgetPopup*, cocos2d::_ccHSVValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::updateSelected(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::colorSetupClosed(int) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void CustomizeObjectLayer::updateHSVButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::colorSelectClosed(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::highlightSelected(ButtonSprite*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::updateColorSprite() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onNextColorChannel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::updateChannelLabel(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::updateKerningLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::onUpdateCustomColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::updateCurrentSelection() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::updateCustomColorLabels() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomizeObjectLayer::init(GameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CustomizeObjectLayer::onHSV(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::create(GameObject*, cocos2d::CCArray*) {
@@ -155,26 +147,26 @@ void CustomizeObjectLayer::create(GameObject*, cocos2d::CCArray*) {
 }
 
 void CustomizeObjectLayer::getHSV() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onCopy(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onClear(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CustomizeObjectLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onPaste(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectLayer::onBrowse(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,123 +5,114 @@ AchievementManager::~AchievementManager() {
     this->cleanup();
 }
 
-AchievementManager::~AchievementManager() {
-    this->cleanup();
-}
-
-AchievementManager::~AchievementManager() {
-    this->cleanup();
-}
-
 void AchievementManager::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void AchievementManager::firstSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void AchievementManager::sharedState() {
-    // TODO: Implement
+AchievementManager* AchievementManager::sharedState() {
+    return nullptr;
 }
 
 void AchievementManager::encodeDataTo(DS_Dictionary*) {
-    // TODO: Implement
+    // Data encoding to dictionary - stub
 }
 
 void AchievementManager::addAchievement(std::string, std::string, std::string, std::string, std::string, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void AchievementManager::resetAchievement(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::notifyAchievement(char const*, char const*, char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::resetAchievements() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::checkAchFromUnlock(char const*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void AchievementManager::getAllAchievements() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::percentageForCount(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AchievementManager::isAchievementEarned(char const*) {
-    // TODO: Implement
+bool AchievementManager::isAchievementEarned(char const*) {
+    return false;
 }
 
 void AchievementManager::limitForAchievement(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::achievementForUnlock(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void AchievementManager::addManualAchievements() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
-void AchievementManager::areAchievementsEarned(cocos2d::CCArray*) {
-    // TODO: Implement
+bool AchievementManager::areAchievementsEarned(cocos2d::CCArray*) {
+    return false;
 }
 
 void AchievementManager::getAchievementsWithID(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::percentForAchievement(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AchievementManager::isAchievementAvailable(std::string) {
-    // TODO: Implement
+bool AchievementManager::isAchievementAvailable(std::string) {
+    return false;
 }
 
 void AchievementManager::notifyAchievementWithID(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::reportAchievementWithID(char const*, int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::storeAchievementUnlocks() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void AchievementManager::getAchievementRewardDict() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::getAllAchievementsSorted(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementManager::reportPlatformAchievementWithID(char const*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void AchievementManager::init() {
-    bool ret = true;
+bool AchievementManager::init() {
+    bool ret = GManager::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void AchievementManager::setup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

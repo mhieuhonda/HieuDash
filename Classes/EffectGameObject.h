@@ -14,23 +14,23 @@ public:
 
     virtual ~EffectGameObject();
 
-    void canReverse();
+    bool canReverse();
     void firstSetup();
     void setOpacity(unsigned char);
     void setRScaleX(float);
     void setRScaleY(float);
     void customSetup();
     void setTargetID(int);
-    void canBeOrdered();
+    bool canBeOrdered();
     void setTargetID2(int);
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void restoreObject();
     void triggerObject(GJBaseGameLayer*, int, std::vector<int> const*);
     void getObjectLabel();
     void setObjectLabel(cocos2d::CCLabelBMFont*);
     void spawnXPosition();
-    void canSpawnTriggers();
-    void hasSpawnTargetID(int);
+    bool canSpawnTriggers();
+    bool hasSpawnTargetID(int);
     void triggerActivated(float);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void playTriggerEffect();
@@ -39,7 +39,7 @@ public:
     void updateSpecialColor();
     void updateSpeedModType();
     void getTargetColorIndex();
-    void isSpecialSpawnObject();
+    bool isSpecialSpawnObject();
     void triggerEffectFinished();
     void updateInteractiveHover(float);
     void init(char const*) override;

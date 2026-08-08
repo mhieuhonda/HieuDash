@@ -15,33 +15,27 @@ EnterEffectInstance::~EnterEffectInstance() {
     this->cleanup();
 }
 
-EnterEffectInstance::~EnterEffectInstance() {
-    this->cleanup();
-}
-
 void EnterEffectInstance::animateValue(int, float, float, float, int, float, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EnterEffectInstance::loadTransitions(EnterEffectObject*, float) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void EnterEffectInstance::updateTransitions(float, GJBaseGameLayer*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void EnterEffectInstance::loadValuesFromObject(EnterEffectObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void EnterEffectInstance::getValue(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EnterEffectInstance::setValue(int, float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 

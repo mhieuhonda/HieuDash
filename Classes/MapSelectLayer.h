@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class MapSelectLayer {
+class MapSelectLayer : public cocos2d::CCLayer {
 public:
     virtual ~MapSelectLayer();
 
@@ -15,10 +15,10 @@ public:
     void keyBackClicked();
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void checkTouchMonster(cocos2d::CCPoint);
-    void createObjectAtPoint(cocos2d::CCPoint);
+    MapSelectLayer* createObjectAtPoint(cocos2d::CCPoint);
     void getConstrainedMapPos(cocos2d::CCPoint);
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

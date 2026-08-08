@@ -15,686 +15,670 @@ GameStatsManager::~GameStatsManager() {
     this->cleanup();
 }
 
-GameStatsManager::~GameStatsManager() {
-    this->cleanup();
-}
-
-GameStatsManager::~GameStatsManager() {
-    this->cleanup();
-}
-
 void GameStatsManager::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void GameStatsManager::firstSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void GameStatsManager::getItemKey(int, int) {
-    // TODO: Implement
+std::string GameStatsManager::getItemKey(int, int) {
+    return "";
 }
 
-void GameStatsManager::getLevelKey(GJGameLevel*) {
-    // TODO: Implement
+std::string GameStatsManager::getLevelKey(GJGameLevel*) {
+    return "";
 }
 
-void GameStatsManager::getLevelKey(int, bool, bool, bool, bool) {
-    // TODO: Implement
+std::string GameStatsManager::getLevelKey(int, bool, bool, bool, bool) {
+    return "";
 }
 
-void GameStatsManager::hasUserCoin(char const*) {
-    // TODO: Implement
+bool GameStatsManager::hasUserCoin(char const*) {
+    return false;
 }
 
-void GameStatsManager::sharedState() {
-    // TODO: Implement
+GameStatsManager* GameStatsManager::sharedState() {
+    return nullptr;
 }
 
 void GameStatsManager::addStoreItem(int, int, int, int, ShopType) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GameStatsManager::createReward(GJRewardType, int, std::string) {
-    // TODO: Implement
+    return nullptr;
 }
 
 void GameStatsManager::encodeDataTo(DS_Dictionary*) {
-    // TODO: Implement
+    // Data encoding to dictionary - stub
 }
 
 void GameStatsManager::getChallenge(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::getRewardKey(GJRewardType, int) {
-    // TODO: Implement
+std::string GameStatsManager::getRewardKey(GJRewardType, int) {
+    return "";
 }
 
 void GameStatsManager::getStoreItem(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getStoreItem(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::isSecretCoin(std::string) {
-    // TODO: Implement
+bool GameStatsManager::isSecretCoin(std::string) {
+    return false;
 }
 
-void GameStatsManager::purchaseItem(int) {
-    // TODO: Implement
+void GameStatsManager::purchaseItem(int itemID) {
+    // Purchase operation - stub
 }
 
 void GameStatsManager::resetPreSync() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::collectReward(GJRewardType, GJRewardItem*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
-void GameStatsManager::getMapPackKey(int) {
-    // TODO: Implement
+std::string GameStatsManager::getMapPackKey(int) {
+    return "";
 }
 
 void GameStatsManager::getRewardItem(GJRewardType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::hasSecretCoin(char const*) {
-    // TODO: Implement
+bool GameStatsManager::hasSecretCoin(char const*) {
+    return false;
 }
 
 void GameStatsManager::incrementStat(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::incrementStat(char const*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::isItemEnabled(UnlockType, int) {
-    // TODO: Implement
+bool GameStatsManager::isItemEnabled(UnlockType, int) {
+    return false;
 }
 
 void GameStatsManager::storeUserCoin(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::tryFixPathBug() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::awardSecretKey() {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::completedLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::getCurrencyKey(GJGameLevel*) {
-    // TODO: Implement
+std::string GameStatsManager::getCurrencyKey(GJGameLevel*) {
+    return "";
 }
 
-void GameStatsManager::getStatFromKey(StatKey) {
-    // TODO: Implement
+std::string GameStatsManager::getStatFromKey(StatKey) {
+    return "";
 }
 
-void GameStatsManager::isItemUnlocked(UnlockType, int) {
-    // TODO: Implement
+bool GameStatsManager::isItemUnlocked(UnlockType type, int itemID) {
+    return false;
 }
 
-void GameStatsManager::isPathUnlocked(StatKey) {
-    // TODO: Implement
+bool GameStatsManager::isPathUnlocked(StatKey) {
+    return false;
 }
 
 void GameStatsManager::resetUserCoins() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::storeChallenge(int, GJChallengeItem*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::unlockGauntlet(int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::claimListReward(GJLevelList*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::getBaseCurrency(int, bool, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getBaseDiamonds(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::getChallengeKey(GJChallengeItem*) {
-    // TODO: Implement
+std::string GameStatsManager::getChallengeKey(GJChallengeItem*) {
+    return "";
 }
 
-void GameStatsManager::getStarLevelKey(GJGameLevel*) {
-    // TODO: Implement
+std::string GameStatsManager::getStarLevelKey(GJGameLevel*) {
+    return "";
 }
 
 void GameStatsManager::removeChallenge(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GameStatsManager::restorePostSync() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::setStatIfHigher(char const*, int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GameStatsManager::starsForMapPack(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::storeEventChest(int, GJRewardItem*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::storeSecretCoin(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::uncompleteLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::unlockGoldChest(int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::unlockPathChest(int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::verifyUserCoins() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::accountIDForIcon(int, UnlockType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::areRewardsLoaded() {
-    // Load from file/storage
-    // TODO: Implement loading
+bool GameStatsManager::areRewardsLoaded() {
+    return false;
 }
 
 void GameStatsManager::checkAchievement(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::completedMapPack(GJMapPack*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::createStoreItems() {
-    // TODO: Implement
+    return nullptr;
 }
 
 void GameStatsManager::getBonusDiamonds(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::getDailyLevelKey(int) {
-    // TODO: Implement
+std::string GameStatsManager::getDailyLevelKey(int) {
+    return "";
 }
 
-void GameStatsManager::getDemonLevelKey(GJGameLevel*) {
-    // TODO: Implement
+std::string GameStatsManager::getDemonLevelKey(GJGameLevel*) {
+    return "";
 }
 
-void GameStatsManager::getListRewardKey(GJLevelList*) {
-    // TODO: Implement
+std::string GameStatsManager::getListRewardKey(GJLevelList*) {
+    return "";
 }
 
-void GameStatsManager::getPathRewardKey(int) {
-    // TODO: Implement
+std::string GameStatsManager::getPathRewardKey(int) {
+    return "";
 }
 
-void GameStatsManager::getSecretCoinKey(char const*) {
-    // TODO: Implement
+std::string GameStatsManager::getSecretCoinKey(char const*) {
+    return "";
 }
 
 void GameStatsManager::preProcessReward(GJRewardItem*) {
-    // Process data/event
-    // TODO: Implement processing logic
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::preSaveGameStats() {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void GameStatsManager::recountUserCoins(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::setupIconCredits() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GameStatsManager::storeOnlineChest(std::string, GJRewardItem*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::storeRewardState(GJRewardType, int, int, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::toggleEnableItem(UnlockType, int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::updateActivePath(StatKey) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void GameStatsManager::canItemBeUnlocked(int, UnlockType) {
-    // TODO: Implement
+bool GameStatsManager::canItemBeUnlocked(int, UnlockType) {
+    return false;
 }
 
-void GameStatsManager::countSecretChests(GJRewardType) {
-    // TODO: Implement
+int GameStatsManager::countSecretChests(GJRewardType) {
+    return 0;
 }
 
-void GameStatsManager::getEventRewardKey(int) {
-    // TODO: Implement
+std::string GameStatsManager::getEventRewardKey(int) {
+    return "";
 }
 
-void GameStatsManager::hasCompletedLevel(GJGameLevel*) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedLevel(GJGameLevel*) {
+    return false;
 }
 
-void GameStatsManager::isSecretCoinValid(std::string) {
-    // TODO: Implement
+bool GameStatsManager::isSecretCoinValid(std::string) {
+    return false;
 }
 
 void GameStatsManager::postLoadGameStats() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GameStatsManager::resetSpecialChest(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::shopTypeForItemID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::unlockOnlineChest(std::string) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::unlockSecretChest(int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::checkCoinsForLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::collectVideoReward(int) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::completedChallenge(GJChallengeItem*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::completedStarLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getItemUnlockState(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::getNextGoldChestID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getQueuedChallenge(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::hasPendingUserCoin(char const*) {
-    // TODO: Implement
+bool GameStatsManager::hasPendingUserCoin(char const*) {
+    return false;
 }
 
 void GameStatsManager::incrementChallenge(GJChallengeType, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::isGauntletUnlocked(int) {
-    // TODO: Implement
+bool GameStatsManager::isGauntletUnlocked(int) {
+    return false;
 }
 
 void GameStatsManager::setStarsForMapPack(int, int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GameStatsManager::storeChallengeTime(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::unlockSpecialChest(std::string) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void GameStatsManager::areChallengesLoaded() {
-    // Load from file/storage
-    // TODO: Implement loading
+bool GameStatsManager::areChallengesLoaded() {
+    return false;
 }
 
 void GameStatsManager::completedDailyLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::completedDemonLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::hasCompletedMapPack(int) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedMapPack(int) {
+    return false;
 }
 
 void GameStatsManager::incrementActivePath(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::isPathChestUnlocked(int) {
-    // TODO: Implement
+bool GameStatsManager::isPathChestUnlocked(int) {
+    return false;
 }
 
-void GameStatsManager::isStoreItemUnlocked(int) {
-    // TODO: Implement
+bool GameStatsManager::isStoreItemUnlocked(int) {
+    return false;
 }
 
 void GameStatsManager::processOnlineChests() {
-    // Process data/event
-    // TODO: Implement processing logic
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::recountSpecialStats() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::resetChallengeTimer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::trySelectActivePath() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::unlockGauntletChest(int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::awardOldSpecialStats() {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::checkCoinAchievement(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getCompletedMapPacks() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::getGauntletRewardKey(int) {
-    // TODO: Implement
+std::string GameStatsManager::getGauntletRewardKey(int) {
+    return "";
 }
 
 void GameStatsManager::getNextVideoAdReward() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::hasClaimedListReward(GJLevelList*) {
-    // TODO: Implement
+bool GameStatsManager::hasClaimedListReward(GJLevelList*) {
+    return false;
 }
 
-void GameStatsManager::shouldAwardSecretKey() {
-    // TODO: Implement
+bool GameStatsManager::shouldAwardSecretKey() {
+    return false;
 }
 
 void GameStatsManager::storePendingUserCoin(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::storeQueuedChallenge(int, GJChallengeItem*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::usernameForAccountID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::awardCurrencyForLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::awardDiamondsForLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::getSecretChestForItem(int, UnlockType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::hasCompletedChallenge(GJChallengeItem*) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedChallenge(GJChallengeItem*) {
+    return false;
 }
 
-void GameStatsManager::hasCompletedMainLevel(int) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedMainLevel(int) {
+    return false;
 }
 
-void GameStatsManager::hasCompletedStarLevel(GJGameLevel*) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedStarLevel(GJGameLevel*) {
+    return false;
 }
 
-void GameStatsManager::isSecretChestUnlocked(int) {
-    // TODO: Implement
+bool GameStatsManager::isSecretChestUnlocked(int) {
+    return false;
 }
 
 void GameStatsManager::keyCostForSecretChest(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::processChallengeQueue(int) {
-    // Process data/event
-    // TODO: Implement processing logic
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::removeQueuedChallenge(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void GameStatsManager::createSecretChestItems() {
-    // TODO: Implement
+GameStatsManager* GameStatsManager::createSecretChestItems() {
+    return nullptr;
 }
 
 void GameStatsManager::getItemUnlockStateLite(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void GameStatsManager::hasCompletedDailyLevel(int) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedDailyLevel(int) {
+    return false;
 }
 
-void GameStatsManager::hasCompletedDemonLevel(GJGameLevel*) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedDemonLevel(GJGameLevel*) {
+    return false;
 }
 
-void GameStatsManager::hasRewardBeenCollected(GJRewardType, int) {
-    // TODO: Implement
+bool GameStatsManager::hasRewardBeenCollected(GJRewardType, int) {
+    return false;
 }
 
-void GameStatsManager::isSpecialChestUnlocked(std::string) {
-    // TODO: Implement
+bool GameStatsManager::isSpecialChestUnlocked(std::string) {
+    return false;
 }
 
 void GameStatsManager::verifyPathAchievements() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::createSpecialChestItems() {
-    // TODO: Implement
+GameStatsManager* GameStatsManager::createSpecialChestItems() {
+    return nullptr;
 }
 
 void GameStatsManager::getBaseCurrencyForLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getRewardForSecretChest(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::hasCompletedOnlineLevel(int) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedOnlineLevel(int) {
+    return false;
 }
 
-void GameStatsManager::isGauntletChestUnlocked(int) {
-    // TODO: Implement
+bool GameStatsManager::isGauntletChestUnlocked(int) {
+    return false;
 }
 
 void GameStatsManager::linkSpecialChestUnlocks(GJRewardItem*, std::string) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::registerRewardsFromItem(GJRewardItem*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::createSecretChestRewards() {
-    // TODO: Implement
+GameStatsManager* GameStatsManager::createSecretChestRewards() {
+    return nullptr;
 }
 
 void GameStatsManager::getRewardForSpecialChest(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GameStatsManager::getSecretOnlineRewardKey(int) {
-    // TODO: Implement
+std::string GameStatsManager::getSecretOnlineRewardKey(int) {
+    return "";
 }
 
-void GameStatsManager::countUnlockedSecretChests(GJRewardType) {
-    // TODO: Implement
+int GameStatsManager::countUnlockedSecretChests(GJRewardType) {
+    return 0;
 }
 
 void GameStatsManager::getCollectedCoinsForLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
-void GameStatsManager::getSpecialChestKeyForItem(int, UnlockType) {
-    // TODO: Implement
+std::string GameStatsManager::getSpecialChestKeyForItem(int, UnlockType) {
+    return "";
 }
 
 void GameStatsManager::getTotalCollectedCurrency() {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::getTotalCollectedDiamonds() {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
-void GameStatsManager::hasCompletedGauntletLevel(int) {
-    // TODO: Implement
+bool GameStatsManager::hasCompletedGauntletLevel(int) {
+    return false;
 }
 
 void GameStatsManager::generateItemUnlockableData() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GameStatsManager::getAwardedCurrencyForLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::getAwardedDiamondsForLevel(GJGameLevel*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::addSimpleSpecialChestReward(std::string, UnlockType, int, bool) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GameStatsManager::addSpecialRewardDescription(std::string, std::string) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GameStatsManager::getSecondaryQueuedChallenge(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getSpecialRewardDescription(std::string, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::getSpecialUnlockDescription(int, UnlockType, bool) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void GameStatsManager::isSpecialChestLiteUnlockable(std::string) {
-    // TODO: Implement
+bool GameStatsManager::isSpecialChestLiteUnlockable(std::string) {
+    return false;
 }
 
 void GameStatsManager::removeErrorFromSpecialChests() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GameStatsManager::resetSpecialStatAchievements() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::storeSecondaryQueuedChallenge(int, GJChallengeItem*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::markLevelAsCompletedAndClaimed(GJGameLevel*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GameStatsManager::removeQueuedSecondaryChallenge(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void GameStatsManager::init() {
+bool GameStatsManager::init() {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GameStatsManager::getStat(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::setStat(char const*, int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GameStatsManager::logCoins() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameStatsManager::tempClear() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 

@@ -5,55 +5,42 @@ GJMessagePopup::~GJMessagePopup() {
     this->cleanup();
 }
 
-GJMessagePopup::~GJMessagePopup() {
-    this->cleanup();
-}
-
-GJMessagePopup::~GJMessagePopup() {
-    this->cleanup();
-}
-
 void GJMessagePopup::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessagePopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessagePopup::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessagePopup::loadFromGJMessage(GJUserMessage*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessagePopup::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessagePopup::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessagePopup::downloadMessageFailed(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessagePopup::downloadMessageFinished(GJUserMessage*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessagePopup::init(GJUserMessage*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -68,22 +55,22 @@ void GJMessagePopup::create(GJUserMessage*) {
 }
 
 void GJMessagePopup::onBlock(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJMessagePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessagePopup::onReply(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessagePopup::onRemove(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJMessagePopup::blockUser() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 

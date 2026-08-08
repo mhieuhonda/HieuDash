@@ -2,6 +2,6 @@
 #include "LevelSettingsDelegate.h"
 
 void LevelSettingsDelegate::levelSettingsUpdated() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

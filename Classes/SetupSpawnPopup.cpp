@@ -5,42 +5,34 @@ SetupSpawnPopup::~SetupSpawnPopup() {
     this->cleanup();
 }
 
-SetupSpawnPopup::~SetupSpawnPopup() {
-    this->cleanup();
-}
-
-SetupSpawnPopup::~SetupSpawnPopup() {
-    this->cleanup();
-}
-
 void SetupSpawnPopup::onAddRemap(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupSpawnPopup::onPasteRemap(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSpawnPopup::onDeleteRemap(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupSpawnPopup::onSelectRemap(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSpawnPopup::queueUpdateButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupSpawnPopup::updateRemapButtons(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupSpawnPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -55,10 +47,10 @@ void SetupSpawnPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupSpawnPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSpawnPopup::addRemap(int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

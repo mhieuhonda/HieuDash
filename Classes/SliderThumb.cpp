@@ -5,26 +5,18 @@ SliderThumb::~SliderThumb() {
     this->cleanup();
 }
 
-SliderThumb::~SliderThumb() {
-    this->cleanup();
-}
-
-SliderThumb::~SliderThumb() {
-    this->cleanup();
-}
-
 void SliderThumb::setRotated(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SliderThumb::setMaxOffset(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SliderThumb::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,10 +31,10 @@ void SliderThumb::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::
 }
 
 void SliderThumb::getValue() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SliderThumb::setValue(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 

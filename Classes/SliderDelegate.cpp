@@ -2,10 +2,10 @@
 #include "SliderDelegate.h"
 
 void SliderDelegate::sliderBegan(Slider*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SliderDelegate::sliderEnded(Slider*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

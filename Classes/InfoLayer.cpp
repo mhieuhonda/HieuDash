@@ -5,140 +5,127 @@ InfoLayer::~InfoLayer() {
     this->cleanup();
 }
 
-InfoLayer::~InfoLayer() {
-    this->cleanup();
-}
-
-InfoLayer::~InfoLayer() {
-    this->cleanup();
-}
-
 void InfoLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onOriginal(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onLevelInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::getAccountID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::reloadWindow() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void InfoLayer::confirmReport(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onCopyLevelID(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onGetComments(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void InfoLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::setupLevelInfo() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void InfoLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::getSpriteButton(char const*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onRefreshComments(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void InfoLayer::toggleCommentMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::updateLevelsLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void InfoLayer::loadCommentsFailed(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void InfoLayer::toggleExtendedMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::commentUploadFailed(int, CommentError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void InfoLayer::loadCommentsFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void InfoLayer::setupCommentsBrowser(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void InfoLayer::commentUploadFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void InfoLayer::toggleSmallCommentMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::updateUserScoreFinished() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void InfoLayer::updateCommentModeButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void InfoLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::init(GJGameLevel*, GJUserScore*, GJLevelList*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void InfoLayer::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void InfoLayer::getID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::create(GJGameLevel*, GJUserScore*, GJLevelList*) {
@@ -152,31 +139,30 @@ void InfoLayer::create(GJGameLevel*, GJUserScore*, GJLevelList*) {
 }
 
 void InfoLayer::onMore(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::loadPage(int, bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void InfoLayer::getRealID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void InfoLayer::isCorrect(char const*) {
-    // TODO: Implement
+bool InfoLayer::isCorrect(char const*) {
+    return false;
 }
 
 void InfoLayer::onComment(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void InfoLayer::onSimilar(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

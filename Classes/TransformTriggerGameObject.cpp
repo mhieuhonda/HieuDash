@@ -5,31 +5,22 @@ TransformTriggerGameObject::~TransformTriggerGameObject() {
     this->cleanup();
 }
 
-TransformTriggerGameObject::~TransformTriggerGameObject() {
-    this->cleanup();
-}
-
-TransformTriggerGameObject::~TransformTriggerGameObject() {
-    this->cleanup();
-}
-
-void TransformTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string TransformTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void TransformTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TransformTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void TransformTriggerGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

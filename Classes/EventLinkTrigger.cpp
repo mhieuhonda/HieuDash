@@ -5,31 +5,22 @@ EventLinkTrigger::~EventLinkTrigger() {
     this->cleanup();
 }
 
-EventLinkTrigger::~EventLinkTrigger() {
-    this->cleanup();
-}
-
-EventLinkTrigger::~EventLinkTrigger() {
-    this->cleanup();
-}
-
-void EventLinkTrigger::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string EventLinkTrigger::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void EventLinkTrigger::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EventLinkTrigger::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void EventLinkTrigger::init() {
-    bool ret = true;
+bool EventLinkTrigger::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJActionManager {
+class GJActionManager : public GManager {
 public:
     virtual ~GJActionManager();
 
@@ -13,7 +13,7 @@ public:
     void stopInternalAction(int);
     void updateInternalActions(float, bool);
     void stopAllInternalActions();
-    void init();
+    bool init();
     void create();
 
 };

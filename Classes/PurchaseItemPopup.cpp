@@ -5,26 +5,18 @@ PurchaseItemPopup::~PurchaseItemPopup() {
     this->cleanup();
 }
 
-PurchaseItemPopup::~PurchaseItemPopup() {
-    this->cleanup();
-}
-
-PurchaseItemPopup::~PurchaseItemPopup() {
-    this->cleanup();
-}
-
 void PurchaseItemPopup::onPurchase(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Purchase operation - stub
 }
 
 void PurchaseItemPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void PurchaseItemPopup::init(GJStoreItem*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,6 +31,6 @@ void PurchaseItemPopup::create(GJStoreItem*) {
 }
 
 void PurchaseItemPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

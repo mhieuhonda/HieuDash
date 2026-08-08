@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class GJBigSprite {
+class GJBigSprite : public cocos2d::CCSprite {
 public:
     virtual ~GJBigSprite();
 
@@ -13,7 +13,7 @@ public:
     void loadSpriteAsync(std::string, int);
     void updateSpriteVisibility();
     void finishedLoadingSpriteAsync(cocos2d::CCObject*);
-    void init();
+    bool init();
     void create();
     void unloadAll();
 

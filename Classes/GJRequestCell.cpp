@@ -2,17 +2,11 @@
 #include "GJRequestCell.h"
 
 GJRequestCell::GJRequestCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 GJRequestCell::GJRequestCell(char const*, float, float) {
-}
-
-GJRequestCell::~GJRequestCell() {
-    this->cleanup();
-}
-
-GJRequestCell::~GJRequestCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 GJRequestCell::~GJRequestCell() {
@@ -20,65 +14,61 @@ GJRequestCell::~GJRequestCell() {
 }
 
 void GJRequestCell::markAsRead() {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void GJRequestCell::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRequestCell::updateToggle() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRequestCell::loadFromScore(GJUserScore*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJRequestCell::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRequestCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRequestCell::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRequestCell::onDeleteRequest(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJRequestCell::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJRequestCell::onViewFriendRequest(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRequestCell::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJRequestCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GJRequestCell::init() {
-    bool ret = true;
+bool GJRequestCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJRequestCell::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,81 +5,71 @@ GauntletSelectLayer::~GauntletSelectLayer() {
     this->cleanup();
 }
 
-GauntletSelectLayer::~GauntletSelectLayer() {
-    this->cleanup();
-}
-
-GauntletSelectLayer::~GauntletSelectLayer() {
-    this->cleanup();
-}
-
 void GauntletSelectLayer::unblockPlay() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GauntletSelectLayer::updateArrows() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GauntletSelectLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::setupGauntlets() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GauntletSelectLayer::loadLevelsFailed(char const*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GauntletSelectLayer::loadLevelsFinished(cocos2d::CCArray*, char const*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GauntletSelectLayer::showUnlockGauntlet() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GauntletSelectLayer::playUnlockAnimation() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GauntletSelectLayer::unlockAnimationStep2() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GauntletSelectLayer::unlockAnimationStep3() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GauntletSelectLayer::rewardedVideoFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::unlockAnimationFinished() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GauntletSelectLayer::scrollLayerScrolledToPage(BoomScrollLayer*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::scrollLayerWillScrollToPage(BoomScrollLayer*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GauntletSelectLayer::scene(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::create(int) {
@@ -93,34 +83,34 @@ void GauntletSelectLayer::create(int) {
 }
 
 void GauntletSelectLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::onNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GauntletSelectLayer::onPrev(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::goToPage(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletSelectLayer::onRefresh(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

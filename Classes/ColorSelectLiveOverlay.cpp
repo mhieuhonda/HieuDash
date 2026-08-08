@@ -5,91 +5,83 @@ ColorSelectLiveOverlay::~ColorSelectLiveOverlay() {
     this->cleanup();
 }
 
-ColorSelectLiveOverlay::~ColorSelectLiveOverlay() {
-    this->cleanup();
-}
-
-ColorSelectLiveOverlay::~ColorSelectLiveOverlay() {
-    this->cleanup();
-}
-
 void ColorSelectLiveOverlay::onSelectTab(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::selectColor(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::getColorValue() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::updateOpacity() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectLiveOverlay::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::toggleControls(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::closeColorSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ColorSelectLiveOverlay::createWithObject(EffectGameObject*) {
-    // TODO: Implement
+ColorSelectLiveOverlay* ColorSelectLiveOverlay::createWithObject(EffectGameObject*) {
+    return nullptr;
 }
 
 void ColorSelectLiveOverlay::updateColorLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectLiveOverlay::updateColorValue() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectLiveOverlay::colorValueChanged(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ColorSelectLiveOverlay::createWithActions(ColorAction*, ColorAction*) {
-    // TODO: Implement
+ColorSelectLiveOverlay* ColorSelectLiveOverlay::createWithActions(ColorAction*, ColorAction*) {
+    return nullptr;
 }
 
 void ColorSelectLiveOverlay::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectLiveOverlay::init(ColorAction*, ColorAction*, EffectGameObject*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ColorSelectLiveOverlay::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void ColorSelectLiveOverlay::create(ColorAction*, ColorAction*, EffectGameObject*) {

@@ -5,60 +5,52 @@ OptionsLayer::~OptionsLayer() {
     this->cleanup();
 }
 
-OptionsLayer::~OptionsLayer() {
-    this->cleanup();
-}
-
-OptionsLayer::~OptionsLayer() {
-    this->cleanup();
-}
-
 void OptionsLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void OptionsLayer::layerHidden() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onMenuMusic(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onProgressBar(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onSecretVault(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onSoundtracks(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onRecordReplays(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void OptionsLayer::tryEnableRecord() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::sfxSliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::musicSliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::create() {
@@ -72,30 +64,30 @@ void OptionsLayer::create() {
 }
 
 void OptionsLayer::onHelp(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onVideo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::exitLayer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onAccount(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsLayer::onSupport(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class TopArtistsLayer {
+class TopArtistsLayer : public cocos2d::CCLayer {
 public:
     virtual ~TopArtistsLayer();
 
@@ -18,12 +18,12 @@ public:
     void setupLeaderboard(cocos2d::CCArray*);
     void updateLevelsLabel();
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onClose(cocos2d::CCObject*);
     void loadPage(int);
-    void isCorrect(char const*);
+    bool isCorrect(char const*);
 
 };
 

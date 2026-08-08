@@ -5,114 +5,106 @@ SetupShaderEffectPopup::~SetupShaderEffectPopup() {
     this->cleanup();
 }
 
-SetupShaderEffectPopup::~SetupShaderEffectPopup() {
-    this->cleanup();
-}
-
-SetupShaderEffectPopup::~SetupShaderEffectPopup() {
-    this->cleanup();
-}
-
 void SetupShaderEffectPopup::setupBulge() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupPinch() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupSepia() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupGlitch() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::toggleGroup(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShaderEffectPopup::onResetColors(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShaderEffectPopup::setupHueShift() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupPixelate() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupChromatic() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupGrayscale() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupShockLine() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupShockWave() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShaderEffectPopup::zLayerToString(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShaderEffectPopup::setupLensCircle() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupMotionBlur() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupRadialBlur() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupColorChange() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupInvertColor() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupSplitScreen() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::setupShaderTrigger() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::updateZLayerButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShaderEffectPopup::setupChromaticGlitch() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupShaderEffectPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShaderEffectPopup::init(EffectGameObject*, cocos2d::CCArray*, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -127,10 +119,10 @@ void SetupShaderEffectPopup::create(EffectGameObject*, cocos2d::CCArray*, int) {
 }
 
 void SetupShaderEffectPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShaderEffectPopup::onZLayer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

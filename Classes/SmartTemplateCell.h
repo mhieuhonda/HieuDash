@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class SmartTemplateCell {
+class SmartTemplateCell : public cocos2d::CCNode {
 public:
     SmartTemplateCell(char const*, float, float);
     SmartTemplateCell(char const*, float, float);
@@ -14,7 +14,7 @@ public:
     void updateBGColor(int);
     void loadFromObject(GJSmartTemplate*);
     void draw();
-    void init();
+    bool init();
     void onClick(cocos2d::CCObject*);
 
 };

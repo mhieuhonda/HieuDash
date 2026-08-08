@@ -5,22 +5,14 @@ SetLevelOrderPopup::~SetLevelOrderPopup() {
     this->cleanup();
 }
 
-SetLevelOrderPopup::~SetLevelOrderPopup() {
-    this->cleanup();
-}
-
-SetLevelOrderPopup::~SetLevelOrderPopup() {
-    this->cleanup();
-}
-
 void SetLevelOrderPopup::onOrderButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetLevelOrderPopup::init(int, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,74 +5,66 @@ Slider::~Slider() {
     this->cleanup();
 }
 
-Slider::~Slider() {
-    this->cleanup();
-}
-
-Slider::~Slider() {
-    this->cleanup();
-}
-
 void Slider::hideGroove(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void Slider::setRotated(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void Slider::sliderBegan() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::sliderEnded() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::disableTouch() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::enableSlider() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::setMaxOffset(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void Slider::disableSlider() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::getLiveDragging() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::setLiveDragging(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void Slider::setBarVisibility(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
-void Slider::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*, float) {
+bool Slider::init(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObject*), char const*, char const*, char const*, char const*, float) {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -107,18 +99,18 @@ void Slider::create(cocos2d::CCNode*, void (cocos2d::CCObject::*)(cocos2d::CCObj
 }
 
 void Slider::getThumb() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::getValue() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void Slider::setValue(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void Slider::updateBar() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

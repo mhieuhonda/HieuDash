@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class FollowRewardPage {
+class FollowRewardPage : public cocos2d::CCLayer {
 public:
     virtual ~FollowRewardPage();
 
@@ -16,7 +16,7 @@ public:
     void switchToOpenedState(CCMenuItemSpriteExtra*);
     void rewardedVideoFinished();
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onClose(cocos2d::CCObject*);

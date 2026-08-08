@@ -5,75 +5,66 @@ VideoOptionsLayer::~VideoOptionsLayer() {
     this->cleanup();
 }
 
-VideoOptionsLayer::~VideoOptionsLayer() {
-    this->cleanup();
-}
-
-VideoOptionsLayer::~VideoOptionsLayer() {
-    this->cleanup();
-}
-
 void VideoOptionsLayer::onAdvanced(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::reloadMenu() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void VideoOptionsLayer::onBorderless(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onFullscreen(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onBorderlessFix(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onResolutionNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onResolutionPrev(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::toggleResolution() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::updateResolution(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void VideoOptionsLayer::createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint, float, float, bool, cocos2d::CCArray*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onTextureQualityNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onTextureQualityPrev(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::updateTextureQuality(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void VideoOptionsLayer::init() {
-    bool ret = true;
+bool VideoOptionsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -88,14 +79,14 @@ void VideoOptionsLayer::create() {
 }
 
 void VideoOptionsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onApply(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void VideoOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

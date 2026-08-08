@@ -80,7 +80,7 @@ public:
     void updateMotionBlurSpeedY(float, float);
     void preChromaticGlitchShader();
     void setupChromaticGlitchUniforms();
-    void init() override;
+    bool init() override;
     void visit();
     void create();
     void update(float) override;

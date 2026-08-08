@@ -5,18 +5,10 @@ EditGameObjectPopup::~EditGameObjectPopup() {
     this->cleanup();
 }
 
-EditGameObjectPopup::~EditGameObjectPopup() {
-    this->cleanup();
-}
-
-EditGameObjectPopup::~EditGameObjectPopup() {
-    this->cleanup();
-}
-
 void EditGameObjectPopup::init(EffectGameObject*, cocos2d::CCArray*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

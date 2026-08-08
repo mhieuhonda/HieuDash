@@ -5,47 +5,38 @@ FriendsProfilePage::~FriendsProfilePage() {
     this->cleanup();
 }
 
-FriendsProfilePage::~FriendsProfilePage() {
-    this->cleanup();
-}
-
-FriendsProfilePage::~FriendsProfilePage() {
-    this->cleanup();
-}
-
 void FriendsProfilePage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendsProfilePage::forceReloadList(UserListType) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FriendsProfilePage::userListChanged(cocos2d::CCArray*, UserListType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendsProfilePage::getUserListFailed(UserListType, GJErrorCode) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendsProfilePage::setupUsersBrowser(cocos2d::CCArray*, UserListType) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void FriendsProfilePage::getUserListFinished(cocos2d::CCArray*, UserListType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendsProfilePage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendsProfilePage::init(UserListType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -60,14 +51,14 @@ void FriendsProfilePage::create(UserListType) {
 }
 
 void FriendsProfilePage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FriendsProfilePage::onUpdate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FriendsProfilePage::onBlocked(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 

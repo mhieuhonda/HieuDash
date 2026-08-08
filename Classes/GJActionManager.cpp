@@ -5,38 +5,30 @@ GJActionManager::~GJActionManager() {
     this->cleanup();
 }
 
-GJActionManager::~GJActionManager() {
-    this->cleanup();
-}
-
-GJActionManager::~GJActionManager() {
-    this->cleanup();
-}
-
 void GJActionManager::getInternalAction(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJActionManager::runInternalAction(cocos2d::CCAction*, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJActionManager::stopInternalAction(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJActionManager::updateInternalActions(float, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJActionManager::stopAllInternalActions() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
-void GJActionManager::init() {
-    bool ret = true;
+bool GJActionManager::init() {
+    bool ret = GManager::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

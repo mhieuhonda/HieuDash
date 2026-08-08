@@ -5,22 +5,14 @@ EditTriggersPopup::~EditTriggersPopup() {
     this->cleanup();
 }
 
-EditTriggersPopup::~EditTriggersPopup() {
-    this->cleanup();
-}
-
-EditTriggersPopup::~EditTriggersPopup() {
-    this->cleanup();
-}
-
 void EditTriggersPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void EditTriggersPopup::init(EffectGameObject*, cocos2d::CCArray*) {
+bool EditTriggersPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void EditTriggersPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void EditTriggersPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

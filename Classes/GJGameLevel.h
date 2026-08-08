@@ -6,28 +6,28 @@
 #include <string>
 #include <vector>
 
-class GJGameLevel {
+class GJGameLevel : public cocos2d::CCNode {
 public:
     virtual ~GJGameLevel();
 
     void dataLoaded(DS_Dictionary*);
-    void getCoinKey(int);
-    void getSongName();
-    void getLengthKey(int, bool);
-    void isPlatformer();
+    std::string getCoinKey(int);
+    std::string getSongName();
+    std::string getLengthKey(int, bool);
+    bool isPlatformer();
     void saveNewScore(int, int, int, int, int, std::string, bool);
     void copyLevelInfo(GJGameLevel*);
     void unverifyCoins();
     void savePercentage(int, bool, int, int, bool);
-    void createWithCoder(DS_Dictionary*);
+    GJGameLevel* createWithCoder(DS_Dictionary*);
     void encodeWithCoder(DS_Dictionary*);
     void getListSnapshot();
     void levelWasAltered();
-    void areCoinsVerified();
-    void getAudioFileName();
+    bool areCoinsVerified();
+    std::string getAudioFileName();
     void getNormalPercent();
     void setNormalPercent(int);
-    void shouldCheatReset();
+    bool shouldCheatReset();
     void lengthKeyToString(int);
     void levelWasSubmitted();
     void storeNewLocalScore(int, int);
@@ -41,10 +41,11 @@ public:
     void getLastBuildPageForTab(int);
     void setLastBuildPageForTab(int, int);
     void getUnpackedLevelDescription();
-    void init();
+    bool init();
     void create(cocos2d::CCDictionary*, bool);
     void create();
-    void canEncode();
+    bool canEncode();
+    void verifyLevelIntegrity();
 
 protected:
     std::string m_audioFileName;

@@ -14,7 +14,7 @@ public:
     void updateLength();
     void getActiveSFXID();
     void valueDidChange(int, float);
-    void createSFXWidget();
+    SetupSFXPopup* createSFXWidget();
     void overridePlaySFX(SFXInfoObject*);
     void sfxBrowserClosed(SFXBrowser*);
     void sfxObjectSelected(SFXInfoObject*);

@@ -5,26 +5,18 @@ GJObjectDecoder::~GJObjectDecoder() {
     this->cleanup();
 }
 
-GJObjectDecoder::~GJObjectDecoder() {
-    this->cleanup();
-}
-
-GJObjectDecoder::~GJObjectDecoder() {
-    this->cleanup();
-}
-
 void GJObjectDecoder::sharedDecoder() {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void GJObjectDecoder::getDecodedObject(int, DS_Dictionary*) {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
-void GJObjectDecoder::init() {
-    bool ret = true;
+bool GJObjectDecoder::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

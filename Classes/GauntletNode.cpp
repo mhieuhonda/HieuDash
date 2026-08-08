@@ -5,38 +5,30 @@ GauntletNode::~GauntletNode() {
     this->cleanup();
 }
 
-GauntletNode::~GauntletNode() {
-    this->cleanup();
-}
-
-GauntletNode::~GauntletNode() {
-    this->cleanup();
-}
-
 void GauntletNode::nameForType(GauntletType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletNode::frameForType(GauntletType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletNode::generateNode() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GauntletNode::onClaimReward() {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void GauntletNode::showUnlockAnimation() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GauntletNode::init(GJMapPack*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,6 +43,6 @@ void GauntletNode::create(GJMapPack*) {
 }
 
 void GauntletNode::onUnlock() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 

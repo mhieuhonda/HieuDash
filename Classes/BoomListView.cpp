@@ -5,64 +5,54 @@ BoomListView::~BoomListView() {
     this->cleanup();
 }
 
-BoomListView::~BoomListView() {
-    this->cleanup();
-}
-
-BoomListView::~BoomListView() {
-    this->cleanup();
-}
-
 void BoomListView::getListCell(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomListView::addObjectToList(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void BoomListView::cellForRowAtIndexPath(CCIndexPath&, TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomListView::numberOfRowsInSection(unsigned int, TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomListView::didSelectRowAtIndexPath(CCIndexPath&, TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomListView::cellHeightForRowAtIndexPath(CCIndexPath&, TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomListView::numberOfSectionsInTableView(TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomListView::TableViewWillReloadCellForRowAtIndexPath(CCIndexPath&, TableViewCell*, TableView*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void BoomListView::TableViewWillDisplayCellForRowAtIndexPath(CCIndexPath&, TableViewCell*, TableView*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void BoomListView::TableViewCommitCellEditingStyleForRowAtIndexPath(TableView*, TableViewCellEditingStyle, CCIndexPath&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomListView::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void BoomListView::init(cocos2d::CCArray*, TableViewCellDelegate*, float, float, int, BoomListType, float) {
+bool BoomListView::init(cocos2d::CCArray*, TableViewCellDelegate*, float, float, int, BoomListType, float) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -77,15 +67,14 @@ void BoomListView::create(cocos2d::CCArray*, TableViewCellDelegate*, float, floa
 }
 
 void BoomListView::loadCell(TableViewCell*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void BoomListView::lockList(bool) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void BoomListView::setupList(float) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

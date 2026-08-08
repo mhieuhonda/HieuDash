@@ -5,35 +5,26 @@ EnterEffectObject::~EnterEffectObject() {
     this->cleanup();
 }
 
-EnterEffectObject::~EnterEffectObject() {
-    this->cleanup();
-}
-
-EnterEffectObject::~EnterEffectObject() {
-    this->cleanup();
-}
-
 void EnterEffectObject::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void EnterEffectObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string EnterEffectObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void EnterEffectObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EnterEffectObject::resetEnterAnimValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EnterEffectObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

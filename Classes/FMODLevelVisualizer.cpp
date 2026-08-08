@@ -5,22 +5,14 @@ FMODLevelVisualizer::~FMODLevelVisualizer() {
     this->cleanup();
 }
 
-FMODLevelVisualizer::~FMODLevelVisualizer() {
-    this->cleanup();
-}
-
-FMODLevelVisualizer::~FMODLevelVisualizer() {
-    this->cleanup();
-}
-
 void FMODLevelVisualizer::updateVisualizer(float, float, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void FMODLevelVisualizer::init() {
-    bool ret = true;
+bool FMODLevelVisualizer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

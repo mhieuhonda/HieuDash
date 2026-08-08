@@ -5,35 +5,26 @@ KeyframeGameObject::~KeyframeGameObject() {
     this->cleanup();
 }
 
-KeyframeGameObject::~KeyframeGameObject() {
-    this->cleanup();
-}
-
-KeyframeGameObject::~KeyframeGameObject() {
-    this->cleanup();
-}
-
 void KeyframeGameObject::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
-void KeyframeGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string KeyframeGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void KeyframeGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void KeyframeGameObject::updateShadowObjects(GJBaseGameLayer*, EditorUI*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void KeyframeGameObject::init() {
-    bool ret = true;
+bool KeyframeGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

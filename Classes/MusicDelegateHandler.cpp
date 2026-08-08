@@ -5,18 +5,10 @@ MusicDelegateHandler::~MusicDelegateHandler() {
     this->cleanup();
 }
 
-MusicDelegateHandler::~MusicDelegateHandler() {
-    this->cleanup();
-}
-
-MusicDelegateHandler::~MusicDelegateHandler() {
-    this->cleanup();
-}
-
 void MusicDelegateHandler::init(MusicDownloadDelegate*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

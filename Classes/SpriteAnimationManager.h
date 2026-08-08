@@ -18,9 +18,9 @@ public:
     void resetAnimState();
     void stopAnimations();
     void storeAnimation(cocos2d::CCAnimate*, cocos2d::CCAnimate*, std::string, int, spriteMode, cocos2d::CCSpriteFrame*);
-    void createWithOwner(CCAnimatedSprite*, std::string);
+    SpriteAnimationManager* createWithOwner(CCAnimatedSprite*, std::string);
     void finishAnimation(std::string);
-    void createAnimations(std::string);
+    SpriteAnimationManager* createAnimations(std::string);
     void executeAnimation(std::string);
     void animationFinished();
     void runQueuedAnimation();

@@ -5,46 +5,38 @@ SetupRotateCommandPopup::~SetupRotateCommandPopup() {
     this->cleanup();
 }
 
-SetupRotateCommandPopup::~SetupRotateCommandPopup() {
-    this->cleanup();
-}
-
-SetupRotateCommandPopup::~SetupRotateCommandPopup() {
-    this->cleanup();
-}
-
 void SetupRotateCommandPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRotateCommandPopup::updateInputNode(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupRotateCommandPopup::onInfiniteDuration(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SetupRotateCommandPopup::updateControlVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupRotateCommandPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRotateCommandPopup::triggerSliderValueFromValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRotateCommandPopup::triggerValueFromSliderValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRotateCommandPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

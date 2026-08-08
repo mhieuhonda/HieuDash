@@ -5,46 +5,38 @@ GJSearchObject::~GJSearchObject() {
     this->cleanup();
 }
 
-GJSearchObject::~GJSearchObject() {
-    this->cleanup();
+std::string GJSearchObject::getSearchKey(SearchType, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, int, int, int) {
+    return "";
 }
 
-GJSearchObject::~GJSearchObject() {
-    this->cleanup();
-}
-
-void GJSearchObject::getSearchKey(SearchType, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, int, int, int) {
-    // TODO: Implement
-}
-
-void GJSearchObject::createFromKey(char const*) {
-    // TODO: Implement
+GJSearchObject* GJSearchObject::createFromKey(char const*) {
+    return nullptr;
 }
 
 void GJSearchObject::getPageObject(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJSearchObject::getNextPageKey() {
-    // TODO: Implement
+std::string GJSearchObject::getNextPageKey() {
+    return "";
 }
 
 void GJSearchObject::getNextPageObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSearchObject::getPrevPageObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJSearchObject::isLevelSearchObject() {
-    // TODO: Implement
+bool GJSearchObject::isLevelSearchObject() {
+    return false;
 }
 
 void GJSearchObject::init(SearchType, std::string, std::string, std::string, int, bool, bool, bool, int, bool, bool, bool, bool, bool, bool, bool, bool, bool, bool, int, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -78,7 +70,7 @@ void GJSearchObject::create(SearchType, std::string, std::string, std::string, i
     return nullptr;
 }
 
-void GJSearchObject::getKey() {
-    // TODO: Implement
+std::string GJSearchObject::getKey() {
+    return "";
 }
 

@@ -2,7 +2,7 @@
 #ifndef COLORCHANNELSPRITE_H_
 #define COLORCHANNELSPRITE_H_
 
-class ColorChannelSprite {
+class ColorChannelSprite : public cocos2d::CCSprite {
 public:
     virtual ~ColorChannelSprite();
 
@@ -10,7 +10,7 @@ public:
     void updateOpacity(float);
     void updateBlending(bool);
     void updateCopyLabel(int, bool);
-    void init();
+    bool init();
     void create();
 
 };

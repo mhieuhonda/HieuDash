@@ -2,13 +2,11 @@
 #include "GJGameState.h"
 
 GJGameState::GJGameState() {
+    // Stub - not yet implemented
 }
 
 GJGameState::GJGameState() {
-}
-
-GJGameState::~GJGameState() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 GJGameState::~GJGameState() {
@@ -16,39 +14,38 @@ GJGameState::~GJGameState() {
 }
 
 void GJGameState::tweenValue(float, float, int, float, int, float, int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGameState::stopTweenAction(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJGameState::updateTweenAction(float, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGameState::controlTweenAction(int, int, GJActionCommand) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGameState::updateTweenActions(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGameState::getGameObjectPhysics(GameObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGameState::processStateTriggers() {
-    // Process data/event
-    // TODO: Implement processing logic
+    // Stub - not yet implemented
 }
 
 void GJGameState::operator=(GJGameState&&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGameState::operator=(GJGameState const&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

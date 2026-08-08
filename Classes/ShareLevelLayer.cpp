@@ -5,38 +5,30 @@ ShareLevelLayer::~ShareLevelLayer() {
     this->cleanup();
 }
 
-ShareLevelLayer::~ShareLevelLayer() {
-    this->cleanup();
-}
-
-ShareLevelLayer::~ShareLevelLayer() {
-    this->cleanup();
-}
-
 void ShareLevelLayer::onSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelLayer::setupStars() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ShareLevelLayer::selectRating(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelLayer::getStarsButton(int, void (cocos2d::CCObject::*)(cocos2d::CCObject*), cocos2d::CCMenu*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelLayer::init(GJGameLevel*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,10 +43,10 @@ void ShareLevelLayer::create(GJGameLevel*) {
 }
 
 void ShareLevelLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelLayer::onShare(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

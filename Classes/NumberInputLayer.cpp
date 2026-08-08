@@ -5,38 +5,30 @@ NumberInputLayer::~NumberInputLayer() {
     this->cleanup();
 }
 
-NumberInputLayer::~NumberInputLayer() {
-    this->cleanup();
-}
-
-NumberInputLayer::~NumberInputLayer() {
-    this->cleanup();
-}
-
 void NumberInputLayer::deleteLast() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void NumberInputLayer::inputNumber(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NumberInputLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NumberInputLayer::updateNumberState() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void NumberInputLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void NumberInputLayer::init() {
+bool NumberInputLayer::init() {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,14 +43,14 @@ void NumberInputLayer::create() {
 }
 
 void NumberInputLayer::onDone(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NumberInputLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NumberInputLayer::onNumber(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

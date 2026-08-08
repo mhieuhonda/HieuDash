@@ -2,17 +2,11 @@
 #include "GJMessageCell.h"
 
 GJMessageCell::GJMessageCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 GJMessageCell::GJMessageCell(char const*, float, float) {
-}
-
-GJMessageCell::~GJMessageCell() {
-    this->cleanup();
-}
-
-GJMessageCell::~GJMessageCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 GJMessageCell::~GJMessageCell() {
@@ -20,65 +14,61 @@ GJMessageCell::~GJMessageCell() {
 }
 
 void GJMessageCell::markAsRead() {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void GJMessageCell::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessageCell::updateToggle() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMessageCell::onViewMessage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessageCell::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessageCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJMessageCell::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMessageCell::loadFromMessage(GJUserMessage*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessageCell::onDeleteMessage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJMessageCell::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessageCell::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJMessageCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GJMessageCell::init() {
-    bool ret = true;
+bool GJMessageCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJMessageCell::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

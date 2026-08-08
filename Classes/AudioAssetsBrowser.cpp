@@ -5,54 +5,46 @@ AudioAssetsBrowser::~AudioAssetsBrowser() {
     this->cleanup();
 }
 
-AudioAssetsBrowser::~AudioAssetsBrowser() {
-    this->cleanup();
-}
-
-AudioAssetsBrowser::~AudioAssetsBrowser() {
-    this->cleanup();
-}
-
 void AudioAssetsBrowser::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::updatePageLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AudioAssetsBrowser::musicActionFailed(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::getSelectedCellIdx() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::getCellDelegateType() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::musicActionFinished(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::trySetupAudioBrowser() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AudioAssetsBrowser::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::init(std::vector<int>&, std::vector<int>&) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -67,18 +59,18 @@ void AudioAssetsBrowser::create(std::vector<int>&, std::vector<int>&) {
 }
 
 void AudioAssetsBrowser::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::onPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AudioAssetsBrowser::setupList() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

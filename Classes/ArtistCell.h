@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class ArtistCell {
+class ArtistCell : public cocos2d::CCNode {
 public:
     ArtistCell(char const*, float, float);
     ArtistCell(char const*, float, float);
@@ -15,7 +15,7 @@ public:
     void updateBGColor(int);
     void loadFromObject(SongInfoObject*);
     void draw();
-    void init();
+    bool init();
     void onYouTube(cocos2d::CCObject*);
 
 };

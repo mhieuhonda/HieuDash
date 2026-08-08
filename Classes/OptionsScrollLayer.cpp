@@ -5,34 +5,26 @@ OptionsScrollLayer::~OptionsScrollLayer() {
     this->cleanup();
 }
 
-OptionsScrollLayer::~OptionsScrollLayer() {
-    this->cleanup();
-}
-
-OptionsScrollLayer::~OptionsScrollLayer() {
-    this->cleanup();
-}
-
 void OptionsScrollLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsScrollLayer::getRelevantObjects(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsScrollLayer::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsScrollLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsScrollLayer::init(cocos2d::CCArray*, bool, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,10 +39,10 @@ void OptionsScrollLayer::create(cocos2d::CCArray*, bool, int) {
 }
 
 void OptionsScrollLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void OptionsScrollLayer::setupList(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

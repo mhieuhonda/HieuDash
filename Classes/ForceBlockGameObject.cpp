@@ -5,31 +5,22 @@ ForceBlockGameObject::~ForceBlockGameObject() {
     this->cleanup();
 }
 
-ForceBlockGameObject::~ForceBlockGameObject() {
-    this->cleanup();
-}
-
-ForceBlockGameObject::~ForceBlockGameObject() {
-    this->cleanup();
-}
-
-void ForceBlockGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string ForceBlockGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void ForceBlockGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ForceBlockGameObject::calculateForceToTarget(GameObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ForceBlockGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

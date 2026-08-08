@@ -5,59 +5,50 @@ CheckpointGameObject::~CheckpointGameObject() {
     this->cleanup();
 }
 
-CheckpointGameObject::~CheckpointGameObject() {
-    this->cleanup();
-}
-
-CheckpointGameObject::~CheckpointGameObject() {
-    this->cleanup();
-}
-
 void CheckpointGameObject::resetObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CheckpointGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string CheckpointGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void CheckpointGameObject::restoreObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CheckpointGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CheckpointGameObject::resetCheckpoint() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CheckpointGameObject::triggerActivated(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CheckpointGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void CheckpointGameObject::setupCustomSprites(std::string) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void CheckpointGameObject::updateSyncedAnimation(float, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CheckpointGameObject::updateCheckpointSpriteVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void CheckpointGameObject::init() {
+bool CheckpointGameObject::init() {
     bool ret = GameObject::init() if "GameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

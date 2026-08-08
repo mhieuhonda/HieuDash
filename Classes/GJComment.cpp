@@ -5,18 +5,10 @@ GJComment::~GJComment() {
     this->cleanup();
 }
 
-GJComment::~GJComment() {
-    this->cleanup();
-}
-
-GJComment::~GJComment() {
-    this->cleanup();
-}
-
-void GJComment::init() {
-    bool ret = true;
+bool GJComment::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

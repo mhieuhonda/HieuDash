@@ -5,23 +5,14 @@ CCAlertCircle::~CCAlertCircle() {
     this->cleanup();
 }
 
-CCAlertCircle::~CCAlertCircle() {
-    this->cleanup();
-}
-
-CCAlertCircle::~CCAlertCircle() {
-    this->cleanup();
-}
-
 void CCAlertCircle::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void CCAlertCircle::init() {
-    bool ret = true;
+bool CCAlertCircle::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,22 +5,14 @@ CustomizeObjectSettingsPopup::~CustomizeObjectSettingsPopup() {
     this->cleanup();
 }
 
-CustomizeObjectSettingsPopup::~CustomizeObjectSettingsPopup() {
-    this->cleanup();
-}
-
-CustomizeObjectSettingsPopup::~CustomizeObjectSettingsPopup() {
-    this->cleanup();
-}
-
 void CustomizeObjectSettingsPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomizeObjectSettingsPopup::init(GameObject*, cocos2d::CCArray*, CustomizeObjectLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void CustomizeObjectSettingsPopup::create(GameObject*, cocos2d::CCArray*, Custom
 }
 
 void CustomizeObjectSettingsPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

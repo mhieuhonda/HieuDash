@@ -4,13 +4,13 @@
 
 #include "cocos2d.h"
 
-class KeybindingsManager {
+class KeybindingsManager : public GManager {
 public:
     virtual ~KeybindingsManager();
 
     void dataLoaded(DS_Dictionary*);
     void firstSetup();
-    void sharedState();
+    KeybindingsManager* sharedState();
     void encodeDataTo(DS_Dictionary*);
     void commandForKey(cocos2d::enumKeyCodes, GJKeyGroup, bool, bool, bool);
     void keyForCommand(GJKeyCommand);
@@ -19,7 +19,7 @@ public:
     void commandForKeyNoMods(cocos2d::enumKeyCodes, GJKeyGroup);
     void commandToKeyForGroup(GJKeyGroup);
     void keyToCommandForGroup(GJKeyGroup);
-    void init();
+    bool init();
 
 };
 

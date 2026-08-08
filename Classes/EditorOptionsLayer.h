@@ -4,14 +4,14 @@
 
 #include "cocos2d.h"
 
-class EditorOptionsLayer {
+class EditorOptionsLayer : public cocos2d::CCLayer {
 public:
     virtual ~EditorOptionsLayer();
 
     void onButtonRows(cocos2d::CCObject*);
     void setupOptions();
     void onButtonsPerRow(cocos2d::CCObject*);
-    void init();
+    bool init();
     void create();
     void onClose(cocos2d::CCObject*);
 

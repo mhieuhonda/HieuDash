@@ -5,26 +5,18 @@ SetTargetIDLayer::~SetTargetIDLayer() {
     this->cleanup();
 }
 
-SetTargetIDLayer::~SetTargetIDLayer() {
-    this->cleanup();
-}
-
-SetTargetIDLayer::~SetTargetIDLayer() {
-    this->cleanup();
-}
-
 void SetTargetIDLayer::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetTargetIDLayer::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetTargetIDLayer::init(EffectGameObject*, cocos2d::CCArray*, std::string, std::string, int, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

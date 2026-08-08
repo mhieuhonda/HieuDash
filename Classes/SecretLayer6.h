@@ -4,13 +4,13 @@
 
 #include "cocos2d.h"
 
-class SecretLayer6 {
+class SecretLayer6 : public cocos2d::CCLayer {
 public:
     virtual ~SecretLayer6();
 
     void startGame01();
     void keyBackClicked();
-    void init();
+    bool init();
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

@@ -5,18 +5,10 @@ InheritanceNode::~InheritanceNode() {
     this->cleanup();
 }
 
-InheritanceNode::~InheritanceNode() {
-    this->cleanup();
-}
-
-InheritanceNode::~InheritanceNode() {
-    this->cleanup();
-}
-
 void InheritanceNode::init(int, InheritanceNode*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

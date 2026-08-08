@@ -2,17 +2,11 @@
 #include "CCScrollLayerExt.h"
 
 CCScrollLayerExt::CCScrollLayerExt(cocos2d::CCRect) {
+    // Stub - not yet implemented
 }
 
 CCScrollLayerExt::CCScrollLayerExt(cocos2d::CCRect) {
-}
-
-CCScrollLayerExt::~CCScrollLayerExt() {
-    this->cleanup();
-}
-
-CCScrollLayerExt::~CCScrollLayerExt() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 CCScrollLayerExt::~CCScrollLayerExt() {
@@ -20,78 +14,78 @@ CCScrollLayerExt::~CCScrollLayerExt() {
 }
 
 void CCScrollLayerExt::scrollLayer(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::scrollingEnd() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::setContentOffset(cocos2d::CCPoint, bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCScrollLayerExt::updateIndicators(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CCScrollLayerExt::constraintContent() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::doConstraintContent(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::moveToTopWithOffset(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::setContentLayerSize(cocos2d::CCSize) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCScrollLayerExt::preVisitWithClippingRect(cocos2d::CCRect) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::visit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::getMaxY() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::getMinY() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::moveToTop() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCScrollLayerExt::postVisit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

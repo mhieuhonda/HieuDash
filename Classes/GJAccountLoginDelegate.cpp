@@ -2,10 +2,10 @@
 #include "GJAccountLoginDelegate.h"
 
 void GJAccountLoginDelegate::loginAccountFailed(AccountError) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJAccountLoginDelegate::loginAccountFinished(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,18 +5,10 @@ SearchButton::~SearchButton() {
     this->cleanup();
 }
 
-SearchButton::~SearchButton() {
-    this->cleanup();
-}
-
-SearchButton::~SearchButton() {
-    this->cleanup();
-}
-
 void SearchButton::init(char const*, char const*, float, char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

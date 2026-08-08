@@ -5,88 +5,78 @@ DrawGridLayer::~DrawGridLayer() {
     this->cleanup();
 }
 
-DrawGridLayer::~DrawGridLayer() {
-    this->cleanup();
-}
-
-DrawGridLayer::~DrawGridLayer() {
-    this->cleanup();
-}
-
 void DrawGridLayer::posForTime(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DrawGridLayer::postUpdate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void DrawGridLayer::timeForPos(cocos2d::CCPoint, int, int, bool, bool, bool, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DrawGridLayer::addToGuides(GameObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void DrawGridLayer::addToEffects(EffectGameObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void DrawGridLayer::getPortalMinMax(GameObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DrawGridLayer::loadTimeMarkers(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void DrawGridLayer::removeFromGuides(GameObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void DrawGridLayer::sortSpeedObjects() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DrawGridLayer::addToSpeedObjects(EffectGameObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void DrawGridLayer::removeFromEffects(EffectGameObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void DrawGridLayer::updateTimeMarkers() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void DrawGridLayer::addAudioLineObject(AudioLineGuideGameObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void DrawGridLayer::updateMusicGuideTime(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void DrawGridLayer::removeAudioLineObject(AudioLineGuideGameObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void DrawGridLayer::removeFromSpeedObjects(EffectGameObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void DrawGridLayer::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void DrawGridLayer::init(cocos2d::CCNode*, LevelEditorLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -101,7 +91,6 @@ void DrawGridLayer::create(cocos2d::CCNode*, LevelEditorLayer*) {
 }
 
 void DrawGridLayer::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 

@@ -5,18 +5,10 @@ SetupDashRingPopup::~SetupDashRingPopup() {
     this->cleanup();
 }
 
-SetupDashRingPopup::~SetupDashRingPopup() {
-    this->cleanup();
-}
-
-SetupDashRingPopup::~SetupDashRingPopup() {
-    this->cleanup();
-}
-
 void SetupDashRingPopup::init(DashRingObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

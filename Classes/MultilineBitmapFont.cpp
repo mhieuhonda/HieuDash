@@ -5,35 +5,27 @@ MultilineBitmapFont::~MultilineBitmapFont() {
     this->cleanup();
 }
 
-MultilineBitmapFont::~MultilineBitmapFont() {
-    this->cleanup();
-}
-
-MultilineBitmapFont::~MultilineBitmapFont() {
-    this->cleanup();
-}
-
 void MultilineBitmapFont::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void MultilineBitmapFont::initWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int, bool) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void MultilineBitmapFont::readColorInfo(std::string) {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
-void MultilineBitmapFont::createWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int, bool) {
-    // TODO: Implement
+MultilineBitmapFont* MultilineBitmapFont::createWithFont(char const*, std::string, float, float, cocos2d::CCPoint, int, bool) {
+    return nullptr;
 }
 
 void MultilineBitmapFont::stringWithMaxWidth(std::string, float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MultilineBitmapFont::moveSpecialDescriptors(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

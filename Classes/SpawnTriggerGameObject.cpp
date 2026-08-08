@@ -5,51 +5,42 @@ SpawnTriggerGameObject::~SpawnTriggerGameObject() {
     this->cleanup();
 }
 
-SpawnTriggerGameObject::~SpawnTriggerGameObject() {
-    this->cleanup();
-}
-
-SpawnTriggerGameObject::~SpawnTriggerGameObject() {
-    this->cleanup();
-}
-
 void SpawnTriggerGameObject::changeRemap(int, int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpawnTriggerGameObject::removeRemap(int, int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void SpawnTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string SpawnTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void SpawnTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpawnTriggerGameObject::updateRemapKeys(std::vector<int> const&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SpawnTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SpawnTriggerGameObject::getRemapWithSource(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SpawnTriggerGameObject::getRemapWithTarget(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SpawnTriggerGameObject::init() {
+bool SpawnTriggerGameObject::init() {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -64,6 +55,6 @@ void SpawnTriggerGameObject::create() {
 }
 
 void SpawnTriggerGameObject::addRemap(int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

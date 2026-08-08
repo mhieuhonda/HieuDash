@@ -5,54 +5,46 @@ MusicSearchResult::~MusicSearchResult() {
     this->cleanup();
 }
 
-MusicSearchResult::~MusicSearchResult() {
-    this->cleanup();
-}
-
-MusicSearchResult::~MusicSearchResult() {
-    this->cleanup();
-}
-
 void MusicSearchResult::stateChanged(OptionsObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicSearchResult::updateObjects(AudioSortType) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MusicSearchResult::updateObjects() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MusicSearchResult::applyTagFilters(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicSearchResult::updateFutureCount(cocos2d::CCArray*, cocos2d::CCArray*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MusicSearchResult::applyArtistFilters(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MusicSearchResult::createTagFilterObjects() {
-    // TODO: Implement
+MusicSearchResult* MusicSearchResult::createTagFilterObjects() {
+    return nullptr;
 }
 
 void MusicSearchResult::getFilesMatchingSearch(cocos2d::CCArray*, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MusicSearchResult::createArtistFilterObjects() {
-    // TODO: Implement
+MusicSearchResult* MusicSearchResult::createArtistFilterObjects() {
+    return nullptr;
 }
 
 void MusicSearchResult::init(GJSongType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

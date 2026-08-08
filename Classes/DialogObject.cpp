@@ -5,18 +5,10 @@ DialogObject::~DialogObject() {
     this->cleanup();
 }
 
-DialogObject::~DialogObject() {
-    this->cleanup();
-}
-
-DialogObject::~DialogObject() {
-    this->cleanup();
-}
-
 void DialogObject::init(std::string, std::string, int, float, bool, cocos2d::_ccColor3B) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

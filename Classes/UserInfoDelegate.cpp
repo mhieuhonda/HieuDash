@@ -2,14 +2,14 @@
 #include "UserInfoDelegate.h"
 
 void UserInfoDelegate::userInfoChanged(GJUserScore*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UserInfoDelegate::getUserInfoFailed(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UserInfoDelegate::getUserInfoFinished(GJUserScore*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

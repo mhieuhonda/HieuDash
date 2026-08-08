@@ -2,20 +2,18 @@
 #include "LeaderboardManagerDelegate.h"
 
 void LeaderboardManagerDelegate::loadLeaderboardFailed(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LeaderboardManagerDelegate::updateUserScoreFailed() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LeaderboardManagerDelegate::loadLeaderboardFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LeaderboardManagerDelegate::updateUserScoreFinished() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

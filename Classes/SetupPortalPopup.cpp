@@ -5,58 +5,50 @@ SetupPortalPopup::~SetupPortalPopup() {
     this->cleanup();
 }
 
-SetupPortalPopup::~SetupPortalPopup() {
-    this->cleanup();
-}
-
-SetupPortalPopup::~SetupPortalPopup() {
-    this->cleanup();
-}
-
 void SetupPortalPopup::onUnboundMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPortalPopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPortalPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPortalPopup::updateCameraEasing() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPortalPopup::updateCameraPadding() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPortalPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPortalPopup::onEditCameraSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPortalPopup::updateItemVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPortalPopup::updateCameraEasingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPortalPopup::updateCameraPaddingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPortalPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -71,6 +63,6 @@ void SetupPortalPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupPortalPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

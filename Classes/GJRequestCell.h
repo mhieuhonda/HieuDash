@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class GJRequestCell {
+class GJRequestCell : public cocos2d::CCNode {
 public:
     GJRequestCell(char const*, float, float);
     GJRequestCell(char const*, float, float);
@@ -23,7 +23,7 @@ public:
     void onViewFriendRequest(cocos2d::CCObject*);
     void uploadActionFinished(int, int);
     void draw();
-    void init();
+    bool init();
     void onToggle(cocos2d::CCObject*);
 
 };

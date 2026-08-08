@@ -5,38 +5,30 @@ SetupTeleportPopup::~SetupTeleportPopup() {
     this->cleanup();
 }
 
-SetupTeleportPopup::~SetupTeleportPopup() {
-    this->cleanup();
-}
-
-SetupTeleportPopup::~SetupTeleportPopup() {
-    this->cleanup();
-}
-
 void SetupTeleportPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTeleportPopup::onTeleportGravity(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTeleportPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTeleportPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTeleportPopup::updateTeleportGravityState(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTeleportPopup::init(TeleportPortalObject*, cocos2d::CCArray*, int, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

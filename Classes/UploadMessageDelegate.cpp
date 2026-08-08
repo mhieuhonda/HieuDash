@@ -2,12 +2,10 @@
 #include "UploadMessageDelegate.h"
 
 void UploadMessageDelegate::uploadMessageFailed(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void UploadMessageDelegate::uploadMessageFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

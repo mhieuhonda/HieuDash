@@ -13,7 +13,7 @@ public:
     void onPrevPage(cocos2d::CCObject*);
     void addGVToggle(char const*, char const*, char const*);
     void didToggleGV(std::string);
-    void countForPage(int);
+    int countForPage(int);
     void layerForPage(int);
     void nextPosition(int);
     void setupOptions();

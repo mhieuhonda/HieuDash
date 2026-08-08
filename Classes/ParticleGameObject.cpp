@@ -5,139 +5,130 @@ ParticleGameObject::~ParticleGameObject() {
     this->cleanup();
 }
 
-ParticleGameObject::~ParticleGameObject() {
-    this->cleanup();
-}
-
-ParticleGameObject::~ParticleGameObject() {
-    this->cleanup();
-}
-
 void ParticleGameObject::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ParticleGameObject::resetObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParticleGameObject::setRotation(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void ParticleGameObject::setRotationX(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void ParticleGameObject::setRotationY(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void ParticleGameObject::claimParticle() {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
-void ParticleGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string ParticleGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void ParticleGameObject::setChildColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_childColor
+    // Setter operation - stub
 }
 
 void ParticleGameObject::setObjectColor(cocos2d::_ccColor3B const&) {
-    // TODO: Set m_objectColor
+    // Setter operation - stub
 }
 
 void ParticleGameObject::updateParticle() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::unclaimParticle() {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void ParticleGameObject::blendModeChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParticleGameObject::deactivateObject(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParticleGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ParticleGameObject::setParticleString(std::string) {
-    // TODO: Set m_particleString
+    // Setter operation - stub
 }
 
 void ParticleGameObject::updateParticleAngle(float, cocos2d::CCParticleSystemQuad*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::updateParticleColor(cocos2d::_ccColor3B const&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::updateParticleScale(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::particleWasActivated() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParticleGameObject::updateParticleStruct() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::addMainSpriteToParent(bool) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void ParticleGameObject::applyParticleSettings(cocos2d::CCParticleSystemQuad*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParticleGameObject::updateParticleOpacity(unsigned char) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::updateSyncedAnimation(float, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::updateAnimateOnTrigger(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void ParticleGameObject::createParticlePreviewArt() {
-    // TODO: Implement
+ParticleGameObject* ParticleGameObject::createParticlePreviewArt() {
+    return nullptr;
 }
 
 void ParticleGameObject::updateMainParticleOpacity(unsigned char) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void ParticleGameObject::createAndAddCustomParticle() {
-    // TODO: Implement
+ParticleGameObject* ParticleGameObject::createAndAddCustomParticle() {
+    return nullptr;
 }
 
 void ParticleGameObject::updateSecondaryParticleOpacity(unsigned char) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ParticleGameObject::updateParticlePreviewArtOpacity(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void ParticleGameObject::init() {
-    bool ret = true;
+bool ParticleGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -152,14 +143,14 @@ void ParticleGameObject::create() {
 }
 
 void ParticleGameObject::setScale(float) {
-    // TODO: Set m_scale
+    // Setter operation - stub
 }
 
 void ParticleGameObject::setScaleX(float) {
-    // TODO: Set m_scaleX
+    // Setter operation - stub
 }
 
 void ParticleGameObject::setScaleY(float) {
-    // TODO: Set m_scaleY
+    // Setter operation - stub
 }
 

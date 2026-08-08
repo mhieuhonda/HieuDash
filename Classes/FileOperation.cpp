@@ -2,15 +2,14 @@
 #include "FileOperation.h"
 
 void FileOperation::getFilePath() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FileOperation::readFile() {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void FileOperation::saveFile() {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 

@@ -5,22 +5,14 @@ SetupObjectOptions2Popup::~SetupObjectOptions2Popup() {
     this->cleanup();
 }
 
-SetupObjectOptions2Popup::~SetupObjectOptions2Popup() {
-    this->cleanup();
-}
-
-SetupObjectOptions2Popup::~SetupObjectOptions2Popup() {
-    this->cleanup();
-}
-
 void SetupObjectOptions2Popup::onPlusButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupObjectOptions2Popup::init(GameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

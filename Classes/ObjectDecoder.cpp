@@ -5,26 +5,18 @@ ObjectDecoder::~ObjectDecoder() {
     this->cleanup();
 }
 
-ObjectDecoder::~ObjectDecoder() {
-    this->cleanup();
-}
-
-ObjectDecoder::~ObjectDecoder() {
-    this->cleanup();
-}
-
 void ObjectDecoder::sharedDecoder() {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void ObjectDecoder::getDecodedObject(int, DS_Dictionary*) {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
-void ObjectDecoder::init() {
-    bool ret = true;
+bool ObjectDecoder::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

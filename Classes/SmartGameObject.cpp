@@ -5,31 +5,22 @@ SmartGameObject::~SmartGameObject() {
     this->cleanup();
 }
 
-SmartGameObject::~SmartGameObject() {
-    this->cleanup();
-}
-
-SmartGameObject::~SmartGameObject() {
-    this->cleanup();
-}
-
-void SmartGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string SmartGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void SmartGameObject::updateSmartFrame() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SmartGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SmartGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -5,35 +5,26 @@ SFXTriggerGameObject::~SFXTriggerGameObject() {
     this->cleanup();
 }
 
-SFXTriggerGameObject::~SFXTriggerGameObject() {
-    this->cleanup();
-}
-
-SFXTriggerGameObject::~SFXTriggerGameObject() {
-    this->cleanup();
-}
-
 void SFXTriggerGameObject::getSFXRefID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SFXTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string SFXTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void SFXTriggerGameObject::getUniqueSFXID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SFXTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void SFXTriggerGameObject::init(char const*) {
+bool SFXTriggerGameObject::init(char const*) {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

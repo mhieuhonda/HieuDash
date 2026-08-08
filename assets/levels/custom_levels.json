@@ -1,29 +1,47 @@
 {
   "version": "0.3",
+  "format": "gzip_base64",
+  "description": "Custom levels for HieuDash. Level data files use the standard Geometry Dash format: gzip-compressed, URL-safe base64-encoded level strings.",
   "custom_levels": [
     {
       "id": 6001,
       "name": "Crimson Abyss",
       "difficulty": "Extreme Demon",
-      "description": "Top-1 Extreme Demon. 4 minutes. 13 gamemode sections. Crimson palette with ember accents."
+      "difficulty_value": 10,
+      "description": "Top-1 Extreme Demon. 4 minutes. 13 gamemode sections. Crimson palette with ember accents.",
+      "song_id": 467339,
+      "level_file": "6001.txt",
+      "is_custom": true
     },
     {
       "id": 6002,
       "name": "Neon Phantom",
       "difficulty": "Insane Demon",
-      "description": "Cyberpunk neon. Ship/UFO/Wave gauntlets. Fast and flashy."
+      "difficulty_value": 9,
+      "description": "Cyberpunk neon. Ship/UFO/Wave gauntlets. Fast and flashy.",
+      "song_id": 467339,
+      "level_file": "6002.txt",
+      "is_custom": true
     },
     {
       "id": 6003,
       "name": "Void Tempest",
       "difficulty": "Hard Demon",
-      "description": "Dark void. Ball/Robot sections. Gravity flips."
+      "difficulty_value": 7,
+      "description": "Dark void. Ball/Robot sections. Gravity flips.",
+      "song_id": 467339,
+      "level_file": "6003.txt",
+      "is_custom": true
     },
     {
       "id": 6004,
       "name": "Astral Eclipse",
       "difficulty": "Insane",
-      "description": "Cosmic space. Dual sections. Swing copter. Beautiful starfield."
+      "difficulty_value": 6,
+      "description": "Cosmic space. Dual sections. Swing copter. Beautiful starfield.",
+      "song_id": 467339,
+      "level_file": "6004.txt",
+      "is_custom": true
     }
   ]
 }

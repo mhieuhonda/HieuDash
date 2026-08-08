@@ -5,27 +5,18 @@ GradientTriggerObject::~GradientTriggerObject() {
     this->cleanup();
 }
 
-GradientTriggerObject::~GradientTriggerObject() {
-    this->cleanup();
-}
-
-GradientTriggerObject::~GradientTriggerObject() {
-    this->cleanup();
-}
-
-void GradientTriggerObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string GradientTriggerObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void GradientTriggerObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void GradientTriggerObject::init() {
-    bool ret = true;
+bool GradientTriggerObject::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

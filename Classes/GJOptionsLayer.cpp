@@ -5,70 +5,62 @@ GJOptionsLayer::~GJOptionsLayer() {
     this->cleanup();
 }
 
-GJOptionsLayer::~GJOptionsLayer() {
-    this->cleanup();
-}
-
-GJOptionsLayer::~GJOptionsLayer() {
-    this->cleanup();
-}
-
 void GJOptionsLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::addGVToggle(char const*, char const*, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJOptionsLayer::didToggleGV(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJOptionsLayer::countForPage(int) {
-    // TODO: Implement
+int GJOptionsLayer::countForPage(int) {
+    return 0;
 }
 
 void GJOptionsLayer::layerForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::nextPosition(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::setupOptions() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJOptionsLayer::objectsForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::getToggleButton(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::offsetToNextPage() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::addToggleInternal(char const*, int, bool, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJOptionsLayer::incrementCountForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -83,38 +75,38 @@ void GJOptionsLayer::create(int) {
 }
 
 void GJOptionsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::infoKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::pageKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::layerKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::addToggle(char const*, int, bool, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GJOptionsLayer::didToggle(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOptionsLayer::objectKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

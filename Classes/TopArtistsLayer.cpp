@@ -5,61 +5,51 @@ TopArtistsLayer::~TopArtistsLayer() {
     this->cleanup();
 }
 
-TopArtistsLayer::~TopArtistsLayer() {
-    this->cleanup();
-}
-
-TopArtistsLayer::~TopArtistsLayer() {
-    this->cleanup();
-}
-
 void TopArtistsLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TopArtistsLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TopArtistsLayer::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void TopArtistsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TopArtistsLayer::loadListFailed(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void TopArtistsLayer::loadListFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void TopArtistsLayer::setupLeaderboard(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void TopArtistsLayer::updateLevelsLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void TopArtistsLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void TopArtistsLayer::init() {
-    bool ret = true;
+bool TopArtistsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void TopArtistsLayer::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void TopArtistsLayer::create() {
@@ -73,15 +63,14 @@ void TopArtistsLayer::create() {
 }
 
 void TopArtistsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TopArtistsLayer::loadPage(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void TopArtistsLayer::isCorrect(char const*) {
-    // TODO: Implement
+bool TopArtistsLayer::isCorrect(char const*) {
+    return false;
 }
 

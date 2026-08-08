@@ -2,6 +2,6 @@
 #include "RateLevelDelegate.h"
 
 void RateLevelDelegate::rateLevelClosed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

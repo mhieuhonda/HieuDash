@@ -2,16 +2,14 @@
 #include "CommentUploadDelegate.h"
 
 void CommentUploadDelegate::commentDeleteFailed(int, int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CommentUploadDelegate::commentUploadFailed(int, CommentError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CommentUploadDelegate::commentUploadFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

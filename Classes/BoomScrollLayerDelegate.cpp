@@ -2,18 +2,18 @@
 #include "BoomScrollLayerDelegate.h"
 
 void BoomScrollLayerDelegate::scrollLayerMoved(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayerDelegate::scrollLayerScrolledToPage(BoomScrollLayer*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayerDelegate::scrollLayerScrollingStarted(BoomScrollLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BoomScrollLayerDelegate::scrollLayerWillScrollToPage(BoomScrollLayer*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

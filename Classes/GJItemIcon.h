@@ -10,10 +10,10 @@ public:
 
     void setOpacity(unsigned char);
     void scaleForType(UnlockType);
-    void createStoreItem(UnlockType, int, bool, cocos2d::_ccColor3B);
+    GJItemIcon* createStoreItem(UnlockType, int, bool, cocos2d::_ccColor3B);
     void darkenStoreItem(ShopType);
     void darkenStoreItem(cocos2d::_ccColor3B);
-    void createBrowserItem(UnlockType, int);
+    GJItemIcon* createBrowserItem(UnlockType, int);
     void toggleEnabledState(bool);
     void changeToLockedState(float);
     void unlockedColorForType(int);

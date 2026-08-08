@@ -2,11 +2,11 @@
 #ifndef GJUNLOCKABLEITEM_H_
 #define GJUNLOCKABLEITEM_H_
 
-class GJUnlockableItem {
+class GJUnlockableItem : public cocos2d::CCNode {
 public:
     virtual ~GJUnlockableItem();
 
-    void init();
+    bool init();
     void create();
 
 };

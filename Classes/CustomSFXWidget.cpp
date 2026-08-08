@@ -5,108 +5,90 @@ CustomSFXWidget::~CustomSFXWidget() {
     this->cleanup();
 }
 
-CustomSFXWidget::~CustomSFXWidget() {
-    this->cleanup();
-}
-
-CustomSFXWidget::~CustomSFXWidget() {
-    this->cleanup();
-}
-
 void CustomSFXWidget::onDownload(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::onPlayback(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CustomSFXWidget::updateError(GJSongError) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSFXWidget::verifySFXID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSFXWidget::startDownload() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::updateSFXInfo() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSFXWidget::downloadFailed() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::hideLoadingArt() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::showLoadingArt() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSFXWidget::updateLengthMod(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSFXWidget::updateSFXObject(SFXInfoObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSFXWidget::onCancelDownload(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::songStateChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSFXWidget::downloadSFXFailed(int, GJSongError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::updatePlaybackBtn() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSFXWidget::updateProgressBar(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSFXWidget::downloadSFXFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::startMonitorDownload() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::updateDownloadProgress(float) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXWidget::init(SFXInfoObject*, CustomSFXDelegate*, bool, bool, bool, bool, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -121,14 +103,14 @@ void CustomSFXWidget::create(SFXInfoObject*, CustomSFXDelegate*, bool, bool, boo
 }
 
 void CustomSFXWidget::onDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CustomSFXWidget::onSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSFXWidget::deleteSFX() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 

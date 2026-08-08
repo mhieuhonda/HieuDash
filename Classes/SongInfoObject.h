@@ -11,10 +11,10 @@ public:
 
     void copyValues(SongInfoObject*);
     void containsTag(int);
-    void getTagsString(bool);
+    std::string getTagsString(bool);
     void updateArtists(std::string);
-    void getArtistNames(int);
-    void createWithCoder(DS_Dictionary*);
+    std::string getArtistNames(int);
+    SongInfoObject* createWithCoder(DS_Dictionary*);
     void encodeWithCoder(DS_Dictionary*);
     void getExtraArtistCount();
     void init(int, std::string, std::string, int, float, std::string, std::string, std::string, std::string, int, std::string, bool, int, int);
@@ -22,7 +22,7 @@ public:
     void create(int);
     void create(int, std::string, std::string, int, float, std::string, std::string, std::string, std::string, int, std::string, bool, int, int);
     void addTags(std::string);
-    void canEncode();
+    bool canEncode();
 
 protected:
     std::string m_artistNames;

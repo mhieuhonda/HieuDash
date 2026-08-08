@@ -25,8 +25,8 @@ public:
     void resetUINodeState();
     void updateCheckState();
     void processUINodeTouch(GJUITouchEvent, int, cocos2d::CCPoint, GJUINode*, double);
-    void isJumpButtonPressed(bool);
-    void isJumpButtonPressed();
+    bool isJumpButtonPressed(bool);
+    bool isJumpButtonPressed();
     void processUINodesTouch(GJUITouchEvent, cocos2d::CCTouch*);
     void toggleMenuVisibility(bool);
     void togglePlatformerMode(bool);

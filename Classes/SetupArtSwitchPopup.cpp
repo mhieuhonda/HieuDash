@@ -5,27 +5,19 @@ SetupArtSwitchPopup::~SetupArtSwitchPopup() {
     this->cleanup();
 }
 
-SetupArtSwitchPopup::~SetupArtSwitchPopup() {
-    this->cleanup();
-}
-
-SetupArtSwitchPopup::~SetupArtSwitchPopup() {
-    this->cleanup();
-}
-
 void SetupArtSwitchPopup::selectArtClosed(SelectArtLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupArtSwitchPopup::init(ArtTriggerGameObject*, cocos2d::CCArray*, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupArtSwitchPopup::onArt(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupArtSwitchPopup::create(ArtTriggerGameObject*, cocos2d::CCArray*, int) {

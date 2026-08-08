@@ -2,66 +2,66 @@
 #include "GJTransformControlDelegate.h"
 
 void GJTransformControlDelegate::anchorPointMoved(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::getTransformNode() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformChangeBegin() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformChangeEnded() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformSkewXChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformSkewYChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformResetRotation() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformScaleXChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformScaleYChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::updateTransformControl() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJTransformControlDelegate::transformScaleXYChanged(float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformRestoreRotation() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformRotationChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformRotationXChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::transformRotationYChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControlDelegate::getUI() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

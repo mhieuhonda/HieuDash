@@ -10,7 +10,7 @@ class TextGameObject {
 public:
     virtual ~TextGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void getTextKerning();
     void updateTextObject(std::string, bool);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);

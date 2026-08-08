@@ -16,7 +16,7 @@ public:
     void moveFinished();
     void touchMonster();
     void updateShadow(float, float, cocos2d::CCPoint);
-    void createMonster(int);
+    GJMapObject* createMonster(int);
     void setObjectOrigin(cocos2d::CCPoint, float);
     void startPlayerJumpLoop();
     void startMonsterJumpLoop();

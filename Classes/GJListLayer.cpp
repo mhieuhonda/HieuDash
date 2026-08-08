@@ -5,18 +5,10 @@ GJListLayer::~GJListLayer() {
     this->cleanup();
 }
 
-GJListLayer::~GJListLayer() {
-    this->cleanup();
-}
-
-GJListLayer::~GJListLayer() {
-    this->cleanup();
-}
-
-void GJListLayer::init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, int) {
+bool GJListLayer::init(BoomListView*, char const*, cocos2d::_ccColor4B, float, float, int) {
     bool ret = ListLayer::init() if "ListLayer" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

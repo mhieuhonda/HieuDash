@@ -5,18 +5,10 @@ StatsObject::~StatsObject() {
     this->cleanup();
 }
 
-StatsObject::~StatsObject() {
-    this->cleanup();
-}
-
-StatsObject::~StatsObject() {
-    this->cleanup();
-}
-
 void StatsObject::init(char const*, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

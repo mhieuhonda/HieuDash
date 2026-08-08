@@ -9,9 +9,9 @@ class BrowseSmartTemplateLayer {
 public:
     virtual ~BrowseSmartTemplateLayer();
 
-    void createDots();
+    BrowseSmartTemplateLayer* createDots();
     void updateDots();
-    void createPrefab(std::string, int);
+    BrowseSmartTemplateLayer* createPrefab(std::string, int);
     void keyBackClicked();
     void addObjectToPage(cocos2d::CCObject*, int);
     void onTemplateObject(cocos2d::CCObject*);

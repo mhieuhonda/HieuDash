@@ -5,26 +5,18 @@ GJUserScore::~GJUserScore() {
     this->cleanup();
 }
 
-GJUserScore::~GJUserScore() {
-    this->cleanup();
-}
-
-GJUserScore::~GJUserScore() {
-    this->cleanup();
-}
-
-void GJUserScore::isCurrentUser() {
-    // TODO: Implement
+bool GJUserScore::isCurrentUser() {
+    return false;
 }
 
 void GJUserScore::mergeWithScore(GJUserScore*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJUserScore::init() {
+bool GJUserScore::init() {
     bool ret = cocos2d::CCObject::init() if "cocos2d::CCObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

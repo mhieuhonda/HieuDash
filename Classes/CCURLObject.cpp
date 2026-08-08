@@ -5,18 +5,10 @@ CCURLObject::~CCURLObject() {
     this->cleanup();
 }
 
-CCURLObject::~CCURLObject() {
-    this->cleanup();
-}
-
-CCURLObject::~CCURLObject() {
-    this->cleanup();
-}
-
 void CCURLObject::init(std::string, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

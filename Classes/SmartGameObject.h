@@ -9,7 +9,7 @@ class SmartGameObject {
 public:
     virtual ~SmartGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void updateSmartFrame();
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init(char const*);

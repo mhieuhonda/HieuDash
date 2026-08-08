@@ -5,91 +5,83 @@ CCPartAnimSprite::~CCPartAnimSprite() {
     this->cleanup();
 }
 
-CCPartAnimSprite::~CCPartAnimSprite() {
-    this->cleanup();
-}
-
-CCPartAnimSprite::~CCPartAnimSprite() {
-    this->cleanup();
-}
-
-void CCPartAnimSprite::countParts() {
-    // TODO: Implement
+int CCPartAnimSprite::countParts() {
+    return 0;
 }
 
 void CCPartAnimSprite::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::displayFrame() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CCPartAnimSprite::setBlendFunc(cocos2d::_ccBlendFunc) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::tweenToFrame(cocos2d::CCSpriteFrame*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCPartAnimSprite::tweenSpriteTo(SpriteDescription*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CCPartAnimSprite::getSpriteForKey(char const*) {
-    // TODO: Implement
+std::string CCPartAnimSprite::getSpriteForKey(char const*) {
+    return "";
 }
 
 void CCPartAnimSprite::setDisplayFrame(cocos2d::CCSpriteFrame*) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::transformSprite(SpriteDescription*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCPartAnimSprite::initWithAnimDesc(char const*, cocos2d::CCTexture2D*, bool) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void CCPartAnimSprite::isFrameDisplayed(cocos2d::CCSpriteFrame*) {
-    // TODO: Implement
+bool CCPartAnimSprite::isFrameDisplayed(cocos2d::CCSpriteFrame*) {
+    return false;
 }
 
 void CCPartAnimSprite::changeTextureOfID(char const*, char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CCPartAnimSprite::createWithAnimDesc(char const*, cocos2d::CCTexture2D*, bool) {
-    // TODO: Implement
+CCPartAnimSprite* CCPartAnimSprite::createWithAnimDesc(char const*, cocos2d::CCTexture2D*, bool) {
+    return nullptr;
 }
 
 void CCPartAnimSprite::dirtify() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCPartAnimSprite::setColor(cocos2d::_ccColor3B) {
-    // TODO: Set m_color
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::setFlipX(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::setFlipY(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::setScale(float) {
-    // TODO: Set m_scale
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::setScaleX(float) {
-    // TODO: Set m_scaleX
+    // Setter operation - stub
 }
 
 void CCPartAnimSprite::setScaleY(float) {
-    // TODO: Set m_scaleY
+    // Setter operation - stub
 }
 

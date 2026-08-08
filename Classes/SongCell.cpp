@@ -12,17 +12,11 @@ SongCell* SongCell::create() {
 }
 
 SongCell::SongCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 SongCell::SongCell(char const*, float, float) {
-}
-
-SongCell::~SongCell() {
-    this->cleanup();
-}
-
-SongCell::~SongCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 SongCell::~SongCell() {
@@ -30,27 +24,25 @@ SongCell::~SongCell() {
 }
 
 void SongCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SongCell::loadFromObject(SongObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void SongCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void SongCell::init() {
+bool SongCell::init() {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SongCell::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,51 +5,43 @@ SetIDPopup::~SetIDPopup() {
     this->cleanup();
 }
 
-SetIDPopup::~SetIDPopup() {
-    this->cleanup();
-}
-
-SetIDPopup::~SetIDPopup() {
-    this->cleanup();
-}
-
 void SetIDPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetIDPopup::onResetValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetIDPopup::valueChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetIDPopup::onItemIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetIDPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetIDPopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetIDPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetIDPopup::init(int, int, int, std::string, std::string, bool, int, float, bool, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetIDPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetIDPopup::create(int, int, int, std::string, std::string, bool, int, float, bool, bool) {
@@ -63,10 +55,10 @@ void SetIDPopup::create(int, int, int, std::string, std::string, bool, int, floa
 }
 
 void SetIDPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetIDPopup::onCancel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -11,7 +11,7 @@ public:
     virtual ~SFXTriggerGameObject();
 
     void getSFXRefID();
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void getUniqueSFXID();
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init(char const*) override;

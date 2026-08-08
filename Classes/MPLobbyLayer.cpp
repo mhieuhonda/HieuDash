@@ -5,94 +5,83 @@ MPLobbyLayer::~MPLobbyLayer() {
     this->cleanup();
 }
 
-MPLobbyLayer::~MPLobbyLayer() {
-    this->cleanup();
-}
-
-MPLobbyLayer::~MPLobbyLayer() {
-    this->cleanup();
-}
-
 void MPLobbyLayer::postComment() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::updateLobby(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MPLobbyLayer::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::tryExitLobby() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::onUpdateLobby() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MPLobbyLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::updateComments() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MPLobbyLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::joinLobbyFailed(int, GJMPErrorCode) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::joinLobbyFinished(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::didUploadMPComment(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MPLobbyLayer::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MPLobbyLayer::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void MPLobbyLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void MPLobbyLayer::keyUp(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::scene(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::create(int) {
@@ -106,26 +95,26 @@ void MPLobbyLayer::create(int) {
 }
 
 void MPLobbyLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::onBtn1(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::onBtn2(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::onBtn3(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MPLobbyLayer::onComment(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

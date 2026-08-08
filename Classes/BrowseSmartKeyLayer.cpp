@@ -5,42 +5,34 @@ BrowseSmartKeyLayer::~BrowseSmartKeyLayer() {
     this->cleanup();
 }
 
-BrowseSmartKeyLayer::~BrowseSmartKeyLayer() {
-    this->cleanup();
-}
-
-BrowseSmartKeyLayer::~BrowseSmartKeyLayer() {
-    this->cleanup();
-}
-
 void BrowseSmartKeyLayer::onPrefabObject(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BrowseSmartKeyLayer::updateChanceValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void BrowseSmartKeyLayer::addChanceToSelected(int, bool) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void BrowseSmartKeyLayer::deletedSelectedItems() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void BrowseSmartKeyLayer::getAllSelectedBlocks() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void BrowseSmartKeyLayer::createTemplateObjects() {
-    // TODO: Implement
+BrowseSmartKeyLayer* BrowseSmartKeyLayer::createTemplateObjects() {
+    return nullptr;
 }
 
 void BrowseSmartKeyLayer::init(GJSmartTemplate*, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -55,10 +47,10 @@ void BrowseSmartKeyLayer::create(GJSmartTemplate*, std::string) {
 }
 
 void BrowseSmartKeyLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BrowseSmartKeyLayer::onButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

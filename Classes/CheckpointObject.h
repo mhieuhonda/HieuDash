@@ -2,11 +2,11 @@
 #ifndef CHECKPOINTOBJECT_H_
 #define CHECKPOINTOBJECT_H_
 
-class CheckpointObject {
+class CheckpointObject : public cocos2d::CCNode {
 public:
     virtual ~CheckpointObject();
 
-    void init();
+    bool init();
     void create();
     void getObject();
     void setObject(GameObject*);

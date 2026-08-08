@@ -5,31 +5,22 @@ ShaderGameObject::~ShaderGameObject() {
     this->cleanup();
 }
 
-ShaderGameObject::~ShaderGameObject() {
-    this->cleanup();
-}
-
-ShaderGameObject::~ShaderGameObject() {
-    this->cleanup();
-}
-
 void ShaderGameObject::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void ShaderGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string ShaderGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void ShaderGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ShaderGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -26,7 +26,7 @@ public:
     void updateAudioLabel();
     void createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint);
     void textInputShouldOffset(CCTextInputNode*, float);
-    void init() override;
+    bool init() override;
     void create();
     void onEpic(cocos2d::CCObject*);
     void onInfo(cocos2d::CCObject*);

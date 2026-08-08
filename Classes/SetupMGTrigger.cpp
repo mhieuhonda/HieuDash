@@ -5,86 +5,78 @@ SetupMGTrigger::~SetupMGTrigger() {
     this->cleanup();
 }
 
-SetupMGTrigger::~SetupMGTrigger() {
-    this->cleanup();
-}
-
-SetupMGTrigger::~SetupMGTrigger() {
-    this->cleanup();
-}
-
 void SetupMGTrigger::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::onEasingRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::sliderYChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::updateDurLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::updateDuration() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::valuePopupClosed(ConfigureValuePopup*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::updateEasingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::updateValueYLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::posFromSliderValue(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::sliderValueFromPos(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::updateEasingRateLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::updateMoveCommandPosY() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::updateMoveCommandEasing() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::toggleEasingRateVisibility() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::updateMoveCommandEasingRate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupMGTrigger::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -99,10 +91,10 @@ void SetupMGTrigger::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupMGTrigger::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupMGTrigger::onEasing(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

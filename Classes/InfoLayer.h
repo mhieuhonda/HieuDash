@@ -44,7 +44,7 @@ public:
     void onClose(cocos2d::CCObject*);
     void loadPage(int, bool);
     void getRealID();
-    void isCorrect(char const*);
+    bool isCorrect(char const*);
     void onComment(cocos2d::CCObject*);
     void onSimilar(cocos2d::CCObject*);
 

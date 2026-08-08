@@ -5,15 +5,15 @@
 #include <string>
 #include <vector>
 
-class StartPosObject {
+class StartPosObject : public cocos2d::CCNode {
 public:
     virtual ~StartPosObject();
 
     void setSettings(LevelSettingsObject*);
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void loadSettingsFromString(std::string);
-    void init();
+    bool init();
     void create();
 
 protected:

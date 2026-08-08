@@ -8,7 +8,7 @@ class GJGroundLayer {
 public:
     virtual ~GJGroundLayer();
 
-    void createLine(int);
+    GJGroundLayer* createLine(int);
     void getGroundY();
     void showGround();
     void hideShadows();

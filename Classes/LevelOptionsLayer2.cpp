@@ -5,22 +5,14 @@ LevelOptionsLayer2::~LevelOptionsLayer2() {
     this->cleanup();
 }
 
-LevelOptionsLayer2::~LevelOptionsLayer2() {
-    this->cleanup();
-}
-
-LevelOptionsLayer2::~LevelOptionsLayer2() {
-    this->cleanup();
-}
-
 void LevelOptionsLayer2::setupOptions() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void LevelOptionsLayer2::init(LevelSettingsObject*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

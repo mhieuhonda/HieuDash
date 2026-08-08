@@ -5,88 +5,78 @@ GJWriteMessagePopup::~GJWriteMessagePopup() {
     this->cleanup();
 }
 
-GJWriteMessagePopup::~GJWriteMessagePopup() {
-    this->cleanup();
-}
-
-GJWriteMessagePopup::~GJWriteMessagePopup() {
-    this->cleanup();
-}
-
 void GJWriteMessagePopup::updateBody(std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJWriteMessagePopup::updateText(std::string, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJWriteMessagePopup::onClearBody(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJWriteMessagePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::updateSubject(std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJWriteMessagePopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::closeMessagePopup(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::uploadMessageFailed(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJWriteMessagePopup::updateCharCountLabel(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJWriteMessagePopup::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::uploadMessageFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJWriteMessagePopup::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::init(int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -101,10 +91,10 @@ void GJWriteMessagePopup::create(int, int) {
 }
 
 void GJWriteMessagePopup::onSend(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJWriteMessagePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

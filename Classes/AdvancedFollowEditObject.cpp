@@ -5,27 +5,18 @@ AdvancedFollowEditObject::~AdvancedFollowEditObject() {
     this->cleanup();
 }
 
-AdvancedFollowEditObject::~AdvancedFollowEditObject() {
-    this->cleanup();
-}
-
-AdvancedFollowEditObject::~AdvancedFollowEditObject() {
-    this->cleanup();
-}
-
-void AdvancedFollowEditObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string AdvancedFollowEditObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void AdvancedFollowEditObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AdvancedFollowEditObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

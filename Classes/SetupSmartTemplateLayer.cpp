@@ -5,38 +5,30 @@ SetupSmartTemplateLayer::~SetupSmartTemplateLayer() {
     this->cleanup();
 }
 
-SetupSmartTemplateLayer::~SetupSmartTemplateLayer() {
-    this->cleanup();
-}
-
-SetupSmartTemplateLayer::~SetupSmartTemplateLayer() {
-    this->cleanup();
-}
-
 void SetupSmartTemplateLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartTemplateLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartTemplateLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartTemplateLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartTemplateLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartTemplateLayer::init(GJSmartTemplate*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,14 +43,14 @@ void SetupSmartTemplateLayer::create(GJSmartTemplate*) {
 }
 
 void SetupSmartTemplateLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartTemplateLayer::onClick(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartTemplateLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

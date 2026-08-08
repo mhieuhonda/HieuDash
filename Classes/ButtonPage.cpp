@@ -5,18 +5,10 @@ ButtonPage::~ButtonPage() {
     this->cleanup();
 }
 
-ButtonPage::~ButtonPage() {
-    this->cleanup();
-}
-
-ButtonPage::~ButtonPage() {
-    this->cleanup();
-}
-
 void ButtonPage::init(cocos2d::CCArray*, cocos2d::CCPoint, int, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

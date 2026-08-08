@@ -5,63 +5,55 @@ SetupGravityModPopup::~SetupGravityModPopup() {
     this->cleanup();
 }
 
-SetupGravityModPopup::~SetupGravityModPopup() {
-    this->cleanup();
-}
-
-SetupGravityModPopup::~SetupGravityModPopup() {
-    this->cleanup();
-}
-
 void SetupGravityModPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGravityModPopup::updateValue() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGravityModPopup::updateItemID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGravityModPopup::onItemIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGravityModPopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGravityModPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGravityModPopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGravityModPopup::updateValueLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGravityModPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGravityModPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGravityModPopup::init(EffectGameObject*, cocos2d::CCArray*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupGravityModPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupGravityModPopup::create(EffectGameObject*, cocos2d::CCArray*, bool) {
@@ -75,6 +67,6 @@ void SetupGravityModPopup::create(EffectGameObject*, cocos2d::CCArray*, bool) {
 }
 
 void SetupGravityModPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

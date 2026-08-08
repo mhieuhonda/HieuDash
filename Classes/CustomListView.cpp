@@ -5,20 +5,12 @@ CustomListView::~CustomListView() {
     this->cleanup();
 }
 
-CustomListView::~CustomListView() {
-    this->cleanup();
-}
-
-CustomListView::~CustomListView() {
-    this->cleanup();
-}
-
 void CustomListView::getListCell(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomListView::getCellHeight(BoomListType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomListView::create(cocos2d::CCArray*, TableViewCellDelegate*, float, float, int, BoomListType, float) {
@@ -32,16 +24,14 @@ void CustomListView::create(cocos2d::CCArray*, TableViewCellDelegate*, float, fl
 }
 
 void CustomListView::loadCell(TableViewCell*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomListView::reloadAll() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomListView::setupList(float) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

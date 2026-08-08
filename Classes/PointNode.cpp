@@ -5,18 +5,10 @@ PointNode::~PointNode() {
     this->cleanup();
 }
 
-PointNode::~PointNode() {
-    this->cleanup();
-}
-
-PointNode::~PointNode() {
-    this->cleanup();
-}
-
 void PointNode::init(cocos2d::CCPoint) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

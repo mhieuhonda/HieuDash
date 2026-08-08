@@ -16,13 +16,13 @@ public:
     void keyBackClicked() override;
     void skipDailyLevel(DailyLevelNode*, GJGameLevel*);
     void FLAlert_Clicked(FLAlertLayer*, bool);
-    void createDailyNode(GJGameLevel*, bool, float, bool);
+    DailyLevelPage* createDailyNode(GJGameLevel*, bool, float, bool);
     void claimLevelReward(DailyLevelNode*, GJGameLevel*, cocos2d::CCPoint);
     void refreshDailyPage();
     void dailyStatusFailed(GJTimedLevelType, GJErrorCode);
     void tryGetDailyStatus();
-    void createNodeIfLoaded();
-    void getDailyTimeString(int);
+    DailyLevelPage* createNodeIfLoaded();
+    std::string getDailyTimeString(int);
     void dailyStatusFinished(GJTimedLevelType);
     void levelDownloadFailed(int);
     void downloadAndCreateNode();

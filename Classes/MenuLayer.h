@@ -31,7 +31,7 @@ public:
     void videoOptionsOpened();
     void updateUserProfileButton();
     void syncPlatformAchievements(float);
-    void init() override;
+    bool init() override;
     void scene(bool);
     void onPlay(cocos2d::CCObject*);
     void onQuit(cocos2d::CCObject*);

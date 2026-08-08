@@ -5,58 +5,50 @@ SetupSFXPopup::~SetupSFXPopup() {
     this->cleanup();
 }
 
-SetupSFXPopup::~SetupSFXPopup() {
-    this->cleanup();
-}
-
-SetupSFXPopup::~SetupSFXPopup() {
-    this->cleanup();
-}
-
 void SetupSFXPopup::onBrowseSFX(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSFXPopup::pageChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSFXPopup::onPlusButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSFXPopup::updateLength() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupSFXPopup::getActiveSFXID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSFXPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SetupSFXPopup::createSFXWidget() {
-    // TODO: Implement
+SetupSFXPopup* SetupSFXPopup::createSFXWidget() {
+    return nullptr;
 }
 
 void SetupSFXPopup::overridePlaySFX(SFXInfoObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void SetupSFXPopup::sfxBrowserClosed(SFXBrowser*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSFXPopup::sfxObjectSelected(SFXInfoObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSFXPopup::init(SFXTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -71,6 +63,6 @@ void SetupSFXPopup::create(SFXTriggerGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupSFXPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

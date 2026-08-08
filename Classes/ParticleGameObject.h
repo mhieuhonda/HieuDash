@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-class ParticleGameObject {
+class ParticleGameObject : public GameObject {
 public:
     virtual ~ParticleGameObject();
 
@@ -16,7 +16,7 @@ public:
     void setRotationX(float);
     void setRotationY(float);
     void claimParticle();
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void setChildColor(cocos2d::_ccColor3B const&);
     void setObjectColor(cocos2d::_ccColor3B const&);
     void updateParticle();
@@ -35,12 +35,12 @@ public:
     void updateParticleOpacity(unsigned char);
     void updateSyncedAnimation(float, int);
     void updateAnimateOnTrigger(bool);
-    void createParticlePreviewArt();
+    ParticleGameObject* createParticlePreviewArt();
     void updateMainParticleOpacity(unsigned char);
-    void createAndAddCustomParticle();
+    ParticleGameObject* createAndAddCustomParticle();
     void updateSecondaryParticleOpacity(unsigned char);
     void updateParticlePreviewArtOpacity(float);
-    void init();
+    bool init();
     void create();
     void setScale(float);
     void setScaleX(float);

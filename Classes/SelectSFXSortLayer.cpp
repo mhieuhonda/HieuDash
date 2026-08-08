@@ -5,22 +5,14 @@ SelectSFXSortLayer::~SelectSFXSortLayer() {
     this->cleanup();
 }
 
-SelectSFXSortLayer::~SelectSFXSortLayer() {
-    this->cleanup();
-}
-
-SelectSFXSortLayer::~SelectSFXSortLayer() {
-    this->cleanup();
-}
-
 void SelectSFXSortLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSFXSortLayer::init(AudioSortType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,10 +27,10 @@ void SelectSFXSortLayer::create(AudioSortType) {
 }
 
 void SelectSFXSortLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectSFXSortLayer::onSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <unordered_map>
 
-class GJTransformControl {
+class GJTransformControl : public cocos2d::CCNode {
 public:
     virtual ~GJTransformControl();
 
@@ -27,7 +27,7 @@ public:
     void updateAnchorSprite(cocos2d::CCPoint);
     void updateMinMaxPositions();
     void calculateRotationOffset();
-    void init();
+    bool init();
     void create();
 
 };

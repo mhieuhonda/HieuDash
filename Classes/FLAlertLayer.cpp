@@ -5,58 +5,50 @@ FLAlertLayer::~FLAlertLayer() {
     this->cleanup();
 }
 
-FLAlertLayer::~FLAlertLayer() {
-    this->cleanup();
-}
-
-FLAlertLayer::~FLAlertLayer() {
-    this->cleanup();
-}
-
 void FLAlertLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::incrementForcePrio() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::init(FLAlertLayerProtocol*, char const*, std::string, char const*, char const*, float, bool, float, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void FLAlertLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void FLAlertLayer::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void FLAlertLayer::create(FLAlertLayerProtocol*, char const*, std::string, char const*, char const*) {
@@ -90,18 +82,18 @@ void FLAlertLayer::create(FLAlertLayerProtocol*, char const*, std::string, char 
 }
 
 void FLAlertLayer::onBtn1(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::onBtn2(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FLAlertLayer::onEnter() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

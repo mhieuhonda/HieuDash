@@ -5,18 +5,10 @@ CheckpointObject::~CheckpointObject() {
     this->cleanup();
 }
 
-CheckpointObject::~CheckpointObject() {
-    this->cleanup();
-}
-
-CheckpointObject::~CheckpointObject() {
-    this->cleanup();
-}
-
-void CheckpointObject::init() {
-    bool ret = true;
+bool CheckpointObject::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -31,10 +23,10 @@ void CheckpointObject::create() {
 }
 
 void CheckpointObject::getObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CheckpointObject::setObject(GameObject*) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 

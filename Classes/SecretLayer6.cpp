@@ -5,31 +5,23 @@ SecretLayer6::~SecretLayer6() {
     this->cleanup();
 }
 
-SecretLayer6::~SecretLayer6() {
-    this->cleanup();
-}
-
-SecretLayer6::~SecretLayer6() {
-    this->cleanup();
-}
-
 void SecretLayer6::startGame01() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer6::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SecretLayer6::init() {
-    bool ret = true;
+bool SecretLayer6::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SecretLayer6::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretLayer6::create() {
@@ -43,6 +35,6 @@ void SecretLayer6::create() {
 }
 
 void SecretLayer6::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

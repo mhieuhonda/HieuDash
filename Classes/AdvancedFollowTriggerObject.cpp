@@ -5,31 +5,22 @@ AdvancedFollowTriggerObject::~AdvancedFollowTriggerObject() {
     this->cleanup();
 }
 
-AdvancedFollowTriggerObject::~AdvancedFollowTriggerObject() {
-    this->cleanup();
-}
-
-AdvancedFollowTriggerObject::~AdvancedFollowTriggerObject() {
-    this->cleanup();
-}
-
-void AdvancedFollowTriggerObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string AdvancedFollowTriggerObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void AdvancedFollowTriggerObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AdvancedFollowTriggerObject::getAdvancedFollowID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AdvancedFollowTriggerObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

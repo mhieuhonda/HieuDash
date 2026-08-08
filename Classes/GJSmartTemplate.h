@@ -6,14 +6,14 @@
 #include <string>
 #include <vector>
 
-class GJSmartTemplate {
+class GJSmartTemplate : public cocos2d::CCNode {
 public:
     virtual ~GJSmartTemplate();
 
     void dataLoaded(DS_Dictionary*);
     void getPrefabs(std::string);
     void savePrefab(std::string, std::string);
-    void isUnrequired(std::string);
+    bool isUnrequired(std::string);
     void offsetForDir(GJSmartDirection, int);
     void removePrefab(std::string, int);
     void flipBlockType(SmartBlockType, bool, bool);
@@ -21,15 +21,15 @@ public:
     void scanForPrefab(std::string);
     void flipBlockTypeX(SmartBlockType);
     void flipBlockTypeY(SmartBlockType);
-    void getNoCornerKey(std::string);
-    void createWithCoder(DS_Dictionary*);
+    std::string getNoCornerKey(std::string);
+    GJSmartTemplate* createWithCoder(DS_Dictionary*);
     void encodeWithCoder(DS_Dictionary*);
     void getPrefabWithID(std::string, int);
     void getRandomPrefab(std::string);
     void offsetForObject(SmartGameObject*);
     void rotateBlockType(SmartBlockType, int);
     void saveRemapToDict(std::string, std::string, cocos2d::CCDictionary*);
-    void getSimplifiedKey(std::string);
+    std::string getSimplifiedKey(std::string);
     void getTemplateState(std::vector<SmartPrefabResult>&);
     void keyFromNeighbors(SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType, SmartBlockType);
     void keyFromNeighbors(cocos2d::CCPoint, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*);
@@ -40,15 +40,15 @@ public:
     void smartObjectToType(SmartGameObject*, cocos2d::CCPoint);
     void keyFromNeighborsOld(bool, bool, bool, bool, bool, bool, bool, bool);
     void resetScannedPrefabs();
-    void shouldDiscardObject(SmartBlockType, GJSmartDirection);
-    void getVerySimplifiedKey(std::string);
+    bool shouldDiscardObject(SmartBlockType, GJSmartDirection);
+    std::string getVerySimplifiedKey(std::string);
     void smartTypeToObjectKey(SmartBlockType);
     void getTotalChanceForPrefab(std::string);
     void applyTransformationsForType(SmartBlockType, cocos2d::CCSprite*);
-    void init();
+    bool init();
     void create();
     void flipKey(std::string, bool, bool);
-    void canEncode();
+    bool canEncode();
     void getPrefab(cocos2d::CCPoint, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*, SmartGameObject*);
     void getPrefab(std::string, bool, bool);
     void rotateKey(std::string, int);

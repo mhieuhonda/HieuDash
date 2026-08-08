@@ -29,7 +29,7 @@ public:
     void showDialogMechanic();
     void switchToOpenedState(CCMenuItemSpriteExtra*);
     void updateUnlockedLabel();
-    void createSecondaryLayer(int);
+    SecretRewardsLayer* createSecondaryLayer(int);
     void moveToSecondaryLayer(int);
     void updateUnlockedGoldLabel();
     void init(bool);

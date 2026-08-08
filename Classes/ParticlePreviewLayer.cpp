@@ -5,32 +5,23 @@ ParticlePreviewLayer::~ParticlePreviewLayer() {
     this->cleanup();
 }
 
-ParticlePreviewLayer::~ParticlePreviewLayer() {
-    this->cleanup();
-}
-
-ParticlePreviewLayer::~ParticlePreviewLayer() {
-    this->cleanup();
-}
-
 void ParticlePreviewLayer::preVisitWithClippingRect(cocos2d::CCRect) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParticlePreviewLayer::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void ParticlePreviewLayer::init(cocos2d::CCParticleSystemQuad*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ParticlePreviewLayer::visit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ParticlePreviewLayer::create(cocos2d::CCParticleSystemQuad*) {
@@ -44,6 +35,6 @@ void ParticlePreviewLayer::create(cocos2d::CCParticleSystemQuad*) {
 }
 
 void ParticlePreviewLayer::postVisit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

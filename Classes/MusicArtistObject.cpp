@@ -5,18 +5,10 @@ MusicArtistObject::~MusicArtistObject() {
     this->cleanup();
 }
 
-MusicArtistObject::~MusicArtistObject() {
-    this->cleanup();
-}
-
-MusicArtistObject::~MusicArtistObject() {
-    this->cleanup();
-}
-
 void MusicArtistObject::init(int, std::string, std::string, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

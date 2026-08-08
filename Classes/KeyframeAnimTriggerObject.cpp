@@ -5,27 +5,18 @@ KeyframeAnimTriggerObject::~KeyframeAnimTriggerObject() {
     this->cleanup();
 }
 
-KeyframeAnimTriggerObject::~KeyframeAnimTriggerObject() {
-    this->cleanup();
-}
-
-KeyframeAnimTriggerObject::~KeyframeAnimTriggerObject() {
-    this->cleanup();
-}
-
-void KeyframeAnimTriggerObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string KeyframeAnimTriggerObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void KeyframeAnimTriggerObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void KeyframeAnimTriggerObject::init() {
-    bool ret = true;
+bool KeyframeAnimTriggerObject::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

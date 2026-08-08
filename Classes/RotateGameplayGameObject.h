@@ -5,15 +5,15 @@
 #include <string>
 #include <vector>
 
-class RotateGameplayGameObject {
+class RotateGameplayGameObject : public GameObject {
 public:
     virtual ~RotateGameplayGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void updateStartValues();
     void updateGameplayRotation();
-    void init();
+    bool init();
     void create();
 
 protected:

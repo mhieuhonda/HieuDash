@@ -5,54 +5,46 @@ GJSongBrowser::~GJSongBrowser() {
     this->cleanup();
 }
 
-GJSongBrowser::~GJSongBrowser() {
-    this->cleanup();
-}
-
-GJSongBrowser::~GJSongBrowser() {
-    this->cleanup();
-}
-
 void GJSongBrowser::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSongBrowser::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSongBrowser::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJSongBrowser::onDeleteAll(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void GJSongBrowser::setupPageInfo(int, int, int) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJSongBrowser::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSongBrowser::setupSongBrowser(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJSongBrowser::getSelectedCellIdx() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJSongBrowser::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJSongBrowser::init() {
-    bool ret = true;
+bool GJSongBrowser::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -67,11 +59,10 @@ void GJSongBrowser::create() {
 }
 
 void GJSongBrowser::loadPage(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJSongBrowser::exitLayer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

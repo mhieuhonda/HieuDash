@@ -5,30 +5,22 @@ SetupInstantCollisionTriggerPopup::~SetupInstantCollisionTriggerPopup() {
     this->cleanup();
 }
 
-SetupInstantCollisionTriggerPopup::~SetupInstantCollisionTriggerPopup() {
-    this->cleanup();
-}
-
-SetupInstantCollisionTriggerPopup::~SetupInstantCollisionTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupInstantCollisionTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCollisionTriggerPopup::updateSpecialNodes() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCollisionTriggerPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCollisionTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

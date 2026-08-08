@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class LevelAreaLayer {
+class LevelAreaLayer : public cocos2d::CCLayer {
 public:
     virtual ~LevelAreaLayer();
 
@@ -14,7 +14,7 @@ public:
     void onEnterTower();
     void keyBackClicked();
     void fadeInsideTower();
-    void init();
+    bool init();
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

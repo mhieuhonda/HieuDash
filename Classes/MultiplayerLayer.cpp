@@ -5,27 +5,19 @@ MultiplayerLayer::~MultiplayerLayer() {
     this->cleanup();
 }
 
-MultiplayerLayer::~MultiplayerLayer() {
-    this->cleanup();
-}
-
-MultiplayerLayer::~MultiplayerLayer() {
-    this->cleanup();
-}
-
 void MultiplayerLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MultiplayerLayer::init() {
-    bool ret = true;
+bool MultiplayerLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void MultiplayerLayer::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MultiplayerLayer::create() {
@@ -39,14 +31,14 @@ void MultiplayerLayer::create() {
 }
 
 void MultiplayerLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MultiplayerLayer::onBtn1(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MultiplayerLayer::onBtn2(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

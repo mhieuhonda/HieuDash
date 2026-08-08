@@ -5,38 +5,30 @@ ObjectToolbox::~ObjectToolbox() {
     this->cleanup();
 }
 
-ObjectToolbox::~ObjectToolbox() {
-    this->cleanup();
-}
-
-ObjectToolbox::~ObjectToolbox() {
-    this->cleanup();
-}
-
-void ObjectToolbox::sharedState() {
-    // TODO: Implement
+ObjectToolbox* ObjectToolbox::sharedState() {
+    return nullptr;
 }
 
 void ObjectToolbox::intKeyToFrame(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ObjectToolbox::gridNodeSizeForKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ObjectToolbox::perspectiveBlockFrame(int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void ObjectToolbox::init() {
-    bool ret = true;
+bool ObjectToolbox::init() {
+    bool ret = GManager::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ObjectToolbox::allKeys() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

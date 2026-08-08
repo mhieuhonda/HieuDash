@@ -14,7 +14,7 @@ public:
     void addChanceToSelected(int, bool);
     void deletedSelectedItems();
     void getAllSelectedBlocks();
-    void createTemplateObjects();
+    BrowseSmartKeyLayer* createTemplateObjects();
     void init(GJSmartTemplate*, std::string);
     void create(GJSmartTemplate*, std::string);
     void onBack(cocos2d::CCObject*);

@@ -5,22 +5,14 @@ SetupStopTriggerPopup::~SetupStopTriggerPopup() {
     this->cleanup();
 }
 
-SetupStopTriggerPopup::~SetupStopTriggerPopup() {
-    this->cleanup();
-}
-
-SetupStopTriggerPopup::~SetupStopTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupStopTriggerPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupStopTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void SetupStopTriggerPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupStopTriggerPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

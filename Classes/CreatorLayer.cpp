@@ -5,116 +5,107 @@ CreatorLayer::~CreatorLayer() {
     this->cleanup();
 }
 
-CreatorLayer::~CreatorLayer() {
-    this->cleanup();
-}
-
-CreatorLayer::~CreatorLayer() {
-    this->cleanup();
-}
-
 void CreatorLayer::onMapPacks(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onMyLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onTopLists(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onChallenge(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onGauntlets(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onDailyLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onEventLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onFameLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onMultiplayer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CreatorLayer::onSavedLevels(cocos2d::CCObject*) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void CreatorLayer::onSecretVault(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onWeeklyLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onAdventureMap(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onLeaderboards(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onOnlineLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onTreasureRoom(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::sceneWillResume() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onFeaturedLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::checkQuestsStatus() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onOnlyFullVersion(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CreatorLayer::canPlayOnlineLevels() {
-    // TODO: Implement
+bool CreatorLayer::canPlayOnlineLevels() {
+    return false;
 }
 
-void CreatorLayer::init() {
+bool CreatorLayer::init() {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CreatorLayer::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::create() {
@@ -128,10 +119,10 @@ void CreatorLayer::create() {
 }
 
 void CreatorLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreatorLayer::onPaths(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

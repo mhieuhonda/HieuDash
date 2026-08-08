@@ -5,22 +5,14 @@ SetupReverbPopup::~SetupReverbPopup() {
     this->cleanup();
 }
 
-SetupReverbPopup::~SetupReverbPopup() {
-    this->cleanup();
-}
-
-SetupReverbPopup::~SetupReverbPopup() {
-    this->cleanup();
-}
-
 void SetupReverbPopup::updateReverbLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupReverbPopup::init(SFXTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,14 +27,14 @@ void SetupReverbPopup::create(SFXTriggerGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupReverbPopup::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void SetupReverbPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupReverbPopup::onReverb(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

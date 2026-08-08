@@ -15,131 +15,122 @@ EffectGameObject::~EffectGameObject() {
     this->cleanup();
 }
 
-EffectGameObject::~EffectGameObject() {
-    this->cleanup();
-}
-
-EffectGameObject::~EffectGameObject() {
-    this->cleanup();
-}
-
-void EffectGameObject::canReverse() {
-    // TODO: Implement
+bool EffectGameObject::canReverse() {
+    return false;
 }
 
 void EffectGameObject::firstSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EffectGameObject::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void EffectGameObject::setRScaleX(float) {
-    // TODO: Set m_rScaleX
+    // Setter operation - stub
 }
 
 void EffectGameObject::setRScaleY(float) {
-    // TODO: Set m_rScaleY
+    // Setter operation - stub
 }
 
 void EffectGameObject::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EffectGameObject::setTargetID(int) {
-    // TODO: Set m_targetID
+    // Setter operation - stub
 }
 
-void EffectGameObject::canBeOrdered() {
-    // TODO: Implement
+bool EffectGameObject::canBeOrdered() {
+    return false;
 }
 
 void EffectGameObject::setTargetID2(int) {
-    // TODO: Set m_targetID2
+    // Setter operation - stub
 }
 
-void EffectGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string EffectGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void EffectGameObject::restoreObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EffectGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EffectGameObject::getObjectLabel() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EffectGameObject::setObjectLabel(cocos2d::CCLabelBMFont*) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void EffectGameObject::spawnXPosition() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void EffectGameObject::canSpawnTriggers() {
-    // TODO: Implement
+bool EffectGameObject::canSpawnTriggers() {
+    return false;
 }
 
-void EffectGameObject::hasSpawnTargetID(int) {
-    // TODO: Implement
+bool EffectGameObject::hasSpawnTargetID(int) {
+    return false;
 }
 
 void EffectGameObject::triggerActivated(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EffectGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EffectGameObject::playTriggerEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EffectGameObject::resetSpawnTrigger() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EffectGameObject::stateSensitiveOff(GJBaseGameLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EffectGameObject::updateSpecialColor() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void EffectGameObject::updateSpeedModType() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void EffectGameObject::getTargetColorIndex() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void EffectGameObject::isSpecialSpawnObject() {
-    // TODO: Implement
+bool EffectGameObject::isSpecialSpawnObject() {
+    return false;
 }
 
 void EffectGameObject::triggerEffectFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EffectGameObject::updateInteractiveHover(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void EffectGameObject::init(char const*) {
+bool EffectGameObject::init(char const*) {
     bool ret = GameObject::init() if "GameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

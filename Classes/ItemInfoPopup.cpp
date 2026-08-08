@@ -5,30 +5,22 @@ ItemInfoPopup::~ItemInfoPopup() {
     this->cleanup();
 }
 
-ItemInfoPopup::~ItemInfoPopup() {
-    this->cleanup();
-}
-
-ItemInfoPopup::~ItemInfoPopup() {
-    this->cleanup();
-}
-
 void ItemInfoPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ItemInfoPopup::nameForUnlockType(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void ItemInfoPopup::isUnlockedByDefault(int, UnlockType) {
-    // TODO: Implement
+bool ItemInfoPopup::isUnlockedByDefault(int, UnlockType) {
+    return false;
 }
 
 void ItemInfoPopup::init(int, UnlockType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,10 +35,10 @@ void ItemInfoPopup::create(int, UnlockType) {
 }
 
 void ItemInfoPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ItemInfoPopup::onCredit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

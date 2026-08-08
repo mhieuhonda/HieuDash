@@ -5,18 +5,10 @@ SFXFolderObject::~SFXFolderObject() {
     this->cleanup();
 }
 
-SFXFolderObject::~SFXFolderObject() {
-    this->cleanup();
-}
-
-SFXFolderObject::~SFXFolderObject() {
-    this->cleanup();
-}
-
 void SFXFolderObject::init(int, std::string, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

@@ -16,7 +16,7 @@ public:
     void songIDChanged(int);
     void FLAlert_Clicked(FLAlertLayer*, bool);
     void getActiveSongID();
-    void getSongFileName();
+    std::string getSongFileName();
     void getLevelSettings();
     void onOpenCustomSong(cocos2d::CCObject*);
     void updateAudioLabel();

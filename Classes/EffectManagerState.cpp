@@ -5,11 +5,7 @@ EffectManagerState::~EffectManagerState() {
     this->cleanup();
 }
 
-EffectManagerState::~EffectManagerState() {
-    this->cleanup();
-}
-
 void EffectManagerState::operator=(EffectManagerState&&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

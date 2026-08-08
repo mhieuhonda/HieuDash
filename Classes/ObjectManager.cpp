@@ -5,61 +5,50 @@ ObjectManager::~ObjectManager() {
     this->cleanup();
 }
 
-ObjectManager::~ObjectManager() {
-    this->cleanup();
-}
-
-ObjectManager::~ObjectManager() {
-    this->cleanup();
-}
-
 void ObjectManager::animLoaded(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ObjectManager::getDefinition(char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ObjectManager::loadCopiedSets() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ObjectManager::getGlobalAnimCopy(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ObjectManager::purgeObjectManager() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ObjectManager::loadCopiedAnimations() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ObjectManager::replaceAllOccurencesOfString(cocos2d::CCString*, cocos2d::CCString*, cocos2d::CCDictionary*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ObjectManager::init() {
-    bool ret = true;
+bool ObjectManager::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ObjectManager::setup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ObjectManager::instance() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ObjectManager::setLoaded(char const*) {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 

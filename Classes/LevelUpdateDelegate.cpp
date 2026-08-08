@@ -2,10 +2,10 @@
 #include "LevelUpdateDelegate.h"
 
 void LevelUpdateDelegate::levelUpdateFailed(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelUpdateDelegate::levelUpdateFinished(GJGameLevel*, UpdateResponse) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

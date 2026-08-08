@@ -5,50 +5,42 @@ SetupRandAdvTriggerPopup::~SetupRandAdvTriggerPopup() {
     this->cleanup();
 }
 
-SetupRandAdvTriggerPopup::~SetupRandAdvTriggerPopup() {
-    this->cleanup();
-}
-
-SetupRandAdvTriggerPopup::~SetupRandAdvTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupRandAdvTriggerPopup::onAddChance(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupRandAdvTriggerPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRandAdvTriggerPopup::removeGroupID(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupRandAdvTriggerPopup::addChanceToObject(RandTriggerGameObject*, int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupRandAdvTriggerPopup::onRemoveFromGroup(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupRandAdvTriggerPopup::callRemoveFromGroup(float) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupRandAdvTriggerPopup::updateGroupIDButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupRandAdvTriggerPopup::removeGroupIDFromObject(RandTriggerGameObject*, int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupRandAdvTriggerPopup::init(RandTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -63,10 +55,10 @@ void SetupRandAdvTriggerPopup::create(RandTriggerGameObject*, cocos2d::CCArray*)
 }
 
 void SetupRandAdvTriggerPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupRandAdvTriggerPopup::addChance(int, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 

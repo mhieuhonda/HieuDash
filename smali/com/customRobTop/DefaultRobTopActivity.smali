@@ -25,7 +25,7 @@
 .method public static isBillingSupported()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -33,6 +33,13 @@
 .method public static purchaseItem(Ljava/lang/String;)V
     .locals 2
 
+    sget-object v0, Lcom/customRobTop/DefaultRobTopActivity;->me:Lcom/customRobTop/DefaultRobTopActivity;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "IAP Purchase item: "
@@ -53,8 +60,15 @@
 .end method
 
 .method public static restorePurchases()V
-    .locals 0
+    .locals 1
 
+    sget-object v0, Lcom/customRobTop/DefaultRobTopActivity;->me:Lcom/customRobTop/DefaultRobTopActivity;
+
+    if-nez v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/customRobTop/DefaultRobTopActivity;->doRestoreCheck()V
+
+    :cond_0
     return-void
 .end method
 
@@ -69,7 +83,7 @@
 .method public getPublicKey()Ljava/lang/String;
     .locals 1
 
-    const-string v0, ""
+    const-string v0, "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAklRPrtot3mua6MYUJXkbGD65TmPoUgHjLKuh0SZ67brpqDwftbmzkzc/cE7hiLeMSG/lfYYdX2/jhkhv2OULo67NHgzsskpIOOIP3zB11d+4aH8XkDPB1yRjI+rwk1v/MeK/uilnPUbSF8XnmEvTNxq47r5xgeOrJKjdO3TG6S7IneHQo1vZNwv/HqHJ3RhgzmJW79xNf0GWbPmMjusUhdbOtZdt1DbcMJIaORzBgyU9MnSwy37ri7cOhNL+OLdzUp+keuk7Exi6XAUR9CMeQ5JXdrCk37FAog6LA7IpIEm+ZIFRqhhRVaQ6+KTcTqyNpvYIYh5bH772d3Ro3uVG+QIDAQAB"
 
     return-object v0
 .end method

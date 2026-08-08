@@ -5,31 +5,23 @@ GJPromoPopup::~GJPromoPopup() {
     this->cleanup();
 }
 
-GJPromoPopup::~GJPromoPopup() {
-    this->cleanup();
-}
-
-GJPromoPopup::~GJPromoPopup() {
-    this->cleanup();
-}
-
 void GJPromoPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPromoPopup::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPromoPopup::init(std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJPromoPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJPromoPopup::create(std::string) {
@@ -43,10 +35,10 @@ void GJPromoPopup::create(std::string) {
 }
 
 void GJPromoPopup::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPromoPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

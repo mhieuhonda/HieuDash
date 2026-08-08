@@ -5,13 +5,13 @@
 #include "cocos2d.h"
 #include <string>
 
-class AchievementManager {
+class AchievementManager : public GManager {
 public:
     virtual ~AchievementManager();
 
     void dataLoaded(DS_Dictionary*);
     void firstSetup();
-    void sharedState();
+    AchievementManager* sharedState();
     void encodeDataTo(DS_Dictionary*);
     void addAchievement(std::string, std::string, std::string, std::string, std::string, int);
     void resetAchievement(char const*);
@@ -20,21 +20,21 @@ public:
     void checkAchFromUnlock(char const*);
     void getAllAchievements();
     void percentageForCount(int, int);
-    void isAchievementEarned(char const*);
+    bool isAchievementEarned(char const*);
     void limitForAchievement(std::string);
     void achievementForUnlock(int, UnlockType);
     void addManualAchievements();
-    void areAchievementsEarned(cocos2d::CCArray*);
+    bool areAchievementsEarned(cocos2d::CCArray*);
     void getAchievementsWithID(char const*);
     void percentForAchievement(char const*);
-    void isAchievementAvailable(std::string);
+    bool isAchievementAvailable(std::string);
     void notifyAchievementWithID(char const*);
     void reportAchievementWithID(char const*, int, bool);
     void storeAchievementUnlocks();
     void getAchievementRewardDict();
     void getAllAchievementsSorted(bool);
     void reportPlatformAchievementWithID(char const*, int);
-    void init();
+    bool init();
     void setup();
 
 protected:

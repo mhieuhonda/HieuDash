@@ -5,78 +5,70 @@ SetupCameraRotatePopup::~SetupCameraRotatePopup() {
     this->cleanup();
 }
 
-SetupCameraRotatePopup::~SetupCameraRotatePopup() {
-    this->cleanup();
-}
-
-SetupCameraRotatePopup::~SetupCameraRotatePopup() {
-    this->cleanup();
-}
-
 void SetupCameraRotatePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::onEasingRate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::updateDurLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::updateDuration() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::valuePopupClosed(ConfigureValuePopup*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::updateEasingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::updateDegreesLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::sliderDegreesChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::updateCommandDegrees() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::updateEasingRateLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::updateMoveCommandEasing() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::toggleEasingRateVisibility() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::updateMoveCommandEasingRate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraRotatePopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -91,10 +83,10 @@ void SetupCameraRotatePopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupCameraRotatePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraRotatePopup::onEasing(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

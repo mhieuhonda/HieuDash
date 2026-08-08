@@ -1,55 +1,55 @@
 
 #include "AdToolbox.h"
 
-void AdToolbox::isShowingAd() {
-    // TODO: Implement
+bool AdToolbox::isShowingAd() {
+    return false;
 }
 
 void AdToolbox::enableBanner() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AdToolbox::disableBanner() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AdToolbox::showInterstitial() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void AdToolbox::cacheInterstitial() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AdToolbox::showRewardedVideo() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void AdToolbox::cacheRewardedVideo() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AdToolbox::queueRefreshBanner() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AdToolbox::enableBannerNoRefresh() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void AdToolbox::hasCachedInterstitial() {
-    // TODO: Implement
+bool AdToolbox::hasCachedInterstitial() {
+    return false;
 }
 
-void AdToolbox::hasCachedRewardedVideo() {
-    // TODO: Implement
+bool AdToolbox::hasCachedRewardedVideo() {
+    return false;
 }
 
 void AdToolbox::setupAds() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AdToolbox::showDebug() {
-    // TODO: Implement
+    // Display operation - stub
 }
 

@@ -5,43 +5,34 @@ SpecialAnimGameObject::~SpecialAnimGameObject() {
     this->cleanup();
 }
 
-SpecialAnimGameObject::~SpecialAnimGameObject() {
-    this->cleanup();
-}
-
-SpecialAnimGameObject::~SpecialAnimGameObject() {
-    this->cleanup();
-}
-
 void SpecialAnimGameObject::resetObject() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SpecialAnimGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string SpecialAnimGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void SpecialAnimGameObject::updateMainColor(cocos2d::_ccColor3B const&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SpecialAnimGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void SpecialAnimGameObject::updateSecondaryColor(cocos2d::_ccColor3B const&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SpecialAnimGameObject::updateSyncedAnimation(float, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SpecialAnimGameObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

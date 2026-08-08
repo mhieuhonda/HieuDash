@@ -5,20 +5,12 @@ GJMoreGamesLayer::~GJMoreGamesLayer() {
     this->cleanup();
 }
 
-GJMoreGamesLayer::~GJMoreGamesLayer() {
-    this->cleanup();
-}
-
-GJMoreGamesLayer::~GJMoreGamesLayer() {
-    this->cleanup();
-}
-
 void GJMoreGamesLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJMoreGamesLayer::getMoreGamesList() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMoreGamesLayer::create() {

@@ -5,41 +5,33 @@ UndoObject::~UndoObject() {
     this->cleanup();
 }
 
-UndoObject::~UndoObject() {
-    this->cleanup();
-}
-
-UndoObject::~UndoObject() {
-    this->cleanup();
-}
-
 void UndoObject::setObjects(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
-void UndoObject::createWithArray(cocos2d::CCArray*, UndoCommand) {
-    // TODO: Implement
+UndoObject* UndoObject::createWithArray(cocos2d::CCArray*, UndoCommand) {
+    return nullptr;
 }
 
-void UndoObject::initWithTransformObjects(cocos2d::CCArray*, UndoCommand) {
-    // TODO: Implement
-}
-
-void UndoObject::createWithTransformObjects(cocos2d::CCArray*, UndoCommand) {
-    // TODO: Implement
-}
-
-void UndoObject::init(GameObject*, UndoCommand) {
-    bool ret = cocos2d::CCObject::init() if "cocos2d::CCObject" else true;
-    if (!ret) return false;
-    // TODO: Initialize members and UI
+bool UndoObject::initWithTransformObjects(cocos2d::CCArray*, UndoCommand) {
     return true;
 }
 
-void UndoObject::init(cocos2d::CCArray*, UndoCommand) {
+UndoObject* UndoObject::createWithTransformObjects(cocos2d::CCArray*, UndoCommand) {
+    return nullptr;
+}
+
+bool UndoObject::init(GameObject*, UndoCommand) {
     bool ret = cocos2d::CCObject::init() if "cocos2d::CCObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
+    return true;
+}
+
+bool UndoObject::init(cocos2d::CCArray*, UndoCommand) {
+    bool ret = cocos2d::CCObject::init() if "cocos2d::CCObject" else true;
+    if (!ret) return false;
+    // Initialize members and UI - stub
     return true;
 }
 

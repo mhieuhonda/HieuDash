@@ -9,7 +9,7 @@ public:
     virtual ~CurrencySprite();
 
     void initWithSprite(cocos2d::CCSprite*);
-    void createWithSprite(cocos2d::CCSprite*);
+    CurrencySprite* createWithSprite(cocos2d::CCSprite*);
     void spriteTypeToStat(CurrencySpriteType);
     void rewardToSpriteType(int);
     void init(CurrencySpriteType, bool);

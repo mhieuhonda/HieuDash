@@ -19,11 +19,11 @@ public:
     void toggleControls(bool);
     void textInputClosed(CCTextInputNode*);
     void closeColorSelect(cocos2d::CCObject*);
-    void createWithObject(EffectGameObject*);
+    ColorSelectLiveOverlay* createWithObject(EffectGameObject*);
     void updateColorLabel();
     void updateColorValue();
     void colorValueChanged(cocos2d::_ccColor3B);
-    void createWithActions(ColorAction*, ColorAction*);
+    ColorSelectLiveOverlay* createWithActions(ColorAction*, ColorAction*);
     void createToggleButton(std::string, void (cocos2d::CCObject::*)(cocos2d::CCObject*), bool, cocos2d::CCMenu*, cocos2d::CCPoint);
     void determineStartValues();
     void init(ColorAction*, ColorAction*, EffectGameObject*);

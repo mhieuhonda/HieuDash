@@ -5,36 +5,26 @@ StartPosObject::~StartPosObject() {
     this->cleanup();
 }
 
-StartPosObject::~StartPosObject() {
-    this->cleanup();
-}
-
-StartPosObject::~StartPosObject() {
-    this->cleanup();
-}
-
 void StartPosObject::setSettings(LevelSettingsObject*) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
-void StartPosObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string StartPosObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void StartPosObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void StartPosObject::loadSettingsFromString(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void StartPosObject::init() {
-    bool ret = true;
+bool StartPosObject::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

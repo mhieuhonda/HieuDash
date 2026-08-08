@@ -5,22 +5,14 @@ SearchSFXPopup::~SearchSFXPopup() {
     this->cleanup();
 }
 
-SearchSFXPopup::~SearchSFXPopup() {
-    this->cleanup();
-}
-
-SearchSFXPopup::~SearchSFXPopup() {
-    this->cleanup();
-}
-
 void SearchSFXPopup::onSearchFolders(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SearchSFXPopup::init(std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

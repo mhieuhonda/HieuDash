@@ -19,7 +19,7 @@ public:
     void loadLocalLevelCell();
     void loadCustomLevelCell();
     void draw() override;
-    void init() override;
+    bool init() override;
     void create(float, float);
     void onClick(cocos2d::CCObject*);
     void onToggle(cocos2d::CCObject*);

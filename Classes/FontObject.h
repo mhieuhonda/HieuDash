@@ -9,7 +9,7 @@ public:
     void getFontWidth(int);
     void parseConfigFile(char const*, float);
     void initWithConfigFile(char const*, float);
-    void createWithConfigFile(char const*, float);
+    FontObject* createWithConfigFile(char const*, float);
 
 };
 

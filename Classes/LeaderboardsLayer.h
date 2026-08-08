@@ -29,7 +29,7 @@ public:
     void onStat(cocos2d::CCObject*);
     void onWeek(cocos2d::CCObject*);
     void onGlobal(cocos2d::CCObject*);
-    void isCorrect(std::string);
+    bool isCorrect(std::string);
     void setupTabs();
 
 };

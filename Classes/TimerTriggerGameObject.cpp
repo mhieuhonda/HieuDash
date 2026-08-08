@@ -5,31 +5,22 @@ TimerTriggerGameObject::~TimerTriggerGameObject() {
     this->cleanup();
 }
 
-TimerTriggerGameObject::~TimerTriggerGameObject() {
-    this->cleanup();
-}
-
-TimerTriggerGameObject::~TimerTriggerGameObject() {
-    this->cleanup();
-}
-
-void TimerTriggerGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string TimerTriggerGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void TimerTriggerGameObject::triggerObject(GJBaseGameLayer*, int, std::vector<int> const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TimerTriggerGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void TimerTriggerGameObject::init(char const*) {
+bool TimerTriggerGameObject::init(char const*) {
     bool ret = EffectGameObject::init() if "EffectGameObject" else true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

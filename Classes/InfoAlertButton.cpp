@@ -5,18 +5,10 @@ InfoAlertButton::~InfoAlertButton() {
     this->cleanup();
 }
 
-InfoAlertButton::~InfoAlertButton() {
-    this->cleanup();
-}
-
-InfoAlertButton::~InfoAlertButton() {
-    this->cleanup();
-}
-
 void InfoAlertButton::init(std::string, std::string, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -31,6 +23,6 @@ void InfoAlertButton::create(std::string, std::string, float) {
 }
 
 void InfoAlertButton::activate() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

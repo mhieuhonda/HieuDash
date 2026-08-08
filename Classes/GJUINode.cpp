@@ -5,109 +5,98 @@ GJUINode::~GJUINode() {
     this->cleanup();
 }
 
-GJUINode::~GJUINode() {
-    this->cleanup();
-}
-
-GJUINode::~GJUINode() {
-    this->cleanup();
-}
-
 void GJUINode::getOpacity() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::resetState() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GJUINode::touchEnded() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::updateSize(float, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::toggleModeB(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::updateWidth(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::saveToConfig(UIButtonConfig&) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void GJUINode::updateHeight(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::getButtonScale() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::loadFromConfig(UIButtonConfig&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJUINode::updateDeadzone(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::updateRangePos(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::activeTouchTest(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::highlightButton(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::toggleHighlight(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::updateDragRadius(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::updateButtonScale(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::updateButtonFrames() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::activeRangeTouchTest(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJUINode::updateButtonPositions() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJUINode::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void GJUINode::init(UIButtonConfig&) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -122,6 +111,6 @@ void GJUINode::create(UIButtonConfig&) {
 }
 
 void GJUINode::touchTest(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

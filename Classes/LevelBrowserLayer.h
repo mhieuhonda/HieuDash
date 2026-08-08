@@ -20,10 +20,10 @@ public:
     void ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) override;
     void onGoToFolder(cocos2d::CCObject*);
-    void createNewList(cocos2d::CCObject*);
+    LevelBrowserLayer* createNewList(cocos2d::CCObject*);
     void onClearSearch(cocos2d::CCObject*);
     void setupPageInfo(std::string, char const*);
-    void createNewLevel(cocos2d::CCObject*);
+    LevelBrowserLayer* createNewLevel(cocos2d::CCObject*);
     void deleteSelected();
     void getSearchTitle();
     void keyBackClicked() override;
@@ -46,7 +46,7 @@ public:
     void shareCommentClosed(std::string, ShareCommentLayer*);
     void cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*);
     void onRemoveAllFavorites(cocos2d::CCObject*);
-    void createNewSmartTemplate(cocos2d::CCObject*);
+    LevelBrowserLayer* createNewSmartTemplate(cocos2d::CCObject*);
     void getItemsMatchingSearch(cocos2d::CCArray*, std::string, GJSearchObject*);
     void onEnterTransitionDidFinish();
     void registerWithTouchDispatcher() override;
@@ -64,7 +64,7 @@ public:
     void loadPage(GJSearchObject*);
     void onSearch(cocos2d::CCObject*);
     void exitLayer(cocos2d::CCObject*);
-    void isCorrect(char const*);
+    bool isCorrect(char const*);
     void onRefresh(cocos2d::CCObject*);
 
 protected:

@@ -9,7 +9,7 @@ class AdvancedFollowTriggerObject {
 public:
     virtual ~AdvancedFollowTriggerObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void getAdvancedFollowID();
     void init(char const*);

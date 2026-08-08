@@ -5,26 +5,18 @@ GJPathRewardPopup::~GJPathRewardPopup() {
     this->cleanup();
 }
 
-GJPathRewardPopup::~GJPathRewardPopup() {
-    this->cleanup();
-}
-
-GJPathRewardPopup::~GJPathRewardPopup() {
-    this->cleanup();
-}
-
 void GJPathRewardPopup::closePopup() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathRewardPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJPathRewardPopup::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,6 +31,6 @@ void GJPathRewardPopup::create(int) {
 }
 
 void GJPathRewardPopup::onClaim(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 

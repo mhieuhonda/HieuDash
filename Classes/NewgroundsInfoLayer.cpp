@@ -5,38 +5,30 @@ NewgroundsInfoLayer::~NewgroundsInfoLayer() {
     this->cleanup();
 }
 
-NewgroundsInfoLayer::~NewgroundsInfoLayer() {
-    this->cleanup();
-}
-
-NewgroundsInfoLayer::~NewgroundsInfoLayer() {
-    this->cleanup();
-}
-
 void NewgroundsInfoLayer::onSupporter(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NewgroundsInfoLayer::onGuidelines(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NewgroundsInfoLayer::onNewgrounds(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NewgroundsInfoLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NewgroundsInfoLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void NewgroundsInfoLayer::init() {
-    bool ret = true;
+bool NewgroundsInfoLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,18 +43,18 @@ void NewgroundsInfoLayer::create() {
 }
 
 void NewgroundsInfoLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NewgroundsInfoLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NewgroundsInfoLayer::onArtists(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void NewgroundsInfoLayer::onChanges(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

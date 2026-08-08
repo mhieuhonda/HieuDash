@@ -5,26 +5,18 @@ GameEffectsManager::~GameEffectsManager() {
     this->cleanup();
 }
 
-GameEffectsManager::~GameEffectsManager() {
-    this->cleanup();
-}
-
-GameEffectsManager::~GameEffectsManager() {
-    this->cleanup();
-}
-
 void GameEffectsManager::scaleParticle(cocos2d::CCParticleSystemQuad*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GameEffectsManager::addParticleEffect(cocos2d::CCParticleSystemQuad*, int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GameEffectsManager::init(PlayLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

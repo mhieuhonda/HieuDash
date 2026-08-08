@@ -5,117 +5,107 @@ EditLevelLayer::~EditLevelLayer() {
     this->cleanup();
 }
 
-EditLevelLayer::~EditLevelLayer() {
-    this->cleanup();
-}
-
-EditLevelLayer::~EditLevelLayer() {
-    this->cleanup();
-}
-
 void EditLevelLayer::onLevelInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onMoveToTop() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onSetFolder(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::confirmClone(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onGuidelines(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::confirmDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void EditLevelLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onLevelOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::setupLevelInfo() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EditLevelLayer::updateDescText(char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void EditLevelLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::closeTextInputs() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::verifyLevelName() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::confirmMoveToTop(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::setIDPopupClosed(SetIDPopup*, int) {
-    // TODO: Set m_iDPopupClosed
+    // Setter operation - stub
 }
 
 void EditLevelLayer::onLevelLeaderboard(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void EditLevelLayer::onUpdateDescription(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void EditLevelLayer::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void EditLevelLayer::init(GJGameLevel*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void EditLevelLayer::scene(GJGameLevel*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::create(GJGameLevel*) {
@@ -129,46 +119,46 @@ void EditLevelLayer::create(GJGameLevel*) {
 }
 
 void EditLevelLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onEdit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onHelp(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EditLevelLayer::onTest(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onClone() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onShare(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EditLevelLayer::onDelete() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void EditLevelLayer::playStep2() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EditLevelLayer::playStep3() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

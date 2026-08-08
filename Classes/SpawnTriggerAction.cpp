@@ -11,11 +11,11 @@ SpawnTriggerAction* SpawnTriggerAction::create() {
     return nullptr;
 }
 
-void SpawnTriggerAction::isFinished() {
-    // TODO: Implement
+bool SpawnTriggerAction::isFinished() {
+    return false;
 }
 
 void SpawnTriggerAction::step(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

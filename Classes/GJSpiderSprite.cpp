@@ -5,18 +5,10 @@ GJSpiderSprite::~GJSpiderSprite() {
     this->cleanup();
 }
 
-GJSpiderSprite::~GJSpiderSprite() {
-    this->cleanup();
-}
-
-GJSpiderSprite::~GJSpiderSprite() {
-    this->cleanup();
-}
-
 void GJSpiderSprite::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

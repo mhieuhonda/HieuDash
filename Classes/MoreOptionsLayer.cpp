@@ -5,94 +5,86 @@ MoreOptionsLayer::~MoreOptionsLayer() {
     this->cleanup();
 }
 
-MoreOptionsLayer::~MoreOptionsLayer() {
-    this->cleanup();
-}
-
-MoreOptionsLayer::~MoreOptionsLayer() {
-    this->cleanup();
-}
-
 void MoreOptionsLayer::onGPSignIn(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onParental(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onFMODDebug(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onGPSignOut(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MoreOptionsLayer::countForPage(int) {
-    // TODO: Implement
+int MoreOptionsLayer::countForPage(int) {
+    return 0;
 }
 
 void MoreOptionsLayer::layerForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::nextPosition(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onKeybindings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onSongBrowser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::objectsForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::offsetToNextPage() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::googlePlaySignedIn() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MoreOptionsLayer::incrementCountForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::dropDownLayerWillClose(GJDropDownLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MoreOptionsLayer::init() {
+bool MoreOptionsLayer::init() {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -107,42 +99,42 @@ void MoreOptionsLayer::create() {
 }
 
 void MoreOptionsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::infoKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::pageKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::layerKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::toggleGP() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreOptionsLayer::addToggle(char const*, char const*, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void MoreOptionsLayer::objectKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

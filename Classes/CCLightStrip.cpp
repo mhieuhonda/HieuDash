@@ -5,27 +5,18 @@ CCLightStrip::~CCLightStrip() {
     this->cleanup();
 }
 
-CCLightStrip::~CCLightStrip() {
-    this->cleanup();
-}
-
-CCLightStrip::~CCLightStrip() {
-    this->cleanup();
-}
-
 void CCLightStrip::updateTweenAction(float, char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CCLightStrip::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void CCLightStrip::init(float, float, float, float, float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

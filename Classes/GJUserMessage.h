@@ -4,11 +4,11 @@
 
 #include "cocos2d.h"
 
-class GJUserMessage {
+class GJUserMessage : public cocos2d::CCNode {
 public:
     virtual ~GJUserMessage();
 
-    void init();
+    bool init();
     void create(cocos2d::CCDictionary*);
     void create();
 

@@ -5,54 +5,46 @@ SetupShakePopup::~SetupShakePopup() {
     this->cleanup();
 }
 
-SetupShakePopup::~SetupShakePopup() {
-    this->cleanup();
-}
-
-SetupShakePopup::~SetupShakePopup() {
-    this->cleanup();
-}
-
 void SetupShakePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShakePopup::updateShake() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShakePopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShakePopup::updateDurLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShakePopup::updateDuration() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShakePopup::updateInterval() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShakePopup::updateShakeLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShakePopup::updateIntervalLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupShakePopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupShakePopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -67,6 +59,6 @@ void SetupShakePopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupShakePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

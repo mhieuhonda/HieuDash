@@ -5,26 +5,18 @@ SetupEnterTriggerPopup::~SetupEnterTriggerPopup() {
     this->cleanup();
 }
 
-SetupEnterTriggerPopup::~SetupEnterTriggerPopup() {
-    this->cleanup();
-}
-
-SetupEnterTriggerPopup::~SetupEnterTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupEnterTriggerPopup::onEnterType(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterTriggerPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterTriggerPopup::init(EnterEffectObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

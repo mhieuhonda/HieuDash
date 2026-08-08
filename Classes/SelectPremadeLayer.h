@@ -4,13 +4,13 @@
 
 #include "cocos2d.h"
 
-class SelectPremadeLayer {
+class SelectPremadeLayer : public cocos2d::CCLayer {
 public:
     virtual ~SelectPremadeLayer();
 
     void keyBackClicked();
     void onSelectPremade(cocos2d::CCObject*);
-    void init();
+    bool init();
     void create();
     void onClose(cocos2d::CCObject*);
 

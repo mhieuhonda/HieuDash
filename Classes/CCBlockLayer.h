@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class CCBlockLayer {
+class CCBlockLayer : public cocos2d::CCLayer {
 public:
     virtual ~CCBlockLayer();
 
@@ -22,7 +22,7 @@ public:
     void incrementForcePrio();
     void registerWithTouchDispatcher();
     void draw();
-    void init();
+    bool init();
     void create();
     void enableUI();
     void disableUI();

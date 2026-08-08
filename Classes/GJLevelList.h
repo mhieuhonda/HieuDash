@@ -16,11 +16,11 @@ public:
     void orderForLevel(int);
     void addLevelToList(GJGameLevel*);
     void completedLevels();
-    void createWithCoder(DS_Dictionary*);
+    GJLevelList* createWithCoder(DS_Dictionary*);
     void encodeWithCoder(DS_Dictionary*);
     void parseListLevels(std::string);
     void reorderLevelStep(int, bool);
-    void hasMatchingLevels(GJLevelList*);
+    bool hasMatchingLevels(GJLevelList*);
     void getListLevelsArray(cocos2d::CCArray*);
     void updateLevelsString();
     void duplicateListLevels(GJLevelList*);
@@ -28,10 +28,10 @@ public:
     void removeLevelFromList(int);
     void frameForListDifficulty(int, DifficultyIconType);
     void getUnpackedDescription();
-    void init() override;
+    bool init() override;
     void create(cocos2d::CCDictionary*);
     void create();
-    void canEncode();
+    bool canEncode();
 
 };
 

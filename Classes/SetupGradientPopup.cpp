@@ -5,58 +5,50 @@ SetupGradientPopup::~SetupGradientPopup() {
     this->cleanup();
 }
 
-SetupGradientPopup::~SetupGradientPopup() {
-    this->cleanup();
-}
-
-SetupGradientPopup::~SetupGradientPopup() {
-    this->cleanup();
-}
-
 void SetupGradientPopup::onBlending(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGradientPopup::onPlusButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGradientPopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGradientPopup::updateBlending() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGradientPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGradientPopup::updateToggleItem(int, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGradientPopup::updateBlendingLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGradientPopup::updateZLayerButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGradientPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGradientPopup::updateGradientLabels(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGradientPopup::init(GradientTriggerObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -71,6 +63,6 @@ void SetupGradientPopup::create(GradientTriggerObject*, cocos2d::CCArray*) {
 }
 
 void SetupGradientPopup::onZLayer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

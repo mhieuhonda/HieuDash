@@ -2,17 +2,11 @@
 #include "GJScoreCell.h"
 
 GJScoreCell::GJScoreCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 GJScoreCell::GJScoreCell(char const*, float, float) {
-}
-
-GJScoreCell::~GJScoreCell() {
-    this->cleanup();
-}
-
-GJScoreCell::~GJScoreCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 GJScoreCell::~GJScoreCell() {
@@ -20,43 +14,41 @@ GJScoreCell::~GJScoreCell() {
 }
 
 void GJScoreCell::onMoreLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScoreCell::loadFromScore(GJUserScore*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJScoreCell::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScoreCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJScoreCell::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScoreCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GJScoreCell::init() {
-    bool ret = true;
+bool GJScoreCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJScoreCell::onBan(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJScoreCell::onCheck(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

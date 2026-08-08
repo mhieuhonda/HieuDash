@@ -2,11 +2,11 @@
 #ifndef CCMOVECNODE_H_
 #define CCMOVECNODE_H_
 
-class CCMoveCNode {
+class CCMoveCNode : public cocos2d::CCNode {
 public:
     virtual ~CCMoveCNode();
 
-    void init();
+    bool init();
     void reset();
     void create();
 

@@ -2,14 +2,14 @@
 #include "GJRotationControlDelegate.h"
 
 void GJRotationControlDelegate::angleChanged(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRotationControlDelegate::angleChangeBegin() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJRotationControlDelegate::angleChangeEnded() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,82 +5,74 @@ SetupCollisionTriggerPopup::~SetupCollisionTriggerPopup() {
     this->cleanup();
 }
 
-SetupCollisionTriggerPopup::~SetupCollisionTriggerPopup() {
-    this->cleanup();
-}
-
-SetupCollisionTriggerPopup::~SetupCollisionTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupCollisionTriggerPopup::onTargetP1(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::onTargetP2(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::onTargetPP(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::updateItemID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCollisionTriggerPopup::onEnableGroup(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::onItemIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::updateItemID2() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCollisionTriggerPopup::onItemID2Arrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCollisionTriggerPopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::onActivateOnExit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCollisionTriggerPopup::updateItemIDInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCollisionTriggerPopup::updateItemID2InputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCollisionTriggerPopup::updateTargetIDInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCollisionTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -95,6 +87,6 @@ void SetupCollisionTriggerPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupCollisionTriggerPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

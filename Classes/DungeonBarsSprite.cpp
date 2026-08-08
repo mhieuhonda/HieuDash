@@ -5,27 +5,19 @@ DungeonBarsSprite::~DungeonBarsSprite() {
     this->cleanup();
 }
 
-DungeonBarsSprite::~DungeonBarsSprite() {
-    this->cleanup();
-}
-
-DungeonBarsSprite::~DungeonBarsSprite() {
-    this->cleanup();
-}
-
 void DungeonBarsSprite::animateOutBars() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void DungeonBarsSprite::init() {
-    bool ret = true;
+bool DungeonBarsSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void DungeonBarsSprite::visit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DungeonBarsSprite::create() {

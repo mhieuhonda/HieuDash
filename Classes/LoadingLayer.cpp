@@ -5,42 +5,31 @@ LoadingLayer::~LoadingLayer() {
     this->cleanup();
 }
 
-LoadingLayer::~LoadingLayer() {
-    this->cleanup();
-}
-
-LoadingLayer::~LoadingLayer() {
-    this->cleanup();
-}
-
 void LoadingLayer::loadAssets() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LoadingLayer::updateProgress(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LoadingLayer::loadingFinished() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void LoadingLayer::getLoadingString() {
-    // Load from file/storage
-    // TODO: Implement loading
+std::string LoadingLayer::getLoadingString() {
+    return "";
 }
 
 void LoadingLayer::init(bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LoadingLayer::scene(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LoadingLayer::create(bool) {

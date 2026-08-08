@@ -5,67 +5,59 @@ SetupEnterEffectPopup::~SetupEnterEffectPopup() {
     this->cleanup();
 }
 
-SetupEnterEffectPopup::~SetupEnterEffectPopup() {
-    this->cleanup();
-}
-
-SetupEnterEffectPopup::~SetupEnterEffectPopup() {
-    this->cleanup();
-}
-
 void SetupEnterEffectPopup::onEnterType(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::hsvPopupClosed(HSVWidgetPopup*, cocos2d::_ccHSVValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::updateHSVButton() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupEnterEffectPopup::updateInputNode(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupEnterEffectPopup::updateInputValue(int, float&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupEnterEffectPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::onNextFreeEnterChannel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::onNextFreeEnterEffectID(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::triggerSliderValueFromValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::triggerValueFromSliderValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::init(EnterEffectObject*, cocos2d::CCArray*, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupEnterEffectPopup::onHSV(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupEnterEffectPopup::create(EnterEffectObject*, cocos2d::CCArray*, int) {
@@ -79,6 +71,6 @@ void SetupEnterEffectPopup::create(EnterEffectObject*, cocos2d::CCArray*, int) {
 }
 
 void SetupEnterEffectPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,34 +5,26 @@ GJMapPack::~GJMapPack() {
     this->cleanup();
 }
 
-GJMapPack::~GJMapPack() {
-    this->cleanup();
-}
-
-GJMapPack::~GJMapPack() {
-    this->cleanup();
-}
-
 void GJMapPack::completedMaps() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapPack::parsePackColors(std::string, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJMapPack::parsePackLevels(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJMapPack::hasCompletedMapPack() {
-    // TODO: Implement
+bool GJMapPack::hasCompletedMapPack() {
+    return false;
 }
 
-void GJMapPack::init() {
-    bool ret = true;
+bool GJMapPack::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -57,6 +49,6 @@ void GJMapPack::create() {
 }
 
 void GJMapPack::totalMaps() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

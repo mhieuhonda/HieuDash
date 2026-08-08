@@ -5,26 +5,18 @@ ChallengeNode::~ChallengeNode() {
     this->cleanup();
 }
 
-ChallengeNode::~ChallengeNode() {
-    this->cleanup();
-}
-
-ChallengeNode::~ChallengeNode() {
-    this->cleanup();
-}
-
 void ChallengeNode::onClaimReward(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void ChallengeNode::updateTimeLabel(std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ChallengeNode::init(GJChallengeItem*, ChallengesPage*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

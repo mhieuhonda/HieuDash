@@ -5,42 +5,34 @@ CCMenuItemToggler::~CCMenuItemToggler() {
     this->cleanup();
 }
 
-CCMenuItemToggler::~CCMenuItemToggler() {
-    this->cleanup();
-}
-
-CCMenuItemToggler::~CCMenuItemToggler() {
-    this->cleanup();
-}
-
 void CCMenuItemToggler::activeItem() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemToggler::setEnabled(bool) {
-    // TODO: Set m_enabled
+    // Setter operation - stub
 }
 
 void CCMenuItemToggler::unselected() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemToggler::normalTouch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemToggler::setSizeMult(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCMenuItemToggler::selectedTouch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemToggler::init(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCObject*, void (cocos2d::CCObject::*)(cocos2d::CCObject*)) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -55,14 +47,14 @@ void CCMenuItemToggler::create(cocos2d::CCNode*, cocos2d::CCNode*, cocos2d::CCOb
 }
 
 void CCMenuItemToggler::toggle(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemToggler::activate() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMenuItemToggler::selected() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

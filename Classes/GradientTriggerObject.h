@@ -5,13 +5,13 @@
 #include <string>
 #include <vector>
 
-class GradientTriggerObject {
+class GradientTriggerObject : public cocos2d::CCNode {
 public:
     virtual ~GradientTriggerObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
-    void init();
+    bool init();
     void create();
 
 protected:

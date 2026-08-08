@@ -5,22 +5,14 @@ SetupAudioLineGuidePopup::~SetupAudioLineGuidePopup() {
     this->cleanup();
 }
 
-SetupAudioLineGuidePopup::~SetupAudioLineGuidePopup() {
-    this->cleanup();
-}
-
-SetupAudioLineGuidePopup::~SetupAudioLineGuidePopup() {
-    this->cleanup();
-}
-
 void SetupAudioLineGuidePopup::selectSettingClosed(SelectSettingLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAudioLineGuidePopup::init(AudioLineGuideGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void SetupAudioLineGuidePopup::create(AudioLineGuideGameObject*, cocos2d::CCArra
 }
 
 void SetupAudioLineGuidePopup::onSpeed(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,22 +5,14 @@ GJStoreItem::~GJStoreItem() {
     this->cleanup();
 }
 
-GJStoreItem::~GJStoreItem() {
-    this->cleanup();
-}
-
-GJStoreItem::~GJStoreItem() {
-    this->cleanup();
-}
-
-void GJStoreItem::getCurrencyKey() {
-    // TODO: Implement
+std::string GJStoreItem::getCurrencyKey() {
+    return "";
 }
 
 void GJStoreItem::init(int, int, int, int, ShopType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

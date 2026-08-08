@@ -5,58 +5,50 @@ MoreVideoOptionsLayer::~MoreVideoOptionsLayer() {
     this->cleanup();
 }
 
-MoreVideoOptionsLayer::~MoreVideoOptionsLayer() {
-    this->cleanup();
-}
-
-MoreVideoOptionsLayer::~MoreVideoOptionsLayer() {
-    this->cleanup();
-}
-
 void MoreVideoOptionsLayer::onApplyFPS(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MoreVideoOptionsLayer::countForPage(int) {
-    // TODO: Implement
+int MoreVideoOptionsLayer::countForPage(int) {
+    return 0;
 }
 
 void MoreVideoOptionsLayer::layerForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::nextPosition(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::objectsForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::updateFPSButtons() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MoreVideoOptionsLayer::incrementCountForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MoreVideoOptionsLayer::init() {
-    bool ret = true;
+bool MoreVideoOptionsLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -71,38 +63,38 @@ void MoreVideoOptionsLayer::create() {
 }
 
 void MoreVideoOptionsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::infoKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::pageKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::layerKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::onToggle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MoreVideoOptionsLayer::addToggle(char const*, char const*, char const*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void MoreVideoOptionsLayer::objectKey(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

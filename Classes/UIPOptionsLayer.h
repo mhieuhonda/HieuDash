@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class UIPOptionsLayer {
+class UIPOptionsLayer : public cocos2d::CCLayer {
 public:
     virtual ~UIPOptionsLayer();
 
@@ -15,7 +15,7 @@ public:
     void valueDidChange(int, float);
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void create();
     void onClose(cocos2d::CCObject*);
     void onReset(cocos2d::CCObject*);

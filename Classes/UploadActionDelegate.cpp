@@ -2,12 +2,10 @@
 #include "UploadActionDelegate.h"
 
 void UploadActionDelegate::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void UploadActionDelegate::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

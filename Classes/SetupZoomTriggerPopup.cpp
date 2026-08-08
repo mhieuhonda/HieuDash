@@ -5,22 +5,14 @@ SetupZoomTriggerPopup::~SetupZoomTriggerPopup() {
     this->cleanup();
 }
 
-SetupZoomTriggerPopup::~SetupZoomTriggerPopup() {
-    this->cleanup();
-}
-
-SetupZoomTriggerPopup::~SetupZoomTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupZoomTriggerPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupZoomTriggerPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void SetupZoomTriggerPopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupZoomTriggerPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

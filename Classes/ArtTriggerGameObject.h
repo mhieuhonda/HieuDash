@@ -9,7 +9,7 @@ class ArtTriggerGameObject {
 public:
     virtual ~ArtTriggerGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void triggerObject(GJBaseGameLayer*, int, std::vector<int> const*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init(char const*);

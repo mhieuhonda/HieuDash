@@ -5,34 +5,26 @@ UploadActionPopup::~UploadActionPopup() {
     this->cleanup();
 }
 
-UploadActionPopup::~UploadActionPopup() {
-    this->cleanup();
-}
-
-UploadActionPopup::~UploadActionPopup() {
-    this->cleanup();
-}
-
 void UploadActionPopup::closePopup() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadActionPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadActionPopup::showFailMessage(std::string) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void UploadActionPopup::showSuccessMessage(std::string) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void UploadActionPopup::init(UploadPopupDelegate*, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,6 +39,6 @@ void UploadActionPopup::create(UploadPopupDelegate*, std::string) {
 }
 
 void UploadActionPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

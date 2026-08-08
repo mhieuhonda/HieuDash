@@ -13,45 +13,34 @@ CustomSFXCell::~CustomSFXCell() {
     this->cleanup();
 }
 
-CustomSFXCell::~CustomSFXCell() {
-    this->cleanup();
-}
-
-CustomSFXCell::~CustomSFXCell() {
-    this->cleanup();
-}
-
-void CustomSFXCell::shouldReload() {
-    // Load from file/storage
-    // TODO: Implement loading
+bool CustomSFXCell::shouldReload() {
+    return false;
 }
 
 void CustomSFXCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomSFXCell::getActiveSFXID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSFXCell::loadFromObject(SFXInfoObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CustomSFXCell::sfxObjectSelected(SFXInfoObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSFXCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void CustomSFXCell::init() {
-    bool ret = true;
+bool CustomSFXCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

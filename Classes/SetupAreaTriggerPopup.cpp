@@ -5,18 +5,10 @@ SetupAreaTriggerPopup::~SetupAreaTriggerPopup() {
     this->cleanup();
 }
 
-SetupAreaTriggerPopup::~SetupAreaTriggerPopup() {
-    this->cleanup();
-}
-
-SetupAreaTriggerPopup::~SetupAreaTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupAreaTriggerPopup::init(EnterEffectObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

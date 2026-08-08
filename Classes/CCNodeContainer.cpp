@@ -5,23 +5,15 @@ CCNodeContainer::~CCNodeContainer() {
     this->cleanup();
 }
 
-CCNodeContainer::~CCNodeContainer() {
-    this->cleanup();
-}
-
-CCNodeContainer::~CCNodeContainer() {
-    this->cleanup();
-}
-
-void CCNodeContainer::init() {
-    bool ret = true;
+bool CCNodeContainer::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CCNodeContainer::visit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCNodeContainer::create() {

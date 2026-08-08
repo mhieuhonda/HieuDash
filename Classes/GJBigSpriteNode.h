@@ -2,11 +2,11 @@
 #ifndef GJBIGSPRITENODE_H_
 #define GJBIGSPRITENODE_H_
 
-class GJBigSpriteNode {
+class GJBigSpriteNode : public cocos2d::CCNode {
 public:
     virtual ~GJBigSpriteNode();
 
-    void init();
+    bool init();
     void create();
 
 };

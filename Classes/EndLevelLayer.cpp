@@ -5,103 +5,95 @@ EndLevelLayer::~EndLevelLayer() {
     this->cleanup();
 }
 
-EndLevelLayer::~EndLevelLayer() {
-    this->cleanup();
-}
-
-EndLevelLayer::~EndLevelLayer() {
-    this->cleanup();
-}
-
 void EndLevelLayer::getEndText() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void EndLevelLayer::onEveryplay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EndLevelLayer::onHideLayer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
-void EndLevelLayer::getCoinString() {
-    // TODO: Implement
+std::string EndLevelLayer::getCoinString() {
+    return "";
 }
 
 void EndLevelLayer::playEndEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EndLevelLayer::tryShowBanner(float) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void EndLevelLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::playCoinEffect(float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EndLevelLayer::playStarEffect(float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EndLevelLayer::coinEnterFinished(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::enterAnimFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::playDiamondEffect(float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EndLevelLayer::starEnterFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::coinEnterFinishedO(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::onLevelLeaderboard(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::playCurrencyEffect(float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EndLevelLayer::onRestartCheckpoint(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::diamondEnterFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::currencyEnterFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void EndLevelLayer::init(PlayLayer*) {
+bool EndLevelLayer::init(PlayLayer*) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void EndLevelLayer::keyUp(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::create(PlayLayer*) {
@@ -115,26 +107,26 @@ void EndLevelLayer::create(PlayLayer*) {
 }
 
 void EndLevelLayer::goEdit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::onEdit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::onMenu(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void EndLevelLayer::onReplay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void EndLevelLayer::showLayer(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 

@@ -5,34 +5,26 @@ ShareLevelSettingsLayer::~ShareLevelSettingsLayer() {
     this->cleanup();
 }
 
-ShareLevelSettingsLayer::~ShareLevelSettingsLayer() {
-    this->cleanup();
-}
-
-ShareLevelSettingsLayer::~ShareLevelSettingsLayer() {
-    this->cleanup();
-}
-
 void ShareLevelSettingsLayer::onUnlisted(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelSettingsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelSettingsLayer::updateSettingsState() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ShareLevelSettingsLayer::onUnlistedFriendsOnly(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ShareLevelSettingsLayer::init(GJGameLevel*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,6 +39,6 @@ void ShareLevelSettingsLayer::create(GJGameLevel*) {
 }
 
 void ShareLevelSettingsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

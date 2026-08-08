@@ -5,40 +5,32 @@ AccountHelpLayer::~AccountHelpLayer() {
     this->cleanup();
 }
 
-AccountHelpLayer::~AccountHelpLayer() {
-    this->cleanup();
-}
-
-AccountHelpLayer::~AccountHelpLayer() {
-    this->cleanup();
-}
-
 void AccountHelpLayer::updatePage() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void AccountHelpLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AccountHelpLayer::layerHidden() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::verifyUnlink() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::onAccountManagement(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::accountStatusChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::create() {
@@ -52,18 +44,18 @@ void AccountHelpLayer::create() {
 }
 
 void AccountHelpLayer::doUnlink() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::onUnlink(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::exitLayer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AccountHelpLayer::onReLogin(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

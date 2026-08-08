@@ -5,54 +5,46 @@ SetupTouchTogglePopup::~SetupTouchTogglePopup() {
     this->cleanup();
 }
 
-SetupTouchTogglePopup::~SetupTouchTogglePopup() {
-    this->cleanup();
-}
-
-SetupTouchTogglePopup::~SetupTouchTogglePopup() {
-    this->cleanup();
-}
-
 void SetupTouchTogglePopup::onHoldMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTouchTogglePopup::onTouchMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTouchTogglePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTouchTogglePopup::onControlMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTouchTogglePopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTouchTogglePopup::onDualTouchMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTouchTogglePopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTouchTogglePopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTouchTogglePopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupTouchTogglePopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -67,6 +59,6 @@ void SetupTouchTogglePopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupTouchTogglePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

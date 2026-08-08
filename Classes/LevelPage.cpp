@@ -5,70 +5,62 @@ LevelPage::~LevelPage() {
     this->cleanup();
 }
 
-LevelPage::~LevelPage() {
-    this->cleanup();
-}
-
-LevelPage::~LevelPage() {
-    this->cleanup();
-}
-
 void LevelPage::onTheTower(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::onMoreGames(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::onSecretDoor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::addSecretCoin() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void LevelPage::addSecretDoor() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void LevelPage::playCoinEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelPage::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::updateDynamicPage(GJGameLevel*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelPage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void LevelPage::init(GJGameLevel*) {
+bool LevelPage::init(GJGameLevel*) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -83,18 +75,18 @@ void LevelPage::create(GJGameLevel*) {
 }
 
 void LevelPage::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelPage::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelPage::playStep2() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelPage::playStep3() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

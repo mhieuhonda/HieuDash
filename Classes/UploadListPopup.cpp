@@ -5,41 +5,31 @@ UploadListPopup::~UploadListPopup() {
     this->cleanup();
 }
 
-UploadListPopup::~UploadListPopup() {
-    this->cleanup();
-}
-
-UploadListPopup::~UploadListPopup() {
-    this->cleanup();
-}
-
 void UploadListPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadListPopup::onReturnToList(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadListPopup::listUploadFailed(GJLevelList*, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void UploadListPopup::listUploadFinished(GJLevelList*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void UploadListPopup::init(GJLevelList*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void UploadListPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void UploadListPopup::create(GJLevelList*) {
@@ -53,10 +43,10 @@ void UploadListPopup::create(GJLevelList*) {
 }
 
 void UploadListPopup::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadListPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

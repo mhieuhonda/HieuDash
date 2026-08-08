@@ -5,18 +5,10 @@ GJLocalScore::~GJLocalScore() {
     this->cleanup();
 }
 
-GJLocalScore::~GJLocalScore() {
-    this->cleanup();
-}
-
-GJLocalScore::~GJLocalScore() {
-    this->cleanup();
-}
-
 void GJLocalScore::init(int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

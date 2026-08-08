@@ -5,16 +5,16 @@
 #include "cocos2d.h"
 #include <string>
 
-class GJAccountManager {
+class GJAccountManager : public GManager {
 public:
     virtual ~GJAccountManager();
 
     void dataLoaded(DS_Dictionary*);
     void firstSetup();
     void handleItND(cocos2d::CCNode*, void*);
-    void isDLActive(char const*);
+    bool isDLActive(char const*);
     void getDLObject(char const*);
-    void sharedState();
+    GJAccountManager* sharedState();
     void syncAccount(std::string);
     void encodeDataTo(DS_Dictionary*);
     void loginAccount(std::string, std::string);
@@ -39,8 +39,15 @@ public:
     void onProcessHttpRequestCompleted(cocos2d::extension::CCHttpClient*, cocos2d::extension::CCHttpResponse*);
     void onGetAccountBackupURLCompleted(std::string, std::string);
     void onUpdateAccountSettingsCompleted(std::string, std::string);
-    void init();
+    bool init();
     void handleIt(bool, std::string, std::string, GJHttpType);
+
+protected:
+    int m_accountID;
+    std::string m_playerName;
+    std::string m_shaPassword;
+    std::string m_udid;
+    int m_userID;
 
 };
 

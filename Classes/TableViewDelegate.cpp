@@ -2,23 +2,22 @@
 #include "TableViewDelegate.h"
 
 void TableViewDelegate::willTweenToIndexPath(CCIndexPath&, TableViewCell*, TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableViewDelegate::didEndTweenToIndexPath(CCIndexPath&, TableView*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TableViewDelegate::TableViewDidDisplayCellForRowAtIndexPath(CCIndexPath&, TableViewCell*, TableView*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void TableViewDelegate::TableViewWillReloadCellForRowAtIndexPath(CCIndexPath&, TableViewCell*, TableView*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void TableViewDelegate::TableViewWillDisplayCellForRowAtIndexPath(CCIndexPath&, TableViewCell*, TableView*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 

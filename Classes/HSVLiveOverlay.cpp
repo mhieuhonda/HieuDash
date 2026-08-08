@@ -5,51 +5,43 @@ HSVLiveOverlay::~HSVLiveOverlay() {
     this->cleanup();
 }
 
-HSVLiveOverlay::~HSVLiveOverlay() {
-    this->cleanup();
-}
-
-HSVLiveOverlay::~HSVLiveOverlay() {
-    this->cleanup();
-}
-
 void HSVLiveOverlay::hsvChanged(ConfigureHSVWidget*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HSVLiveOverlay::onSelectTab(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HSVLiveOverlay::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HSVLiveOverlay::toggleControls(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void HSVLiveOverlay::createHSVWidget(int) {
-    // TODO: Implement
+HSVLiveOverlay* HSVLiveOverlay::createHSVWidget(int) {
+    return nullptr;
 }
 
 void HSVLiveOverlay::closeColorSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HSVLiveOverlay::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void HSVLiveOverlay::init(GameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void HSVLiveOverlay::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void HSVLiveOverlay::create(GameObject*, cocos2d::CCArray*) {

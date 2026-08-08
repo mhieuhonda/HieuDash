@@ -2,6 +2,6 @@
 #include "GJAccountDelegate.h"
 
 void GJAccountDelegate::accountStatusChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

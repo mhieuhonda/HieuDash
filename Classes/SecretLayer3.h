@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class SecretLayer3 {
+class SecretLayer3 : public cocos2d::CCLayer {
 public:
     virtual ~SecretLayer3();
 
@@ -21,7 +21,7 @@ public:
     void firstInteractionStep2();
     void firstInteractionStep3();
     void firstInteractionStep4();
-    void init();
+    bool init();
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

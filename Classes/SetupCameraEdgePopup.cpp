@@ -5,46 +5,38 @@ SetupCameraEdgePopup::~SetupCameraEdgePopup() {
     this->cleanup();
 }
 
-SetupCameraEdgePopup::~SetupCameraEdgePopup() {
-    this->cleanup();
-}
-
-SetupCameraEdgePopup::~SetupCameraEdgePopup() {
-    this->cleanup();
-}
-
 void SetupCameraEdgePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraEdgePopup::onCameraEdge(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraEdgePopup::onUnlockEdge(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void SetupCameraEdgePopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraEdgePopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraEdgePopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupCameraEdgePopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupCameraEdgePopup::init(CameraTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -59,6 +51,6 @@ void SetupCameraEdgePopup::create(CameraTriggerGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupCameraEdgePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

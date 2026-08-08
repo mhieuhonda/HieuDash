@@ -5,31 +5,23 @@ SetupAudioTriggerPopup::~SetupAudioTriggerPopup() {
     this->cleanup();
 }
 
-SetupAudioTriggerPopup::~SetupAudioTriggerPopup() {
-    this->cleanup();
-}
-
-SetupAudioTriggerPopup::~SetupAudioTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupAudioTriggerPopup::onProxMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAudioTriggerPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAudioTriggerPopup::addTimeControls(int, float) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupAudioTriggerPopup::addProxVolControls(int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void SetupAudioTriggerPopup::updateSpecialGroup() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

@@ -4,11 +4,11 @@
 
 #include "cocos2d.h"
 
-class GJFriendRequest {
+class GJFriendRequest : public cocos2d::CCNode {
 public:
     virtual ~GJFriendRequest();
 
-    void init();
+    bool init();
     void create(cocos2d::CCDictionary*);
     void create();
 

@@ -10,7 +10,7 @@ public:
     virtual ~EnterEffectObject();
 
     void customSetup();
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void resetEnterAnimValues();
     void init(char const*);

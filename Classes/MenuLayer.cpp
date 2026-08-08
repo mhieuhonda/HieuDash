@@ -15,182 +15,174 @@ MenuLayer::~MenuLayer() {
     this->cleanup();
 }
 
-MenuLayer::~MenuLayer() {
-    this->cleanup();
-}
-
-MenuLayer::~MenuLayer() {
-    this->cleanup();
-}
-
 void MenuLayer::onFacebook(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onEveryplay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MenuLayer::onMoreGames(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onMyProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::openOptions(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onFreeLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onGameCenter(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onNewgrounds(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onFullVersion(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onAchievements(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::showGCQuestion() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void MenuLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::firstNetworkTest() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onOptionsInstant() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onGooglePlayGames(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MenuLayer::showMeltdownPromo() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void MenuLayer::googlePlaySignedIn() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MenuLayer::videoOptionsClosed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::videoOptionsOpened() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::updateUserProfileButton() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MenuLayer::syncPlatformAchievements(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void MenuLayer::init() {
+bool MenuLayer::init() {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void MenuLayer::scene(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onPlay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MenuLayer::onQuit(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::endGame() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onDaily(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onStats(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::showTOS() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void MenuLayer::onGarage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onRobTop(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onTwitch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onCreator(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onDiscord(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onTrailer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onTwitter(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::onYouTube(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MenuLayer::tryShowAd(float) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void MenuLayer::willClose() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

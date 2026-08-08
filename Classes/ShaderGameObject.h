@@ -10,7 +10,7 @@ public:
     virtual ~ShaderGameObject();
 
     void customSetup();
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void init(char const*);
     void create(char const*);

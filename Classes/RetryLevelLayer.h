@@ -17,7 +17,7 @@ public:
     void enterAnimFinished();
     void setupLastProgress();
     void rewardedVideoFinished();
-    void shouldOffsetRewardCurrency();
+    bool shouldOffsetRewardCurrency();
     void keyUp(cocos2d::enumKeyCodes, double);
     void create();
     void onMenu(cocos2d::CCObject*);

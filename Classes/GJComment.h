@@ -4,11 +4,11 @@
 
 #include "cocos2d.h"
 
-class GJComment {
+class GJComment : public cocos2d::CCNode {
 public:
     virtual ~GJComment();
 
-    void init();
+    bool init();
     void create(cocos2d::CCDictionary*);
     void create();
 

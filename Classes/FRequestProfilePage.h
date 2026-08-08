@@ -34,7 +34,7 @@ public:
     void onClose(cocos2d::CCObject*);
     void loadPage(int);
     void onUpdate(cocos2d::CCObject*);
-    void isCorrect(char const*);
+    bool isCorrect(char const*);
 
 };
 

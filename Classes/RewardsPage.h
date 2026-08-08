@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class RewardsPage {
+class RewardsPage : public cocos2d::CCLayer {
 public:
     virtual ~RewardsPage();
 
@@ -18,7 +18,7 @@ public:
     void rewardsStatusFailed();
     void rewardsStatusFinished(int);
     void registerWithTouchDispatcher();
-    void init();
+    bool init();
     void show();
     void create();
     void onClose(cocos2d::CCObject*);

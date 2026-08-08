@@ -2,6 +2,6 @@
 #include "GameRateDelegate.h"
 
 void GameRateDelegate::updateRate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 

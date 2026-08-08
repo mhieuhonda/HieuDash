@@ -5,30 +5,22 @@ BitmapFontCache::~BitmapFontCache() {
     this->cleanup();
 }
 
-BitmapFontCache::~BitmapFontCache() {
-    this->cleanup();
-}
-
-BitmapFontCache::~BitmapFontCache() {
-    this->cleanup();
-}
-
 void BitmapFontCache::sharedFontCache() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BitmapFontCache::fontWithConfigFile(char const*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void BitmapFontCache::purgeSharedFontCache() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void BitmapFontCache::init() {
-    bool ret = true;
+bool BitmapFontCache::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

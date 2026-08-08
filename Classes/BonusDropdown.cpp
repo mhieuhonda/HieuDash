@@ -5,23 +5,15 @@ BonusDropdown::~BonusDropdown() {
     this->cleanup();
 }
 
-BonusDropdown::~BonusDropdown() {
-    this->cleanup();
-}
-
-BonusDropdown::~BonusDropdown() {
-    this->cleanup();
-}
-
 void BonusDropdown::init(std::string, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void BonusDropdown::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void BonusDropdown::create(std::string, int) {

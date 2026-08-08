@@ -2,14 +2,14 @@
 #include "CustomSFXDelegate.h"
 
 void CustomSFXDelegate::getActiveSFXID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CustomSFXDelegate::overridePlaySFX(SFXInfoObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CustomSFXDelegate::sfxObjectSelected(SFXInfoObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

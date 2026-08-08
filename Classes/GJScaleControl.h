@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <unordered_map>
 
-class GJScaleControl {
+class GJScaleControl : public cocos2d::CCNode {
 public:
     virtual ~GJScaleControl();
 
@@ -24,7 +24,7 @@ public:
     void valueFromScale(float);
     void ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*);
     void onToggleLockScale(cocos2d::CCObject*);
-    void init();
+    bool init();
     void create();
 
 };

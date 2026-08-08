@@ -5,7 +5,7 @@
 #include "cocos2d.h"
 #include <string>
 
-class SecretLayer5 {
+class SecretLayer5 : public cocos2d::CCLayer {
 public:
     virtual ~SecretLayer5();
 
@@ -37,7 +37,7 @@ public:
     void updateTweenActionInt(float, int);
     void onlineRewardStatusFailed();
     void onlineRewardStatusFinished(std::string);
-    void init();
+    bool init();
     void scene();
     void create();
     void onBack(cocos2d::CCObject*);

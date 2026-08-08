@@ -2,17 +2,11 @@
 #include "GameCell.h"
 
 GameCell::GameCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 GameCell::GameCell(char const*, float, float) {
-}
-
-GameCell::~GameCell() {
-    this->cleanup();
-}
-
-GameCell::~GameCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 GameCell::~GameCell() {
@@ -20,27 +14,25 @@ GameCell::~GameCell() {
 }
 
 void GameCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GameCell::loadFromString(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GameCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GameCell::init() {
-    bool ret = true;
+bool GameCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GameCell::onTouch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

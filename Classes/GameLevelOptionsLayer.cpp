@@ -5,22 +5,14 @@ GameLevelOptionsLayer::~GameLevelOptionsLayer() {
     this->cleanup();
 }
 
-GameLevelOptionsLayer::~GameLevelOptionsLayer() {
-    this->cleanup();
-}
-
-GameLevelOptionsLayer::~GameLevelOptionsLayer() {
-    this->cleanup();
-}
-
 void GameLevelOptionsLayer::setupOptions() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GameLevelOptionsLayer::init(GJGameLevel*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -35,6 +27,6 @@ void GameLevelOptionsLayer::create(GJGameLevel*) {
 }
 
 void GameLevelOptionsLayer::didToggle(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

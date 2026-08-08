@@ -2,30 +2,30 @@
 #include "GJShaderState.h"
 
 void GJShaderState::tweenValue(float, float, int, float, int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShaderState::stopTweenAction(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJShaderState::updateTweenAction(float, int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJShaderState::updateTweenActions(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJShaderState::timesyncShaderAction(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShaderState::timesyncShaderActions() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJShaderState::reset() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

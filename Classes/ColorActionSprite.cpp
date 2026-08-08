@@ -5,18 +5,10 @@ ColorActionSprite::~ColorActionSprite() {
     this->cleanup();
 }
 
-ColorActionSprite::~ColorActionSprite() {
-    this->cleanup();
-}
-
-ColorActionSprite::~ColorActionSprite() {
-    this->cleanup();
-}
-
-void ColorActionSprite::init() {
-    bool ret = true;
+bool ColorActionSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

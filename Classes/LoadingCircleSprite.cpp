@@ -5,26 +5,18 @@ LoadingCircleSprite::~LoadingCircleSprite() {
     this->cleanup();
 }
 
-LoadingCircleSprite::~LoadingCircleSprite() {
-    this->cleanup();
-}
-
-LoadingCircleSprite::~LoadingCircleSprite() {
-    this->cleanup();
-}
-
 void LoadingCircleSprite::hideCircle() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LoadingCircleSprite::fadeInCircle(bool, float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LoadingCircleSprite::init(float) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

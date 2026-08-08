@@ -9,9 +9,9 @@ public:
     virtual ~UndoObject();
 
     void setObjects(cocos2d::CCArray*);
-    void createWithArray(cocos2d::CCArray*, UndoCommand);
+    UndoObject* createWithArray(cocos2d::CCArray*, UndoCommand);
     void initWithTransformObjects(cocos2d::CCArray*, UndoCommand);
-    void createWithTransformObjects(cocos2d::CCArray*, UndoCommand);
+    UndoObject* createWithTransformObjects(cocos2d::CCArray*, UndoCommand);
     void init(GameObject*, UndoCommand) override;
     void init(cocos2d::CCArray*, UndoCommand) override;
     void create(GameObject*, UndoCommand);

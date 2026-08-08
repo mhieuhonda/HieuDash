@@ -5,23 +5,15 @@ CCMoveCNode::~CCMoveCNode() {
     this->cleanup();
 }
 
-CCMoveCNode::~CCMoveCNode() {
-    this->cleanup();
-}
-
-CCMoveCNode::~CCMoveCNode() {
-    this->cleanup();
-}
-
-void CCMoveCNode::init() {
-    bool ret = true;
+bool CCMoveCNode::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CCMoveCNode::reset() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCMoveCNode::create() {

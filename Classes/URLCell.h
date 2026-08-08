@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class URLCell {
+class URLCell : public cocos2d::CCNode {
 public:
     URLCell(char const*, float, float);
     URLCell(char const*, float, float);
@@ -14,7 +14,7 @@ public:
     void updateBGColor(int);
     void loadFromObject(CCURLObject*);
     void draw();
-    void init();
+    bool init();
     void onURL(cocos2d::CCObject*);
 
 };

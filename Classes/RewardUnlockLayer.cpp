@@ -5,67 +5,59 @@ RewardUnlockLayer::~RewardUnlockLayer() {
     this->cleanup();
 }
 
-RewardUnlockLayer::~RewardUnlockLayer() {
-    this->cleanup();
-}
-
-RewardUnlockLayer::~RewardUnlockLayer() {
-    this->cleanup();
-}
-
 void RewardUnlockLayer::playDropSound() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void RewardUnlockLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardUnlockLayer::readyToCollect(GJRewardItem*) {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void RewardUnlockLayer::playLabelEffect(int, int, cocos2d::CCSprite*, cocos2d::CCPoint, float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void RewardUnlockLayer::showCloseButton() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void RewardUnlockLayer::currencyWillExit(CurrencyRewardLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardUnlockLayer::playRewardEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void RewardUnlockLayer::connectionTimeout() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardUnlockLayer::showCollectReward(GJRewardItem*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void RewardUnlockLayer::labelEnterFinishedO(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardUnlockLayer::init(int, RewardsPage*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void RewardUnlockLayer::step2() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardUnlockLayer::step3() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RewardUnlockLayer::create(int, RewardsPage*) {
@@ -79,6 +71,6 @@ void RewardUnlockLayer::create(int, RewardsPage*) {
 }
 
 void RewardUnlockLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

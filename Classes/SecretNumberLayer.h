@@ -2,12 +2,12 @@
 #ifndef SECRETNUMBERLAYER_H_
 #define SECRETNUMBERLAYER_H_
 
-class SecretNumberLayer {
+class SecretNumberLayer : public cocos2d::CCLayer {
 public:
     virtual ~SecretNumberLayer();
 
     void playNumberEffect(int);
-    void init();
+    bool init();
     void create();
 
 };

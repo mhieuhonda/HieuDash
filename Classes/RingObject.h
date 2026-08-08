@@ -12,11 +12,11 @@ public:
     void resetObject();
     void setRotation(float);
     void spawnCircle();
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void powerOnObject(int);
     void triggerActivated(float);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
-    void shouldDrawEditorHitbox();
+    bool shouldDrawEditorHitbox();
     void init(char const*);
     void create(char const*);
     void setScale(float);

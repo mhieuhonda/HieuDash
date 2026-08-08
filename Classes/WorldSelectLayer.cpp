@@ -5,71 +5,63 @@ WorldSelectLayer::~WorldSelectLayer() {
     this->cleanup();
 }
 
-WorldSelectLayer::~WorldSelectLayer() {
-    this->cleanup();
-}
-
-WorldSelectLayer::~WorldSelectLayer() {
-    this->cleanup();
-}
-
 void WorldSelectLayer::setupWorlds() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void WorldSelectLayer::colorForPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::onFreeLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::updateArrows() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void WorldSelectLayer::getColorValue(int, int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::unblockButtons() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void WorldSelectLayer::scrollLayerMoved(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::showCompleteDialog() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void WorldSelectLayer::animateInActiveIsland() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::scrollLayerScrolledToPage(BoomScrollLayer*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::scrollLayerWillScrollToPage(BoomScrollLayer*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void WorldSelectLayer::scene(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::create(int) {
@@ -83,30 +75,30 @@ void WorldSelectLayer::create(int) {
 }
 
 void WorldSelectLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::onNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::onPrev(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::goToPage(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::onGarage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void WorldSelectLayer::tryShowAd() {
-    // TODO: Implement
+    // Display operation - stub
 }
 

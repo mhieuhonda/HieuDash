@@ -5,39 +5,31 @@ CommunityCreditsPage::~CommunityCreditsPage() {
     this->cleanup();
 }
 
-CommunityCreditsPage::~CommunityCreditsPage() {
-    this->cleanup();
-}
-
-CommunityCreditsPage::~CommunityCreditsPage() {
-    this->cleanup();
-}
-
 void CommunityCreditsPage::onSwitchPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommunityCreditsPage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommunityCreditsPage::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommunityCreditsPage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void CommunityCreditsPage::init() {
-    bool ret = true;
+bool CommunityCreditsPage::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CommunityCreditsPage::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CommunityCreditsPage::create() {
@@ -51,10 +43,10 @@ void CommunityCreditsPage::create() {
 }
 
 void CommunityCreditsPage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommunityCreditsPage::goToPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

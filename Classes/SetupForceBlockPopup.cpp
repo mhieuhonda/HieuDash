@@ -5,22 +5,14 @@ SetupForceBlockPopup::~SetupForceBlockPopup() {
     this->cleanup();
 }
 
-SetupForceBlockPopup::~SetupForceBlockPopup() {
-    this->cleanup();
-}
-
-SetupForceBlockPopup::~SetupForceBlockPopup() {
-    this->cleanup();
-}
-
 void SetupForceBlockPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupForceBlockPopup::init(ForceBlockGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

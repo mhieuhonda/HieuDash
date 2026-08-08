@@ -5,18 +5,10 @@ SetupPersistentItemTriggerPopup::~SetupPersistentItemTriggerPopup() {
     this->cleanup();
 }
 
-SetupPersistentItemTriggerPopup::~SetupPersistentItemTriggerPopup() {
-    this->cleanup();
-}
-
-SetupPersistentItemTriggerPopup::~SetupPersistentItemTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupPersistentItemTriggerPopup::init(ItemTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

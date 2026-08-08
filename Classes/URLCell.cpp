@@ -2,17 +2,11 @@
 #include "URLCell.h"
 
 URLCell::URLCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 URLCell::URLCell(char const*, float, float) {
-}
-
-URLCell::~URLCell() {
-    this->cleanup();
-}
-
-URLCell::~URLCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 URLCell::~URLCell() {
@@ -20,27 +14,25 @@ URLCell::~URLCell() {
 }
 
 void URLCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void URLCell::loadFromObject(CCURLObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void URLCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void URLCell::init() {
-    bool ret = true;
+bool URLCell::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void URLCell::onURL(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

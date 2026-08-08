@@ -16,8 +16,8 @@ public:
     void bumpPlayer(float, int, bool, GameObject*);
     void buttonDown(PlayerButton);
     void didHitHead();
-    void isSafeFlip(float);
-    void isSafeMode(float);
+    bool isSafeFlip(float);
+    bool isSafeMode(float);
     void lockPlayer();
     void pushButton(PlayerButton);
     void pushPlayer(float);
@@ -28,7 +28,7 @@ public:
     void updateMove(float);
     void yStartDown();
     void boostPlayer(float);
-    void createRobot(int);
+    PlayerObject* createRobot(int);
     void flashPlayer(float, float, cocos2d::_ccColor3B, cocos2d::_ccColor3B);
     void flipGravity(bool, bool);
     void gravityDown();
@@ -40,9 +40,9 @@ public:
     void spawnCircle();
     void stopDashing();
     void stopStreak2();
-    void createSpider(int);
+    PlayerObject* createSpider(int);
     void getYVelocity();
-    void isBoostValid(float);
+    bool isBoostValid(float);
     void preCollision();
     void redirectDash(float);
     void setYVelocity(double, int);
@@ -50,7 +50,7 @@ public:
     void startDashing(DashRingObject*);
     void stopRotation(bool, int);
     void getActiveMode();
-    void isInBasicMode();
+    bool isInBasicMode();
     void levelFlipping();
     void levelWillFlip();
     void modeDidChange();
@@ -77,8 +77,8 @@ public:
     void getOrientedBox();
     void getSecondColor();
     void incrementJumps();
-    void isInNormalMode();
-    void isSafeHeadTest();
+    bool isInNormalMode();
+    bool isSafeHeadTest();
     void playBumpEffect(int, GameObject*);
     void rotateGameplay(int, int, bool, float, float, bool, bool);
     void setSecondColor(cocos2d::_ccColor3B const&);
@@ -113,10 +113,10 @@ public:
     void updateGlowColor();
     void updatePlayerArt();
     void updateSwingFire();
-    void canStickToGround();
+    bool canStickToGround();
     void deactivateStreak(bool);
     void disableSwingFire();
-    void isSafeSpiderFlip(float);
+    bool isSafeSpiderFlip(float);
     void placeStreakPoint();
     void playerIsMovingUp();
     void playerTeleported();
@@ -203,7 +203,7 @@ public:
     void updateLastGroundObject(GameObject*);
     void updatePlayerRobotFrame(int);
     void updatePlayerSwingFrame(int);
-    void createFadeOutDartStreak();
+    PlayerObject* createFadeOutDartStreak();
     void removePendingCheckpoint();
     void unrotatePreSlopeObjects();
     void updatePlayerSpiderFrame(int);
@@ -223,7 +223,7 @@ public:
     void update(float) override;
     void flipMod();
     void speedUp();
-    void isFlying();
+    bool isFlying();
     void pushDown();
     void ringJump(RingObject*, bool);
     void setColor(cocos2d::_ccColor3B const&);

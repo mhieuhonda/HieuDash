@@ -5,30 +5,22 @@ SelectArtLayer::~SelectArtLayer() {
     this->cleanup();
 }
 
-SelectArtLayer::~SelectArtLayer() {
-    this->cleanup();
-}
-
-SelectArtLayer::~SelectArtLayer() {
-    this->cleanup();
-}
-
 void SelectArtLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectArtLayer::onSelectCustom(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectArtLayer::updateSelectedCustom(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SelectArtLayer::init(SelectArtType, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -43,10 +35,10 @@ void SelectArtLayer::create(SelectArtType, int) {
 }
 
 void SelectArtLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SelectArtLayer::selectArt(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

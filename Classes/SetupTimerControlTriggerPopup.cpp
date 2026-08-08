@@ -5,22 +5,14 @@ SetupTimerControlTriggerPopup::~SetupTimerControlTriggerPopup() {
     this->cleanup();
 }
 
-SetupTimerControlTriggerPopup::~SetupTimerControlTriggerPopup() {
-    this->cleanup();
-}
-
-SetupTimerControlTriggerPopup::~SetupTimerControlTriggerPopup() {
-    this->cleanup();
-}
-
 void SetupTimerControlTriggerPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupTimerControlTriggerPopup::init(TimerTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

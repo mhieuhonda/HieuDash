@@ -2,10 +2,10 @@
 #include "GJOnlineRewardDelegate.h"
 
 void GJOnlineRewardDelegate::onlineRewardStatusFailed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJOnlineRewardDelegate::onlineRewardStatusFinished(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

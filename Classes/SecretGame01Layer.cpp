@@ -5,66 +5,58 @@ SecretGame01Layer::~SecretGame01Layer() {
     this->cleanup();
 }
 
-SecretGame01Layer::~SecretGame01Layer() {
-    this->cleanup();
-}
-
-SecretGame01Layer::~SecretGame01Layer() {
-    this->cleanup();
-}
-
 void SecretGame01Layer::gameStep01() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::gameStep02() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::showGameWon() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SecretGame01Layer::scaleOutGame(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::showGameOver() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SecretGame01Layer::onSelectButton(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::resetGameTimer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::getRowsForDifficulty(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::getTimeForDifficulty(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::getCountForDifficulty(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::getFrameForDifficulty(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SecretGame01Layer::didSelectCorrectObject(CCMenuItemSpriteExtra*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void SecretGame01Layer::init() {
-    bool ret = true;
+bool SecretGame01Layer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -79,11 +71,10 @@ void SecretGame01Layer::create() {
 }
 
 void SecretGame01Layer::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 
 void SecretGame01Layer::resetGame() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

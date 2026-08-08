@@ -2,12 +2,12 @@
 #ifndef DUNGEONBARSSPRITE_H_
 #define DUNGEONBARSSPRITE_H_
 
-class DungeonBarsSprite {
+class DungeonBarsSprite : public cocos2d::CCSprite {
 public:
     virtual ~DungeonBarsSprite();
 
     void animateOutBars();
-    void init();
+    bool init();
     void visit();
     void create();
 

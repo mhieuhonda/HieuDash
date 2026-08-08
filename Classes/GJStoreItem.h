@@ -8,7 +8,7 @@ class GJStoreItem {
 public:
     virtual ~GJStoreItem();
 
-    void getCurrencyKey();
+    std::string getCurrencyKey();
     void init(int, int, int, int, ShopType);
     void create(int, int, int, int, ShopType);
 

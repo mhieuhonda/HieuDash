@@ -5,30 +5,22 @@ SetFolderPopup::~SetFolderPopup() {
     this->cleanup();
 }
 
-SetFolderPopup::~SetFolderPopup() {
-    this->cleanup();
-}
-
-SetFolderPopup::~SetFolderPopup() {
-    this->cleanup();
-}
-
 void SetFolderPopup::valueChanged() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetFolderPopup::onSetFolderName(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetFolderPopup::setTextPopupClosed(SetTextPopup*, std::string) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void SetFolderPopup::init(int, bool, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

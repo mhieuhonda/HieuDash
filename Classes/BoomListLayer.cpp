@@ -5,18 +5,10 @@ BoomListLayer::~BoomListLayer() {
     this->cleanup();
 }
 
-BoomListLayer::~BoomListLayer() {
-    this->cleanup();
-}
-
-BoomListLayer::~BoomListLayer() {
-    this->cleanup();
-}
-
 void BoomListLayer::init(BoomListView*, char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

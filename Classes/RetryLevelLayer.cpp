@@ -5,56 +5,48 @@ RetryLevelLayer::~RetryLevelLayer() {
     this->cleanup();
 }
 
-RetryLevelLayer::~RetryLevelLayer() {
-    this->cleanup();
-}
-
-RetryLevelLayer::~RetryLevelLayer() {
-    this->cleanup();
-}
-
 void RetryLevelLayer::getEndText() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void RetryLevelLayer::onEveryplay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void RetryLevelLayer::onFullVersion(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::onRewardedVideo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::enterAnimFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::setupLastProgress() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void RetryLevelLayer::rewardedVideoFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void RetryLevelLayer::shouldOffsetRewardCurrency() {
-    // TODO: Implement
+bool RetryLevelLayer::shouldOffsetRewardCurrency() {
+    return false;
 }
 
 void RetryLevelLayer::keyUp(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::create() {
@@ -68,18 +60,18 @@ void RetryLevelLayer::create() {
 }
 
 void RetryLevelLayer::onMenu(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void RetryLevelLayer::onReplay(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void RetryLevelLayer::showLayer(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 

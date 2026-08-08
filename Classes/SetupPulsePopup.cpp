@@ -5,163 +5,155 @@ SetupPulsePopup::~SetupPulsePopup() {
     this->cleanup();
 }
 
-SetupPulsePopup::~SetupPulsePopup() {
-    this->cleanup();
-}
-
-SetupPulsePopup::~SetupPulsePopup() {
-    this->cleanup();
-}
-
 void SetupPulsePopup::onExclusive(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::selectColor(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::getColorValue() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::updateHSVValue() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateHoldTime() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::onGroupMainOnly(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::onHSVLegacyMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::updateCopyColor() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateHoldLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updatePulseMode() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateColorValue() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateFadeInTime() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::colorSelectClosed(GJSpecialColorSelect*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::colorValueChanged(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::onSelectPulseMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::onUpdateCopyColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateColorLabels() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateFadeInLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateFadeOutTime() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::onSelectTargetMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::updateFadeOutLabel(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::onUpdateCustomColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateGroupMainOnly() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::onGroupSecondaryOnly(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::onSelectSpecialColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updatePulseTargetType() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::onSelectSpecialTargetID(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::updateGroupSecondaryOnly() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::updateCopyColorTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupPulsePopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupPulsePopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupPulsePopup::create(EffectGameObject*, cocos2d::CCArray*) {
@@ -175,14 +167,14 @@ void SetupPulsePopup::create(EffectGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupPulsePopup::onCopy(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupPulsePopup::onPaste(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

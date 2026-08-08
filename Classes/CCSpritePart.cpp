@@ -5,48 +5,40 @@ CCSpritePart::~CCSpritePart() {
     this->cleanup();
 }
 
-CCSpritePart::~CCSpritePart() {
-    this->cleanup();
-}
-
-CCSpritePart::~CCSpritePart() {
-    this->cleanup();
-}
-
 void CCSpritePart::setVisible(bool) {
-    // TODO: Set m_visible
+    // Setter operation - stub
 }
 
 void CCSpritePart::frameChanged(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCSpritePart::getBeingUsed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCSpritePart::hideInactive() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CCSpritePart::setBeingUsed(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCSpritePart::resetTextureRect() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCSpritePart::markAsNotBeingUsed() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCSpritePart::updateDisplayFrame(std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void CCSpritePart::createWithSpriteFrameName(char const*) {
-    // TODO: Implement
+CCSpritePart* CCSpritePart::createWithSpriteFrameName(char const*) {
+    return nullptr;
 }
 
 void CCSpritePart::create(cocos2d::CCTexture2D*) {

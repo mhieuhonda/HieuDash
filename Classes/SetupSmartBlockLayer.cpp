@@ -5,79 +5,71 @@ SetupSmartBlockLayer::~SetupSmartBlockLayer() {
     this->cleanup();
 }
 
-SetupSmartBlockLayer::~SetupSmartBlockLayer() {
-    this->cleanup();
-}
-
-SetupSmartBlockLayer::~SetupSmartBlockLayer() {
-    this->cleanup();
-}
-
 void SetupSmartBlockLayer::onCreateAll(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onDontDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void SetupSmartBlockLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onAllowFlipping(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onAllowRotation(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onIgnoreCorners(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onPasteTemplate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onReferenceOnly(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onSelectPremade(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::selectArtClosed(SelectArtLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onCreateTemplate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onSelectTemplate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onNearbyReference(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::init(SmartGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void SetupSmartBlockLayer::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void SetupSmartBlockLayer::create(SmartGameObject*, cocos2d::CCArray*) {
@@ -91,10 +83,10 @@ void SetupSmartBlockLayer::create(SmartGameObject*, cocos2d::CCArray*) {
 }
 
 void SetupSmartBlockLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupSmartBlockLayer::onCreate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

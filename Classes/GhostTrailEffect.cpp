@@ -5,35 +5,26 @@ GhostTrailEffect::~GhostTrailEffect() {
     this->cleanup();
 }
 
-GhostTrailEffect::~GhostTrailEffect() {
-    this->cleanup();
-}
-
-GhostTrailEffect::~GhostTrailEffect() {
-    this->cleanup();
-}
-
 void GhostTrailEffect::runWithTarget(cocos2d::CCSprite*, float, float, float, float, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GhostTrailEffect::trailSnapshot(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GhostTrailEffect::doBlendAdditive() {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void GhostTrailEffect::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void GhostTrailEffect::init() {
-    bool ret = true;
+bool GhostTrailEffect::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -48,6 +39,6 @@ void GhostTrailEffect::create() {
 }
 
 void GhostTrailEffect::stopTrail() {
-    // TODO: Implement
+    // Media operation - stub
 }
 

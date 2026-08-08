@@ -5,54 +5,46 @@ GJItemIcon::~GJItemIcon() {
     this->cleanup();
 }
 
-GJItemIcon::~GJItemIcon() {
-    this->cleanup();
-}
-
-GJItemIcon::~GJItemIcon() {
-    this->cleanup();
-}
-
 void GJItemIcon::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GJItemIcon::scaleForType(UnlockType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJItemIcon::createStoreItem(UnlockType, int, bool, cocos2d::_ccColor3B) {
-    // TODO: Implement
+GJItemIcon* GJItemIcon::createStoreItem(UnlockType, int, bool, cocos2d::_ccColor3B) {
+    return nullptr;
 }
 
 void GJItemIcon::darkenStoreItem(ShopType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJItemIcon::darkenStoreItem(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJItemIcon::createBrowserItem(UnlockType, int) {
-    // TODO: Implement
+GJItemIcon* GJItemIcon::createBrowserItem(UnlockType, int) {
+    return nullptr;
 }
 
 void GJItemIcon::toggleEnabledState(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJItemIcon::changeToLockedState(float) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJItemIcon::unlockedColorForType(int) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJItemIcon::init(UnlockType, int, cocos2d::_ccColor3B, cocos2d::_ccColor3B, bool, bool, bool, cocos2d::_ccColor3B) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

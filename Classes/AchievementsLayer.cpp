@@ -5,32 +5,24 @@ AchievementsLayer::~AchievementsLayer() {
     this->cleanup();
 }
 
-AchievementsLayer::~AchievementsLayer() {
-    this->cleanup();
-}
-
-AchievementsLayer::~AchievementsLayer() {
-    this->cleanup();
-}
-
 void AchievementsLayer::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementsLayer::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementsLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AchievementsLayer::setupPageInfo(int, int, int) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AchievementsLayer::setupLevelBrowser(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void AchievementsLayer::create() {
@@ -44,11 +36,10 @@ void AchievementsLayer::create() {
 }
 
 void AchievementsLayer::keyDown(cocos2d::enumKeyCodes, double) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AchievementsLayer::loadPage(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

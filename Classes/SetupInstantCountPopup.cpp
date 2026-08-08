@@ -5,70 +5,62 @@ SetupInstantCountPopup::~SetupInstantCountPopup() {
     this->cleanup();
 }
 
-SetupInstantCountPopup::~SetupInstantCountPopup() {
-    this->cleanup();
-}
-
-SetupInstantCountPopup::~SetupInstantCountPopup() {
-    this->cleanup();
-}
-
 void SetupInstantCountPopup::onCountType(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCountPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCountPopup::updateItemID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCountPopup::onEnableGroup(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCountPopup::updateTargetID() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCountPopup::onTargetIDArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCountPopup::onTargetID2Arrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCountPopup::updateTargetCount() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCountPopup::onTargetCountArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCountPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupInstantCountPopup::updateItemIDInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCountPopup::updateTargetIDInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCountPopup::updateCountTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupInstantCountPopup::init(CountTriggerGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -83,6 +75,6 @@ void SetupInstantCountPopup::create(CountTriggerGameObject*, cocos2d::CCArray*) 
 }
 
 void SetupInstantCountPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

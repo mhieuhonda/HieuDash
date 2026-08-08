@@ -2,11 +2,11 @@
 #ifndef COLORACTIONSPRITE_H_
 #define COLORACTIONSPRITE_H_
 
-class ColorActionSprite {
+class ColorActionSprite : public cocos2d::CCSprite {
 public:
     virtual ~ColorActionSprite();
 
-    void init();
+    bool init();
     void create();
 
 };

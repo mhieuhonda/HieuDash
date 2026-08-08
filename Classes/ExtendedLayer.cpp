@@ -5,22 +5,14 @@ ExtendedLayer::~ExtendedLayer() {
     this->cleanup();
 }
 
-ExtendedLayer::~ExtendedLayer() {
-    this->cleanup();
-}
-
-ExtendedLayer::~ExtendedLayer() {
-    this->cleanup();
-}
-
 void ExtendedLayer::setPosition(cocos2d::CCPoint const&) {
-    // TODO: Set m_position
+    // Setter operation - stub
 }
 
-void ExtendedLayer::init() {
-    bool ret = true;
+bool ExtendedLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

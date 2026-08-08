@@ -4,7 +4,7 @@
 
 #include "cocos2d.h"
 
-class ObjectManager {
+class ObjectManager : public GManager {
 public:
     virtual ~ObjectManager();
 
@@ -15,7 +15,7 @@ public:
     void purgeObjectManager();
     void loadCopiedAnimations();
     void replaceAllOccurencesOfString(cocos2d::CCString*, cocos2d::CCString*, cocos2d::CCDictionary*);
-    void init();
+    bool init();
     void setup();
     void instance();
     void setLoaded(char const*);

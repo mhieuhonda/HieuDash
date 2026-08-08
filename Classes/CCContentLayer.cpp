@@ -5,16 +5,8 @@ CCContentLayer::~CCContentLayer() {
     this->cleanup();
 }
 
-CCContentLayer::~CCContentLayer() {
-    this->cleanup();
-}
-
-CCContentLayer::~CCContentLayer() {
-    this->cleanup();
-}
-
 void CCContentLayer::setPosition(cocos2d::CCPoint const&) {
-    // TODO: Set m_position
+    // Setter operation - stub
 }
 
 void CCContentLayer::create(cocos2d::_ccColor4B const&, float, float) {

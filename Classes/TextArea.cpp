@@ -5,55 +5,46 @@ TextArea::~TextArea() {
     this->cleanup();
 }
 
-TextArea::~TextArea() {
-    this->cleanup();
-}
-
-TextArea::~TextArea() {
-    this->cleanup();
-}
-
 void TextArea::finishFade() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TextArea::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void TextArea::colorAllLabels(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TextArea::fadeInCharacters(float, float, bool, TextFadeInStyle) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TextArea::fadeOutAndRemove() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void TextArea::setIgnoreColorCode(bool) {
-    // TODO: Set m_ignoreColorCode
+    // Setter operation - stub
 }
 
 void TextArea::colorAllCharactersTo(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TextArea::stopAllCharacterActions() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void TextArea::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void TextArea::init(std::string, char const*, float, float, cocos2d::CCPoint, float, bool) {
+bool TextArea::init(std::string, char const*, float, float, cocos2d::CCPoint, float, bool) {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -68,27 +59,26 @@ void TextArea::create(std::string, char const*, float, float, cocos2d::CCPoint, 
 }
 
 void TextArea::fadeIn(float, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TextArea::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 
 void TextArea::fadeOut(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TextArea::hideAll() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void TextArea::showAll() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void TextArea::setString(std::string) {
-    // TODO: Set m_string
+    // Setter operation - stub
 }
 

@@ -5,34 +5,26 @@ ColorChannelSprite::~ColorChannelSprite() {
     this->cleanup();
 }
 
-ColorChannelSprite::~ColorChannelSprite() {
-    this->cleanup();
-}
-
-ColorChannelSprite::~ColorChannelSprite() {
-    this->cleanup();
-}
-
 void ColorChannelSprite::updateValues(ColorAction*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorChannelSprite::updateOpacity(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorChannelSprite::updateBlending(bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorChannelSprite::updateCopyLabel(int, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void ColorChannelSprite::init() {
-    bool ret = true;
+bool ColorChannelSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

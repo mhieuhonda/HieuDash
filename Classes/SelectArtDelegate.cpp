@@ -2,6 +2,6 @@
 #include "SelectArtDelegate.h"
 
 void SelectArtDelegate::selectArtClosed(SelectArtLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

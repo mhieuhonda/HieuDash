@@ -5,47 +5,39 @@ LevelAreaInnerLayer::~LevelAreaInnerLayer() {
     this->cleanup();
 }
 
-LevelAreaInnerLayer::~LevelAreaInnerLayer() {
-    this->cleanup();
-}
-
-LevelAreaInnerLayer::~LevelAreaInnerLayer() {
-    this->cleanup();
-}
-
 void LevelAreaInnerLayer::onNextFloor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::onOnlineVault(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::tryResumeTowerMusic() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::showFloor1CompleteDialog() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void LevelAreaInnerLayer::init(bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelAreaInnerLayer::scene(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::create(bool) {
@@ -59,26 +51,26 @@ void LevelAreaInnerLayer::create(bool) {
 }
 
 void LevelAreaInnerLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::onDoor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::onExit() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelAreaInnerLayer::playStep1() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void LevelAreaInnerLayer::tryShowAd() {
-    // TODO: Implement
+    // Display operation - stub
 }
 

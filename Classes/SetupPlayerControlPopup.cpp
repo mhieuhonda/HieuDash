@@ -5,18 +5,10 @@ SetupPlayerControlPopup::~SetupPlayerControlPopup() {
     this->cleanup();
 }
 
-SetupPlayerControlPopup::~SetupPlayerControlPopup() {
-    this->cleanup();
-}
-
-SetupPlayerControlPopup::~SetupPlayerControlPopup() {
-    this->cleanup();
-}
-
 void SetupPlayerControlPopup::init(PlayerControlGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

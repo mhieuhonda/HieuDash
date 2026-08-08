@@ -5,38 +5,30 @@ SetupAdvFollowPopup::~SetupAdvFollowPopup() {
     this->cleanup();
 }
 
-SetupAdvFollowPopup::~SetupAdvFollowPopup() {
-    this->cleanup();
-}
-
-SetupAdvFollowPopup::~SetupAdvFollowPopup() {
-    this->cleanup();
-}
-
 void SetupAdvFollowPopup::updateMode(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAdvFollowPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAdvFollowPopup::selectPremadeClosed(SelectPremadeLayer*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAdvFollowPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAdvFollowPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAdvFollowPopup::init(AdvancedFollowTriggerObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -51,14 +43,14 @@ void SetupAdvFollowPopup::create(AdvancedFollowTriggerObject*, cocos2d::CCArray*
 }
 
 void SetupAdvFollowPopup::onMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAdvFollowPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAdvFollowPopup::onPremade(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

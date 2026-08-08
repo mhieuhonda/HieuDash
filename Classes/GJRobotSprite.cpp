@@ -5,53 +5,45 @@ GJRobotSprite::~GJRobotSprite() {
     this->cleanup();
 }
 
-GJRobotSprite::~GJRobotSprite() {
-    this->cleanup();
-}
-
-GJRobotSprite::~GJRobotSprite() {
-    this->cleanup();
-}
-
 void GJRobotSprite::setOpacity(unsigned char) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void GJRobotSprite::updateFrame(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRobotSprite::updateColors() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRobotSprite::hideSecondary() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJRobotSprite::updateColor01(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRobotSprite::updateColor02(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRobotSprite::updateGlowColor(cocos2d::_ccColor3B, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJRobotSprite::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJRobotSprite::init(int, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -66,10 +58,10 @@ void GJRobotSprite::create(int) {
 }
 
 void GJRobotSprite::hideGlow() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJRobotSprite::showGlow() {
-    // TODO: Implement
+    // Display operation - stub
 }
 

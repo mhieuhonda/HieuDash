@@ -5,74 +5,65 @@ GJDropDownLayer::~GJDropDownLayer() {
     this->cleanup();
 }
 
-GJDropDownLayer::~GJDropDownLayer() {
-    this->cleanup();
-}
-
-GJDropDownLayer::~GJDropDownLayer() {
-    this->cleanup();
-}
-
 void GJDropDownLayer::enterLayer() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::customSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJDropDownLayer::layerHidden() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::layerVisible() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::enterAnimFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJDropDownLayer::init(char const*, float, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -97,22 +88,22 @@ void GJDropDownLayer::create(char const*, float, bool) {
 }
 
 void GJDropDownLayer::enableUI() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::disableUI() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::exitLayer(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJDropDownLayer::hideLayer(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJDropDownLayer::showLayer(bool) {
-    // TODO: Implement
+    // Display operation - stub
 }
 

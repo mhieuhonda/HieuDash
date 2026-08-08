@@ -5,71 +5,62 @@ TeleportPortalObject::~TeleportPortalObject() {
     this->cleanup();
 }
 
-TeleportPortalObject::~TeleportPortalObject() {
-    this->cleanup();
-}
-
-TeleportPortalObject::~TeleportPortalObject() {
-    this->cleanup();
-}
-
 void TeleportPortalObject::addToGroup(int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void TeleportPortalObject::addToGroup2(int) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void TeleportPortalObject::setPosition(cocos2d::CCPoint const&) {
-    // TODO: Set m_position
+    // Setter operation - stub
 }
 
 void TeleportPortalObject::setRotation(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void TeleportPortalObject::setStartPos(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void TeleportPortalObject::setRotation2(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
-void TeleportPortalObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string TeleportPortalObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void TeleportPortalObject::getTeleportXOff(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TeleportPortalObject::removeFromGroup(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void TeleportPortalObject::removeFromGroup2(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void TeleportPortalObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void TeleportPortalObject::setPositionOverride(cocos2d::CCPoint) {
-    // TODO: Set m_positionOverride
+    // Setter operation - stub
 }
 
 void TeleportPortalObject::setStartPosOverride(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void TeleportPortalObject::init(char const*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

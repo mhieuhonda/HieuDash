@@ -5,38 +5,30 @@ DailyLevelNode::~DailyLevelNode() {
     this->cleanup();
 }
 
-DailyLevelNode::~DailyLevelNode() {
-    this->cleanup();
-}
-
-DailyLevelNode::~DailyLevelNode() {
-    this->cleanup();
-}
-
 void DailyLevelNode::onSkipLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DailyLevelNode::onClaimReward(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void DailyLevelNode::showSkipButton() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void DailyLevelNode::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void DailyLevelNode::updateTimeLabel(std::string) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void DailyLevelNode::init(GJGameLevel*, DailyLevelPage*, bool) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

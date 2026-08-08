@@ -5,234 +5,226 @@ CreateParticlePopup::~CreateParticlePopup() {
     this->cleanup();
 }
 
-CreateParticlePopup::~CreateParticlePopup() {
-    this->cleanup();
-}
-
-CreateParticlePopup::~CreateParticlePopup() {
-    this->cleanup();
-}
-
 void CreateParticlePopup::getPageMenu(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::sliderBegan(Slider*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::sliderEnded(Slider*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onQuickStart(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::getPageButton(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onEmitterMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onMaxEmission(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onSelectColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::getPageSliders(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onCalcEmission(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onCopySettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onDynamicColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onUniformColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onEndRGBVarSync(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onPasteSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onTogglePerfLog(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::textInputReturn(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::getPageContainer(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onDuplicateColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onOrderSensitive(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onToggleBlending(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::colorSelectClosed(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::getPageInputNodes(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onDurationForever(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onDynamicRotation(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onStartRGBVarSync(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::toggleGravityMode(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::updateColorSprite(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CreateParticlePopup::onAnimateOnTrigger(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::particleValueIsInt(gjParticleValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::centerAlignParticle(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onAnimateActiveOnly(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::updateSliderForType(gjParticleValue) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void CreateParticlePopup::createParticleSlider(gjParticleValue, int, bool, cocos2d::CCPoint, cocos2d::CCArray*) {
-    // TODO: Implement
+CreateParticlePopup* CreateParticlePopup::createParticleSlider(gjParticleValue, int, bool, cocos2d::CCPoint, cocos2d::CCArray*) {
+    return nullptr;
 }
 
 void CreateParticlePopup::maxSliderValueForType(gjParticleValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::minSliderValueForType(gjParticleValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::textInputShouldOffset(CCTextInputNode*, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::titleForParticleValue(gjParticleValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::valueForParticleValue(gjParticleValue) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onSelectParticleTexture(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onToggleStartRotationIsDir(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::updateParticleValueForType(float, gjParticleValue, cocos2d::CCParticleSystemQuad*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CreateParticlePopup::onToggleStartSizeEqualToEnd(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onToggleStartSpinEqualToEnd(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::updateInputNodeStringForType(gjParticleValue) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CreateParticlePopup::onToggleStartRadiusEqualToEnd(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::init(ParticleGameObject*, cocos2d::CCArray*, std::string) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -267,31 +259,30 @@ void CreateParticlePopup::create(std::string) {
 }
 
 void CreateParticlePopup::onMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 
 void CreateParticlePopup::getPage(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::onPosType(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CreateParticlePopup::willClose() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

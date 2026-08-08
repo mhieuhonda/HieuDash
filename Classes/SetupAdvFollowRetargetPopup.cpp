@@ -5,26 +5,18 @@ SetupAdvFollowRetargetPopup::~SetupAdvFollowRetargetPopup() {
     this->cleanup();
 }
 
-SetupAdvFollowRetargetPopup::~SetupAdvFollowRetargetPopup() {
-    this->cleanup();
-}
-
-SetupAdvFollowRetargetPopup::~SetupAdvFollowRetargetPopup() {
-    this->cleanup();
-}
-
 void SetupAdvFollowRetargetPopup::valueDidChange(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupAdvFollowRetargetPopup::updateDefaultTriggerValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupAdvFollowRetargetPopup::init(AdvancedFollowEditObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

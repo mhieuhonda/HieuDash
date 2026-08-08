@@ -5,39 +5,30 @@ LevelSettingsObject::~LevelSettingsObject() {
     this->cleanup();
 }
 
-LevelSettingsObject::~LevelSettingsObject() {
-    this->cleanup();
-}
-
-LevelSettingsObject::~LevelSettingsObject() {
-    this->cleanup();
-}
-
-void LevelSettingsObject::getSaveString() {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string LevelSettingsObject::getSaveString() {
+    return "";
 }
 
 void LevelSettingsObject::objectFromDict(cocos2d::CCDictionary*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSettingsObject::objectFromString(std::string const&) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void LevelSettingsObject::shouldUseYSection() {
-    // TODO: Implement
+bool LevelSettingsObject::shouldUseYSection() {
+    return false;
 }
 
 void LevelSettingsObject::setupColorsFromLegacyMode(cocos2d::CCDictionary*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void LevelSettingsObject::init() {
-    bool ret = true;
+bool LevelSettingsObject::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

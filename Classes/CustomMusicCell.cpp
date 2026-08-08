@@ -2,17 +2,11 @@
 #include "CustomMusicCell.h"
 
 CustomMusicCell::CustomMusicCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 CustomMusicCell::CustomMusicCell(char const*, float, float) {
-}
-
-CustomMusicCell::~CustomMusicCell() {
-    this->cleanup();
-}
-
-CustomMusicCell::~CustomMusicCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 CustomMusicCell::~CustomMusicCell() {
@@ -20,11 +14,10 @@ CustomMusicCell::~CustomMusicCell() {
 }
 
 void CustomMusicCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CustomMusicCell::loadFromObject(SongInfoObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

@@ -5,41 +5,31 @@ UploadPopup::~UploadPopup() {
     this->cleanup();
 }
 
-UploadPopup::~UploadPopup() {
-    this->cleanup();
-}
-
-UploadPopup::~UploadPopup() {
-    this->cleanup();
-}
-
 void UploadPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadPopup::onReturnToLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadPopup::levelUploadFailed(GJGameLevel*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void UploadPopup::levelUploadFinished(GJGameLevel*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void UploadPopup::init(GJGameLevel*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void UploadPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void UploadPopup::create(GJGameLevel*) {
@@ -53,10 +43,10 @@ void UploadPopup::create(GJGameLevel*) {
 }
 
 void UploadPopup::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void UploadPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

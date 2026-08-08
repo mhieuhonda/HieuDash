@@ -5,63 +5,54 @@ KeybindingsManager::~KeybindingsManager() {
     this->cleanup();
 }
 
-KeybindingsManager::~KeybindingsManager() {
-    this->cleanup();
-}
-
-KeybindingsManager::~KeybindingsManager() {
-    this->cleanup();
-}
-
 void KeybindingsManager::dataLoaded(DS_Dictionary*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Data loading from dictionary - stub
 }
 
 void KeybindingsManager::firstSetup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void KeybindingsManager::sharedState() {
-    // TODO: Implement
+KeybindingsManager* KeybindingsManager::sharedState() {
+    return nullptr;
 }
 
 void KeybindingsManager::encodeDataTo(DS_Dictionary*) {
-    // TODO: Implement
+    // Data encoding to dictionary - stub
 }
 
 void KeybindingsManager::commandForKey(cocos2d::enumKeyCodes, GJKeyGroup, bool, bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsManager::keyForCommand(GJKeyCommand) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsManager::groupForCommand(GJKeyCommand) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsManager::commandForKeyMods(cocos2d::enumKeyCodes, GJKeyGroup) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsManager::commandForKeyNoMods(cocos2d::enumKeyCodes, GJKeyGroup) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsManager::commandToKeyForGroup(GJKeyGroup) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void KeybindingsManager::keyToCommandForGroup(GJKeyGroup) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void KeybindingsManager::init() {
-    bool ret = true;
+bool KeybindingsManager::init() {
+    bool ret = GManager::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

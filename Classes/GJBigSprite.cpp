@@ -5,37 +5,26 @@ GJBigSprite::~GJBigSprite() {
     this->cleanup();
 }
 
-GJBigSprite::~GJBigSprite() {
-    this->cleanup();
-}
-
-GJBigSprite::~GJBigSprite() {
-    this->cleanup();
-}
-
 void GJBigSprite::unloadSprite(std::string, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJBigSprite::loadSpriteAsync(std::string, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJBigSprite::updateSpriteVisibility() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJBigSprite::finishedLoadingSpriteAsync(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
-void GJBigSprite::init() {
-    bool ret = true;
+bool GJBigSprite::init() {
+    bool ret = cocos2d::CCSprite::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -50,7 +39,6 @@ void GJBigSprite::create() {
 }
 
 void GJBigSprite::unloadAll() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

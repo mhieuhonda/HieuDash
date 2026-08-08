@@ -12,17 +12,11 @@ CommentCell* CommentCell::create() {
 }
 
 CommentCell::CommentCell(char const*, float, float) {
+    // Stub - not yet implemented
 }
 
 CommentCell::CommentCell(char const*, float, float) {
-}
-
-CommentCell::~CommentCell() {
-    this->cleanup();
-}
-
-CommentCell::~CommentCell() {
-    this->cleanup();
+    // Stub - not yet implemented
 }
 
 CommentCell::~CommentCell() {
@@ -30,71 +24,69 @@ CommentCell::~CommentCell() {
 }
 
 void CommentCell::onUndelete() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CommentCell::onGoToLevel(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommentCell::onViewProfile(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommentCell::updateBGColor(int) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CommentCell::incrementLikes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommentCell::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommentCell::loadFromComment(GJComment*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void CommentCell::onConfirmDelete(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CommentCell::incrementDislikes() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommentCell::updateLabelValues() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void CommentCell::draw() {
-    // Render/draw logic
-    // TODO: Implement rendering
+    // Stub - not yet implemented
 }
 
-void CommentCell::init() {
+bool CommentCell::init() {
     bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void CommentCell::onLike(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CommentCell::onDelete() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CommentCell::onUnhide(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void CommentCell::likedItem(LikeItemType, int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

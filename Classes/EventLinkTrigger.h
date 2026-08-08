@@ -5,14 +5,14 @@
 #include <string>
 #include <vector>
 
-class EventLinkTrigger {
+class EventLinkTrigger : public cocos2d::CCNode {
 public:
     virtual ~EventLinkTrigger();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void triggerObject(GJBaseGameLayer*, int, std::vector<int> const*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
-    void init();
+    bool init();
     void create();
 
 protected:

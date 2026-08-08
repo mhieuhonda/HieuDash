@@ -5,27 +5,18 @@ DashRingObject::~DashRingObject() {
     this->cleanup();
 }
 
-DashRingObject::~DashRingObject() {
-    this->cleanup();
-}
-
-DashRingObject::~DashRingObject() {
-    this->cleanup();
-}
-
-void DashRingObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string DashRingObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void DashRingObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void DashRingObject::init(char const*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

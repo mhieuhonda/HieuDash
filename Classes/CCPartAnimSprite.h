@@ -9,19 +9,19 @@ class CCPartAnimSprite {
 public:
     virtual ~CCPartAnimSprite();
 
-    void countParts();
+    int countParts();
     void setOpacity(unsigned char);
     void displayFrame();
     void setBlendFunc(cocos2d::_ccBlendFunc);
     void tweenToFrame(cocos2d::CCSpriteFrame*, float);
     void tweenSpriteTo(SpriteDescription*, float);
-    void getSpriteForKey(char const*);
+    std::string getSpriteForKey(char const*);
     void setDisplayFrame(cocos2d::CCSpriteFrame*);
     void transformSprite(SpriteDescription*);
     void initWithAnimDesc(char const*, cocos2d::CCTexture2D*, bool);
-    void isFrameDisplayed(cocos2d::CCSpriteFrame*);
+    bool isFrameDisplayed(cocos2d::CCSpriteFrame*);
     void changeTextureOfID(char const*, char const*);
-    void createWithAnimDesc(char const*, cocos2d::CCTexture2D*, bool);
+    CCPartAnimSprite* createWithAnimDesc(char const*, cocos2d::CCTexture2D*, bool);
     void dirtify();
     void setColor(cocos2d::_ccColor3B);
     void setFlipX(bool);

@@ -5,93 +5,82 @@ GJTransformControl::~GJTransformControl() {
     this->cleanup();
 }
 
-GJTransformControl::~GJTransformControl() {
-    this->cleanup();
-}
-
-GJTransformControl::~GJTransformControl() {
-    this->cleanup();
-}
-
 void GJTransformControl::loadValues(GameObject*, cocos2d::CCArray*, std::unordered_map<int, GameObjectEditorState>, std::equal_to<int>, std::allocator<std::pair<const int, GameObjectEditorState> > >&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJTransformControl::finishTouch() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::saveToState(GJTransformState&) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void GJTransformControl::spriteByTag(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::ccTouchBegan(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::ccTouchEnded(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::ccTouchMoved(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::scaleButtons(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::applyRotation(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::loadFromState(GJTransformState&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void GJTransformControl::updateButtons(bool, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJTransformControl::refreshControl() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJTransformControl::ccTouchCancelled(cocos2d::CCTouch*, cocos2d::CCEvent*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::logCurrentZeroPos() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJTransformControl::onToggleLockScale(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJTransformControl::updateAnchorSprite(cocos2d::CCPoint) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJTransformControl::updateMinMaxPositions() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJTransformControl::calculateRotationOffset() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJTransformControl::init() {
-    bool ret = true;
+bool GJTransformControl::init() {
+    bool ret = cocos2d::CCNode::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

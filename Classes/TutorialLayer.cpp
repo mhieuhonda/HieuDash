@@ -5,26 +5,18 @@ TutorialLayer::~TutorialLayer() {
     this->cleanup();
 }
 
-TutorialLayer::~TutorialLayer() {
-    this->cleanup();
-}
-
-TutorialLayer::~TutorialLayer() {
-    this->cleanup();
-}
-
 void TutorialLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TutorialLayer::removeTutorialTexture() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
-void TutorialLayer::init() {
-    bool ret = true;
+bool TutorialLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,15 +31,14 @@ void TutorialLayer::create() {
 }
 
 void TutorialLayer::onNext(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TutorialLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void TutorialLayer::loadPage(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 

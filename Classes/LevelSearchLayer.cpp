@@ -5,156 +5,147 @@ LevelSearchLayer::~LevelSearchLayer() {
     this->cleanup();
 }
 
-LevelSearchLayer::~LevelSearchLayer() {
-    this->cleanup();
+std::string LevelSearchLayer::getDiffKey(int) {
+    return "";
 }
 
-LevelSearchLayer::~LevelSearchLayer() {
-    this->cleanup();
-}
-
-void LevelSearchLayer::getDiffKey(int) {
-    // TODO: Implement
-}
-
-void LevelSearchLayer::getTimeKey(int) {
-    // TODO: Implement
+std::string LevelSearchLayer::getTimeKey(int) {
+    return "";
 }
 
 void LevelSearchLayer::onFollowed(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onTrending(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::toggleStar(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::toggleTime(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onMostLikes(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onStarAward(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Reward operation - stub
 }
 
 void LevelSearchLayer::onSuggested(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::clearFilters() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelSearchLayer::onMostRecent(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onSearchMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onSearchUser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onLatestStars(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onMoreOptions(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::toggleTimeNum(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void LevelSearchLayer::getLevelLenKey() {
-    // TODO: Implement
+std::string LevelSearchLayer::getLevelLenKey() {
+    return "";
 }
 
 void LevelSearchLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onSpecialDemon(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::getSearchObject(SearchType, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void LevelSearchLayer::getSearchDiffKey() {
-    // TODO: Implement
+std::string LevelSearchLayer::getSearchDiffKey() {
+    return "";
 }
 
 void LevelSearchLayer::onMostDownloaded(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void LevelSearchLayer::onPasteClipboard(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::toggleDifficulty(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onClearFreeSearch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelSearchLayer::updateSearchLabel(char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void LevelSearchLayer::confirmClearFilters(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void LevelSearchLayer::toggleDifficultyNum(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::demonFilterSelectClosed(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::init(int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void LevelSearchLayer::scene(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::create(int) {
@@ -168,30 +159,30 @@ void LevelSearchLayer::create(int) {
 }
 
 void LevelSearchLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onMagic(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onSearch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::checkDiff(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::checkTime(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void LevelSearchLayer::onFriends(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,182 +5,167 @@ ProfilePage::~ProfilePage() {
     this->cleanup();
 }
 
-ProfilePage::~ProfilePage() {
-    this->cleanup();
-}
-
-ProfilePage::~ProfilePage() {
-    this->cleanup();
-}
-
 void ProfilePage::onCopyName(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onMessages(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onMyLevels(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onNextPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onPrevPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onRequests(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onSettings(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onStatInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::toggleShip(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onBlockUser(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void ProfilePage::onClosePopup(UploadActionPopup*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onSocialPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ProfilePage::isOnWatchlist(int) {
-    // TODO: Implement
+bool ProfilePage::isOnWatchlist(int) {
+    return false;
 }
 
 void ProfilePage::onSendMessage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::setupComments() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ProfilePage::setupPageInfo(std::string, char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ProfilePage::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::userInfoChanged(GJUserScore*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onCommentHistory(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::updatePageArrows() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ProfilePage::getUserInfoFailed(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::updateLevelsLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ProfilePage::loadCommentsFailed(char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::showNoAccountError() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void ProfilePage::uploadActionFailed(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::commentDeleteFailed(int, int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void ProfilePage::commentUploadFailed(int, CommentError) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::getUserInfoFinished(GJUserScore*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::loadCommentsFinished(cocos2d::CCArray*, char const*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::loadPageFromUserInfo(GJUserScore*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::setupCommentsBrowser(cocos2d::CCArray*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void ProfilePage::uploadActionFinished(int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::commentUploadFinished(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::updateUserScoreFailed() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ProfilePage::updateUserScoreFinished() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ProfilePage::toggleMainPageVisibility(bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void ProfilePage::init(int, bool) {
+bool ProfilePage::init(int, bool) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ProfilePage::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void ProfilePage::create(int, bool) {
@@ -194,47 +179,46 @@ void ProfilePage::create(int, bool) {
 }
 
 void ProfilePage::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::loadPage(int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void ProfilePage::onFollow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onFriend(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onUpdate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ProfilePage::blockUser() {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
-void ProfilePage::isCorrect(char const*) {
-    // TODO: Implement
+bool ProfilePage::isCorrect(char const*) {
+    return false;
 }
 
 void ProfilePage::onComment(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onFriends(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ProfilePage::onMyLists(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

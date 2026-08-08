@@ -10,7 +10,7 @@ public:
     virtual ~DemonInfoPopup();
 
     void keyBackClicked();
-    void createFromString(std::string);
+    DemonInfoPopup* createFromString(std::string);
     void init(int, int, int, int, int, int, int, int, int, int, int, int);
     void create(int, int, int, int, int, int, int, int, int, int, int, int);
     void onClose(cocos2d::CCObject*);

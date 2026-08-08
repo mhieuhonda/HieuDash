@@ -5,34 +5,26 @@ SongOptionsLayer::~SongOptionsLayer() {
     this->cleanup();
 }
 
-SongOptionsLayer::~SongOptionsLayer() {
-    this->cleanup();
-}
-
-SongOptionsLayer::~SongOptionsLayer() {
-    this->cleanup();
-}
-
 void SongOptionsLayer::onPlayback(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void SongOptionsLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongOptionsLayer::onSongPersistent(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongOptionsLayer::updatePlaybackBtn() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SongOptionsLayer::init(CustomSongDelegate*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -47,18 +39,18 @@ void SongOptionsLayer::create(CustomSongDelegate*) {
 }
 
 void SongOptionsLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongOptionsLayer::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongOptionsLayer::onFadeIn(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SongOptionsLayer::onFadeOut(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

@@ -5,42 +5,34 @@ SetupGameplayOffsetPopup::~SetupGameplayOffsetPopup() {
     this->cleanup();
 }
 
-SetupGameplayOffsetPopup::~SetupGameplayOffsetPopup() {
-    this->cleanup();
-}
-
-SetupGameplayOffsetPopup::~SetupGameplayOffsetPopup() {
-    this->cleanup();
-}
-
 void SetupGameplayOffsetPopup::onDefaultValues(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGameplayOffsetPopup::updateInputNode(int, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGameplayOffsetPopup::updateInputValue(int, float&) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void SetupGameplayOffsetPopup::onCustomToggleTriggerValue(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGameplayOffsetPopup::triggerSliderValueFromValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGameplayOffsetPopup::triggerValueFromSliderValue(int, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void SetupGameplayOffsetPopup::init(EffectGameObject*, cocos2d::CCArray*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

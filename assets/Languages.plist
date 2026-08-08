@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>en</key>
+	<dict>
+		<key>Play</key>
+		<string>Play</string>
+		<key>Practice</key>
+		<string>Practice</string>
+		<key>Options</key>
+		<string>Options</string>
+		<key>Creators</key>
+		<string>Creators</string>
+		<key>Search</key>
+		<string>Search</string>
+		<key>Featured</key>
+		<string>Featured</string>
+		<key>Recent</key>
+		<string>Recent</string>
+		<key>Magic</key>
+		<string>Magic</string>
+		<key>Map Packs</key>
+		<string>Map Packs</string>
+		<key>Daily</key>
+		<string>Daily</string>
+		<key>Weekly</key>
+		<string>Weekly</string>
+		<key>Gauntlets</key>
+		<string>Gauntlets</string>
+		<key>Leaderboards</key>
+		<string>Leaderboards</string>
+		<key>Achievements</key>
+		<string>Achievements</string>
+		<key>Save</key>
+		<string>Save</string>
+		<key>Load</key>
+		<string>Load</string>
+		<key>Stats</key>
+		<string>Stats</string>
+		<key>Messages</key>
+		<string>Messages</string>
+		<key>Friends</key>
+		<string>Friends</string>
+		<key>Settings</key>
+		<string>Settings</string>
+		<key>Account</key>
+		<string>Account</string>
+		<key>More</key>
+		<string>More</string>
+		<key>Close</key>
+		<string>Close</string>
+		<key>Cancel</key>
+		<string>Cancel</string>
+		<key>OK</key>
+		<string>OK</string>
+		<key>Yes</key>
+		<string>Yes</string>
+		<key>No</key>
+		<string>No</string>
+		<key>Login</key>
+		<string>Login</string>
+		<key>Register</key>
+		<string>Register</string>
+		<key>Username</key>
+		<string>Username</string>
+		<key>Password</key>
+		<string>Password</string>
+		<key>Download</key>
+		<string>Download</string>
+		<key>Upload</key>
+		<string>Upload</string>
+		<key>Like</key>
+		<string>Like</string>
+		<key>Dislike</key>
+		<string>Dislike</string>
+		<key>Report</key>
+		<string>Report</string>
+		<key>Delete</key>
+		<string>Delete</string>
+		<key>Edit</key>
+		<string>Edit</string>
+		<key>Refresh</key>
+		<string>Refresh</string>
+		<key>Restart</key>
+		<string>Restart</string>
+		<key>Pause</key>
+		<string>Pause</string>
+		<key>Resume</key>
+		<string>Resume</string>
+		<key>Quit</key>
+		<string>Quit</string>
+		<key>Help</key>
+		<string>Help</string>
+		<key>Language</key>
+		<string>Language</string>
+		<key>English</key>
+		<string>English</string>
+		<key>Vietnamese</key>
+		<string>Vietnamese</string>
+		<key>Admin Panel</key>
+		<string>Admin Panel</string>
+		<key>Ban User</key>
+		<string>Ban User</string>
+		<key>Unban User</key>
+		<string>Unban User</string>
+		<key>Rate Level</key>
+		<string>Rate Level</string>
+		<key>Feature Level</key>
+		<string>Feature Level</string>
+		<key>Delete Level</key>
+		<string>Delete Level</string>
+		<key>Block User</key>
+		<string>Block User</string>
+		<key>Leaderboard</key>
+		<string>Leaderboard</string>
+		<key>User Info</key>
+		<string>User Info</string>
+		<key>Server</key>
+		<string>Server</string>
+		<key>Connecting</key>
+		<string>Connecting</string>
+		<key>Success</key>
+		<string>Success</string>
+		<key>Failed</key>
+		<string>Failed</string>
+		<key>Error</key>
+		<string>Error</string>
+		<key>LoginPrompt</key>
+		<string>Do you want to login as Hieu Louis?</string>
+	</dict>
+	<key>vi</key>
+	<dict>
+		<key>Play</key>
+		<string>Chơi</string>
+		<key>Practice</key>
+		<string>Luyện tập</string>
+		<key>Options</key>
+		<string>Tùy chọn</string>
+		<key>Creators</key>
+		<string>Người tạo</string>
+		<key>Search</key>
+		<string>Tìm kiếm</string>
+		<key>Featured</key>
+		<string>Nổi bật</string>
+		<key>Recent</key>
+		<string>Gần đây</string>
+		<key>Magic</key>
+		<string>Ma thuật</string>
+		<key>Map Packs</key>
+		<string>Gói bản đồ</string>
+		<key>Daily</key>
+		<string>Hàng ngày</string>
+		<key>Weekly</key>
+		<string>Hàng tuần</string>
+		<key>Gauntlets</key>
+		<string>Thử thách</string>
+		<key>Leaderboards</key>
+		<string>Bảng xếp hạng</string>
+		<key>Achievements</key>
+		<string>Thành tích</string>
+		<key>Save</key>
+		<string>Lưu</string>
+		<key>Load</key>
+		<string>Tải</string>
+		<key>Stats</key>
+		<string>Thống kê</string>
+		<key>Messages</key>
+		<string>Tin nhắn</string>
+		<key>Friends</key>
+		<string>Bạn bè</string>
+		<key>Settings</key>
+		<string>Cài đặt</string>
+		<key>Account</key>
+		<string>Tài khoản</string>
+		<key>More</key>
+		<string>Thêm</string>
+		<key>Close</key>
+		<string>Đóng</string>
+		<key>Cancel</key>
+		<string>Hủy</string>
+		<key>OK</key>
+		<string>OK</string>
+		<key>Yes</key>
+		<string>Có</string>
+		<key>No</key>
+		<string>Không</string>
+		<key>Login</key>
+		<string>Đăng nhập</string>
+		<key>Register</key>
+		<string>Đăng ký</string>
+		<key>Username</key>
+		<string>Tên đăng nhập</string>
+		<key>Password</key>
+		<string>Mật khẩu</string>
+		<key>Download</key>
+		<string>Tải về</string>
+		<key>Upload</key>
+		<string>Tải lên</string>
+		<key>Like</key>
+		<string>Thích</string>
+		<key>Dislike</key>
+		<string>Không thích</string>
+		<key>Report</key>
+		<string>Báo cáo</string>
+		<key>Delete</key>
+		<string>Xóa</string>
+		<key>Edit</key>
+		<string>Sửa</string>
+		<key>Refresh</key>
+		<string>Làm mới</string>
+		<key>Restart</key>
+		<string>Chơi lại</string>
+		<key>Pause</key>
+		<string>Tạm dừng</string>
+		<key>Resume</key>
+		<string>Tiếp tục</string>
+		<key>Quit</key>
+		<string>Thoát</string>
+		<key>Help</key>
+		<string>Trợ giúp</string>
+		<key>Language</key>
+		<string>Ngôn ngữ</string>
+		<key>English</key>
+		<string>English</string>
+		<key>Vietnamese</key>
+		<string>Tiếng Việt</string>
+		<key>Admin Panel</key>
+		<string>Bảng quản trị</string>
+		<key>Ban User</key>
+		<string>Cấm người dùng</string>
+		<key>Unban User</key>
+		<string>Bỏ cấm người dùng</string>
+		<key>Rate Level</key>
+		<string>Đánh giá màn chơi</string>
+		<key>Feature Level</key>
+		<string>Nổi bật màn chơi</string>
+		<key>Delete Level</key>
+		<string>Xóa màn chơi</string>
+		<key>Block User</key>
+		<string>Chặn người dùng</string>
+		<key>Leaderboard</key>
+		<string>Bảng xếp hạng</string>
+		<key>User Info</key>
+		<string>Thông tin người dùng</string>
+		<key>Server</key>
+		<string>Máy chủ</string>
+		<key>Connecting</key>
+		<string>Đang kết nối</string>
+		<key>Success</key>
+		<string>Thành công</string>
+		<key>Failed</key>
+		<string>Thất bại</string>
+		<key>Error</key>
+		<string>Lỗi</string>
+		<key>LoginPrompt</key>
+		<string>Bạn có muốn đăng nhập bằng Hieu Louis không?</string>
+	</dict>
+</dict>
+</plist>

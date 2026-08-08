@@ -5,27 +5,18 @@ UISettingsGameObject::~UISettingsGameObject() {
     this->cleanup();
 }
 
-UISettingsGameObject::~UISettingsGameObject() {
-    this->cleanup();
-}
-
-UISettingsGameObject::~UISettingsGameObject() {
-    this->cleanup();
-}
-
-void UISettingsGameObject::getSaveString(GJBaseGameLayer*) {
-    // Save to file/storage
-    // TODO: Implement saving
+std::string UISettingsGameObject::getSaveString(GJBaseGameLayer*) {
+    return "";
 }
 
 void UISettingsGameObject::customObjectSetup(std::vector<std::string>&, std::vector<void*>&) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void UISettingsGameObject::init() {
-    bool ret = true;
+bool UISettingsGameObject::init() {
+    bool ret = GameObject::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

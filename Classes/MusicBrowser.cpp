@@ -5,94 +5,86 @@ MusicBrowser::~MusicBrowser() {
     this->cleanup();
 }
 
-MusicBrowser::~MusicBrowser() {
-    this->cleanup();
-}
-
-MusicBrowser::~MusicBrowser() {
-    this->cleanup();
-}
-
 void MusicBrowser::sliderEnded(Slider*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::onTagFilters(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::onClearSearch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void MusicBrowser::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::onArtistFilters(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::onUpdateLibrary(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MusicBrowser::updatePageLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void MusicBrowser::musicActionFailed(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::onPlaybackControl(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void MusicBrowser::setupMusicBrowser() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void MusicBrowser::setupSongControls() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void MusicBrowser::getSelectedCellIdx() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::setTextPopupClosed(SetTextPopup*, std::string) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void MusicBrowser::cellPerformedAction(TableViewCell*, int, CellAction, cocos2d::CCNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::musicActionFinished(GJMusicAction) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::trySetupMusicBrowser() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void MusicBrowser::registerWithTouchDispatcher() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::init(int, GJSongType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -107,23 +99,22 @@ void MusicBrowser::create(int, GJSongType) {
 }
 
 void MusicBrowser::onPage(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 
 void MusicBrowser::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::onSearch(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void MusicBrowser::setupList(MusicSearchResult*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

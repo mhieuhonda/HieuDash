@@ -10,8 +10,8 @@ public:
     virtual ~StarInfoPopup();
 
     void keyBackClicked();
-    void createFromString(std::string);
-    void createFromStringMoons(std::string);
+    StarInfoPopup* createFromString(std::string);
+    StarInfoPopup* createFromStringMoons(std::string);
     void init(int, int, int, int, int, int, int, int, int, bool);
     void create(int, int, int, int, int, int, int, int, int, bool);
     void onClose(cocos2d::CCObject*);

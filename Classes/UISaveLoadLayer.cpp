@@ -5,18 +5,10 @@ UISaveLoadLayer::~UISaveLoadLayer() {
     this->cleanup();
 }
 
-UISaveLoadLayer::~UISaveLoadLayer() {
-    this->cleanup();
-}
-
-UISaveLoadLayer::~UISaveLoadLayer() {
-    this->cleanup();
-}
-
 void UISaveLoadLayer::init(UIOptionsLayer*) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -31,12 +23,10 @@ void UISaveLoadLayer::create(UIOptionsLayer*) {
 }
 
 void UISaveLoadLayer::onLoad(cocos2d::CCObject*) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void UISaveLoadLayer::onSave(cocos2d::CCObject*) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 

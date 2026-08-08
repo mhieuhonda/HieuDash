@@ -5,22 +5,14 @@ FindObjectPopup::~FindObjectPopup() {
     this->cleanup();
 }
 
-FindObjectPopup::~FindObjectPopup() {
-    this->cleanup();
-}
-
-FindObjectPopup::~FindObjectPopup() {
-    this->cleanup();
-}
-
 void FindObjectPopup::onFindObjectID(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FindObjectPopup::init() {
-    bool ret = true;
+bool FindObjectPopup::init() {
+    bool ret = FLAlertLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

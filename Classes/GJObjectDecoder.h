@@ -2,13 +2,13 @@
 #ifndef GJOBJECTDECODER_H_
 #define GJOBJECTDECODER_H_
 
-class GJObjectDecoder {
+class GJObjectDecoder : public cocos2d::CCNode {
 public:
     virtual ~GJObjectDecoder();
 
     void sharedDecoder();
     void getDecodedObject(int, DS_Dictionary*);
-    void init();
+    bool init();
 
 };
 

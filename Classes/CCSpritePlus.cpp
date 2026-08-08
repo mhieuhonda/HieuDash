@@ -5,83 +5,75 @@ CCSpritePlus::~CCSpritePlus() {
     this->cleanup();
 }
 
-CCSpritePlus::~CCSpritePlus() {
-    this->cleanup();
-}
-
-CCSpritePlus::~CCSpritePlus() {
-    this->cleanup();
-}
-
 void CCSpritePlus::stopFollow() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void CCSpritePlus::addFollower(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Add/insert operation - stub
 }
 
 void CCSpritePlus::getFollower() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCSpritePlus::setPosition(cocos2d::CCPoint const&) {
-    // TODO: Set m_position
+    // Setter operation - stub
 }
 
 void CCSpritePlus::setRotation(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCSpritePlus::followSprite(CCSpritePlus*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void CCSpritePlus::setRotationX(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCSpritePlus::setRotationY(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCSpritePlus::removeFollower(cocos2d::CCNode*) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void CCSpritePlus::initWithTexture(cocos2d::CCTexture2D*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void CCSpritePlus::createWithSpriteFrame(cocos2d::CCSpriteFrame*) {
-    // TODO: Implement
+CCSpritePlus* CCSpritePlus::createWithSpriteFrame(cocos2d::CCSpriteFrame*) {
+    return nullptr;
 }
 
 void CCSpritePlus::initWithSpriteFrameName(char const*) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
-void CCSpritePlus::createWithSpriteFrameName(char const*) {
-    // TODO: Implement
+CCSpritePlus* CCSpritePlus::createWithSpriteFrameName(char const*) {
+    return nullptr;
 }
 
 void CCSpritePlus::setFlipX(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCSpritePlus::setFlipY(bool) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void CCSpritePlus::setScale(float) {
-    // TODO: Set m_scale
+    // Setter operation - stub
 }
 
 void CCSpritePlus::setScaleX(float) {
-    // TODO: Set m_scaleX
+    // Setter operation - stub
 }
 
 void CCSpritePlus::setScaleY(float) {
-    // TODO: Set m_scaleY
+    // Setter operation - stub
 }
 

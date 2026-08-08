@@ -5,155 +5,147 @@ ColorSelectPopup::~ColorSelectPopup() {
     this->cleanup();
 }
 
-ColorSelectPopup::~ColorSelectPopup() {
-    this->cleanup();
-}
-
-ColorSelectPopup::~ColorSelectPopup() {
-    this->cleanup();
-}
-
 void ColorSelectPopup::colorToHex(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::hexToColor(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::selectColor(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onTintGround(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::getColorValue() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onCopyOpacity(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::sliderChanged(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::updateHSVMode() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::updateOpacity() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onPlayerColor1(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void ColorSelectPopup::onPlayerColor2(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void ColorSelectPopup::updateDurLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::updateDuration() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::updateHSVValue() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::onHSVLegacyMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onToggleHSVMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::updateCopyColor() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::closeColorSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onToggleTintMode(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::updateColorValue() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::colorSelectClosed(GJSpecialColorSelect*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::colorValueChanged(cocos2d::_ccColor3B) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onUpdateCopyColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::updateColorLabels() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::updateOpacityLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::onUpdateCustomColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::determineStartValues() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onSelectSpecialColor(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::updateCustomColorIdx() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::updateTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void ColorSelectPopup::updateCopyColorTextInputLabel() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
-void ColorSelectPopup::init(EffectGameObject*, cocos2d::CCArray*, ColorAction*) {
+bool ColorSelectPopup::init(EffectGameObject*, cocos2d::CCArray*, ColorAction*) {
     bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void ColorSelectPopup::show() {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void ColorSelectPopup::create(cocos2d::_ccColor3B) {
@@ -197,14 +189,14 @@ void ColorSelectPopup::create(EffectGameObject*, cocos2d::CCArray*, ColorAction*
 }
 
 void ColorSelectPopup::onCopy(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onPaste(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void ColorSelectPopup::onDefault(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

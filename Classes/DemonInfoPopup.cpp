@@ -5,26 +5,18 @@ DemonInfoPopup::~DemonInfoPopup() {
     this->cleanup();
 }
 
-DemonInfoPopup::~DemonInfoPopup() {
-    this->cleanup();
-}
-
-DemonInfoPopup::~DemonInfoPopup() {
-    this->cleanup();
-}
-
 void DemonInfoPopup::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void DemonInfoPopup::createFromString(std::string) {
-    // TODO: Implement
+DemonInfoPopup* DemonInfoPopup::createFromString(std::string) {
+    return nullptr;
 }
 
 void DemonInfoPopup::init(int, int, int, int, int, int, int, int, int, int, int, int) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
@@ -39,6 +31,6 @@ void DemonInfoPopup::create(int, int, int, int, int, int, int, int, int, int, in
 }
 
 void DemonInfoPopup::onClose(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 

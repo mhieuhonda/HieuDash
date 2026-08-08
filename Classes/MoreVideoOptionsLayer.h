@@ -4,21 +4,21 @@
 
 #include "cocos2d.h"
 
-class MoreVideoOptionsLayer {
+class MoreVideoOptionsLayer : public cocos2d::CCLayer {
 public:
     virtual ~MoreVideoOptionsLayer();
 
     void onApplyFPS(cocos2d::CCObject*);
     void onNextPage(cocos2d::CCObject*);
     void onPrevPage(cocos2d::CCObject*);
-    void countForPage(int);
+    int countForPage(int);
     void layerForPage(int);
     void nextPosition(int);
     void keyBackClicked();
     void objectsForPage(int);
     void updateFPSButtons();
     void incrementCountForPage(int);
-    void init();
+    bool init();
     void create();
     void onInfo(cocos2d::CCObject*);
     void infoKey(int);

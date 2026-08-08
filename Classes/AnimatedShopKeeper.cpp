@@ -5,30 +5,22 @@ AnimatedShopKeeper::~AnimatedShopKeeper() {
     this->cleanup();
 }
 
-AnimatedShopKeeper::~AnimatedShopKeeper() {
-    this->cleanup();
-}
-
-AnimatedShopKeeper::~AnimatedShopKeeper() {
-    this->cleanup();
-}
-
 void AnimatedShopKeeper::startAnimating() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedShopKeeper::animationFinished(char const*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void AnimatedShopKeeper::playReactAnimation() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void AnimatedShopKeeper::init(ShopType) {
     bool ret = true;
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 

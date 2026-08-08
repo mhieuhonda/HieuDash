@@ -2,20 +2,20 @@
 #ifndef CUSTOMSFXCELL_H_
 #define CUSTOMSFXCELL_H_
 
-class CustomSFXCell {
+class CustomSFXCell : public cocos2d::CCNode {
 public:
     CustomSFXCell(char const*, float, float);
     CustomSFXCell(char const*, float, float);
 
     virtual ~CustomSFXCell();
 
-    void shouldReload();
+    bool shouldReload();
     void updateBGColor(int);
     void getActiveSFXID();
     void loadFromObject(SFXInfoObject*);
     void sfxObjectSelected(SFXInfoObject*);
     void draw();
-    void init();
+    bool init();
 
 protected:
     int m_activeSFXID;

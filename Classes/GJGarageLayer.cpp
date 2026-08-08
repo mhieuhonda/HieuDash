@@ -5,178 +5,170 @@ GJGarageLayer::~GJGarageLayer() {
     this->cleanup();
 }
 
-GJGarageLayer::~GJGarageLayer() {
-    this->cleanup();
-}
-
-GJGarageLayer::~GJGarageLayer() {
-    this->cleanup();
-}
-
 void GJGarageLayer::onNavigate(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::toggleGlow() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::updateRate() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGarageLayer::onSelectTab(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::textChanged(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::dialogClosed(DialogLayer*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::getLockFrame(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJGarageLayer::onToggleItem(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::keyBackClicked() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::titleForUnlock(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJGarageLayer::FLAlert_Clicked(FLAlertLayer*, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onRewardedVideo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::setupIconSelect() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJGarageLayer::showUnlockPopup(int, UnlockType) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJGarageLayer::textInputClosed(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::textInputOpened(CCTextInputNode*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::playShadowEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJGarageLayer::setupSpecialPage() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void GJGarageLayer::updatePlayerName(char const*) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGarageLayer::playRainbowEffect() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJGarageLayer::playerColorChanged() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void GJGarageLayer::showUnlockPopupNew(int, UnlockType) {
-    // TODO: Implement
+    // Display operation - stub
 }
 
 void GJGarageLayer::updatePlayerColors() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void GJGarageLayer::achievementForUnlock(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJGarageLayer::descriptionForUnlock(int, UnlockType) {
-    // TODO: Implement
+    // Lock/unlock operation - stub
 }
 
 void GJGarageLayer::rewardedVideoFinished() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::listButtonBarSwitchedPage(ListButtonBar*, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void GJGarageLayer::init() {
-    bool ret = true;
+bool GJGarageLayer::init() {
+    bool ret = cocos2d::CCLayer::init();
     if (!ret) return false;
-    // TODO: Initialize members and UI
+    // Initialize members and UI - stub
     return true;
 }
 
 void GJGarageLayer::scene() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onBack(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onInfo(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onShop(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onArrow(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onPaint(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::getItems(IconType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::getItems(int, int, IconType, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onSelect(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onShards(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::onSpecial(cocos2d::CCObject*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::selectTab(IconType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void GJGarageLayer::setupPage(int, IconType) {
-    // TODO: Implement
+    // Setup operation - stub
 }
 

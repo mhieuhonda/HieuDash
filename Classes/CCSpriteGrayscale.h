@@ -10,11 +10,11 @@ public:
     virtual ~CCSpriteGrayscale();
 
     void shaderBody();
-    void getShaderName();
-    void createWithTexture(cocos2d::CCTexture2D*);
-    void createWithTexture(cocos2d::CCTexture2D*, cocos2d::CCRect const&, bool);
-    void createWithSpriteFrame(cocos2d::CCSpriteFrame*);
-    void createWithSpriteFrameName(std::string const&);
+    std::string getShaderName();
+    CCSpriteGrayscale* createWithTexture(cocos2d::CCTexture2D*);
+    CCSpriteGrayscale* createWithTexture(cocos2d::CCTexture2D*, cocos2d::CCRect const&, bool);
+    CCSpriteGrayscale* createWithSpriteFrame(cocos2d::CCSpriteFrame*);
+    CCSpriteGrayscale* createWithSpriteFrameName(std::string const&);
     void create(std::string const&);
     void create(std::string const&, cocos2d::CCRect const&);
 

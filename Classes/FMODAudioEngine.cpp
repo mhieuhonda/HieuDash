@@ -15,464 +15,443 @@ FMODAudioEngine::~FMODAudioEngine() {
     this->cleanup();
 }
 
-FMODAudioEngine::~FMODAudioEngine() {
-    this->cleanup();
-}
-
-FMODAudioEngine::~FMODAudioEngine() {
-    this->cleanup();
-}
-
 void FMODAudioEngine::pauseMusic(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::playEffect(std::string) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::playEffect(std::string, float, float, float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::startMusic(int, int, int, int, bool, int, bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::fadeInMusic(float, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::pauseEffect(unsigned int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::pitchForIdx(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::printResult(FMOD_RESULT) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::resumeAudio() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::resumeMusic(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::stopChannel(FMOD::Channel*, bool, float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::stopChannel(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::stopChannel(int, AudioTargetType, bool, float) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::storeEffect(FMOD::Sound*, std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::createStream(std::string) {
-    // TODO: Implement
+FMODAudioEngine* FMODAudioEngine::createStream(std::string) {
+    return nullptr;
 }
 
 void FMODAudioEngine::fadeOutMusic(float, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getMusicTime(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::isSoundReady(FMOD::Sound*) {
-    // TODO: Implement
+bool FMODAudioEngine::isSoundReady(FMOD::Sound*) {
+    return false;
 }
 
 void FMODAudioEngine::preloadMusic(std::string, bool, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::resumeEffect(unsigned int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::sharedEngine() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::stopAllMusic(bool) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::testFunction(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::unloadEffect(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::updateReverb(FMODReverbPreset, bool) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::clearAllAudio() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void FMODAudioEngine::getFMODStatus(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::pauseAllAudio() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::pauseAllMusic(bool) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::preloadEffect(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::updateChannel(int, AudioTargetType, AudioModType, float, float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::channelStopped(FMOD::Channel*, bool) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::enableMetering() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getActiveMusic(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getMusicTimeMS(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::isEffectLoaded(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+bool FMODAudioEngine::isEffectLoaded(std::string) {
+    return false;
 }
 
-void FMODAudioEngine::isMusicPlaying(std::string, int) {
-    // TODO: Implement
+bool FMODAudioEngine::isMusicPlaying(std::string, int) {
+    return false;
 }
 
-void FMODAudioEngine::isMusicPlaying(int) {
-    // TODO: Implement
+bool FMODAudioEngine::isMusicPlaying(int) {
+    return false;
 }
 
 void FMODAudioEngine::lengthForSound(std::string) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::loadAudioState(FMODAudioState&) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::resumeAllAudio() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::resumeAllMusic() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::reverbToString(FMODReverbPreset) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::saveAudioState(FMODAudioState&) {
-    // Save to file/storage
-    // TODO: Implement saving
+    // Save/encode operation - stub
 }
 
 void FMODAudioEngine::setMusicTimeMS(unsigned int, bool, int) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void FMODAudioEngine::stopAllEffects() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::stopAndGetFade(FMOD::Channel*) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::swapMusicIndex(int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::updateMetering() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::disableMetering() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getChannelGroup(int, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::pauseAllEffects() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::playEffectAsync(std::string) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::queuePlayEffect(std::string, float, float, float, float, bool, bool, int, int, int, int, bool, int, bool, int, float, int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::queueStartMusic(std::string, float, float, float, bool, int, int, int, int, int, bool, int, bool, bool) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::registerChannel(FMOD::Channel*, int, int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::setChannelPitch(int, AudioTargetType, float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void FMODAudioEngine::channelLinkSound(int, FMODSound*) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::countActiveMusic() {
-    // TODO: Implement
+int FMODAudioEngine::countActiveMusic() {
+    return 0;
 }
 
 void FMODAudioEngine::getEffectsVolume() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getMeteringValue() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getMusicLengthMS(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getNextChannelID() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::loadAndPlayMusic(std::string, unsigned int, int) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::resumeAllEffects() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::setChannelVolume(int, AudioTargetType, float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void FMODAudioEngine::setEffectsVolume(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void FMODAudioEngine::setupAudioEngine() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void FMODAudioEngine::stopChannelTween(int, AudioTargetType, AudioModType) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::unloadAllEffects() {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::getMusicChannelID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getTweenContainer(AudioTargetType) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::isChannelStopping(int) {
-    // TODO: Implement
+bool FMODAudioEngine::isChannelStopping(int) {
+    return false;
 }
 
 void FMODAudioEngine::stopChannelTweens(int, AudioTargetType) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::stopMusicNotInSet(std::unordered_set<int>, std::equal_to<int>, std::allocator<int> >&) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::unregisterChannel(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::updateQueuedMusic() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::channelForUniqueID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::channelUnlinkSound(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::countActiveEffects() {
-    // TODO: Implement
+int FMODAudioEngine::countActiveEffects() {
+    return 0;
 }
 
 void FMODAudioEngine::playEffectAdvanced(std::string, float, float, float, float, bool, bool, int, int, int, int, bool, int, bool, bool, int, int, float, int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::preloadEffectAsync(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::stopAndRemoveMusic(int) {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void FMODAudioEngine::triggerQueuedMusic(FMODQueuedMusic) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::activateQueuedMusic(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::channelForChannelID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::setChannelVolumeMod(int, AudioTargetType, float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void FMODAudioEngine::updateChannelTweens(float) {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::updateQueuedEffects() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::waitUntilSoundReady(FMOD::Sound*) {
-    // TODO: Implement
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::channelIDForUniqueID(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::releaseRemovedSounds() {
-    // TODO: Implement
+    // Remove/clear operation - stub
 }
 
 void FMODAudioEngine::updateBackgroundFade() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::fadeInBackgroundMusic(float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::getActiveMusicChannel(int) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::isAnyPersistentPlaying() {
-    // TODO: Implement
+bool FMODAudioEngine::isAnyPersistentPlaying() {
+    return false;
 }
 
 void FMODAudioEngine::updateTemporaryEffects() {
-    // TODO: Implement
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::getBackgroundMusicVolume() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
-void FMODAudioEngine::isPersistentMatchPlaying(std::string, int) {
-    // TODO: Implement
+bool FMODAudioEngine::isPersistentMatchPlaying(std::string, int) {
+    return false;
 }
 
 void FMODAudioEngine::setBackgroundMusicVolume(float) {
-    // TODO: Implement
+    // Setter operation - stub
 }
 
 void FMODAudioEngine::queuedEffectFinishedLoading(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::stop() {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::setup() {
-    // TODO: Implement
+    // Setup operation - stub
 }
 
 void FMODAudioEngine::start() {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::update(float) {
-    // Game update loop — called every frame
-    // TODO: Implement game logic update
+    // Update/refresh operation - stub
 }
 
 void FMODAudioEngine::fadeMusic(float, int, float, float) {
-    // TODO: Implement
+    // Stub - not yet implemented
 }
 
 void FMODAudioEngine::loadMusic(std::string) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::loadMusic(std::string, float, float, float, bool, int, int, bool) {
-    // Load from file/storage
-    // TODO: Implement loading
+    // Load/decode operation - stub
 }
 
 void FMODAudioEngine::playMusic(std::string, bool, float, int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 
 void FMODAudioEngine::stopMusic(int) {
-    // TODO: Implement
+    // Media operation - stub
 }
 

@@ -9,7 +9,7 @@ class ForceBlockGameObject {
 public:
     virtual ~ForceBlockGameObject();
 
-    void getSaveString(GJBaseGameLayer*);
+    std::string getSaveString(GJBaseGameLayer*);
     void customObjectSetup(std::vector<std::string>&, std::vector<void*>&);
     void calculateForceToTarget(GameObject*);
     void init(char const*);
