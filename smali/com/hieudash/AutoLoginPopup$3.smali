@@ -255,10 +255,31 @@
 
     move-result-object v8
 
-    # Save: context, "HieuLouis", hashedPassword, accountId, userId, gjp, udid
-    const-string v3, "HieuLouis"
+    # Prepare consecutive registers for invoke-static/range (7 args needs range)
+    # saveCredentials(Context, String, String, String, String, String, String)
+    # = (context, userName, password, accountId, userId, gjp, udid)
+    # Move all args into v1..v7 consecutive using v0/v9 as temps to break cycles
+    # Current: v1=accountId, v2=userId, v5=password, v6=context, v7=udid, v8=gjp
 
-    invoke-static {v6, v3, v5, v1, v2, v8, v7}, Lcom/hieudash/AutoLoginPopup;->saveCredentials(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    move-object v9, v1
+
+    move-object v0, v2
+
+    move-object v1, v6
+
+    const-string v2, "HieuLouis"
+
+    move-object v3, v5
+
+    move-object v4, v9
+
+    move-object v5, v0
+
+    move-object v6, v8
+
+    # v7 = udid (already in v7)
+
+    invoke-static/range {v1 .. v7}, Lcom/hieudash/AutoLoginPopup;->saveCredentials(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     # Show success toast
     const-string v0, "Success"
