@@ -1,2 +1,0 @@
-
-The decoding of unwind sections for machine type AArch64 is not currently supported.
